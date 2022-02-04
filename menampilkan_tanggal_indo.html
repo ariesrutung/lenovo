@@ -39,10 +39,6 @@
             -webkit-touch-callout: none;
             line-height: 1;
             background-color: transparent !important;
-            /*background-image: url(https://www.halodoc.com/assets/img/home-v2/webp/home-banner-v3.svg);*/
-            /*background-position: center;*/
-            /*background-repeat: no-repeat;*/
-            /*background-size: contain;*/
         }
 
         body::-webkit-scrollbar {
@@ -174,7 +170,8 @@
         <p id="tanggal"></p>
     </div>
     <div>
-        <p class="marquee"><span id="dtText"></span></p>
+        <p class="marquee">
+            <span id="dtText"></span></p>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -230,20 +227,6 @@
         document.getElementById('lblGreetings').innerHTML =
             '<b>' + greet + '</b>';
 
-        // var hari = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'];
-        // var bulan = ['Januari', 'Februari', 'Maret','April','Mei','Juni','Juli','Agustus','September','Oktober','November','Desember'];
-
-        // var tanggal = new Date().getDate();
-        // var xhari = new Date().getDay();
-        // var xbulan = new Date().getMonth();
-        // var xtahun = new Date().getYear();
-
-        // var hari = hari[xhari];
-        // var bulan = bulan[xbulan];
-        // var tahun = (xtahun < 1000)?xtahun + 1900 : xtahun;
-        // document.write(hari +', ' + tanggal + ' ' + bulan + ' ' + tahun);
-
-
     </script>
 
     <script>
@@ -253,9 +236,29 @@
         document.getElementById("tanggal").innerHTML = dt.toLocaleDateString();
     </script>
 
+    <!-- Waktu Salat selanjutnya -->
     <script>
-        var today = new Date();
-        document.getElementById('dtText').innerHTML="Jam Salat Selanjutnya: "+today;
+        var myDate = new Date();
+        var hrs = myDate.getHours();
+        var salat;
+
+        if (hrs <= 4)
+            salat = 'Subuh';
+
+        else if (hrs >= 4 && hrs <= 12)
+            salat = 'Dhuhur';
+
+        else if (hrs >= 12 && hrs <= 15)
+            salat = 'Ashar';
+
+        else if (hrs >= 15 && hrs <= 18)
+            salat = 'Maghrib';
+
+        else if (hrs >= 18 && hrs <= 19)
+            salat = 'Isya';
+
+        document.getElementById('dtText').innerHTML="Selanjutnya adalah waktu salat " + salat;
+
     </script>
 </body>
 
