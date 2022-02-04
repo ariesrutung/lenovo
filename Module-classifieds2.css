@@ -1,0 +1,1431 @@
+/**
+ SCSS File for module Classifieds v2
+ @author Xtraball SAS <dev@xtraball.com>
+ */
+
+
+/** Namespace */
+
+.module-classifieds2 {
+  /** Form elements */
+  /** Map view */
+  /** woo commerce image slider */
+  /** classifieds image slider */
+  /** Advert view */
+}
+
+.module-classifieds2 .bar-subheader {
+  border: 0;
+}
+
+.module-classifieds2 .bar-subheader button {
+  border: 0;
+}
+
+.module-classifieds2 .cls-ltr {
+  direction: ltr !important;
+}
+
+.module-classifieds2 .cls-spacer {
+  height: 40px;
+}
+
+.module-classifieds2 .clear-fullsearch {
+  position: relative;
+  top: -24px;
+  left: calc(100vw + 11px);
+}
+
+.module-classifieds2 .clear-fullsearch:before {
+  font-size: 26px;
+}
+
+.module-classifieds2 .clear-fullsearch-map {
+  position: relative;
+  top: 18px;
+  left: calc(100vw - 39px);
+}
+
+.module-classifieds2 .clear-fullsearch-map:before {
+  font-size: 26px;
+}
+
+.module-classifieds2 .submit-message-button {
+  bottom: 0;
+  position: absolute;
+  margin: 0;
+}
+
+.module-classifieds2 img.classifieds2-illustration {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.module-classifieds2 .remove-image-list,
+.module-classifieds2 .remove-image-card {
+  position: absolute;
+  right: 6px;
+  top: 6px;
+}
+
+.module-classifieds2 .remove-image-list i.icon,
+.module-classifieds2 .remove-image-card i.icon {
+  font-size: 26px;
+}
+
+.module-classifieds2 .classifieds2-richtext * {
+  white-space: normal;
+}
+
+.module-classifieds2 img.classifieds2-pictures {
+  max-height: 15vh;
+  width: auto;
+  max-width: 90%;
+  margin: 6px auto;
+}
+
+.module-classifieds2 .classifieds2-radio .radio-title {
+  padding: 5px 15px;
+  font-weight: bold;
+}
+
+.module-classifieds2 .classifieds2-radio .radio-item .radio-content .item-content {
+  padding: 10px 15px;
+  font-size: 13px;
+}
+
+.module-classifieds2 .classifieds2-radio .radio-item .radio-content .radio-icon {
+  padding: 2px 15px;
+}
+
+.module-classifieds2 .classifieds2-image .upload-title {
+  padding: 5px 15px;
+  font-weight: bold;
+}
+
+.module-classifieds2 .classifieds2-image .upload-action {
+  padding: 10px 15px 10px 54px;
+}
+
+.module-classifieds2 .classifieds2-datetime,
+.module-classifieds2 .classifieds2-date {
+  padding: 2px 0 2px 54px;
+}
+
+.module-classifieds2 .classifieds2-datetime input[type="text"],
+.module-classifieds2 .classifieds2-date input[type="text"] {
+  width: 100%;
+}
+
+.module-classifieds2 .list .classifieds2-radio label .radio-content {
+  border-left: 2px solid rgba(68, 68, 68, 1);
+}
+
+.module-classifieds2 .card .classifieds2-radio label .radio-content {
+  border-left: 2px solid rgba(68, 68, 68, 1);
+}
+
+.module-classifieds2 .no-advert {
+  white-space: normal !important;
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+}
+
+.module-classifieds2 .classifieds2-map {
+  /** OLD ONE */
+}
+
+.module-classifieds2 .classifieds2-map #crMap {
+  position: absolute;
+  width: 100vw;
+  top: 0;
+  bottom: 0;
+}
+
+.module-classifieds2 .classifieds2-map #cr-map-overlay {
+  /** Map zoom actions */
+  /** Overlay loader */
+  /** Small overlay loader */
+}
+
+.module-classifieds2 .classifieds2-map #cr-map-overlay .cr-map-zoom {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  text-align: center;
+}
+
+.module-classifieds2 .classifieds2-map #cr-map-overlay .cr-map-zoom .cr-zoom-center-me {
+  border: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 0.4rem 0.75rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  box-shadow: 2px 2px 5px #8a8a8a;
+}
+
+.module-classifieds2 .classifieds2-map #cr-map-overlay .cr-map-zoom .cr-zoom-shadow {
+  box-shadow: 2px 2px 5px #8a8a8a;
+  border-radius: 4px;
+}
+
+.module-classifieds2 .classifieds2-map #cr-map-overlay .cr-map-zoom .cr-zoom-shadow .cr-zoom-in {
+  border: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 0.4rem 0.75rem;
+}
+
+.module-classifieds2 .classifieds2-map #cr-map-overlay .cr-map-zoom .cr-zoom-shadow .cr-zoom-out {
+  border: 0;
+  border-top: 1px solid lightgrey;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 0.4rem 0.75rem;
+}
+
+.module-classifieds2 .classifieds2-map #cr-map-overlay .cr-map-loading {
+  position: absolute;
+  left: 40vw;
+  top: 50vh;
+  transform: translate(-15vw, -15vh);
+  text-align: center;
+  border: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  font-variant: small-caps;
+  text-transform: lowercase;
+  letter-spacing: 0.05em;
+  font-size: 1rem;
+  border-radius: 4px;
+  box-shadow: 2px 2px 5px #8a8a8a;
+}
+
+.module-classifieds2 .classifieds2-map #cr-map-overlay .cr-map-loading .cr-map-loader .cr-loader-spinner img {
+  width: 80%;
+  height: auto;
+}
+
+.module-classifieds2 .classifieds2-map #cr-map-overlay .cr-map-loading .cr-map-loader .cr-loader-label {
+  margin-bottom: 0.5rem;
+  padding: 0 10px;
+}
+
+.module-classifieds2 .classifieds2-map #cr-map-overlay .cr-map-loading-small {
+  position: absolute;
+  top: 54px;
+  left: 15px;
+  background-color: rgba(255, 255, 255, 0.9);
+  font-variant: small-caps;
+  text-transform: lowercase;
+  letter-spacing: 0.05em;
+  font-size: 1rem;
+  border-radius: 4px;
+  box-shadow: 2px 2px 5px #8a8a8a;
+  padding: 3px 15px 5px 15px;
+}
+
+.module-classifieds2 .classifieds2-map #cr-map-overlay .cr-map-search-bar p {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background-color: rgba(255, 255, 255, 0.9);
+  font-variant: small-caps;
+  text-transform: lowercase;
+  letter-spacing: 0.05em;
+  font-size: 1rem;
+  border-radius: 4px;
+  box-shadow: 2px 2px 5px #8a8a8a;
+  padding: 5px 14px 7px 14px;
+  width: calc(100vw - 30px);
+  cursor: text;
+  overflow: hidden;
+  height: 32px;
+}
+
+.module-classifieds2 .classifieds2-map .map-canvas {
+  width: 100%;
+  top: 44px;
+  bottom: var(--safe-area-inset-bottom);
+}
+
+.module-classifieds2 .classifieds2-map .info-window .item {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: -1px 0 !important;
+  border-top: 0;
+  border-bottom: 0;
+}
+
+.module-classifieds2 .classifieds2-map .info-window .info-window-icon {
+  padding: 10px;
+  border-bottom: 0;
+}
+
+.module-classifieds2 .classifieds2-map .info-window .info-window-icon span {
+  font-size: 0.85rem;
+  font-weight: bold;
+  width: 85%;
+  display: inline-block;
+}
+
+.module-classifieds2 .classifieds2-map .info-window .info-window-icon span.info-window-title {
+  padding-left: 8px;
+  padding-bottom: 6px;
+}
+
+.module-classifieds2 .classifieds2-map .info-window .info-window-icon span.info-window-more,
+.module-classifieds2 .classifieds2-map .info-window .info-window-icon span.info-window-distance {
+  font-size: 0.7rem;
+  width: auto;
+}
+
+.module-classifieds2 .classifieds2-map .info-window .info-window-icon span.info-window-distance {
+  padding-left: 8px;
+}
+
+.module-classifieds2 .classifieds2-map .info-window .info-window-icon i.info-close {
+  position: absolute;
+  right: 10px;
+  top: 8px;
+}
+
+.module-classifieds2.classifieds2-filter i.clear-text {
+  position: absolute;
+  right: 1.5rem;
+  top: calc(50% - .625rem);
+  font-size: 1.25rem;
+}
+
+.module-classifieds2.classifieds2-filter .search-button {
+  position: fixed;
+  bottom: 0;
+  z-index: 100;
+  margin: 0 !important;
+}
+
+.module-classifieds2.classifieds2-filter .no-padding {
+  padding: 0 !important;
+}
+
+.module-classifieds2.classifieds2-list .advert-text-box {
+  margin: 0 !important;
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+}
+
+.module-classifieds2.classifieds2-list .ad-status {
+  color: #333;
+  padding: 5px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.module-classifieds2.classifieds2-list .ad-status.pending {
+  background-color: rgba(234, 133, 8, 0.85);
+}
+
+.module-classifieds2.classifieds2-list .ad-status.published {
+  background-color: #50942d;
+}
+
+.module-classifieds2.classifieds2-list div.no-margin-bottom {
+  margin-bottom: 0;
+}
+
+.module-classifieds2.classifieds2-list div.advert-image {
+  height: 40vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.module-classifieds2.classifieds2-list h5.advert-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 14px;
+}
+
+.module-classifieds2.classifieds2-list p.advert-price {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.module-classifieds2.classifieds2-list .search-header .cr-list-search-bar {
+  height: 78px;
+  background-color: rgba(0, 0, 0, 1);
+  border-radius: 0 0 70% 70%;
+  width: calc(100vw + 100px);
+  transform: translateX(-50px);
+}
+
+.module-classifieds2.classifieds2-list .search-header .cr-list-search-bar p {
+  top: 15px;
+  left: 65px;
+  background-color: rgba(255, 255, 255, .9);
+  font-variant: small-caps;
+  text-transform: lowercase;
+  letter-spacing: 0.05em;
+  font-size: 1rem;
+  border-radius: 4px;
+  box-shadow: 2px 2px 5px #8a8a8a;
+  padding: 5px 14px 7px 14px;
+  width: calc(100vw - 30px);
+  cursor: text;
+  overflow: hidden;
+  height: 32px;
+  position: relative;
+}
+
+.module-classifieds2.classifieds2-list .bar-subheader {
+  padding: 0 !important;
+}
+
+.module-classifieds2.classifieds2-list .bar-subheader .button-bar>.button.button-positive-custom.activated {
+  background-color: rgba(0, 0, 0, 1) !important;
+  border-color: rgba(249, 250, 252, 1) !important;
+}
+
+.module-classifieds2.classifieds2-list .bar-subheader .button-bar>.button img {
+  filter: grayscale(100%);
+}
+
+.module-classifieds2.classifieds2-list .bar-subheader .button-bar>.button img.fw-icon-header {
+  height: 24px;
+  margin-top: 8px;
+}
+
+.module-classifieds2.classifieds2-list .bar-subheader .button-bar>.button i {
+  filter: grayscale(100%);
+}
+
+.module-classifieds2.classifieds2-list .bar-subheader .button-bar>.button i.icon:before {
+  font-size: 24px !important;
+}
+
+.module-classifieds2.classifieds2-list .bar-subheader .button-bar>.button:first-child {
+  border-radius: 0;
+}
+
+.module-classifieds2.classifieds2-list .bar-subheader .button-bar>.button:last-child {
+  border-radius: 0;
+}
+
+.module-classifieds2.classifieds2-list .bar-subheader .button-bar>.button:active img,
+.module-classifieds2.classifieds2-list .bar-subheader .button-bar>.button.fw-icon-selected img,
+.module-classifieds2.classifieds2-list .bar-subheader .button-bar>.button:active i,
+.module-classifieds2.classifieds2-list .bar-subheader .button-bar>.button.fw-icon-selected i {
+  filter: grayscale(0);
+}
+
+.module-classifieds2.classifieds2-list .item {
+  padding-bottom: 0;
+  margin-top: 12px;
+  margin-bottom: 0;
+}
+
+.module-classifieds2.classifieds2-list .item .post-body {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.module-classifieds2.classifieds2-list .item .post-body h2 {
+  padding: 0 0 10px 0;
+  font-weight: bold;
+}
+
+.module-classifieds2.classifieds2-list .item .post-body p {
+  overflow: initial;
+  text-overflow: initial;
+  white-space: initial;
+}
+
+.module-classifieds2.classifieds2-list .item .post-body p.subtitle {
+  padding: 8px 0;
+}
+
+.module-classifieds2.classifieds2-list .item .post-author.item-avatar {
+  padding-left: 50px;
+  min-height: 50px;
+}
+
+.module-classifieds2.classifieds2-list .item .post-author h2 {
+  font-weight: bold;
+  line-height: 16px;
+  height: 16px;
+  margin-top: 3px;
+}
+
+.module-classifieds2.classifieds2-list .item .post-author h2 i.icon {
+  margin: 0 0 0 12px;
+  font-size: 20px;
+}
+
+.module-classifieds2.classifieds2-list .item .post-author h2 i.icon.icon-pin {
+  transform: rotate(20deg);
+}
+
+.module-classifieds2.classifieds2-list .item .post-author .post-date {
+  font-size: 11px;
+}
+
+.module-classifieds2.classifieds2-list .item .post-images .row.fanwall-row {
+  margin: 0;
+  padding: 0;
+  height: 25vh;
+}
+
+.module-classifieds2.classifieds2-list .item .post-images .fanwall-image-bg-2 {
+  border-left: 2px solid rgba(255, 255, 255, 1);
+}
+
+.module-classifieds2.classifieds2-list .item .post-images .fanwall-image-bg-2.fanwall-bg-card {
+  border-left: 2px solid rgba(255, 255, 255, 1);
+}
+
+.module-classifieds2.classifieds2-list .item .post-images .fanwall-image-bg-3 {
+  border-top: 2px solid rgba(255, 255, 255, 1);
+}
+
+.module-classifieds2.classifieds2-list .item .post-images .fanwall-image-bg-3.fanwall-bg-card {
+  border-top: 2px solid rgba(255, 255, 255, 1);
+}
+
+.module-classifieds2.classifieds2-list .item .post-image {
+  margin: 0 -16px 0 -16px;
+}
+
+.module-classifieds2.classifieds2-list .item .post-image.fanwall-bg-2 {
+  margin: 0 -16px 0 0;
+}
+
+.module-classifieds2.classifieds2-list .item .post-image.fanwall-bg-3 {
+  height: 20vh;
+}
+
+.module-classifieds2.classifieds2-list .item .post-image a.fanwall-image-bg {
+  display: inline-block;
+  width: 100%;
+  background-position: center center;
+  background-size: cover;
+  height: 30vh;
+}
+
+.module-classifieds2.classifieds2-list .item .post-image a.fanwall-image-bg.fanwall-image-bg-1 {
+  height: 25vh;
+}
+
+.module-classifieds2.classifieds2-list .item .post-image a.fanwall-image-bg.fanwall-image-bg-2 {
+  height: 25vh;
+}
+
+.module-classifieds2.classifieds2-list .item .post-image a.fanwall-image-bg.fanwall-image-bg-3 {
+  height: 20vh;
+}
+
+.module-classifieds2.classifieds2-list .item .post-image img {
+  display: block;
+}
+
+.module-classifieds2.classifieds2-list .item .post-likes {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.module-classifieds2.classifieds2-list .item .post-likes span {
+  font-size: 14px;
+}
+
+.module-classifieds2.classifieds2-list .item .post-actions {
+  padding-top: 7px;
+  padding-bottom: 6px;
+  font-weight: bold;
+}
+
+.module-classifieds2.classifieds2-list .item .post-likes~.post-actions {
+  border-top: 1px solid rgba(68, 68, 68, 0.2);
+}
+
+.module-classifieds2.classifieds2-list .item .post-body~.post-actions {
+  border-top: 1px solid rgba(68, 68, 68, 0.2);
+}
+
+.module-classifieds2.classifieds2-list .item.card .post-likes~.post-actions {
+  border-top: 1px solid rgba(68, 68, 68, 0.2);
+}
+
+.module-classifieds2.classifieds2-list .item.card .post-body~.post-actions {
+  border-top: 1px solid rgba(68, 68, 68, 0.2);
+}
+
+.module-classifieds2.classifieds2-list .item.card .post-author {
+  padding-top: 16px;
+  margin-bottom: 10px;
+}
+
+.module-classifieds2.fanwall-comment-l1 .item-comment .comment-date~.comment-image {
+  margin-top: 10px;
+}
+
+.module-classifieds2.fanwall-comment-l1 .item-comment .comment-author.item-avatar {
+  padding-top: 5px;
+  padding-left: 50px;
+  min-height: 50px;
+}
+
+.module-classifieds2.fanwall-comment-l1 .item-comment .comment-author i.icon {
+  font-size: 16px;
+}
+
+.module-classifieds2.fanwall-comment-l1 .item-comment .comment-author h2 {
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 15px;
+}
+
+.module-classifieds2.fanwall-comment-l1 .item-comment .comment-author p.comment-date {
+  font-size: 11px;
+  line-height: 11px;
+}
+
+.module-classifieds2.fanwall-comment-l1 .item-comment .comment-author p.comment-text {
+  margin-top: 10px;
+  white-space: initial;
+}
+
+.module-classifieds2.fanwall-comment-l1 .item-comment .comment-author p.comment-text * {
+  white-space: initial;
+}
+
+.module-classifieds2.fanwall-comment-l1 .item-comment .comment-image img {
+  max-width: 100%;
+  max-height: 140px;
+  padding: 3px;
+  border: 1px solid rgba(196, 196, 196, 1);
+  border-radius: 6px;
+}
+
+.module-classifieds2.fanwall-comment-l1 .item-comment.card {
+  margin-bottom: 0;
+  margin-top: 12px;
+}
+
+.module-classifieds2.fanwall-comment-l1 .item-comment.card .comment-image img {
+  border: 1px solid rgba(196, 196, 196, 1);
+}
+
+.module-classifieds2.fanwall-comment-l1 .item-comment.card .comment-author.item-avatar {
+  padding-top: 15px;
+  padding-left: 50px;
+  padding-bottom: 10px;
+  min-height: 50px;
+}
+
+.module-classifieds2.fanwall-comment-l1 .comment-footer .item-input-inset {
+  width: 100%;
+}
+
+.module-classifieds2.fanwall-comment-l1 .comment-footer .picture-badge {
+  font-size: 10px;
+  padding: 0 6px 0 5px;
+  margin-left: -17px;
+}
+
+.module-classifieds2.fanwall-comment-l1 .comment-footer textarea {
+  resize: none;
+  margin: 0;
+  height: 32px;
+  width: 100%;
+  padding: 8px 33px 7px 16px;
+  border-radius: 50px;
+}
+
+.module-classifieds2.fanwall-comment-l1 .comment-footer .clear-comment {
+  font-size: 26px;
+  position: absolute;
+  right: 54px;
+  opacity: 0.6;
+}
+
+.module-classifieds2.fanwall-new-l1 .post-button {
+  position: fixed;
+  bottom: 0;
+  z-index: 100;
+  margin: 0 !important;
+}
+
+.module-classifieds2.fanwall-new-l1 .post-author.item-avatar {
+  padding-left: 72px;
+  min-height: 50px;
+}
+
+.module-classifieds2.fanwall-new-l1 .post-author h2 {
+  font-weight: bold;
+  line-height: 15px;
+}
+
+.module-classifieds2.fanwall-new-l1 .post-author h2 i.icon {
+  margin: 0 0 0 12px;
+}
+
+.module-classifieds2.fanwall-new-l1 .post-author h2 i.icon.icon-pin {
+  transform: rotate(30deg);
+}
+
+.module-classifieds2.fanwall-new-l1 .post-author .post-location {
+  font-size: 11px;
+}
+
+.module-classifieds2.fanwall-new-l1 .new-post-items .item {
+  margin-top: 12px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 15px;
+}
+
+.module-classifieds2.fanwall-new-l1 .new-post-items .item .new-post-author {
+  margin-top: 4px;
+}
+
+.module-classifieds2.fanwall-new-l1 .new-post-items .item label {
+  width: 100%;
+}
+
+.module-classifieds2.fanwall-new-l1 .new-post-items .item textarea {
+  resize: none;
+}
+
+.module-classifieds2.fanwall-new-l1 .new-post-items .item.item-avatar {
+  padding-left: 72px;
+  min-height: 72px;
+}
+
+.module-classifieds2.fanwall-new-l1 .new-post-items .item.card {
+  margin-top: 0;
+  margin-bottom: 6px;
+}
+
+.module-classifieds2.fanwall-new-l1 .new-post-items .item.card:first-of-type {
+  margin-top: 12px !important;
+}
+
+.module-classifieds2.fanwall-new-l1 img.fanwall-pictures {
+  max-height: 15vh;
+  width: auto;
+  max-width: 90%;
+  margin: 6px auto;
+}
+
+.module-classifieds2.fanwall-new-l1 .remove-image-list,
+.module-classifieds2.fanwall-new-l1 .remove-image-card {
+  position: absolute;
+  right: 6px;
+  top: 6px;
+}
+
+.module-classifieds2.fanwall-new-l1 .remove-image-list i.icon,
+.module-classifieds2.fanwall-new-l1 .remove-image-card i.icon {
+  font-size: 26px;
+}
+
+.module-classifieds2 .more-circle {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  background: rgba(255, 255, 255, .9);
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 20px;
+  padding: 5px;
+  pointer-events: none;
+  left: calc(75% - 24px);
+  top: calc(-50% - 24px);
+  box-shadow: 0 0 2px black;
+}
+
+.module-classifieds2 .more-circle i.icon {
+  font-size: 14px;
+}
+
+.module-classifieds2 .fanwall-gallery {
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+}
+
+.module-classifieds2 .fanwall-gallery .gallery-item {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.module-classifieds2 .fanwall-gallery .gallery-item img {
+  width: 100%;
+}
+
+.module-classifieds2 .fanwall-gallery .gallery-item:nth-child(3n+1) {
+  width: 32%;
+  margin-top: 2%;
+}
+
+.module-classifieds2 .fanwall-gallery .gallery-item:nth-child(3n+2) {
+  width: 32%;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 2%;
+}
+
+.module-classifieds2 .fanwall-gallery .gallery-item:nth-child(3n+3) {
+  width: 32%;
+  margin-top: 2%;
+}
+
+.module-classifieds2 .fanwall-post-image-container {
+  margin: 0 -12px;
+}
+
+.module-classifieds2 .fanwall-slider-container {
+  height: 30vh;
+  overflow: hidden;
+}
+
+.module-classifieds2 .fanwall-slider-container-product {
+  height: 50vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+.module-classifieds2 .fanwall-directive-slider,
+.module-classifieds2 [fanwall-slider] {
+  height: 100%;
+}
+
+.module-classifieds2.fanwall-slider,
+.module-classifieds2.fanwall-slider-modal {
+  height: 100%;
+  padding: 0 !important;
+}
+
+.module-classifieds2.fanwall-slider ul[rn-carousel],
+.module-classifieds2.fanwall-slider-modal ul[rn-carousel] {
+  height: 100%;
+}
+
+.module-classifieds2.fanwall-slider ul[rn-carousel] li>div,
+.module-classifieds2.fanwall-slider-modal ul[rn-carousel] li>div {
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.module-classifieds2.fanwall-slider div[rn-carousel-indicators],
+.module-classifieds2.fanwall-slider-modal div[rn-carousel-indicators] {
+  text-align: center;
+  background-color: transparent;
+  position: relative;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+}
+
+.module-classifieds2.fanwall-slider div[rn-carousel-indicators] div.rn-carousel-indicator span,
+.module-classifieds2.fanwall-slider-modal div[rn-carousel-indicators] div.rn-carousel-indicator span {
+  font-size: 16px;
+  margin: 0 4px;
+  color: #fff;
+}
+
+.module-classifieds2.fanwall-slider div[rn-carousel-indicators] div.rn-carousel-indicator span.active,
+.module-classifieds2.fanwall-slider-modal div[rn-carousel-indicators] div.rn-carousel-indicator span.active {
+  color: rgba(239, 71, 58, 1);
+}
+
+.module-classifieds2.fanwall-slider.fullscreen .bar-subheader.bar-dark,
+.module-classifieds2.fanwall-slider-modal.fullscreen .bar-subheader.bar-dark {
+  background-color: black;
+}
+
+.module-classifieds2.fanwall-slider.fullscreen .scroll,
+.module-classifieds2.fanwall-slider-modal.fullscreen .scroll {
+  background-color: black;
+  height: 100%;
+  width: 100%;
+}
+
+.module-classifieds2.fanwall-slider.fullscreen .scroll ul li .scroll-view,
+.module-classifieds2.fanwall-slider-modal.fullscreen .scroll ul li .scroll-view {
+  background-color: black;
+  height: 100%;
+  width: 100%;
+}
+
+.module-classifieds2.fanwall-slider.fullscreen .scroll ul li .scroll .image,
+.module-classifieds2.fanwall-slider-modal.fullscreen .scroll ul li .scroll .image {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+
+.module-classifieds2 .classifieds2-slider-container {
+  height: 22vh;
+  margin: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.module-classifieds2 .classifieds2-slider-container.slider-home {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+}
+
+.module-classifieds2 .classifieds2-slider-container-product {
+  height: 50vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+.module-classifieds2 [classifieds2-slider] {
+  height: 100%;
+}
+
+.module-classifieds2.classifieds2-slider {
+  height: 100%;
+  padding: 0 !important;
+}
+
+.module-classifieds2.classifieds2-slider ul[rn-carousel] {
+  height: 100%;
+}
+
+.module-classifieds2.classifieds2-slider ul[rn-carousel] li>div {
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.module-classifieds2.classifieds2-slider div[rn-carousel-indicators] {
+  text-align: center;
+  background-color: transparent;
+  position: relative;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+}
+
+.module-classifieds2.classifieds2-slider div[rn-carousel-indicators] div.rn-carousel-indicator span {
+  font-size: 16px;
+  margin: 0 4px;
+  color: #fff;
+}
+
+.module-classifieds2.classifieds2-slider div[rn-carousel-indicators] div.rn-carousel-indicator span.active {
+  color: rgba(239, 71, 58, 1);
+}
+
+.module-classifieds2.advert-view .advert-like {
+  font-size: 28px;
+}
+
+.module-classifieds2.advert-view .like-active {
+  color: #9c1912;
+}
+
+.module-classifieds2.advert-view .like-inactive {
+  color: #696969;
+}
+
+.module-classifieds2.advert-view .advert-price {
+  font-size: 17px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.module-classifieds2.advert-view .advert-description {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.module-classifieds2.advert-view .advert-description * {
+  font-size: 16px;
+}
+
+.module-classifieds2.advert-view .item.item-image-gallery {
+  height: 50vh !important;
+}
+
+.module-classifieds2.advert-view .sb-cms-image ul[rn-carousel] li>div {
+  height: 100% !important;
+}
+
+.module-classifieds2.advert-view .list {
+  margin-bottom: 8px;
+}
+
+.module-classifieds2.advert-view .classifieds2-cart-quantity {
+  margin-left: 5px;
+}
+
+.module-classifieds2.advert-view ion-header-bar {
+  background: transparent;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(125, 185, 232, 0) 100%);
+  border: 0;
+  text-shadow: 1px 1px 2px grey;
+}
+
+.module-classifieds2.advert-view ion-header-bar i.icon:before {
+  text-shadow: 1px 1px 2px grey;
+}
+
+.module-classifieds2.advert-view ion-header-bar .classifieds2_font:before {
+  text-shadow: 1px 1px 2px grey;
+}
+
+.module-classifieds2.advert-view ion-content {
+  top: 0 !important;
+  bottom: 44px !important;
+}
+
+.module-classifieds2.advert-view ion-footer-bar {
+  padding: 0;
+  border: 0;
+  box-shadow: 0 0 7px grey;
+}
+
+.module-classifieds2.advert-view ion-footer-bar button {
+  border: 0;
+  margin: 0;
+}
+
+.module-classifieds2.advert-view ion-footer-bar button.button-bookmark,
+.module-classifieds2.advert-view ion-footer-bar button.button-call,
+.module-classifieds2.advert-view ion-footer-bar button.button-message {
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.module-classifieds2.advert-view ion-footer-bar button.button-bookmark i.icon :before,
+.module-classifieds2.advert-view ion-footer-bar button.button-call i.icon :before,
+.module-classifieds2.advert-view ion-footer-bar button.button-message i.icon :before {
+  font-size: 16px;
+}
+
+.module-classifieds2.advert-view ion-footer-bar .action-quantity-container {
+  width: 152px;
+  overflow: hidden;
+  display: flex;
+}
+
+.module-classifieds2.advert-view ion-footer-bar .action-quantity {
+  width: 44px;
+  height: 44px;
+  display: inline-block;
+  font-size: 26px;
+  line-height: 26px;
+  padding: 0;
+  padding-bottom: 6px;
+}
+
+.module-classifieds2.advert-view ion-footer-bar .item-quantity {
+  width: 64px;
+  height: 44px;
+  display: inline-block;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  padding: 0;
+  /* Chrome, Safari, Edge, Opera */
+  /* Firefox */
+}
+
+.module-classifieds2.advert-view ion-footer-bar .item-quantity::-webkit-outer-spin-button,
+.module-classifieds2.advert-view ion-footer-bar .item-quantity::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.module-classifieds2.advert-view ion-footer-bar .item-quantity[type=number] {
+  -moz-appearance: textfield;
+}
+
+@media screen and (orientation: portrait) {
+  /** Maps section */
+  .module-classifieds2 .classifieds2-map .info-window {
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    padding: 0 2vw;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  /** Maps section */
+  .module-classifieds2 .classifieds2-map .info-window {
+    width: 50vw;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0 2vw;
+  }
+}
+
+#baguetteBox-overlay {
+  user-select: all;
+  pointer-events: all;
+}
+
+.classifieds2-location-action:before {
+  font-size: 26px !important;
+}
+
+.layout-l1 .has-footer-fixed .module-classifieds2 .classifieds2-map #crMap {
+  bottom: 0;
+}
+
+.classifieds .ng-hide-animate,
+.classifieds.ng-hide-animate,
+.classifieds .ng-hide,
+.classifieds.ng-hide {
+  -webkit-transition: none !important;
+  transition: none !important;
+  -webkit-animation: none 0;
+  animation: none 0;
+}
+
+#classifieds_subheader .ng-hide-animate,
+#classifieds_subheader.ng-hide-animate,
+#classifieds_subheader .ng-hide,
+#classifieds_subheader.ng-hide {
+  -webkit-transition: none !important;
+  transition: none !important;
+  -webkit-animation: none 0;
+  animation: none 0;
+}
+
+#classifieds_footer .ng-hide-animate,
+#classifieds_footer.ng-hide-animate,
+#classifieds_footer .ng-hide,
+#classifieds_footer.ng-hide {
+  -webkit-transition: none !important;
+  transition: none !important;
+  -webkit-animation: none 0;
+  animation: none 0;
+}
+
+.classifieds .fab {
+  border: none;
+  font-size: 1.5em;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  -webkit-box-shadow: 2px 3px 3px 0 rgba(41, 41, 41, 0.3);
+  -moz-box-shadow: 2px 3px 3px 0 rgba(41, 41, 41, 0.3);
+  box-shadow: 2px 3px 3px 0 rgba(41, 41, 41, 0.3);
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.classifieds .fab ion-spinner>svg {
+  margin-top: 11px;
+}
+
+.classifieds #mapContainer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.classifieds #map {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.classifieds #map .button {
+  min-height: 24px;
+  max-height: 24px;
+  padding: 5px;
+  line-height: 14px;
+  font-size: 12px !important;
+}
+
+#classifieds_subheader {
+  height: 50px;
+  border-top-color: transparent;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-start;
+  padding-top: 9px;
+  top: 44px;
+  transition: height 0.28s ease 0.035s;
+}
+
+#classifieds_subheader .buttons-right {
+  margin-top: -2px;
+  margin-left: 12px;
+  opacity: 1;
+  transition: opacity 0.375s, margin-right 0.45s;
+}
+
+#classifieds_subheader .buttons-right .icon {
+  margin: -7px;
+}
+
+#classifieds_subheader .buttons-right .icon:before {
+  line-height: 29px !important;
+  margin-left: -2px;
+}
+
+#classifieds_subheader .buttons-right .button-bar .button:first-child {
+  border-radius: 4px 0 0 4px;
+}
+
+#classifieds_subheader .buttons-right .button-bar .button:last-child {
+  border-radius: 0 4px 4px 0;
+}
+
+.platform-ios.platform-cordova:not(.fullscreen) #classifieds_subheader {
+  top: 64px;
+}
+
+#classifieds_subheader.expanded {
+  top: 0;
+  height: 100%;
+  padding-top: 53px;
+  padding-bottom: 39px;
+  transition-delay: 0;
+}
+
+.platform-ios.platform-cordova:not(.fullscreen) #classifieds_subheader.expanded {
+  top: 0;
+  padding-top: 73px;
+  padding-bottom: 40px;
+}
+
+#classifieds_subheader .item-input-wrapper {
+  width: 100%;
+  transition: width 0.3s;
+}
+
+#classifieds_subheader.expanded .buttons-right {
+  opacity: 0;
+  margin-right: -80px;
+}
+
+#classifieds_subheader form {
+  width: 100%;
+}
+
+#classifieds_subheader .search_row {
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease 0.05s;
+  margin-left: 0;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+#classifieds_subheader ion-content {
+  height: calc(100vh - 100px);
+  width: 100vw;
+  margin-top: 46px;
+  margin-bottom: 100px;
+}
+
+#classifieds_subheader.expanded .search_row {
+  opacity: 1;
+}
+
+#classifieds_subheader #search_filters {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+#classifieds_subheader #search_filters label {
+  font-weight: 500;
+}
+
+#classifieds_subheader #search_filters .item {
+  width: 150px;
+  flex-grow: 1;
+}
+
+#classifieds_footer .button.small {
+  max-width: 32px;
+  padding: 1px 6px;
+}
+
+#classifieds_footer .button .icon:before,
+#classifieds_footer .button:before {
+  line-height: 31px !important;
+  padding-left: 0 !important;
+}
+
+#classifieds_subheader #search_filters .item input:not([type="radio"]):not([type="checkbox"]),
+#classifieds_subheader #search_filters .item select {
+  width: 100%;
+}
+
+#classifieds_subheader #search_filters .full-width {
+  width: 100%;
+}
+
+#classifieds_subheader #search_filters #withs {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#classifieds_subheader #search_filters #withs label.with {
+  font-weight: 400;
+  display: block;
+  padding: 10px;
+  line-height: 20px;
+  flex-grow: 1;
+}
+
+.platform-android #classifieds_subheader #search_filters #withs label input,
+.platform-ios #classifieds_subheader #search_filters #withs label input,
+.platform-android #classifieds_subheader #bookmarked_ads,
+.platform-ios #classifieds_subheader #bookmarked_ads {
+  vertical-align: bottom;
+  width: 25px;
+  height: 25px;
+}
+
+#classifieds_subheader #search_filters #withs label input,
+#classifieds_subheader #bookmarked_ads {
+  margin-bottom: -3px;
+  margin-right: 3px;
+}
+
+#classifieds_footer {
+  transition: bottom 0.1s;
+}
+
+#classifieds_footer.search_expanded {
+  bottom: -45px;
+  transition: bottom 0.1s ease 0.2s;
+}
+
+.classifieds {
+  /** Maps section */
+}
+
+@media screen and (orientation: portrait) {
+  .classifieds .info-window {
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    padding: 0 2vw;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  .classifieds {
+    /** Maps section */
+  }
+  .classifieds .info-window {
+    width: 50vw;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0 2vw;
+  }
+  .classifieds .info-window .ad-picture {
+    display: none;
+  }
+}
+
+.classifieds .info-window .item {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: -1px 0 !important;
+  border-top: 0;
+  border-bottom: 0;
+}
+
+.classifieds .info-window .info-window-icon {
+  padding: 10px;
+  border-bottom: 0;
+}
+
+.classifieds .info-window .info-window-icon span {
+  font-size: 0.85rem;
+  font-weight: bold;
+  width: 85%;
+  display: inline-block;
+}
+
+.classifieds .info-window .info-window-icon span.info-window-title {
+  padding-left: 8px;
+  padding-bottom: 6px;
+}
+
+.classifieds .info-window .info-window-icon span.info-window-more,
+.classifieds .info-window .info-window-icon span.info-window-distance {
+  font-size: 0.7rem;
+  width: auto;
+}
+
+.classifieds .info-window .info-window-icon span.info-window-distance {
+  padding-left: 8px;
+}
+
+.classifieds .info-window .info-window-icon i.info-close {
+  position: absolute;
+  right: 10px;
+  top: 8px;
+}
+
+.classifieds .sb-cms-address-label {
+  display: none !important;
+}
+
+.classifieds .sb-cms-block-address .item {
+  border-top: 0 !important;
+  border-bottom: 0 !important;
+  margin: 0 !important;
+}
+
+.classifieds .sb-cms-block-address .item a,
+.classifieds .sb-cms-block-address .item p {
+  font-size: 0.9rem !important;
+  line-height: 1.2rem !important;
+  text-decoration: none !important;
+}
+
+.classifieds .sb-cms-block-address .item i.icon {
+  font-size: 1.25rem !important;
+  opacity: 0.75 !important;
+}
+
+.classifieds .block-email .item {
+  border-top: 0 !important;
+  border-bottom: 0 !important;
+  margin: 0 !important;
+}
+
+.classifieds .block-email .item a,
+.classifieds .block-email .item p {
+  font-size: 0.9rem !important;
+  line-height: 1.2rem !important;
+  text-decoration: none !important;
+}
+
+.classifieds .block-email .item i.icon {
+  font-size: 1.25rem !important;
+  opacity: 0.75 !important;
+}

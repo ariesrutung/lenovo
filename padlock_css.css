@@ -1,0 +1,91 @@
+/*Padlock*/
+ion-view[state="padlock-view"] {
+  z-index: 9 !important;
+}
+
+ion-view[state="padlock-view"] ion-content {
+  top: 0 !important;
+}
+
+ion-view[state="padlock-view"] div.scroll>div.card.padlock {
+  background-color: blue;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  padding-top: 65px;
+  background-image: url(https://cdn131.picsart.com/319115594097201.jpg?type=webp&to=min&r=640);
+  background-size: cover;
+  background-position-x: center;
+}
+
+ion-view[state="padlock-view"] .card .item.item-custom {
+  background-color: transparent;
+  border: 0;
+  color: white !important;
+  text-align: center;
+  padding-left: 12px;
+}
+
+ion-view[state="padlock-view"] div.card.padlock>div.item.item-text-wrap.item-custom {
+  display: none;
+}
+
+ion-view[state="padlock-view"] div.card.padlock>div.item.item-body.item-custom.text-center {
+  display: none;
+}
+
+i.icon.ion-ios-paper-outline,
+i.icon.ion-ios-person-outline {
+  display: none;
+}
+
+i.icon.ion-locked {
+  visibility: hidden;
+}
+
+ion-view[state="padlock-view"] div.card.padlock div[ng-if="description"]:before {
+  visibility: visible;
+  content: "Sorry, this feature is under construction";
+  color: white;
+  position: relative;
+  font-size: 25px;
+  letter-spacing: 1px;
+  display: block;
+  margin-bottom: 10px;
+  white-space: normal;
+  line-height: 30px;
+}
+
+ion-view[state="padlock-view"] div.card.padlock>div:nth-child(3)[ng-show="!isLoading"] {
+  position: relative;
+  top: 3vh;
+}
+
+ion-view[state="padlock-view"] div.card.padlock div[ng-click="padlockLogin()"] {
+  visibility: hidden;
+}
+
+ion-view[state="padlock-view"] div.card.padlock div[ng-click="padlockLogin()"]:after {
+  visibility: visible;
+  content: "Get Started";
+  position: absolute;
+  background-color: white;
+  width: 35%;
+  border-radius: 10px;
+  color: black !important;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  left: 50px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  line-height: 44px;
+}
+
+ion-view[state="padlock-view"] div.card.padlock div[ng-if="description"] {
+  letter-spacing: 0.5px;
+  text-align: left;
+  padding-left: 50px !important;
+  padding-right: 20vw;
+  line-height: 25px;
+}

@@ -1,0 +1,413 @@
+.module-job {
+  /** Search in page */
+}
+
+.module-job .search-action {
+  position: fixed;
+  z-index: 100;
+}
+
+.module-job .search-button {
+  position: fixed;
+  bottom: 0;
+  z-index: 100;
+  margin: 0 !important;
+}
+
+.module-job .svg_filter_text {
+  fill: rgba(255, 255, 255, 1);
+}
+
+.module-job .svg_filter_bg {
+  fill: rgba(173, 55, 173, 1);
+}
+
+.module-job .places-filters {
+  margin-bottom: 0 !important;
+}
+
+.module-job .places-filters .card {
+  padding: 0 !important;
+  margin: 1vw !important;
+}
+
+.module-job .category-item-block {
+  width: calc(100% / 3);
+  padding: 1vw;
+}
+
+.module-job .category-item-block .category-item {
+  border: 2px solid transparent !important;
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center 30%;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.module-job .category-item-block .category-item img {
+  width: 100%;
+}
+
+.module-job .category-item-block .category-item h4 {
+  position: relative;
+  bottom: 0.5rem;
+  text-align: center;
+  font-size: 0.6875rem;
+}
+
+.module-job .category-item-block .category-item.category-selected {
+  border: 2px solid rgba(68, 68, 68, 1) !important;
+}
+
+.module-job .categories-container {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  padding: 0 !important;
+}
+
+.module-job i.clear-text {
+  position: absolute;
+  right: 1.5rem;
+  top: calc(50% - .625rem);
+  font-size: 1.25rem;
+}
+
+@media screen and (orientation: portrait) {
+  .module-job .search-action {
+    width: 9vh;
+    height: 9vh;
+    bottom: 2vh;
+    right: 2vh;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  .module-job .search-action {
+    width: 9vw;
+    height: 9vw;
+    bottom: 2vw;
+    right: 2vw;
+  }
+}
+
+.module-job .job-search {
+  padding: 0;
+  border: 0;
+}
+
+.module-job .job-search i.icon {
+  font-size: 24px;
+  margin-left: 4px;
+}
+
+.module-job .job-search .textual {
+  width: 100%;
+}
+
+.module-job .job-search .place {
+  float: right;
+  max-width: 200px;
+  font-size: 14px;
+  overflow: hidden;
+}
+
+.module-job .job-search .place i.icon {
+  font-size: 22px;
+  margin-right: 6px;
+}
+
+.module-job .job-search .more {
+  float: right;
+  max-width: 30px;
+}
+
+.module-job .job-search .textual,
+.module-job .job-search .place,
+.module-job .job-search .more {
+  padding: 0;
+  border-radius: 0;
+  border: 0;
+  background-color: transparent;
+}
+
+.module-job .item.item-custom .row {
+  padding: 0 !important;
+}
+
+.module-job .item.item-custom .row .col {
+  padding: 0 !important;
+}
+
+.module-job .item-place {
+  padding: 6px 12px;
+}
+
+.module-job .item-place .row {
+  padding: 0 !important;
+}
+
+.module-job .item-place .row .col {
+  padding: 0 !important;
+}
+
+.module-job .item-place p.subtitle {
+  font-size: 13px;
+  opacity: 0.7;
+}
+
+.module-job .item-place p.subtitle-company {
+  font-size: 13px;
+  opacity: 0.5;
+}
+
+.module-job .job-company-logo {
+  position: absolute;
+  width: 25%;
+  left: 26px;
+  bottom: 34px;
+  z-index: 1000;
+  border: 4px solid rgba(255, 255, 255, 0.85);
+  border-radius: 2px;
+  background: white;
+}
+
+.module-job .job-company-header {
+  text-align: left;
+}
+
+.module-job .job-company-header p {
+  font-weight: normal;
+}
+
+.module-job .job-company-header p.employee {
+  margin-left: 25vw;
+  padding-left: 26px;
+}
+
+.module-job .job-company-header p.location {
+  margin-left: 12px;
+}
+
+.module-job .job-company-header p i {
+  margin-right: 6px;
+}
+
+.module-job .job-company-header h2 {
+  margin-left: 25vw !important;
+  padding-left: 26px !important;
+}
+
+.module-job .item-thumbnail-custom {
+  padding-left: 76px;
+}
+
+.module-job .item-thumbnail-custom img {
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  height: 60px;
+  border: 3px solid rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+}
+
+.module-job .job-distance {
+  float: right;
+}
+
+.module-job .job-more label.item.item-checkbox.ng-valid {
+  border: 0;
+  width: 50%;
+  float: left;
+  padding: 4px 4px 4px 26px;
+  font-size: 14px;
+}
+
+.module-job .job-more .checkbox input,
+.module-job .job-more .checkbox-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.module-job .job-more .checkbox.checkbox-input-hidden.disable-pointer-events.checkbox-circle {
+  padding: 0;
+}
+
+.module-job .job-more i.checkbox-icon ::before {
+  margin-left: -6px;
+  margin-top: 10px;
+  border-radius: 0;
+}
+
+.module-job .job-more i.checkbox-icon ::after {
+  margin-left: -8px;
+  margin-top: 0px;
+}
+
+.module-job .job-more input.ng-valid.ng-touched.ng-dirty.ng-valid-parse {
+  width: 100%;
+  margin-top: 16px;
+}
+
+.module-job .job-padding {
+  padding: 0 20%;
+}
+
+.module-job .platform-android .job-more i.checkbox-icon::before {
+  margin-top: 5px;
+}
+
+.module-job .platform-android .job-more i.checkbox-icon::after {
+  margin-left: -10px;
+  margin-top: -1px;
+}
+
+.module-job .platform-android .job-more label.item.item-checkbox.ng-valid {
+  margin-bottom: 12px;
+}
+
+.module-job .job-contact .icon-form {
+  margin-right: 10px;
+}
+
+.module-job .job-contact textarea {
+  min-height: 120px;
+}
+
+.module-job .ta-root button {
+  width: 10.6%;
+  background: none;
+}
+
+.module-job .ta-root .btn-group:first-of-type {
+  margin-bottom: 4px;
+}
+
+.module-job .ta-root .btn-group button {
+  border: 1px solid grey;
+  border-width: 1px 0 1px 1px;
+}
+
+.module-job .ta-root .btn-group button:first-of-type {
+  border-width: 1px 0 1px 1px;
+  border-radius: 2px 0 0 2px;
+}
+
+.module-job .ta-root .btn-group button:last-of-type {
+  border-width: 1px 1px 1px 1px;
+  border-radius: 0 2px 2px 0;
+}
+
+.module-job .ta-root .ta-editor * {
+  overflow: auto;
+  text-overflow: clip;
+  white-space: normal;
+}
+
+.module-job .ta-text.ta-editor {
+  margin-right: 4.6%;
+  padding: 0;
+}
+
+.module-job .ta-editor.ta-html,
+.module-job .ta-scroll-window.form-control {
+  min-height: 200px;
+  height: 200px;
+}
+
+.module-job .job-line-return {
+  text-overflow: clip;
+  white-space: initial;
+}
+
+.module-job .job-small-text {
+  font-size: 12px;
+}
+
+.module-job .job-inactive {
+  background-color: #ac2925;
+  color: white;
+  text-transform: uppercase;
+  padding: 0 30px 30px 30px;
+  font-size: 11px;
+  font-weight: bold;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  text-align: center;
+  position: absolute;
+  bottom: -10px;
+  right: -42px;
+  z-index: 100;
+}
+
+.module-job button.create-job {
+  margin-top: -7px;
+  background: transparent;
+  border: none;
+  color: inherit;
+}
+
+.module-job .job-admin span {
+  font-size: 13px;
+}
+
+.module-job .job-card-margin {
+  margin-top: 6px;
+  margin-bottom: 0;
+}
+
+.module-job .job-card-margin:first-of-type {
+  margin-top: 12px;
+}
+
+.module-job .job-card-margin:last-of-type {
+  margin-bottom: 12px;
+}
+
+.module-job .add-image-icon {
+  font-size: 18px;
+}
+
+.module-job .remove-image-list,
+.module-job .remove-image-card {
+  position: absolute;
+  right: 6px;
+  top: 6px;
+}
+
+.module-job .remove-image-list i.icon,
+.module-job .remove-image-card i.icon {
+  font-size: 26px;
+}
+
+
+/** Special case footer fixed */
+
+@media screen and (orientation: landscape) {
+  .has-footer-fixed .module-job .search-action {
+    bottom: calc(2vw + 60px);
+  }
+}
+
+@media screen and (orientation: portrait) {
+  .has-footer-fixed .module-job .search-action {
+    bottom: calc(2vh + 60px);
+  }
+}
+
+
+/** Header icons are outside scope, needs scoped name. */
+
+.job-icon-small:before {
+  font-size: 20px !important;
+}
+
+.job-location-action:before {
+  font-size: 26px !important;
+}
+

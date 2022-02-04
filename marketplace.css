@@ -1,0 +1,406 @@
+/*Marketplace home*/
+ion-view[state="marketplace-home"]>ion-content {
+  background-color: #444 !important;
+  background-image: none !important;
+}
+
+ion-view[state="marketplace-home"]>ion-content div.scroll>div.list:nth-child(1):after {
+  content: "Access restricted for our authorised seller only.";
+  color: white;
+  position: absolute;
+  display: block;
+  width: 95%;
+  height: 50px;
+  margin: auto;
+  right: 0;
+  left: 0;
+  top: 50px;
+  letter-spacing: 0.5px;
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 1px white solid;
+}
+
+ion-view[state="marketplace-home"]>ion-content div.scroll>div.list:nth-child(2) {
+  display: none;
+}
+
+ion-view[state="marketplace-home"]>ion-content div.scroll>div.list:nth-child(3) div>ion-item {
+  text-align: center;
+  background-image: url(https://i.imgur.com/eoycsNX.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-y: -20%;
+  box-shadow: none;
+  border-radius: 30px 0;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+ion-view[state="marketplace-home"]>ion-content div.scroll>div.list:nth-child(3) div>ion-item>div {
+  text-align: center !important;
+}
+
+ion-view[state="marketplace-home"]>ion-content div.scroll>div.list:nth-child(3) div>ion-item>div.store-name {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  margin-bottom: 7vh;
+  padding-left: 60%;
+}
+
+ion-view[state="marketplace-home"]>ion-content div.scroll>div.list:nth-child(3) div>ion-item>div[ng-click="manageOrders()"] {
+  border: 0;
+  border-radius: 5px;
+  background-color: #12d584;
+  margin-right: 2.5px;
+  margin-left: 2.5px;
+}
+
+ion-view[state="marketplace-home"]>ion-content div.scroll>div.list:nth-child(3) div>ion-item>div[ng-click="manageProducts()"] {
+  border: 0;
+  border-radius: 5px;
+  background-color: #11c1f3;
+  margin-left: 2.5px;
+  margin-right: 2.5px;
+}
+
+ion-view[state="marketplace-home"]>ion-content div.scroll>div.list:nth-child(3) div>ion-item>div[ng-click="showQR()"] {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  text-align: center;
+  border: 1px darkred solid;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  background-color: #eee;
+  margin-left: 2.5px;
+  margin-right: 2.5px;
+}
+
+ion-view[state="marketplace-home"]>ion-content div.scroll>div.list:nth-child(3) div>ion-item h3 {
+  display: none;
+}
+
+ion-view[state="marketplace-home"] i.ion.ion-compose,
+ion-view[state="marketplace-home"] i.ion.ion-pricetags {
+  display: none;
+}
+
+
+/*Marketplace store setting*/
+ion-view[state="marketplace-save-store"] .scroll {
+  display: flex;
+  flex-direction: column;
+  height: initial;
+  max-height: 10000px;
+}
+
+ion-view[state="marketplace-save-store"]>ion-content {
+  background-color: #444 !important;
+}
+
+ion-view[state="marketplace-save-store"]>ion-content form[name="form"] {
+  width: 95%;
+  margin: auto;
+}
+
+ion-view[state="marketplace-save-store"]>ion-content form[name="form"]>div.list {
+  margin-bottom: 80px;
+}
+
+ion-view[state="marketplace-save-store"] .list .item-divider.item-divider-custom {
+  background-color: transparent;
+}
+
+ion-view[state="marketplace-save-store"] .list .item-divider.item-divider-custom h2 {
+  color: white;
+}
+
+ion-view[state="marketplace-save-store"] .list .item.item-custom {
+  text-align: left;
+  border: 0;
+  opacity: 0.8;
+  margin-bottom: 10px;
+  border-radius: 7px;
+}
+
+ion-view[state="marketplace-save-store"] form[name="form"] ion-item[ng-if="store_data.picture"] {
+  background-color: transparent;
+}
+
+ion-view[state="marketplace-save-store"]>ion-content form[name="form"]>div.list>button {
+  background-color: darkred;
+  border: 0;
+  color: white;
+  letter-spacing: 0.5px;
+}
+
+ion-view[state="marketplace-save-store"]>ion-content form[name="form"] div:nth-child(29) {
+  display: none;
+}
+
+
+/*Marketplace order*/
+ion-view[state="marketplace-orders"] ion-content {
+  background-color: #444 !important;
+}
+
+ion-view[state="marketplace-orders"] .scroll {
+  display: flex;
+  flex-direction: column;
+  height: initial;
+  max-height: 10000px;
+}
+
+ion-view[state="marketplace-orders"] ion-content div.scroll>div.list {
+  margin-top: 20px;
+  margin-bottom: 80px;
+}
+
+ion-view[state="marketplace-orders"] .list .item.item-custom {
+  text-align: left !important;
+}
+
+ion-view[state="marketplace-orders"] div[ng-repeat="item in orders"]>div.item-custom.card.item {
+  border: 0;
+  border-radius: 20px 0px;
+  background-color: #555;
+  padding: 0 !important;
+}
+
+ion-view[state="marketplace-orders"] div.item-custom.card.item>div.item.item-divider.item-divider-custom {
+  margin-top: 0px !important;
+  position: relative;
+  top: -10px;
+  background-color: darkred;
+}
+
+ion-view[state="marketplace-orders"] div.item-custom.card.item>div.item.item-divider.item-divider-custom span {
+  color: white;
+}
+
+
+/*marketplace edit order*/
+ion-view[state="marketplace-edit-order"] ion-content {
+  background-color: #444 !important;
+}
+
+ion-view[state="marketplace-edit-order"] ion-content .scroll {
+  display: flex;
+  flex-direction: column;
+  height: initial;
+  max-height: 10000px;
+}
+
+ion-view[state="marketplace-edit-order"] form[name="form"] {
+  width: 95%;
+  margin: auto;
+}
+
+ion-view[state="marketplace-edit-order"] .list .item-divider.item-divider-custom {
+  background-color: transparent;
+}
+
+ion-view[state="marketplace-edit-order"] .list .item-divider.item-divider-custom h2,
+ion-view[state="marketplace-edit-order"] .list .item-divider.item-divider-custom span {
+  color: white;
+}
+
+ion-view[state="marketplace-edit-order"] .list .item.item-custom {
+  background-color: #eee;
+  opacity: 0.8;
+  border: 0;
+  text-align: left;
+  margin-bottom: 10px;
+  border-radius: 7px;
+}
+
+ion-view[state="marketplace-edit-order"] form[name="form"] div.item-custom.card.item.order-details {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+ion-view[state="marketplace-edit-order"] form[name="form"]>div.list {
+  margin-bottom: 80px !important;
+}
+
+ion-view[state="marketplace-edit-order"] form[name="form"]>div.list>button {
+  background-color: darkred;
+  color: white;
+  letter-spacing: 0.5px;
+  border: 0;
+}
+
+ion-view[state="marketplace-edit-order"] ion-content div.scroll form[name="form"] label:nth-child(14) {
+  display: none;
+}
+
+ion-view[state="marketplace-edit-order"] ion-content div.scroll form[name="form"] label:nth-child(15) {
+  display: none;
+}
+
+ion-view[state="marketplace-edit-order"] ion-content div.scroll form[name="form"] label:nth-child(16) {
+  display: none;
+}
+
+ion-view[state="marketplace-edit-order"] ion-content div.scroll form[name="form"] label:nth-child(17) {
+  display: none;
+}
+
+ion-view[state="marketplace-edit-order"] ion-content div.scroll form[name="form"] div:nth-child(4) {
+  display: none;
+}
+
+
+/*Marketplace product*/
+ion-view[state="marketplace-products"] ion-content {
+  background-color: #444 !important;
+}
+
+ion-view[state="marketplace-products"] .scroll {
+  display: flex;
+  flex-direction: column;
+  height: initial;
+  max-height: 10000px;
+}
+
+ion-view[state="marketplace-products"] ion-content div.scroll>div.list {
+  margin-top: 20px !important;
+  margin-bottom: 80px !important;
+}
+
+ion-view[state="marketplace-products"] .list .item.item-custom {
+  background-color: #eee;
+  text-align: left;
+  border: 0;
+  border-radius: 20px 0;
+  margin-bottom: 15px;
+}
+
+ion-view[state="marketplace-products"] .module-marketplace.marketplace-list-l1 .item .post-author.item-avatar {
+  padding-left: 60px !important;
+  min-height: 60px !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  border-bottom: 1px #ccc solid !important;
+}
+
+ion-view[state="marketplace-products"] .module-marketplace.marketplace-list-l1 .item .post-author h2 {
+  width: fit-content !important;
+  height: 40px !important;
+}
+
+ion-view[state="marketplace-products"] div.item-avatar.post-author>h2:after {
+  content: " EDIT >>";
+  color: darkred;
+  font-weight: bold;
+  position: relative;
+  display: block;
+  height: 20px;
+  line-height: 20px;
+  width: fit-content;
+  letter-spacing: 0.5px;
+}
+
+ion-view[state="marketplace-products"] .module-marketplace.marketplace-list-l1 .item .post-body {
+  padding: 10px;
+}
+
+ion-view[state="marketplace-products"] div.item-avatar.post-author>h2 {
+  width: fit-content !important;
+  height: 40px !important;
+}
+
+ion-view[state="marketplace-products"] ion-item>div.item-avatar.post-author {
+  padding-left: 60px !important;
+  min-height: 60px !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  border-bottom: 1px #ccc solid !important;
+}
+
+
+/*marketplace update product*/
+ion-view[state="marketplace-update-product"] ion-content {
+  background-color: #444 !important;
+}
+
+ion-view[state="marketplace-update-product"] ion-content .scroll {
+  display: flex;
+  flex-direction: column;
+  height: initial;
+  max-height: 10000px;
+}
+
+ion-view[state="marketplace-update-product"] form[name="form"] {
+  width: 95%;
+  margin: auto;
+}
+
+ion-view[state="marketplace-update-product"] .list .item-divider.item-divider-custom {
+  background-color: transparent;
+}
+
+ion-view[state="marketplace-update-product"] .list .item-divider.item-divider-custom h2,
+ion-view[state="marketplace-update-product"] .list .item-divider.item-divider-custom span {
+  color: white;
+}
+
+ion-view[state="marketplace-update-product"] .list .item.item-custom {
+  background-color: #eee;
+  opacity: 0.8;
+  border: 0;
+  text-align: left;
+  margin-bottom: 10px;
+  border-radius: 7px;
+}
+
+ion-view[state="marketplace-update-product"] form[name="form"] div.item-custom.card.item.order-details {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+ion-view[state="marketplace-update-product"] form[name="form"]>div.list {
+  margin-bottom: 80px !important;
+}
+
+ion-view[state="marketplace-update-product"] form[name="form"]>div.list>button {
+  background-color: darkred;
+  color: white;
+  letter-spacing: 0.5px;
+  border: 0;
+}
+
+ion-view[state="marketplace-update-product"] form[name="form"] ion-item.item-image.item-custom.item {
+  background-color: transparent;
+}
+
+
+ion-view[state="marketplace-save-store"] ion-content div.scroll form[name="form"] label:nth-child(18) {
+  display: none;
+}
+
+ion-view[state="marketplace-save-store"] ion-content div.scroll form[name="form"] label:nth-child(19) {
+  display: none;
+}
+
+ion-view[state="marketplace-save-store"] ion-content div.scroll form[name="form"] label:nth-child(20) {
+  display: none;
+}
+
+ion-view[state="marketplace-save-store"] ion-content div.scroll form[name="form"] label:nth-child(21) {
+  display: none;
+}
+
+ion-view[state="marketplace-save-store"] ion-content div.scroll form[name="form"] div div div.item.item-custom div label.checkbox-custom.item.item-checkbox.ng-not-empty.ng-valid {
+  display: none;
+}
+
+ion-view[state="marketplace-save-store"] ion-content div.scroll form[name="form"] label:nth-child(27) {
+  display: none;
+}
+
+ion-view[state="marketplace-save-store"] ion-content div.scroll form[name="form"] label:nth-child(27) {
+  display: none;
+}
+

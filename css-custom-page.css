@@ -1,0 +1,105 @@
+/* Home*/
+ion-view ion-content {
+  bottom: 0 !important;
+}
+
+ion-view[state="cms-view"] ion-content {
+  background-image: url(https://i.imgur.com/8aI8loR.png) !important;
+}
+
+ion-view[state="cms-view"] .scroll {
+  display: flex;
+  flex-direction: column;
+  height: initial;
+  max-height: 10000px;
+}
+
+ion-view[state="cms-view"] ion-content div.scroll div[ng-repeat="block in blocks"]>div>div.card[ng-switch-when="text"] {
+  box-shadow: none;
+  margin: 0px 10px 0px 10px;
+}
+
+ion-view[state="cms-view"] ion-content div.scroll div[ng-repeat="block in blocks"]>div>div.card>div>div.item.item-text-wrap.item-custom.sb-cms-text {
+  background-color: transparent;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+ion-view[state="cms-view"] ion-content div.scroll div[ng-repeat="block in blocks"]>div>div.card>div>div.item.item-text-wrap.item-custom.sb-cms-text>div.content.ng-binding>p {
+  color: white;
+  font-size: 14px;
+  letter-spacing: 0.8px;
+  font-weight: bold;
+}
+
+ion-view[state="cms-view"] ion-content div.scroll div[ng-repeat="block in blocks"]>div>div.card.no-shadow[ng-switch-when="source"] {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+ion-view[state="cms-view"] ion-content div.scroll div[ng-repeat="block in blocks"]:last-child>div>div.card.no-shadow[ng-switch-when="source"] {
+  margin-bottom: 70px;
+}
+
+ion-view[state="cms-view"] ion-content div.scroll div[ng-repeat="block in blocks"]>div>div.card.no-shadow[ng-switch-when="source"]>div>div.item.item-custom {
+  background-color: transparent;
+  padding: 0;
+}
+
+ion-view[state="cms-view"] ion-content div.scroll>div:nth-child(11)>div>div[ng-switch-when="source"] {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  right: 5px;
+  background-image: url(https://i.imgur.com/4PytH97.png);
+  background-size: 50%;
+  top: 60px;
+  z-index: 9999;
+  margin: 0 !important;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 50%;
+}
+
+ion-view[state="cms-view"] ion-content div.scroll>div:nth-child(3) {
+  margin-top: 60px;
+}
+
+ion-view[state="cms-view"] div.scroll>div[ng-repeat="block in blocks"]>div>div.card[ng-switch-when="slider"] {
+  border-radius: 10px;
+  height: 400px;
+}
+
+ion-view[state="cms-view"] div.scroll>div[ng-repeat="block in blocks"]>div>div.card[ng-switch-when="slider"]>div[gallery="gallery"] {
+  height: 100%;
+}
+
+ion-view[state="cms-view"] div.scroll>div[ng-repeat="block in blocks"]>div>div.card[ng-switch-when="slider"]>div[gallery="gallery"]>div.item.item-image-gallery.item-custom.sb-cms-image {
+  height: 110%;
+}
+
+ion-view[state="cms-view"] .sb-cms-image ul[rn-carousel] {
+  height: 100%;
+}
+
+ion-view[state="cms-view"] .sb-cms-image ul[rn-carousel] li>div {
+  height: 100% !important;
+}
+
+ion-view[state="cms-view"] .sb-cms-image div[rn-carousel-indicators] {
+  bottom: 8%;
+}
+
+ion-view[state="cms-view"] div.scroll>div[ng-repeat="block in blocks"]>div>div.card[ng-switch-when="button"] {
+  padding: 20px;
+  box-shadow: inset 8.41px 8.41px 15px #353535, inset -8.41px -8.41px 15px #535353;
+  border-radius: 10px;
+}
+
+ion-view[state="cms-view"] div.scroll>div[ng-repeat="block in blocks"]>div>div.card[ng-switch-when="button"] a {
+  text-align: center;
+  color: white;
+  letter-spacing: 0.5px;
+  background-color: rgba(255, 255, 255, .35);
+}

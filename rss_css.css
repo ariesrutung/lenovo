@@ -1,0 +1,355 @@
+/** RSS SCSS File */
+.rss-list .design-cover .rss-title {
+  margin: 0 15px 0 0;
+  font-size: 16px;
+  font-weight: bold;
+  white-space: normal;
+}
+
+.rss-list .design-cover .rss-subtitle {
+  white-space: normal;
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+.rss-list .design-cover .rss-date {
+  font-size: 13px;
+  text-align: right;
+}
+
+
+/** Layout 1 */
+.rss-group-l1 .card {
+  margin: 10px;
+}
+
+.rss-group-l1 .item .rss-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 15px;
+  /**white-space: normal;*/
+}
+
+.rss-group-l1 .item .rss-subtitle {
+  /**white-space: normal;*/
+}
+
+.rss-group-l1 .item .rss-date {
+  font-size: 13px;
+  text-align: right;
+}
+
+.rss-group-l1 .item .rss-item-thumbnail {
+  background-size: cover;
+  background-position: center center;
+}
+
+.rss-list-l1 .card {
+  margin: 10px;
+}
+
+.rss-list-l1 .item .rss-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 15px;
+  /**white-space: normal;*/
+}
+
+.rss-list-l1 .item .rss-subtitle {
+  /**white-space: normal;*/
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+.rss-list-l1 .item .rss-date {
+  font-size: 13px;
+  text-align: right;
+}
+
+.rss-list-l1 .item .rss-item-thumbnail {
+  background-size: cover;
+  background-position: center center;
+}
+
+
+/** All three views are the same for now */
+.rss-view-l1 .item-description *,
+.rss-view-l2 .item-description *,
+.rss-view-l3 .item-description * {
+  max-width: 100% !important;
+}
+
+.rss-view-l1 .item-description img,
+.rss-view-l2 .item-description img,
+.rss-view-l3 .item-description img {
+  width: 100%;
+  height: auto;
+}
+
+
+/** Layout 2 */
+.rss-group-l2 .design-card {
+  margin-top: 10px;
+}
+
+.rss-group-l2 .design-card.no-cover,
+.rss-list-l2 .design-card.no-cover {
+  margin-top: 10px;
+}
+
+.rss-group-l2 .design-card .row+.row,
+.rss-list-l2 .design-card .row+.row {
+  margin-top: -12px;
+}
+
+.rss-group-l2 .design-card .list.row .col.col-50,
+.rss-list-l2 .design-card .list.row .col.col-50 {
+  margin: 0 5px;
+  padding: 0;
+  flex: 0 0 calc(50% - 10px);
+  max-width: calc(50% - 10px);
+}
+
+.rss-group-l2 .design-card .list.row .col.col-50 .item.item-body,
+.rss-list-l2 .design-card .list.row .col.col-50 .item.item-body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.rss-group-l2 .design-card .list.row .col.col-50 .item.item-body .item-content,
+.rss-list-l2 .design-card .list.row .col.col-50 .item.item-body .item-content {
+  padding: 10px;
+}
+
+.rss-group-l2 .design-card .list.row .col.col-50 .item.item-body .rss-title,
+.rss-list-l2 .design-card .list.row .col.col-50 .item.item-body .rss-title {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0 15px 0 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.rss-group-l2 .design-card .list.row .col.col-50 .item.item-body .rss-subtitle,
+.rss-list-l2 .design-card .list.row .col.col-50 .item.item-body .rss-subtitle {
+  white-space: normal;
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+.rss-group-l2 .design-card .list.row .col.col-50 .item.item-body .rss-date,
+.rss-list-l2 .design-card .list.row .col.col-50 .item.item-body .rss-date {
+  font-size: 13px;
+  text-align: right;
+}
+
+.rss-group-l2 .design-card .list.row .col.col-50 .item.item-body .rss-item-thumbnail,
+.rss-list-l2 .design-card .list.row .col.col-50 .item.item-body .rss-item-thumbnail {
+  width: calc(50vw - 15px);
+  height: 33vw;
+  background-size: cover;
+  background-position: center center;
+}
+
+.rss-group-l2 .design-list .list.row,
+.rss-list-l2 .design-list .list.row {
+  padding: 0;
+  margin: 0;
+}
+
+.rss-group-l2 .design-list .list.row .col:nth-child(1) .item,
+.rss-list-l2 .design-list .list.row .col:nth-child(1) .item {
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
+}
+
+.rss-group-l2 .design-list .list.row .col:nth-child(2) .item,
+.rss-list-l2 .design-list .list.row .col:nth-child(2) .item {
+  border-right: 0;
+  border-bottom: 0;
+}
+
+.rss-group-l2 .design-list .list.row .col.col-50,
+.rss-list-l2 .design-list .list.row .col.col-50 {
+  margin: 0;
+  padding: 0;
+}
+
+.rss-group-l2 .design-list .list.row .col.col-50 .item.item-body,
+.rss-list-l2 .design-list .list.row .col.col-50 .item.item-body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.rss-group-l2 .design-list .list.row .col.col-50 .item.item-body .item-content,
+.rss-list-l2 .design-list .list.row .col.col-50 .item.item-body .item-content {
+  padding: 10px;
+}
+
+.rss-group-l2 .design-list .list.row .col.col-50 .item.item-body .rss-item-thumbnail,
+.rss-list-l2 .design-list .list.row .col.col-50 .item.item-body .rss-item-thumbnail {
+  width: 50vw;
+  height: 33vw;
+  background-size: cover;
+  background-position: center center;
+}
+
+
+/** Layout 3 */
+.rss-group-l3 .design-card {
+  margin-top: 10px;
+}
+
+.rss-group-l3 .design-card.no-cover,
+.rss-list-l3 .design-card.no-cover {
+  margin-top: 10px;
+}
+
+.rss-group-l3 .design-card .list.row,
+.rss-list-l3 .design-card .list.row {
+  margin-bottom: 10px;
+}
+
+.rss-group-l3 .design-card .list.row .col,
+.rss-list-l3 .design-card .list.row .col {
+  margin: 0 5px;
+  padding: 0;
+}
+
+.rss-group-l3 .design-card .list.row .col .item.item-body,
+.rss-list-l3 .design-card .list.row .col .item.item-body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.rss-group-l3 .design-card .list.row .col .item.item-body .item-content,
+.rss-list-l3 .design-card .list.row .col .item.item-body .item-content {
+  padding: 10px;
+}
+
+.rss-group-l3 .design-card .list.row .col .item.item-body .rss-title,
+.rss-list-l3 .design-card .list.row .col .item.item-body .rss-title {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0 15px 0 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.rss-group-l3 .design-card .list.row .col .item.item-body .rss-subtitle,
+.rss-list-l3 .design-card .list.row .col .item.item-body .rss-subtitle {
+  white-space: normal;
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+.rss-group-l3 .design-card .list.row .col .item.item-body .rss-date,
+.rss-list-l3 .design-card .list.row .col .item.item-body .rss-date {
+  font-size: 13px;
+  text-align: right;
+}
+
+.rss-group-l3 .design-card .list.row .col .item.item-body .rss-item-thumbnail,
+.rss-list-l3 .design-card .list.row .col .item.item-body .rss-item-thumbnail {
+  width: 100vw;
+  height: 30vw;
+  background-size: cover;
+  background-position: center center;
+}
+
+.rss-group-l3 .design-card .list.row .col.col-50,
+.rss-list-l3 .design-card .list.row .col.col-50 {
+  flex: 0 0 calc(50% - 10px);
+  max-width: calc(50% - 10px);
+}
+
+.rss-group-l3 .design-card .list.row .col.col-50 .rss-item-thumbnail,
+.rss-list-l3 .design-card .list.row .col.col-50 .rss-item-thumbnail {
+  width: calc(50vw - 15px) !important;
+  height: 33vw !important;
+}
+
+.rss-group-l3 .design-list .list.row,
+.rss-list-l3 .design-list .list.row {
+  padding: 0;
+  margin: 0;
+}
+
+.rss-group-l3 .design-list .list.row .col:nth-child(1) .item,
+.rss-list-l3 .design-list .list.row .col:nth-child(1) .item {
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
+}
+
+.rss-group-l3 .design-list .list.row .col:nth-child(2) .item,
+.rss-list-l3 .design-list .list.row .col:nth-child(2) .item {
+  border-right: 0;
+  border-bottom: 0;
+}
+
+.rss-group-l3 .design-list .list.row .col,
+.rss-list-l3 .design-list .list.row .col {
+  margin: 0;
+  padding: 0;
+}
+
+.rss-group-l3 .design-list .list.row .col .item.item-body,
+.rss-list-l3 .design-list .list.row .col .item.item-body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.rss-group-l3 .design-list .list.row .col .item.item-body .item-content,
+.rss-list-l3 .design-list .list.row .col .item.item-body .item-content {
+  padding: 10px;
+}
+
+.rss-group-l3 .design-list .list.row .col .item.item-body .rss-title,
+.rss-list-l3 .design-list .list.row .col .item.item-body .rss-title {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0 15px 0 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.rss-group-l3 .design-list .list.row .col .item.item-body .rss-subtitle,
+.rss-list-l3 .design-list .list.row .col .item.item-body .rss-subtitle {
+  white-space: normal;
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+.rss-group-l3 .design-list .list.row .col .item.item-body .rss-date,
+.rss-list-l3 .design-list .list.row .col .item.item-body .rss-date {
+  font-size: 13px;
+  text-align: right;
+}
+
+.rss-group-l3 .design-list .list.row .col .item.item-body .rss-item-thumbnail,
+.rss-list-l3 .design-list .list.row .col .item.item-body .rss-item-thumbnail {
+  width: 100vw;
+  height: 30vw;
+  background-size: cover;
+  background-position: center center;
+}
+
+.rss-group-l3 .design-list .list.row .col-50 .rss-item-thumbnail,
+.rss-list-l3 .design-list .list.row .col-50 .rss-item-thumbnail {
+  width: 50vw !important;
+  height: 33vw !important;
+}
+

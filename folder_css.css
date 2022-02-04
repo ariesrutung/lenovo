@@ -1,0 +1,325 @@
+/*Folder*/
+ion-view[state="folder2-category-list"].module-folder2.folder2-layout2 {
+  z-index: 9 !important;
+}
+
+ion-view[state="folder2-category-list"].module-folder2.folder2-layout2 .card {
+  box-shadow: none;
+}
+
+ion-view[state="folder2-category-list"].module-folder2.folder2-layout2 ion-content {
+  background-color: #eee !important;
+  background-image: none !important;
+  top: 0 !important;
+}
+
+ion-view[state="folder2-category-list"].module-folder2.folder2-layout2 ion-content>div.scroll {
+  display: flex;
+  flex-direction: column;
+}
+
+ion-view[state="folder2-category-list"].module-folder2.folder2-layout2 .scroll {
+  height: initial;
+  max-height: 10000px;
+}
+
+ion-view[state="folder2-category-list"].module-folder2.folder2-layout2 ion-content>div.scroll>ng-include:nth-child(2) {
+  order: 2;
+  z-index: 1000;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 60px;
+  width: 100%;
+  background-color: transparent;
+  margin-top: 60px;
+}
+
+ion-view[state="folder2-category-list"].module-folder2.folder2-layout2 ion-content>div.scroll>ng-include:nth-child(2) input::-webkit-input-placeholder {
+  color: black;
+}
+
+ion-view[state="folder2-category-list"].module-folder2.folder2-layout2 i.icon.ion-search.placeholder-icon {
+  color: black;
+}
+
+ion-view[state="folder2-category-list"].module-folder2.folder2-layout2 ion-content>div.scroll>ng-include:nth-child(3) {
+  order: 1;
+  z-index: 0;
+  position: fixed;
+  top: 0px;
+}
+
+ion-view[state="folder2-category-list"].module-folder2.folder2-layout2 ion-content>div.scroll>ng-include:nth-child(3)>div.list.card {
+  margin: 0;
+  border-radius: 0 0 20px 20px;
+}
+
+ion-view[state="folder2-category-list"].module-folder2.folder2-layout2 ion-content>div.scroll>ng-include:nth-child(3) div.list.card>div.item.item-image.item-custom {
+  background-color: #eee;
+  border: 0;
+}
+
+ion-view[state="folder2-category-list"].module-folder2.folder2-layout2 ion-content>div.scroll>ng-include:nth-child(3) div.list.card>div.item.item-image.item-custom img {
+  opacity: 0.85;
+  height: 50vh;
+  object-fit: fill;
+}
+
+ion-view[state="folder2-category-list"].module-folder2.folder2-layout2 ion-content>div.scroll>ng-include:nth-child(3) div.list.card>div.item.item-custom {
+  background-color: #eee;
+  border: 0;
+}
+
+ion-view[state="folder2-category-list"].module-folder2.folder2-layout2 ion-content>div.scroll>ng-include:nth-child(3) div.list.card>div:nth-child(2) {
+  display: none;
+}
+
+ion-view[state="folder2-category-list"].module-folder2.folder2-layout2 ion-content>div.scroll>div.list.folder-layout.folder-l3.card {
+  order: 3;
+  z-index: 10;
+  background-image: none;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  border-radius: 20px 20px 0 0;
+  margin-top: 22vh;
+}
+
+ion-view[state="folder2-category-list"].module-folder2.folder2-layout2 .folder-layout.folder-l3.card .folder-l3-row div.folder-l3-col {
+  border-radius: 7px;
+  height: 140px;
+  transform: scale(1);
+  background-size: 100%;
+  background-color: transparent;
+  border: 0;
+  box-shadow: none;
+  background-position-y: 0%;
+  background-color: #e9e9e9;
+  filter: drop-shadow(2px 3px 4px #333);
+}
+
+ion-view[state="folder2-category-list"].module-folder2.folder2-layout2 .folder-layout.folder-l3.card .folder-l3-row div.folder-l3-col p {
+  bottom: 0;
+  background-color: transparent;
+  color: black;
+  padding: 5px;
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+ion-view[state="folder2-category-list"].module-folder2.folder2-layout2 .folder-layout.folder-l3.card .folder-l3-row:nth-child(1) div.folder-l3-col>p {
+  line-height: 4vh;
+  top: 0;
+}
+
+ion-view[state="folder2-category-list"].module-folder2.folder2-layout2 .list.folder2-search.card a.item.item-custom.item-avatar-square.item-avatar.item-center {
+  border-top: 0 !important;
+  margin: 0;
+  background-color: transparent;
+  border-bottom: 1px #555 solid !important;
+}
+
+ion-view[state="folder2-category-list"].module-folder2.folder2-layout2 .list.folder2-search.card a.item.item-custom.item-avatar-square.item-avatar.item-center h2 {
+  color: black;
+}
+
+
+
+ion-view[state="folder2-category-list"] ion-content div.scroll div.list.folder-layout.folder-l3.card>div:nth-child(1)>div:nth-child(1) {
+  background-image: none !important;
+  width: 100%;
+  height: 4vh;
+  border-radius: 5px;
+  border-color: transparent;
+  min-height: 6vh;
+}
+
+ion-view[state="folder2-category-list"] ion-content div.scroll div.list.folder-layout.folder-l3.card>div:nth-child(1)>div:nth-child(2) {
+  background-image: none !important;
+  width: 100%;
+  height: 4vh;
+  border-radius: 5px;
+  border-color: transparent;
+  min-height: 6vh;
+}
+
+ion-view[state="folder2-category-list"] ion-content div.scroll div.list.folder-layout.folder-l3.card>div:nth-child(1)>div:nth-child(3) {
+  display: none;
+}
+
+ion-view[state="folder2-category-list"] ion-content div.scroll ng-include div#search_section>label.item.item-input.item-custom {
+  background-color: #eee;
+  border-radius: 7px;
+  opacity: 0.85;
+  border: 1px #ccc solid;
+  margin: 0;
+}
+
+ion-view[state="folder2-category-list"].module-folder2.folder2-layout2 .folder-layout.folder-l3.card .folder-l3-row div.folder-l3-col p {
+  bottom: 0;
+  background-color: transparent;
+  color: black;
+  padding: 5px;
+  font-size: 10px;
+  opacity: 1;
+  position: absolute;
+  top: calc(100% - 45px);
+}
+
+ion-view[state="folder2-category-list"] div#search_section input {
+  color: black;
+}
+
+
+ion-view[state="folder2-category-list"].module-folder2.folder2-layout2 .folder-layout.folder-l3.card .folder-l3-row div.folder-l3-col p {
+  bottom: 0;
+  background-color: #0e0e0e;
+  color: #ddd;
+  padding: 5px;
+  font-size: 10px;
+  opacity: 1;
+  position: absolute;
+  top: calc(100% - 45px);
+}
+
+ion-view[state="folder2-category-list"].module-folder2.folder2-layout2 ion-content>div.scroll>div.list.folder-layout.folder-l3.card {
+  order: 3;
+  z-index: 10;
+  background-image: none;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  border-radius: 20px 20px 0 0;
+  margin-top: 16vh;
+}
+
+ion-view[state="folder2-category-list"].module-folder2.folder2-layout2 ion-content>div.scroll>ng-include:nth-child(3) div.list.card>div.item.item-image.item-custom img {
+  opacity: 0.85;
+  height: 40vh;
+  object-fit: fill;
+}
+
+ion-view[state="folder2-category-list"].module-folder2.folder2-layout2 .folder-layout.folder-l3.card .folder-l3-row div.folder-l3-col p {
+  bottom: 0;
+  background-color: #0e0e0e;
+  color: #f8f8f8;
+  padding: 5px;
+  font-size: 1.2vh;
+  opacity: 1;
+  position: absolute;
+  top: calc(100% - 4vh);
+}
+
+ion-view[state="folder2-category-list"].module-folder2.folder2-layout2 ion-content>div.scroll>ng-include:nth-child(3) div.list.card>div.item.item-image.item-custom img {
+  opacity: inherit;
+  height: 40vh;
+  object-fit: fill;
+}
+
+ion-view[state="folder2-category-list"].module-folder2.folder2-layout2 ion-content>div.scroll>div.list.folder-layout.folder-l3.card {
+  order: 3;
+  z-index: 10;
+  background-image: none;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  border-radius: 0px;
+  margin-top: 0vh;
+  background-color: black;
+}
+
+ion-view[state="folder2-category-list"].module-folder2.folder2-layout2 ion-content>div.scroll>ng-include:nth-child(2) {
+  order: 2;
+  z-index: 1000;
+  position: inherit;
+  top: 34vh !important;
+  width: 70% !important;
+  background-color: transparent;
+  margin-top: 37vh;
+  margin-left: 15%;
+}
+
+ion-view[state="folder2-category-list"].module-folder2.folder2-layout2 ion-content {
+  background-color: #000 !important;
+  background-image: none !important;
+  top: 0 !important;
+}
+
+ion-view[state="folder2-category-list"].module-folder2.folder2-layout2 .folder-layout.folder-l3.card .folder-l3-row div.folder-l3-col {
+  border-radius: 7px;
+  height: 140px;
+  transform: scale(1);
+  background-size: 100%;
+  background-color: transparent;
+  border: 0;
+  box-shadow: none;
+  background-position-y: 0%;
+  background-color: #e9e9e9 0;
+  filter: drop-shadow(2px 3px 4px #333);
+}
+
+ion-view[state="folder2-category-list"].module-folder2.folder2-layout2 .folder-layout.folder-l3.card .folder-l3-row:nth-child(1) div.folder-l3-col>p {
+  line-height: 4vh;
+  top: 0;
+  background-color: transparent;
+}
+
+ion-view[state="folder2-category-list"] ion-content div.scroll ng-include div#search_section>label.item.item-input.item-custom {
+  background-color: transparent !important;
+  border-radius: 15px;
+  opacity: 0.85;
+  margin: 0;
+  border: 1px solid #303030;
+  color: white !important;
+}
+
+ion-view[state="folder2-category-list"].module-folder2.folder2-layout2 i.icon.ion-search.placeholder-icon {
+  color: #f8f8f8 !important;
+}
+
+ion-view[state="folder2-category-list"].module-folder2.folder2-layout2 ion-content>div.scroll>ng-include:nth-child(3)>div.list.card {
+  margin: 0;
+  border-radius: 0px;
+}
+
+ion-view[state="folder2-category-list"].module-folder2.folder2-layout2 .folder-layout.folder-l3.card .folder-l3-row div.folder-l3-col {
+  border-radius: 7px;
+  height: 15vh;
+  transform: scale(1);
+  background-size: 100%;
+  background-color: transparent;
+  border: 0;
+  box-shadow: none !important;
+  background-position-y: 0%;
+  filter: drop-shadow(2px 3px 4px #333);
+}
+
+ion-view[state="folder2-category-list"].module-folder2.folder2-layout2 .scroll {
+  height: initial;
+  max-height: 10000px;
+  margin-top: 5vh;
+}
+
+ion-view[state="folder2-category-list"].module-folder2.folder2-layout2 .folder-layout.folder-l3.card .folder-l3-row:nth-child(1)>p {
+  font-size: 1em;
+  font-weight: 900;
+}
+
+ion-view[state="folder2-category-list"] ion-content div.scroll div.list.folder-layout.folder-l3.card>div:nth-child(1)>div:nth-child(1)>p {
+  font-size: 1em;
+  font-weight: 1000;
+}
+
+ion-view[state="folder2-category-list"] ion-content div.scroll ng-include div#search_section>label.item.item-input.item-custom {
+  border: 1px purple solid;
+}
+
+ion-view[state="folder2-category-list"] div#search_section input {
+  color: white;
+}

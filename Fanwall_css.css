@@ -1,0 +1,763 @@
+
+.module-fanwall {
+  /** Card style for header bar & content */
+  /** Popover, scoped outside for global usage, to be moved in general scss. */
+  /** Profile */
+  /** Item history */
+  /** woo commerce image slider */
+}
+
+.module-fanwall ion-header-bar.option-card {
+  width: calc(100% - 20px);
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.module-fanwall ion-header-bar.option-card button {
+  border: 0;
+}
+
+.module-fanwall .option-card ion-content {
+  padding-top: 10px;
+}
+
+.module-fanwall .option-card ion-content.fanwall-map {
+  padding-top: 20px;
+}
+
+.module-fanwall .option-card ion-content.fanwall-map #google-maps {
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.module-fanwall.popover {
+  margin-top: 10px !important;
+  transform: translate(-14px, -14px);
+  border-radius: 2px !important;
+}
+
+.module-fanwall.popover.popover-custom {
+  max-height: 260px;
+  border-radius: 2px !important;
+}
+
+.module-fanwall.popover.popover-custom .item-custom {
+  padding: 10px 10px 5px 10px !important;
+  border: 0 !important;
+}
+
+.module-fanwall.popover.popover-custom .popover-icon-left {
+  width: 20px;
+  text-align: center;
+  display: inline-block;
+  transform: translate(0px, -5px);
+}
+
+.module-fanwall.popover.popover-custom .popover-action-title {
+  font-size: 10px;
+  font-weight: bold;
+  transform: translate(6px, -1px);
+  display: inline-block;
+  letter-spacing: 1px;
+  text-overflow: ellipsis;
+  width: calc(100% - 40px);
+  overflow: hidden;
+}
+
+.module-fanwall.popover.popover-custom .popover-content-custom {
+  border-radius: 2px !important;
+  margin: 0 !important;
+  background: none;
+  padding-top: 5px;
+}
+
+.module-fanwall.popover.popover-custom .popover-arrow {
+  display: none !important;
+}
+
+.module-fanwall .fanwall-profile .customer-image {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.module-fanwall .fanwall-profile .customer-image img {
+  margin: 0 auto;
+  width: 10em;
+  border-radius: 5em;
+  border: 0.4em solid white;
+  display: block;
+}
+
+.module-fanwall .fanwall-profile .customer-fullname {
+  font-size: 1.2em;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.module-fanwall .fanwall-profile .customer-actions {
+  text-align: center;
+}
+
+.module-fanwall .fanwall-profile .customer-actions button {
+  font-size: 12px;
+  letter-spacing: 0.7px;
+  padding-right: 10px;
+}
+
+.module-fanwall .fanwall-profile .customer-actions button i {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.module-fanwall .fanwall-profile .section-title h2 {
+  font-size: 16px !important;
+  font-weight: bold !important;
+  padding-bottom: 7px;
+}
+
+.module-fanwall .user-blocked.item-avatar {
+  min-height: 52px !important;
+}
+
+.module-fanwall .item-history {
+  padding: 10px !important;
+}
+
+.module-fanwall .item-history .history-date {
+  font-size: 11px;
+  line-height: 11px;
+}
+
+.module-fanwall .item-history .history-text {
+  margin-top: 10px;
+  white-space: initial;
+}
+
+.module-fanwall .item-history .history-image {
+  display: block;
+  float: left;
+  width: calc((100vw / 5) - 6px);
+  height: calc(100vw / 7);
+  padding: 4px;
+}
+
+.module-fanwall .item-history .history-image a {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  border: 1px solid lightgrey;
+  border-radius: 2px;
+  background-position: center center;
+  background-size: cover;
+}
+
+.module-fanwall .blocked-item {
+  opacity: 0.5;
+}
+
+.module-fanwall .no-post {
+  white-space: normal !important;
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+}
+
+.module-fanwall .fanwall-map .map-canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.module-fanwall .fanwall-map .info-window .item {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: -1px 0 !important;
+  border-top: 0;
+  border-bottom: 0;
+}
+
+.module-fanwall .fanwall-map .info-window .info-window-icon {
+  padding: 10px;
+  border-bottom: 0;
+}
+
+.module-fanwall .fanwall-map .info-window .info-window-icon span {
+  font-size: 0.85rem;
+  font-weight: bold;
+  width: 85%;
+  display: inline-block;
+}
+
+.module-fanwall .fanwall-map .info-window .info-window-icon span.info-window-title {
+  padding-left: 8px;
+  padding-bottom: 6px;
+}
+
+.module-fanwall .fanwall-map .info-window .info-window-icon span.info-window-more,
+.module-fanwall .fanwall-map .info-window .info-window-icon span.info-window-distance {
+  font-size: 0.7rem;
+  width: auto;
+}
+
+.module-fanwall .fanwall-map .info-window .info-window-icon span.info-window-distance {
+  padding-left: 8px;
+}
+
+.module-fanwall .fanwall-map .info-window .info-window-icon i.info-close {
+  position: absolute;
+  right: 10px;
+  top: 8px;
+}
+
+.module-fanwall.fanwall-list-l1 .bar-subheader {
+  padding: 0 !important;
+}
+
+.module-fanwall.fanwall-list-l1 .bar-subheader .button-bar>.button.button-positive-custom.activated {
+  background-color: rgba(0, 0, 0, 1) !important;
+  border-color: rgba(249, 250, 252, 1) !important;
+}
+
+.module-fanwall.fanwall-list-l1 .bar-subheader .button-bar>.button img {
+  filter: grayscale(100%);
+}
+
+.module-fanwall.fanwall-list-l1 .bar-subheader .button-bar>.button img.fw-icon-header {
+  height: 24px;
+  margin-top: 8px;
+}
+
+.module-fanwall.fanwall-list-l1 .bar-subheader .button-bar>.button i {
+  filter: grayscale(100%);
+}
+
+.module-fanwall.fanwall-list-l1 .bar-subheader .button-bar>.button i.icon:before {
+  font-size: 24px !important;
+}
+
+.module-fanwall.fanwall-list-l1 .bar-subheader .button-bar>.button:first-child {
+  border-radius: 0;
+}
+
+.module-fanwall.fanwall-list-l1 .bar-subheader .button-bar>.button:last-child {
+  border-radius: 0;
+}
+
+.module-fanwall.fanwall-list-l1 .bar-subheader .button-bar>.button:active img,
+.module-fanwall.fanwall-list-l1 .bar-subheader .button-bar>.button.fw-icon-selected img,
+.module-fanwall.fanwall-list-l1 .bar-subheader .button-bar>.button:active i,
+.module-fanwall.fanwall-list-l1 .bar-subheader .button-bar>.button.fw-icon-selected i {
+  filter: grayscale(0);
+}
+
+.module-fanwall.fanwall-list-l1 .item {
+  padding-bottom: 0;
+  margin-top: 12px;
+  margin-bottom: 0;
+}
+
+.module-fanwall.fanwall-list-l1 .item .post-body {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.module-fanwall.fanwall-list-l1 .item .post-body h2 {
+  padding: 0 0 10px 0;
+  font-weight: bold;
+}
+
+.module-fanwall.fanwall-list-l1 .item .post-body p {
+  overflow: initial;
+  text-overflow: initial;
+  white-space: initial;
+}
+
+.module-fanwall.fanwall-list-l1 .item .post-body p.subtitle {
+  padding: 8px 0;
+}
+
+.module-fanwall.fanwall-list-l1 .item .post-author.item-avatar {
+  padding-left: 50px;
+  min-height: 50px;
+}
+
+.module-fanwall.fanwall-list-l1 .item .post-author h2 {
+  font-weight: bold;
+  line-height: 16px;
+  height: 16px;
+  margin-top: 2px !important;
+}
+
+.module-fanwall.fanwall-list-l1 .item .post-author h2 i.icon {
+  margin: 0 0 0 12px;
+  font-size: 20px;
+}
+
+.module-fanwall.fanwall-list-l1 .item .post-author h2 i.icon.icon-pin {
+  transform: rotate(20deg);
+}
+
+.module-fanwall.fanwall-list-l1 .item .post-author .post-date {
+  font-size: 11px;
+}
+
+.module-fanwall.fanwall-list-l1 .item .post-images .row.fanwall-row {
+  margin: 0;
+  padding: 0;
+  height: 25vh;
+}
+
+.module-fanwall.fanwall-list-l1 .item .post-images .fanwall-image-bg-2 {
+  border-left: 2px solid rgba(255, 255, 255, 1);
+}
+
+.module-fanwall.fanwall-list-l1 .item .post-images .fanwall-image-bg-2.fanwall-bg-card {
+  border-left: 2px solid rgba(255, 255, 255, 1);
+}
+
+.module-fanwall.fanwall-list-l1 .item .post-images .fanwall-image-bg-3 {
+  border-top: 2px solid rgba(255, 255, 255, 1);
+}
+
+.module-fanwall.fanwall-list-l1 .item .post-images .fanwall-image-bg-3.fanwall-bg-card {
+  border-top: 2px solid rgba(255, 255, 255, 1);
+}
+
+.module-fanwall.fanwall-list-l1 .item .post-image {
+  margin: 0 -16px 0 -16px;
+}
+
+.module-fanwall.fanwall-list-l1 .item .post-image.fanwall-bg-2 {
+  margin: 0 -16px 0 0;
+}
+
+.module-fanwall.fanwall-list-l1 .item .post-image.fanwall-bg-3 {
+  height: 20vh;
+}
+
+.module-fanwall.fanwall-list-l1 .item .post-image a.fanwall-image-bg {
+  display: inline-block;
+  width: 100%;
+  background-position: center center;
+  background-size: cover;
+  height: 30vh;
+}
+
+.module-fanwall.fanwall-list-l1 .item .post-image a.fanwall-image-bg.fanwall-image-bg-1 {
+  height: 25vh;
+}
+
+.module-fanwall.fanwall-list-l1 .item .post-image a.fanwall-image-bg.fanwall-image-bg-2 {
+  height: 25vh;
+}
+
+.module-fanwall.fanwall-list-l1 .item .post-image a.fanwall-image-bg.fanwall-image-bg-3 {
+  height: 20vh;
+}
+
+.module-fanwall.fanwall-list-l1 .item .post-image img {
+  display: block;
+}
+
+.module-fanwall.fanwall-list-l1 .item .post-likes {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.module-fanwall.fanwall-list-l1 .item .post-likes span {
+  font-size: 14px;
+}
+
+.module-fanwall.fanwall-list-l1 .item .post-actions {
+  padding-top: 7px;
+  padding-bottom: 6px;
+  font-weight: bold;
+}
+
+.module-fanwall.fanwall-list-l1 .item .post-likes~.post-actions {
+  border-top: 1px solid rgba(68, 68, 68, 0.2);
+}
+
+.module-fanwall.fanwall-list-l1 .item .post-body~.post-actions {
+  border-top: 1px solid rgba(68, 68, 68, 0.2);
+}
+
+.module-fanwall.fanwall-list-l1 .item.card .post-likes~.post-actions {
+  border-top: 1px solid rgba(68, 68, 68, 0.2);
+}
+
+.module-fanwall.fanwall-list-l1 .item.card .post-body~.post-actions {
+  border-top: 1px solid rgba(68, 68, 68, 0.2);
+}
+
+.module-fanwall.fanwall-list-l1 .item.card .post-author {
+  padding-top: 16px;
+  margin-bottom: 10px;
+}
+
+.module-fanwall.fanwall-list-l1 .card .item {
+  margin-top: 0;
+}
+
+.module-fanwall.fanwall-comment-l1 .item-comment .comment-date~.comment-image {
+  margin-top: 10px;
+}
+
+.module-fanwall.fanwall-comment-l1 .item-comment .comment-author.item-avatar {
+  padding-top: 5px;
+  padding-left: 50px;
+  min-height: 50px;
+}
+
+.module-fanwall.fanwall-comment-l1 .item-comment .comment-author i.icon {
+  font-size: 16px;
+}
+
+.module-fanwall.fanwall-comment-l1 .item-comment .comment-author h2 {
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 15px;
+}
+
+.module-fanwall.fanwall-comment-l1 .item-comment .comment-author p.comment-date {
+  font-size: 11px;
+  line-height: 11px;
+}
+
+.module-fanwall.fanwall-comment-l1 .item-comment .comment-author p.comment-text {
+  margin-top: 10px;
+  white-space: initial;
+}
+
+.module-fanwall.fanwall-comment-l1 .item-comment .comment-author p.comment-text * {
+  white-space: initial;
+}
+
+.module-fanwall.fanwall-comment-l1 .item-comment .comment-image img {
+  max-width: 100%;
+  max-height: 140px;
+  padding: 3px;
+  border: 1px solid rgba(196, 196, 196, 1);
+  border-radius: 6px;
+}
+
+.module-fanwall.fanwall-comment-l1 .item-comment.card {
+  margin-bottom: 0;
+  margin-top: 12px;
+}
+
+.module-fanwall.fanwall-comment-l1 .item-comment.card .comment-image img {
+  border: 1px solid rgba(196, 196, 196, 1);
+}
+
+.module-fanwall.fanwall-comment-l1 .item-comment.card .comment-author.item-avatar {
+  padding-top: 15px;
+  padding-left: 50px;
+  padding-bottom: 10px;
+  min-height: 50px;
+}
+
+.module-fanwall.fanwall-comment-l1 .comment-footer .item-input-inset {
+  width: 100%;
+}
+
+.module-fanwall.fanwall-comment-l1 .comment-footer .picture-badge {
+  font-size: 10px;
+  padding: 0 6px 0 5px;
+  margin-left: -17px;
+}
+
+.module-fanwall.fanwall-comment-l1 .comment-footer textarea {
+  resize: none;
+  margin: 0;
+  height: 32px;
+  width: 100%;
+  padding: 8px 33px 7px 16px;
+  border-radius: 50px;
+}
+
+.module-fanwall.fanwall-comment-l1 .comment-footer .clear-comment {
+  font-size: 26px;
+  position: absolute;
+  right: 54px;
+  opacity: 0.6;
+}
+
+.module-fanwall fanwall-comment-item .card {
+  margin: 10px;
+}
+
+.module-fanwall.fanwall-new-l1 .post-button {
+  position: fixed;
+  bottom: 0;
+  z-index: 100;
+  margin: 0 !important;
+}
+
+.module-fanwall.fanwall-new-l1 .post-author.item-avatar {
+  padding-left: 72px;
+  min-height: 50px;
+}
+
+.module-fanwall.fanwall-new-l1 .post-author h2 {
+  font-weight: bold;
+  line-height: 15px;
+}
+
+.module-fanwall.fanwall-new-l1 .post-author h2 i.icon {
+  margin: 0 0 0 12px;
+}
+
+.module-fanwall.fanwall-new-l1 .post-author h2 i.icon.icon-pin {
+  transform: rotate(30deg);
+}
+
+.module-fanwall.fanwall-new-l1 .post-author .post-location {
+  font-size: 11px;
+}
+
+.module-fanwall.fanwall-new-l1 .new-post-items .item {
+  margin-top: 12px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 15px;
+}
+
+.module-fanwall.fanwall-new-l1 .new-post-items .item .new-post-author {
+  margin-top: 4px;
+}
+
+.module-fanwall.fanwall-new-l1 .new-post-items .item label {
+  width: 100%;
+}
+
+.module-fanwall.fanwall-new-l1 .new-post-items .item textarea {
+  resize: none;
+}
+
+.module-fanwall.fanwall-new-l1 .new-post-items .item.item-avatar {
+  padding-left: 72px;
+  min-height: 72px;
+}
+
+.module-fanwall.fanwall-new-l1 .new-post-items .item.card {
+  margin-top: 0;
+  margin-bottom: 6px;
+}
+
+.module-fanwall.fanwall-new-l1 .new-post-items .item.card:first-of-type {
+  margin-top: 12px !important;
+}
+
+.module-fanwall.fanwall-new-l1 .new-post-items .card .item {
+  margin-top: 0;
+}
+
+.module-fanwall.fanwall-new-l1 img.fanwall-pictures {
+  max-height: 15vh;
+  width: auto;
+  max-width: 90%;
+  margin: 6px auto;
+}
+
+.module-fanwall.fanwall-new-l1 .remove-image-list,
+.module-fanwall.fanwall-new-l1 .remove-image-card {
+  position: absolute;
+  right: 6px;
+  top: 6px;
+}
+
+.module-fanwall.fanwall-new-l1 .remove-image-list i.icon,
+.module-fanwall.fanwall-new-l1 .remove-image-card i.icon {
+  font-size: 26px;
+}
+
+.module-fanwall .new-post-items .card,
+.module-fanwall fanwall-post-item .card {
+  margin: 10px;
+}
+
+.module-fanwall .more-circle {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  background: rgba(255, 255, 255, .9);
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 20px;
+  padding: 5px;
+  pointer-events: none;
+  left: calc(75% - 24px);
+  top: calc(-50% - 24px);
+  box-shadow: 0 0 2px black;
+}
+
+.module-fanwall .more-circle i.icon {
+  font-size: 14px;
+}
+
+.module-fanwall .fanwall-gallery {
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+}
+
+.module-fanwall .fanwall-gallery .gallery-item {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.module-fanwall .fanwall-gallery .gallery-item img {
+  width: 100%;
+}
+
+.module-fanwall .fanwall-gallery .gallery-item:nth-child(3n+1) {
+  width: 32%;
+  margin-top: 2%;
+}
+
+.module-fanwall .fanwall-gallery .gallery-item:nth-child(3n+2) {
+  width: 32%;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 2%;
+}
+
+.module-fanwall .fanwall-gallery .gallery-item:nth-child(3n+3) {
+  width: 32%;
+  margin-top: 2%;
+}
+
+.module-fanwall .fanwall-post-image-container {
+  margin: 0 -12px;
+}
+
+.module-fanwall .fanwall-slider-container {
+  height: 30vh;
+  overflow: hidden;
+}
+
+.module-fanwall .fanwall-slider-container-product {
+  height: 50vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+.module-fanwall .fanwall-directive-slider,
+.module-fanwall [fanwall-slider] {
+  height: 100%;
+}
+
+.module-fanwall.fanwall-slider,
+.module-fanwall.fanwall-slider-modal {
+  height: 100%;
+  padding: 0 !important;
+}
+
+.module-fanwall.fanwall-slider ul[rn-carousel],
+.module-fanwall.fanwall-slider-modal ul[rn-carousel] {
+  height: 100%;
+}
+
+.module-fanwall.fanwall-slider ul[rn-carousel] li>div,
+.module-fanwall.fanwall-slider-modal ul[rn-carousel] li>div {
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.module-fanwall.fanwall-slider div[rn-carousel-indicators],
+.module-fanwall.fanwall-slider-modal div[rn-carousel-indicators] {
+  text-align: center;
+  background-color: transparent;
+  position: relative;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+}
+
+.module-fanwall.fanwall-slider div[rn-carousel-indicators] div.rn-carousel-indicator span,
+.module-fanwall.fanwall-slider-modal div[rn-carousel-indicators] div.rn-carousel-indicator span {
+  font-size: 16px;
+  margin: 0 4px;
+  color: #fff;
+}
+
+.module-fanwall.fanwall-slider div[rn-carousel-indicators] div.rn-carousel-indicator span.active,
+.module-fanwall.fanwall-slider-modal div[rn-carousel-indicators] div.rn-carousel-indicator span.active {
+  color: rgba(239, 71, 58, 1);
+}
+
+.module-fanwall.fanwall-slider.fullscreen .bar-header.bar-dark,
+.module-fanwall.fanwall-slider-modal.fullscreen .bar-header.bar-dark {
+  background-color: black;
+}
+
+.module-fanwall.fanwall-slider.fullscreen .scroll,
+.module-fanwall.fanwall-slider-modal.fullscreen .scroll {
+  background-color: black;
+  height: 100%;
+  width: 100%;
+}
+
+.module-fanwall.fanwall-slider.fullscreen .scroll ul li .scroll-view,
+.module-fanwall.fanwall-slider-modal.fullscreen .scroll ul li .scroll-view {
+  background-color: black;
+  height: 100%;
+  width: 100%;
+}
+
+.module-fanwall.fanwall-slider.fullscreen .scroll ul li .scroll .image,
+.module-fanwall.fanwall-slider-modal.fullscreen .scroll ul li .scroll .image {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (orientation: portrait) {
+  /** Maps section */
+  .module-fanwall .fanwall-map .info-window {
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    padding: 0 2vw;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  /** Maps section */
+  .module-fanwall .fanwall-map .info-window {
+    width: 50vw;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0 2vw;
+  }
+}
+
+#baguetteBox-overlay {
+  user-select: all;
+  pointer-events: all;
+}
+
+.fanwall-location-action:before {
+  font-size: 26px !important;
+}
+
+
+.module-fanwall.fanwall-list-l1 .item .post-image a.fanwall-image-bg {
+  display: inline-block;
+  width: 100%;
+  background-position: center center;
+  background-size: cover;
+  height: 100% !important;
+  min-height: 30vh;
+}

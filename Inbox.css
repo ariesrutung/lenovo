@@ -1,0 +1,381 @@
+/* With notifs */
+ion-view[state="inbox-list"] .card {
+  box-shadow: none;
+  margin: 0;
+  border-radius: 0;
+}
+
+.scroll-refresher {
+  background: #2a2a2a;
+}
+
+ion-view[state="inbox-list"] .card .item.item-custom.item-thumbnail-left {
+  /* Notifs Box */
+  margin: 12px;
+  padding: 10px 12px 12px 86px;
+  border-radius: 0;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  height: 86px;
+  box-shadow: 3px 3px 0 #730800 47;
+}
+
+ion-view[state="inbox-list"] .card .item.item-custom.item-thumbnail-left:hover,
+ion-view[state="inbox-list"] .card .item.item-custom.item-thumbnail-left:active {
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.75);
+}
+
+ion-view[state="inbox-list"] .item-thumbnail-left>img:first-child {
+  /* Notifs Photo */
+  max-width: 64px;
+  max-height: 64px;
+  border: 1px solid #dadce0;
+}
+
+ion-view[state="inbox-list"] .item-thumbnail-left {
+  min-height: 82px;
+}
+
+.inbox-view .item-custom h2 {
+  /* Notifs Title */
+  color: #000 !important;
+  font-weight: 700 !important;
+  font-size: 16px !important;
+  letter-spacing: 0.25px;
+  height: 40px;
+}
+
+ion-view[state="inbox-list"] .ion-ios-calendar-outline {
+  margin-right: 4px;
+}
+
+.inbox-view .item-custom p.inbox-message-date {
+  /* Date & Time */
+  letter-spacing: 0.25px;
+  color: #a3a5a7;
+  position: absolute;
+  bottom: 8px;
+}
+
+.inbox-view .new-message,
+.inbox-view .new-reply {
+  background-color: #d34553;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 2px 6px 1px;
+  border-radius: 0;
+  position: absolute;
+  right: 10px;
+  bottom: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.inbox-view .compact .item-thumbnail-left>img:first-child {
+  max-width: 5em;
+  max-height: 5em;
+  top: 0.5em;
+  left: 0.5em;
+  border-radius: 14px;
+}
+
+.inbox-view .compact .item-custom p.inbox-message-date {
+  position: absolute;
+  left: 23vw;
+  bottom: 2px;
+}
+
+ion-view[state="inbox-list"] .card .item.item-custom.item-thumbnail-left {
+  margin: 12px;
+  padding: 10px 12px 12px 86px;
+  border-radius: 20px;
+  border: 1px solid #b2b2b2;
+  height: 86px;
+  box-shadow: 2px 3px 8px 0px #e42112 54 !important;
+}
+
+ion-view[state="inbox-view"] {
+  margin-top: 55px !important;
+  height: calc(100vh - 55px) !important;
+  z-index: 9999 !important;
+}
+
+ion-view[state="inbox-view"] ion-content {
+  margin-top: -55px;
+}
+
+ion-view[state="inbox-view"] .scroll .card {
+  box-shadow: none;
+  margin: 0;
+  border-radius: 0;
+  padding: 0;
+}
+
+ion-view[state="inbox-view"] .scroll div:nth-child(2) .card .item.item-custom {
+  background: transparent;
+  border-bottom: 1px solid rbga(0, 0, 0, 0.12);
+  margin: 0 0 16px;
+}
+
+ion-view[state="inbox-view"] .scroll div:nth-child(2) .card .item.item-custom h2.inbox-title {
+  /* Title */
+  font-size: 18px;
+  color: #000;
+  letter-spacing: 0.25px;
+  margin-top: 4px !important;
+  margin-bottom: 6px !important;
+  text-align: center;
+}
+
+ion-view[state="inbox-view"] .scroll div:nth-child(2) .card .item.item-custom div.ng-binding {
+  /* Date */
+  font-size: 14px;
+  color: #a3a5a7;
+  letter-spacing: 0.5px;
+  margin-bottom: 2px !important;
+  text-align: center;
+}
+
+.ion-ios-calendar-outline {
+  display: none;
+}
+
+ion-view[state="inbox-view"] .scroll div:nth-child(n+4) .card {
+  /* Card below Image */
+  border: 0;
+  margin: 12px;
+  background: transparent;
+}
+
+ion-view[state="inbox-view"] .scroll .card .item.item-text-wrap.item-custom.sb-cms-text {
+  padding: 12px;
+  background: transparent;
+}
+
+ion-view[state="inbox-view"] .scroll .card .item.item-image-gallery.item-custom.sb-cms-image {
+  margin: 0 12px 4px;
+  border: none;
+  border: 1px solid #dadce0;
+}
+
+ion-view[state="inbox-view"] .scroll .card .item.item-custom.padding.description.ng-binding {
+  font-size: 18px;
+  line-height: 22px;
+  border: none;
+  text-align: left;
+  margin: 0;
+}
+
+ion-view[state="inbox-view"] .scroll div:nth-child(n+4) .card .item .content.ng-binding p {
+  font-size: 18px;
+  letter-spacing: 0.25px;
+  color: #707070;
+}
+
+
+/* Text Properties */
+ion-view[state="inbox-view"] div.scroll div.card.no-shadow div:nth-child(1) {
+  margin: 0 -1px 0 12px;
+}
+
+ion-view[state="inbox-view"] div:nth-child(4)>div.tabs.tabs-icon-top.inbox-footer {
+  /* Footer Tab */
+  background: #fff;
+  color: #707070;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 -2px 0 rgba(0, 0, 0, 0.12);
+}
+
+ion-view[state="inbox-view"] .tabs-icon-top.tabs .tab-item {
+  /* Footer Buttons */
+  padding-top: 1px;
+  border: 0;
+  border-radius: 0;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 50%;
+  opacity: 1;
+}
+
+.tabs-icon-top.tabs .tab-item:active {
+  background: #b3b3b3;
+  color: #232323;
+}
+
+.tabs-icon-top.tabs .tab-item:active p {
+  color: lightpink;
+}
+
+.tabs-icon-top.tabs .tab-item:hover p {
+  color: lightpink;
+}
+
+ion-view[state="inbox-view"] div:nth-child(4) div.tabs.tabs-icon-top.inbox-footer>div.tab-item:nth-child(3) {
+  background: #000;
+  color: #fff;
+}
+
+ion-view[state="inbox-view"] .icon.ion-trash-a {
+  /* Trash Icon */
+  display: none;
+}
+
+ion-view[state="inbox-view"] .icon.ion-reply {
+  /* Reply Icon */
+  display: none;
+}
+
+/* Inbox Reply Thread */
+ion-view[state="inbox-comment-view"] {
+  margin-top: 55px !important;
+  height: calc(100vh - 55px) !important;
+  z-index: 9999 !important;
+}
+
+ion-view[state="inbox-comment-view"] ion-content {
+  margin-top: -55px;
+}
+
+ion-view[state="inbox-comment-view"] div.tabs.tabs-icon-top.inbox-footer:nth-child(3) {
+  background: #fff;
+  color: #707070;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 -2px 0 rgba(31, 49, 58, 0.1);
+}
+
+ion-view[state="inbox-comment-view"] .inbox-replies.list.card {
+  box-shadow: none;
+  margin: 16px;
+}
+
+ion-view[state="inbox-comment-view"] div.scroll div.inbox-replies.list.card div.item.item-custom.item-text-wrap {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  margin: 0 0 12px;
+}
+
+ion-view[state="inbox-comment-view"] .tabs-icon-top.tabs .tab-item {
+  /* Footer Buttons */
+  padding-top: 1px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  opacity: 1;
+  background: #707070;
+  color: #fff;
+}
+
+ion-view[state="inbox-comment-view"] .tab-item .icon {
+  display: none;
+}
+
+/* Inbox Reply Post */
+ion-view[state="inbox-comment-post"] .scroll {
+  position: absolute !important;
+  bottom: 0 !important;
+  height: 100% !important;
+  width: 100% !important;
+  background: #fff !important;
+}
+
+ion-view[state="inbox-comment-post"] {
+  margin-top: 55px !important;
+  height: calc(100vh - 55px) !important;
+  z-index: 9999 !important;
+}
+
+ion-view[state="inbox-comment-post"] ion-content {
+  margin-top: -55px;
+}
+
+ion-view[state="inbox-comment-post"] div.scroll>div.list:nth-child(2) {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  top: 0;
+  margin: 0;
+}
+
+ion-view[state="inbox-comment-post"] div.scroll div:nth-child(1) form>div.list.card:nth-child(1) {
+  margin: 8px 0 0;
+  box-shadow: none;
+}
+
+ion-view[state="inbox-comment-post"] div.scroll .item.item-input.item-custom {
+  /* input box */
+  margin: 12px;
+  border: 0;
+  border-radius: 1px;
+  padding: 0;
+}
+
+ion-view[state="inbox-comment-post"] div.scroll .item.item-custom textarea {
+  /* post text area */
+  padding: 14px 2px 2px 14px;
+  border: 1.5px solid #dadce0;
+  color: #4c4c4b;
+  font-size: 16px;
+  height: 30vh;
+}
+
+ion-view[state="inbox-comment-post"] .item.item-custom textarea:focus {
+  border: 1.5px solid rgba(0, 0, 0, 0.75) !important;
+  font-weight: 700 !important;
+  color: #000 !important;
+}
+
+ion-view[state="inbox-comment-post"] div.scroll div:nth-child(1) form>div.list.padding:nth-child(2) {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 12px;
+}
+
+ion-view[state="inbox-comment-post"] div.scroll div:nth-child(1) form div.list.padding:nth-child(2)>button {
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  background: #707070;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+  box-shadow: 2px 2px 0 rgba(31, 49, 58, 0.1);
+}
+
+ion-view[state="inbox-comment-post"] div.scroll div:nth-child(1) form div.list.padding:nth-child(2)>button:hover,
+ion-view[state="inbox-comment-post"] div.scroll div:nth-child(1) form div.list.padding:nth-child(2)>button:active {
+  background: #000;
+  box-shadow: 3px 3px 0 rgba(31, 49, 58, 0.25);
+}
+
+ion-view[state="inbox-list"] .card .item.item-custom.item-thumbnail-left {
+  margin: 12px;
+  padding: 10px 12px 12px 86px;
+  border-radius: 20px;
+  border: 1px solid #b2b2b2;
+  height: 86px;
+  box-shadow: 3px 3px 0 #13de8a 6e;
+}
+
+ion-view[state="inbox-list"] .item-thumbnail-left>img:first-child {
+  max-width: 64px;
+  max-height: 64px;
+  border: 0px solid #dadce0 0;
+}

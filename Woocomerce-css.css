@@ -1,0 +1,307 @@
+
+/** WooCommerce specific SCSS */
+.cart-badge {
+  position: absolute !important;
+  right: 0 !important;
+  top: 0 !important;
+  font-size: 10px;
+  padding: 4px;
+  line-height: 8px;
+}
+
+.wc-icon.icon-custom.ion-ios-cart:before,
+.wc-icon.icon-custom.ion-home:before {
+  font-size: 26px !important;
+  line-height: 30px !important;
+}
+
+.listing .propertylisting_row_margin {
+  margin: -4%;
+}
+
+.listing .listing-body {
+  padding-top: 0;
+  border-top: 0px;
+}
+
+.listing .listing-price {
+  text-align: right;
+  font-size: 14px;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+.listing .listing-post-time {
+  font-size: 11px;
+  padding-left: 5%;
+  opacity: 0.7;
+}
+
+.listing .listing-plotsize {
+  vertical-align: middle;
+}
+
+.listing .bottom-action-button {
+  z-index: 9999;
+}
+
+.listing .listing-other-info {
+  font-size: 12px;
+}
+
+.listing .listing-other-info .col {
+  padding: 5px 0px;
+}
+
+.listing .property-listing-image-overlay-content {
+  margin-top: -36px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: relative;
+  color: #fff;
+  font-size: 12px;
+}
+
+.listing .property-listing-image-overlay-content .col {
+  padding: 5px 0px;
+}
+
+.listing .property-listing-image-overlay-content .row {
+  padding: 0px;
+}
+
+.listing .listing-type {
+  text-align: right;
+  text-transform: uppercase;
+  font-weight: 700;
+  opacity: 0.7;
+}
+
+.listing .listing-header {
+  border-bottom: 0px;
+}
+
+.listing .owner-info-item {
+  border: 0px;
+}
+
+.listing .listing-location {
+  opacity: 0.7;
+}
+
+.listing .listing-details-listing-for {
+  margin-top: 5%;
+}
+
+.listing .listing-size-info {
+  font-size: 12px;
+  text-align: center;
+}
+
+.listing .listing-size-info .col {
+  padding: 5px 0px;
+}
+
+.listing .listing-feature-img {
+  height: 150px;
+  object-fit: cover;
+}
+
+.listing .propertylisting-row-values {
+  padding: 5px 16px;
+  text-align: right;
+}
+
+.listing .propertylisting-row-values .item-note {
+  float: left;
+  font-size: 16px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.listing .listing-basic-info .listing-type {
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: 500;
+  opacity: 0.6;
+  font-size: 11px;
+}
+
+.listing .listing-basic-info h2.listing-headline-name {
+  white-space: normal;
+}
+
+.listing .item.listing-info {
+  padding-top: 0px;
+}
+
+.listing .item.item-amenities {
+  min-height: auto;
+}
+
+.listing .item.item-amenities.item-avatar>img:first-child {
+  top: 10px;
+}
+
+.listing h2.amenities-name {
+  opacity: 0.7;
+}
+
+.listing .listing-details-favorite {
+  position: absolute;
+  top: 24px;
+  left: 28px;
+  z-index: 1;
+  font-size: 24px;
+}
+
+.listing .listing-bedroom {
+  text-align: center;
+}
+
+.listing .listing-bathroom {
+  text-align: center;
+}
+
+.listing .propertylisting-filter-row-menu .checkbox {
+  padding: 7px 0px;
+}
+
+.listing .propertylisting-filter-row-menu .checkbox input {
+  width: 20px;
+  height: 20px;
+}
+
+.listing .propertylisting-filter-row-menu .item-checkbox {
+  padding-left: 40px;
+}
+
+.listing .propertylisting-filter-row-menu .checkbox-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.listing .listing-filter-item {
+  display: list-item;
+}
+
+.listing ion-list.listing-filter-list .list {
+  white-space: nowrap;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.listing .listing-filter-divider {
+  margin-top: 20px;
+}
+
+.listing ion-content#listing-filter-content {
+  margin-top: 24px;
+}
+
+.listing .budget-row .item {
+  border: 0px !important;
+}
+
+.listing .button-floating-action {
+  position: fixed !important;
+  top: calc(90vh - 50px) !important;
+  right: 2vw !important;
+  border-radius: 100px !important;
+  border-width: 0 !important;
+  padding: 5px 12px 5px 12px !important;
+  z-index: 999 !important;
+  box-shadow: 5px 5px 5px #888 !important;
+}
+
+.listing #google-maps {
+  position: unset !important;
+}
+
+.listing .button-gps-loading {
+  position: fixed !important;
+  top: calc(90vh - 50px) !important;
+  left: 2vw !important;
+  border-radius: 100px !important;
+  border-width: 0 !important;
+  padding: 5px 12px 5px 12px !important;
+  z-index: 999 !important;
+  box-shadow: 5px 5px 5px #888 !important;
+}
+
+
+/** Outside scoped classes */
+span.badge-message {
+  top: 17px !important;
+  right: -4px !important;
+  position: absolute !important;
+  padding: 0px 4px 0px 3px;
+  line-height: 13px;
+  height: 14px;
+  font-size: 10px;
+}
+
+.bar .listing-footer {
+  padding-top: 0px;
+  border: 0px;
+}
+
+.bar .listing-footer>img {
+  top: 0px;
+}
+
+.bar-listing-footer {
+  box-shadow: -4px 6px 4px 6px;
+}
+
+input.ng-dirty.ng-invalid,
+textarea.ng-dirty.ng-invalid {
+  border: 2px solid red;
+}
+
+.propertylisting-add-images-box {
+  display: inline-block;
+  position: relative;
+}
+
+.propertylisting-add-images-box-icon {
+  position: absolute;
+  top: 2%;
+  right: 0;
+  color: #000 b3;
+}
+
+.propertylisting-edit-view-image {
+  display: inline-block;
+  position: relative;
+}
+
+.propertylisting-edit-view-image-icon {
+  position: absolute;
+  top: 0%;
+  right: 4%;
+  color: #000 b3;
+}
+
+.propertylisting-edit-view-propertyimage {
+  width: 100%;
+  height: 50px;
+  border-radius: 5%;
+}
+
+.propertylisting-edit-view-image-icon-box {
+  float: left;
+  width: 25%;
+  padding: 1%;
+}
+
+.listingedit-property-status {
+  font-size: 80%;
+}
+
+.listingedit-post-time {
+  font-size: 11px;
+  opacity: 0.7;
+}
+

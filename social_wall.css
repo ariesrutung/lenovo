@@ -1,0 +1,178 @@
+/*Social Wall*/
+ion-view[state="fanwall-home"] div>ion-content {
+  background-color: #eee !important;
+  background-image: none !important;
+}
+
+ion-view[state="fanwall-home"]>ion-header-bar {
+  border: 0;
+}
+
+ion-view[state="fanwall-home"]>ion-header-bar .button.button-positive-custom {
+  border: 0;
+  background-color: black;
+}
+
+ion-view[state="fanwall-home"]>ion-header-bar button.button.button-custom.button-positive.button-positive-custom.ng-binding.fw-icon-selected.icon-active-custom {
+  border-bottom: 1px red solid;
+}
+
+ion-view[state="fanwall-home"]>ion-header-bar button.button.button-custom.button-positive.button-positive-custom.ng-binding.icon-custom {
+  border-buttom: 0 !important;
+}
+
+ion-view[state="fanwall-home"]>ion-header-bar button.button.button-custom.button-positive.button-positive-custom.ng-binding.fw-icon-selected.icon-active-custom>i {
+  color: red;
+}
+
+ion-view[state="fanwall-home"] ion-content div.scroll .list .item.item-custom {
+  background-color: #eee;
+  text-align: left;
+  border: 0;
+  border-radius: 10px;
+  box-shadow: inset 9.91px 9.91px 15px #d9d9d9, inset -9.91px -9.91px 15px #fff;
+}
+
+ion-modal-view.module-fanwall.fanwall-list.fanwall-list-l1.modal.has-background-image.slide-in-right-left {
+  min-height: 65vh !important;
+  top: 35vh !important;
+  border-radius: 20px 20px 0 0 !important;
+}
+
+ion-modal-view.module-fanwall.fanwall-list.fanwall-list-l1.modal.has-background-image.slide-in-right-left>ion-header-bar {
+  background-color: #444;
+}
+
+ion-modal-view.module-fanwall.fanwall-list.fanwall-list-l1.modal.has-background-image.slide-in-right-left>ion-content {
+  background-color: #444 !important;
+}
+
+ion-modal-view.module-fanwall.fanwall-list.fanwall-list-l1.modal.has-background-image.slide-in-right-left>ion-content div.scroll>div:nth-child(2).list>div.item.text-center.item-custom.card {
+  padding: 12px;
+  background-color: #eee;
+  border: 0;
+  border-radius: 20px 0;
+}
+
+ion-modal-view.module-fanwall.fanwall-list.fanwall-list-l1.modal.has-background-image.slide-in-right-left>ion-content div.scroll>div:nth-child(2).list>div.item.text-center.item-custom.card h1 {
+  color: darkred;
+}
+
+ion-modal-view.module-fanwall.fanwall-list.fanwall-list-l1.modal.has-background-image.slide-in-right-left>ion-content div.scroll>div:nth-child(2).list>div.item.text-center.item-custom.card img {
+  border-radius: 7px;
+}
+
+ion-view[state="fanwall-home"] .list .item.item-custom h1,
+ion-view[state="fanwall-home"] .list .item.item-custom h2,
+ion-view[state="fanwall-home"] .list .item.item-custom h3,
+ion-view[state="fanwall-home"] .list .item.item-custom h4,
+ion-view[state="fanwall-home"] .list .item.item-custom h5,
+ion-view[state="fanwall-home"] .list .item.item-custom h6,
+ion-view[state="fanwall-home"] .list .item.item-custom p,
+ion-view[state="fanwall-home"] .list .item.item-custom .input-label,
+ion-view[state="fanwall-home"] .list .item.item-custom input,
+ion-view[state="fanwall-home"] .list .item.item-custom textarea,
+ion-view[state="fanwall-home"] .list .item.item-custom.item-select select {
+  letter-spacing: 0.5px;
+  color: black;
+  white-space: normal;
+}
+
+ion-view[state="fanwall-home"] div.post-body a {
+  color: darkred !important;
+  font-weight: bold;
+  display: block;
+  background-color: #ddd;
+  padding: 3px;
+  border-radius: 3px;
+  padding-left: 10px;
+  border-left: 5px #0c60ee solid;
+}
+
+ion-view[state="fanwall-home"] .list:last-child {
+  margin-bottom: 120px !important;
+}
+
+
+/*social wall profile page*/
+ion-view[state="fanwall-home"] ion-content.fanwall-profile.scroll-content.ionic-scroll.has-subheader.has-header ion-list>div.list {
+  display: none;
+}
+
+ion-view[state="fanwall-home"] ion-content.fanwall-profile.scroll-content.ionic-scroll.has-subheader.has-header div.customer-actions>button {
+  background-color: darkred;
+  border: 0;
+  letter-spacing: 0.5px;
+}
+
+.module-fanwall .fanwall-profile .customer-fullname {
+  font-size: 1.2em;
+  text-align: center;
+  margin-bottom: 15px;
+  color: white;
+  letter-spacing: 0.5px;
+}
+
+
+/*Social wall image gallery*/
+.module-fanwall .fanwall-gallery .gallery-item {
+  border: 1px darkred solid;
+  border-radius: 10px 0px;
+}
+
+
+/*Social wall comment*/
+ion-modal-view.module-fanwall.fanwall-comment.fanwall-comment-l1.modal.has-background-image.slide-in-right-left {
+  width: 85%;
+  left: 15%;
+  background-image: none !important;
+  background-color: rgba(0, 0, 0, .25) !important;
+  backdrop-filter: blur(35px);
+  -webkit-backdrop-filter: blur(35px);
+  border: 0;
+  min-height: 90%;
+  border-radius: 20px 0 0 20px;
+}
+
+ion-modal-view.module-fanwall.fanwall-comment.fanwall-comment-l1.modal.has-background-image.slide-in-right-left>ion-header-bar {
+  background-color: transparent;
+}
+
+ion-modal-view.module-fanwall.fanwall-comment.fanwall-comment-l1.modal.has-background-image.slide-in-right-left>ion-content {
+  background-color: transparent !important;
+  background-image: none !important;
+}
+
+ion-modal-view.module-fanwall.fanwall-comment.fanwall-comment-l1.modal.has-background-image.slide-in-right-left>ion-footer-bar {
+  background-image: none !important;
+  background-color: transparent;
+}
+
+.module-fanwall.fanwall-comment-l1 .item-comment.card {
+  margin-bottom: 0;
+  margin-top: 12px;
+  background-color: transparent !important;
+  text-align: left !important;
+  border: 1px white solid !important;
+  border-radius: 7px !important;
+}
+
+.module-fanwall.fanwall-comment-l1 .item-comment .comment-author h2 {
+  font-weight: bold !important;
+  font-size: 13px !important;
+  line-height: 15px !important;
+  color: white !important;
+}
+
+.module-fanwall.fanwall-comment-l1 .item-comment .comment-author p.comment-date {
+  font-size: 10px !important;
+  line-height: 10px !important;
+  color: #eee !important;
+}
+
+.module-fanwall.fanwall-comment-l1 .item-comment .comment-author p.comment-text {
+  margin-top: 10px !important;
+  white-space: initial !important;
+  color: white !important;
+}
+

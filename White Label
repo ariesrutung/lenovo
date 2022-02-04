@@ -1,0 +1,20 @@
+White Label
+JustApp menawarkan sebuah layanan yang dapat digunakan oleh member untuk membuat buildernya sendiri. Agar lebih mudah dipahami, berikut ini dijelaskan alurnya.
+
+1. Saat ini, ketika Anda ingin membuat aplikasi, Anda lazimnya masuk editor melalui https://justapp.id/member/masuk - Masuk ke Builder atau dengan langsung mengakses https://builder.justapp.id. Dengan menggunakan white label, Anda dapat mengubah subdomain builder.justapp.id dengan menggunakan domain atau subdomain Anda sendiri, semisal builder.namadomainsaya.com. Subdomainnya bisa disesuaikan dengan kebutuhan.
+
+2. Ketika Anda berhasil membuat aplikasi dan aplikasi Anda dibagikan ke user, ternyata ketika user melakukan transaksi di dalam aplikasi (kirim data, membeli produk, dll.), email notifikasi transaksi berasal dari JustApp. Dengan menggunakan white label Anda dapat mengganti email default JustApp menggunakan email Anda sendiri. Lazimnya menggunakan email custom (sesuai dengan domain) dan akan dilakukan konfigurasi SMTP.
+
+Oleh karena itu, menggunakan layanan white label merupakan pilih terbaik jika Anda ingin menjual kembali jasa pembuatan aplikasi ke pelanggan Anda. Terlihat profesional dan tanpa memerlukan layanan tambahan. Karena semua aplikasi yang dibuat oleh pelanggan Anda tersimpan di justApp. Mengenai keamanan data, JustApp selalu mengedepankan itu.
+
+Lalu, bagaimana cara membuat white label?
+Layanan white label biasanya diaktifkan oleh Tim JustApp melalui remote. Lazimnya menggunakan aplikasi remote desktop Anydesk. Akan tetapi, sebelum layanannya diaktifkan, Anda harus menyediakan dan/atau memenuhi persyaratan berikut:
+1. Domain dan hosting
+2. Nama builder (semisal buildersaya.domainsaya.com)
+3. Email (Jika belum, tim akan membuat email baru sesuai dengan domain). Jika Anda telah memiliki email, mohon menginformasikan alat dan kata sandinya melalui Tim Support (https://justapp.id/contact)
+4. Hal-hal lain yang dibutuhkan ketika membuat whitelabel akan diinformasikan oleh Tim Support
+
+
+
+Note:
+Pengertian white label bisa Anda temukan di internet. Di sini akan dijelaskan dalam kaitannya dengan JustApp.

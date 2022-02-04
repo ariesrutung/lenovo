@@ -1,0 +1,40 @@
+body.application_customization_features_list.general #add_page_list .block_add_pages_icon {
+    background-color: #000 !important;
+    filter: invert(0.95);
+    border: 1px #191818 solid;
+    border-radius: 7px;
+    background-position-x: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0 !important;
+    flex-direction: column;
+}
+
+
+div.background-icon-feature {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: calc(100% - 2em) !important;
+    background-position: center top;
+}
+
+
+body.application_customization_features_list.general #add-pages .icons-list li span {
+    display: block;
+    font-size: 0.8em;
+    margin-top: 0.2em;
+    text-transform: capitalize !important;
+    filter: invert(1);
+    color: #165184;
+    letter-spacing: normal;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+}
+

@@ -1,0 +1,2098 @@
+/*Commercepro*/
+ion-view[state="commercepro-category-list"] {
+  background-image: none !important;
+  background-color: #eee !important;
+}
+
+ion-view[state="commercepro-category-list"] div>ion-content {
+  background-color: #eee !important;
+  background-image: none !important;
+  top: 23vh !important;
+}
+
+ion-view[state="commercepro-category-list"] div div ion-content div.scroll div.list.m-0 div.search-bar.item.item-custom.p-0>div.row {
+  display: block;
+}
+
+ion-view[state="commercepro-category-list"] div div ion-content div.scroll div.list.m-0 div.search-bar.item.item-custom.p-0>div.row>div.col.col-10.text-center.col-center {
+  display: none;
+}
+
+ion-view[state="commercepro-category-list"] div div ion-content div.scroll div.list.m-0 div.search-bar.item.item-custom.p-0>div.row>div.col.col-80.text-center.col-center {
+  height: 80px;
+}
+
+ion-view[state="commercepro-category-list"] div div ion-content div.scroll div.list.m-0 div.search-bar.item.item-custom.p-0>div.row>div.col.col-80.text-center.col-center>div>label {
+  height: 40px;
+  border: 1px #b2b2b2 solid;
+  margin-top: 35px;
+}
+
+ion-view[state="commercepro-category-list"] div div ion-content div.scroll div.list.m-0 div.search-bar.item.item-custom.p-0>div.row>div.col.col-80.text-center.col-center>div>label>input {
+  padding-left: 8px;
+}
+
+ion-view[state="commercepro-category-list"] div.search-bar.item.item-custom.p-0>div>div:nth-child(3).col.col-10.text-center.col-center {
+  display: none;
+}
+
+ion-view[state="commercepro-category-list"] .brd-rad-50 {
+  border-radius: 7px;
+}
+
+@-webkit-keyframes fade-out {
+  0% {
+    height: 180px;
+  }
+  100% {
+    height: 0px;
+    color: black;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    height: 180px;
+  }
+  100% {
+    height: 0px;
+    color: black;
+  }
+}
+
+ion-view[state="commercepro-category-list"] div div ion-content div.scroll div.list.all-stores ion-item div div div div div div.col-70.col-center div div.col-20.col-center div.col.p-0.col-top>img.icon-right.mb-10 {
+  display: none;
+}
+
+ion-view[state="commercepro-category-list"] div div ion-content div.scroll div.list.all-stores>ion-item.item-custom.item {
+  top: 0;
+  margin-top: 50px;
+  background-color: #eee;
+  color: white;
+  background-image: none;
+  border-radius: 0;
+  border: 0;
+  border-top: 15px #e7e7e7 solid;
+}
+
+.store-cat {
+  margin: auto !important;
+  border: none !important;
+  width: 100%;
+  display: inline !important;
+  padding: 8px !important;
+  box-shadow: 0px 2px 3px #000;
+}
+
+ion-view[state="commercepro-category-list"] div div ion-content div.scroll div.list.all-stores ion-item>h2 {
+  color: black;
+  padding-bottom: 10px;
+}
+
+ion-view[state="commercepro-category-list"] div div ion-content div.scroll div.list.all-stores ion-item div div div div div div.col-90 {
+  display: none;
+}
+
+ion-view[state="commercepro-category-list"] div div ion-content div.scroll div.list.all-stores ion-item div.col-10.icon-location>img {
+  display: none;
+}
+
+ion-view[state="commercepro-category-list"] div div ion-content div.scroll div.list.all-stores ion-item div.col-20.col-center>div.col.p-0.col-bottom {
+  align-self: flex-end;
+  display: none;
+}
+
+ion-view[state="commercepro-category-list"] div div ion-content div.scroll div.list.all-stores ion-item>div.list.p-0.m-0.mb-40 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-bottom: 120px !important;
+}
+
+ion-view[state="commercepro-category-list"] div div ion-content div.scroll div.list.all-stores ion-item>div>div>div.card.stor-list {
+  margin: 5px 5px 10px 10px !important;
+  border-radius: 7px !important;
+  height: auto !important;
+  transform: scale(1);
+  box-shadow: none;
+  background-color: #e7e7e7;
+  border: 1px #ccc solid !important;
+  padding: 0;
+}
+
+ion-view[state="commercepro-category-list"] .p-0 {
+  padding: 0px !important;
+  flex-direction: column !important;
+  background-color: transparent;
+  border: 0;
+  background-color: transparent !important;
+}
+
+ion-view[state="commercepro-category-list"] .col-30 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+ion-view[state="commercepro-category-list"] .col-70 {
+  flex: 0 0 100%;
+  max-width: 100%;
+  display: block;
+  width: 100%;
+  min-height: 85px;
+}
+
+ion-view[state="commercepro-category-list"] .col-70 h2,
+ion-view[state="commercepro-category-list"] .col-70 p {
+  white-space: normal;
+  letter-spacing: 0.7px;
+}
+
+ion-view[state="commercepro-category-list"] .col-80 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+ion-view[state="commercepro-category-list"] div div ion-content div.scroll div.list.all-stores ion-item div div div div div div.col-30>div.store-img {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: auto;
+  height: 90px;
+  width: 100%;
+  border: 0;
+  border-radius: 7px 7px 0 0;
+  position: relative;
+  margin-top: 0;
+  background-color: transparent;
+}
+
+ion-view[state="commercepro-category-list"] b,
+ion-view[state="commercepro-category-list"] strong {
+  color: maroon;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+ion-view[state="commercepro-category-list"] .item-cards p,
+ion-view[state="commercepro-category-list"] .item-cards h2 {
+  color: #777 !important;
+  letter-spacing: 0.5px;
+}
+
+ion-view[state="commercepro-category-list"] div div ion-header-bar>ion-item.item.item-custom.store-cat {
+  background-color: #eee;
+  color: #777;
+  box-shadow: none;
+}
+
+ion-view[state="commercepro-category-list"] div div>div.bar-custom.bar {
+  display: none !important;
+}
+
+ion-view[state="commercepro-category-list"] .pro-categories .category-image {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  border: 0;
+  padding: 5px;
+  border-radius: 7px;
+  box-shadow: none;
+  background-color: #e7e7e7;
+}
+
+ion-view[state="commercepro-category-list"] .pro-categories .category-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  object-fit: contain !important;
+  filter: brightness(0.6);
+}
+
+ion-view[state="commercepro-category-list"] .left.active .category-image {
+  border-radius: 7px;
+  border: 0;
+  background-color: #e7e7e7;
+  border: 2px maroon solid;
+}
+
+ion-view[state="commercepro-category-list"] div div ion-header-bar ion-item h2 b>span:nth-child(2) {
+  color: #777;
+}
+
+ion-view[state="commercepro-category-list"] .pro-categories {
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  min-height: 65px;
+  font-size: 2vw;
+}
+
+.pro-categories::-webkit-scrollbar {
+  display: none;
+}
+
+ion-view[state="commercepro-category-list"] .category-label {
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: black;
+}
+
+ion-view[state="commercepro-category-list"] .pro-categories div.left:first-child>div.category-image {
+  background-image: url(https://i.imgur.com/ldfLJTN.png);
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+ion-view[state="commercepro-category-list"] .pro-categories div.left:first-child>div.category-image img {
+  visibility: hidden;
+}
+
+
+/*Commercepro product list*/
+ion-view[state="commercepro-store-product-list"] {
+  background-image: none !important;
+  background-color: #eee !important;
+  z-index: 9 !important;
+}
+
+ion-view[state="commercepro-store-product-list"] div>ion-header-bar {
+  border: 0;
+}
+
+ion-view[state="commercepro-store-product-list"] div>ion-content {
+  background-color: #eee !important;
+  background-image: none !important;
+  top: 5vh !important;
+}
+
+ion-view[state="commercepro-store-product-list"] .store-details p {
+  white-space: normal;
+  color: white !important;
+  letter-spacing: 0.8px !important;
+}
+
+ion-view[state="commercepro-store-product-list"] div.col.store-details {
+  margin-top: 50px;
+  color: #444;
+  padding: 1.5em !important;
+}
+
+ion-view[state="commercepro-store-product-list"] .store-details img {
+  display: none;
+}
+
+ion-view[state="commercepro-store-product-list"] .icon-cus {
+  display: none;
+}
+
+ion-view[state="commercepro-store-product-list"] div ion-content div.scroll div.list .item.item-custom {
+  border-radius: 8px;
+  border-color: transparent;
+  background-color: #ddd;
+  color: #f8f8f8;
+  margin-top: 0;
+  padding: 12px 0;
+  width: calc(100% - 20px) !important;
+  margin: auto;
+  height: 80px;
+}
+
+.store-details {
+  margin-top: 50px;
+  color: #000;
+  padding: 1.7em !important;
+}
+
+.btn-add {
+  border-radius: 3px !important;
+  padding: 0px 25px 0px 10px !important;
+  height: 15px !important;
+  line-height: 2.3 !important;
+  background-color: #f8f8f8 !important;
+  vertical-align: text-top;
+  color: black !important;
+  min-height: 25px !important;
+  margin-top: 5px !important;
+  filter: drop-shadow(2px 4px 6px black) !important;
+  font-weight: bold;
+}
+
+.circle-store {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  border-radius: 8px;
+  border: 0;
+  left: 50%;
+  margin-left: -50px;
+  top: -40px;
+  background: #f8f8f8;
+  overflow: hidden;
+  box-shadow: 2px 4px 3px #000;
+}
+
+ion-view[state="commercepro-store-product-list"] i.icon.ion-information-circled {
+  display: none;
+}
+
+ion-view[state="commercepro-store-product-list"] div ion-content div.scroll div.card.store-card.item-custom.item>div>div.rectangle-card p[ng-bind-html="cover.subtitle"] {
+  margin-top: -5px;
+  color: maroon !important;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+ion-view[state="commercepro-store-product-list"] .item.item-custom a {
+  color: #0c60ee !important;
+  font-size: 11px;
+}
+
+ion-view[state="commercepro-store-product-list"] div ion-content div.scroll>div.card.store-card.item-custom.item {
+  padding-bottom: 20px !important;
+  border-radius: 0 0 20px 20px;
+}
+
+ion-view[state="commercepro-store-product-list"] div ion-content div.scroll div.card.store-card.item-custom.item>div>div.rectangle-card {
+  display: block;
+  width: 100%;
+  background: white;
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  border-radius: 0;
+  background-color: transparent;
+  box-shadow: none;
+  border-bottom: 1px #ccc solid;
+}
+
+ion-view[state="commercepro-store-product-list"] div ion-content div.scroll div.card.store-card.item-custom.item>div>div.rectangle-card p {
+  color: white;
+}
+
+ion-view[state="commercepro-store-product-list"] div ion-content div.scroll div.card.store-card.item-custom.item>div.row {
+  border: none;
+  padding-top: 30px;
+}
+
+ion-view[state="commercepro-store-product-list"] div ion-content div.scroll div:nth-child(4)>div>label.item.item-input {
+  border-radius: 20px;
+  background-color: #eee;
+  border: 0;
+  box-shadow: 30.03px 30.03px 100px #777, -30.03px -30.03px 100px #f8f8f8;
+}
+
+ion-view[state="commercepro-store-product-list"] div ion-content div.scroll div.card.store-card.item-custom.item>div>div.rectangle-card p {
+  color: rgba(68, 68, 68, 1) !important;
+}
+
+ion-view[state="commercepro-store-product-list"] .col-90.product-title {
+  display: none;
+}
+
+ion-view[state="commercepro-store-product-list"] div ion-content div.scroll>div:nth-child(4) {
+  margin-left: 10px !important;
+  margin-right: 10px !important;
+}
+
+ion-view[state="commercepro-store-product-list"] label.item.item-input.p-0.pl-10.brd-rad-50 {
+  padding: 0 8px !important;
+  border-radius: 5px;
+}
+
+ion-view[state="commercepro-store-product-list"] div>div.bar-custom.bar {
+  display: none !important;
+}
+
+ion-view[state="commercepro-store-product-list"] div ion-content div.scroll div.list.store-products div div.row div.col.col-50 div.col.product-head>div>div.product-img {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  vertical-align: middle;
+  margin: auto;
+  height: 30vh;
+  width: 100%;
+  background-color: #444;
+  background-size: cover;
+  border-radius: 8px 8px 0 0;
+  margin-bottom: 0;
+  border: 1px #ccc solid;
+  border-bottom: 0;
+}
+
+ion-view[state="commercepro-store-product-list"] .col-50 {
+  transform: scale(0.95);
+}
+
+ion-view[state="commercepro-store-product-list"] div ion-content div.scroll div.list.store-category.m-0 div>h2 {
+  color: #535353;
+  letter-spacing: 0.8px;
+}
+
+ion-view[state="commercepro-store-product-list"] .left .category-label span {
+  color: black;
+}
+
+ion-view[state="commercepro-store-product-list"] .left.active .category-label span {
+  padding: 8px;
+  border: 0;
+  color: maroon;
+  letter-spacing: 0.8px;
+  border-radius: 3px;
+  box-shadow: none;
+  text-transform: uppercase;
+  background-color: #e7e7e7;
+  padding: 1px 7px;
+  border: 0;
+  text-transform: uppercase;
+}
+
+ion-view[state="commercepro-store-product-list"] div ion-content div.scroll div.col.store-details>div:nth-child(3)>div>div:nth-child(1)>div {
+  display: none;
+}
+
+ion-view[state="commercepro-store-product-list"] div ion-content div.scroll div.col.store-details>div:nth-child(3)>div>div:nth-child(3)>div {
+  display: none;
+}
+
+ion-view[state="commercepro-store-product-list"] .product-body {
+  margin: 0px !important;
+  border-radius: 0 0 8px 8px;
+  background-color: white !important;
+  color: #535353;
+  box-shadow: none;
+  border: 1px #ccc solid;
+  padding: 5px 8px;
+  border-top: 0;
+}
+
+ion-view[state="commercepro-store-product-list"] .product-body span.folder-title.font-12.bold.ng-binding {
+  color: maroon;
+}
+
+ion-view[state="commercepro-store-product-list"] .product-body .col.col-50.p-0.text-left.col-center>span.bold.ng-binding {
+  color: #0c60ee;
+}
+
+ion-view[state="commercepro-store-product-list"] .product-body p {
+  color: #535353 !important;
+  letter-spacing: 0.5px !important;
+}
+
+ion-view[state="commercepro-store-product-list"] .pro-categories .category-image {
+  display: none;
+}
+
+ion-view[state="commercepro-store-product-list"] .store-category {
+  height: 80px;
+}
+
+ion-view[state="commercepro-store-product-list"] .store-category-fixed {
+  height: 80px !important;
+  max-height: 80px !important;
+  background-color: #ffb4af !important;
+  border-radius: 0 0 10px 10px;
+}
+
+ion-view[state="commercepro-store-product-list"] .list.store-products {
+  margin-bottom: 80px;
+}
+
+ion-view[state="commercepro-store-product-list"] .list.store-products>div.item1.item-custom1 {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+ion-view[state="commercepro-store-product-list"] .list.store-products>div.item1.item-custom1>.folder-layout.folder-l2.card {
+  margin: 0 !important;
+}
+
+ion-view[state="commercepro-store-product-list"] .list.store-products .item1.item-custom1>.row:nth-last-child(2) {
+  margin-bottom: 0px;
+}
+
+ion-view[state="commercepro-store-product-list"] .list.store-products .item1.item-custom1>.row:nth-last-child(2)>.col-50:only-child {
+  max-width: 100% !important;
+  margin: auto !important;
+}
+
+ion-view[state="commercepro-store-product-list"] div.col.store-details {
+  margin-top: 50px;
+  color: #444;
+  padding: 1.5em !important;
+}
+
+ion-view[state="commercepro-store-product-list"] #prod_cat_list {
+  margin: auto;
+  min-height: 80px !important;
+  background-color: #ddd !important;
+  border: 0;
+  border-radius: 8px;
+  box-shadow: none;
+  width: calc(100% - 20px) !important;
+}
+
+ion-view[state="commercepro-store-product-list"] div ion-content div.scroll div.list.store-category.m-0>div>div>div:nth-child(2) div.left {
+  color: black;
+}
+
+ion-view[state="commercepro-store-product-list"] * {
+  letter-spacing: 0.7px;
+}
+
+
+/*Commercepro add to cart modal*/
+ion-modal-view.customer-view.customer-layout1.module-commercepro.modal.has-background-image.slide-in-up {
+  border: 0;
+  background-image: none !important;
+  background-color: rgba(0, 0, 0, .15) !important;
+  backdrop-filter: blur(35px);
+  -webkit-backdrop-filter: blur(25px);
+}
+
+ion-modal-view.customer-view.customer-layout1.module-commercepro.modal.has-background-image.slide-in-up ion-content {
+  background-image: none !important;
+  top: 65px !important;
+}
+
+ion-modal-view.customer-view.customer-layout1.module-commercepro.modal.has-background-image.slide-in-up div.scroll>div:nth-child(3) {
+  background-image: none !important;
+}
+
+ion-modal-view.customer-view.customer-layout1.module-commercepro.modal.has-background-image.slide-in-up .card {
+  box-shadow: none;
+}
+
+ion-modal-view.customer-view.customer-layout1.module-commercepro.modal.has-background-image.slide-in-up .card .item.item-custom {
+  background-color: transparent;
+  color: white;
+}
+
+ion-modal-view.customer-view.customer-layout1.module-commercepro.modal.has-background-image.slide-in-up .card .item-divider.item-divider-custom {
+  background-color: transparent;
+}
+
+ion-modal-view.customer-view.customer-layout1.module-commercepro.modal.has-background-image.slide-in-up .card .item-divider.item-divider-custom h2 {
+  color: white;
+  font-size: 14px;
+}
+
+ion-modal-view.customer-view.customer-layout1.module-commercepro.modal.has-background-image.slide-in-up .list.list-inset {
+  background-color: transparent !important;
+}
+
+ion-modal-view.customer-view.customer-layout1.module-commercepro.modal.has-background-image.slide-in-up .list.list-inset>label {
+  text-align: left !important;
+  margin-bottom: 10px !important;
+  background-color: #eee !important;
+  border: 0 !important;
+  border-radius: 5px !important;
+}
+
+ion-modal-view.customer-view.customer-layout1.module-commercepro.modal.has-background-image.slide-in-up .button.button-positive-custom {
+  width: 90%;
+  background-color: black;
+  border: 0;
+  min-height: 40px;
+  letter-spacing: 0.8px;
+  font-weight: 600;
+  border-radius: 7px;
+}
+
+
+/*Chat*/
+ion-view[state="socialnetworks-chat"] {
+  height: calc(100% - 75px) !important;
+  margin-top: 75px !important;
+  z-index: 9999 !important;
+  border-radius: 10px 10px 0 0 !important;
+}
+
+ion-view[state="socialnetworks-chat"] ion-content {
+  top: 0 !important;
+  height: calc(100% - 65px) !important;
+}
+
+input.ng-dirty.ng-invalid,
+textarea.ng-dirty.ng-invalid {
+  border: 0 !important;
+}
+
+ion-view[state="socialnetworks-chat"] .bar.bar-stable.bar-footer {
+  opacity: 0.85;
+  width: 98%;
+  margin: 0 auto;
+  border-radius: 5px;
+  border: 0;
+  top: calc(100vh - 135px) !important;
+}
+
+
+/*Commercepro productview*/
+ion-view[state="commercepro-product-view"] ion-content {
+  background-color: #eee !important;
+  background-image: none !important;
+}
+
+ion-view[state="commercepro-product-view"] .card {
+  box-shadow: none !important;
+  margin: -2px 10px;
+}
+
+ion-view[state="commercepro-product-view"] .card:first-child {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+ion-view[state="commercepro-product-view"] div:nth-child(1).card>div.item.item-text-wrap.text-center.item-custom {
+  background-color: #e9e9e9;
+  border-radius: 8px 8px 0 0;
+}
+
+ion-view[state="commercepro-product-view"] .card:first-child h2 {
+  font-weight: bold;
+  letter-spacing: 0.8px;
+  color: white;
+}
+
+ion-view[state="commercepro-product-view"] div:nth-child(1).card>div:nth-child(2).item.item-custom {
+  padding: 0;
+  margin: 12px;
+  border-radius: 0;
+  filter: brightness(0.9);
+  touch-action: auto !important;
+  background-color: transparent;
+}
+
+ion-view[state="commercepro-product-view"] div:nth-child(1).card>div:nth-child(2).item.item-custom>div.slider::hover {
+  zoom: 2;
+  -webkit-zoom: 2;
+  overflow-x: scroll;
+}
+
+ion-view[state="commercepro-product-view"] .card:first-child div#homepage_slider ion-slide>img {
+  opacity: 0.85;
+  touch-action: auto !important;
+  -webkit-animation: bounce-in-top 1.1s both;
+  border-radius: 8px;
+}
+
+@-webkit-keyframes bounce-in-top {
+  0% {
+    -webkit-transform: translateY(-500px);
+    transform: translateY(-500px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  38% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    -webkit-transform: translateY(-65px);
+    transform: translateY(-65px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  72% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  81% {
+    -webkit-transform: translateY(-28px);
+    transform: translateY(-28px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  90% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  95% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+
+@keyframes bounce-in-top {
+  0% {
+    -webkit-transform: translateY(-500px);
+    transform: translateY(-500px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  38% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    -webkit-transform: translateY(-65px);
+    transform: translateY(-65px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  72% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  81% {
+    -webkit-transform: translateY(-28px);
+    transform: translateY(-28px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  90% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  95% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+
+ion-view[state="commercepro-product-view"] .card:nth-child(2)>div.item.item-body.item-custom {
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  color: #444;
+  background-color: #e9e9e9;
+  border-radius: 0 0 8px 8px;
+}
+
+ion-view[state="commercepro-product-view"] div.scroll>.card:nth-last-child(3) {
+  margin-top: 25px !important;
+  background-image: none;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+ion-view[state="commercepro-product-view"] div.scroll>.card:nth-last-child(2)>div.item.item-divider.item-divider-custom {
+  text-align: center;
+  background-color: #ddd;
+  border-radius: 8px 8px 0 0;
+}
+
+ion-view[state="commercepro-product-view"] div.scroll>.card[ng-if="is_chat_enable"]:nth-last-child(2)>div.item.item-divider.item-divider-custom {
+  text-align: center;
+  background-color: transparent;
+  border-radius: 8px 8px 0 0;
+}
+
+ion-view[state="commercepro-product-view"] .card:nth-last-child(2)>div.item.item-divider.item-divider-custom h2 {
+  color: black;
+  line-height: 35px;
+  font-size: 15px;
+  letter-spacing: 0.8px;
+}
+
+ion-view[state="commercepro-product-view"] .card:nth-last-child(2)>div.item.item-body.item-custom.ng-binding {
+  margin-bottom: 50px;
+  border-radius: 0 0 8px 8px;
+  background-color: #f8f8f8;
+  box-shadow: none;
+  border: 0 !important;
+}
+
+ion-view[state="commercepro-product-view"] .card:nth-last-child(4) {
+  border-radius: 0px;
+}
+
+ion-view[state="commercepro-product-view"] .card:nth-last-child(4)>div.item.item-input.item-custom.input-number-sb.ng-not-empty.ng-valid {
+  background-color: #eee;
+  box-shadow: none;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+ion-view[state="commercepro-product-view"] button.button.button-small.button-custom.button-left,
+ion-view[state="commercepro-product-view"] button.button.button-small.button-custom.button-right {
+  background-color: #eee;
+  box-shadow: none;
+  border: 1px #ccc solid;
+  border-radius: 3px;
+  color: maroon;
+}
+
+ion-view[state="commercepro-product-view"] .card:nth-last-child(4)>div.item.item-text-wrap.item-icon-left.item-custom.ng-binding[ng-click="addProduct()"] {
+  text-align: center;
+  padding-left: 12px;
+  color: white;
+  letter-spacing: 0.5px;
+  font-weight: bold;
+  background-color: maroon;
+  box-shadow: none;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+ion-view[state="commercepro-product-view"] .card>div {
+  border: 0 !important;
+}
+
+ion-view[state="commercepro-product-view"] i {
+  display: none;
+}
+
+ion-view[state="commercepro-product-view"] i.icon.ion-ios-cart-outline {
+  display: none !important;
+}
+
+button.button.button-small.button-custom.button-left,
+button.button.button-small.button-custom.button-right {
+  border: 1px darkred solid;
+  border-radius: 50%;
+  color: darkred;
+}
+
+ion-view[state="commercepro-product-view"] ion-content div.scroll>div:nth-child(3)>div:nth-child(2)>div.list.list-inset {
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  background-color: #eee;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+ion-view[state="commercepro-product-view"] ion-content div.scroll div.card div div>label:nth-child(2) {
+  display: none;
+}
+
+ion-view[state="commercepro-product-view"] div.list.list-inset>label:nth-child(1).item.item-select.item-input.item-custom {
+  text-align: left;
+  margin: auto;
+  border-radius: 8px;
+  background-color: #eee;
+  width: 100%;
+  box-shadow: none;
+  border: 1px #ccc solid;
+}
+
+ion-view[state="commercepro-product-view"] .card .item.item-custom h1,
+ion-view[state="commercepro-product-view"] .card .item.item-custom h2,
+ion-view[state="commercepro-product-view"] .card .item.item-custom h3,
+ion-view[state="commercepro-product-view"] .card .item.item-custom h4,
+ion-view[state="commercepro-product-view"] .card .item.item-custom h5,
+ion-view[state="commercepro-product-view"] .card .item.item-custom h6,
+ion-view[state="commercepro-product-view"] .card .item.item-custom p,
+ion-view[state="commercepro-product-view"] .card .item.item-custom .input-label,
+ion-view[state="commercepro-product-view"] .card .item.item-custom input,
+ion-view[state="commercepro-product-view"] .card .item.item-custom textarea,
+ion-view[state="commercepro-product-view"] .card .item.item-custom.item-select select {
+  color: #444;
+  letter-spacing: 0.8px;
+}
+
+ion-view[state="commercepro-product-view"] div:nth-child(3)>div.item.item-divider.item-divider-custom {
+  display: none;
+}
+
+ion-view[state="commercepro-product-view"] .slider-pager .slider-pager-page {
+  display: inline-block;
+  margin: 0 3px;
+  width: 15px;
+  color: #444;
+  text-decoration: none;
+  opacity: 0.3;
+  height: 5px;
+  border-left: 1px solid red;
+  background-color: #fff;
+  box-shadow: 0px 0px 12px 0.7px #e42112;
+  border-bottom: 1px solid red;
+  border-top: 1px solid red;
+  border-right: 1px solid red;
+}
+
+ion-view[state="commercepro-product-view"] .slider-pager .slider-pager-page.active {
+  opacity: 1;
+}
+
+ion-view[state="commercepro-product-view"] .card div[ng-model="prd_qty"] {
+  text-align: left;
+  margin: auto;
+  border-radius: 8px;
+  background-color: #eee;
+  width: 100%;
+  margin-bottom: 10px;
+  box-shadow: none;
+  border: 1px #ccc solid !important;
+}
+
+ion-view[state="commercepro-product-view"] .card div[ng-model="prd_qty"]>div.input-label.ng-binding {
+  text-transform: uppercase;
+}
+
+ion-view[state="commercepro-product-view"] .card div[ng-click="addProduct()"] {
+  text-align: center;
+  margin: auto;
+  border: 0;
+  width: 100%;
+  margin-bottom: 10px;
+  padding-left: 12px;
+  font-weight: bold;
+  box-shadow: none;
+  background-color: maroon;
+  color: white;
+  border-radius: 8px;
+  text-transform: capitalize;
+}
+
+ion-view[state="commercepro-product-view"] .card .item-divider.item-divider-custom {
+  text-align: center;
+  letter-spacing: 0.8px;
+  background-color: #ddd;
+  border-radius: 8px 8px 0 0;
+}
+
+ion-view[state="commercepro-product-view"] .card .item-divider.item-divider-custom h2 {
+  font-weight: bold;
+  line-height: 30px;
+  font-size: 12px;
+}
+
+ion-view[state="commercepro-product-view"] .card div[ng-bind-html="product.description | trusted_html"] {
+  background-color: #f8f8f8;
+  border: 1px #ccc solid !important;
+  border-top: 0 !important;
+  border-radius: 0 0 8px 8px;
+}
+
+ion-view[state="commercepro-product-view"] .card div[ng-bind-html="product.description | trusted_html"] p {
+  text-align: left !important;
+}
+
+ion-view[state="commercepro-product-view"] div[ng-if="is_chat_enable"] {
+  margin-bottom: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+ion-view[state="commercepro-product-view"] button[ng-click="openChatWindow()"] {
+  background-color: #6dff97;
+  margin-top: 9px;
+  font-weight: bold;
+  letter-spacing: 0.8px;
+  padding: 8px;
+  margin-bottom: 20px;
+  border-color: #333;
+  border: 0;
+  border-radius: 0 8px 0px 8px;
+  opacity: 0.8;
+}
+
+ion-view[state="commercepro-product-view"] button[ng-click="openChatWindow()"] span[ng-show="labels.chat_text"]:after {
+  content: " with seller";
+}
+
+ion-view[state="commercepro-product-view"] .card:nth-last-child(4)[ng-show="out_of_stock"] {
+  position: absolute;
+  top: 13px;
+  left: 22px;
+  border-radius: 8px 0 8px 0;
+  text-align: center;
+  margin: 0;
+}
+
+ion-view[state="commercepro-product-view"] .card:nth-last-child(4)[ng-show="out_of_stock"]>.item.item-text-wrap.ng-binding {
+  background-color: #f0f072;
+  color: black;
+  opacity: 0.8;
+}
+
+ion-view[state="commercepro-product-view"] div:nth-child(1).card>div.item.item-text-wrap.text-center.item-custom>h2 {
+  color: maroon;
+}
+
+ion-view[state="commercepro-product-view"] div.scroll> :not(.card[ng-if="is_chat_enable"]):nth-last-child(2):after,
+ion-view[state="commercepro-product-view"] div.scroll>.card:nth-last-child(3):after {
+  content: "";
+  position: relative;
+  width: 100%;
+  height: 120px;
+  background-color: transparent;
+  display: block;
+}
+
+/*Commercepro cartview*/
+ion-view[state="commercepro-cart-view"] ion-content .scroll:before {
+  content: "";
+  position: relative;
+  display: block;
+  background-image: url(https://login.appdolph.org/esportsmy/step1.png);
+  width: 100%;
+  height: 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 10px;
+}
+
+ion-view[state="commercepro-cart-view"] ion-content {
+  background-color: #eee !important;
+  background-image: none !important;
+}
+
+ion-view[state="commercepro-cart-view"] .card {
+  border-radius: 8px;
+  box-shadow: none;
+  border: 1px #ccc solid;
+  background-color: white;
+  filter: drop-shadow(2px 3px 3px #d9d9d9);
+}
+
+ion-view[state="commercepro-cart-view"] .card>div {
+  margin: 0;
+  border: 0;
+}
+
+ion-view[state="commercepro-cart-view"] .card .item.item-thumbnail-left.item-icon-right.item-custom {
+  border-bottom: 1px #ddd solid;
+  margin: auto;
+  width: 100%;
+  background-color: transparent;
+}
+
+ion-view[state="commercepro-cart-view"] .card .item.item-thumbnail-left.item-icon-right.item-custom img {
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+ion-view[state="commercepro-cart-view"] .card .item.item-input.item-custom.input-number-sb {
+  background-color: transparent;
+}
+
+ion-view[state="commercepro-cart-view"] .scroll:after {
+  content: "";
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 120px;
+  background-color: transparent;
+}
+
+ion-view[state="commercepro-cart-view"] .card:last-child {
+  margin-bottom: 0px;
+}
+
+ion-view[state="commercepro-cart-view"].card[ng-if="object.cart.lines.length && !object.cart.commerce_pro.price_hide_flag"]:after {
+  content: "Click Proceed button on top right corner of your screen to go to the next checkout step.";
+  color: #ba9300;
+  display: block;
+  position: relative;
+  width: calc(100vw - 20px);
+  height: 40px;
+  font-size: 10px;
+  white-space: normal;
+  padding: 0 8px;
+}
+
+ion-view[state="commercepro-cart-view"] .card:last-child>div[ng-click="goToCategories()"] {
+  background-color: transparent;
+  color: white;
+  letter-spacing: 0.5px;
+  margin-top: -1px;
+}
+
+ion-view[state="commercepro-cart-view"] .card .item.item-custom {
+  background-color: transparent;
+  color: #c30202 !important;
+  font-weight: 700;
+}
+
+ion-view[state="commercepro-cart-view"] p {
+  letter-spacing: 0.5px;
+  color: white;
+  white-space: normal;
+}
+
+ion-view[state="commercepro-cart-view"] .card .item-divider.item-divider-custom {
+  margin-top: -1px !important;
+  background-color: #ddd;
+}
+
+ion-view[state="commercepro-cart-view"] .card .item-divider.item-divider-custom p {
+  color: white !important;
+  text-align: center;
+  font-size: 12px;
+}
+
+ion-view[state="commercepro-cart-view"] .card>div[ng-if="object.cart.add_tip"] {
+  display: none;
+}
+
+ion-view[state="commercepro-cart-view"] .card>div:nth-child(7) strong,
+ion-view[state="commercepro-cart-view"] .card>div:nth-child(7) span {
+  color: white;
+  font-weight: bold;
+}
+
+ion-view[state="commercepro-cart-view"] i.icon.ion-calculator,
+ion-view[state="commercepro-cart-view"] i.icon.ion-clipboard {
+  display: none !important;
+}
+
+ion-view[state="commercepro-cart-view"] p,
+ion-view[state="commercepro-cart-view"] strong,
+ion-view[state="commercepro-cart-view"] div,
+ion-view[state="commercepro-cart-view"] span,
+ion-view[state="commercepro-cart-view"] input {
+  color: white !important;
+  letter-spacing: 0.8px !important;
+  text-align: left;
+}
+
+ion-view[state="commercepro-cart-view"] div.input-container.text-right>div>input {
+  text-align: center;
+}
+
+ion-view[state="commercepro-cart-view"] .card .item.item-custom input.discount {
+  border: 0;
+  height: 35px;
+  line-height: 20px;
+  text-align: left;
+  border-bottom: 1px #ccc dashed;
+  width: calc(100vw - 44px);
+  display: block;
+}
+
+ion-view[state="commercepro-cart-view"] div {
+  color: rgba(68, 68, 68, 1) !important;
+  letter-spacing: 0.8px !important;
+  text-align: left;
+}
+
+ion-view[state="commercepro-cart-view"] button.button.button-small.button-custom.button-left,
+ion-view[state="commercepro-cart-view"] button.button.button-small.button-custom.button-right {
+  border: 1px #ccc solid;
+  border-radius: 3px;
+  color: maroon;
+}
+
+ion-view[state="commercepro-cart-view"] .card:nth-child(1)>.item.item-custom:nth-child(1) {
+  height: calc(87vw - 20px);
+  background-image: url(https://login.appdolph.org/esportsmy/emptycart.png);
+  background-position: center center;
+  background-size: cover;
+}
+
+ion-view[state="commercepro-cart-view"] .card:nth-child(1)>.item.item-custom:nth-child(1)>p {
+  display: none;
+}
+
+/*Commercepro choose store*/
+ion-view[state="commercepro-sales-store"] ion-content {
+  background-color: #eee !important;
+  background-image: none !important;
+}
+
+ion-view[state="commercepro-sales-store"] ion-content .scroll:before {
+  content: "";
+  position: relative;
+  display: block;
+  background-image: url(https://login.appdolph.org/esportsmy/step2.png);
+  width: 100%;
+  height: 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 10px;
+}
+
+ion-view[state="commercepro-sales-store"] .list {
+  width: 95%;
+  margin: auto;
+}
+
+ion-view[state="commercepro-sales-store"] .list>ion-item {
+  margin-bottom: 10px !important;
+  margin-top: 15px;
+  margin-top: 15px;
+  position: relative;
+  background-color: #e9e9e9 !important;
+  text-align: center;
+  width: 100vw;
+  margin-left: -2.5%;
+  height: auto;
+  padding-top: 10px;
+  font-weight: 600;
+}
+
+ion-view[state="commercepro-sales-store"] .list .item-divider.item-divider-custom:after {
+  content: "This step is just to confirm and agree you are buying from our authorized vendor.";
+  color: #ba9300;
+  display: block;
+  position: relative;
+  width: calc(100vw - 20px);
+  height: 40px;
+  font-size: 10px;
+  white-space: normal;
+  background-color: #e9e9e9;
+  padding: 5px;
+  border-radius: 5px;
+  letter-spacing: 0.7px;
+}
+
+ion-view[state="commercepro-sales-store"] .list>ion-item>h2 {
+  font-weight: bold !important;
+  letter-spacing: 0.5px !important;
+  color: #444 !important;
+}
+
+ion-view[state="commercepro-sales-store"] .list>ion-item label {
+  margin-bottom: 10px;
+}
+
+ion-view[state="commercepro-sales-store"] .item-radio.radio-custom {
+  color: #444;
+  border-radius: 8px;
+  background-color: #fff !important;
+  box-shadow: none;
+  border: 1px #ccc solid;
+  filter: drop-shadow(2px 3px 3px #d9d9d9);
+}
+
+ion-view[state="commercepro-sales-store"] .item-radio input:checked+.radio-content .item-content {
+  background-color: transparent !important;
+}
+
+ion-view[state="commercepro-sales-store"] .list .item-divider.item-divider-custom h2 {
+  letter-spacing: 0.8px;
+  font-size: 15px;
+}
+
+/*Commercepro customer info*/
+ion-view[state="commercepro-sales-customer"] ion-content {
+  background-color: #eee !important;
+  background-image: none !important;
+}
+
+ion-view[state="commercepro-sales-customer"] ion-content .scroll:before {
+  content: "";
+  position: relative;
+  display: block;
+  background-image: url(https://login.appdolph.org/esportsmy/step3.png);
+  width: 100%;
+  height: 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 10px;
+}
+
+ion-view[state="commercepro-sales-customer"] .list {
+  width: 95%;
+  margin: auto;
+}
+
+ion-view[state="commercepro-sales-customer"] .list ion-item.item-divider.item-divider-custom.item {
+  margin-bottom: 10px;
+  margin-top: 15px;
+  position: relative;
+  background-color: #e9e9e9;
+  text-align: center;
+  width: 100vw;
+  margin-left: -2.5%;
+  height: auto;
+  padding-top: 10px;
+}
+
+ion-view[state="commercepro-sales-customer"] .list ion-item.item-divider.item-divider-custom.item h2 {
+  color: black;
+  font-size: 14px;
+  letter-spacing: 0.8px;
+  font-weight: 600;
+}
+
+ion-view[state="commercepro-sales-customer"] ion-list:nth-child(1)>.list ion-item.item-divider.item-divider-custom.item h2:after {
+  content: "All of your personal data will be kept for us only and we believe our customer's privacy has to be respected.";
+  color: #ba9300;
+  display: block;
+  position: relative;
+  width: calc(100vw - 20px);
+  height: 40px;
+  font-size: 10px;
+  white-space: normal;
+  background-color: #e9e9e9;
+  padding: 5px;
+  border-radius: 5px;
+  letter-spacing: 0.7px;
+  line-height: 20px;
+}
+
+ion-view[state="commercepro-sales-customer"] ion-list:nth-child(2)>.list ion-item.item-divider.item-divider-custom.item h2:after {
+  content: "You may put your home or workplace address. Please make sure all fields are correct.";
+  color: #ba9300;
+  display: block;
+  position: relative;
+  width: calc(100vw - 20px);
+  height: 40px;
+  font-size: 10px;
+  white-space: normal;
+  background-color: #e9e9e9;
+  padding: 5px;
+  border-radius: 5px;
+  letter-spacing: 0.7px;
+  line-height: 20px;
+}
+
+ion-view[state="commercepro-sales-customer"] .list ion-item[ng-if="!hasguestmode"] {
+  background-color: transparent;
+  border: 0;
+  color: #444;
+  text-align: left;
+  letter-spacing: 0.8px;
+  box-shadow: none !important;
+}
+
+ion-view[state="commercepro-sales-customer"] .list ion-item[ng-click="customer_login()"] {
+  margin-bottom: 10px;
+  color: #444;
+  letter-spacing: 0.8px;
+  border: 0;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+ion-view[state="commercepro-sales-customer"] .list ion-item[ng-click="customer_signup()"] {
+  margin-bottom: 10px;
+  background-color: transparent;
+  color: #444;
+  letter-spacing: 0.8px;
+  border-radius: 5px;
+}
+
+ion-view[state="commercepro-sales-customer"] i.icon.ion-ios-person-outline {
+  display: none;
+}
+
+ion-view[state="commercepro-sales-customer"] div>ion-list:nth-child(2)>div.list:after {
+  content: "";
+  position: relative;
+  width: 100%;
+  height: 120px;
+  display: block;
+  background-color: transparent;
+}
+
+ion-view[state="commercepro-sales-customer"] .list .item.item-custom {
+  border-color: white;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  text-align: left;
+  background-color: #e3e3e3 !important;
+  border: 0 !important;
+  color: black !important;
+  letter-spacing: 0.8px !important;
+  box-shadow: none;
+  display: contents;
+}
+
+ion-view[state="commercepro-sales-customer"] .list .item.item-custom[ng-if="!hasguestmode"] {
+  display: block !important;
+  background-color: transparent !important;
+  text-align: center;
+}
+
+ion-view[state="commercepro-sales-customer"] .list .item.item-custom[ng-click="customer_login()"] {
+  display: block !important;
+  background-color: maroon !important;
+  color: white !important;
+}
+
+ion-view[state="commercepro-sales-customer"] .list .item.item-custom[ng-click="customer_signup()"] {
+  display: block;
+}
+
+ion-view[state="commercepro-sales-customer"] i.icon.ion-ios-personadd-outline {
+  display: none;
+}
+
+ion-view[state="commercepro-sales-customer"] div.list>ion-item[ng-click="customer_login()"] {
+  padding-left: 12px !important;
+  text-align: center !important;
+  letter-spacing: 0.5px !important;
+}
+
+ion-view[state="commercepro-sales-customer"] div.list>ion-item[ng-click="customer_signup()"] {
+  padding-left: 12px !important;
+  text-align: center !important;
+  color: #444 !important;
+  font-weight: bold !important;
+  letter-spacing: 0.5px !important;
+}
+
+ion-view[state="commercepro-sales-customer"] .list .item.item-custom h1,
+ion-view[state="commercepro-sales-customer"] .list .item.item-custom h2,
+ion-view[state="commercepro-sales-customer"] .list .item.item-custom h3,
+ion-view[state="commercepro-sales-customer"] .list .item.item-custom h4,
+ion-view[state="commercepro-sales-customer"] .list .item.item-custom h5,
+ion-view[state="commercepro-sales-customer"] .list .item.item-custom h6,
+ion-view[state="commercepro-sales-customer"] .list .item.item-custom p,
+ion-view[state="commercepro-sales-customer"] .list .item.item-custom .input-label,
+ion-view[state="commercepro-sales-customer"] .list .item.item-custom input,
+ion-view[state="commercepro-sales-customer"] .list .item.item-custom textarea,
+ion-view[state="commercepro-sales-customer"] .list .item.item-custom.item-select select {
+  color: #444 !important;
+}
+
+ion-view[state="commercepro-sales-confirmation"] p,
+ion-view[state="commercepro-sales-confirmation"] strong,
+ion-view[state="commercepro-cart-view"] div,
+ion-view[state="commercepro-sales-confirmation"] span,
+ion-view[state="commercepro-sales-confirmation"] input {
+  color: #444 !important;
+  letter-spacing: 0.8px !important;
+  text-align: left;
+}
+
+ion-view[state="commercepro-cart-view"] p,
+ion-view[state="commercepro-cart-view"] strong,
+ion-view[state="commercepro-cart-view"] div,
+ion-view[state="commercepro-cart-view"] span,
+ion-view[state="commercepro-cart-view"] input {
+  color: #444 !important;
+  letter-spacing: 0.8px !important;
+  text-align: left;
+}
+
+ion-view[state="commercepro-sales-customer"] .list .item.item-custom input {
+  text-align: left;
+  background-color: #e1e1e1;
+  border-radius: 5px;
+  padding: 0 5px;
+  margin-bottom: 10px;
+  height: 45px;
+}
+
+ion-view[state="commercepro-sales-customer"] .list .item.item-custom>div.input-label.ng-binding {
+  font-weight: bold;
+}
+
+
+/*Commercepro choose delivery*/
+
+ion-view[state="commercepro-sales-delivery"] ion-content {
+  background-color: #eee !important;
+  background-image: none !important;
+}
+
+ion-view[state="commercepro-sales-delivery"] ion-content .scroll:before {
+  content: "";
+  position: relative;
+  display: block;
+  background-image: url(https://login.appdolph.org/esportsmy/step4.png);
+  width: 100%;
+  height: 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 10px;
+}
+
+ion-view[state="commercepro-sales-delivery"] .list {
+  width: 95%;
+  margin: auto;
+}
+
+ion-view[state="commercepro-sales-delivery"] .list:after {
+  content: "";
+  position: relative;
+  width: 130px;
+  height: 120px;
+  background-image: url(https://login.appdolph.org/esportsmy/deliveryPartner1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: block;
+  margin: auto;
+}
+
+ion-view[state="commercepro-sales-delivery"] .list>ion-item {
+  background-color: transparent !important;
+  margin-bottom: 10px !important;
+}
+
+ion-view[state="commercepro-sales-delivery"] .list>ion-item>h2 {
+  font-weight: bold !important;
+  letter-spacing: 0.5px !important;
+  color: #444 !important;
+}
+
+ion-view[state="commercepro-sales-delivery"] .list>ion-item label {
+  margin-bottom: 10px;
+}
+
+ion-view[state="commercepro-sales-delivery"] .item-radio.radio-custom {
+  filter: drop-shadow(2px 3px 3px #d9d9d9);
+  color: #444;
+  border-radius: 8px;
+  background-color: white;
+  border: 1px #ccc solid;
+}
+
+ion-view[state="commercepro-sales-delivery"] .item-radio input:checked+.radio-content .item-content {
+  background-color: transparent !important;
+}
+
+ion-view[state="commercepro-sales-delivery"] .list .item-divider.item-divider-custom h2 {
+  letter-spacing: 0.8px;
+  font-size: 14px;
+}
+
+ion-view[state="commercepro-sales-delivery"] .list .item-divider.item-divider-custom h2:after {
+  content: "We are currently partnering with J&T Express to give best delivery service for you.";
+  color: #ba9300;
+  display: block;
+  position: relative;
+  width: calc(100vw - 20px);
+  height: 40px;
+  font-size: 10px;
+  white-space: normal;
+  background-color: #e9e9e9;
+  padding: 5px;
+  border-radius: 5px;
+  letter-spacing: 0.7px;
+  line-height: 20px;
+}
+
+ion-view[state="commercepro-sales-delivery"] .item-radio.radio-custom.item-complex .item-content,
+ion-view[state="commercepro-sales-delivery"] .item-radio.radio-custom.item-radio .item-content {
+  background-color: transparent;
+}
+
+ion-view[state="commercepro-sales-delivery"] .list .item-divider.item-divider-custom {
+  color: #444;
+  letter-spacing: 0.8px;
+  background-color: #e9e9e9 !important;
+  text-align: center;
+  width: 100vw;
+  margin-left: -2.5%;
+  height: auto;
+  padding-top: 10px;
+}
+
+ion-view[state="commercepro-sales-delivery"] .list .item.item-custom {
+  background-color: transparent;
+  color: #444;
+  text-align: left;
+  box-shadow: inset 8.41px 8.41px 15px #d9d9d9, inset -8.41px -8.41px 15px #fff;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+ion-view[state="commercepro-sales-delivery"] .col-35 {
+  border-bottom: 1px #b2b2b2 solid;
+}
+
+ion-view[state="commercepro-sales-delivery"] .col-35 input {
+  color: #444 !important;
+}
+
+
+/*Commercepro choose payment*/
+ion-view[state="commercepro-sales-payment"] ion-content {
+  background-color: #eee !important;
+  background-image: none !important;
+}
+
+ion-view[state="commercepro-sales-payment"] ion-content .scroll:before {
+  content: "";
+  position: relative;
+  display: block;
+  background-image: url(https://login.appdolph.org/esportsmy/step5.png);
+  width: 100%;
+  height: 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 10px;
+}
+
+ion-view[state="commercepro-sales-payment"] .list {
+  width: 95%;
+  margin: auto;
+}
+
+ion-view[state="commercepro-sales-payment"] .list:after {
+  content: "";
+  position: relative;
+  background-image: url(https://login.appdolph.org/esportsmy/online_banking.png);
+  width: 100%;
+  height: 130px;
+  margin: auto;
+  background-size: contain;
+  display: block;
+  background-repeat: no-repeat;
+  top: 20px;
+}
+
+ion-view[state="commercepro-sales-payment"] .list>ion-item {
+  margin-bottom: 10px !important;
+  background-color: #e9e9e9 !important;
+  text-align: center;
+  width: 100vw;
+  margin-left: -2.5%;
+  height: auto;
+  padding-top: 10px;
+}
+
+ion-view[state="commercepro-sales-payment"] .list>ion-item>h2 {
+  font-weight: bold !important;
+  letter-spacing: 0.5px !important;
+  color: #444 !important;
+  font-size: 14px;
+}
+
+ion-view[state="commercepro-sales-payment"] .list>ion-item>h2:after {
+  content: "We accept online transfer through major local banks.";
+  color: #ba9300;
+  display: block;
+  position: relative;
+  width: calc(100vw - 20px);
+  height: 40px;
+  font-size: 10px;
+  white-space: normal;
+  background-color: #e9e9e9;
+  padding: 5px;
+  border-radius: 5px;
+  letter-spacing: 0.7px;
+  line-height: 20px;
+}
+
+ion-view[state="commercepro-sales-payment"] .list>ion-item label {
+  margin-bottom: 10px;
+}
+
+ion-view[state="commercepro-sales-payment"] .item-radio.radio-custom {
+  filter: drop-shadow(2px 3px 3px #d9d9d9);
+  color: #444;
+  border-radius: 8px;
+  background-color: white;
+  border: 1px #ccc solid;
+}
+
+ion-view[state="commercepro-sales-payment"] .item-radio input:checked+.radio-content .item-content {
+  background-color: transparent !important;
+}
+
+ion-view[state="commercepro-sales-payment"] .list .item-divider.item-divider-custom h2 {
+  letter-spacing: 0.8px;
+  font-size: 15px;
+}
+
+ion-view[state="commercepro-sales-payment"] .item-radio.radio-custom.item-complex .item-content,
+ion-view[state="commercepro-sales-payment"] .item-radio.radio-custom.item-radio .item-content {
+  background-color: transparent;
+}
+
+
+/*Commercepro review*/
+ion-view[state="commercepro-sales-confirmation"] ion-content div.scroll {
+  display: flex;
+  flex-direction: column;
+}
+
+ion-view[state="commercepro-sales-confirmation"] ion-content:after {
+  position: relative;
+  width: 100%;
+  height: 120px;
+  display: block;
+  background-color: transparent;
+}
+
+ion-view[state="commercepro-sales-confirmation"] .scroll {
+  display: flex;
+  flex-direction: column;
+  height: initial;
+  max-height: 10000px;
+}
+
+ion-view[state="commercepro-sales-confirmation"] ion-content .scroll:before {
+  content: "";
+  position: relative;
+  display: block;
+  background-image: url(https://login.appdolph.org/esportsmy/step6.png);
+  width: 100%;
+  height: 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 10px;
+}
+
+ion-view[state="commercepro-sales-confirmation"] .scroll:after {
+  content: "Please check everything is correct and click Order Now button to proceed.";
+  color: #ba9300;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  font-size: 10px;
+  white-space: normal;
+  background-color: #e9e9e9;
+  padding: 5px;
+  border-radius: 0px;
+  letter-spacing: 0.7px;
+  line-height: 20px;
+  top: 50px;
+  text-align: center;
+  font-weight: 600;
+}
+
+ion-view[state="commercepro-sales-confirmation"] .card:nth-last-child(2) {
+  margin-bottom: 120px !important;
+  order: 1;
+  margin-top: 0;
+  padding-bottom: 40px;
+}
+
+ion-view[state="commercepro-sales-confirmation"] .card:last-child>div[ng-click="goToCategories()"] {
+  color: #444;
+  letter-spacing: 0.5px;
+  margin-top: -1px;
+}
+
+ion-view[state="commercepro-sales-confirmation"] p {
+  letter-spacing: 0.5px;
+  color: #444;
+  white-space: normal;
+}
+
+ion-view[state="commercepro-sales-confirmation"] .card .item.item-divider.item-divider-custom {
+  margin-top: -1px !important;
+  background-color: #ddd !important;
+}
+
+ion-view[state="commercepro-sales-confirmation"] .card .item.item-divider.item-divider-custom p {
+  color: #444 !important;
+  text-align: center;
+  font-size: 12px;
+}
+
+ion-view[state="commercepro-sales-confirmation"] .card>div[ng-if="cart.add_tip"] {
+  display: none;
+}
+
+ion-view[state="commercepro-sales-confirmation"] .card>div:nth-child(7) strong,
+ion-view[state="commercepro-sales-confirmation"] .card>div:nth-child(7) span {
+  color: #444;
+  font-weight: bold;
+}
+
+ion-view[state="commercepro-sales-confirmation"].card>div[ng-if="!cart.hide_paid_amount && cart.formatted_paid_amount && cart.formatted_delivery_amount_due"]>ion-item.item-divider.item-divider-custom.item {
+  background-color: transparent !important;
+}
+
+ion-view[state="commercepro-sales-confirmation"] .col-75 {
+  text-align: left;
+  letter-spacing: 0.5px;
+}
+
+ion-view[state="commercepro-sales-confirmation"] i.icon.ion-calculator,
+ion-view[state="commercepro-sales-confirmation"] i.icon.ion-clipboard {
+  display: none !important;
+}
+
+ion-view[state="commercepro-sales-confirmation"] .card:last-child {
+  margin-bottom: 20px !important;
+}
+
+ion-view[state="commercepro-sales-confirmation"] ion-content {
+  background-color: #eee !important;
+  background-image: none !important;
+}
+
+ion-view[state="commercepro-sales-confirmation"] .card {
+  border-radius: 7px;
+  box-shadow: none;
+  background-color: white;
+  border: 1px #ccc solid;
+  filter: drop-shadow(2px 3px 3px #d9d9d9);
+  position: relative;
+  top: 50px;
+}
+
+ion-view[state="commercepro-sales-confirmation"] .card>div {
+  margin: 0;
+  border: 0;
+}
+
+ion-view[state="commercepro-sales-confirmation"] .card .item.item-thumbnail-left.item-icon-right.item-custom {
+  border-bottom: 1px #ddd solid;
+  margin: auto;
+  width: 100%;
+  background-color: transparent;
+}
+
+ion-view[state="commercepro-sales-confirmation"] .card .item.item-thumbnail-left.item-icon-right.item-custom img {
+  border-radius: 10px;
+}
+
+ion-view[state="commercepro-sales-confirmation"] .card .item.item-input.item-custom.input-number-sb {
+  background-color: transparent;
+}
+
+ion-view[state="commercepro-sales-confirmation"] .card:last-child {
+  margin-bottom: 120px;
+  margin-top: 0;
+}
+
+ion-view[state="commercepro-sales-confirmation"] .card:last-child>div[ng-click="goToCategories()"] {
+  background-color: transparent;
+  color: #444;
+  letter-spacing: 0.5px;
+  margin-top: -1px;
+}
+
+ion-view[state="commercepro-sales-confirmation"] .card .item.item-custom {
+  background-color: transparent;
+  color: #444;
+}
+
+ion-view[state="commercepro-sales-confirmation"] p {
+  letter-spacing: 0.5px;
+  color: #444;
+  white-space: normal;
+}
+
+ion-view[state="commercepro-sales-confirmation"] .card .item-divider.item-divider-custom {
+  margin-top: -1px !important;
+  background-color: transparent;
+}
+
+ion-view[state="commercepro-sales-confirmation"] .card .item-divider.item-divider-custom p {
+  color: #444 !important;
+}
+
+ion-view[state="commercepro-sales-confirmation"] .card>div[ng-if="object.cart.add_tip"] {
+  display: none;
+}
+
+ion-view[state="commercepro-sales-confirmation"] .card>div:nth-child(7) strong,
+ion-view[state="commercepro-sales-confirmation"] .card>div:nth-child(7) span {
+  color: #444;
+  font-weight: bold;
+}
+
+ion-view[state="commercepro-sales-confirmation"] i.icon.ion-calculator,
+ion-view[state="commercepro-sales-confirmation"] i.icon.ion-clipboard {
+  display: none !important;
+}
+
+ion-view[state="commercepro-sales-confirmation"] p,
+ion-view[state="commercepro-sales-confirmation"] strong,
+ion-view[state="commercepro-cart-view"] div,
+ion-view[state="commercepro-sales-confirmation"] span,
+ion-view[state="commercepro-sales-confirmation"] input {
+  color: #444 !important;
+  letter-spacing: 0.8px !important;
+  text-align: left;
+}
+
+ion-view[state="commercepro-sales-confirmation"] div.input-container.text-right>div>input {
+  text-align: center;
+}
+
+ion-view[state="commercepro-sales-confirmation"] div.scroll>div:nth-child(n+2).card>div:nth-child(8) {
+  background-color: rgba(255, 255, 255, .15);
+}
+
+ion-view[state="commercepro-sales-confirmation"] div.scroll>div:nth-child(n+2).card>div:nth-child(9) {
+  display: none;
+}
+
+
+/*Commercepro order history*/
+ion-view[state="commercepro-sales-history"] ion-content {
+  background-image: none !important;
+  background-color: #eee !important;
+}
+
+ion-view[state="commercepro-sales-history"] .list {
+  width: 95%;
+  margin: auto;
+  margin-bottom: 5px !important;
+  opacity: 0.85;
+}
+
+ion-view[state="commercepro-sales-history"] ion-content div.scroll>div.list {
+  margin-top: 20px;
+}
+
+ion-view[state="commercepro-sales-history"] ion-content div.scroll>div.list:after {
+  content: "";
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 120px;
+  background-color: transparent;
+}
+
+ion-view[state="commercepro-sales-history"] ion-content input {
+  width: calc(100% - 20px) !important;
+  margin: 0 auto;
+  border-radius: 5px;
+  padding: 0 5px;
+  border: 1px #ccc solid;
+}
+
+ion-view[state="commercepro-sales-history"] .list>div.item.item-text-wrap.item-custom[ng-repeat="order in orders"] {
+  text-align: left;
+  border-radius: 8px;
+  background-color: white;
+  opacity: 1;
+  margin-bottom: 10px;
+  border: 1px #ddd solid;
+  filter: drop-shadow(2px 3px 4px #777);
+}
+
+ion-view[state="commercepro-sales-history"] .item-icon-left {
+  padding-left: 12px;
+  text-align: left !important;
+  border: 0;
+  background-color: #eee !important;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  letter-spacing: 0.7px;
+}
+
+ion-view[state="commercepro-sales-history"] .item-icon-left p {
+  font-size: 10px;
+}
+
+ion-view[state="commercepro-sales-history"] .list>div.item.item-text-wrap.item-custom[ng-repeat="order in orders"]>h2>span.pull-right.ng-binding {
+  display: block;
+  float: none;
+  padding: 10px 0;
+  border-bottom: 1px #ccc solid;
+}
+
+ion-view[state="commercepro-sales-history"] .list>div.item.item-text-wrap.item-custom[ng-repeat="order in orders"]>p:nth-child(2) {
+  color: blue;
+  padding: 5px 0;
+}
+
+ion-view[state="commercepro-sales-history"] .list>div.item.item-text-wrap.item-custom[ng-repeat="order in orders"]>p:nth-child(3) {
+  color: green;
+  padding: 5px 0;
+}
+
+
+/*Commercepro order details*/
+ion-view[state="commercepro-sales-history-details"] ion-content {
+  background-color: #eee !important;
+  background-image: none !important;
+}
+
+ion-view[state="commercepro-sales-history-details"] ion-content div.scroll>div.list {
+  width: 100%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+ion-view[state="commercepro-sales-history-details"] ion-content div.scroll>div.list>div:nth-last-child(2) {
+  display: none;
+}
+
+ion-view[state="commercepro-sales-history-details"] .list .item.item-custom {
+  border: 0;
+  text-align: left;
+  background-color: #f8f8f8;
+  opacity: 0.85;
+  border-radius: 0 !important;
+}
+
+ion-view[state="commercepro-sales-history-details"] .list .item.item-custom.ng-binding {
+  background-color: transparent;
+  color: black;
+  border-bottom: 1.5px #ccc dashed;
+  width: calc(100% - 20px);
+  margin: auto;
+}
+
+ion-view[state="commercepro-sales-history-details"] .list .item-divider.item-divider-custom {
+  background-color: white !important;
+  margin-top: 20px;
+  width: calc(100% - 20px);
+  margin: 20px 10px 5px 10px;
+  border-radius: 5px !important;
+  filter: drop-shadow(2px 3px 4px #777);
+}
+
+ion-view[state="commercepro-sales-history-details"] .list .item-divider.item-divider-custom h2 {
+  color: black;
+  line-height: 30px;
+  font-size: 11px;
+}
+
+ion-view[state="commercepro-sales-history-details"] .item.item-custom.item-icon-left {
+  padding-left: 12px;
+  border-radius: 0 !important;
+  border-bottom: 1.5px #ccc dashed;
+  width: calc(100% - 20px);
+  margin: auto;
+  background-color: transparent !important;
+}
+
+ion-view[state="commercepro-sales-history-details"] .item.item-custom.item-icon-left>p.text-right {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+
+ion-view[state="commercepro-sales-history-details"] ion-content div.scroll>div.list>div.item.item-custom.ng-binding,
+ion-view[state="commercepro-sales-history-details"] h2,
+ion-view[state="commercepro-sales-history-details"] p {
+  letter-spacing: 0.5px;
+}
+
+ion-view[state="commercepro-sales-history-details"] i.icon.ion-pricetag {
+  display: none;
+}
+
+ion-view[state="commercepro-sales-history-details"] .button.button-positive-custom {
+  background-color: maroon;
+  color: rgba(255, 255, 255, 1);
+  border: 0;
+  border-radius: 5px;
+}
+
+ion-view[state="commercepro-sales-history-details"] ion-content div.scroll>.row.p-0:after {
+  content: "";
+  position: relative;
+  display: block;
+  height: 120px;
+  background-color: transparent;
+  margin-bottom: 100px;
+}

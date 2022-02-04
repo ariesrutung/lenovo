@@ -1,0 +1,1387 @@
+ion-view.module-form2.form2.form2-home.form2-home-l1 {
+    background-color: #fff !important;
+    background-image: none !important;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .card {
+    box-shadow: none !important;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .card .item.item-custom {
+    border: 0;
+    background-color: transparent !important;
+    color: #000;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 !important;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .card .item.item-custom .input-label.ng-binding {
+    width: 100%;
+    min-width: 100%;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .card input {
+    flex: 1 45px !important;
+    text-align: left;
+    max-width: 100% !important;
+    border-radius: 5px;
+    border: 2px solid #387ef5;
+    padding: 0 10px;
+    height: 45px;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .card i.icon.ion-image.add-image-icon,
+ion-view.module-form2.form2.form2-home.form2-home-l1 .card i.icon.ion-clock.add-image-icon {
+    display: none;
+}
+
+
+.card .item-divider.item-divider-custom {
+    background-color: transparent;
+    color: #000;
+    border: 0;
+    padding: 0 !important;
+}
+
+.card .item-divider.item-divider-custom p.ng-binding {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .card .item.item-custom .row {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 !important;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .card .item.item-custom .row .col-50 {
+    width: 100%;
+    min-width: 100%;
+}
+
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .card .item.item-custom .row .col-50 p.ng-binding {
+    font-size: 16px;
+    margin-top: 20px;
+    color: #000;
+    font-weight: bold;
+}
+
+label.item.item-input.item-custom.item-stacked-label.form2-textarea {
+    margin-top: 20px;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .card .item.item-custom .input-label.ng-binding {
+    color: #000;
+}
+
+
+ion-item.item-form2-pictures.form2-image custom.upload-title.item.ng-binding {
+    text-align: left;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    margin-top: 20px !important;
+}
+
+ion-item.item-form2-pictures.form2-image custom.upload-title.item.ng-binding {
+    text-align: left !important;
+    width: 100%;
+    display: flex;
+    justify-content: start !important;
+    margin-top: 20px !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+}
+
+ion-view.module-cms.cms-l1 .card.no-shadow {
+    margin: 0 !important;
+}
+
+ion-view.module-cms.cms-l1 .card.no-shadow .item.item-custom {
+    padding: 0;
+}
+
+/* Beranda/Home */
+ion-header-bar.bar-custom.bar.bar-header {
+    height: 0 !important;
+    background-color: transparent;
+}
+
+.bar.bar-custom .title {
+    display: none;
+}
+
+ion-view.module-cms.cms-l1 {
+    background-image: none !important;
+}
+
+ion-view.module-cms.cms-l1 ion-content {
+    top: 0 !important;
+    background-color: #fff !important;
+    background-image: none !important;
+}
+
+/* All About Custom Page */
+/* First sliding menu */
+div[ng-repeat="block in blocks"]:nth-child(5) .card,
+div[ng-repeat="block in blocks"]:nth-child(4) .card,
+div[ng-repeat="block in blocks"]:nth-child(6) .card,
+div[ng-repeat="block in blocks"]:nth-child(8) .card,
+div[ng-repeat="block in blocks"]:nth-child(10) .card,
+div[ng-repeat="block in blocks"]:nth-child(12) .card,
+div[ng-repeat="block in blocks"]:nth-child(14) .card,
+div[ng-repeat="block in blocks"]:nth-child(18) .card,
+div[ng-repeat="block in blocks"]:nth-child(20) .card {
+    box-shadow: none;
+    margin: 20px 0 5px 0;
+}
+
+div[ng-repeat="block in blocks"]:nth-child(4) .card .item.item-text-wrap.item-custom.sb-cms-text,
+div[ng-repeat="block in blocks"]:nth-child(5) .card .item.item-text-wrap.item-custom.sb-cms-text {
+    padding: 0;
+    background-color: transparent;
+}
+
+div[ng-repeat="block in blocks"]:nth-child(4) .card .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding,
+div[ng-repeat="block in blocks"]:nth-child(5) .card .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding,
+div[ng-repeat="block in blocks"]:nth-child(7) .card .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding,
+div[ng-repeat="block in blocks"]:nth-child(9) .card .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding,
+div[ng-repeat="block in blocks"]:nth-child(13) .card .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding  {
+    padding: 0;
+    display: flex;
+    margin-bottom: 0;
+    overflow: visible;
+    width: 100% !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    white-space: nowrap !important;
+    -webkit-overflow-scrolling: touch !important;
+    align-items: center;
+}
+
+div[ng-repeat="block in blocks"]:nth-child(4) .card .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding a {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+div[ng-repeat="block in blocks"]:nth-child(4) .card .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding p:nth-child(1) {
+    width: 24% !important;
+    min-width: 24% !important;
+    display: inline-flex !important;
+    margin: 0 1%;
+    background-color: #efefef !important;
+    border-radius: 5px;
+    padding: 0;
+    text-align: center;
+    height: 78px;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(https://notiapps.com/my-images/cat-1.png);
+    background-repeat: no-repeat;
+    background-size: 85px;
+    background-position: center top;
+}
+
+div[ng-repeat="block in blocks"]:nth-child(4) .card .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding p:nth-child(2) {
+    width: 24% !important;
+    min-width: 24% !important;
+    display: inline-flex !important;
+    margin: 0 1%;
+    background-color: #efefef !important;
+    border-radius: 5px;
+    padding: 0;
+    text-align: center;
+    height: 78px;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(https://notiapps.com/my-images/cat-2.png);
+    background-repeat: no-repeat;
+    background-size: 85px;
+    background-position: center top;
+}
+
+div[ng-repeat="block in blocks"]:nth-child(4) .card .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding p:nth-child(3) {
+    width: 24% !important;
+    min-width: 24% !important;
+    display: inline-flex !important;
+    margin: 0 1%;
+    background-color: #efefef !important;
+    border-radius: 5px;
+    padding: 0;
+    text-align: center;
+    height: 78px;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(https://notiapps.com/my-images/cat-3.png);
+    background-repeat: no-repeat;
+    background-size: 85px;
+    background-position: center top;
+}
+
+div[ng-repeat="block in blocks"]:nth-child(4) .card .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding p:nth-child(4) {
+    width: 24% !important;
+    min-width: 24% !important;
+    display: inline-flex !important;
+    margin: 0 1%;
+    background-color: #efefef !important;
+    border-radius: 5px;
+    padding: 0;
+    text-align: center;
+    height: 78px;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(https://notiapps.com/my-images/cat-4.png);
+    background-repeat: no-repeat;
+    background-size: 85px;
+    background-position: center top;
+}
+
+div[ng-repeat="block in blocks"]:nth-child(4) .card .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding p:nth-child(5) {
+    width: 24% !important;
+    min-width: 24% !important;
+    display: inline-flex !important;
+    margin: 0 1%;
+    background-color: #efefef !important;
+    border-radius: 5px;
+    padding: 0;
+    text-align: center;
+    height: 78px;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(https://notiapps.com/my-images/cat-5.png);
+    background-repeat: no-repeat;
+    background-size: 85px;
+    background-position: center top;
+}
+
+div[ng-repeat="block in blocks"]:nth-child(4) .card .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding p:nth-child(6) {
+    width: 24% !important;
+    min-width: 24% !important;
+    display: inline-flex !important;
+    margin: 0 1%;
+    background-color: #efefef !important;
+    border-radius: 5px;
+    padding: 0;
+    text-align: center;
+    height: 78px;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(https://notiapps.com/my-images/cat-5.png);
+    background-repeat: no-repeat;
+    background-size: 85px;
+    background-position: center top;
+}
+
+div[ng-repeat="block in blocks"]:nth-child(5) .card .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding a {
+    width: 100%;
+    text-align: right;
+}
+
+/* Second sliding menu - small menu */
+div[ng-repeat="block in blocks"]:nth-child(5) .card .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding p:nth-child(1) {
+    width: 25% !important;
+    min-width: 25% !important;
+    display: inline-flex !important;
+    margin: 0 1%;
+    background-color: #efefef !important;
+    border-radius: 5px;
+    padding: 0;
+    text-align: right;
+    height: 35px;
+    justify-content: end;
+    align-items: center;
+    padding-right: 5px;
+    background-image: url(https://unpkg.com/ionicons@5.5.2/dist/svg/pizza-outline.svg);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center left 5px;
+}
+
+div[ng-repeat="block in blocks"]:nth-child(5) .card .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding p:nth-child(2) {
+    width: 25% !important;
+    min-width: 25% !important;
+    display: inline-flex !important;
+    margin: 0 1%;
+    background-color: #efefef !important;
+    border-radius: 5px;
+    padding: 0;
+    text-align: right;
+    height: 35px;
+    justify-content: end;
+    align-items: center;
+    padding-right: 5px;
+    background-image: url(https://unpkg.com/ionicons@5.5.2/dist/svg/cafe-outline.svg);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center left 5px;
+}
+
+div[ng-repeat="block in blocks"]:nth-child(5) .card .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding p:nth-child(3) {
+    width: 25% !important;
+    min-width: 25% !important;
+    display: inline-flex !important;
+    margin: 0 1%;
+    background-color: #efefef !important;
+    border-radius: 5px;
+    padding: 0;
+    text-align: right;
+    height: 35px;
+    justify-content: end;
+    align-items: center;
+    padding-right: 5px;
+    background-image: url(https://unpkg.com/ionicons@5.5.2/dist/svg/beer-outline.svg);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center left 5px;
+}
+
+div[ng-repeat="block in blocks"]:nth-child(5) .card .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding p:nth-child(4) {
+    width: 25% !important;
+    min-width: 25% !important;
+    display: inline-flex !important;
+    margin: 0 1%;
+    background-color: #efefef !important;
+    border-radius: 5px;
+    padding: 0;
+    text-align: right;
+    height: 35px;
+    justify-content: end;
+    align-items: center;
+    padding-right: 5px;
+    background-image: url(https://unpkg.com/ionicons@5.5.2/dist/svg/fast-food-outline.svg);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center left 5px;
+}
+
+div[ng-repeat="block in blocks"]:nth-child(5) .card .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding p:nth-child(5) {
+    width: 25% !important;
+    min-width: 25% !important;
+    display: inline-flex !important;
+    margin: 0 1%;
+    background-color: #efefef !important;
+    border-radius: 5px;
+    padding: 0;
+    text-align: right;
+    height: 35px;
+    justify-content: end;
+    align-items: center;
+    padding-right: 5px;
+    background-image: url(https://unpkg.com/ionicons@5.5.2/dist/svg/color-palette-outline.svg);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center left 5px;
+}
+
+div[ng-repeat="block in blocks"]:nth-child(5) .card .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding p:nth-child(6) {
+    width: 25% !important;
+    min-width: 25% !important;
+    display: inline-flex !important;
+    margin: 0 1%;
+    background-color: #efefef !important;
+    border-radius: 5px;
+    padding: 0;
+    text-align: right;
+    height: 35px;
+    justify-content: end;
+    align-items: center;
+    padding-right: 5px;
+    background-image: url(https://unpkg.com/ionicons@5.5.2/dist/svg/trophy-outline.svg);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center left 5px;
+}
+
+
+/* Menu Title */
+div[ng-repeat="block in blocks"]:nth-child(6) .card .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding,
+div[ng-repeat="block in blocks"]:nth-child(8) .card .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding,
+div[ng-repeat="block in blocks"]:nth-child(10) .card .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding,
+div[ng-repeat="block in blocks"]:nth-child(12) .card .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding,
+div[ng-repeat="block in blocks"]:nth-child(14) .card .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding,
+div[ng-repeat="block in blocks"]:nth-child(18) .card .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div[ng-repeat="block in blocks"]:nth-child(6) .card .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding a,
+div[ng-repeat="block in blocks"]:nth-child(8) .card .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding a,
+div[ng-repeat="block in blocks"]:nth-child(10) .card .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding a,
+div[ng-repeat="block in blocks"]:nth-child(12) .card .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding a,
+div[ng-repeat="block in blocks"]:nth-child(14) .card .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding a,
+div[ng-repeat="block in blocks"]:nth-child(18) .card .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding a {
+    color: #fdd657;
+}
+
+div[ng-repeat="block in blocks"]:nth-child(6) .card .item.item-text-wrap.item-custom.sb-cms-text,
+div[ng-repeat="block in blocks"]:nth-child(8) .card .item.item-text-wrap.item-custom.sb-cms-text,
+div[ng-repeat="block in blocks"]:nth-child(10) .card .item.item-text-wrap.item-custom.sb-cms-text,
+div[ng-repeat="block in blocks"]:nth-child(12) .card .item.item-text-wrap.item-custom.sb-cms-text,
+div[ng-repeat="block in blocks"]:nth-child(14) .card .item.item-text-wrap.item-custom.sb-cms-text,
+div[ng-repeat="block in blocks"]:nth-child(18) .card .item.item-text-wrap.item-custom.sb-cms-text,
+div[ng-repeat="block in blocks"]:nth-child(20) .card .item.item-text-wrap.item-custom.sb-cms-text {
+    padding: 0 10px;
+    background-color: transparent;
+}
+
+/* First sliding menu card */
+
+div[ng-repeat="block in blocks"]:nth-child(7) .card {
+    margin: 0;
+    box-shadow: none;
+    background-color: #181818;
+    padding: 10px 0;
+    border-radius: 0;
+}
+
+div[ng-repeat="block in blocks"]:nth-child(7) .card .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding p:nth-child(1) {
+    width: 35% !important;
+    min-width: 35% !important;
+    display: inline-flex !important;
+    margin: 0 1%;
+    background-color: transparent;
+    padding: 0;
+    height: 200px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: right;
+    background-image: url(https://notiapps.com/my-images/logo-onfire.jpg);
+    background-position: center top -20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+div[ng-repeat="block in blocks"]:nth-child(7) .card .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding p:nth-child(2) {
+    width: 35% !important;
+    min-width: 35% !important;
+    display: inline-flex !important;
+    margin: 0 1%;
+    background-color: transparent;
+    padding: 0;
+    height: 200px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: right;
+    background-image: url(https://notiapps.com/my-images/logo-attar.png);
+    background-position: center top -20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+div[ng-repeat="block in blocks"]:nth-child(7) .card .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding p:nth-child(3) {
+    width: 35% !important;
+    min-width: 35% !important;
+    display: inline-flex !important;
+    margin: 0 1%;
+    background-color: transparent;
+    padding: 0;
+    height: 200px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: right;
+    background-image: url(https://notiapps.com/my-images/logo-onfire.jpg);
+    background-position: center top -20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+div[ng-repeat="block in blocks"]:nth-child(7) .card .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding p:nth-child(4) {
+    width: 35% !important;
+    min-width: 35% !important;
+    display: inline-flex !important;
+    margin: 0 1%;
+    background-color: transparent;
+    padding: 0;
+    height: 200px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: right;
+    background-image: url(https://notiapps.com/my-images/logo-attar.png);
+    background-position: center top -20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+div[ng-repeat="block in blocks"]:nth-child(7) .card .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding p:nth-child(5) {
+    width: 35% !important;
+    min-width: 35% !important;
+    display: inline-flex !important;
+    margin: 0 1%;
+    background-color: transparent;
+    padding: 0;
+    height: 200px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: right;
+    background-image: url(https://notiapps.com/my-images/logo-onfire.jpg);
+    background-position: center top -20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+div[ng-repeat="block in blocks"]:nth-child(7) .card .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding p:nth-child(6) {
+    width: 35% !important;
+    min-width: 35% !important;
+    display: inline-flex !important;
+    margin: 0 1%;
+    background-color: transparent;
+    padding: 0;
+    height: 200px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: right;
+    background-image: url(https://notiapps.com/my-images/logo-attar.png);
+    background-position: center top -20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+div[ng-repeat="block in blocks"]:nth-child(7) .card .item.item-text-wrap.item-custom.sb-cms-text {
+    padding: 0;
+    background-color: #181818;
+}
+
+/* Second sliding menu card */
+div[ng-repeat="block in blocks"]:nth-child(9) .card,
+div[ng-repeat="block in blocks"]:nth-child(15) .card,
+div[ng-repeat="block in blocks"]:nth-child(16) .card,
+div[ng-repeat="block in blocks"]:nth-child(17) .card {
+    margin: 0;
+    box-shadow: none;
+}
+
+div[ng-repeat="block in blocks"]:nth-child(9) .card .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding p:nth-child(1) {
+    width: 46% !important;
+    min-width: 46% !important;
+    display: inline-flex !important;
+    margin: 0 1%;
+    background-color: #efefef !important;
+    padding: 0;
+    height: 180px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-right: 5px;
+    flex-direction: column;
+    text-align: right;
+    background-image: url(https://notiapps.com/my-images/slider-1.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+div[ng-repeat="block in blocks"]:nth-child(9) .card .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding p:nth-child(2) {
+    width: 46% !important;
+    min-width: 46% !important;
+    display: inline-flex !important;
+    margin: 0 1%;
+    background-color: #efefef !important;
+    padding: 0;
+    height: 180px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-right: 5px;
+    flex-direction: column;
+    text-align: right;
+    background-image: url(https://notiapps.com/my-images/slider-2.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+div[ng-repeat="block in blocks"]:nth-child(9) .card .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding p:nth-child(3) {
+    width: 46% !important;
+    min-width: 46% !important;
+    display: inline-flex !important;
+    margin: 0 1%;
+    background-color: #efefef !important;
+    padding: 0;
+    height: 180px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-right: 5px;
+    flex-direction: column;
+    text-align: right;
+    background-image: url(https://notiapps.com/my-images/slider-3.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+div[ng-repeat="block in blocks"]:nth-child(9) .card .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding p:nth-child(4) {
+    width: 46% !important;
+    min-width: 46% !important;
+    display: inline-flex !important;
+    margin: 0 1%;
+    background-color: #efefef !important;
+    padding: 0;
+    height: 180px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-right: 5px;
+    flex-direction: column;
+    text-align: right;
+    background-image: url(https://notiapps.com/my-images/slider-4.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+div[ng-repeat="block in blocks"]:nth-child(9) .card .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding p:nth-child(5) {
+    width: 46% !important;
+    min-width: 46% !important;
+    display: inline-flex !important;
+    margin: 0 1%;
+    background-color: #efefef !important;
+    padding: 0;
+    height: 180px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-right: 5px;
+    flex-direction: column;
+    text-align: right;
+    background-image: url(https://notiapps.com/my-images/slider-5.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+div[ng-repeat="block in blocks"]:nth-child(9) .card .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding p:nth-child(6) {
+    width: 46% !important;
+    min-width: 46% !important;
+    display: inline-flex !important;
+    margin: 0 1%;
+    background-color: #efefef !important;
+    padding: 0;
+    height: 180px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-right: 5px;
+    flex-direction: column;
+    text-align: right;
+    background-image: url(https://notiapps.com/my-images/slider-1.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+div[ng-repeat="block in blocks"]:nth-child(9) .card .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding p a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: right;
+    line-height: 1.5;
+}
+
+div[ng-repeat="block in blocks"]:nth-child(7) .card .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding p a,
+div[ng-repeat="block in blocks"]:nth-child(13) .card .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding p a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: right;
+    line-height: 1.5;
+    color: #fff !important;
+}
+
+div[ng-repeat="block in blocks"]:nth-child(7) .card .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding p a b,
+div[ng-repeat="block in blocks"]:nth-child(9) .card .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding p a b,
+div[ng-repeat="block in blocks"]:nth-child(13) .card .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding p a b {
+    line-height: 1;
+}
+
+
+div[ng-repeat="block in blocks"]:nth-child(9) .card .item.item-text-wrap.item-custom.sb-cms-text {
+    padding: 0 10px;
+    background-color: transparent;
+}
+
+/* First Grid Column */
+div[ng-repeat="block in blocks"]:nth-child(11) .card {
+    margin: 0;
+    box-shadow: none;
+}
+
+div[ng-repeat="block in blocks"]:nth-child(11) .card .item.item-custom {
+    background-color: transparent;
+    padding: 0;
+}
+
+div[ng-repeat="block in blocks"]:nth-child(11) .card .item.item-custom .content.ng-binding {
+    display: inline-table;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    margin: 0 !important;
+}
+
+div[ng-repeat="block in blocks"]:nth-child(11) .card .item.item-custom .content.ng-binding p:nth-child(1) {
+    height: 195px;
+    margin: 5px 2vw;
+    width: 46vw !important;
+    min-width: 46vw;
+    background-color: #ecf0f6;
+    border-radius: 0;
+    display: inline-flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    padding-right: 0;
+    padding-left: 0;
+    background-image: url(https://notiapps.com/my-images/cat-3.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+div[ng-repeat="block in blocks"]:nth-child(11) .card .item.item-custom .content.ng-binding p:nth-child(2) {
+    height: 195px;
+    margin: 5px 2vw;
+    width: 46vw !important;
+    min-width: 46vw;
+    background-color: #ecf0f6;
+    border-radius: 0;
+    display: inline-flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    padding-right: 0;
+    padding-left: 0;
+    background-image: url(https://notiapps.com/my-images/cat-1.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+div[ng-repeat="block in blocks"]:nth-child(11) .card .item.item-custom .content.ng-binding p:nth-child(3) {
+    height: 195px;
+    margin: 5px 2vw;
+    width: 46vw !important;
+    min-width: 46vw;
+    background-color: #ecf0f6;
+    border-radius: 0;
+    display: inline-flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    padding-right: 0;
+    padding-left: 0;
+    background-image: url(https://notiapps.com/my-images/cat-2.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+div[ng-repeat="block in blocks"]:nth-child(11) .card .item.item-custom .content.ng-binding p:nth-child(4) {
+    height: 195px;
+    margin: 5px 2vw;
+    width: 46vw !important;
+    min-width: 46vw;
+    background-color: #ecf0f6;
+    border-radius: 0;
+    display: inline-flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    padding-right: 0;
+    padding-left: 0;
+    background-image: url(https://notiapps.com/my-images/cat-4.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+div[ng-repeat="block in blocks"]:nth-child(11) .card .item.item-custom .content.ng-binding p:nth-child(5) {
+    height: 195px;
+    margin: 5px 2vw;
+    width: 46vw !important;
+    min-width: 46vw;
+    background-color: #ecf0f6;
+    border-radius: 0;
+    display: inline-flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    padding-right: 0;
+    padding-left: 0;
+    background-image: url(https://notiapps.com/my-images/cat-5.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+div[ng-repeat="block in blocks"]:nth-child(11) .card .item.item-custom .content.ng-binding p:nth-child(6) {
+    height: 195px;
+    margin: 5px 2vw;
+    width: 46vw !important;
+    min-width: 46vw;
+    background-color: #ecf0f6;
+    border-radius: 0;
+    display: inline-flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    padding-right: 0;
+    padding-left: 0;
+    background-image: url(https://notiapps.com/my-images/cat-1.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+div[ng-repeat="block in blocks"]:nth-child(11) .card .item.item-custom .content.ng-binding p a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: right;
+}
+
+div[ng-repeat="block in blocks"]:nth-child(19) .card .item.item-custom .content.ng-binding p:nth-child(1) {
+    height: 150px;
+    margin: 0 0.66vw;
+    width: 32vw !important;
+    min-width: 32vw;
+    background-color: transparent;
+    border-radius: 0;
+    display: inline-flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    padding-right: 0;
+    padding-left: 0;
+    background-image: url(https://notiapps.com/my-images/logo-attar.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+div[ng-repeat="block in blocks"]:nth-child(19) .card .item.item-custom .content.ng-binding p:nth-child(2) {
+    height: 150px;
+    margin: 0 0.66vw;
+    width: 32vw !important;
+    min-width: 32vw;
+    background-color: transparent;
+    border-radius: 0;
+    display: inline-flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    padding-right: 0;
+    padding-left: 0;
+    background-image: url(https://notiapps.com/my-images/logo-onfire.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+div[ng-repeat="block in blocks"]:nth-child(19) .card .item.item-custom .content.ng-binding p:nth-child(3) {
+    height: 150px;
+    margin: 0 0.66vw;
+    width: 32vw !important;
+    min-width: 32vw;
+    background-color: transparent;
+    border-radius: 0;
+    display: inline-flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    padding-right: 0;
+    padding-left: 0;
+    background-image: url(https://notiapps.com/my-images/logo-attar.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+div[ng-repeat="block in blocks"]:nth-child(19) .card .item.item-custom .content.ng-binding p:nth-child(4) {
+    height: 150px;
+    margin: 0 0.66vw;
+    width: 32vw !important;
+    min-width: 32vw;
+    background-color: transparent;
+    border-radius: 0;
+    display: inline-flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    padding-right: 0;
+    padding-left: 0;
+    background-image: url(https://notiapps.com/my-images/logo-onfire.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+div[ng-repeat="block in blocks"]:nth-child(19) .card .item.item-custom .content.ng-binding p:nth-child(5) {
+    height: 150px;
+    margin: 0 0.66vw;
+    width: 32vw !important;
+    min-width: 32vw;
+    background-color: transparent;
+    border-radius: 0;
+    display: inline-flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    padding-right: 0;
+    padding-left: 0;
+    background-image: url(https://notiapps.com/my-images/logo-attar.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+div[ng-repeat="block in blocks"]:nth-child(19) .card .item.item-custom .content.ng-binding p:nth-child(6) {
+    height: 150px;
+    margin: 0 0.66vw;
+    width: 32vw !important;
+    min-width: 32vw;
+    background-color: transparent;
+    border-radius: 0;
+    display: inline-flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    padding-right: 0;
+    padding-left: 0;
+    background-image: url(https://notiapps.com/my-images/logo-onfire.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+div[ng-repeat="block in blocks"]:nth-child(19) .card .item.item-custom .content.ng-binding p:nth-child(7) {
+    height: 150px;
+    margin: 0 0.66vw;
+    width: 32vw !important;
+    min-width: 32vw;
+    background-color: transparent;
+    border-radius: 0;
+    display: inline-flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    padding-right: 0;
+    padding-left: 0;
+    background-image: url(https://notiapps.com/my-images/logo-attar.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+div[ng-repeat="block in blocks"]:nth-child(19) .card .item.item-custom .content.ng-binding p:nth-child(8) {
+    height: 150px;
+    margin: 0 0.66vw;
+    width: 32vw !important;
+    min-width: 32vw;
+    background-color: transparent;
+    border-radius: 0;
+    display: inline-flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    padding-right: 0;
+    padding-left: 0;
+    background-image: url(https://notiapps.com/my-images/logo-onfire.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+div[ng-repeat="block in blocks"]:nth-child(19) .card .item.item-custom .content.ng-binding p a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: right;
+/*    background-image: url(https://auth.kodular.io/static/assets/signup/signup_illustration.50317127aadc.svg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 75px;*/
+}
+
+/* Thirth sliding menu card */
+div[ng-repeat="block in blocks"]:nth-child(13) .card {
+    margin: 0;
+    box-shadow: none;
+    background-color: #181818;
+    padding: 10px 0;
+}
+
+div[ng-repeat="block in blocks"]:nth-child(13) .card .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding p:nth-child(1) {
+    width: 46% !important;
+    min-width: 46% !important;
+    display: inline-flex !important;
+    margin: 0 1%;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 0;
+    height: 180px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-right: 0;
+    flex-direction: column;
+    text-align: right;
+    background-image: url(https://notiapps.com/my-images/slider-1.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+div[ng-repeat="block in blocks"]:nth-child(13) .card .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding p:nth-child(2) {
+    width: 46% !important;
+    min-width: 46% !important;
+    display: inline-flex !important;
+    margin: 0 1%;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 0;
+    height: 180px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-right: 0;
+    flex-direction: column;
+    text-align: right;
+    background-image: url(https://notiapps.com/my-images/slider-2.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+div[ng-repeat="block in blocks"]:nth-child(13) .card .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding p:nth-child(3) {
+    width: 46% !important;
+    min-width: 46% !important;
+    display: inline-flex !important;
+    margin: 0 1%;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 0;
+    height: 180px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-right: 0;
+    flex-direction: column;
+    text-align: right;
+    background-image: url(https://notiapps.com/my-images/slider-3.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+div[ng-repeat="block in blocks"]:nth-child(13) .card .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding p:nth-child(4) {
+    width: 46% !important;
+    min-width: 46% !important;
+    display: inline-flex !important;
+    margin: 0 1%;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 0;
+    height: 180px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-right: 0;
+    flex-direction: column;
+    text-align: right;
+    background-image: url(https://notiapps.com/my-images/slider-4.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+div[ng-repeat="block in blocks"]:nth-child(13) .card .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding p:nth-child(5) {
+    width: 46% !important;
+    min-width: 46% !important;
+    display: inline-flex !important;
+    margin: 0 1%;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 0;
+    height: 180px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-right: 0;
+    flex-direction: column;
+    text-align: right;
+    background-image: url(https://notiapps.com/my-images/slider-5.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+div[ng-repeat="block in blocks"]:nth-child(13) .card .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding p:nth-child(6) {
+    width: 46% !important;
+    min-width: 46% !important;
+    display: inline-flex !important;
+    margin: 0 1%;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 0;
+    height: 180px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-right: 0;
+    flex-direction: column;
+    text-align: right;
+    background-image: url(https://notiapps.com/my-images/slider-6.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+div[ng-repeat="block in blocks"]:nth-child(13) .card .item.item-text-wrap.item-custom.sb-cms-text {
+    padding: 0 10px;
+    background-color: transparent;
+}
+
+/* List Menu */
+div[ng-repeat="block in blocks"]:nth-child(15) .item.item-text-wrap.item-custom.sb-cms-text,
+div[ng-repeat="block in blocks"]:nth-child(16) .item.item-text-wrap.item-custom.sb-cms-text,
+div[ng-repeat="block in blocks"]:nth-child(17) .item.item-text-wrap.item-custom.sb-cms-text {
+    background-color: #f2f2f2;
+    padding: 0;
+    margin: 2px 10px !important;
+    border-radius: 5px;
+    height: 90px !important;
+    min-height: 90px !important;
+}
+
+div[ng-repeat="block in blocks"]:nth-child(15) .item.item-text-wrap.item-custom.sb-cms-text img.left,
+div[ng-repeat="block in blocks"]:nth-child(16) .item.item-text-wrap.item-custom.sb-cms-text img.left,
+div[ng-repeat="block in blocks"]:nth-child(17) .item.item-text-wrap.item-custom.sb-cms-text img.left {
+    height: 90px !important;
+    width: 90px !important;
+    object-fit: contain;
+    margin-right: 10 !important;
+}
+
+div[ng-repeat="block in blocks"]:nth-child(15) .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding,
+div[ng-repeat="block in blocks"]:nth-child(16) .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding,
+div[ng-repeat="block in blocks"]:nth-child(17) .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    height: 100%;
+}
+
+div[ng-repeat="block in blocks"]:nth-child(15) .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding p,
+div[ng-repeat="block in blocks"]:nth-child(16) .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding p,
+div[ng-repeat="block in blocks"]:nth-child(17) .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding p {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: right;
+}
+
+div[ng-repeat="block in blocks"]:nth-child(15) .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding p a,
+div[ng-repeat="block in blocks"]:nth-child(16) .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding p a,
+div[ng-repeat="block in blocks"]:nth-child(17) .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding p a {
+    align-items: flex-end;
+    justify-content: right;
+    height: 100% !important;
+    display: flex;
+    width: 100%;
+    text-align: right;
+    flex-direction: column;
+}
+
+div[ng-repeat="block in blocks"]:nth-child(15) .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding p:nth-child(1) a,
+div[ng-repeat="block in blocks"]:nth-child(16) .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding p:nth-child(1) a,
+div[ng-repeat="block in blocks"]:nth-child(17) .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding p:nth-child(1) a {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Second Grid Column */
+div[ng-repeat="block in blocks"]:nth-child(19) .card {
+    margin: 0;
+    box-shadow: none;
+}
+
+div[ng-repeat="block in blocks"]:nth-child(19) .card .item.item-custom {
+    background-color: transparent;
+    padding: 0;
+}
+
+div[ng-repeat="block in blocks"]:nth-child(19) .card .item.item-custom .content.ng-binding {
+    display: inline-table;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    margin: 0 !important;
+}
+
+/* Sponsors */
+div[ng-repeat="block in blocks"]:nth-child(21) .card {
+    padding-bottom: 50px;
+    box-shadow: none;
+    margin: 0;
+}
+
+div[ng-repeat="block in blocks"]:nth-child(21) .card .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding p a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+div[ng-repeat="block in blocks"]:nth-child(21) .card .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding p:nth-child(1) {
+    width: 33% !important;
+    min-width: 33% !important;
+    display: inline-flex !important;
+    margin: 0 1%;
+    background-color: transparent;
+    padding: 0;
+    text-align: center;
+    height: 78px;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(https://notiapps.com/my-images/sponsor-1.PNG);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 65px;
+}
+
+div[ng-repeat="block in blocks"]:nth-child(21) .card .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding p:nth-child(2) {
+    width: 33% !important;
+    min-width: 33% !important;
+    display: inline-flex !important;
+    margin: 0 1%;
+    background-color: transparent;
+    padding: 0;
+    text-align: center;
+    height: 78px;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(https://notiapps.com/my-images/sponsor-2.PNG);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 65px;
+}
+
+div[ng-repeat="block in blocks"]:nth-child(21) .card .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding p:nth-child(3) {
+    width: 33% !important;
+    min-width: 33% !important;
+    display: inline-flex !important;
+    margin: 0 1%;
+    background-color: transparent;
+    padding: 0;
+    text-align: center;
+    height: 78px;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(https://notiapps.com/my-images/sponsor-3.PNG);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 65px;
+}
+
+div[ng-repeat="block in blocks"]:nth-child(21) .card .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding p:nth-child(4) {
+    width: 33% !important;
+    min-width: 33% !important;
+    display: inline-flex !important;
+    margin: 0 1%;
+    background-color: transparent;
+    padding: 0;
+    text-align: center;
+    height: 78px;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(https://notiapps.com/my-images/sponsor-1.PNG);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 65px;
+}
+
+div[ng-repeat="block in blocks"]:nth-child(21) .card .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding p:nth-child(5) {
+    width: 33% !important;
+    min-width: 33% !important;
+    display: inline-flex !important;
+    margin: 0 1%;
+    background-color: transparent;
+    padding: 0;
+    text-align: center;
+    height: 78px;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(https://notiapps.com/my-images/sponsor-2.PNG);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 65px;
+}
+
+div[ng-repeat="block in blocks"]:nth-child(21) .card .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding p:nth-child(6) {
+    width: 33% !important;
+    min-width: 33% !important;
+    display: inline-flex !important;
+    margin: 0 1%;
+    background-color: transparent;
+    padding: 0;
+    text-align: center;
+    height: 78px;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(https://notiapps.com/my-images/sponsor-3.PNG);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 65px;
+}
+
+div[ng-repeat="block in blocks"]:nth-child(21) .card .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding {
+    padding: 0;
+    display: flex;
+    margin-bottom: 0;
+    overflow: visible;
+    width: 100% !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    white-space: nowrap !important;
+    -webkit-overflow-scrolling: touch !important;
+    align-items: center;
+}
+
+div[ng-repeat="block in blocks"]:nth-child(21) .card .item.item-text-wrap.item-custom.sb-cms-text {
+    padding: 0;
+    background-color: transparent;
+}

@@ -1,0 +1,90 @@
+1. Domain yang digunakan sudah menggunakan SSL dan diconfig codeigniternya sudah saya ubah menjadi seperti ini 
+	$config['base_url'] = 'https://localhost/namaweb/'; tapi setiap kali diakses di browser, banyak asset yang tidak diload, CSS terutama.
+	CSS doload secara offline, tidak pakai cdn.
+2. Karena seperti poin no. 1 di atas, saya menggunakan skrip ini di config
+	$root = "http://" . $_SERVER['HTTP_HOST'];
+	$root .= str_replace(basename($_SERVER['SCRIPT_NAME']), "", $_SERVER['SCRIPT_NAME']);
+	$config['base_url']    = "$root";
+
+	tapi masalahnya, setiap kali akses ke backend, domainnya otomatis dialihkan ke https sehingga assetnya tidak terload secara sempurna dan tampilan backendnya jadi berantakkan
+
+3. Saya membuat sebuah form pengaduan terkait infrastruktur yang rusak. Di form tersebut saya mengumpulkan KTP dan dokumentasi (gambar). Untuk mengunggah data2 itu saya menggunakan dropzone.js. Data2 tersebut masuk ke 1 table di database (upload) dan masuk ke 3 folder berbeda di direktori (ktp, dokumentasi, dan data tambahan). Selanjutnya, di backend saya buat sebuah menu data pengaduan yang isinya laporan hasil aduan yang diisi via form pengaduan. Hasil laporannya dibuat dalam bentuk tabel yang mana salah satu kolom dari table itu berisi button detail. Ketika saya klik button tersebut, modal detail akan muncul dan menampilkan rincian lengkap dari laporan tersebut. Problemnya adalah, ketika saya panggil foto untuk ditampilkan ke kolom gamabr foto di modal, hasilnya tidak muncul. Hal yang sama juga terjadi di gambar dokumentasi. Oh ia, bagian ini saya menggunakan datatables client side.
+
+
+
+Coming together is a beginning. Keeping together is progress. Working together is success.
+
+Web Designer - Computer, Networking, Security System Engineer - Blogger - Apps Developer.
+Contributed to the development of sisikat.com, inkindopabar.org, sayurprafi.com, smpn1manokwari.com, PMB Sesama UNIPA (coming soon), mansarhugo.com, csscoder.net, and ensiklopediakesaguan.com.
+
+Some of the applications that have been developed can be seen at https://play.google.com/store/apps/developer?id=Aries+Rutung
+
+
+Semua pengguna baru aplikasi ini harus masuk menggunakan email yang telah terdaftar. Jika belum, mereka dapat melakukan registrasi secara mandiri dengan menekan tombol Masuk atau Register ketika pertama kali membuka aplikasi. Akan tetapi, jika mereka hanya ingin melihat dan mencoba fitur-fitur aplikasi, gunakan akun dmeo di atas untuk masuk.
+
+Don't listen to me if what I'm saying tends to be confusing, it's not what I mean to be.
+I'm just trying to see how restarting something so beautiful could end in forgetfulness.
+Finding merit in your head.
+
+
+Aplikasi Kata Alkitab
+
+Aplikasi ini dibuat menggunakan modul Padlock, Social Wall, Images, Catalog, Contact, My Account, dan Push Notification.
+
+1. Setting yang perlu disesuaikan di modul Social Wall yaitu:
+a. Design: card
+b. Post message preview length: 200
+c. Post sharing options: Inside contextual menu & below post body
+d. Feature yang diaktifkan hanya user likes, user posts, dan user comments
+e. Photo position: after text
+f. Max pictures allowed (0-10): 2
+g. Display mode: slider
+h. Custom icons yang diisi hanya post, new post, dan profile
+
+2. Setingan untuk modul Padlock
+a. Unlock by: Account
+b. Let your users know what is locked: diisi (Silakan login atau tegistrasi terlebih dahulu agar Anda dapat memanfaatkan fitur ini.)
+c. Allow all the users by default: Yes
+d. Lock the entire application?: Yes
+
+
+
+Aplikasi Radio
+
+Custom Homepage untuk aplikasi radio
+
+Aplikasi radio ini memanfaatkan modul Radio dan Custom Page. Custom Page digunakan untuk membuat sebuah tampilan homepage dari HTML, CSS, dan JS. Kemudian, beberapa item di dalam Custom Page tersebut akan dilinkkan ke modul Radio.
+
+Catatan:
+1. Source code dan css yang digunakan khusus untuk 1 buah aplikasi. Oleh karena itu, penerapan modul lain atau pemakaian modul di luar yang ditetapkan dalam tutorial ini kemungkinan hasilnya kurang masksimal.
+2. Setingan atau fitur yang dipakai di dalam modul harus sesuai dengan arahan.
+
+
+Cara pakai source code HTML, CSS, dan JS.
+1. Source code yang digunakan di dalam Custom Page dibagi menjadi 5 bagian. Secara berurutan, susunannya adalah Source Code, Text (internal link), Slider, Text, dan 4 Text selanjutnya (internal link).
+2. Source code dipakai untuk memanggil dan menampilkan nama dari user yang terdaftar.
+3. Text (Internal Link) digunakan untuk menampilkan nama-nama broadcaster yang dilinkan ke modul Radio. Jadi, ketika user menekan salah satu gambar broadcaster, user akan diarahkan ke modul radio.
+4. Slider digunakan untuk menampilkan gambar yang berhubungan dengan broadcasting, baik itu jadwal, id card, profil, dan lain-lain.
+5. Text yang kedua (setelah Text untuk menampilkan nama-nama broadcaster), digunakan untuk menampilkan judul (List Radio) pada Text yang terakhir. Setingan yang dibuat pada tulisan ini adalah menggunakan huruf kapital, tebal, dan diatur menjadi heading 2.
+6. 4 Text selanjutnya (terakhir) digunakan untuk menampilkan daftar-daftar radio. 
+
+
+<p><a data-offline="false" data-params="value_id:87848" data-state="radio">
+<img alt="img-20210927-103508-0b6b34e106ca27a8d0622e80aeecf689-a762682d3e1eb0fbd362d2cdec278dfc_600x400.jpg" src="https://cdn.idntimes.com/content-images/community/2021/09/img-20210927-103508-0b6b34e106ca27a8d0622e80aeecf689-a762682d3e1eb0fbd362d2cdec278dfc_600x400.jpg" />
+<label>Elina</label>
+</a></p>
+
+<p><a data-offline="false" data-params="value_id:87848" data-state="radio">
+<img alt="Digital-radio-broadcasting-India.jpg" src="https://www.telecomlead.com/wp-content/uploads/2018/02/Digital-radio-broadcasting-India.jpg" />
+<label>Amelia</label>
+</a></p>
+
+<p><a data-offline="false" data-params="value_id:87912" data-state="music-playlist-list">
+<img alt="radio-broadcasting-maryland.jpg" src="https://www.sheffieldav.com/sites/default/files/radio-broadcasting-maryland.jpg" />
+<label>Charly</label>
+</a></p>
+
+<p><a data-offline="false" data-params="value_id:87913" data-state="video-list">
+<img alt="WTUL_Microphone.jpg" src="https://upload.wikimedia.org/wikipedia/commons/0/0d/WTUL_Microphone.jpg" />
+<label>Bianca</label>
+</a></p>

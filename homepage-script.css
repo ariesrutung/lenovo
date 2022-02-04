@@ -1,0 +1,53 @@
+<p><a data-offline="false" data-params="" data-state="home">Card 1</a> Lipsum dipakai untuk mendemostrasikan elemen grafis.</p>
+
+<p><a data-offline="true" data-params="value_id:191893" data-state="contact-view">Card 2</a> Lipsum dipakai untuk mendemostrasikan elemen grafis.</p>
+
+<p><a data-offline="true" data-params="value_id:191893" data-state="contact-form">Card 3</a> Lipsum dipakai untuk mendemostrasikan elemen grafis.</p>
+
+<p><a data-offline="false" data-params="value_id:191893" data-state="contact-map">Card 4</a> Lipsum dipakai untuk mendemostrasikan elemen grafis.</p>
+
+<p><a data-offline="true" data-params="value_id:192055" data-state="form2-home">Card 5</a> Lipsum dipakai untuk mendemostrasikan elemen grafis.</p>
+
+<p><a data-offline="true" data-params="" data-state="my-account">Card 6</a> Lipsum dipakai untuk mendemostrasikan elemen grafis.</p>
+
+<p><a data-offline="true" data-params="value_id:192923" data-state="cms-view">Card 7</a>Lipsum dipakai untuk mendemostrasikan elemen grafis.</p>
+
+<p><a data-offline="true" data-params="value_id:193123" data-state="cms-view">Card 8</a>Lipsum dipakai untuk mendemostrasikan elemen grafis.</p>
+
+
+<p><a data-offline="false" data-params="" data-state="home">Card 1</a></p>
+<p><a data-offline="true" data-params="value_id:191893" data-state="contact-view">Lipsum dipakai untuk mendemostrasikan elemen grafis.</a></p>
+<p><a data-offline="false" data-params="" data-state="home">Card 1</a></p>
+<p><a data-offline="true" data-params="value_id:191893" data-state="contact-view">Lipsum dipakai untuk mendemostrasikan elemen grafis.</a></p>
+<p><a data-offline="false" data-params="" data-state="home">Card 1</a></p>
+<p><a data-offline="true" data-params="value_id:191893" data-state="contact-view">Lipsum dipakai untuk mendemostrasikan elemen grafis.</a></p>
+
+
+<p><a data-offline="false" data-params="" data-state="home">Home</a></p>
+
+<p><a data-offline="true" data-params="value_id:191893" data-state="contact-view">Contact<br></a></p>
+
+<p><a data-offline="true" data-params="value_id:191893" data-state="contact-form">Form</a></p>
+
+<p><a data-offline="false" data-params="value_id:191893" data-state="contact-map">Map</a></p>
+
+<p><a data-offline="true" data-params="value_id:192055" data-state="form2-home">Form (v2)</a></p>
+
+<p><a data-offline="true" data-params="" data-state="my-account">My account</a></p>
+
+
+<p><a data-offline="false" data-params="" data-state="home"><b>Home</b><br>Lipsum dipakai untuk mendemostrasikan elemen grafis.</a></p>
+
+<p><a data-offline="true" data-params="value_id:191893" data-state="contact-view">Contact<br>Lipsum dipakai untuk mendemostrasikan elemen grafis.</a></p>
+
+<p><a data-offline="true" data-params="value_id:191893" data-state="contact-form">Form<br>Lipsum dipakai untuk mendemostrasikan elemen grafis.</a></p>
+
+<p><a data-offline="false" data-params="value_id:191893" data-state="contact-map">Map<br>Lipsum dipakai untuk mendemostrasikan elemen grafis.</a></p>
+
+<p><a data-offline="true" data-params="value_id:192055" data-state="form2-home">Form (v2)<br>Lipsum dipakai untuk mendemostrasikan elemen grafis.</a></p>
+
+<p><a data-offline="true" data-params="" data-state="my-account">My account<br>Lipsum dipakai untuk mendemostrasikan elemen grafis.</a></p>
+
+.desc-wrapper p:first-line {
+	font-we
+}

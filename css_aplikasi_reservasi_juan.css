@@ -1,0 +1,2108 @@
+/** Modal background is opacified */
+ion-modal-view {
+  background-color: #e0e0e0 !important;
+}
+
+/** 100vh height is important for iOS viewport */
+.platform-ios14 ion-side-menus {
+  height: 100vh !important;
+}
+
+ion-side-menu {
+  background-color: rgba(238, 238, 238, 1) !important;
+}
+
+ion-side-menu-content {
+  color: rgba(17, 17, 17, 1);
+  background-color: rgba(224, 224, 224, 1) !important;
+}
+
+ion-side-menu-content .general-custom-border {
+  border-color: rgba(222, 219, 219, 0) !important;
+}
+
+ion-content {
+  background-color: transparent !important;
+}
+
+
+/* HEADER / FOOTER */
+.bar.bar-custom {
+  border-color: rgba(242, 242, 242, 0);
+  background-color: rgba(237, 237, 237, 1);
+  background-image: linear-gradient(0deg, rgba(242, 242, 242, 0), rgba(242, 242, 242, 0) 50%, transparent 50%);
+  color: rgba(128, 0, 0, 1);
+}
+
+/* Make Page Title Center */
+.bar .title {
+  height: 52px !important;
+  position: absolute;
+  top: 0 !important;
+  left: 0px !important;
+  right: 0px !important;
+  bottom: 0px !important;
+  letter-spacing: 0.1px !important;
+  text-align: center !important;
+  font-size: 14px;
+  font-weight: black !important;
+  letter-spacing: 0.5px !important;
+  margin: auto 48px;
+  padding-top: 4px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+ion-header-bar.bar-custom.bar.bar-header {
+  backdrop-filter: blur(-15px) !important;
+  -webkit-backdrop-filter: blur(-15px) !important;
+}
+
+ion-header-bar>div.title.title-center.header-item {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+
+/*back button*/
+button[ng-click="goBack()"] {
+  background-color: #dedede !important;
+  border-radius: 25% !important;
+}
+
+
+/*Menu icon*/
+.icon.ion-navicon-round {
+  visibility: hidden;
+}
+
+.icon.ion-navicon-round:after {
+  top: 0px;
+  left: 0px;
+  right: 0;
+  bottom: 0;
+  visibility: visible;
+  position: absolute;
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-image: url(https://i.imgur.com/6w1SEtV.png);
+  background-size: cover;
+  transform: scale(1.3);
+}
+
+.bar-custom span.left-buttons>.button.button-clear::after {
+  background-color: #ccc 0;
+  z-index: -1;
+  border-radius: 0 0 50% 0;
+}
+
+
+i.icon.ion-ios-upload-outline {
+  display: none !important;
+}
+
+.layout.l1 p,
+.layout.l10 p,
+.layout.l2 p {
+  height: 16px;
+  margin-top: 2px;
+  overflow: hidden;
+  line-height: 16px;
+  font-size: 9px;
+  margin-top: -3px;
+  margin-bottom: 0;
+  padding-bottom: 10px;
+}
+
+.layout.l1 > ul {
+    display: flex !important;
+    padding-top: 4px !important;
+    z-index: 1000 !important;
+    max-height: 7vh !important;
+    height: 8vh !important;
+    bottom: 0vh !important;
+    width: 100%;
+    margin-left: 0;
+    border-radius: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.layout.l1>ul>li:nth-child(1) {
+  order: 3;
+  background-image: url(https://login.appdolph.org/esportsmy/NNI8ZcB.png) !important;
+  background: transparent;
+  background-position: center center;
+  display: block;
+  border-radius: 0;
+  background-size: cover;
+  border: none;
+  bottom: 22px;
+  line-height: 23px;
+  transform: scale(1.7);
+  bottom: 30px;
+  height: 60px;
+}
+
+.layout.l1>ul>li:nth-child(1) p {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: -1px;
+  display: block;
+}
+
+.layout.l1>ul>li:nth-child(2) {
+  order: 2;
+}
+
+.layout.l1>ul>li:nth-child(3) {
+  order: 1;
+}
+
+.layout.l1>ul>li:nth-child(4),
+.layout.l1>ul>li:nth-child(5) {
+  order: 4;
+}
+
+.layout.l1>ul>li:nth-child(1)>img {
+  visibility: hidden;
+}
+
+.layout.l1>ul>li:active,
+.layout.l1>ul>li:target {
+  background-color: #333;
+  border-radius: 15px;
+}
+
+ion-view[state="socialnetworks-home"]>ion-header-bar button.button.button-custom.button-positive.button-positive-custom.ng-binding.icon-custom:active,
+ion-view[state="socialnetworks-home"]>ion-header-bar button.button.button-custom.button-positive.button-positive-custom.ng-binding.icon-custom:target {
+  background-color: #eee !important;
+}
+
+.layout.l1>ul>li:nth-child(1):active,
+.layout.l1>ul>li:nth-child(1):target {
+  background-color: transparent;
+}
+
+.gtx-trans-icon {
+  display: none !Important;
+}
+
+i.icon.ion-sb-like.post-action-icon {
+  visibility: hidden;
+}
+
+i.icon.ion-sb-like.post-action-icon:after {
+  content: "";
+  visibility: visible;
+  background-image: url(https://i.imgur.com/gE9WRRi.png);
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background-size: cover;
+  left: 19%;
+}
+
+i.icon.ion-sb-like-filled.post-action-icon {
+  visibility: hidden;
+}
+
+i.icon.ion-sb-like-filled.post-action-icon:after {
+  content: "";
+  visibility: visible;
+  background-image: url(https://www.flaticon.com/svg/static/icons/svg/2985/2985455.svg);
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background-size: cover;
+  left: 19%;
+}
+
+.layout.l1 p,
+.layout.l10 p,
+.layout.l2 p {
+  height: 16px;
+  margin-top: 2px;
+  overflow: hidden;
+  line-height: 16px;
+  font-size: 0.8vh !important;
+  margin-top: -3px;
+  margin-bottom: 0;
+  padding-bottom: 10px;
+}
+
+.layout.l1 .tab-item img,
+.layout.l10 .tab-item img,
+.layout.l2 .tab-item img {
+  width: 30px;
+  height: 30px;
+  max-height: 70%;
+  object-fit: contain;
+}
+
+ion-view[state="cms-view"] ion-content {
+  background-image: none !important;
+  background-color: #444 !important;
+}
+
+span.secondary-buttons>button>span.back-text {
+  padding: 2px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, .15);
+  backdrop-filter: blur(35px);
+  -webkit-backdrop-filter: blur(35px);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+span.secondary-buttons>button>span.back-text>span.default-title.ng-binding {
+  animation: color-change 2s linear infinite alternate both;
+  font-weight: bold;
+}
+
+@keyframes color-change {
+  0% {
+    color: red;
+  }
+  50% {
+    color: blue;
+  }
+  100% {
+    color: black;
+  }
+}
+
+.ion-checkmark:before {
+  border: 1px rgba(255, 255, 255, .25) solid;
+  border-radius: 5px;
+}
+
+
+/*Main Left Menu*/
+ion-side-menus>ion-side-menu.menu.menu-left.menu-left-open {
+  height: 90vh !important;
+  min-height: 90vh !important;
+  border-radius: 0px 20px 20px 0px !important;
+  background-image: none !important;
+  background-color: rgba(255, 255, 255, .15) !important;
+  backdrop-filter: blur(35px);
+  -webkit-backdrop-filter: blur(35px);
+  border: 0;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+  width: 250px !important;
+}
+
+ion-side-menus>ion-side-menu.menu.menu-left.menu-left-open div>ion-content {
+  background-image: none !important;
+}
+
+ion-side-menus .homepage-custom {
+  background: transparent;
+}
+
+ion-side-menus ion-side-menu div div div ion-content div div:nth-child(3)>ul.list.homepage-custom.app-menu {
+  padding-bottom: 10px;
+  background-color: transparent;
+}
+
+ion-side-menus>ion-side-menu div div div ion-content div div.homepage-custom.border-custom ul li button.button.button-custom {
+  border-color: #333;
+  background-color: #2b6e74;
+  color: rgba(255, 255, 255, 1);
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.layout_baguera_11 .forgot-link {
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+  line-height: 5vh;
+}
+
+button.button.button-custom.button-small.waves-effect.connexion-button-facebook.ng-binding>i {
+  font-size: 4.5vh;
+  position: relative;
+  left: -10px;
+  float: right;
+  color: blue;
+}
+
+ion-side-menus ion-side-menu div div div ion-content div div.homepage-custom.border-custom ul li button:nth-child(7)>i {
+  display: none;
+}
+
+ion-side-menus ion-side-menu div div div ion-content div div.homepage-custom.border-custom ul li button:nth-child(8)>i {
+  display: none;
+}
+
+.layout_baguera_11 .avatar-img {
+  height: 13vh;
+  padding: 1px;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+}
+
+.layout_baguera_11 img {
+  height: 20vh;
+}
+
+ion-side-menus>ion-side-menu div div div ion-content div div.homepage-custom ul li form[name="editForm"] div div.list.nospace-noborder-noback button[type="submit"] {
+  border-color: #2b6e74;
+  background-color: rgba(255, 255, 255, .15);
+  color: #2b6e74;
+  border-radius: 12px;
+  margin-top: 15px;
+}
+
+ion-side-menus>ion-side-menu div div div ion-content div div.homepage-custom ul li form[name="editForm"] div div.list.nospace-noborder-noback label {
+  background: 0 0;
+  border-color: #2b6e74;
+  border-radius: 12px;
+}
+
+.layout_baguera_11 .avatar {
+  margin-top: 20px;
+}
+
+.layout_baguera_11 .avatar {
+  margin-top: 20px;
+}
+
+ion-side-menus>ion-side-menu div div div ion-content div div.homepage-custom.border-custom ul li button.button.button-custom {
+  margin-top: 10px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, .35) !important;
+  color: white !important;
+  border: 0 !important;
+  letter-spacing: 0.5px !important;
+}
+
+.homepage-custom .border-custom {
+  border-color: rgba(224, 118, 4, 0);
+  color: #f8f8f8;
+}
+
+ion-side-menus>ion-side-menu div div div ion-content div div.homepage-custom.logout-form div.avatar-nick small.ng-binding {
+  font-size: 85%;
+  color: white;
+}
+
+ion-side-menu {
+  background-color: #141212 !important;
+}
+
+.layout_baguera_11 .logout-icon {
+  font-size: 2.5vh;
+}
+
+.layout_baguera_11 .avatar {
+  margin-top: 5vh;
+}
+
+i.ion-android-contact.avatar {
+  visibility: hidden;
+}
+
+i.ion-android-contact.avatar:after {
+  visibility: visible;
+  content: "";
+  background-image: url(https://login.appdolph.org/esportsmy/avatar.png);
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  display: block;
+  top: 6vh;
+  left: 88px;
+}
+
+ion-side-menus>ion-side-menu div div div ion-content div div.homepage-custom.logout-form div.avatar-nick small.ng-binding {
+  font-size: 65%;
+  color: white;
+}
+
+ion-side-menus ion-side-menu div div div ion-content div div.homepage-custom ul li form[name="editForm"] div section.avatar.text-center.padding div img.padding.stable-bg.stable-border {
+  height: 10vh;
+  padding: 1px;
+  border-radius: 50%;
+}
+
+ion-side-menus ion-side-menu div div div ion-content div div.homepage-custom ul li form[name="editForm"] div div.abort-div i.ion-ios-arrow-back.abort-icon {
+  font-size: 4vh;
+}
+
+ion-side-menus>ion-side-menu div div div ion-content div div.homepage-custom ul li form[name="editForm"] div div.list.nospace-noborder-noback button[type="submit"] {
+  border-radius: 12px;
+  margin-top: 15px;
+  font-size: 2vh;
+  background-color: rgba(255, 255, 255, .45);
+  border: 0;
+  color: black;
+  text-transform: capitalize;
+}
+
+ion-side-menus ion-side-menu div div div ion-content div div.homepage-custom ul li form[name="editForm"] div div.list.nospace-noborder-noback button[type="submit"] i.ion-checkmark-round {
+  color: black;
+  font-size: 2vh;
+}
+
+ion-side-menus>ion-side-menu div div div ion-content div div.homepage-custom.border-custom ul li button.button.button-custom {
+  border-color: #333;
+  background-color: #fff;
+  color: #555;
+  margin-top: 10px;
+  border-radius: 10px;
+  height: 2vh !important;
+}
+
+ion-side-menus>ion-side-menu.menu.menu-left.menu-left-open {
+  height: 90vh !important;
+  min-height: 90vh !important;
+  border-radius: 0px 0px 20px 0px !important;
+}
+
+.layout_baguera_11 .menu-icon {
+  height: 3vh;
+}
+
+.layout_baguera_11 form[ng-show="display_forgot_password_form"] input,
+.layout_baguera_11 .login-form input,
+.layout_baguera_11 .register-form input {
+  width: 100%;
+  border-bottom: 1px rgba(255, 255, 255, .25) solid;
+  min-height: 8vh;
+  text-align: left;
+}
+
+.layout_baguera_11 form[ng-show="display_forgot_password_form"] input:focus,
+.layout_baguera_11 .login-form input:focus,
+.layout_baguera_11 .register-form input:focus {
+  min-height: 14vh;
+  text-align: left;
+}
+
+.layout_baguera_11 form[ng-show="display_forgot_password_form"] input::placeholder,
+.layout_baguera_11 .login-form input::placeholder,
+.layout_baguera_11 .register-form input::placeholder {
+  color: white !important;
+}
+
+.layout_baguera_11 .civility-selector {
+  padding: 0;
+  border: 1px rgba(255, 255, 255, .35) solid !important;
+  border-radius: 5px;
+}
+
+.layout_baguera_11 .item-checkbox .item-content {
+  white-space: normal;
+  text-align: center;
+}
+
+.layout_baguera_11 .item-checkbox .item-content span {
+  font-size: 12px;
+  color: white;
+}
+
+ion-side-menus>ion-side-menu div div div ion-content div div.homepage-custom.border-custom ul li button.button.button-custom[ng-click="loginWithFacebook()"] {
+  display: none;
+}
+
+
+/*Popup dialog*/
+div.popup-container.popup-no-title.popup-showing.active>div.popup {
+  background-color: rgba(255, 255, 255, .15);
+  border-radius: 10px !important;
+  backdrop-filter: blur(45px);
+  -webkit-backdrop-filter: blur(45px);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+
+.module-fanwall.fanwall-list-l1 .item .post-body * {
+  font-size: 11px;
+}
+
+.module-fanwall.fanwall-list-l1 .item-divider.item-divider-custom {
+  margin: 0 !important;
+  text-align: center;
+  background-color: transparent;
+  width: 100% !important;
+}
+
+ion-view[state="socialnetworks-home"] .item.item-custom a {
+  height: 35vh;
+}
+
+ion-view[state="socialnetworks-home"] .list:last-child {
+  margin-bottom: 120px !important;
+}
+
+.module-fanwall.fanwall-list-l1 .bar-subheader .button-bar>.button img.fw-icon-header {
+  filter: invert(1) !important;
+}
+
+ion-side-menus ion-side-menu-content ion-nav-bar div.nav-bar-block ion-header-bar div.buttons.buttons-right.header-item span.secondary-buttons button:nth-child(2)>div.badge.badge-positive.badge-positive-custom {
+  display: table-header-group !important;
+  padding: 0px 0px 0px 0px;
+  background-image: url(https://i.imgur.com/IpLpyVK.png) !important;
+  background-size: cover;
+  background-color: transparent;
+  color: transparent;
+  margin-right: 0vw;
+}
+
+ion-side-menus ion-side-menu-content ion-nav-bar div.nav-bar-block ion-header-bar div.buttons.buttons-right.header-item span.secondary-buttons>button:nth-child(5) {
+  background-color: transparent;
+  color: transparent;
+  background-image: url(https://i.imgur.com/7S8VY4N.png);
+  background-size: cover;
+  min-width: 8vw;
+  margin-right: 2vw;
+}
+
+.module-fanwall .fanwall-profile .customer-image img {
+  margin: 0 auto;
+  width: 10em;
+  border-radius: 20px;
+  border: 0.4em solid white;
+  display: block;
+}
+
+.module-fanwall .fanwall-profile .customer-fullname {
+  font-size: 1.2em;
+  text-align: center;
+  margin-bottom: 15px;
+  color: black;
+}
+
+.loader:after {
+  content: "This may take few seconds. Please wait.";
+  display: block;
+  position: relative;
+  width: 90%;
+  margin: auto;
+  color: black;
+  height: auto;
+}
+
+ion-view[state="socialnetworks-search"] .item .post-author.item-avatar {
+  padding-left: 80px !important;
+}
+
+.module-fanwall.fanwall-list-l1 .item.card .post-author h2 {
+  font-size: 13px;
+}
+
+.module-fanwall.fanwall-new-l1 .new-post-items .item.card {
+  background-color: #eee;
+  text-align: left;
+  border-radius: 7px;
+  box-shadow: none;
+  border: 1px #ccc solid;
+  filter: drop-shadow(2px 3px 4px #777);
+}
+
+.module-fanwall.fanwall-list-l1 .item.item-custom.card {
+  padding-bottom: 0;
+  margin-top: 12px;
+  margin-bottom: 0;
+  background-color: #eee;
+  text-align: left;
+  border: 0;
+  border-radius: 8px;
+  border: 1px #ccc solid;
+  filter: drop-shadow(2px 3px 4px #444);
+}
+
+.users-listing .item-custom {
+  margin: 10px 0px !important;
+  text-align: center !important;
+  padding: 8px !important;
+  margin-left: 5% !important;
+  width: auto !important;
+}
+
+.module-fanwall.fanwall-new-l1 .post-button {
+  position: fixed;
+  z-index: 100;
+  background-color: maroon;
+  color: rgba(255, 255, 255, 1);
+  border: 0;
+  border-radius: 7px;
+  width: calc(100vw - 20px);
+  left: 10px;
+  right: 10px;
+}
+
+ion-modal-view.module-fanwall.fanwall-new.fanwall-new-l1.modal.has-background-image.slide-in-right-left {
+  min-height: calc(100vh - 65px);
+  margin-top: 65px;
+  border: 1px #ccc solid;
+  border-radius: 20px 20px 0 0 !important;
+}
+
+.module-fanwall.fanwall-new-l1 .new-post-items .item .new-post-author {
+  font-size: 12px;
+}
+
+ion-modal-view.module-fanwall.fanwall-new.fanwall-new-l1.modal.has-background-image.slide-in-right-left ion-item[ng-click="takePicture()"] p {
+  font-size: 11px;
+  color: black;
+}
+
+ion-side-menus ion-side-menu-content ion-nav-bar div.nav-bar-block ion-header-bar div.buttons.buttons-right.header-item span.secondary-buttons>button:nth-child(5) {
+  background-color: transparent;
+  color: transparent;
+  background-image: url(https://i.imgur.com/0ynQXvs.png) !important;
+  background-size: cover;
+  min-width: 10vw;
+  margin-right: 2vw;
+}
+
+ion-side-menus ion-side-menu-content ion-nav-bar div.nav-bar-block ion-header-bar div.buttons.buttons-right.header-item span.secondary-buttons button:nth-child(2)>div.badge.badge-positive.badge-positive-custom {
+  display: table-header-group !important;
+  padding: 0px 0px 0px 0px;
+  background-image: url(https://i.imgur.com/IpLpyVK.png) !important;
+  background-size: cover;
+  background-color: transparent;
+  color: transparent;
+  margin-right: 0vw;
+}
+
+ion-side-menus ion-side-menu-content ion-nav-bar div.nav-bar-block ion-header-bar div.buttons.buttons-right.header-item span.secondary-buttons>button:nth-child(5) {
+  background-color: transparent;
+  color: transparent;
+  background-image: url(https://i.imgur.com/5LbpUQL.png) !important;
+  background-size: contain;
+  width: 22.75px;
+  height: 22.75px !important;
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+
+div.modal-backdrop.active {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.bar-custom span.left-buttons>.button.button-clear::after {
+  background-color: #e5e5e5 0;
+  z-index: -1;
+  border-radius: 0 0 50% 0;
+}
+
+.module-fanwall.fanwall-list-l1 .item .post-image a.fanwall-image-bg {
+  display: inline-block;
+  width: 100%;
+  background-position: center center;
+  background-size: cover;
+  height: 64vh;
+  width: 119vw;
+}
+
+ion-side-menus .homepage-custom {
+  background: #555;
+}
+
+ion-view[state="socialnetworks-chat"] ion-content>div.scroll {
+  transform: translate3d(0px, 0px, 0px) scale(1);
+}
+
+.platform-overview.platform-cordova:not(.fullscreen) .bar-header:not(.bar-subheader)>* {
+  margin-top: 0 !important;
+}
+
+ion-view[state="commercepro-product-view"] ion-content div.scroll>div:nth-child(3)>div:nth-child(3)>div {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+  margin-right: 0px;
+  background-color: transparent;
+}
+
+ion-view[state="commercepro-product-view"] ion-content div.scroll>div:nth-child(3)>div:nth-child(4)>div {
+  margin: 0;
+  background-color: transparent;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+/*Layout 1 more page*/
+ion-modal-view[ng-if="features.overview.hasMore"].layout.modal.slide-top {
+  min-height: 50vh;
+  margin-top: 50vh;
+  opacity: 1;
+  background-color: #e7e7e7 !important;
+  border-radius: 20px 20px 0 0 !important;
+  filter: invert(1);
+}
+
+ion-modal-view[ng-if="features.overview.hasMore"].layout.modal.slide-top ion-content {
+  padding: 0;
+}
+
+ion-modal-view[ng-if="features.overview.hasMore"].layout.modal.slide-top .list {
+  display: grid;
+  grid-template-columns: calc(30% - 5px) calc(30% - 5px) calc(30% - 5px);
+  height: 50vh;
+  align-content: center;
+  grid-gap: 10px;
+  justify-content: center;
+}
+
+ion-modal-view[ng-if="features.overview.hasMore"].layout.modal.slide-top .list::-webkit-scrollbar {
+  display: none;
+}
+
+ion-modal-view[ng-if="features.overview.hasMore"].layout.modal.slide-top .list>.item.item-custom:nth-child(-n+4) {
+  display: none;
+}
+
+ion-modal-view[ng-if="features.overview.hasMore"].layout.modal.slide-top .list .item.item-custom[ng-repeat="feature in features.options"] {
+  width: 100%;
+  height: 30vw;
+  padding-left: 12px;
+  position: relative;
+  transform: scale(1);
+  background-color: #f9f9f9 !important;
+  border: 0;
+  border-radius: 8px;
+  margin: auto;
+}
+
+ion-modal-view[ng-if="features.overview.hasMore"].layout.modal.slide-top .list .item.item-custom img {
+  left: 0;
+  min-width: 100%;
+  object-fit: contain;
+  filter: invert(0.6);
+}
+
+ion-modal-view[ng-if="features.overview.hasMore"].layout.modal.slide-top .list .item.item-custom h2 {
+  display: block;
+  left: 0;
+  width: 100%;
+  margin-top: 30px;
+  white-space: normal;
+  font-size: 9px;
+  padding: 0 5px;
+  color: #777;
+}
+
+ion-modal-view[ng-if="features.overview.hasMore"].layout.modal.slide-top .list .item.item-custom[ng-click="closeMore();"] {
+  position: fixed;
+  width: 40px;
+  max-height: 40px;
+  min-height: 40px;
+  left: calc(50vw - 20px);
+  top: 10px;
+  background-color: transparent;
+  border-radius: 50%;
+  color: maroon;
+  border: 1px maroon solid;
+  transform: scale(0.8);
+  padding-left: 12px;
+}
+
+ion-modal-view[ng-if="features.overview.hasMore"].layout.modal.slide-top .list .item.item-custom[ng-click="closeMore();"] i {
+  left: calc(20px - 12px);
+}
+
+ion-modal-view[ng-if="features.overview.hasMore"].layout.modal.slide-top .list .item.item-custom[ng-click="closeMore();"] h2 {
+  display: none;
+}
+
+
+/*Appointment Pro - Home*/
+ion-view[state="appointmentpro-home"] .list .item.item-custom.appointmentpro-slider.remove-border {
+  background-color: transparent;
+}
+
+ion-view[state="appointmentpro-home"] .list .item.item-custom.appointmentpro-slider.remove-border>.slider {
+  border-radius: 8px;
+}
+
+ion-view[state="appointmentpro-home"] div#appointmentpro_slider img {
+  height: -webkit-fill-available !important;
+}
+
+ion-view[state="appointmentpro-home"] ion-content#item-content .scroll>ng-include:nth-child(3)>div.list.card {
+  display: none;
+}
+
+ion-view[state="appointmentpro-home"] ion-content#item-content .scroll>ng-include:nth-child(3)>ng-include>div.list.card:nth-child(2) {
+  display: none;
+}
+
+ion-view[state="appointmentpro-home"] ion-content#item-content .scroll>ng-include:nth-child(3)>ng-include>div.list.card:nth-child(2)[ng-repeat="provider in location_info.providers"] {
+  display: block;
+}
+
+ion-view[state="appointmentpro-home"] .card .item.item-custom[ng-if="settings.enable_booking"] {
+  display: none;
+}
+
+ion-view[state="appointmentpro-home"] .list.card {
+    box-shadow: none;
+    margin: 0;
+    border-radius: 0 !important;
+    background-color: transparent !important;
+}
+
+.appointmentpro .location-tabs {
+  padding-bottom: 0px !important;
+  height: 49px !important;
+  border: 0;
+  background-color: transparent;
+  position: relative;
+  background-image: none;
+}
+
+.appointmentpro .location-tabs>a.tab-item.ng-binding.active {
+  background-color: maroon;
+  color: white;
+  border-radius: 5px;
+}
+
+.appointmentpro .location-tabs>a[ng-click="clickTabs('service')"] {
+  display: none;
+}
+
+ion-view[state="appointmentpro-home"] .list.card[ng-repeat="provider in location_info.providers"] {
+  width: calc(50vw - 15px);
+  border-radius: 8px;
+  filter: drop-shadow(2px 3px 4px #ddd);
+  -webkit-filter: drop-shadow(2px 3px 4px #ddd);
+  margin-top: 10px;
+  margin-bottom: 0;
+  display: block;
+}
+
+ion-view[state="appointmentpro-home"] .list.card[ng-repeat="provider in location_info.providers"] a[ng-click="goToProviderService(provider)"] {
+  padding: 0;
+}
+
+ion-view[state="appointmentpro-home"] .list.card[ng-repeat="provider in location_info.providers"]:nth-child(odd) {
+  float: left;
+}
+
+ion-view[state="appointmentpro-home"] ion-content#item-content .scroll:after {
+  content: "";
+  width: 100%;
+  height: 100px;
+  position: relative;
+  display: block;
+  background-color: transparent;
+}
+
+ion-view[state="appointmentpro-home"] .list.card[ng-repeat="provider in location_info.providers"] a[ng-click="goToProviderService(provider)"] img {
+  top: 0;
+  left: 0;
+  max-width: none;
+  max-height: none;
+  width: 100%;
+  position: relative;
+  border-radius: 0;
+}
+
+ion-view[state="appointmentpro-home"] i.icon.ion-chevron-right {
+  display: none;
+}
+
+ion-view[state="appointmentpro-home"] .list.card[ng-repeat="provider in location_info.providers"] a[ng-click="goToProviderService(provider)"] p:after {
+  content: "Hire me";
+  position: relative;
+  display: block;
+  background-color: maroon;
+  color: white;
+  width: 90%;
+  height: 25px;
+  margin: 5px auto;
+  line-height: 25px;
+  border-radius: 3px;
+}
+
+ion-view[state="appointmentpro-home"] p[sb-html="location_info.about_us"] p {
+  font-size: 12px;
+  letter-spacing: 0.7px;
+}
+
+ion-view[state="appointmentpro-home"] div#photos-grid p {
+  font-size: 12px;
+  letter-spacing: 0.7px;
+}
+
+/*Appointment pro - account*/
+ion-view[state="appointmentpro-account"] .list {
+  margin: 0 10px 20px 10px;
+}
+
+ion-view[state="appointmentpro-account"] .list .item.item-custom {
+  border-radius: 5px;
+  filter: drop-shadow(2px 3px 4px #ccc);
+  margin-bottom: 10px;
+}
+
+ion-view[state="appointmentpro-account"] .list .item-divider.item-divider-custom {
+  text-align: center;
+  background-color: transparent;
+  font-weight: bold;
+}
+
+ion-view[state="appointmentpro-account"] .list .item.item-custom.item-avatar[ng-click="login()"] {
+  padding-left: 12px;
+}
+
+ion-view[state="appointmentpro-account"] .list .item.item-custom.item-avatar[ng-click="login()"] img {
+  display: none;
+}
+
+ion-view[state="appointmentpro-account"] .list .item.item-custom.item-avatar[ng-click="login()"] p {
+  height: 45px;
+  background-color: maroon;
+  color: white;
+  font-size: 12px;
+  line-height: 45px;
+  letter-spacing: 0.7px;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+/*Appointment pro booking*/
+ion-view[state="appointmentpro-booking"].list[ng-if="!is_loading && payout.bookings.length == 0"]p {
+  font-size: 12px;
+  letter-spacing: 0.7px;
+}
+
+ion-view[state="appointmentpro-booking"] .card {
+  box-shadow: none;
+  border-radius: 5px;
+  filter: drop-shadow(2px 3px 4px #ccc);
+}
+
+ion-view[state="appointmentpro-booking"] .card:last-child:after {
+  content: "";
+  position: relative;
+  width: 100%;
+  height: 100px;
+  background-color: transparent;
+  display: block;
+}
+
+ion-view[state="appointmentpro-booking"] .card .item.item-custom>p {
+  display: none;
+}
+
+/*Appointment pro booking details*/
+ion-modal-view.appointmentpro.appointmentpro-booking-details.modal.slide-in-right-left {
+  min-height: 95vh;
+  margin-top: 5vh;
+  background-color: white !important;
+}
+
+ion-modal-view.appointmentpro.appointmentpro-booking-details.modal.slide-in-right-left>ion-header-bar {
+  background-color: white;
+}
+
+ion-modal-view.appointmentpro.appointmentpro-booking-details.modal.slide-in-right-left .card {
+  border-radius: 5px;
+  margin: 10px;
+}
+
+ion-modal-view.appointmentpro.appointmentpro-booking-details.modal.slide-in-right-left .card .item.item-custom {
+  text-align: left;
+}
+
+ion-modal-view.appointmentpro.appointmentpro-booking-details.modal.slide-in-right-left * {
+  font-size: 12px;
+  letter-spacing: 0.7px;
+  white-space: normal;
+}
+
+ion-modal-view.appointmentpro.appointmentpro-booking-details.modal.slide-in-right-left .card .item-divider.item-divider-custom h2 {
+  text-align: center;
+  line-height: 30px;
+}
+
+ion-modal-view.appointmentpro.appointmentpro-booking-details.modal.slide-in-right-left .card .item.item-custom img.location-image-grid {
+  object-fit: contain;
+}
+
+ion-modal-view.appointmentpro.appointmentpro-booking-details.modal.slide-in-right-left .scroll {
+  display: flex;
+  flex-direction: column;
+}
+
+ion-modal-view.appointmentpro.appointmentpro-booking-details.modal.slide-in-right-left .scroll>.list.card {
+  order: 2;
+}
+
+ion-modal-view.appointmentpro.appointmentpro-booking-details.modal.slide-in-right-left .scroll>.list.cancel_card.card {
+  order: 1;
+  display: flex;
+  box-shadow: none;
+  flex-direction: row-reverse;
+  justify-content: center;
+  padding-bottom: 12vh !important;
+  margin: 10px 0 !important;
+}
+
+ion-modal-view.appointmentpro.appointmentpro-booking-details.modal.slide-in-right-left .scroll>.list.cancel_card.card>div:nth-child(2) button[ng-click="readInformation()"] {
+  visibility: hidden;
+  padding: 0;
+}
+
+ion-modal-view.appointmentpro.appointmentpro-booking-details.modal.slide-in-right-left .scroll>.list.cancel_card.card>div:nth-child(2) button[ng-click="readInformation()"]:before {
+  visibility: visible;
+  content: "Pay Online";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 100%;
+  height: 47px;
+  background-color: maroon;
+  color: white;
+  border-radius: 5px;
+  line-height: 47px;
+  text-align: center;
+  bottom: 0;
+}
+
+ion-modal-view.appointmentpro.appointmentpro-booking-details.modal.slide-in-right-left .scroll>.list.card a {
+  text-align: center;
+  display: block;
+  background-color: maroon;
+  color: white !important;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 5px;
+}
+
+ion-modal-view.appointmentpro.appointmentpro-booking-details.modal.slide-in-right-left ion-content#appointmentpro-content div:nth-child(4),
+ion-modal-view.appointmentpro.appointmentpro-booking-details.modal.slide-in-right-left ion-content#appointmentpro-content div:nth-child(5) {
+  display: none;
+}
+
+ion-modal-view.appointmentpro.appointmentpro-booking-details.modal.slide-in-right-left ion-content#appointmentpro-content div.list.card:first-child>div:nth-child(3):after {
+  content: "If your booking is still pending for approval, please make payment to our CIMB account 123456789 (Esportsmy App Sdn. Bhd.) and send payment slip to our WhatsApp number 0123456789. Our team will update and approve your booking in less than 12 hours after your payment.";
+  position: relative;
+  color: #ba9300;
+  display: block;
+  width: 100%;
+  height: auto;
+  white-space: normal;
+  border-left: 3px #0c60ee solid;
+  padding-left: 8px;
+  font-size: 10px;
+  margin-top: 10px;
+}
+
+ion-modal-view.appointmentpro.appointmentpro-booking-details.modal.slide-in-right-left .scroll>.list.cancel_card.card:after {
+  content: "Any cancellation must be made at least 12 hours before your booking slot.";
+  position: absolute !important;
+  display: block !important;
+  color: #ba9300 !important;
+  background-color: #f9f9f9 !important;
+  width: 100% !important;
+  height: auto !important;
+  white-space: normal !important;
+  top: 95px !important;
+  padding: 8px !important;
+}
+
+ion-modal-view.appointmentpro.appointmentpro-booking-details.modal.slide-in-right-left ion-content#appointmentpro-content div.list.card:nth-child(3)>div:nth-child(2):after {
+  content: "This is an online coaching slot. If you have made payment, you will receive a meeting link within 12 hours prior to your online coaching session. WhatsApp us at 0123456789 for any enquiries.";
+  position: relative;
+  color: #ba9300;
+  display: block;
+  width: 100%;
+  height: auto;
+  white-space: normal;
+  border-left: 3px #0c60ee solid;
+  padding-left: 8px;
+  font-size: 10px;
+  margin-top: 10px;
+}
+
+/*Appointment pro noti settings*/
+ion-modal-view.appointmentpro.appointmentpro-location-service.modal.slide-in-right-left {
+  min-height: 95vh;
+  margin-top: 5vh;
+  background-color: white !important;
+}
+
+ion-modal-view.appointmentpro.appointmentpro-location-service.modal.slide-in-right-left>ion-header-bar {
+  background-color: white;
+}
+
+ion-modal-view.appointmentpro.appointmentpro-location-service.modal.slide-in-right-left .list {
+  margin: 0 10px;
+  filter: drop-shadow(2px 3px 4px #bbb);
+}
+
+ion-modal-view.appointmentpro.appointmentpro-location-service.modal.slide-in-right-left .card .item.item-custom:last-child {
+  border-radius: 0 0 5px 5px;
+}
+
+ion-modal-view.appointmentpro.appointmentpro-location-service.modal.slide-in-right-left .card .item-divider.item-divider-custom {
+  border-radius: 5px 5px 0 0;
+  text-align: center;
+}
+
+ion-modal-view.appointmentpro.appointmentpro-location-service.modal.slide-in-right-left .card .item.item-custom {
+  text-align: left;
+}
+
+/*hire a pro - player details*/
+ion-view[state="provider-services"] .card {
+  box-shadow: none;
+  border-radius: 5px;
+  filter: drop-shadow(2px 3px 4px #ccc);
+  margin: 0 10px;
+}
+
+ion-view[state="provider-services"] .list:last-child.card {
+  margin-bottom: 20px;
+}
+
+ion-view[state="provider-services"] * {
+  letter-spacing: 0.7px;
+}
+
+ion-view[state="provider-services"] .card .item-divider.item-divider-custom {
+  text-align: center;
+  height: 40px;
+  padding: 0;
+}
+
+ion-view[state="provider-services"] .card .item-divider.item-divider-custom h2 {
+  line-height: 40px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+ion-view[state="provider-services"] .list.card[ng-repeat="service in payout.services"] {
+  margin-top: 10px;
+}
+
+ion-view[state="provider-services"] .list.card[ng-repeat="service in payout.services"]:last-child:after {
+  content: "";
+  position: relative;
+  width: 100%;
+  height: 100px;
+  background-color: transparent;
+  display: block;
+}
+
+ion-view[state="provider-services"] a[ng-click="goToProviderCalendar(service.service_id)"] h2 {
+  white-space: normal;
+}
+
+ion-view[state="provider-services"] a[ng-click="goToProviderCalendar(service.service_id)"] p {
+  color: maroon !important;
+}
+
+ion-view[state="provider-services"] a[ng-click="goToProviderCalendar(service.service_id)"] p:after {
+  content: "/slot";
+}
+
+ion-view[state="provider-services"] .scroll>.list.card:nth-child(3):before {
+  content: "";
+  position: relative;
+  display: block;
+  background-image: url(https://i.imgur.com/frO190q.jpg);
+  background-size: contain;
+  width: 100%;
+  height: 430px;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  margin: auto;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+}
+
+/*Hire a pro - appt calendar*/
+ion-view[state="appointmentpro-calendar"] .card {
+  border-radius: 5px;
+}
+
+ion-view[state="appointmentpro-calendar"] .card .item.item-custom {
+  background-color: transparent;
+}
+
+.appointmentpro-calendar #calendar {
+  border-radius: 5px;
+}
+
+ion-view[state="appointmentpro-calendar"] .scroll:after {
+  content: "";
+  position: relative;
+  width: 100%;
+  height: 100px;
+  background-color: transparent;
+  display: block;
+}
+
+ion-view[state="appointmentpro-calendar"] .col.col-33>div {
+  height: 30px !important;
+  border: 1px #ccc solid !important;
+  margin: 5px 0 !important;
+  border-radius: 3px !important;
+}
+
+ion-view[state="appointmentpro-calendar"] .col.col-33>div a {
+  line-height: 30px !important;
+}
+
+ion-view[state="appointmentpro-calendar"] div.part-time .item-divider.item-divider-custom {
+  background-color: #eee;
+}
+
+div.part-time-available .item-divider.item-divider-custom {
+  background-color: #eee;
+}
+
+ion-view[state="appointmentpro-calendar"] .scroll:before {
+  content: "";
+  position: relative;
+  display: block;
+  background-image: url(https://i.imgur.com/2JKESPQ.jpg);
+  background-size: contain;
+  width: 100%;
+  height: 430px;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  margin: auto;
+}
+
+/*Appointment pro - checkout */
+ion-view[state="appointmentpro-checkout"] .card {
+  box-shadow: none;
+}
+
+ion-view[state="appointmentpro-checkout"] .card .item.item-custom {
+  margin-bottom: 10px;
+  border-radius: 5px;
+  filter: drop-shadow(2px 3px 4px #ddd);
+}
+
+ion-view[state="appointmentpro-checkout"] .card .item.item-custom span {
+  text-align: left;
+  font-weight: bold;
+  opacity: 1;
+  top: 0;
+}
+
+ion-view[state="appointmentpro-checkout"] .card .item.item-custom input {
+  border-bottom: 1px #ddd dashed;
+  width: calc(100% - 16px);
+}
+
+ion-view[state="appointmentpro-checkout"] .card .item-divider.item-divider-custom {
+  text-align: left;
+  font-weight: bold;
+  background-color: transparent;
+}
+
+ion-view[state="appointmentpro-checkout"] .card .item.item-custom textarea {
+  height: 120px;
+}
+
+ion-view[state="appointmentpro-checkout"] .card .item.item-custom:last-child {
+  background-color: transparent;
+  padding: 0;
+}
+
+ion-view[state="appointmentpro-checkout"] .card:after {
+  content: "";
+  position: relative;
+  width: 100%;
+  height: 100px;
+  background-color: transparent;
+  display: block;
+}
+
+ion-view[state="appointmentpro-checkout"] .button.button-positive-custom {
+  background-color: maroon;
+  border-radius: 5px;
+}
+
+ion-view[state="appointmentpro-checkout"] .scroll:before {
+  content: "";
+  position: relative;
+  display: block;
+  background-image: url(https://i.imgur.com/UjnIU7p.jpg);
+  background-size: contain;
+  width: 100%;
+  height: 430px;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  margin: auto;
+}
+
+/*Appointment pro - confirm */
+ion-modal-view.appointmentpro.appointmentpro-confirm-booking.modal.slide-in-right-left {
+  min-height: 95vh;
+  margin-top: 5vh;
+  background-color: white !important;
+}
+
+ion-modal-view.appointmentpro.appointmentpro-confirm-booking.modal.slide-in-right-left ion-header-bar {
+  background-color: white;
+}
+
+ion-modal-view.appointmentpro.appointmentpro-confirm-booking.modal.slide-in-right-left .list.card {
+  border-radius: 7px;
+}
+
+ion-modal-view.appointmentpro.appointmentpro-confirm-booking.modal.slide-in-right-left .list.card img.location-image-grid {
+  object-fit: contain;
+}
+
+ion-modal-view.appointmentpro.appointmentpro-confirm-booking.modal.slide-in-right-left .list.card div[ng-if="!booking_info.is_class"] h2 {
+  line-height: 82px;
+}
+
+ion-modal-view.appointmentpro.appointmentpro-confirm-booking.modal.slide-in-right-left .list.card div[ng-if="!booking_info.is_class"] p {
+  display: none;
+}
+
+ion-modal-view.appointmentpro.appointmentpro-confirm-booking.modal.slide-in-right-left .card .item-divider.item-divider-custom {
+  height: 40px;
+  padding: 0 12px;
+  background-color: #eee;
+}
+
+ion-modal-view.appointmentpro.appointmentpro-confirm-booking.modal.slide-in-right-left .card .item-divider.item-divider-custom h2 {
+  text-align: center;
+  font-size: 12px;
+  line-height: 40px;
+  font-weight: bold;
+}
+
+ion-modal-view.appointmentpro.appointmentpro-confirm-booking.modal.slide-in-right-left * {
+  letter-spacing: 0.7px;
+  white-space: normal;
+}
+
+ion-modal-view.appointmentpro.appointmentpro-confirm-booking.modal.slide-in-right-left ion-content#appointmentpro-content div.item.item-custom.remove-border:nth-last-child(2),
+ion-modal-view.appointmentpro.appointmentpro-confirm-booking.modal.slide-in-right-left ion-content#appointmentpro-content div.item.item-custom.remove-border:nth-last-child(3),
+ion-modal-view.appointmentpro.appointmentpro-confirm-booking.modal.slide-in-right-left ion-content#appointmentpro-content div.item.item-custom.remove-border:nth-last-child(4) {
+  text-align: left;
+}
+
+ion-modal-view.appointmentpro.appointmentpro-confirm-booking.modal.slide-in-right-left ion-content#appointmentpro-content div.item.item-custom.remove-border:nth-last-child(2) *,
+ion-modal-view.appointmentpro.appointmentpro-confirm-booking.modal.slide-in-right-left ion-content#appointmentpro-content div.item.item-custom.remove-border:nth-last-child(3) *,
+ion-modal-view.appointmentpro.appointmentpro-confirm-booking.modal.slide-in-right-left ion-content#appointmentpro-content div.item.item-custom.remove-border:nth-last-child(4) * {
+  font-size: 12px;
+}
+
+ion-modal-view.appointmentpro.appointmentpro-confirm-booking.modal.slide-in-right-left .card .item.item-custom {
+  background-color: whitesmoke;
+}
+
+ion-modal-view.appointmentpro.appointmentpro-confirm-booking.modal.slide-in-right-left button[ng-click="continueOrder()"] {
+  visibility: hidden;
+}
+
+ion-modal-view.appointmentpro.appointmentpro-confirm-booking.modal.slide-in-right-left button[ng-click="continueOrder()"]:after {
+  visibility: visible;
+  content: "Continue";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: maroon;
+  color: white;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  height: 47px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 47px;
+}
+
+ion-modal-view.appointmentpro.appointmentpro-confirm-booking.modal.slide-in-right-left .scroll:before {
+  content: "";
+  position: relative;
+  display: block;
+  background-image: url(https://i.imgur.com/NVGN8pK.jpg);
+  background-size: contain;
+  width: 100%;
+  margin: auto;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+
+/*Appointment pro - payment*/
+ion-view[state="appointmentpro-payment"] ion-content .scroll:before {
+  content: "";
+  position: relative;
+  display: block;
+  background-image: url(https://i.imgur.com/YkN6aWJ.jpg);
+  background-size: contain;
+  width: 100%;
+  margin: auto;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+
+ion-view[state="appointmentpro-payment"] .list:last-child.card:after {
+  content: "";
+  position: relative;
+  width: 100%;
+  height: 100px;
+  background-color: transparent;
+  display: block;
+}
+
+ion-view[state="appointmentpro-payment"] .card {
+  border-radius: 5px;
+}
+
+ion-view[state="appointmentpro-payment"] .card .item-divider.item-divider-custom {
+  text-align: center;
+  border-radius: 5px;
+}
+
+ion-view[state="appointmentpro-payment"] .card .item.item-custom {
+  text-align: left;
+}
+
+ion-view[state="appointmentpro-payment"] .card .item.item-custom[ng-model="cart.payment_method"] {
+  border: 1px #ccc solid;
+  border-radius: 5px;
+}
+
+ion-view[state="appointmentpro-payment"] button[ng-click="placeOrder()"] {
+  visibility: hidden;
+  background-color: maroon;
+  border-radius: 5px;
+}
+
+ion-view[state="appointmentpro-payment"] button[ng-click="placeOrder()"]:after {
+  visibility: visible;
+  content: "Proceed";
+  position: absolute;
+  top: 85px;
+  left: 0;
+  width: 100%;
+  height: 47px;
+  display: block;
+  background-color: maroon;
+  color: white;
+  border-radius: 5px;
+  line-height: 47px;
+}
+
+ion-view[state="appointmentpro-payment"] button[ng-click="placeOrder()"]:before {
+  visibility: visible;
+  content: "Please make payment to our CIMB account 123456789 (Esportsmy App Sdn. Bhd.) and send payment slip to our WhatsApp number 0123456789.";
+  position: relative;
+  display: block;
+  color: #ba9300;
+  width: 100%;
+  height: auto;
+  white-space: normal;
+  font-size: 10px;
+  line-height: 20px;
+  text-align: left;
+  border-left: 3px #0c60ee solid;
+  padding-left: 8px;
+}
+
+ion-view[state="appointmentpro-payment"] .card .item.item-custom[ng-if="payout.gateways.length > 0"] {
+  height: 250px;
+  background-color: transparent;
+  padding: 12px 0;
+}
+
+ion-view[state="appointmentpro-payment"] .list:last-child.card {
+  box-shadow: none;
+}
+
+.item-radio input:checked+.radio-content .radio-icon {
+  color: #33cd5f;
+}
+
+
+/*Appointment booked success*/
+ion-view[state="appointmentpro-booked-success"] ion-content .scroll:before {
+  content: "";
+  position: relative;
+  display: block;
+  background-image: url(https://i.imgur.com/N5btHhW.jpg);
+  background-size: contain;
+  width: 100%;
+  margin: auto;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+
+ion-view[state="appointmentpro-booked-success"] .card {
+  border-radius: 5px;
+}
+
+ion-view[state="appointmentpro-booked-success"] .list.order-summery {
+  margin: 0;
+}
+
+ion-view[state="appointmentpro-booked-success"] .card .item-divider.item-divider-custom {
+  visibility: hidden;
+  height: 40px;
+}
+
+ion-view[state="appointmentpro-booked-success"] .card .item-divider.item-divider-custom:after {
+  visibility: visible;
+  content: "Summary";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  color: black;
+  line-height: 40px;
+  background-color: #f9f9f9;
+}
+
+ion-view[state="appointmentpro-booked-success"] .list.order-summery .item.item-custom {
+  text-align: left;
+}
+
+ion-view[state="appointmentpro-booked-success"] .list.order-summery .item.item-custom * {
+  font-size: 12px;
+  letter-spacing: 0.7px;
+}
+
+ion-view[state="appointmentpro-booked-success"] button[ng-click="goToBookingDetails()"] {
+  background-color: maroon;
+  border-radius: 5px;
+}
+
+ion-view[state="appointmentpro-booked-success"] .list.order-summery .item.item-custom:nth-child(5),
+ion-view[state="appointmentpro-booked-success"] .list.order-summery .item.item-custom:nth-child(6) {
+  display: none;
+}
+
+ion-view[state="appointmentpro-booked-success"] .list.order-summery .item.item-custom:nth-child(2):after {
+  content: "This is an online coaching slot. If you have made payment, you will receive a meeting link within 12 hours prior to your online coaching session. WhatsApp us at 0123456789 for any enquiries.";
+  position: relative;
+  color: #ba9300;
+  display: block;
+  width: 100%;
+  height: auto;
+  white-space: normal;
+  border-left: 3px #0c60ee solid;
+  padding-left: 8px;
+  font-size: 10px;
+  margin-top: 10px;
+}
+
+ion-view[state="appointmentpro-booked-success"] .list.order-summery .item.item-custom:nth-child(3):after {
+  content: "If your booking is still pending for approval, please make payment to our CIMB account 123456789 (Esportsmy App Sdn. Bhd.) and send payment slip to our WhatsApp number 0123456789. Our team will update and approve your booking in less than 12 hours after your payment.";
+  position: relative;
+  color: #ba9300;
+  display: block;
+  width: 100%;
+  height: auto;
+  white-space: normal;
+  border-left: 3px #0c60ee solid;
+  padding-left: 8px;
+  font-size: 10px;
+  margin-top: 10px;
+}
+
+ion-view[state="appointmentpro-booked-success"] .list:last-child.card:after {
+  content: "";
+  position: relative;
+  width: 100%;
+  height: 100px;
+  background-color: transparent;
+  display: block;
+}
+
+ion-side-menus ion-side-menu-content ion-nav-bar div.nav-bar-block ion-header-bar div.buttons.buttons-right.header-item span.secondary-buttons button:nth-child(2)>div.badge.badge-positive.badge-positive-custom {
+  display: block !important;
+  background-image: url(https://i.imgur.com/IpLpyVK.png) !important;
+  background-size: contain;
+  background-color: transparent;
+  color: transparent;
+  width: 22.75px;
+  min-height: 18px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+ion-modal-view.customer-view.customer-layout1.modal.has-background-image.slide-in-up div.scroll>div:nth-child(3) {
+  background-image: url(https://login.appdolph.org/esportsmy/photo6294119670453742798.jpg);
+  background-size: cover;
+  background-color: #28a745;
+  background-blend-mode: inherit;
+}
+
+ion-view[state="socialnetworks-home"] ion-content div.scroll .list .item.item-custom img[ng-src="https://login.appdolph.org/images/customer/82039d16dce0aab3913b6a7ac73deff7/prfl60d2d1ac2d7779.28094787.jpg"] {
+  display: none;
+}
+
+ion-view[state="socialnetworks-home"] ion-content div.scroll .list .item.item-custom img[ng-src="https://login.appdolph.org/images/customer/82039d16dce0aab3913b6a7ac73deff7/prfl60d2d1ac2d7779.28094787.jpg"]~h2,
+ion-view[state="socialnetworks-home"] ion-content div.scroll .list .item.item-custom img[ng-src="https://login.appdolph.org/images/customer/82039d16dce0aab3913b6a7ac73deff7/prfl60d2d1ac2d7779.28094787.jpg"]~p {
+  margin-left: -50px;
+}
+
+ion-view[state="socialnetworks-home"] ion-content div.scroll .list .item.item-custom img[ng-src="https://login.appdolph.org/images/customer/82039d16dce0aab3913b6a7ac73deff7/prfl60d2d1ac2d7779.28094787.jpg"]~h2 {
+  margin-left: -62px;
+  display: block;
+  color: white;
+  background-color: black;
+  padding-left: 12px;
+  width: calc(100vw - 20px);
+  margin-top: -18px;
+  height: 100%;
+  line-height: 20px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-weight: bold;
+}
+
+ion-view[state="socialnetworks-home"] ion-content div.scroll .list .item.item-custom img[ng-src="https://login.appdolph.org/images/customer/82039d16dce0aab3913b6a7ac73deff7/prfl60d2d1ac2d7779.28094787.jpg"]~h2 i {
+  display: none;
+}
+
+.module-fanwall.fanwall-new-l1 .post-button {
+  position: fixed;
+  z-index: 100;
+  background-color: maroon;
+  color: rgba(255, 255, 255, 1);
+  border: 0;
+  border-radius: 7px;
+  width: calc(100vw - 20px);
+  left: 10px;
+  right: 10px;
+  bottom: 4vh !important;
+}
+
+.action-sheet-wrapper {
+  bottom: 3vh;
+}
+
+
+ion-view[state="socialnetworks-home"] .item.item-custom a {
+  height: 100% !important;
+}
+
+.module-fanwall.fanwall-list-l1 .item .post-image {
+  height: 53vh !important;
+}
+
+ion-view[state="socialnetworks-home"] ion-content div.scroll .list .item.item-custom {
+  background-color: #eee;
+  text-align: left;
+  border-radius: 10px;
+  box-shadow: none;
+  border: 1px !important;
+  filter: drop-shadow(2px 3px 4px #777);
+  -webkit-filter: drop-shadow(2px 3px 4px #777);
+  border-left: 1px solid #b2b2b2;
+  border-top: 1px solid #b2b2b2;
+  border-bottom: 1px solid #b2b2b2;
+  border-right: 1px solid #b2b2b2;
+}
+
+ion-view[state="commercepro-category-list"] div div ion-content div.scroll div.list.all-stores ion-item div div div div div div.col-30>div.store-img {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: auto;
+  height: 16vh;
+  width: 100%;
+  border: 0;
+  border-radius: 7px 7px 0 0;
+  position: relative;
+  margin-top: 0;
+  background-color: transparent;
+}
+
+
+ion-view[state="newswall-view"] .item.item-custom a {
+  color: white !important;
+  background-color: cadetblue;
+  padding: 2px;
+  border-bottom: 5px solid #387ef5;
+  border-radius: 4px;
+}
+
+ion-view[state="socialnetworks-home"] ion-content div.scroll .list .item.item-custom {
+  background-color: white;
+  text-align: left;
+  border-radius: 10px;
+  box-shadow: none;
+  border: 1px !important;
+  filter: drop-shadow(2px 3px 4px #777);
+  -webkit-filter: drop-shadow(2px 3px 4px #777);
+  border-left: 1px solid #b2b2b2 !important;
+  border-top: 1px solid #b2b2b2 !important;
+  border-bottom: 1px solid #b2b2b2 !important;
+  border-right: 1px solid #b2b2b2 !important;
+}
+
+.appointmentpro .remove-border {
+  border: 0;
+}
+
+.appointmentpro .home-serach-list {
+  width: 100%;
+  margin: 0px 10px;
+}
+
+.appointmentpro .home-serach-item {
+  padding-top: 0px;
+}
+
+.appointmentpro .location-book-button {
+  width: 80%;
+}
+
+.appointmentpro .location-time {
+  font-size: 12px;
+}
+
+.appointmentpro .location-image-grid {
+  object-fit: cover;
+}
+
+.appointmentpro .category-image-grid {
+  border-radius: 20% !important;
+}
+
+.appointmentpro .service-image-grid {
+  border-radius: 20% !important;
+}
+
+.appointmentpro .gallery-grid-img {
+    width: 98%;
+    height: 98%;
+    object-fit: contain;
+    border-radius: 10% !important;
+}
+
+.appointmentpro .book-button-details {
+  margin-top: -40px;
+  float: right;
+  margin-right: 10px;
+  padding: 0px 25px 0px;
+}
+
+.appointmentpro .location-name {
+  white-space: normal;
+}
+
+.appointmentpro .providers-grid-img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.appointmentpro .categories-grid-img {
+    width: 100%;
+    height: 25px !important;
+    border-radius: 10%;
+    min-height: 25px !important;
+    object-fit: contain;
+}
+
+.appointmentpro .provider-image-circle {
+  border-radius: 50%;
+}
+
+.appointmentpro .location-feature-img {
+  max-height: 250px;
+}
+
+.appointmentpro .action-manager-sheet {
+  width: 10%;
+  text-align: center;
+}
+
+.appointmentpro-calendar #calendar {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.appointmentpro-calendar table {
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 100%;
+  height: initial;
+  position: relative;
+  top: 0;
+  left: 0;
+  transform: translateX(0);
+  transition: all 0.3s ease;
+}
+
+.appointmentpro-calendar table.active {
+  transform: translateX(0px);
+}
+
+.appointmentpro-calendar table.inactive {
+  transition: all 0.3s 0.01s ease;
+}
+
+.appointmentpro-calendar table.hide-left {
+  transform: translateX(-100vw);
+}
+
+.appointmentpro-calendar td,
+.appointmentpro-calendar th {
+  text-align: center;
+  background-color: #fff;
+}
+
+.appointmentpro-calendar th {
+  padding: 5px;
+}
+
+.appointmentpro-calendar tr:first-child th {
+  font-size: 20px;
+  font-weight: bold;
+  border-left: none;
+  border-top: none;
+}
+
+.appointmentpro-calendar td:last-child,
+.appointmentpro-calendar th:last-child {
+  border-right: none;
+}
+
+.appointmentpro-calendar th {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #4e4e4e;
+  color: #fff;
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.2);
+  font-weight: normal;
+}
+
+.appointmentpro-calendar th .any {
+  font-size: 12px;
+  font-weight: normal;
+  display: block;
+  text-shadow: none;
+}
+
+.appointmentpro-calendar tr:nth-child(2) th {
+  padding: 5px;
+}
+
+.appointmentpro-calendar td {
+  padding: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.appointmentpro-calendar tr>td {
+  background-color: #e5e5e5;
+}
+
+.appointmentpro-calendar td>span {
+  color: #555;
+  padding: 10px;
+  display: block;
+  border: 2px solid transparent;
+  transition: border 0.3s ease;
+  width: 80%;
+}
+
+.appointmentpro-calendar td:nth-child(even)>span {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+.appointmentpro-calendar #calendar td {
+  padding: 8px !important;
+}
+
+.appointmentpro-calendar td.today {
+  font-weight: bold;
+  background-color: #bfbfbf;
+  color: #fff;
+}
+
+.appointmentpro-calendar td.fora>span {
+  opacity: 0.2;
+}
+
+.appointmentpro-calendar td>span:hover {
+  background: #a57cb6;
+  color: #fff;
+}
+
+.appointmentpro-calendar .boto-next {
+  right: 5px !important;
+}
+
+.appointmentpro-calendar .boto-prev {
+  left: 5px !important;
+}
+
+.appointmentpro-calendar .boto-next,
+.appointmentpro-calendar .boto-prev {
+  color: transparent;
+  background: transparent;
+  border: 0;
+  width: 34px !important;
+  height: 34px !important;
+  position: absolute !important;
+  float: left;
+  top: 5px !important;
+}
+
+.appointmentpro-calendar .boto-next:after {
+  content: '';
+  position: absolute;
+  display: block;
+  right: 12px;
+  top: 20px;
+  width: 12px;
+  height: 12px;
+  border: solid #fff;
+  border-width: 4px 4px 0 0;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+
+.appointmentpro-calendar .boto-prev:after {
+  content: '';
+  position: absolute;
+  display: block;
+  left: 12px;
+  top: 20px;
+  width: 12px;
+  height: 12px;
+  border: solid #fff;
+  border-width: 0 0 4px 4px;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+
+.appointmentpro-calendar td.previous {
+  opacity: 0.4;
+}
+
+/* Appointment Pro Juan */
+ion-view[state="appointmentpro-home"] .list:last-child.card .item.item-custom.provider_grid.remove-border .row {
+    padding: 0;
+    display: flex;
+    margin-bottom: 20px;
+    overflow: visible;
+    width: 100% !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    white-space: nowrap !important;
+    -webkit-overflow-scrolling: touch !important;
+}
+
+ion-view[state="appointmentpro-home"] .list:last-child.card .item.item-custom.provider_grid.remove-border .row .col.col-25.text-center.categories-border-bottom.categories-border-right {
+    width: 25% !important;
+    min-width: 25% !important;
+    display: inline-block !important;
+    margin: 0 1%;
+    background-color: #efefef !important;
+    border-radius: 5px;
+    padding: 0;
+}
+
+ion-view[state="appointmentpro-home"] ion-content .card .item-divider.item-divider-custom,
+ion-view[state="appointmentpro-home"] ion-content .card .item.item-custom.provider_grid.remove-border {
+    background-color: transparent !important;
+}
+
+
+ion-view[state="appointmentpro-home"] .list:last-child.card a.item.item-custom.item-thumbnail-left.remove-border h2.location-name.ng-binding,
+ion-view[state="appointmentpro-home"] .list:last-child.card a.item.item-custom.item-thumbnail-left.remove-border p.ng-binding,
+ion-view[state="appointmentpro-home"] .list:last-child.card a.item.item-custom.item-thumbnail-left.remove-border p {
+    text-align: left;
+}
+
+ion-view[state="appointmentpro-home"] .list:last-child.card a.item.item-custom.item-thumbnail-left.remove-border {
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    margin: 10px 0;
+}
+
+
+ion-view.appointmentpro.appointmentpro-location-details .list.card {
+    box-shadow: none !important;
+}
+
+.appointmentpro .location-tabs>a.tab-item.ng-binding {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.appointmentpro .location-tabs>a.tab-item.ng-binding.active {
+    background-color: maroon;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ion-view.appointmentpro.appointmentpro-location-details .list.card .item.item-custom.item-body.remove-border [sb-html="location_info.about_us"] {
+    text-align: left;
+}
+
+ion-view.appointmentpro.appointmentpro-location-details .list.card .item.item-custom.remove-border .row {
+    color: #000;
+    margin: 5px 0;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+ion-view.appointmentpro.appointmentpro-location-details .list.card span.icon-active-custom.ng-binding {
+  -webkit-animation: 2s linear infinite blink;
+  animation: 2s linear infinite blink;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+
+@keyframes blink {
+  0% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+
+ion-view.appointmentpro.appointmentpro-location-details .list.card .button.button-positive-custom {
+    background-color: maroon;
+    border-radius: 10px;
+}

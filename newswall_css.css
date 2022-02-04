@@ -1,0 +1,229 @@
+
+/*Newswall list*/
+ion-view[state="newswall-list"] {
+  z-index: 9 !important;
+}
+
+ion-view[state="newswall-list"] ion-content {
+  top: 0 !important;
+  padding-top: 65px !important;
+}
+
+ion-view[state="newswall-list"] * {
+  letter-spacing: 0.7px;
+}
+
+ion-view[state="newswall-list"] .list .item.item-custom.item-avatar>img {
+  display: none;
+}
+
+ion-view[state="newswall-list"] .list .item.item-custom.item-avatar {
+  padding: 12px;
+  margin: 0 12px;
+  border-bottom: 0;
+  margin-bottom: 10px;
+  border-top: 1px #ddd solid;
+}
+
+ion-view[state="newswall-list"] .list .item.item-custom.item-avatar * {
+  text-align: left;
+}
+
+ion-view[state="newswall-list"] .list .item.item-custom.item-image .col-75 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+ion-view[state="newswall-list"] .list .item.item-custom.item-image .col-offset-25 {
+  margin-left: 0;
+  padding: 0 12px;
+}
+
+ion-view[state="newswall-list"] .list .item.item-custom.item-image .col-offset-25 .padding.text-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #1a6fff;
+}
+
+ion-view[state="newswall-list"] .list .item.item-custom.item-avatar h2 {
+  font-weight: 1000;
+  white-space: normal;
+  color: maroon;
+  line-height: inherit;
+}
+
+ion-view[state="newswall-list"] .list .item.item-custom.item-avatar p[ng-if="item.subtitle"] {
+  font-weight: 600;
+  white-space: normal;
+}
+
+ion-view[state="newswall-list"] .list .item.item-custom.item-avatar p[ng-if="item.message"] {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  white-space: normal;
+  color: black;
+  font-size: 10px;
+  margin-top: 10px;
+}
+
+ion-view[state="newswall-list"] .list .item.item-custom.item-avatar:after {
+  content: "See more";
+  position: relative;
+  color: maroon;
+  display: block;
+  width: fit-content;
+  padding: 5px;
+  background-color: #ddd;
+  border-radius: 3px;
+  margin-top: 10px;
+}
+
+ion-view[state="newswall-list"] .list .item.item-custom.item-image img {
+  border-radius: 8px;
+}
+
+ion-view[state="newswall-list"] .list .item.item-custom {
+  background-color: #eee;
+  margin: 0;
+}
+
+ion-view[state="newswall-list"] .list>div[ng-repeat="item in collection"] {
+  border-bottom: 15px #d9d9d9 solid;
+  display: flex;
+  flex-direction: column-reverse;
+  margin-top: 10px;
+}
+
+ion-view[state="newswall-list"] .list .item.item-custom.item-image .col-offset-25 .padding.text-right span[ng-if="item.details.likes"] {
+  position: absolute;
+  top: 10px;
+  right: 22px;
+  color: #fd89c3;
+  z-index: 99999;
+  font-size: 13px;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, .4);
+  padding: 5px;
+  border-radius: 8px;
+}
+
+
+/*Newswall view*/
+ion-view[state="newswall-view"] {
+  z-index: 9 !important;
+}
+
+ion-view[state="newswall-view"] ion-content {
+  top: 0 !important;
+  padding-top: 65px !important;
+}
+
+ion-view[state="newswall-view"] * {
+  letter-spacing: 0.7px;
+}
+
+ion-view[state="newswall-view"] div[ng-if="!is_loading"]:after {
+  content: "";
+  position: relative;
+  display: block;
+  background-color: transparent;
+  width: 100%;
+  height: 100px;
+}
+
+ion-view[state="newswall-view"] .card {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+ion-view[state="newswall-view"] .card:nth-child(1) .item.item-custom.item-avatar {
+  display: none;
+}
+
+ion-view[state="newswall-view"] .card .item.item-custom {
+  background-color: transparent;
+  border: 0;
+}
+
+ion-view[state="newswall-view"] .card .item.item-icon-left.item-button-right.item-custom {
+  padding-right: 12px;
+}
+
+ion-view[state="newswall-view"] .card .item.item-custom.item-image {
+  border-radius: 8px;
+}
+
+ion-view[state="newswall-view"] .card .item.item-custom[ng-if="item.message"] {
+  border-bottom: 1px #ddd solid;
+  margin-bottom: 15px;
+}
+
+ion-view[state="newswall-view"] .card .item.item-custom[ng-if="item.message"] p {
+  font-size: 12px;
+  text-align: left;
+}
+
+ion-view[state="newswall-view"] .card .item.item-custom[ng-click="comment()"] {
+  background-color: maroon;
+  color: white;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+ion-view[state="newswall-view"] .card .item.item-custom[ng-click="addLike()"] {
+  color: maroon;
+  border: 1px maroon solid;
+  border-radius: 5px;
+}
+
+ion-view[state="newswall-view"] .list:last-child.card {
+  margin: 20px 0;
+}
+
+ion-view[state="newswall-view"] .card .item-divider.item-divider-custom {
+  text-align: center;
+  background-color: #ddd;
+}
+
+ion-view[state="newswall-view"] .card:nth-child(2) .item.item-custom.item-avatar {
+  text-align: left;
+  border-bottom: 1px #ccc dashed;
+  width: 95%;
+  margin: 0 auto;
+}
+
+ion-view[state="newswall-view"] .card:nth-child(2) .item.item-custom.item-avatar p {
+  font-size: 11px;
+  font-weight: 600;
+  color: maroon;
+}
+
+ion-view[state="newswall-view"] .card .item.item-custom[ng-click="login()"] {
+  border: 1px #ccc solid;
+  border-radius: 5px;
+}
+
+ion-view[state="newswall-comment"] .list {
+  margin-bottom: 8px;
+}
+
+ion-view[state="newswall-comment"] .button {
+  background: maroon;
+  border: 0;
+  border-radius: 5px;
+  margin: 0 auto;
+  width: -webkit-calc(100% - 10px);
+  width: -moz-calc(100% - 10px);
+  width: calc(100% - 10px);
+}
+
+ion-view[state="newswall-comment"] .button:hover {
+  background: maroon;
+}
+
+ion-view[state="newswall-comment"] .button:active {
+  background: maroon;
+}
