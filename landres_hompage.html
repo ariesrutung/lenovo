@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Homepage</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+h3, p {
+  font-family: 'Poppins', sans-serif;
+}
+
+    .container {
+    width: 100%;
+    padding: 0 !important;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+    body {
+      background-color: #193340;
+    }
+    .nav.nav-pills {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 0;
+    position: sticky;
+    height: 100px !important;
+    top: 0 !important;
+    width: 100%;
+    background-color: #0c283a;
+    z-index: 999;
+}
+
+    .header h3,
+    .header p {
+      color: #fff;
+    }
+
+    .header h3 {
+        border-bottom: 2px solid #fff;
+        font-weight: bold;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Tab Navigation */
+.nav-tabs {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky !important;
+    top: 95px !important;
+    z-index: 999;
+    background-color: #0c283a;
+    height: 55px;
+}
+.nav-tabs > li > a {
+    background: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    color: #858383;
+    padding: 5px;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover {
+    background: transparent;
+    box-shadow: none;
+    border-bottom: 2px solid #fff !important;
+    color: #fff;
+    font-weight: bold;
+    border: 0;
+    padding: 5px;
+}
+
+/* Tab Content */
+.tab-pane {
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0;
+    text-align: center;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.featuress {
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 80px
+}
+
+.features {
+    width: 100%;
+    border: 0;
+    box-shadow: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #18425c;
+    margin: 10px 0;
+    padding: 10px;
+    height: 150px;
+}
+
+.features_content {
+    padding: 0;
+    width: 70%;
+}
+
+div#column2 .features {
+    background-color: #8a6d3b;
+    background-image: url(https://joycemeyer.org/-/media/JoyceMeyer/Featured-Resources/Power-of-Thank-You/POTY_Book_v2.png);
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+div#column2 .features_content {
+    padding: 0;
+    width: 100%;
+}
+
+.features_title {
+    font-size: 16px;
+    color: #fff;
+    text-align: right;
+    font-weight: bold;
+}
+
+.features_subtitle {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 26px;
+    text-align: right;
+}
+
+.features_text {
+    color: #afafaf;
+    margin: 10px 0;
+    font-size: 14px;
+    text-align: right;
+}
+
+.features_image {
+    width: 100%;
+    height: auto;
+}
+
+.features_image img {
+    display: block;
+    width: 100%;
+    margin: 0;
+    border-radius: 5px;
+}
+
+.ml-auto {
+    width: 30%;
+}
+
+/* Column 3 */
+div#column3 .ml-auto img {
+    width: 20% !important;
+    height: auto;
+    padding: 10px;
+    margin: 0 40%;
+}
+
+div#column3 .ml-auto {
+    width: 100%;
+}
+
+div#column3 .features {
+  height: 100% !important;
+}
+
+div#column3 .ml-auto .title h3 {
+    color: #fff;
+    font-weight: bold;
+    padding: 0 0 20px 0;
+    margin: 0 50px;
+    line-height: 1.5;
+}
+
+div#column3 .ml-auto button {
+    background-color: #04aa6d;
+    color: #fff;
+    padding: 5px 20px;
+    border-radius: 5px;
+    border: 0;
+}
+
+/* Column 4 */
+div#column4 {
+    background-color: #fff;
+    padding: 10px;
+}
+
+div#column4 .features {
+    width: 96%;
+    border: 2px solid #ffb81c;
+    box-shadow: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    margin: 0 2% !important;
+    padding: 0;
+    height: 150px;
+}
+
+div#column4 .features_text {
+    color: #000;
+    margin: 10px 0;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+div#column4 .features_title {
+    font-size: 14px;
+    color: #fff;
+    text-align: center;;
+}
+
+div#column4 .features_title button {
+    background: #ffb81c;
+    color: #000;
+    display: block;
+    padding: 1rem 2.1rem;
+    border-radius: 0;
+    box-shadow: none;
+    border: 0;
+    margin: 0 auto;
+}
+
+
+/* Tab Shows */
+div#profile {
+    background-color: #364e5a;
+    margin-top: 0 !important;
+}
+
+.embed-responsive.embed-responsive-16by9 img {
+    width: 100%;
+    height: auto;
+    object-fit: contain !important;
+}
+
+div#profile h4 {
+    color: #fff;
+    text-align: left;
+    padding: 20px 10px 10px 10px;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+div#profile div#column1,
+div#profile div#column2,
+div#profile div#column3,
+div#profile div#column4 {
+  padding: 0;
+}
+
+div#profile .features_content {
+    width: 100%;
+}
+
+div#profile .features_content .features_text {
+    text-align: left;
+    font-size: 20px !important;
+    font-weight: bold;
+    color: #fff;
+}
+
+div#profile .features_content .features_title {
+    font-size: 14px !important;
+    text-align: left;
+    font-weight: normal;
+}
+
+div#profile .features {
+    margin: 0;
+    padding: 0 10px !important;
+    height: auto !important;
+    margin-bottom: 20px !important;
+    background-color: transparent;
+}
+
+div#profile .features .section-title {
+    background-color: #18425c;
+}
+
+/* Slider */
+div#latest {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+}
+
+.slider div#latest div#slider-img {
+    padding: 0 5px;
+    margin: 5px 0;
+    height: auto !important;
+    width: 90%;
+}
+
+.slider div#slider-img div.gallery1 {
+    border-radius: 8px;
+    /* height: 210px; */
+    background-color: transparent;
+}
+
+div#slider-img div.gallery1>a {
+    padding: 0px !important;
+    display: block !important;
+}
+
+.slider div.gallery1 img#slider-img {
+    width: 100%;
+    max-height: 190px;
+    display: block !important;
+    border-radius: 5px 5px 0 0;
+    object-fit: cover;
+}
+
+div#slider-img div.desc {
+    text-align: center;
+    max-height: 85px;
+    margin-top: 10px !important;
+}
+
+
+div#latest .title {
+    font-size: 18px;
+    text-align: left;
+    padding: 0 5px;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+div#latest .prod_desc {
+    padding: 0 5px;
+    text-align: right;
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #fff;
+}
+
+div#profile div#column1 {
+    margin-bottom: 20px;
+}
+
+div#profile div#column3 {
+    padding-bottom: 20px !important;
+}
+
+a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+div#messages h4 {
+    color: #fff;
+    text-align: left;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <div class="header">
+      <h3>JOYCE MEYER MINISTRIES</h3>
+      <p>Sharing Christ - Loving People</p>
+  </div>
+
+<div class="container">
+  <!-- Tabs -->
+<div class="container-tabs">
+    
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+      <li class="active">
+          <a href="#home" role="tab" data-toggle="tab"><icon class="fa fa-home"></icon>Today</a>
+      </li>
+      <li>
+        <a href="#profile" role="tab" data-toggle="tab"><i class="fa fa-user"></i>Shows</a>
+      </li>
+      <li>
+          <a href="#messages" role="tab" data-toggle="tab"><i class="fa fa-envelope"></i>Devos</a>
+      </li>
+    </ul>
+    
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <!-- Tab Today -->
+      <div class="tab-pane fade active in" id="home">
+          <div class="embed-responsive embed-responsive-16by9">
+              <iframe width="853" height="480" src="https://www.youtube.com/embed/-CofN9ziP3w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+
+        <div class="row">
+            <a data-offline="true" data-params="value_id:5557" data-state="contact-view">
+                <div id="column1" class="col-lg-4 features_col">
+                    <!-- features Item -->
+                    <div class="features d-flex flex-row align-items-center justify-content-start">
+                        <div class="ml-auto">
+                            <div class="features_image"><img src="https://i.pinimg.com/originals/66/33/51/663351148bfd3ef1a3472ed67eebbf75.jpg" alt="joyce_meyer"></div>
+                        </div>
+                        <div class="features_content">
+                            <div class="features_text">Question of the Day</div>
+                            <div class="features_title">How do I balance competing needs in my life</div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a data-offline="true" data-params="value_id:5557" data-state="contact-form">
+                <div id="column2" class="col-lg-4 features_col">
+                    <!-- features Item -->
+                    <div class="features d-flex flex-row align-items-center justify-content-start">
+                        <div class="features_content">
+                            <div class="features_text">Daily Devo</div>
+                            <div class="features_title">The Beauty in Silence</div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a data-offline="true" data-params="value_id:5557" data-state="contact-form">
+                <div id="column3" class="col-lg-4 features_col">
+                    <!-- features Item -->
+                    <div class="features d-flex flex-row align-items-center justify-content-start">
+                        <div class="ml-auto">
+                            <div class="features_image">
+                              <img src="https://joycemeyermedia.com/SitecoreFiles/Study/logos/logo-the-word.svg" alt="">
+                            </div>
+
+                            <div class="title">
+                              <h3>HOW TO STUDY BIBLE</h3>
+                            </div>
+                            <div class="button">
+                                <button>START FREE STUDY NOW</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a data-offline="true" data-params="value_id:5557" data-state="contact-form">
+                <div id="column4" class="col-lg-4 features_col">
+                    <!-- Features Item -->
+                    <div class="features d-flex flex-row align-items-center justify-content-start">
+                        <div class="ml-auto">
+                            <div class="features_image"><img src="https://joycemeyer.org/-/media/JoyceMeyer/Featured-Resources/Power-of-Thank-You/POTY_Book_v2.png" alt="joyce_meyer"></div>
+                        </div>
+                        <div class="features_content">
+                            <div class="features_text">Gratitude is Simple but powerful</div>
+                            <div class="features_title">
+                              <button>GET YOYE'S NEW BOOK</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+      </div>
+
+      <!-- Tab Shows -->
+      <div class="tab-pane fade" id="profile">
+        <div class="section-title">
+          <h4>FEATURED</h4>
+        </div>
+          <div class="embed-responsive embed-responsive-16by9">
+              <!-- <iframe width="853" height="480" src="https://www.youtube.com/embed/-CofN9ziP3w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+              <img src="https://www.joycemeyer.org/-/media/JoyceMeyer/Broadcast/Show-Images/1480/1480_4_Spotlight.jpeg?h=761&w=1132&la=en-AU&hash=CB6F89B9E65648156C0DF2985CA0522C">
+          </div>
+
+        <a data-offline="false" data-params="value_id:5557" data-state="contact-map">
+          <div class="features d-flex flex-row align-items-center justify-content-start">
+              <div class="features_content">
+                  <div class="features_text">Gratitude and Generpsity</div>
+                  <div class="features_title">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  </div>
+              </div>
+          </div>
+        </a>
+
+        <div class="section-title">
+          <h4>THIS WEEK</h4>
+        </div>
+            <div id="column1" class="col-lg-4 features_col">
+              <div class="slider mt-3">
+
+                  <!-- Second card -->
+                  <div id="latest">
+                        <a data-offline="false" data-params="value_id:5557" data-state="contact-map">
+                              <div id="slider-img" class="responsive">
+                                  <div class="gallery1">
+                                      <a data-offline="false" data-params="value_id:49235,product_id:11178"
+                                          data-state="commercepro-product-view" target="_top" href="javascript:void(0);">
+                                          <img id="slider-img" src="https://www.joycemeyer.org/-/media/JoyceMeyer/Image-Galleries/Conference-Gallery/conf-img-2.jpg" alt="Cinque Terre" width="600"
+                                              height="400">
+                                          <div class="desc">
+                                              <div class="title">How can we pray for you?</div>
+                                              <p class="prod_desc">With everything happening in the world right now, we know you have a lot on your mind. Remember, God is always here for you!</p>
+                                          </div>
+                                      </a>
+                                  </div>
+                              </div>
+                        </a>
+
+                      <!-- Thirth card-->
+                        <a data-offline="false" data-params="value_id:5557" data-state="contact-map">
+                              <div id="slider-img" class="responsive">
+                                  <div class="gallery1">
+                                      <a data-offline="false" data-params="value_id:49235,product_id:11182"
+                                          data-state="commercepro-product-view" target="_top" href="javascript:void(0);">
+                                          <img id="slider-img" src="https://www.joycemeyer.org/-/media/JoyceMeyer/Image-Galleries/Conference-Gallery/conf-img-3.jpg" alt="Cinque Terre" width="600"
+                                              height="400">
+                                          <div class="desc">
+                                              <div class="title">Gratitude and Generosity</div>
+                                              <p class="prod_desc">Today, Joyce shares biblical stories that inspire generosity. Learn why it is better to give than to receive.</p>
+                                          </div>
+                                      </a>
+                                  </div>
+                              </div>
+                        </a>
+
+                      <!-- Fouth card -->
+                        <a data-offline="false" data-params="value_id:5557" data-state="contact-map">
+                              <div id="slider-img" class="responsive">
+                                  <div class="gallery1">
+                                      <a data-offline="false" data-params="value_id:49235,product_id:11186"
+                                          data-state="commercepro-product-view" target="_top" href="javascript:void(0);">
+                                          <img id="slider-img" src="https://www.joycemeyer.org/-/media/JoyceMeyer/Image-Galleries/Conference-Gallery/conf-img-5.jpg" alt="Cinque Terre" width="600"
+                                              height="400">
+                                          <div class="desc">
+                                              <div class="title">The Heart Behind What We Do</div>
+                                              <p class="prod_desc">I spend much of my time traveling the world, visiting the many outreaches that you support and also looking for new ways to help even more people.</p>
+                                          </div>
+                                      </a>
+                                  </div>
+                              </div>
+                        </a>
+
+                      <!-- Fifth card -->
+                        <a data-offline="false" data-params="value_id:5557" data-state="contact-map">
+                              <div id="slider-img" class="responsive">
+                                  <div class="gallery1">
+                                      <a data-offline="false" data-params="value_id:49235,product_id:11183"
+                                          data-state="commercepro-product-view" target="_top" href="javascript:void(0);">
+                                          <img id="slider-img" src="https://www.joycemeyer.org/-/media/JoyceMeyer/Image-Galleries/Conference-Gallery/conf-img-1.jpg" alt="Cinque Terre" width="600"
+                                              height="400">
+                                          <div class="desc">
+                                              <div class="title">Study it. Live it. Love it.</div>
+                                              <p class="prod_desc">In His Word, the Bible, God gave us the perfect manual to get to know Him and learn to navigate this life He has given us. </p>
+                                          </div>
+                                      </a>
+                                  </div>
+                              </div>
+                        </a>
+                  </div>
+              </div>
+            </div>
+
+            <a data-offline="false" data-params="value_id:5557" data-state="contact-map">
+                <div id="column3" class="col-lg-4 features_col">
+                    <!-- features Item -->
+                    <div class="features d-flex flex-row align-items-center justify-content-start">
+                        <div class="ml-auto">
+                            <div class="features_image">
+                              <img src="https://joycemeyermedia.com/SitecoreFiles/Study/logos/logo-the-word.svg" alt="">
+                            </div>
+
+                            <div class="title">
+                              <h3>HOW TO STUDY BIBLE</h3>
+                            </div>
+                            <div class="button">
+                                <button>START FREE STUDY NOW</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+      </div>
+      <div class="tab-pane fade" id="messages">
+        <div class="section-title">
+          <h4>FEATURED</h4>
+        </div>
+          <div class="embed-responsive embed-responsive-16by9">
+              <!-- <iframe width="853" height="480" src="https://www.youtube.com/embed/-CofN9ziP3w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+              <img src="https://www.joycemeyer.org/-/media/JoyceMeyer/Broadcast/Show-Images/1480/1480_4_Spotlight.jpeg?h=761&w=1132&la=en-AU&hash=CB6F89B9E65648156C0DF2985CA0522C">
+          </div>
+
+        <a data-offline="false" data-params="value_id:5557" data-state="contact-map">
+          <div class="features d-flex flex-row align-items-center justify-content-start">
+              <div class="features_content">
+                  <div class="features_text">Gratitude and Generpsity</div>
+                  <div class="features_title">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  </div>
+              </div>
+          </div>
+        </a>
+
+        <div class="section-title">
+          <h4>THIS WEEK</h4>
+        </div>
+            <div id="column1" class="col-lg-4 features_col">
+              <div class="slider mt-3">
+
+                  <!-- Second card -->
+                <a data-offline="false" data-params="value_id:5557" data-state="contact-map">
+                  <div id="latest">
+                      <div id="slider-img" class="responsive">
+                          <div class="gallery1">
+                              <a data-offline="false" data-params="value_id:49235,product_id:11178"
+                                  data-state="commercepro-product-view" target="_top" href="javascript:void(0);">
+                                  <img id="slider-img" src="https://www.joycemeyer.org/-/media/JoyceMeyer/Image-Galleries/Conference-Gallery/conf-img-2.jpg" alt="Cinque Terre" width="600"
+                                      height="400">
+                                  <div class="desc">
+                                      <div class="title">How can we pray for you?</div>
+                                      <p class="prod_desc">With everything happening in the world right now, we know you have a lot on your mind. Remember, God is always here for you!</p>
+                                  </div>
+                              </a>
+                          </div>
+                      </div>
+
+                      <!-- Thirth card-->
+                      <div id="slider-img" class="responsive">
+                          <div class="gallery1">
+                              <a data-offline="false" data-params="value_id:49235,product_id:11182"
+                                  data-state="commercepro-product-view" target="_top" href="javascript:void(0);">
+                                  <img id="slider-img" src="https://www.joycemeyer.org/-/media/JoyceMeyer/Image-Galleries/Conference-Gallery/conf-img-3.jpg" alt="Cinque Terre" width="600"
+                                      height="400">
+                                  <div class="desc">
+                                      <div class="title">Gratitude and Generosity</div>
+                                      <p class="prod_desc">Today, Joyce shares biblical stories that inspire generosity. Learn why it is better to give than to receive.</p>
+                                  </div>
+                              </a>
+                          </div>
+                      </div>
+
+                      <!-- Fouth card -->
+                      <div id="slider-img" class="responsive">
+                          <div class="gallery1">
+                              <a data-offline="false" data-params="value_id:49235,product_id:11186"
+                                  data-state="commercepro-product-view" target="_top" href="javascript:void(0);">
+                                  <img id="slider-img" src="https://www.joycemeyer.org/-/media/JoyceMeyer/Image-Galleries/Conference-Gallery/conf-img-5.jpg" alt="Cinque Terre" width="600"
+                                      height="400">
+                                  <div class="desc">
+                                      <div class="title">The Heart Behind What We Do</div>
+                                      <p class="prod_desc">I spend much of my time traveling the world, visiting the many outreaches that you support and also looking for new ways to help even more people.</p>
+                                  </div>
+                              </a>
+                          </div>
+                      </div>
+
+                      <!-- Fifth card -->
+                      <div id="slider-img" class="responsive">
+                          <div class="gallery1">
+                              <a data-offline="false" data-params="value_id:49235,product_id:11183"
+                                  data-state="commercepro-product-view" target="_top" href="javascript:void(0);">
+                                  <img id="slider-img" src="https://www.joycemeyer.org/-/media/JoyceMeyer/Image-Galleries/Conference-Gallery/conf-img-1.jpg" alt="Cinque Terre" width="600"
+                                      height="400">
+                                  <div class="desc">
+                                      <div class="title">Study it. Live it. Love it.</div>
+                                      <p class="prod_desc">In His Word, the Bible, God gave us the perfect manual to get to know Him and learn to navigate this life He has given us. </p>
+                                  </div>
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+        <a data-offline="false" data-params="value_id:5557" data-state="contact-map">
+            <div id="column3" class="col-lg-4 features_col">
+                <!-- features Item -->
+                <div class="features d-flex flex-row align-items-center justify-content-start">
+                    <div class="ml-auto">
+                        <div class="features_image">
+                          <img src="https://joycemeyermedia.com/SitecoreFiles/Study/logos/logo-the-word.svg" alt="">
+                        </div>
+
+                        <div class="title">
+                          <h3>HOW TO STUDY BIBLE</h3>
+                        </div>
+                        <div class="button">
+                            <button>START FREE STUDY NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+      </div>
+    </div>
+    
+</div>
+</body>
+</html>
