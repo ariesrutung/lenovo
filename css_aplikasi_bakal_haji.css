@@ -74,9 +74,16 @@ ion-view[state="cms-view"] ion-content div.scroll > div:nth-child(n+4) .card {
     margin: 0;
 }
 
+ion-view[state="cms-view"] ion-content div.scroll > div:nth-child(12),
+ion-view[state="cms-view"] ion-content div.scroll > div:nth-child(13) {
+    display: block !important;
+    width: 98% !important;
+    margin: 10px 1% !important;
+}
+
 ion-view[state="cms-view"] ion-content div.scroll > div:nth-child(n+4) .item.item-text-wrap.item-custom.sb-cms-text {
-    background-color: #fff;
-    padding: 0 !important;
+    background-color: #dfdfdf;
+    padding: 10px 0 5px 0 !important;
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
@@ -96,11 +103,14 @@ ion-view[state="cms-view"] ion-content div.scroll > div:nth-child(n+4) .item.ite
     margin: 0;
     width: 70px;
     height: 70px;
+    background-color: #dd8257;
+    border-radius: 50px;
+    padding: 10px;
 }
 
 ion-view[state="cms-view"] ion-content div.scroll > div:nth-child(n+4) .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding a {
     height: 100%;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: normal;
     letter-spacing: normal;
     color: #000 !important;
@@ -157,34 +167,8 @@ ion-view[state="cms-view"] ion-content div.scroll > div:nth-child(4) .card .cont
 }
 
 ion-view[state="cms-view"] ion-content div.scroll > div:nth-child(n+4) {
-    display: inline-block !important;
-    width: 25% !important;
-}
-
-
-ion-view[state="cms-view"] div.scroll>div[ng-repeat="block in blocks"]>div>div.card[ng-switch-when="slider"] {
-    border-radius: 10px;
-    height: 400px;
-}
-
-ion-view[state="cms-view"] div.scroll>div[ng-repeat="block in blocks"]>div>div.card[ng-switch-when="slider"]>div[gallery="gallery"] {
-    height: 100%;
-}
-
-ion-view[state="cms-view"] div.scroll>div[ng-repeat="block in blocks"]>div>div.card[ng-switch-when="slider"]>div[gallery="gallery"]>div.item.item-image-gallery.item-custom.sb-cms-image {
-    height: 110%;
-}
-
-ion-view[state="cms-view"] .sb-cms-image ul[rn-carousel] {
-    height: 100%;
-}
-
-ion-view[state="cms-view"] .sb-cms-image ul[rn-carousel] li>div {
-    height: 100% !important;
-}
-
-ion-view[state="cms-view"] .sb-cms-image div[rn-carousel-indicators] {
-    bottom: 8%;
+    display: inline-block;
+    width: 25%;
 }
 
 ion-view[state="cms-view"] div.scroll>div[ng-repeat="block in blocks"]>div>div.card[ng-switch-when="button"] {
@@ -210,21 +194,18 @@ i.icon.ion-ios-upload-outline {
 
 .layout.l1 li.col.col-20.tab-item {
     padding: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .layout.l1>ul>li:nth-child(1) {
     order: 3;
-    background-image: url(https://static.thenounproject.com/png/1546-200.png) !important;
-    background-color: #fff;
-    display: block;
-    background-size: contain;
-    border: none;
-    bottom: 30px;
-    height: 60px;
-    border-radius: 10px;
-    box-shadow: #fff 0px 0px 10px;
-    background-position: center;
-    background-repeat: no-repeat;
+}
+
+.layout.l1>ul>li:nth-child(1) img {
+    height: 40px;
+    width: 40px;
 }
 
 .layout.l1>ul>li:nth-child(1) p {
@@ -247,26 +228,6 @@ i.icon.ion-ios-upload-outline {
 .layout.l1>ul>li:nth-child(5) {
     order: 4;
 }
-
-.layout.l1>ul>li:nth-child(1)>img {
-    visibility: hidden;
-}
-
-.layout.l1>ul>li:active,
-.layout.l1>ul>li:target {
-    background-color: #333;
-    border-radius: 15px;
-}
-
-.layout.l1>ul>li:nth-child(1):active,
-.layout.l1>ul>li:nth-child(1):target {
-    background-color: transparent;
-}
-
-.gtx-trans-icon {
-    display: none !Important;
-}
-
 
 /*My Account login*/
 ion-modal-view.customer-view.customer-layout1.modal.has-background-image.slide-in-up[code="tabbar_account"] {
@@ -1826,7 +1787,7 @@ ion-view[state="form2-home"] div.padding>button[type="submit"] {
     box-shadow: none;
     padding: 0 !important;
     border: 0 !important;
-    height: auto !important;
+    height: 55px !important;
     display: flex !important;
     bottom: 0 !important;
     width: 100% !important;
@@ -3874,8 +3835,4 @@ button.places-secondary-button {
 .module-wordpress2 .post-content iframe {
     max-width: 100%;
     height: auto;
-}
-
-.layout-l1 .has-footer-fixed .module-classifieds2 .classifieds2-map #crMap {
-    bottom: 0;
 }
