@@ -163,7 +163,7 @@
         }
 
         /* Set daily devos background in todays tab */
-        div#column2 .features {
+        div#daily-devo {
             background-color: #8a6d3b;
             background-image: url(https://joycemeyer.org/-/media/JoyceMeyer/Featured-Resources/Power-of-Thank-You/POTY_Book_v2.png);/* change your own image here */
             background-position: center left;
@@ -446,6 +446,53 @@
             background-color: #001f3e;
         }
 
+/* Today Tab */
+/*div#today .features {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+*/
+
+div#today .features-image {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+}
+
+div#today .features-image img {
+    width: 100%;
+    height: auto;
+}
+
+div#today .today-features.features_content {
+    height: 100%;
+    width: 70%;
+}
+
+div#daily-devo .today-features.features_content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+/* Chat icon buble */
+.header a img {
+    width: 35px;
+    margin-top: 10px;
+    filter: invert(1);
+}
+
+.header img {
+    width: 70%;
+    object-fit: contain;
+    margin-top: 10px;
+}
+
   </style>
 </head>
 <body>
@@ -454,9 +501,11 @@
   <div class="header">
     <!-- Section1: Link to spesific page  -->
     <a data-offline="true" data-params="value_id:5557" data-state="contact-view"><i class="fas fa-comment-alt"></i></a>
+    <!-- <a data-offline="true" data-params="value_id:5557" data-state="contact-view"><img src="https://unpkg.com/ionicons@5.5.2/dist/svg/chatbox-outline.svg"></a> -->
     <!-- Section 2: Title and Subtitle -->
       <h3>JOYCE MEYER MINISTRIES</h3>
       <p>Sharing Christ - Loving People</p>
+      <!-- <img src="https://joycemeyer.org/Content/Images/logo-custom.svg"> -->
   </div>
 
 <!-- Section 3: Tab 1, Tab 2, and Tab 3-->
@@ -483,99 +532,181 @@
     
     <!-- Tab Contents -->
     <div class="tab-content">
-      <!-- Start of Tab Todays content-->
-        <div class="tab-pane fade active in" id="today">
-        
-            <!-- Start of the first section of tab todays content-->
-            <!-- Link to youtube video -->
+
+    <!-- Start of Tab Todays content-->
+      <div class="tab-pane fade active in" id="today">
+            <!-- Start of Tab Todays first section -->
             <div class="embed-responsive embed-responsive-16by9">
               <iframe width="853" height="480" src="https://www.youtube.com/embed/-CofN9ziP3w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <!-- End of the first section of tab todays content-->
-
-            <div class="row">
-                <!-- Start of the second section of tab todays content-->
-                <a data-offline="true" data-params="value_id:5557" data-state="contact-view">
-                    <div id="column1" class="col-lg-4 features_col">
-                        <div class="features d-flex flex-row align-items-center justify-content-start">
-                            <div class="ml-auto">
-                                <div class="features_image">
-                                    <img src="https://i.pinimg.com/originals/66/33/51/663351148bfd3ef1a3472ed67eebbf75.jpg" alt="joyce_meyer">
-                                </div>
-                            </div>
-                            <div class="features_content">
-                                <div class="features_text">Question of the Day</div>
-                                <div class="features_title">How do I balance competing needs in my life</div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <!-- End of the second section of tab todays content-->
+            <!-- End of Tab Todays first section -->
 
 
-                <!-- Start of the thirth section of tab todays content-->
-                <a data-offline="true" data-params="value_id:5557" data-state="contact-form">
-                    <div id="column2" class="col-lg-4 features_col">
-                        <!-- features Item -->
-                        <div class="features d-flex flex-row align-items-center justify-content-start">
-                            <div class="features_content">
-                                <div class="features_text">Daily Devo</div>
-                                <div class="features_title">The Beauty in Silence</div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <!-- End of the thirth section of tab todays content-->
+            <!-- Start of Tab Todays Question of the Day section -->
+            <a data-offline="false" data-params="value_id:5557" data-state="contact-map">
+              <div  id="daily-question" class="today-features features d-flex flex-row align-items-center justify-content-space-between">
+                <div class="today-features features-image">
+                    <img src="https://i.pinimg.com/originals/66/33/51/663351148bfd3ef1a3472ed67eebbf75.jpg" alt="joyce_meyer">
+                </div>
+                  <div class="today-features features_content">
+                      <div class="today-features features_text">Question of the Day</div>
+                      <div class="today-features features_title">How do I balance competing needs in my life.</div>
+                  </div>
+              </div>
+            </a>
+            <!-- Start of Tab Todays Question of the Day section -->
+            <!-- If want to add a new section or thirt section, just copy the second section above from tag <a> to the end of tag </a> -->
 
 
-                <!-- Start of the fourth section of tab todays content-->
-                <a data-offline="true" data-params="value_id:5557" data-state="contact-form">
-                    <div id="column3" class="col-lg-4 features_col">
-                        <!-- features Item -->
-                        <div class="features d-flex flex-row align-items-center justify-content-start">
-                            <div class="ml-auto">
-                                <div class="features_image">
-                                  <img src="https://joycemeyermedia.com/SitecoreFiles/Study/logos/logo-the-word.svg">
-                                </div>
-
-                                <div class="title">
-                                  <h3>HOW TO STUDY BIBLE</h3>
-                                </div>
-                                <div class="button">
-                                    <button>START FREE STUDY NOW</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <!-- End of the fourth section of tab todays content-->
+            <!-- Start of Tab Todays Daily Devo section -->
+            <a data-offline="false" data-params="value_id:5557" data-state="contact-map">
+              <div id="daily-devo" class="today-features features d-flex flex-row align-items-center justify-content-space-between">
+                  <div class="today-features features_content">
+                      <div class="today-features features_text">Daily Devo</div>
+                      <div class="today-features features_title">The Beauty in Silence</div>
+                  </div>
+              </div>
+            </a>
+            <!-- Start of Tab Todays Daily Devo section  -->
+            <!-- If want to add a new section or thirt section, just copy the second section above from tag <a> to the end of tag </a> -->
 
 
-                <!-- Start of the fifth section of tab todays content-->
-                <a data-offline="true" data-params="value_id:5557" data-state="contact-form">
-                    <div id="column4" class="col-lg-4 features_col">
-                        <!-- Features Item -->
-                        <div class="features d-flex flex-row align-items-center justify-content-start">
-                            <div class="ml-auto">
-                                <div class="features_image">
-                                    <img src="https://joycemeyer.org/-/media/JoyceMeyer/Featured-Resources/Power-of-Thank-You/POTY_Book_v2.png" alt="joyce_meyer">
-                                </div>
-                            </div>
-                            <div class="features_content">
-                                <div class="features_text">Gratitude is Simple but powerful</div>
-                                <div class="features_title">
-                                  <button>GET YOYE'S NEW BOOK</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <!-- End of the fifth section of tab todays content-->
+        <!-- Start of Todays Sliding Card  -->
+            <div id="column1" class="col-lg-4 features_col">
+              <div class="slider mt-3">
+                  <div id="latest">
+                    <!-- First card start here -->
+                        <a data-offline="false" data-params="value_id:5557" data-state="contact-map">
+                              <div id="slider-img" class="responsive">
+                                  <div class="shows-devos">
+                                      <a data-offline="false" data-params="value_id:49235,product_id:11178"
+                                          data-state="commercepro-product-view" target="_top" href="javascript:void(0);">
+                                          <img id="slider-img" src="https://www.joycemeyer.org/-/media/JoyceMeyer/Image-Galleries/Conference-Gallery/conf-img-2.jpg" alt="Cinque Terre" width="600"
+                                              height="400">
+                                          <div class="desc">
+                                              <div class="title">How can we pray for you?</div>
+                                              <p class="prod_desc">With everything happening in the world right now, we know you have a lot on your mind. Remember, God is always here for you!</p>
+                                          </div>
+                                      </a>
+                                  </div>
+                              </div>
+                        </a>
+                    <!-- First card ending here -->
 
-                <!-- If want to add a new section or fifth section, just copy the fifth section above from tag <a> to the end of tag </a> -->
+
+                    <!-- Second card start here -->
+                        <a data-offline="false" data-params="value_id:5557" data-state="contact-map">
+                              <div id="slider-img" class="responsive">
+                                  <div class="shows-devos">
+                                      <a data-offline="false" data-params="value_id:49235,product_id:11182"
+                                          data-state="commercepro-product-view" target="_top" href="javascript:void(0);">
+                                          <img id="slider-img" src="https://www.joycemeyer.org/-/media/JoyceMeyer/Image-Galleries/Conference-Gallery/conf-img-3.jpg" alt="Cinque Terre" width="600"
+                                              height="400">
+                                          <div class="desc">
+                                              <div class="title">Gratitude and Generosity</div>
+                                              <p class="prod_desc">Today, Joyce shares biblical stories that inspire generosity. Learn why it is better to give than to receive.</p>
+                                          </div>
+                                      </a>
+                                  </div>
+                              </div>
+                        </a>
+                    <!-- Second card ending here -->
+
+
+                    <!-- Thirt card start here -->
+                        <a data-offline="false" data-params="value_id:5557" data-state="contact-map">
+                              <div id="slider-img" class="responsive">
+                                  <div class="shows-devos">
+                                      <a data-offline="false" data-params="value_id:49235,product_id:11186"
+                                          data-state="commercepro-product-view" target="_top" href="javascript:void(0);">
+                                          <img id="slider-img" src="https://www.joycemeyer.org/-/media/JoyceMeyer/Image-Galleries/Conference-Gallery/conf-img-5.jpg" alt="Cinque Terre" width="600"
+                                              height="400">
+                                          <div class="desc">
+                                              <div class="title">The Heart Behind What We Do</div>
+                                              <p class="prod_desc">I spend much of my time traveling the world, visiting the many outreaches that you support and also looking for new ways to help even more people.</p>
+                                          </div>
+                                      </a>
+                                  </div>
+                              </div>
+                        </a>
+                    <!-- Thirt card ending here -->
+
+
+                    <!-- Fourth card start here -->
+                        <a data-offline="false" data-params="value_id:5557" data-state="contact-map">
+                              <div id="slider-img" class="responsive">
+                                  <div class="shows-devos">
+                                      <a data-offline="false" data-params="value_id:49235,product_id:11183"
+                                          data-state="commercepro-product-view" target="_top" href="javascript:void(0);">
+                                          <img id="slider-img" src="https://www.joycemeyer.org/-/media/JoyceMeyer/Image-Galleries/Conference-Gallery/conf-img-1.jpg" alt="Cinque Terre" width="600"
+                                              height="400">
+                                          <div class="desc">
+                                              <div class="title">Study it. Live it. Love it.</div>
+                                              <p class="prod_desc">In His Word, the Bible, God gave us the perfect manual to get to know Him and learn to navigate this life He has given us. </p>
+                                          </div>
+                                      </a>
+                                  </div>
+                              </div>
+                        </a>
+                    <!-- Fourt card ending here -->
+                    <!-- If want to add a new sliding card, just copy the fourth card above from tag <a> to the end of tag </a> -->
+
+                  </div>
+
+              </div>
             </div>
-        </div>
-      <!-- End of Tab Todays content-->
+        <!-- End of Start of Todays Sliding Card   -->
+
+
+        <!-- Start of Tab Todays How To Study Bible section -->
+            <a data-offline="false" data-params="value_id:5557" data-state="contact-map">
+                <div id="column3" class="col-lg-4 features_col">
+                    <!-- features Item -->
+                    <div class="features d-flex flex-row align-items-center justify-content-start">
+                        <div class="ml-auto">
+                            <div class="features_image">
+                              <img src="https://joycemeyermedia.com/SitecoreFiles/Study/logos/logo-the-word.svg">
+                            </div>
+
+                            <div class="title">
+                              <h3>HOW TO STUDY BIBLE</h3>
+                            </div>
+                            <div class="button">
+                                <button>START FREE STUDY NOW</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        <!-- End of Tab Todays How To Study Bible section -->
+        <!-- If want to add a new section or thirt section, just copy the fourth section above from tag <a> to the end of tag </a> -->
+
+
+        <!-- Start of Tab Todays Gratitude is Simple but powerful section -->
+        <a data-offline="true" data-params="value_id:5557" data-state="contact-form">
+            <div id="column4" class="col-lg-4 features_col">
+                <!-- Features Item -->
+                <div class="features d-flex flex-row align-items-center justify-content-start">
+                    <div class="ml-auto">
+                        <div class="features_image">
+                            <img src="https://joycemeyer.org/-/media/JoyceMeyer/Featured-Resources/Power-of-Thank-You/POTY_Book_v2.png" alt="joyce_meyer">
+                        </div>
+                    </div>
+                    <div class="features_content">
+                        <div class="features_text">Gratitude is Simple but powerful</div>
+                        <div class="features_title">
+                          <button>GET YOYE'S NEW BOOK</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <!-- End of Tab Todays Gratitude is Simple but powerful section -->
+        <!-- If want to add a new section like Gratitude is Simple But Powerful Section, just copy the above section from tag <a> to the end of tag </a> -->
+
+
+    </div>
+    <!-- End of Tab Todays content-->
 
 
       <!-- Start of Tab Shows content-->
@@ -584,14 +715,14 @@
               <h4>FEATURED</h4>
             </div>
 
-            <!-- Start of Tab Todays first section -->
+            <!-- Start of Tab Shows first section -->
             <div class="embed-responsive embed-responsive-16by9">
               <img src="https://www.joycemeyer.org/-/media/JoyceMeyer/Broadcast/Show-Images/1480/1480_4_Spotlight.jpeg?h=761&w=1132&la=en-AU&hash=CB6F89B9E65648156C0DF2985CA0522C">
             </div>
-            <!-- End of Tab Todays first section -->
+            <!-- End of Tab Shows first section -->
 
 
-            <!-- Start of Tab Todays Second section -->
+            <!-- Start of Tab Shows Second section -->
             <a data-offline="false" data-params="value_id:5557" data-state="contact-map">
               <div class="features d-flex flex-row align-items-center justify-content-start">
                   <div class="features_content">
@@ -601,11 +732,11 @@
                   </div>
               </div>
             </a>
-            <!-- Start of Tab Todays Second section -->
+            <!-- Start of Tab Shows Second section -->
             <!-- If want to add a new section or thirt section, just copy the second section above from tag <a> to the end of tag </a> -->
 
 
-        <!-- Thirt section: Sliding Card  -->
+        <!-- Start of Thirt section: Sliding Card  -->
         <!-- This section show sliding card -->
         <div class="section-title">
           <h4>THIS WEEK</h4>
@@ -692,10 +823,10 @@
                   </div>
               </div>
             </div>
-        <!-- Thirt section: Sliding Card  -->
+        <!-- End of Thirt section: Sliding Card  -->
 
 
-        <!-- Start of Tab Shows content fourth section -->
+        <!-- Start of Tab Shows HOW TO STUDY BIBLE section -->
             <a data-offline="false" data-params="value_id:5557" data-state="contact-map">
                 <div id="column3" class="col-lg-4 features_col">
                     <!-- features Item -->
@@ -715,8 +846,8 @@
                     </div>
                 </div>
             </a>
-        <!-- Start of Tab Shows content fourth section -->
-        <!-- If want to add a new section or thirt section, just copy the fourth section above from tag <a> to the end of tag </a> -->
+        <!-- Start of Tab Shows HOW TO STUDY BIBLE section -->
+        <!-- If want to add a new section like HOW TO STUDY BIBLE, just copy the above section from tag <a> to the end of tag </a> -->
       </div>
 
       <!-- Start of Devos Content -->

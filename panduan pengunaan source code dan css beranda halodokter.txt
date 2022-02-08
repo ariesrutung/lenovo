@@ -1,0 +1,68 @@
+The downloaded file is divided into 2 parts. Source Code (HTML, CSS, JS) to display the name of the logged in user and CSS to change the appearance of the module according to the thumbnail above.
+
+After opening the Custom Page module, please copy and paste the following lines of code in order.
+
+1 - Source Code
+Paste the source code contained in the downloaded file. The frame height is 25%.
+
+2 - Text -> Internal Links. For example:
+<p><a data-offline="true" data-params="value_id:188523" data-state="places-list">Doctors</a></p>
+
+3 - Text -> Internal Links. For example:
+<p><a data-offline="true" data-params="value_id:188523" data-state="places-categories">Services</a></p>
+
+4 - Text -> Internal Links. For example:
+<p><a data-offline="false" data-params="value_id:188411" data-state="appointment-view">Booking</a></p>
+
+5 - Text -> Internal Links. For example:
+<p><a data-offline="true" data-params="value_id:188523" data-state="places-list">Most Popular Doctors</a></p>
+
+Note: Add an image as a thumbnail by using the Image icon in the Text header section.
+
+6 - Text
+Filled with text. Example: MEDICAL SERVICES. This will be used as the title for the 7th, 8th, 9th, and 10th Text. Change the text format to bold and paragraphs to H2.
+
+7 - Text -> Internal Links. For example:
+<p><a data-offline="false" data-params="value_id:188413" data-state="mcommerce-category-list"> <img alt="61baf3c512900.png" src="https://justapp .id/member/page/upload/article/1479a885c631feb142adc3928782ae33shop-_store.png" /></a> <a data-offline="false" data-params="value_id:188413" data-state="mcommerce-category- list">Store</a></p>
+
+8 - Text -> Internal Links. For example:
+<p><a data-offline="false" data-params="value_id:188413" data-state="mcommerce-cart-view"> <img alt="61baf3c512900.png" src="https://justapp .id/member/page/upload/article/9d1a45f55ba5da6b3e14c130b8c7782dcart.png" /></a> <a data-offline="false" data-params="value_id:188413" data-state="mcommerce-cart-view" >My Cart</a></p>
+
+9 - Text -> Internal Links. For example:
+<p><a data-offline="false" data-params="value_id:188411" data-state="appointment-booked"> <img alt="61baf3c512900.png" src="https://justapp.id /member/page/upload/article/3cad4b3b144306bd52dd1f250ce64a5dreceipt_halodokter.png" /></a> <a data-offline="false" data-params="value_id:188411" data-state="appointment-booked">History</ a></p>
+
+10 - Text -> Internal Links. For example:
+<p><a data-offline="false" data-params="value_id:188411" data-state="appointment-booked"> <img alt="61baf3c512900.png" src="https://justapp.id /member/page/upload/article/b3aa45469577e160e57e56cbfcd62e7dchedule_halodokter.png" /></a> <a data-offline="false" data-params="value_id:188411" data-state="appointment-booked">Schedule</ a></p>
+
+11 - Sliders
+Upload some images that will be used as a slider according to your needs.
+
+12 - Text
+Filled with text. Example: ARTICLE. This will be used as the title for the 13th, 14th, and 15th Text. Change the text format to bold and paragraphs to H2.
+
+13 - Text -> Internal Links. For example:
+<p><a data-offline="true" data-params="value_id:188409" data-state="newswall-list">HEALTHY INFO</a></p>
+
+14 - Text -> Internal Links. For example:
+<p><a data-offline="true" data-params="value_id:188409" data-state="newswall-list">LIFESTYLE</a></p>
+
+15 - Text -> Internal Links. For example:
+<p><a data-offline="true" data-params="value_id:188409" data-state="newswall-list">PROFESSION</a></p>
+
+16 - Sliders
+Upload some images that will be used as a slider according to your needs.
+
+17 - Text
+Filled with text. Example: OUR PARTNER. This will be used as the title for the 18th Text. Change the writing format to bold and paragraphs to H2.
+
+18 - Sliders
+upload images that are used as business partners.
+
+19 - Text
+Filled with text. Example: DISCOUNT. This will be used as the title for the 20th Text. Change the writing format to bold and paragraphs to H2.
+
+20 - Sliders
+Upload a promo image that will be used as a slider.
+
+Vital Records:
+Make it in order and use the line of code according to the example.

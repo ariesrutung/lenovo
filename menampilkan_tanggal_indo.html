@@ -38,7 +38,7 @@
             -webkit-text-size-adjust: none;
             -webkit-touch-callout: none;
             line-height: 1;
-            background-color: transparent !important;
+            background-color: #000 !important;
         }
 
         body::-webkit-scrollbar {
@@ -231,7 +231,6 @@
 
     <script>
         var dt = new Date();
-        var dt = new Date();
         document.getElementById("jam").innerHTML = dt.toLocaleTimeString();
         document.getElementById("tanggal").innerHTML = dt.toLocaleDateString();
     </script>
@@ -242,7 +241,7 @@
         var hrs = myDate.getHours();
         var salat;
 
-        if (hrs <= 4)
+        if (hrs >= 1 && hrs <= 4)
             salat = 'Subuh';
 
         else if (hrs >= 4 && hrs <= 12)
@@ -256,6 +255,9 @@
 
         else if (hrs >= 18 && hrs <= 19)
             salat = 'Isya';
+
+         else if (hrs >= 19 && hrs <= 24)
+            salat = 'Subuh';
 
         document.getElementById('dtText').innerHTML="Selanjutnya adalah waktu salat " + salat;
 
