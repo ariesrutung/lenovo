@@ -603,28 +603,16 @@ ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-c
     height: 50px;
 }
 
-/*ion-modal-view.customer-view.customer-layout1  ion-content div.scroll > div:nth-child(3) .list .item.item-custom input {
-    border: 0 !important;
-    color: rgba(68, 68, 68, 1);
-    background: rgba( 255, 255, 255, 0.25 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
-    border-radius: 10px;
-    margin: 20px 40px;
-    height: 50px;
-}
-*/
-ion-modal-view.customer-view.customer-layout1  ion-content div.scroll > div:nth-child(3) .list .item.item-custom .input-label {
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3) .list .item.item-custom .input-label {
     display: none;
 }
-ion-modal-view.customer-view.customer-layout1  ion-content div.scroll > div:nth-child(3) .list .item.item-custom:nth-child(1) input {
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3) .list .item.item-custom:nth-child(1) input {
     border: 0 !important;
     color: rgba(68, 68, 68, 1);
     border-radius: 10px;
     margin: 20px 0;
     height: 50px;
-    background-image: url(https://unpkg.com/ionicons@5.5.2/dist/svg/person-outline.svg);
+    background-image: url(https://justapp.id/member/halaman/unggah/article/1530ba484c7e4d00edf1d777e9a75931user.png);
     background-position: center left 7px;
     background-repeat: no-repeat;
     background-size: 25px;
@@ -634,13 +622,13 @@ ion-modal-view.customer-view.customer-layout1  ion-content div.scroll > div:nth-
     color: #fff;
 }
 
-ion-modal-view.customer-view.customer-layout1  ion-content div.scroll > div:nth-child(3) .list .item.item-custom:nth-child(2) input {
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3) .list .item.item-custom:nth-child(2) input {
     border: 0 !important;
     color: rgba(68, 68, 68, 1);
     border-radius: 10px;
     margin: 20px 0;
     height: 50px;
-    background-image: url(https://unpkg.com/ionicons@5.5.2/dist/svg/person-outline.svg);
+    background-image: url(https://justapp.id/member/halaman/unggah/article/1530ba484c7e4d00edf1d777e9a75931user.png);
     background-position: center left 7px;
     background-repeat: no-repeat;
     background-size: 25px;
@@ -650,13 +638,13 @@ ion-modal-view.customer-view.customer-layout1  ion-content div.scroll > div:nth-
     color: #fff;
 }
 
-ion-modal-view.customer-view.customer-layout1  ion-content div.scroll > div:nth-child(3) .list .item.item-custom:nth-child(3) input {
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3) .list .item.item-custom:nth-child(3) input {
     border: 0 !important;
     color: rgba(68, 68, 68, 1);
     border-radius: 10px;
     margin: 20px 0;
     height: 50px;
-    background-image: url(https://unpkg.com/ionicons@5.5.2/dist/svg/mail-outline.svg);
+    background-image: url(https://justapp.id/member/halaman/unggah/article/48cbfbe97ac318116ec790d3706aea14email.png);
     background-position: center left 7px;
     background-repeat: no-repeat;
     background-size: 25px;
@@ -666,13 +654,13 @@ ion-modal-view.customer-view.customer-layout1  ion-content div.scroll > div:nth-
     color: #fff;
 }
 
-ion-modal-view.customer-view.customer-layout1  ion-content div.scroll > div:nth-child(3) .list .item.item-custom:nth-child(4) input {
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3) .list .item.item-custom:nth-child(4) input {
     border: 0 !important;
     color: rgba(68, 68, 68, 1);
     border-radius: 10px;
     margin: 20px 0;
     height: 50px;
-    background-image: url(https://unpkg.com/ionicons@5.5.2/dist/svg/phone-portrait-outline.svg);
+    background-image: url(https://justapp.id/member/halaman/unggah/article/554d585adfccc357f7ce6e70f29e4c3cphone.png);
     background-position: center left 7px;
     background-repeat: no-repeat;
     background-size: 25px;
@@ -682,13 +670,13 @@ ion-modal-view.customer-view.customer-layout1  ion-content div.scroll > div:nth-
     color: #fff;
 }
 
-ion-modal-view.customer-view.customer-layout1  ion-content div.scroll > div:nth-child(3) .list .item.item-custom:nth-child(5) input {
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3) .list .item.item-custom:nth-child(5) input {
     border: 0 !important;
     color: rgba(68, 68, 68, 1);
     border-radius: 10px;
     margin: 20px 0;
     height: 50px;
-    background-image: url(https://unpkg.com/ionicons@5.5.2/dist/svg/key-outline.svg);
+    background-image: url(https://justapp.id/member/halaman/unggah/article/e14e3bc0f90417221b05397702508f0akey.png);
     background-position: center left 7px;
     background-repeat: no-repeat;
     background-size: 25px;
