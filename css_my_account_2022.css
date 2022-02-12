@@ -1,3 +1,10 @@
+/* Header */
+ion-header-bar.bar-custom.bar.bar-header {
+    background-image: none !important;
+    height: 0 !important;
+    background-color: transparent;
+}
+
 /*My Account login*/
 ion-modal-view.customer-view.customer-layout1>ion-header-bar {
     z-index: 10;
@@ -76,12 +83,13 @@ ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div[ng-show
     padding-top: 10vh;
 }
 
-ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3) .list .item.item-input.item-custom:nth-child(-n+5) {
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3) .list .item.item-input.item-custom {
     background-color: transparent !important;
     box-shadow: none !important;
     margin: 20px 40px;
     padding: 5px 0;
     height: 50px;
+    border: 0 !important;
 }
 
 ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3) .list .item.item-custom .input-label {
@@ -100,6 +108,18 @@ ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-c
     padding-left: 45px;
     width: 100%;
     min-width: 100%;
+    color: #fff;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3) .list label.item.item-input.item-custom.item-select select {
+    width: 100%;
+    min-width: 100%;
+    background-color: #40c7ff;
+    color: #fff;
+    border-radius: 10px;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3) .list label.item.item-input.item-custom.item-select:after {
     color: #fff;
 }
 
@@ -182,7 +202,7 @@ ion-modal-view.customer-view.customer-layout1 [ng-show="display_forgot_password_
 
 ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3) .list .item.item-custom input {
     border: 0 !important;
-    color: rgba(68, 68, 68, 1);
+    color: #fff;
     background-color: #40c7ff;
     box-shadow: none;
     border-radius: 10px;
@@ -192,6 +212,7 @@ ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-c
     max-height: 50px !IMPORTANT;
     padding: 0 10px;
 }
+
 ion-modal-view.customer-view.customer-layout1 .list .item.item-custom input {
     color: #fff;
     text-align: left;
@@ -202,6 +223,7 @@ ion-modal-view.customer-view.customer-layout1 .list label.checkbox-custom {
     box-shadow: none !important;
     margin: 0 40px !important;
     background-image: none !important;
+    border: 0 !important;
 }
 
 ion-modal-view.customer-view.customer-layout1 .list label.checkbox-custom h2 span.ng-binding {

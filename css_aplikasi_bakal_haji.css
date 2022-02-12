@@ -595,7 +595,7 @@ ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div[ng-show
     padding-top: 10vh;
 }
 
-ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3) .list .item.item-input.item-custom:nth-child(-n+5) {
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3) .list .item.item-input.item-custom {
     background-color: transparent !important;
     box-shadow: none !important;
     margin: 20px 40px;
@@ -606,7 +606,21 @@ ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-c
 ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3) .list .item.item-custom .input-label {
     display: none;
 }
-ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3) .list .item.item-custom:nth-child(1) input {
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3) .list label.item.item-input.item-custom.item-select select {
+    width: 100%;
+    min-width: 100%;
+    background-color: #40c7ff;
+    color: #fff;
+    border-radius: 10px;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3) .list label.item.item-input.item-custom.item-select:after {
+    color: #fff;
+}
+
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3) .list .item.item-custom [ng-model="customer.firstname"] {
     border: 0 !important;
     color: rgba(68, 68, 68, 1);
     border-radius: 10px;
@@ -622,7 +636,7 @@ ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-c
     color: #fff;
 }
 
-ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3) .list .item.item-custom:nth-child(2) input {
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3) .list .item.item-custom [ng-model="customer.lastname"] {
     border: 0 !important;
     color: rgba(68, 68, 68, 1);
     border-radius: 10px;
@@ -638,7 +652,39 @@ ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-c
     color: #fff;
 }
 
-ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3) .list .item.item-custom:nth-child(3) input {
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3) .list .item.item-custom [ng-model="customer.birthdate"] {
+    border: 0 !important;
+    color: rgba(68, 68, 68, 1);
+    border-radius: 10px;
+    margin: 20px 0;
+    height: 50px;
+    background-image: url(https://justapp.id/member/halaman/unggah/article/3bbb367fdc0177df4ff9cdf5002b1abecalendar.png);
+    background-position: center left 7px;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    padding-left: 45px;
+    width: 100%;
+    min-width: 100%;
+    color: #fff;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3) .list .item.item-custom [ng-model="customer.nickname"] {
+    border: 0 !important;
+    color: rgba(68, 68, 68, 1);
+    border-radius: 10px;
+    margin: 20px 0;
+    height: 50px;
+    background-image: url(https://justapp.id/member/halaman/unggah/article/1530ba484c7e4d00edf1d777e9a75931user.png);
+    background-position: center left 7px;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    padding-left: 45px;
+    width: 100%;
+    min-width: 100%;
+    color: #fff;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3) .list .item.item-custom [ng-model="customer.email"] {
     border: 0 !important;
     color: rgba(68, 68, 68, 1);
     border-radius: 10px;
@@ -654,7 +700,7 @@ ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-c
     color: #fff;
 }
 
-ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3) .list .item.item-custom:nth-child(4) input {
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3) .list .item.item-custom [ng-model="customer.mobile"] {
     border: 0 !important;
     color: rgba(68, 68, 68, 1);
     border-radius: 10px;
@@ -670,7 +716,23 @@ ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-c
     color: #fff;
 }
 
-ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3) .list .item.item-custom:nth-child(5) input {
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3) .list .item.item-custom [ng-model="customer.password"] {
+    border: 0 !important;
+    color: rgba(68, 68, 68, 1);
+    border-radius: 10px;
+    margin: 20px 0;
+    height: 50px;
+    background-image: url(https://justapp.id/member/halaman/unggah/article/e14e3bc0f90417221b05397702508f0akey.png);
+    background-position: center left 7px;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    padding-left: 45px;
+    width: 100%;
+    min-width: 100%;
+    color: #fff;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3) .list .item.item-custom [ng-model="customer.repeat_password"] {
     border: 0 !important;
     color: rgba(68, 68, 68, 1);
     border-radius: 10px;
@@ -702,15 +764,16 @@ ion-modal-view.customer-view.customer-layout1 [ng-show="display_forgot_password_
 ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3) .list .item.item-custom input {
     border: 0 !important;
     color: rgba(68, 68, 68, 1);
-    background-color: #40c7ff;
-    box-shadow: none;
     border-radius: 10px;
-    margin: 0;
-    height: 50px !important;
-    min-height: 50px !important;
-    max-height: 50px !IMPORTANT;
-    padding: 0 10px;
+    margin: 20px 0;
+    height: 50px;
+    padding-left: 45px;
+    width: 100%;
+    min-width: 100%;
+    color: #fff;
+    background-color: #40c7ff;
 }
+
 ion-modal-view.customer-view.customer-layout1 .list .item.item-custom input {
     color: #fff;
     text-align: left;
@@ -723,7 +786,8 @@ ion-modal-view.customer-view.customer-layout1 .list label.checkbox-custom {
     background-image: none !important;
 }
 
-ion-modal-view.customer-view.customer-layout1 .list label.checkbox-custom h2 span.ng-binding {
+ion-modal-view.customer-view.customer-layout1 .list label.checkbox-custom h2 span.ng-binding,
+ion-modal-view.customer-view.customer-layout1 .list label.item-checkbox .item-content span {
     color: #fff;
 }
 
@@ -2114,8 +2178,7 @@ ion-view[state="commercepro-product-view"] ion-content div.scroll>div:nth-child(
     height: 30vw;
     padding-left: 12px;
     position: relative;
-    transform: scale(1);
-    background-color: #f9f9f9 !important;
+    background-color: #fff !important;
     border: 0;
     border-radius: 8px;
     margin: auto;
