@@ -1,0 +1,18 @@
+<style>
+  .iframe-fb-container {
+    text-align: center;
+    width:400px;
+    height:700px;
+    display:inline-block;
+}
+
+.iframe-fb {
+    width: 400px;
+    height: 700px;
+    overflow: hidden;
+} 
+</style> 
+
+<div class="iframe-fb-container">
+   <iframe class="iframe-fb border" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" src="https://www.facebook.com/plugins/page.php?href=https://web.facebook.com/PT-Struktur-Pracetak-Nasional-111082507297833%2F&tabs=timeline&width=400&height=700&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=2235597906716847"></iframe>
+ </div>

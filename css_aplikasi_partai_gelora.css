@@ -1,0 +1,206 @@
+/* Menambahkan logo gelora bagian header */
+ion-header-bar.bar-custom.bar.bar-header {
+    background-image: url(https://cloud.jpnn.com/photo/arsip/watermark/2021/01/03/logo-gelora-indonesia-foto-partaigeloraid-60.jpg);
+    background-repeat: no-repeat !important;
+    background-size: contain;
+    background-position: center left;
+    background-color: #2fc4ef;
+}
+
+/* Menghilangkan title */
+.bar.bar-custom .title {
+    color: transparent;
+}
+
+
+/* Layout 1 */
+.always .layout.l1 .tabs img {
+    margin: 0 !important;
+}
+
+.always .layout.l1 .tabs {
+    display: flex;
+    justify-content: space-around;
+    border: 0 !important;
+    box-shadow: 0 0px 5px #2fc4ef;
+}
+
+.always .layout.l1 .tabs li p {
+    display: none;
+}
+
+.always .layout.l1 .tabs li {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* End of Layout 1 */
+
+
+/* Custom Page */
+/* ID CARD */
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(3) .card.no-shadow {
+    background-color: #2fc4ef !important;
+    padding: 10px;
+    border-radius: 10px;
+    background: #0187a3;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_map_of_Indonesia.svg/1200px-Flag_map_of_Indonesia.svg.png);
+    background-position: center;
+    background-size: 250px;
+    background-repeat: no-repeat;
+    background-position: top 10px right;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(3) .card.no-shadow .item.item-custom {
+    padding: 0;
+    background-color: transparent;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(3) iframe.sb-cms-source {
+    border: 0;
+    width: 100%;
+    overflow: hidden;
+    height: 25vh !important;
+    background-image: url(https://1.bp.blogspot.com/-zp8_8Zr26Iw/YTDmdZaj6yI/AAAAAAAAI5Y/ImMzbf0mAp0fILfKk92NeXYUdNozD_SJgCLcBGAsYHQ/s1014/LOGO-PARTAI-GELORA.png);
+    background-repeat: no-repeat !important;
+    background-size: 95px;
+    background-position: left top;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(4),
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(5) {
+    margin: 2px !important;
+    width: 100%;
+    height: auto !important;
+    background-color: transparent;
+    padding: 5px;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(4) .card,
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(5) .card, {
+    box-shadow: none;
+    margin: 0;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(4) .content.ng-binding,
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(5) .content.ng-binding {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(4) .item.item-text-wrap.item-custom.sb-cms-text,
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(5) .item.item-text-wrap.item-custom.sb-cms-text {
+    padding: 0;
+    background-color: transparent;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(4) .content.ng-binding p,
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(5) .content.ng-binding p {
+    background-color: #2fc4ef;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100px;
+    border-radius: 10px;
+    color: #fff;
+    padding: 5px;
+}
+
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(4) .content.ng-binding p:nth-child(1) a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background-image: url(https://justapp.id/member/halaman/unggah/article/82d9bacc2a8291b7efdaa25d3806b134informasi.png);
+    background-position: center top 5px;
+    background-repeat: no-repeat;
+    background-size: 55px;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(4) .content.ng-binding p:nth-child(2) a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background-image: url(https://justapp.id/member/halaman/unggah/article/7fd0b9ec5c3389b4836628057451827bmember.png);
+    background-position: center top 5px;
+    background-repeat: no-repeat;
+    background-size: 55px;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(4) .content.ng-binding p:nth-child(3) a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background-image: url(https://justapp.id/member/halaman/unggah/article/be50dbb9caed986c63130a0d7a0a9d96kegiatan.png);
+    background-position: center top 5px;
+    background-repeat: no-repeat;
+    background-size: 55px;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(5) .content.ng-binding p:nth-child(1) a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background-image: url(https://justapp.id/member/halaman/unggah/article/a2ed0727860af93b1684f9df7f409b17video.png);
+    background-position: center top 5px;
+    background-repeat: no-repeat;
+    background-size: 55px;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(5) .content.ng-binding p:nth-child(2) a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background-image: url(https://justapp.id/member/halaman/unggah/article/8e1321aee6f667ffe096873e896044d3ebook.png);
+    background-position: center top 5px;
+    background-repeat: no-repeat;
+    background-size: 55px;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(5) .content.ng-binding p:nth-child(3) a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background-image: url(https://justapp.id/member/halaman/unggah/article/b490333f34f80bc331e5a1fb8abd5d6fdonasi.png);
+    background-position: center top 5px;
+    background-repeat: no-repeat;
+    background-size: 55px;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(6) .card, {
+    box-shadow: none;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(6) .item.item-text-wrap.item-custom.sb-cms-text {
+    padding: 0;
+    background-color: transparent;
+}

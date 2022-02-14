@@ -1,0 +1,53 @@
+Untuk SoundCloud, Fanspage FB, instagram dan Twitter skrnag mereka menutup api mas..
+
+Skrang harus verifikasi bisnis untuk membuka semua api.
+Verifikasi bisnis pakai dokumen perusahaan minimal CV..
+Punya saya aja masih blum diapproved FB. Mreka punya standard skrang..
+
+
+border-bottom-left-radius: 100% 50%;
+
+ion-view[state="home"].pane.has-background-image {
+    background-image: none !important;
+    background-color: #ffff;
+}
+
+
+.items.homepage-custom.border-custom {
+    background-color: #ff3801;
+    border-radius: 10px;
+}
+
+.layout.l11 a p {
+    line-height: 20px;
+    height: 20px;
+    overflow: hidden;
+    color: #000 !important;
+    text-transform: capitalize !important;
+}
+
+span.slider-pager-page.active {
+    width: 35x;
+    background-color: #ff3801;
+    border-radius: 30px;
+    font-size: 0;
+    padding: 0;
+    margin: 0;
+    height: 10px;
+}
+
+
+.layout .slider-pager {
+    height: calc(20px + var(--safe-area-inset-bottom))!important;
+    bottom: 0;
+    background-color: transparent;
+    padding-bottom: var(--safe-area-inset-bottom);
+}
+
+.layout .slider-pager {
+    height: calc(20px + var(--safe-area-inset-bottom))!important;
+    bottom: 0;
+    background-color: transparent;
+    padding-bottom: var(--safe-area-inset-bottom);
+}
+

@@ -1,0 +1,7 @@
+state="cabride-home"] .cr-map-overlay .cr-map-pin .cr-pin-icon img {
+	width: 0;
+	background-image: url(https://www.flaticon.com/svg/static/icons/svg/684/684908.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}

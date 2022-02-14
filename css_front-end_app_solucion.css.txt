@@ -1,0 +1,22 @@
+.admin_application_list.general a.button-action-app.btn.btn-xs.color-blue {
+    visibility: visible;
+    width: 96%;
+    display: block;
+    background-color: #eaeaea !important;
+    margin: 0 2%;
+    padding: 5px !important;
+    color: orange !important;
+    top: 2px;
+}
+
+
+.admin_application_list.general a.button-action-app.btn.btn-xs.btn-danger.delete_app {
+    visibility: visible;
+    width: 96%;
+    display: block;
+    background-color: #eaeaea !important;
+    margin: 0 2%;
+    padding: 5px !important;
+    color: orange !important;
+    top: 2px;
+}

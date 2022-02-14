@@ -1,0 +1,27 @@
+
+webView.setWebViewClient(new WebViewClient() {
+            public void onReceivedError(WebView webView, int errorCode, String description, String failingUrl) {
+                try {
+                    webView.stopLoading();
+                } catch (Exception e) {
+                }
+ 
+                if (webView.canGoBack()) {
+                    webView.goBack();
+                }
+ 
+                webView.loadUrl("about:blank");
+                AlertDialog alertDialog = new AlertDialog.Builder(MainActivity.this).create();
+                alertDialog.setTitle("Error");
+                alertDialog.setMessage("Sayur Prafi: Cek Koneksi Internet Anda dan Coba Lagi.");
+                alertDialog.setButton(DialogInterface.BUTTON_POSITIVE, "Coba Lagi", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        finish();
+                        startActivity(getIntent());
+                    }
+                });
+ 
+                alertDialog.show();
+                super.onReceivedError(webView, errorCode, description, failingUrl);
+            }
+        });

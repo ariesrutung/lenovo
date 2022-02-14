@@ -1,0 +1,593 @@
+/* front page - top */
+ion-vieew.cabride.cabride-view.cabride-home ion-content {
+	background-color: #fff !important;
+  	border-radius: 40px 40px 0 0 !important;
+}
+
+/* header homepage */
+.layout.layout_taxi .taxi-header {
+	height: 200px;
+}
+
+/* spinner masuk */
+.cabride .cr-home .cr-home-loader-spinner img {
+    width: 100%;
+    height: 100%;
+    color: #fff !important;
+    background: #0cf !important;
+    border-radius: 50%;
+}
+
+/* front page ojol */
+ion-view.cabride.cabride-view.cabride-home ion-content,
+ion-view.cabride.cabride-view.cabride-pending ion-content,
+ion-view.cabride.cabride-view.cabride-accepted ion-content,
+ion-view.cabride.cabride-view.cabride-completed ion-content,
+ion-view.cabride.cabride-view.cabride-vehicle-information ion-content,
+ion-view.cabride.cabride-view.cabride-payment-history ion-content,
+ion-view.module-push.push-list.push-list-l1 ion-content {
+	background-color: #fff !important;
+  	border-radius: 40px 40px 0 0 !important;
+  	margin-top: 10px;
+}
+
+.cabride .cr-user-choice .cr-passenger,
+.cabride .cr-user-choice .cr-driver {
+	border-radius: 50% !important;
+  	background-color: #fff;
+	border: 0 !important;
+    display: block;
+    background-color: #f7f7f7;
+	background-image: -webkit-linear-gradient(top, #f7f7f7, #00ccff);
+    color: #000;
+    box-shadow: 0px 3px 8px #aaa, inset 0px 2px 3px #fff;
+}
+
+.cabride .cr-user-choice .cr-driver:hover,
+.cabride .cr-user-choice .cr-passenger:hover {
+  	text-decoration: none;
+  	color: #ffcc60;
+  	background: #f5f5f5;
+}
+
+.cabride .cr-user-choice .cr-driver img,
+.cabride .cr-user-choice .cr-passenger img { 
+	width: 80% !important;
+}
+
+/* pick location */
+.cr-map-pickup:before {
+	content: "LOKASI JEMPUT";
+  	display: block;
+  	text-align: left;
+  	font-weight: bold;
+  	font-size: 18px;
+  	padding: 20px 10px 10px 10px;
+  	background-color: #bcf2ff;
+}
+
+.cabride .cr-passenger-home #cr-map-overlay .cr-map-location .cr-map-dropoff:before {
+	content: "LOKASI TURUN";
+  	display: block;
+  	text-align: left;
+  	font-weight: bold;
+  	font-size: 18px;
+  	padding: 20px 10px 10px 10px;
+  	background-color: #bcf2ff;	
+}
+
+/* move the icon - flag & locate pickup */
+.cabride .cr-passenger-home #cr-map-overlay .cr-map-location .cr-map-pickup i,
+.cabride .cr-passenger-home #cr-map-overlay .cr-map-location .cr-map-dropoff i {
+    position: relative !important;
+    right: 10px;
+    margin-top: -40px !important;
+    font-size: 1.5rem;
+    opacity: 0.75;
+    float: left !important;
+    left: 10px;
+    right: 20px !important;
+    margin-right: 20px !important;
+}
+
+.cabride .cr-passenger-home #cr-map-overlay .cr-map-location .cr-map-pickup input,
+.cabride .cr-passenger-home #cr-map-overlay .cr-map-location .cr-map-dropoff input {
+	padding-left: 60px !important;
+  	height: 50px !important;
+}
+
+.ion-android-locate:before {
+    font-size: 40px;
+    color: #008aff;
+  	padding-right: 5px;
+}
+
+.ion-ios-flag:before {
+  	visibility: hidden;
+}
+
+.cabride .cr-passenger-home #cr-map-overlay .cr-map-location .cr-map-dropoff i:before {
+	content: url(https://img.icons8.com/doodle/48/000000/user-location.png);
+    width: 10px;
+    visibility: visible;
+    padding-right: 5px;
+    margin-left: -5px;
+}
+
+.cabride .cr-passenger-home #cr-map-overlay .cr-map-location .cr-map-pickup, .cabride .cr-passenger-home #cr-map-overlay .cr-map-location .cr-map-dropoff {
+	border-bottom: 0 !important;
+    border-radius: 4px 4px 0 0;
+    padding: 0 0 10px 0 !important;
+    margin: 0 0 10px 0 !important;
+    background-color: #fff !important;
+    box-shadow: none !important;
+}
+
+.cabride .cr-passenger-home #cr-map-overlay .cr-map-location {
+    position: absolute;
+    width: calc(100vw) !important;
+    top: 0;
+    left: 0;
+    margin: 0 !important;
+    border: none !important;
+    border-radius: 4px;
+    overflow: hidden;
+    background-color: #fff !important;
+    box-shadow: none !important;
+  	border-radius: 0 0 20px 20px !important;
+}
+
+
+/* sidebar */
+/* border of user photo */
+.layout_taxi .taxi-header .taxi-avatar-wrapper {
+    border: 2px solid #00ccff !important;
+}
+
+.layout_taxi .line-title {
+    text-transform: capitalize !important;
+}
+
+
+
+.layout.layout_taxi ion-content.homepage-custom.scroll-content.ionic-scroll {
+	width: 100vw !important;
+}
+
+.menu.menu-left.menu-left-open {
+    z-index: 1!important;
+    transition: transform 250ms ease-in 250ms!important;
+    transform: translateX(0);
+    width: 100vw !important;
+    background-color: #fff !important;
+  	height: 90vh !important;
+	margin-top: 8vh;
+  	border-radius: 40px !important;
+  	padding-top: 20px;
+}
+
+.menu.menu-left.menu-left-open ul.items.homepage-custom li {
+	width: 30% !important;
+  	margin: 10px 1.6% !important;
+  	display: inline-block !important;
+  	left: 0 !important;
+  	right: 0 !important;
+  	padding: 0 !important;
+  	float: left;
+	background-color: #E8F5E9;
+    border-radius: 10px;
+    height: 100px !important;
+}
+
+.menu.menu-left.menu-left-open ul.items.homepage-custom li .line-box {
+	display: inline-block !important;
+  	width: 100% !important;
+  	margin: 0 auto !important;
+  	padding: 0 !important;
+	background-color: #E8F5E9;
+    border-radius: 10px;
+    height: 100px !important;
+}
+
+.menu.menu-left.menu-left-open ul.items.homepage-custom li span.line-title.ng-binding {
+    text-align: center !important;
+    width: 100%;
+    display: block;
+    margin: 0 !important;
+    text-transform: uppercase !important;
+    color: #000;
+    font-family: 'Haas Grot Text R Web', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 8px !important;
+}
+
+/* i.line-icon.icon.ion-cab-timer {
+	visibility: hidden;
+}
+
+i.line-icon.icon.ion-cab-timer:after {
+	visibility: visible;
+  	content: url(https://img.icons8.com/color/48/000000/data-pending.png);
+  	left: 0;
+  	right: 0;
+}
+*/
+
+.layout_taxi span.line-icon-box {
+    width: 100% !important;
+    line-height: 6vw !important;
+    display: block !important;
+    justify-content: center !important;
+    right: 0 !important;
+    left: 0 !important;
+    padding: 0 !important;
+  	margin: 0 auto !important;
+    text-align: center !important;
+    font-size: 60px !important;
+    border-radius: 10px;
+}
+
+
+.layout_taxi .line-icon {
+    margin-left: 0 !important;
+	font-size: 34px !important;
+	height: 10vw !important;
+    margin-top: 15px !important;
+}
+
+.ion-cab-timer-full:before,
+.ion-cab-cancel:before,
+.ion-cab-timer:before,
+.ion-cab-thumb-up:before,
+.ion-cab-car:before,
+.ion-cab-credit-card:before {
+    margin-top: 20px;
+  	color: #0cf;
+}
+
+
+
+
+
+
+
+
+
+.card, .list {
+	box-shadow: none;
+}
+
+/* PADLOCK */
+ion-view.padlock-view ion-content {
+	border-radius: 40px 40px 0 0 !important;
+  	background-color: #fff !important;
+  	margin-top: 10px;
+}
+
+.padlock-view .card.padlock .item.item-text-wrap.item-custom {
+	visibility: hidden;
+}
+
+.padlock-view .card.padlock .item.item-text-wrap.item-custom:after {
+	visibility: visible;
+  	content: "SELAMAT DATANG";
+  	color: #435b5b;
+  	width: 100% !important;
+  	display: block !important;
+  	font-weight: bold;
+  	font-size: 18px;
+  	text-align: center;
+}
+
+.padlock-view .item.item-body.item-custom.text-center {
+	background-image: url("https://justapp.id/wp-content/uploads/2020/07/fff-copy.png") !important;
+	background-position: center;
+	height: 200px !important;
+  	background-size: 40% !important;
+	background-repeat: no-repeat;
+}
+
+.padlock-view .padlock .item.item-body i {
+	font-size: 0px;
+}
+
+ion-view.padlock-view .card.padlock .item.item-icon-left.item-custom.ng-binding {
+    visibility: hidden;
+}
+
+ion-view.padlock-view .card.padlock .item.item-icon-left.item-custom.ng-binding:after {
+    visibility: visible;
+    text-align: center;
+    display: block;
+    content: "MULAI";
+    background-color: #435b5b;
+    padding: 15px;
+    width: 60%;
+    margin-left: 20%;
+    border-radius: 30px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;    
+}
+
+ion-view.padlock-view .item.item-icon-left.item-custom {
+	padding: 10px 0;
+  	text-align: center;
+}
+
+ion-view.padlock-view .ion-ios-paper-outline:before {
+	display: none;
+}
+
+/* MY ACCOUNT */
+.customer-view.customer-layout1 .list {
+    margin-bottom: 0;
+}
+
+.customer-view.customer-layout1 .list .padding {
+    padding: 10px;
+    font-size: 12px;
+}
+
+div[ng-show="display_login_form"] .text-right {
+    text-align: right;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll div[ng-show="display_login_form"] div {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll [ng-show="display_login_form"] div.text-center {
+    visibility: hidden;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    top: 0;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll [ng-show="display_login_form"] div.text-center:after {
+    content: "SIGNUP";
+    visibility: visible;
+    width: 30%;
+    font-weight: bold;
+    font-size: 18px;
+    display: block;
+    text-align: center;
+    margin: 0 10% 0 60%;
+    -webkit-box-ordinal-group: 1;
+    -moz-box-ordinal-group: 1;
+    -ms-flex-order: 1;
+    -webkit-order: 1;
+    order: 1;
+    padding: 10px;
+    color: #000;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll [ng-show="display_login_form"] div.text-center:before {
+    visibility: visible;
+    content: "LOGIN";
+    width: 30%;
+    font-weight: bold;
+    font-size: 18px;
+    display: block;
+    text-align: center;
+    margin: -40px 60% 0 10%;
+    -webkit-box-ordinal-group: 2;
+    -moz-box-ordinal-group: 2;
+    -ms-flex-order: 2;
+    -webkit-order: 2;
+    order: 2;
+    border-bottom: 2px solid #435b5b ;
+    padding: 10px;
+    cursor: default;
+    pointer-events: none;
+    color: #000;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll [ng-show="display_login_form"] div.list {
+    -webkit-box-ordinal-group: 2;
+    -moz-box-ordinal-group: 2;
+    -ms-flex-order: 2;
+    -webkit-order: 2;
+    order: 2;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll [ng-show="display_login_form"] div:nth-child(3) {
+    -webkit-box-ordinal-group: 3;
+    -moz-box-ordinal-group: 3;
+    -ms-flex-order: 3;
+    -webkit-order: 3;
+    order: 3;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll div:nth-child(4) {
+    -webkit-box-ordinal-group: 4;
+    -moz-box-ordinal-group: 4;
+    -ms-flex-order: 4;
+    -webkit-order: 4;
+    order: 4;
+}
+
+[ng-show="display_login_form"] .item.item-input.item-custom {
+    display: inline-block;
+    width: 90%;
+    margin: 15px 5%;
+}
+
+[ng-show="display_login_form"] .item.item-input.item-custom i {
+    width: 100%;
+    display: block;
+    position: relative;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: left;
+}
+[ng-show="display_login_form"] .item.item-input.item-custom i {
+  visibility: hidden;
+}
+
+[ng-show="display_login_form"] i.icon.ion-ios-person:after {
+    visibility: visible;
+    content: "Email Kamu*";
+    margin-left: -5px;
+    font-family: 'Haas Grot Text R Web', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #435b5b;
+}
+
+[ng-show="display_login_form"] i.icon.ion-locked:after {
+    visibility: visible;
+    content: "Kata Sandi*";
+    margin-left: -5px;
+    font-family: 'Haas Grot Text R Web', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #435b5b;
+}
+
+[ng-show="display_login_form"] .item.item-input.item-custom input {
+    width: 100%;
+    display: block;
+    position: relative;
+    text-align: left;
+    border-bottom: 2px solid #435b5b ;
+    height: 40px;
+    padding-left: 10px;
+    color: #000 !important;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Haas Grot Text R Web', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* placeholder */
+[ng-show="display_login_form"] .item.item-input.item-custom input::-webkit-input-placeholder {
+   color: #dbdbdb !important;
+}
+
+[ng-show="display_login_form"] .item.item-input.item-custom input:-moz-placeholder { /* Firefox 18- */
+   color: #dbdbdb !important;
+}
+
+[ng-show="display_login_form"] .item.item-input.item-custom input::-moz-placeholder {  /* Firefox 19+ */
+   color: #dbdbdb !important;
+}
+
+[ng-show="display_login_form"] .item.item-input.item-custom input:-ms-input-placeholder {  
+   color: #dbdbdb !important;
+}
+/* placeholder */
+
+[ng-show="display_login_form"] .button.button-positive-custom {
+    border-color: transparent;
+    background-color: #f5ba2e;
+    color: #ffffff;
+    width: 40%;
+    border-radius: 20px;
+    margin: 10px auto;
+    text-transform: uppercase;
+}
+
+[ng-show="display_login_form"]:before,
+[ng-show="display_forgot_password_form"]:before {
+    display: block;
+    width: 150px;
+  	padding-top: 20px;
+    height: 150px;
+    margin: 20px auto 0 auto;   
+    position: relative;
+    content: "";
+    background: url("https://justapp.id/wp-content/uploads/2020/07/fff-copy.png") no-repeat 0 0;
+    background-size: 100%;
+}
+
+.customer-view.customer-layout1 .button.button-positive-custom {
+    width: 60%;
+    margin: 5px 20%;
+    border-radius: 30px;
+    top: 10px !important;
+    margin-bottom: 30px;
+    background-color: #0cf !important;
+    color: #fff !important;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.customer-view.customer-layout1 div.scroll div:nth-child(3) div>div:nth-child(4).padding.text-center.ng-binding  {
+    display: none;
+}
+
+ion-modal-view.sb-clickwrap.sb-clickwrap-modal ion-content,
+ion-modal-view.customer-view.customer-layout1 ion-content {
+    background-color: #fff !important;
+    border-radius: 40px 40px 0 0 !important;	
+}
+
+/* FORGOT PASSWORD PAGE */
+[ng-show="display_forgot_password_form"] .padding.text-left {
+	visibility: hidden;
+}
+
+[ng-show="display_forgot_password_form"] .padding.text-left:after {
+	visibility: visible;
+  	content: "Silakan masukkan email yang telah Anda daftarkan sebelumnya. Jika merasa belum mendaftar, silakan kembali ke halaman sebelumnya dan klik DAFTAR.";
+  	text-align: center;
+  	display: block;
+  	color: #000;
+  	margin-top: -30px;
+}
+
+[ng-show="display_forgot_password_form"] .item.item-input.item-custom {
+	border-radius: 30px;
+  	border: 2px solid #ffcc60;
+  	width: 90%;
+  	margin-left: 5%;
+  	margin-top: 10px;
+}
+
+[ng-show="display_forgot_password_form"] .item.item-input.item-custom input {
+  	width: 100%;
+  	text-align: center;
+}
+
+[ng-show="display_forgot_password_form"] .ion-ios-person:before {
+	display: none;
+}
+
+[ng-show="display_forgot_password_form"] div>div:nth-child(4) {
+	display: none;
+}
+
+[ng-show="display_forgot_password_form"] .item.item-input.item-custom .icon.ion-ios-person {
+	display: none;
+}
+
+
+.tabs,
+.cabride.cabride-view.cabride-vehicle-information .button.button-assertive-custom,
+[state="cabride-vehicle-information"] .button.button-full.button-positive.button-positive-custom.ng-binding {
+	bottom: 5vh;
+}
+
+
+.cabride.cabride-view.cabride-vehicle-information .button.button-small.button-positive.button-positive-custom.ng-binding {
+	bottom: 0 !important;
+}
+
+
