@@ -1,0 +1,192 @@
+<html>
+
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" name="viewport">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="IE=8" http-equiv="X-UA-Compatible">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <title>Homepage</title>
+    <style type="text/css">
+        <style>@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Poppins:wght@200&display=swap');
+
+        html,
+        body,
+        p,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        a,
+        div {
+            margin: 0;
+            padding: 0;
+            border: none;
+            font-family: 'Poppins', sans-serif !important;
+        }
+
+        body {
+            font-size: 15px;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            -webkit-user-select: none;
+            -webkit-text-size-adjust: none;
+            -webkit-touch-callout: none;
+            line-height: 1;
+            background-color: transparent !important;
+        }
+
+        body::-webkit-scrollbar {
+            display: none;
+        }
+
+        .private {
+            display: none;
+            border: none;
+            text-align: center;
+            text-decoration: none;
+            margin: 20px auto 4px auto;
+            cursor: pointer;
+            width: 60%;
+            letter-spacing: 0.7px;
+            font-size: 14px;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 10px;
+            color: #337ab7;
+            display: none !important;
+        }
+
+        .button2 {
+            background-color: #008CBA;
+        }
+
+        .button3 {
+            background-color: #f44336;
+        }
+
+        .button5 {
+            background-color: #555555;
+        }
+
+
+        div#userWelcomeInfo center {
+            color: #fff;
+            font-weight: bold;
+            padding: 0;
+        }
+
+        div#userWelcomeInfo {
+            padding: 0;
+            margin: 0;
+            font-size: 15px;
+            height: 100%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-start;
+            flex-direction: column;
+        }
+
+        div#userWelcomeInfo h6 {
+            color: #fff;
+            text-align: left;
+            margin-top: 26px;
+        }
+
+        div#userWelcomeInfo center h5 {
+            color: #fff;
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin: 0;
+        }
+
+        div#lblGreetings {
+            margin-top: 0;
+            padding: 0;
+            font-size: 16px;
+            height: 100%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-start;
+            flex-direction: column;
+            color: #fff;
+            text-transform: uppercase;
+            font-style: normal;
+            font-weight: 700;            
+        }
+
+        .idcard {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            height: 100%;
+        }
+
+        .idcard center {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="idcard">
+        <div id="lblGreetings">MEMBER CARD</div>
+        <center>
+            <div id="userWelcomeInfo">
+            </div>
+            <div id="profil"></div>
+            <a class="private" data-offline="true" data-params="" data-state="my-account" target="_top"
+                href="javascript:void(0);">Edit Profil</a>
+            <label id="greeting"></label>
+        </center>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script>
+        // JS untuk customer
+        var customer = parent.angular.element(parent.document.body).injector().get('Customer').customer;
+        console.log("customer object");
+        if (customer && customer.isLoggedIn) {
+            var welcomeStr = "<center><h5>" + customer.firstname + " " + customer.lastname;
+            document.getElementById("userWelcomeInfo").innerHTML = welcomeStr;
+            // document.getElementById("userWelcomeInfo").innerHTML=customerImg;
+        }
+
+        var x = document.getElementsByClassName("private");
+        var i;
+        for (i = 0; i < x.length; i++) {
+            if (customer && customer.isLoggedIn === true)
+                x[i].style.display = "block";
+
+        }
+
+        var x = document.getElementsByClassName("guest");
+        var i;
+        for (i = 0; i < x.length; i++) {
+            if (customer && customer.isLoggedIn === true)
+                x[i].style.display = "none";
+
+        }
+
+        // Akhir JS untuk customer
+        var inAppLinks = document.querySelectorAll("a[data-state]");
+        [].forEach.call(inAppLinks, function (el) {
+            el.href = "javascript:void(0);";
+            el.addEventListener("click", function () {
+                parent.postMessage("state-go=state:" + el.attributes["data-state"].value + ",offline:" + el.attributes["data-offline"].value + "," + el.attributes["data-params"].value + "", "*");
+            });
+        });
+    </script>
+</body>
+</html>

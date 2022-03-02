@@ -1,0 +1,307 @@
+1 - Source Seperti biasa, pada bagian header aplikasi akan ditampilkan user yang login, ucapan selamat datang, dan satu buah tombol Booking Now. Silakan kopi source code HTML yang diunggah di Member Area dan tempatkan pada block pertama ini, yakni Source
+Code.
+
+<html>
+
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" name="viewport">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="IE=8" http-equiv="X-UA-Compatible">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <title>Homepage</title>
+    <style type="text/css">
+        <style>@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Poppins:wght@200&display=swap');
+        html,
+        body,
+        p,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        a,
+        div {
+            margin: 0;
+            padding: 0;
+            border: none;
+            font-family: 'Poppins', sans-serif !important;
+        }
+        
+        body {
+            font-size: 15px;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            -webkit-user-select: none;
+            -webkit-text-size-adjust: none;
+            -webkit-touch-callout: none;
+            line-height: 1;
+            background-color: transparent !important;
+            background-image: url(https://justapp.id/member/halaman/unggah/article/ab3be5873d839cd7826a6f89941fa2a4slider1-removebg-preview.png);
+            background-position: right bottom !important;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        
+        body::-webkit-scrollbar {
+            display: none;
+        }
+        
+        .private {
+            display: none;
+            border: none;
+            text-align: center;
+            text-decoration: none;
+            margin: 20px auto 4px auto;
+            cursor: pointer;
+            width: 60%;
+            letter-spacing: 0.7px;
+            font-size: 14px;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 10px;
+            color: #337ab7;
+            display: none !important;
+        }
+        
+        .button2 {
+            background-color: #008CBA;
+        }
+        
+        .button3 {
+            background-color: #f44336;
+        }
+        
+        .button5 {
+            background-color: #555555;
+        }
+        
+        div#userWelcomeInfo center {
+            color: #f25070;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 0 0 0 20px;
+        }
+        
+        div#userWelcomeInfo {
+            padding: 0;
+        }
+        
+        div#userWelcomeInfo h6 {
+            color: #000;
+            text-align: left;
+            margin-top: 26px;
+        }
+        
+        div#userWelcomeInfo center h5 {
+            color: #387093;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: capitalize;
+            text-align: left;
+        }
+        
+        div#lblGreetings {
+            margin-top: 50px;
+            padding: 0 0 0 20px;
+            font-size: 15px;
+        }
+        
+        .booking a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        .booking a:hover {
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .booking {
+            margin: 0 20px;
+            background-color: #de1b51;
+            width: 35%;
+            padding: 10px;
+            text-align: center;
+            color: #fff !important;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="lblGreetings"></div>
+    <center>
+        <div id="userWelcomeInfo">
+        </div>
+        <div id="profil"></div>
+        <a class="private" data-offline="true" data-params="" data-state="my-account" target="_top" href="javascript:void(0);">Edit Profil</a>
+        <label id="greeting"></label>
+    </center>
+    <div class="booking">
+        <a data-offline="false" data-params="value_id:188402" data-state="booking-view">Booking Now</a>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script>
+        // JS untuk customer
+        var customer = parent.angular.element(parent.document.body).injector().get('Customer').customer;
+        console.log("customer object");
+        if (customer && customer.isLoggedIn) {
+            var welcomeStr = "<center><h5>" + customer.firstname + " " + customer.lastname + " <br/>";
+            document.getElementById("userWelcomeInfo").innerHTML = welcomeStr;
+            // document.getElementById("userWelcomeInfo").innerHTML=customerImg;
+        }
+
+        var x = document.getElementsByClassName("private");
+        var i;
+        for (i = 0; i < x.length; i++) {
+            if (customer && customer.isLoggedIn === true)
+                x[i].style.display = "block";
+
+        }
+
+        var x = document.getElementsByClassName("guest");
+        var i;
+        for (i = 0; i < x.length; i++) {
+            if (customer && customer.isLoggedIn === true)
+                x[i].style.display = "none";
+
+        }
+
+        // Akhir JS untuk customer
+        var inAppLinks = document.querySelectorAll("a[data-state]");
+        [].forEach.call(inAppLinks, function(el) {
+            el.href = "javascript:void(0);";
+            el.addEventListener("click", function() {
+                parent.postMessage("state-go=state:" + el.attributes["data-state"].value + ",offline:" + el.attributes["data-offline"].value + "," + el.attributes["data-params"].value + "", "*");
+            });
+        });
+    </script>
+    <script>
+        var myDate = new Date();
+        var hrs = myDate.getHours();
+
+        var greet;
+
+        if (hrs < 12)
+            greet = 'Good Morning';
+        else if (hrs >= 12 && hrs <= 17)
+            greet = 'Good Afternoon';
+        else if (hrs >= 17 && hrs <= 24)
+            greet = 'Good Evening';
+
+        document.getElementById('lblGreetings').innerHTML =
+            '<b>' + greet + '</b>';
+    </script>
+</body>
+
+</html>
+
+2 - Text Blok kedua adalah Text. Bagian ini akan menampilkan judul untuk Text-3.
+<h2><strong>Upcoming Schedule</strong></h2>
+<p><a data-offline="true" data-params="value_id:188693" data-state="form2-home">View All</a></p>
+
+3 - Text Text-3 berisi konten dari judul yang ditambahkan pada blok Text-2. Perlu diperhatikan terkait pengisian konten, baik nama dokter, spesialisasi, dan waktu booking. Model penulisan code harus seperti contoh di bawah ini. Kesalahan penulisan dan
+tata uratan tag mungkin akan berpengaruh pada tampilan aplikasi.
+<p><a data-offline="false" data-params="value_id:193812" data-state="catalogpro-home"><strong>Dr. Aries Rutung</strong>Cardiovascular<span>March <sup>2nd</sup> 2022</span></a></p>
+<p><a data-offline="true" data-params="value_id:193813" data-state="places-list"><strong>Dr. Fitria</strong>Physicologist<span>March <sup>3th</sup> 2022</span></a></p>
+<p><a data-offline="false" data-params="value_id:193813" data-state="places-list-map"><strong>Dr. Jhon Doe</strong>Physicologist<span>March <sup>6th</sup> 2022</span></a></p>
+<p><a data-offline="true" data-params="value_id:193813" data-state="places-categories"><strong>Dr. Maria</strong>Physicologist<span>March <sup>9th</sup> 2022</span></a></p>
+<p><a data-offline="true" data-params="value_id:193813" data-state="places-list"><strong>Dr. Quia Lore</strong>Physicologist<span>March <sup>10th</sup> 2022</span></a></p>
+<p><a data-offline="true" data-params="value_id:193480" data-state="folder2-category-list"><strong>Dr. Sania</strong>Physicologist<span>March <sup>11th</sup> 2022</span></a></p>
+
+4 - Text Blok keempat adalah Text. Bagian ini akan menampilkan judul untuk Text-5.
+<h2><strong>Categories</strong></h2>
+<p><a data-offline="true" data-params="value_id:188693" data-state="form2-home">View All</a></p>
+
+5 - Text Text-5 berisi konten dari judul yang ditambahkan pada blok Text-4. Bagian ini akan menampilkan slider kecil yang berwarna merah yang merupakan kategori layanan. Berikut ini contoh kode yang digunakan.
+<p><a data-offline="true" data-params="value_id:188523" data-state="places-list">Cardiology</a></p>
+<p><a data-offline="true" data-params="value_id:188523" data-state="places-categories">Psychologist</a></p>
+<p><a data-offline="false" data-params="value_id:188411" data-state="appointment-view">Quick Test</a></p>
+<p><a data-offline="false" data-params="value_id:188411" data-state="appointment-view">Viralogist</a></p>
+<p><a data-offline="true" data-params="value_id:188523" data-state="places-list">Surgeon</a></p>
+<p><a data-offline="true" data-params="value_id:188523" data-state="places-categories">Pediatrician</a></p>
+<p><a data-offline="false" data-params="value_id:188411" data-state="appointment-view">Radiologists</a></p>
+<p><a data-offline="false" data-params="value_id:188411" data-state="appointment-view">Orthodontist</a></p>
+
+6 - Text Blok keenam adalah Text. Bagian ini akan menampilkan judul untuk Text-7 sampai dengan Text-11.
+<h2><strong>Top Doctors</strong></h2>
+<p><a data-offline="true" data-params="value_id:188693" data-state="form2-home">View All</a></p>
+
+7 - Text Blok ini agak berbeda dengan blok yang lain karena menggunakan gambar yang diunggah menggunakan icon gambar pada bagian header blok. Jadi, gambar pada blok ini tidak ditambahkan menggunakan CSS sebagaimana blok-blok yang lain. Silakan terapkan
+hal yang sama untuk Text-8 sampai dengan Text-11.
+<p><a data-offline="false" data-params="value_id:193813" data-state="places-list-map"><strong>Dr. Jhon Doe</strong>Physicologist***** (24)</a></p>
+
+8 - Text
+<p><a data-offline="true" data-params="value_id:193813" data-state="places-list"><strong>Dr. Fitria Dole</strong>Cardio***** (38)</a></p>
+
+9 - Text
+<p><a data-offline="true" data-params="value_id:193813" data-state="places-categories"><strong>Dr. Maria</strong>Physicologist***** (74)</a></p>
+
+10 - Text
+<p><a data-offline="true" data-params="value_id:193813" data-state="places-list"><strong>Dr. Quia Lore</strong>Physicologist***** (200)</a></p>
+
+11 - Text
+<p><a data-offline="true" data-params="value_id:193480" data-state="folder2-category-list"><strong>Dr. Sania</strong>Physicologist***** (350)</a></p>
+
+12 - Text Blok kedua belas adalah Text. Bagian ini akan menampilkan judul untuk Text-13.
+<h2><strong>Our Medical Service</strong></h2>
+<p><a data-offline="true" data-params="value_id:188523" data-state="places-list">View All</a></p>
+
+13 - Text Text-13 berisi konten dari judul yang ditambahkan pada blok Text-12. Silakan ubah gambar yang digunakan pada baris kode di bawah ini dengan mengganti link gambar yang digunakan. Selain gambar, silakan ubah setiap judul slider yang berada di
+dalam tag <strong></strong> dan deskripsi slider antara penutup tag strong (</strong>) dan penutup tag a (</a>). Usahakan judul dan deskripsi tidak terlalu panjang. Silakan perhatikan baris kode di bawah ini sebagai contoh.
+<p>
+    <a data-offline="false" data-params="value_id:188413" data-state="mcommerce-category-list"> <img alt="61baf3c512900.png" src="https://justapp.id/member/halaman/unggah/article/772f7b98b0663a9ee7212f474ce76cedservice_1.png" /></a> <a data-offline="false" data-params="value_id:188413" data-state="mcommerce-category-list"><strong>Plastic Surgery</strong>Lipsum dipakai untuk mendemostrasikan elemen grafis.</a></p>
+<p>
+    <a data-offline="false" data-params="value_id:188413" data-state="mcommerce-cart-view"> <img alt="61baf3c512900.png" src="https://justapp.id/member/halaman/unggah/article/fc9a2911f140b1c337096a055bf986cdservice_2.png" /></a> <a data-offline="false" data-params="value_id:188413" data-state="mcommerce-cart-view"><strong>Dental</strong>Lipsum dipakai untuk mendemostrasikan elemen grafis.</a></p>
+<p>
+    <a data-offline="false" data-params="value_id:188411" data-state="appointment-booked"> <img alt="61baf3c512900.png" src="https://justapp.id/member/halaman/unggah/article/0fa13014d19df814e5aa2389f7a155daservice_3.png" /></a> <a data-offline="false" data-params="value_id:188411" data-state="appointment-booked"><strong>Eye Specialist</strong>Lipsum dipakai untuk mendemostrasikan elemen grafis.</a></p>
+<p>
+    <a data-offline="false" data-params="value_id:188411" data-state="appointment-booked"> <img alt="61baf3c512900.png" src="https://justapp.id/member/halaman/unggah/article/0b32810680900a5af0ab1187f4d7371cservice_4.png" /></a> <a data-offline="false" data-params="value_id:188411" data-state="appointment-booked"><strong>Neurology</strong>Lipsum dipakai untuk mendemostrasikan elemen grafis.</a></p>
+<p>
+    <a data-offline="false" data-params="value_id:188413" data-state="mcommerce-category-list"> <img alt="61baf3c512900.png" src="https://justapp.id/member/halaman/unggah/article/acb208541afb4bf573e5f032041ed367service_5.png" /></a> <a data-offline="false" data-params="value_id:188413" data-state="mcommerce-category-list"><strong>Gynecology</strong>Lipsum dipakai untuk mendemostrasikan elemen grafis.</a></p>
+<p>
+    <a data-offline="false" data-params="value_id:188413" data-state="mcommerce-cart-view"> <img alt="61baf3c512900.png" src="https://justapp.id/member/halaman/unggah/article/9ebb8e51653048e0c1979f9f69f79c4dservice_6.png" /></a> <a data-offline="false" data-params="value_id:188413" data-state="mcommerce-cart-view"><strong>Surgical</strong>Lipsum dipakai untuk mendemostrasikan elemen grafis.</a></p>
+
+14 - Text Blok keempat belas adalah Text. Bagian ini akan menampilkan judul untuk Slider-15.
+<h2><strong>Our Service Gallery </strong></h2>
+<p><a data-offline="true" data-params="value_id:188523" data-state="places-list">View All</a></p>
+
+15 - Slider Tambahkan beberapa gambar sebagai galeri layanan yang akan dijadikan slider. Direkomendasikan menggunakan gambar 16:9. 16 - Text Blok keenambelas adalah Text. Bagian ini akan menampilkan judul untuk Text-17.
+<h2><strong>Stories, Tips &amp; Latest News</strong></h2>
+<p><a data-offline="true" data-params="value_id:188523" data-state="places-list">View All</a></p>
+
+17 - Text Block ini akan menampilkan konten untuk judul Text-16. Silakan ubah judul dan deskripsi slider untuk masing-masing card seperi contoh di bawah ini.
+<p><a data-offline="false" data-params="value_id:193812" data-state="catalogpro-home"><strong>How To Handle Patient Body In MRI Pressor Heles</strong>Lipsum dipakai untuk mendemostrasikan elemen grafis.</a></p>
+<p><a data-offline="true" data-params="value_id:193813" data-state="places-list"><strong>Cleveland Clinic Forecasts Latest Cardio Surge Will Soon Peak</strong>Lipsum dipakai untuk mendemostrasikan elemen grafis.</a></p>
+<p><a data-offline="false" data-params="value_id:193813" data-state="places-list-map"><strong>More Than Half Of States Will See Nursing</strong>Lipsum dipakai untuk mendemostrasikan elemen grafis.</a></p>
+<p><a data-offline="true" data-params="value_id:193813" data-state="places-categories"><strong>Patients Clog Hospitals, Spur More Procedure Delays</strong>Lipsum dipakai untuk mendemostrasikan elemen grafis.</a></p>
+
+18 - Text Blok kedelapan belas adalah Text. Bagian ini akan menampilkan judul untuk Text-19.
+<h2><strong>Our Partners</strong></h2>
+<p><a data-offline="true" data-params="value_id:188523" data-state="places-list">View All</a></p>
+
+19 - Text Blok ini akan menampilkan gambar slider yang akan dijadikan konten untuk Text-18. Silakan sesuaikan link gambar dengan kebutuhan. Berikut ini adalah contoh logo dari sponsor.
+<p><img alt="61baf3c512900.png" src="https://builder.justapp.id/images/application/15092/features/custom_page/188401/621da4df09993.png" />
+    <img alt="61baf3c512900.png" src="https://builder.justapp.id/images/application/15092/features/custom_page/188401/621da51ebb684.png" />
+    <img alt="61baf3c512900.png" src="https://builder.justapp.id/images/application/15092/features/custom_page/188401/621da54e78d89.png" />
+    <img alt="61baf3c512900.png" src="https://builder.justapp.id/images/application/15092/features/custom_page/188401/621da55f3ef02.png" />
+    <img alt="61baf3c512900.png" src="https://builder.justapp.id/images/application/15092/features/custom_page/188401/621da4df09993.png" />
+    <img alt="61baf3c512900.png" src="https://builder.justapp.id/images/application/15092/features/custom_page/188401/621da4df09993.png" />
+</p>
+
+20 - Text Blok kedua puluh adalah Text. Bagian ini akan menampilkan judul untuk Text-21.
+<h2><strong>Discounts</strong></h2>
+<p><a data-offline="false" data-params="value_id:188405" data-state="discount-list">View All</a></p>
+
+21 - Text Blok ini menampilkan konten untuk Text-20, yaitu slider yang menginformasikan promo layanan.
+<p><a data-offline="false" data-params="value_id:188405,promotion_id:1868" data-state="discount-view">PROMO 10%</a></p>
+<p><a data-offline="false" data-params="value_id:188405,promotion_id:1878" data-state="discount-view">New Year, Healthy Me</a></p>
+<p><a data-offline="false" data-params="value_id:188405,promotion_id:1879" data-state="discount-view">New Year, Healthy Me</a></p>
+<p><a data-offline="false" data-params="value_id:188405,promotion_id:1860" data-state="discount-view">Gratis Vitamin C</a></p>
+<p><a data-offline="false" data-params="value_id:188405,promotion_id:1868" data-state="discount-view">PROMO 10%</a></p>

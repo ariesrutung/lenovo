@@ -1,0 +1,80 @@
+loader {
+    animation: 2s linear 0s normal none infinite running spin;
+    -webkit-animation: 2s linear 0s normal none infinite running spin;
+    -ms-animation: 2s linear 0s normal none infinite running spin;
+    border-color: #ed4f4f transparent transparent;
+    border-image: none;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 3px;
+    display: block;
+    height: 100px;
+    left: 50%;
+    margin-left: -75px;
+    margin-top: -75px;
+    position: relative;
+    top: 50%;
+    width: 100px;
+    z-index: 1001;
+}
+
+.apus-page-loading #loader:before {
+    animation: 3s linear 0s normal none infinite running spin;
+    -webkit-animation: 3s linear 0s normal none infinite running spin;
+    -ms-animation: 3s linear 0s normal none infinite running spin;
+    border-color: #ed4f4f transparent transparent;
+    border-image: none;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 3px;
+    bottom: 5px;
+    content: "";
+    left: 5px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+.apus-page-loading #loader:after {
+    animation: 1.5s linear 0s normal none infinite running spin;
+    -webkit-animation: 1.5s linear 0s normal none infinite running spin;
+    -ms-animation: 1.5s linear 0s normal none infinite running spin;
+    border-color: #ed4f4f transparent transparent;
+    border-image: none;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 3px;
+    bottom: 15px;
+    content: "";
+    left: 15px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+http://demoapus-wp.com/butcher/butcher-meat/wp-content/uploads/2016/05/tab-hv10.png
+http://demoapus-wp.com/butcher/butcher-meat/wp-content/uploads/2016/05/tab10.png
+
+http://demoapus-wp.com/butcher/butcher-meat/wp-content/uploads/2016/05/tab-hv9.png
+http://demoapus-wp.com/butcher/butcher-meat/wp-content/uploads/2016/05/tab09.png
+http://demoapus-wp.com/butcher/butcher-meat/wp-content/uploads/2016/05/tab08.png
+http://demoapus-wp.com/butcher/butcher-meat/wp-content/uploads/2016/05/tab-hv8.png
+http://demoapus-wp.com/butcher/butcher-meat/wp-content/uploads/2016/05/tab07.png
+http://demoapus-wp.com/butcher/butcher-meat/wp-content/uploads/2016/05/tab-hv7.png
+http://demoapus-wp.com/butcher/butcher-meat/wp-content/uploads/2016/05/tab-hv6.png
+http://demoapus-wp.com/butcher/butcher-meat/wp-content/uploads/2016/05/tab06.png
+http://demoapus-wp.com/butcher/butcher-meat/wp-content/uploads/2016/05/tab-hv5.png
+http://demoapus-wp.com/butcher/butcher-meat/wp-content/uploads/2016/05/tab05.png
+
+http://demoapus-wp.com/butcher/butcher-meat/wp-content/uploads/2016/05/tab-hv4.png
+http://demoapus-wp.com/butcher/butcher-meat/wp-content/uploads/2016/05/tab04.png
+http://demoapus-wp.com/butcher/butcher-meat/wp-content/uploads/2016/05/tab-hv3.png
+http://demoapus-wp.com/butcher/butcher-meat/wp-content/uploads/2016/05/tab03.png
+http://demoapus-wp.com/butcher/butcher-meat/wp-content/uploads/2016/05/tab02.png
+http://demoapus-wp.com/butcher/butcher-meat/wp-content/uploads/2016/05/tab-hv2.png
+http://demoapus-wp.com/butcher/butcher-meat/wp-content/uploads/2016/05/tab01-1.png
+http://demoapus-wp.com/butcher/butcher-meat/wp-content/uploads/2016/05/tab-hv1.png
+http://demoapus-wp.com/butcher/butcher-meat/wp-content/uploads/2016/05/icon04.png
+http://demoapus-wp.com/butcher/butcher-meat/wp-content/uploads/2016/05/icon03.png
+http://demoapus-wp.com/butcher/butcher-meat/wp-content/uploads/2016/05/icon02.png
+http://demoapus-wp.com/butcher/butcher-meat/wp-content/uploads/2016/05/icon01.png

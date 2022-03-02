@@ -1,0 +1,218 @@
+1 - Source Code
+Isi blok pertama dengan Source Code. Frame height biarkan otomatis, tidak perlu diubah. Source code untuk blok pertama bisa Anda dapat di Member Area dengan nama Source Code HTML Aplikasi Gelora Mobile.
+
+2 - Text
+Tambahkan blok Text - Internal Link dan arahkan ke modul mana yang akan dituju ketika menu ini diklik. Buat sebanyak 3 buah menu. Link menuju modul lain di dalam aplikasi akan terlihat seperti berikut ini.
+<p><a data-offline="false" data-params="value_id:21037" data-state="booking-view">Tentang</a></p>
+<p><a data-offline="false" data-params="value_id:21037" data-state="booking-view">Pengurus</a></p>
+<p><a data-offline="false" data-params="value_id:21037" data-state="booking-view">Kegiatan</a></p>
+
+3 - Text
+Tambahkan blok Text - Internal Link dan arahkan ke modul mana yang akan dituju ketika menu ini diklik. Buat sebanyak 3 buah menu, sama seperti Text 2. Link menuju modul lain di dalam aplikasi akan terlihat seperti berikut ini.
+<p><a data-offline="false" data-params="value_id:21037" data-state="booking-view">Video</a></p>
+<p><a data-offline="false" data-params="value_id:21037" data-state="booking-view">Ebook</a></p>
+<p><a data-offline="false" data-params="value_id:21037" data-state="booking-view">Donasi</a></p>
+
+
+4 - Text
+Text yang ke-4 ini akan digunakan untuk membuat judul untuk slider GELORA TERKINI. Silakan buat sebuah tulisan dengan format H2 dan bold. Isi sesuai dengan kebutuhan. Sebagai contoh, judul yang digunakan pada bagian slider ini akan terlihat seperti tampilan di bawah ini.
+<h2><strong>GELORA TERKINI</strong></h2>
+
+5 - Slider
+Tambahkan beberapa gambar yang akan dijadikan slider pada bagian ini.
+
+6 - Text
+Buat judul dan link yang digunakan sebagai judul pada slider Text 7. Silakan buat sebuah tulisan dengan format H2 dan bold. Sebagai contoh, baris kodenya akan terlihat seperti di bawah ini.
+<h2><strong>ARTIKEL</strong></h2>
+<p><a data-offline="false" data-params="value_id:21037" data-state="booking-view">Lihat Semua</a></p>
+
+
+7 - Text
+Ini merupakan konten untuk judul Text 6 dalam bentuk slider. Silakan isi link ke menua lain di aplikasi sebanyak 4 link. Jangan lupa arahkan linknya ke modul yang akan dituju. Bagian ini akan diubah menjadi card slider. Baris kodenya bisa dilihat di bawah ini.
+<p><a data-offline="false" data-params="" data-state="home">1 Visi, 7 Aksi</a></p>
+<p><a data-offline="false" data-params="value_id:21037" data-state="booking-view">Geloranomics, Sebuah Ide Awal</a></p>
+<p><a data-offline="true" data-params="value_id:195545" data-state="cms-view">Hari Kesaktian Pancasila Momentum Kemenangan Ideologi Negara dan Kesetiaan pada Bangsa</a></p>
+<p><a data-offline="true" data-params="" data-state="my-account">Geloranomics, Ekowisata dan Kemilau &lsquo;Invisible Export&rsquo; Indonesia di Masa Depan</a></p>
+
+
+Catatan Penting:
+Jumlah blok yang digunakan harus sama, yakni 7.
+Jangan menambahkan gambar apapun pada masing-masing blok.
+Jangan menyisipkan blok lain di dalam blok sesuai petunjuk di atas.
+Silakan arahkan link di setiap baris kode di atas ke modul lain yang Anda gunakan di dalam aplikasi.
+Detail penggunaan dan arti baris kode yang digunakan tidak akan diulas secara mendalam.
+
+
+Mengganti gambar:
+Untuk mengganti gambar pada header aplikasi, silakan temukan baris kode di bawah ini dan ganti link gambar sesuai kebutuhan Anda. Ukuran gambar yang digunakan adalah 1413px*518px. Gambar ini terletak pada baris CSS berikut:
+
+ion-header-bar.bar-custom.bar.bar-header .title {
+    background-image: url(https://www.partaigelora.id/wp-content/uploads/2020/06/Logo-Horizontal@4x.png) !important;
+    background-repeat: no-repeat !important;
+    background-size: 50% !important;
+    background-position: center !important;
+    margin: 0 !important;
+    height: 100%;
+}
+
+Untuk mengganti logo Partai Gelora pada ID Card, silakan temukan baris kode di bawah ini. Ukuran gambar yang digunakan adalah 573px * 776px.
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(3) iframe.sb-cms-source {
+    border: 0;
+    width: 100%;
+    overflow: hidden;
+    height: 25vh !important;
+    background-image: url(https://justapp.id/member/halaman/unggah/article/aef304a4af320fd5164c1d8437ae1e2clogo-utama.png);
+    background-repeat: no-repeat;
+    background-size: 25%;
+    background-position: left top;
+}
+
+
+Untuk mengganti gambar peta Indonesia pada ID Card, silakan temukan baris kode di bawah ini. Ukuran gambar yang digunakan adalah 1200px * 439px.
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(3) .card.no-shadow {
+    background-color: #2fc4ef !important;
+    padding: 10px;
+    border-radius: 10px;
+    background: #0187a3;
+    background-image: url(https://justapp.id/member/halaman/unggah/article/16aed7d0790fad2a36a74d10815efba4peta-Indonesia.png);
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: top 10px right;
+}
+
+Untuk mengganti tulisan MEMBER CARD pada ID Card, silakan ubah pada Source Code HTML Aplikasi Gelora Mobile.
+
+Mengubah icon menu Tentang
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(4) .content.ng-binding p:nth-child(1) a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background-image: url(https://justapp.id/member/halaman/unggah/article/82d9bacc2a8291b7efdaa25d3806b134informasi.png);
+    background-position: center top 5px;
+    background-repeat: no-repeat;
+    background-size: 60%;
+}
+
+Mengubah icon menu Pengurus
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(4) .content.ng-binding p:nth-child(2) a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background-image: url(https://justapp.id/member/halaman/unggah/article/7fd0b9ec5c3389b4836628057451827bmember.png);
+    background-position: center top 5px;
+    background-repeat: no-repeat;
+    background-size: 60%;
+}
+
+Mengubah icon menu Kegiatan
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(4) .content.ng-binding p:nth-child(3) a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background-image: url(https://justapp.id/member/halaman/unggah/article/be50dbb9caed986c63130a0d7a0a9d96kegiatan.png);
+    background-position: center top 5px;
+    background-repeat: no-repeat;
+    background-size: 60%;
+}
+
+Mengubah icon menu Video
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(5) .content.ng-binding p:nth-child(1) a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background-image: url(https://justapp.id/member/halaman/unggah/article/a2ed0727860af93b1684f9df7f409b17video.png);
+    background-position: center top 5px;
+    background-repeat: no-repeat;
+    background-size: 60%;
+}
+
+Mengubah icon menu Ebook
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(5) .content.ng-binding p:nth-child(2) a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background-image: url(https://justapp.id/member/halaman/unggah/article/8e1321aee6f667ffe096873e896044d3ebook.png);
+    background-position: center top 5px;
+    background-repeat: no-repeat;
+    background-size: 60%;
+}
+
+Mengubah icon menu Tentang
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(4) .content.ng-binding p:nth-child(1) a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background-image: url(https://justapp.id/member/halaman/unggah/article/82d9bacc2a8291b7efdaa25d3806b134informasi.png);
+    background-position: center top 5px;
+    background-repeat: no-repeat;
+    background-size: 60%;
+}
+
+Mengubah icon menu Donasi
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(5) .content.ng-binding p:nth-child(3) a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background-image: url(https://justapp.id/member/halaman/unggah/article/b490333f34f80bc331e5a1fb8abd5d6fdonasi.png);
+    background-position: center top 5px;
+    background-repeat: no-repeat;
+    background-size: 60%;
+}
+
+Untuk mengganti gambar latar belakang pada card pertama slider ARTIKEL, silakan ubah url yang dipakai pada baris kode di bawah ini. Ukuran gambar yang dipakai adalah 800px * 533px.
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(9) .card .content.ng-binding p:nth-child(1) {
+    width: 100% !important;
+    min-width: 58% !important;
+    height: 138px;
+    margin: 0 1%;
+    background-color: #2fc4ef !important;
+    border-radius: 10px;
+    display: flex !important;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    background-image: url(https://builder.justapp.id/images/application/1351/features/custom_page/195545/620aa6f5d5785.jpg) !important;
+    background-position: center !important;
+    background-size: cover !important;
+}
+
+Sedangkan untuk card selanjutnya secara berturut-turut, silakan temukan baris kode di bawah ini.
+
+Card kedua
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(9) .card .content.ng-binding p:nth-child(2)
+
+Card ketiga
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(9) .card .content.ng-binding p:nth-child(3)
+
+Card keempat
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(9) .card .content.ng-binding p:nth-child(4)
