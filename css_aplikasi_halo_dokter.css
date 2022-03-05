@@ -4235,7 +4235,7 @@ ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(21) .item.
     padding: 0;
 }
 
-ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(21) .content.ng-binding {
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(21) .content.ng-binding p {
     padding: 0;
     display: flex;
     margin-bottom: 20px;
