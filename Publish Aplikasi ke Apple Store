@@ -1,0 +1,160 @@
+Langkah-langkah Publish App ke App Store
+
+Untuk mengunggah aplikasi ke *Apple Store*, Anda harus melakukannya secara manual. Berbeda dengan *Play Store* yang memiliki fasilitas untuk menghasilkan _file_ _.apk_ dan _.aab_, *JustApp* tidak menyediakan _file .ipa_ untuk IOS. Untuk membuat _file .ipa_ yang akan diunggah, Anda membutuhkan beberapa persiapan di bawah ini, yakni:
+
+*_Source Code_*
+Untuk mendapatkan _source code_ aplikasi yang akan diunggah ke *Apple Store*, silakan masuk ke menu/tab *Publication* - *Mobile Source Codes* - *Generate The Source Code* - Pilih *iPhone Version (No Ads)* di editor _builder_ Anda.
+
+*Note:*
+Sesuai dengan kebijakan terbaru *Apple*, Anda diwajibkan menggunakan _source code_ yang tanpa iklan karena aplikasi beriklan akan ditolak.
+
+
+*Perangkat*
+Berbeda dengan aplikasi *Android*, aplikasi IOS harus dibuat menggunakan perangkat bersistem operasi *Macintos* (*MacOS*). Oleh karena itu, peralatan yang harus Anda siapkan ingin membuat _file_ .ipa atau mengunggah aplikasi ke *Apple Store* adalah *Mac*book, atau i*Mac*, atau *Mac Pro*, atau yang lain. Meskipun demikian, jika Anda adalah pengguna setia *Windows*, Anda dapat menginstal *MacOS* secara virtual. Lazimnya orang-orang menggunakan *VirtualBox*. Artikel ini tidak akan menyelam *virtualBox* secara dalam. Anda bisa mencari informasi mengenai sistem virtualisasi di *Google* atau *Youtube*.
+
+*MacOS* yang digunakan pada tutorial ini adalah *High Siera*. Anda dapat menggunakan versi terbaru.
+
+
+*Xcode*
+Setelah memiliki *MacOS*, selanjutnya install atau siapkan *Xcode* untuk membuka dan melakukan compile _source code_ aplikasi IOS yang telah Anda unduh pada poin pertama di atas. Versi *Xcode* pada tutorial ini adalah 11.2
+
+
+4. Sertifikat (Certificates)
+Untuk mengunggah aplikasi ke *Apple Store* di bawah 1 Akun Developer membutuhkan 4 buah _file_, yakni 1 _file_ yang akan digunakan untuk menandatangani sertifikat dan 3 lainnya adalah sertifikat. Dari keempat _file_ tersebut, 2 diantaranya (_file_ yang digunakan untuk menandantangi sertifikat dan 1 sertifikat) akan Anda gunakan setiap kali Anda mengunggah aplikasi ke App Store. Jadi, kedua _file_ tersebut akan digunakan oleh developer yang sama setiap kali mengunggah aplikasi. Sementara itu, 2 _file_ sertifikat lainnya harus Anda buat setiap kali Anda ingin mengunggah aplikasi baru.
+
+
+a. Dua _file_ pertama yang harus dan akan Anda gunakan setiap kali Anda mengunggah aplikasi adalah CertSigningRequest (CSR) dan iOS Distribution Certificate (iOS_Distribution). Kedua _file_ ini akan Anda buat sekali, yakni ketika Anda baru pertama kali mengunggah aplikasi menggunakan akun *Apple Developer* Anda. _File_ CertSigningRequest (CSR) dibuat pada *Mac* (harus menggunakan *MacOS*) melalui Applications > Utilities > Keychain Access. Sedangkan _file_ iOS_Distribution dibuat pada Member Center akun *Apple Developer* Anda melalui developer.apple.com (https://developer.apple.com/account/ios/certificate/certificateList.action).
+
+
+Kedua _file_ di atas harus disimpan dalam folder sertifikat utama pada akun *Apple Developer* *Mac* Anda. Jadi, urutan _file_ tersebut di dalam *Mac* adalah sebagai berikut:
+
+- IOS Apps
+	- Aries Rutung (contoh pemilik akun *Apple Developer*)
+		- Certificates –> _File_ CSR dan iOS_Distribution untuk akun *Apple Developer* milik Aries Rutung harus disimpan di sini setelah Anda membuat keduanya.
+	- Toko Sayur (Aplikasi pertama yang akan dipublish oleh Aries Rutung)
+		- Sertifikat
+		- Screenshoot (tampilan aplikasi).
+
+
+Informasi Penting:
+Anda akan menggunakan _file_ CertSigningRequest (CSR) dan iOS Distribution Certificate (iOS_Distribution) yang sama jika terdapat beberapa aplikasi yang akan diunggah di bawah akun *Apple Developer* yang sama. _File_ CSR hanya dibuat sekali (1 _file_ untuk 1 developer untuk semua aplikasi di bawah developer yang sama). Sekadar info, Keychain Access untuk membuat _file_ CSR di *Mac* berada di Applications > Utilities.
+
+
+b. Dua _file_ lainnya adalah sertifikat Apple Push Services dan *Mobile Provisionning Profile*. Berbeda dengan kedua _file_ sebelumnya, Anda akan membuat kedua _file_ ini masing-masing di setiap aplikasi yang akan diunggah. Susunan kedua _file_ ini jika dibuat seperti dua _file_ sebelumnya adalah sebagi berikut:
+- IOS Apps
+	- Aries Rutung 
+	- Toko Sayur (Contoh aplikasi pertama yang akan dipublish oleh Aries Rutung)
+		- Sertifikat –> sertifikat Apple Push Services dan *Mobile Provisionning Profile* untuk aplikasi Toko Sayur yang akan diunggah di bawah akun Aries Rutung harus disimpan di sini setelah Anda membuat keduanya.
+		- Screenshoot (tampilan aplikasi).
+
+
+5. Screenshoots
+Selanjutnya, sama seperti ketika mengunggah aplikasi ke *Google Play Store*, Anda membutuhkan beberapa gambar tampilan mobile aplikasi Anda. Di *Xcode*, Anda dapat mengikuti langkah di bawah ini untuk mendapatkan gambar tangkapan layar aplikasi. Silakan buka project aplikasi Anda (Anda dapat melakukan drag and drop folder project aplikasi ke *Xcode*). Setelah terbuka, silakan perhatikan pada bagian atas *Xcode* terdapat tulisan IPhone. Pilih jenis perangkat yang akan digunakan untuk mengambil screeshoot. Lazimnya menggunakan Generic iOS device. Selanjutnya, Anda dapat langsung menekan tombol Play di bagian kiri atas layar *Mac*. Untuk mengambil gambar tangkapan layar, silakan tekan tombol CMD+S di keyboard. Lakukan hal yang sama jika Anda ingin mengubah jenis perangkat untuk mengambil gambar. Jangan lupa, selalu menekan tombol Stop jika Anda ingin mengubah model perangkat untuk mengambil gambar tangkapan layar.
+
+
+
+Menyiapkan Sertifikat
+Pada bagian ini Anda akan membuat beberapa _file_ yang dibutuhkan, baik dari sisi akun *Apple Developer* (CertSigningRequest (CSR) dan iOS Distribution Certificate (iOS_Distribution), maupun dari sisi aplikasi yang akan diunggah (sertifikat Apple Push Services dan *Mobile Provisionning Profile*).
+
+Informasi Penting:
+_File_ CertSigningRequest (CSR) dan iOS Distribution Certificate (iOS_Distribution) akan Anda gunakan setiap kali mengunggah aplikasi di bawah akun *Apple Developer* yang sama. Sementara itu, _file_ sertifikat Apple Push Services dan *Mobile Provisionning Profile* akan Anda buat setiap kali mengunggah aplikasi baru.
+
+
+_File_ CertSigningRequest (CSR)
+Untuk membuat _file_ ini, silakan masuk ke Applications > Utilities > Keychain Access > Certificate Assistant > Request a Certificate From a Certificate Authority. Pada jendela Certificate Assistant, silakan masukkan email akun *Apple Developer* Anda pada kolom User Email Address dan nama akun *Apple Developer* pada kolom Common Name. Selanjutnya, pada pilihan Request is: silakan pilih Saved to disk dan akhiri dengan menekan tombol Continue atau tutup jendela yang tampil.
+
+Catatan:
+Anda dapat menggunakan email yang berbeda dengan email akun *Apple Developer*.
+Simpan _file_ CSR di dalam folder dengan struktur IOS Apps - Aries Rutung (Nama Akun developer Anda) - Sertificate sebagaimana dijelaskan pada bagian pembahasan sertifikat di atas.
+
+
+_File_ iOS Distribution Certificate (iOS_Distribution)
+Silakan masuk ke Member Center (https://developer.apple.com/membercenter/index.action) menggunakan akun *Apple Developer* Anda. Selanjutnya, klik menu Certificates, Identifiers & Profiles - Certificates pada menu bagian kiri - Klik tanda + (plus) - pilih iOS Distribution (App Store and Ad Hoc) dan klik Continue. Selanjutnya:
+- Hubungkan _file_ sertifikat iOS Distribution dengan _file_ CSR yang telah Anda buat pada poin sebelumnya. 
+– Unduh _file_ sertifikat iOS Distribution yang telah dibuat.
+– Klik ganda (dua kali) pada _file_ sertifikat iOS Distribution (ios_distribution.cer) yang telah Anda unduh untuk menambahkannya ke dalam Keychain Access.
+
+
+_File_ Sertifikat Apple Push Services
+_File_ ini akan digunakan untuk menambahkan *push notification* dan beberapa layanan lainnya ke dalam aplikasi yang Anda buat. Panduan ini hanya membahas penggunaan _file_ sertifikat Apple Push Services untuk tujuan notifikasi. Caranya, masih di halaman Member Center akun *Apple Developer* Anda, silakan klik menu Identifiers pada bagian kiri dan klik tanda + (plus). Pilih App IDs dan klik tombol Continue. Masukkan nama aplikasi pada kolom Description dan Bundle ID pada kolom Bundle ID. Gulung halaman ke bawah dan pilih *Push Notifications* pada pilihan Capabilities. Selanjutnya, klik Continue, kemudian Register. Pada list yang muncul silakan pilih App ID yang baru saja Anda buat dan klik pada ID tersebut.
+
+Selanjutnya, perhatikan di bagian bawah, yakni *Push Notifications*. Silakan klik Configure. Pada bagian Production SSL Certificate silakan klik Create Certificate. Pilih Choose _File_ dan arahkan ke lokasi di mana Anda menyimpan _file_ CSR (lokasi penyimpanan _file_ CST telah kita bahas pada bagian terdahulu artikel ini). _File_ CSR yang telah Anda buat sebelumnya juga akan digunakan untuk membuat _file_ sertifikat iOS Distribution di akun *Apple Developer* Anda. Unduh _file_ sertifikat Apple Push Services (aps.cer) yang baru Anda buat dan simpan di lokasi (IOS Apps - Toko Sayur (Contoh aplikasi pertama yang akan dipublish oleh Aries Rutung) - Sertifikat –> sertifikat Apple Push Services dan *Mobile Provisionning Profile*) seperti yang telah kita bahas pada bagian Sertifikat di atas. Selanjutnya, klik pada < All Certificates dan klik ganda (dua kali) pada _file_ sertifikat Apple Push Services (aps.cer) untuk menambahkannya ke dalam Keychain Access.
+
+
+_File_ Sertifikat *Mobile Provisionning Profile*
+Masih di Member Center akun *Apple Developer* Anda, silakan klik Profiles pada bagian kiri dan klik pada tanda Plus. Pada tab Distribution, pilih App Store. Pilih App ID aplikasi Anda dan klik Continue. Pilih sertifikat iOS Distribution yang telah terhubung dengan _file_ CSR yang Anda gunakan untuk menandatangani sertifikat Apple Push Services.
+
+Catatan Penting:
+Gunakan _file_ sertifikat iOS Distribution yang telah dikaitkan dengan _file_ CSR untuk menandatangani _file_ aps.cer aplikasi Anda. Jangan lupa, pada saat Anda membuat _file_ aps.cer baru untuk aplikasi yang Anda unggah dengan menggunakan _file_ sertifikat CSR yang lain, Anda harus membuat _file_ _file_ sertifikat *Mobile Provisionning Profile* baru dengan _file_ sertifikat iOS Distribution yang dibuat menggunakan CSR yang sama dan akan digunakan untuk mengunggah pembaharuan aplikasi Anda di *Apple Store*. Klik tombol Continue dan berikan nama untuk _file_ sertifikat Provisionning Profile pada kolom Provisionning Profile Name dan akhiri dengan menekan tombol Continue. Nama _file_ sertifikat Provisionning Profile silakan disesuaikan dengan kebutuhan, sebagai contoh Toko Sayur - Distribution. Unduh _file_ sertifikat Provisionning Profile yang baru saja Anda buat. Simpan _file_ ini pada folder (IOS Apps - Toko Sayur (Contoh aplikasi pertama yang akan dipublish oleh Aries Rutung) - Sertifikat –> sertifikat Apple Push Services dan *Mobile Provisionning Profile*) yang telah ditentukan sebagaimana dibahas pada poin Sertifikat di atas. _File_ ini harus berada di lokasi yang sama dengan _file_ sertifikat Apple Push Services yang telah Anda buat pada poin sebelumnya.
+
+
+Cara Compile Aplikasi iOS:
+Silakan unduh _source code_ iOS aplikasi melalui menu Publication di editor builder Anda. Seharusnya Anda sudah mengunduhnya karena bagian terdahulu artikel ini telah disingggung mengenai _source code_. _File_ yang Anda unduh berupa _file_ zip. Silakan diekstrak terlebih dahulu. Buka folder hasil ekstrak dan klik ganda (dua kali) pada _file_ xxx.xcworkspace. (xxx adalah nama project Anda). Anda akan dialihkan ke *Xcode*, di *Xcode*, klik pada project di bagian kiri layar *Mac* Anda. Klik pada menu Capabilities, kemudian hilangkan tanda centang pada Audio Background Mode jika aplikasi Anda bukan aplikasi musik. Tanda centang pada pilihan Remote Notifications tidak boleh dihilangkan. Klik tab General dan hilangkan tanda centang pada pilihan Automatically manage signing. Pada bagian Signing > Provisioning _file_, silakan pilih _file_ sertifikat Provisionning Profile yang telah Anda buat pada bagian sebelumnya yakni pada Member Center akun *Apple Developer* Anda.
+
+Pada bagian atas *Xcode*, Anda dapat melihat nama project Anda dan tepat disebelahnya tulisan IPhone xxx. (xxx adalah versi IPhone terpilih Anda). Silakan klik pada IPhone dan Anda akan melihat beberapa tipe IPhone. Silakan pilih Generic iOS device. Pada bagian menu *Xcode* (_File_, Edit, dll.) silakan pilih Product > Archive. Anda akan melihat *Xcode* load.. Silakan tunggu *Xcode* selesai melakukan prosesnya.
+
+Setelah proses selesai, akan terbuka sebuah popup dan tombol Distribute App and Validate App. JANGAN MELAKUKAN APAPUN PADA BAGIAN INI!!! Silakan masuk ke bagian Publishing your app steps  dan selesaikan langka-langkahnya. Setelah selesai pada bagian Publishing your app steps, Anda dapat kembali ke halaman Distribute App and Validate App dan ikuti langkah-langkah penyelesainnya berikut ini. Jadi, setelah Anda selesai pada bagian Publishing your app steps, ikuti langkah terkahir berikut untuk menyelesaikan langkah penyiapan aplikasi. Klik Distribute App - pilih iOS App Store dan klik Next. Pilih Upload, kemudian klik Next, pilih _file_ sertifikat iOS Distribution dan _file_ Provisioning Profile aplikasi Anda, akhiri dengan klik Next.
+
+Sebelum klik Upload, pastikan telah menyelesaikan bagian Publishing your app steps di bawah ini. Jika telah selesai, klik Upload. Setelah proses unggah _file_ telah selesai, kembali ke halaman Member Center akun *Apple Developer* Anda pada https://appstoreconnect.apple. Tunggu sekitar 30 menit, Apple akan mengirim _file_ aplikasi ke akun *Apple developer* Anda (Anda akan menerima email dari Apple terkait hal ini). Setelah _file_ muncul di bagian *Apple Developer*, Anda dapat memprosesnya dengan menambahkan _file_ tersebut ke bagian pengiriman. Pilih aplikasi Anda dan klik tombol Done.
+
+ Selanjutnya, pada tab General App Information terdapat beberapa informasi yang perlu Anda ketahui di bawah ini.
+ - App Icon: Icon aplikasi Anda yang akan muncul di App Store. Gambar harus berformat  .png atau jpg, berukuran 1024*1024 px, setiap sudut gambar tidak boleh dibuat bulat.
+ - Rating: Silakan edit rating aplikasi dan pilih seberapa sering masing-masing deskripsi konten tampil di aplikasi
+ - Copyright: Orang atau lembaga yang memiliki hak cipta atas aplikasi. Misalnya Sayur Prafi 2022
+ - Trade Representative Contact Information: Anda bisa menambahkan informasi tambahan yang akan tampil di aplikasi. Informasi ini bersifat opsional dan hanya akan tampil di App Store di Korea.
+ - Routing App Coverage _File_: Menentukan lokasi geografi yang mendukung aplikasi Anda. _File_ untuk bagian routing ini bersifat opsional dan harus berformat .geojson.
+
+Pada bagian App Review Information, isi informasi kontak yang bisa dihubungi pihak Apple bila terdapat masalah dengan proses review aplikasi Anda. Informasi ini tidak tampil di sisi pengguna. Jika Aplikasi yang Anda terdapat beberapa atau seluruh fitur terkunci, silakan buat akun demo untuk dapat login ke aplikasi Anda.
+
+Pada bagian Version Release, pilih Automatically release this version. Selanjutnya, klik Submit for Review. Pada bagian Export Compliance dan Content Rights, pilih No.
+Pada bagian Advertising Identifier, pilih No jika Anda tidak menambahkan iklan ke aplikasi, kemudian klik Submit. Akan tetapi, jika Anda memiliki iklan, silakan pilih Yes - centang bagian Serve Advertisements within the app - centang Limit Ad Tracking setting in iOS - dan akhiri dengan menekan tombol Submit.
+
+Silakan cek di bagian akhir halaman yang tampil dan buat *sertifikat .pem*. Lengkapi informasi yang diminta untuk menyelesaikan proses unggah aplikasi. Silakan cek email secara berkala untuk melihat informasi dari Apple. Apple akan memberikan informasi terkait cara memperbaiki aplikasi Anda jika terdapat masalah hingga aplikasi Anda disetujui. Silakan menunggu aplikasi Anda _live_ di App Store.
+
+Catatan Penting:
+Setelah aplikasi Anda _live_ di App Store, Anda harus mengirim _file_ *sertifikat .pem* ke tim support *JustApp*. Tujuannya agar tim dapat mengaktifkan *Push Notification* untuk aplikasi Anda melalui _backend_ *JustApp*.
+
+
+Publish Aplikasi ke App Store
+Setelah aplikasi Anda selesai dibuat, silakan login ke akun  *App Store Connect* melalui https://appstoreconnect.apple.
+Silakan pilih My Apps - klik tanda + (plus) dan pilih New App. Pada bagian tab New App, silakan centang iOS - Isi nama aplikasi pada kolom Name - Pilih bahasa pada kolom Primary Language - Bundle ID (bisa Anda sesuaikan dengan Bundle ID yang Anda gunakan pada tab/menu Publication Editor Anda) -  SKU (silakan sesuiakan dengan kebutuhan) - pilih Full Access pada kolom User Access - dan akhiri dengan menekan tombol Create.
+
+Pada bagian App Information, pilih kategori aplikasi. Anda juga bisa memilih Secondary Category, tapi ini hanya bersifat opsional. Selanjutnya, silakan masukkan URL Kebijakan Privasi (Privacy Policy) aplikasi Anda. Untuk membuat kebijakan privasi, Anda dapat mengikuti cara membuat link kebijakan privasi seperti pada aplikasi *Android*. Akhiri dengan menekan tombol Save.
+
+Pada tab Pricing and Availability, pada bagian Price Schedule, pilih harga aplikasi Anda. Jika aplikasi Anda dibagikan secara gratis, silakan pilih Free. Jika Anda ingin menjual aplikasi Anda, pada bagian ini Anda harus menyertakan Paid Application Agreement. Selanjutnya, pada bagian Availability, secara default akan mencentang semua wilayah. Silakan pilih di wilayah mana saja aplikasi Anda akan beroperasi. Pilih semua juga tidak masalah. Akhiri dengan menekan tombol Save.
+
+
+Pada tab  Prepare for Submit - Version Information, silakan tambahkan beberapa screenshoot tampilan aplikasi Anda. Untuk membuat screenshoot tampilan aplikasi, silakan cek kembali bagian pembahasan mengenai Screenshoot pada artikel ini.
+
+Phone: 5.5-inch display (iPhone 8 Plus):  1242 x 2208
+Anda dapat menggunakan ukuran IPhone 5.5-inch untuk semua jenis IPhone.
+
+iPad:  12.9-inch display (iPad Pro 2nd Gen): 2048×2732
+Anda dapat menggunakan ukuran 12.9-inch display untuk semua jenis IPad.
+
+Setelah menambahkan screenshoot tampilan aplikasi, silakan tambahkan informasi mengenai aplikasi Anda.
+- Promotional Text: bisa Anda isi seperti deskripsi singkat aplikasi
+- Description: isi dengan desskripsi lengkap aplikasi
+– Keywords: kata kunci (5 - 10 kata)
+– Support URL: link support dari aplikasi
+– Marketing URL (optional): Informasi tambahan mengenai aplikasi Anda.
+
+Selanjutnya, klik tanda + (plus) pada bagian Build jika Anda ingin memperbarui aplikasi Anda. Bagian ini harus Anda pahami. Jika Anda belum memiliki aplikasi dan ingin mengunggah aplikasi ke sini, Anda harus kembali ke pembahasan mengenai Cara Compile Aplikasi iOS artikel ini. 
+
+Catatan penting:
+Anda harus membuat aplikasi Anda pada *App Store Connect* sebelum mengirimnya via *Xcode*.
+
+
+*Sertifikat .pem*
+Untuk membuat *sertifikat .pem*, silakan masuk ke bagian Keychain Access - Certificates pada *Mac* Anda. Pada bagian kolom cari kanan atas, silakan masukkan bundle ID aplikasi Anda. Klik pada panah (arrow) bagian sertifikat Apple Push Services. Private Key seharusnya muncul pada bagian bawah sertifikat Apple Push Services. Silakan pilih dan klik kanan pada kedua _file_ tesebut (certificate dan private key) - dan pilih Export 2 items ... Silakan arahkan ke lokasi di mana Anda akan menyimpan kedua _file_ tersebut. Sebagai contoh, kedua _file_ ini akan ditaruh di Desktop karena akan dilakukan perubahan. Silakan tentukan kata sandi yang akan digunakan pada kedua _file_ tersebut (bebas tapi harus diingat).
+
+Selanjutnya, silakan buka Terminal pada *Mac* Anda melalui Applications > Utilities > Terminal.  Arahkan terminal ke directori tempat Anda menyimpan kedua _file_ di atas. Dalam contoh ini adalah Desktop. Maka, Anda perlu mengetikkan command cd Desktop/. Setelah Anda berada pada direktori Desktop, ketikkan command di bawah ini.
+
+openssl pkcs12 -in Certificates.p12 -out certificat.pem -nodes -clcerts
+
+Jika berhasil, Anda akan diminta memasukkan kata sandi ketika mengekspor kedua _file_ di atas pada langkah sebelumnya. Jika berhasil, di Desktop Anda akan muncul 2 _file_ baru, yakni Certificates.p12 dan a certificat.pem. Silakan pindah kedua _file_ di atas ke lokasi di mana Anda menyimpan _file_ sertifikat Provisionning Profile dan aps.cer. Silakan cek kembali pada bagian pembahasan mengenai Sertifikat artikel ini untuk mengetahui lokasi penyimpanan _file_.
+
+
+Catatan: 
+Jika pada saat menjalankan command openssl pkcs12 -in Certificates.p12 -out certificat.pem -nodes -clcerts muncul error there is no _file_ named Certificates.p12, silakan cek kembali nama _file_ .p12 di Desktop Anda dan sesuaikan nama yang dipakai pada command.
+

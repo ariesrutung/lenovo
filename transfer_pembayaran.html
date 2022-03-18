@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+
+    <title>Pembayaran - Manual Transfer</title>
+    <style>
+        body {
+            background-color: transparent;
+        }
+        
+        * {
+            color: #000 !important;
+        }
+        
+        .col-4 {
+            padding: 0;
+            border-radius: 20px 0 0 20px !important;
+        }
+        
+        .col-8 {
+            padding: 0;
+            border-radius: 20px 0 0 20px !important;
+        }
+        
+        #norek {
+            color: #fff;
+        }
+        
+        p {
+            color: #fff;
+            font-size: 14px;
+        }
+        
+        ul,
+        li {
+            color: #000;
+            font-size: 14px;
+        }
+        
+        .textBox {
+            height: 30px;
+            width: 300px;
+        }
+        
+        button {
+            height: 30px;
+            width: 150px;
+            border-radius: 8px;
+            padding: 10px;
+            font-size: 14px;
+            height: 52px;
+            cursor: pointer;
+            background-color: wheat;
+            border: none;
+            margin-bottom: 10px;
+        }
+        
+        button:focus,
+        button:active,
+        button:visited {
+            background-color: orange;
+        }
+        
+        .list-group-item.active {
+            text-align: center;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        
+        #bankname {
+            border-radius: 10px;
+            margin: 0 auto;
+        }
+        
+        .list-group-item.active {
+            z-index: 2;
+            color: #000 !important;
+            background-color: transparent !important;
+            text-align: left;
+            border: 0;
+            margin-top: 20px !important;
+            padding: 0 !important;
+        }
+        
+        .list-group-item-action {
+            width: 100%;
+            color: #495057;
+            text-align: center !important;
+        }
+        
+        .list-group img {
+            width: 30%;
+            height: auto;
+            margin-left: 35%;
+        }
+        
+        .nav-tabs {
+            border-bottom: none;
+            margin-top: 20px;
+        }
+        
+        nav-tabs .nav-link {
+            height: 35px;
+        }
+        
+        .nav-tabs .nav-link.active {
+            color: #fff !important;
+            background-color: #4a4a4a !important;
+            border: none;
+            border-radius: 20px !important;
+            padding: 2px 20px !important;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+            height: 40px;
+        }
+        
+        .list-group-item.active {
+            border-radius: 0 !important;
+        }
+        
+        .nav-tabs .nav-link {
+            border: 1px solid transparent;
+            border-top-left-radius: .25rem;
+            border-top-right-radius: .25rem;
+            color: #fff;
+        }
+        
+        .container {
+            padding: 5px;
+        }
+        
+        .datarek {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        
+        .list-group-item {
+            position: relative;
+            display: block;
+            padding: 0;
+            background-color: #fff;
+            border: 0;
+        }
+        
+        div#nav-tab {
+            background-color: #bec6d0;
+            padding: 5px !important;
+            border-radius: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        i.bi.bi-clipboard {
+            color: #ecf0f6;
+            margin-left: 10px;
+            background-color: #ecf0f6 !important;
+            padding: 2px;
+            border-radius: 5px;
+        }
+        
+        p#msg {
+            background-color: #ecf0f6 !important;
+            font-size: 11px;
+            font-style: italic;
+        }
+        
+        p#kopinorek {
+            margin: 0 !important;
+        }
+        
+        li.list-group-item {
+            background-color: transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="bankname" class="container">
+        <h5>Transfer Bank</h5>
+        <p>Silakan Pilih Salah Satu Jenis Bank dan Lakukan Transfer ke Nomor Rekening yang Tertera.</p>
+        <div class="datarek">
+            <p onclick="copyToClipboard('#norek')" id="kopinorek">1600002563578<sup><i class="bi bi-clipboard"></i></sup></p>
+            <p id="msg"></p>
+            <p id="rekname">Jhon Doe</p>
+            <p id="bank">Bank Mandarin</p>
+        </div>
+        <div class="container">
+
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <a class="nav-item nav-link active" id="bankmandiri-tab" data-toggle="tab" href="#bankmandiri" role="tab" aria-controls="bankmandiri" aria-selected="true">Mandiri</a>
+                    <a class="nav-item nav-link" id="bri-tab" data-toggle="tab" href="#bri" role="tab" aria-controls="bri" aria-selected="false">BRI</a>
+                    <a class="nav-item nav-link" id="bni-tab" data-toggle="tab" href="#bni" role="tab" aria-controls="bni" aria-selected="false">BNI</a>
+                    <a class="nav-item nav-link" id="bca-tab" data-toggle="tab" href="#bca" role="tab" aria-controls="bca" aria-selected="false">BCA</a>
+                </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="bankmandiri" role="tabpanel" aria-labelledby="bankmandiri-tab">
+                    <ul class="list-group">
+                        <li class="list-group-item active">Langkah Pembayaran via Bank Mandiri</li>
+                        <li class="list-group-item">Login di aplikasi Mandiri Online dengan Username dan Password Anda.
+                            <p>
+                                <img src="https://www.bankmandiri.co.id/documents/20143/39323229/login.png">
+                            </p>
+                        </li>
+                        <li class="list-group-item">Pilih "Transfer".
+                            <p>
+                                <img src="https://www.bankmandiri.co.id/documents/20143/39323229/mandiri-online-halaman-utama.png">
+                            </p>
+                        </li>
+                        <li class="list-group-item">Pilih "Ke Rekening Mandiri".
+                            <p>
+                                <img src="https://www.bankmandiri.co.id/documents/20143/39323229/mandiri-online-pilih-rekening.png">
+                            </p>
+                        </li>
+                        <li class="list-group-item">Tentukan "Rekening Sumber".
+                            <p>
+                                <img src="https://www.bankmandiri.co.id/documents/20143/39323229/mandiri-online-pilih-rekening-sumber.png">
+                            </p>
+                        </li>
+                        <li class="list-group-item">Isi "Rekening Tujuan" dan "Jumlah" Transfer.
+                            <p>
+                                <img src="https://www.bankmandiri.co.id/documents/20143/39323229/mandiri-online-pilih-rekening-tujuan.png">
+                            </p>
+                        </li>
+                        <li class="list-group-item">"Konfirmasi" dan Masukkan "MPIN".
+                            <p>
+                                <img src="https://www.bankmandiri.co.id/documents/20143/39323229/mandiri-online-konfirmasi.png">
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-pane fade" id="bri" role="tabpanel" aria-labelledby="bri-tab">
+                    <ul class="list-group">
+                        <li class="list-group-item active">Langkah Pembayaran via BRI</li>
+                        <li class="list-group-item">Login di aplikasi Mandiri Online dengan Username dan Password Anda.
+                            <p>
+                                <img src="https://www.bankmandiri.co.id/documents/20143/39323229/login.png">
+                            </p>
+                        </li>
+                        <li class="list-group-item">Pilih "Transfer".
+                            <p>
+                                <img src="https://www.bankmandiri.co.id/documents/20143/39323229/mandiri-online-halaman-utama.png">
+                            </p>
+                        </li>
+                        <li class="list-group-item">Pilih "Ke Rekening Mandiri".
+                            <p>
+                                <img src="https://www.bankmandiri.co.id/documents/20143/39323229/mandiri-online-pilih-rekening.png">
+                            </p>
+                        </li>
+                        <li class="list-group-item">Tentukan "Rekening Sumber".
+                            <p>
+                                <img src="https://www.bankmandiri.co.id/documents/20143/39323229/mandiri-online-pilih-rekening-sumber.png">
+                            </p>
+                        </li>
+                        <li class="list-group-item">Isi "Rekening Tujuan" dan "Jumlah" Transfer.
+                            <p>
+                                <img src="https://www.bankmandiri.co.id/documents/20143/39323229/mandiri-online-pilih-rekening-tujuan.png">
+                            </p>
+                        </li>
+                        <li class="list-group-item">"Konfirmasi" dan Masukkan "MPIN".
+                            <p>
+                                <img src="https://www.bankmandiri.co.id/documents/20143/39323229/mandiri-online-konfirmasi.png">
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-pane fade" id="bni" role="tabpanel" aria-labelledby="bni-tab">
+                    <ul class="list-group">
+                        <li class="list-group-item active">Langkah Pembayaran via BNI</li>
+                        <li class="list-group-item">Login di aplikasi Mandiri Online dengan Username dan Password Anda.
+                            <p>
+                                <img src="https://www.bankmandiri.co.id/documents/20143/39323229/login.png">
+                            </p>
+                        </li>
+                        <li class="list-group-item">Pilih "Transfer".
+                            <p>
+                                <img src="https://www.bankmandiri.co.id/documents/20143/39323229/mandiri-online-halaman-utama.png">
+                            </p>
+                        </li>
+                        <li class="list-group-item">Pilih "Ke Rekening Mandiri".
+                            <p>
+                                <img src="https://www.bankmandiri.co.id/documents/20143/39323229/mandiri-online-pilih-rekening.png">
+                            </p>
+                        </li>
+                        <li class="list-group-item">Tentukan "Rekening Sumber".
+                            <p>
+                                <img src="https://www.bankmandiri.co.id/documents/20143/39323229/mandiri-online-pilih-rekening-sumber.png">
+                            </p>
+                        </li>
+                        <li class="list-group-item">Isi "Rekening Tujuan" dan "Jumlah" Transfer.
+                            <p>
+                                <img src="https://www.bankmandiri.co.id/documents/20143/39323229/mandiri-online-pilih-rekening-tujuan.png">
+                            </p>
+                        </li>
+                        <li class="list-group-item">"Konfirmasi" dan Masukkan "MPIN".
+                            <p>
+                                <img src="https://www.bankmandiri.co.id/documents/20143/39323229/mandiri-online-konfirmasi.png">
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="tab-pane fade" id="bca" role="tabpanel" aria-labelledby="bca-tab">
+                    <ul class="list-group">
+                        <li class="list-group-item active">Langkah Pembayaran via Bank BCA</li>
+                        <li class="list-group-item">Login di aplikasi Mandiri Online dengan Username dan Password Anda.
+                            <p>
+                                <img src="https://www.bankmandiri.co.id/documents/20143/39323229/login.png">
+                            </p>
+                        </li>
+                        <li class="list-group-item">Pilih "Transfer".
+                            <p>
+                                <img src="https://www.bankmandiri.co.id/documents/20143/39323229/mandiri-online-halaman-utama.png">
+                            </p>
+                        </li>
+                        <li class="list-group-item">Pilih "Ke Rekening Mandiri".
+                            <p>
+                                <img src="https://www.bankmandiri.co.id/documents/20143/39323229/mandiri-online-pilih-rekening.png">
+                            </p>
+                        </li>
+                        <li class="list-group-item">Tentukan "Rekening Sumber".
+                            <p>
+                                <img src="https://www.bankmandiri.co.id/documents/20143/39323229/mandiri-online-pilih-rekening-sumber.png">
+                            </p>
+                        </li>
+                        <li class="list-group-item">Isi "Rekening Tujuan" dan "Jumlah" Transfer.
+                            <p>
+                                <img src="https://www.bankmandiri.co.id/documents/20143/39323229/mandiri-online-pilih-rekening-tujuan.png">
+                            </p>
+                        </li>
+                        <li class="list-group-item">"Konfirmasi" dan Masukkan "MPIN".
+                            <p>
+                                <img src="https://www.bankmandiri.co.id/documents/20143/39323229/mandiri-online-konfirmasi.png">
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script>
+            document.getElementById("kopinorek").addEventListener("click", function() {
+                copyToClipboardMsg(document.getElementById("kopinorek"), "msg");
+            });
+
+            function copyToClipboardMsg(elem, msgElem) {
+                var succeed = copyToClipboard(elem);
+                var msg;
+                if (!succeed) {
+                    msg = "Copy not supported or blocked.  Press Ctrl+c to copy."
+                } else {
+                    msg = "Berhasil Dikopi"
+                }
+                if (typeof msgElem === "string") {
+                    msgElem = document.getElementById(msgElem);
+                }
+                msgElem.innerHTML = msg;
+                setTimeout(function() {
+                    msgElem.innerHTML = "";
+                }, 2000);
+            }
+
+            function copyToClipboard(elem) {
+                // create hidden text element, if it doesn't already exist
+                var targetId = "_hiddenCopyText_";
+                var isInput = elem.tagName === "INPUT" || elem.tagName === "TEXTAREA";
+                var origSelectionStart, origSelectionEnd;
+                if (isInput) {
+                    // can just use the original source element for the selection and copy
+                    target = elem;
+                    origSelectionStart = elem.selectionStart;
+                    origSelectionEnd = elem.selectionEnd;
+                } else {
+                    // must use a temporary form element for the selection and copy
+                    target = document.getElementById(targetId);
+                    if (!target) {
+                        var target = document.createElement("textarea");
+                        target.style.position = "absolute";
+                        target.style.left = "-9999px";
+                        target.style.top = "0";
+                        target.id = targetId;
+                        document.body.appendChild(target);
+                    }
+                    target.textContent = elem.textContent;
+                }
+                // select the content
+                var currentFocus = document.activeElement;
+                target.focus();
+                target.setSelectionRange(0, target.value.length);
+
+                // copy the selection
+                var succeed;
+                try {
+                    succeed = document.execCommand("copy");
+                } catch (e) {
+                    succeed = false;
+                }
+                // restore original focus
+                if (currentFocus && typeof currentFocus.focus === "function") {
+                    currentFocus.focus();
+                }
+
+                if (isInput) {
+                    // restore prior selection
+                    elem.setSelectionRange(origSelectionStart, origSelectionEnd);
+                } else {
+                    // clear temporary content
+                    target.textContent = "";
+                }
+                return succeed;
+            }
+        </script>
+</body>
+
+</html>

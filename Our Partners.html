@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .content.ng-binding {
+            padding: 0;
+            display: flex;
+            margin-bottom: 20px;
+            overflow: visible;
+            width: 100% !important;
+            overflow-x: auto !important;
+            overflow-y: hidden !important;
+            white-space: nowrap !important;
+            -webkit-overflow-scrolling: touch !important;
+        }
+        
+        .content.ng-binding img {
+            background-color: #eee;
+            padding: 10px;
+            display: flex !important;
+            justify-content: center;
+            align-items: center;
+            min-width: 60% !important;
+            margin: 0 1%;
+            border-radius: 10px;
+        }
+        
+        .content.ng-binding p a:hover {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        .content.ng-binding p a:-webkit-any-link {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content ng-binding" ng-bind-html="block.content | trusted_html" sb-a-click="">
+        <img alt="61baf3c512900.png" src="https://builder.justapp.id/images/application/15092/features/custom_page/188401/621da4df09993.png">
+        <img alt="61baf3c512900.png" src="https://builder.justapp.id/images/application/15092/features/custom_page/188401/621da51ebb684.png">
+        <img alt="61baf3c512900.png" src="https://builder.justapp.id/images/application/15092/features/custom_page/188401/621da54e78d89.png">
+        <img alt="61baf3c512900.png" src="https://builder.justapp.id/images/application/15092/features/custom_page/188401/621da55f3ef02.png">
+        <img alt="61baf3c512900.png" src="https://builder.justapp.id/images/application/15092/features/custom_page/188401/621da4df09993.png">
+        <img alt="61baf3c512900.png" src="https://builder.justapp.id/images/application/15092/features/custom_page/188401/621da4df09993.png">
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,587 @@
+/* Layout */
+
+.always .layout.l1 .tabs {
+    box-shadow: 0 0 10px #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    border-radius: 30px;
+    bottom: 1vh !important;
+    margin: 0 5%;
+    height: 62px !important;
+}
+
+.always .layout.l1 .tabs li img {
+    margin: 0 !important;
+}
+
+.always .layout.l1 .tabs li {
+    min-width: 25% !important;
+}
+
+
+/* Akhir Layout */
+
+
+/*  Header Title */
+
+.bar.bar-custom .title {
+    color: transparent;
+}
+
+
+/* Header bar */
+
+ion-header-bar.bar-custom.bar.bar-header {
+    height: 0 !important;
+    background-color: transparent !important;
+    background-image: none !important;
+}
+
+
+/*  Folder v2 */
+
+ion-view.module-folder2.folder2-layout2 {
+    background: linear-gradient(180deg, rgba(0, 178, 2, 1) 0%, rgba(22, 175, 75, 1) 10%, rgba(0, 184, 147, 1) 20%, rgba(0, 184, 147, 1) 30%, rgba(255, 255, 255, 1) 30%) !important;
+    padding-top: 33px;
+}
+
+ion-view.module-folder2.folder2-layout2 ion-content {
+    top: 0 !important;
+    background: #00b202;
+    background-color: transparent !important;
+    padding-top: 40px;
+    background-image: url(data:image/png;base64,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);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 32%;
+    bottom: 0 !important;
+}
+
+.folder-layout.folder-l2 .folder-l2-row div.folder-l2-col {
+    margin: 0 10px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    padding: 0;
+    text-decoration: none;
+    border-radius: 17px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px 0 #cecece;
+    height: 100%;
+    width: 330px;
+}
+
+.folder-layout.folder-l2 .folder-l2-row div.folder-l2-col p.folder-title.ng-binding {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    padding: 0 !important;
+    height: 100%;
+    flex-direction: column;
+    font-style: normal;
+}
+
+
+/* Menghilangkan cover Folder */
+
+ion-view.module-folder2.folder2-layout2 .list:last-child [ng-if="current.showCover && current.picture"] {
+    display: none;
+}
+
+ion-view.module-folder2.folder2-layout2 .list:last-child .item.item-custom {
+    background-color: transparent;
+    color: #fff;
+    border: 0;
+}
+
+ion-view.module-folder2.folder2-layout2 .list:last-child .item.item-custom h2.ng-binding {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+ion-view.module-folder2.folder2-layout2 .list:last-child .item.item-custom p.ng-binding {
+    color: #fff !important;
+    font-size: 16px;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+
+/* 2 menu pertama */
+
+.folder-layout.folder-l2 .folder-l2-row:nth-child(1) .folder-l2-col.item.item-custom:nth-child(1) {
+    margin: 0 10px;
+    background-position: center !important;
+    text-decoration: none;
+    border-radius: 17px;
+    box-shadow: 0 2px 4px 0 #cecece;
+    width: 100%;
+    padding: 6px !important;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 1) 50%, rgba(0, 115, 95, 1) 50%) !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center;
+    flex-direction: column !important;
+    height: 215px !important;
+}
+
+.folder-layout.folder-l2 .folder-l2-row:nth-child(1) .folder-l2-col.item.item-custom:nth-child(1) img {
+    width: 100%;
+    background-color: #ffffff !important;
+    filter: unset;
+    border-radius: 100%;
+    height: 155px;
+    width: 155px;
+    background-image: url(https://res.cloudinary.com/stromming-ab/image/upload/t_square3x/v1571513871/global_data/plant_database/1577/rpqbquirctaxmmjcvldx);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 5px solid #fff !important;
+}
+
+.folder-layout.folder-l2 .folder-l2-row:nth-child(1) .folder-l2-col.item.item-custom:nth-child(2) {
+    margin: 0 10px;
+    background-position: center !important;
+    text-decoration: none;
+    border-radius: 17px;
+    box-shadow: 0 2px 4px 0 #cecece;
+    width: 100%;
+    padding: 6px !important;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 1) 50%, rgba(55, 144, 252, 1) 50%) !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center;
+    flex-direction: column !important;
+    height: 215px !important;
+}
+
+.folder-layout.folder-l2 .folder-l2-row:nth-child(1) .folder-l2-col.item.item-custom:nth-child(2) img {
+    width: 100%;
+    background-color: #ffffff !important;
+    filter: unset;
+    border-radius: 100%;
+    height: 155px;
+    width: 155px;
+    background-image: url(https://res.cloudinary.com/stromming-ab/image/upload/t_square3x/v1571513871/global_data/plant_database/mOJFXRjXeKmHxswrY3uF/rhpt1n3o9uhevr05ppwr);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 5px solid #fff !important;
+}
+
+
+/* akhir 2 menu pertama */
+
+
+/* 2 menu kedua */
+
+.folder-layout.folder-l2 .folder-l2-row:nth-child(2) .folder-l2-col.item.item-custom:nth-child(1) {
+    margin: 0 10px;
+    background-position: center !important;
+    text-decoration: none;
+    border-radius: 17px;
+    box-shadow: 0 2px 4px 0 #cecece;
+    width: 100%;
+    padding: 6px !important;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 1) 50%, rgba(255, 194, 63, 1) 50%) !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center;
+    flex-direction: column !important;
+    height: 215px !important;
+}
+
+.folder-layout.folder-l2 .folder-l2-row:nth-child(2) .folder-l2-col.item.item-custom:nth-child(1) img {
+    width: 100%;
+    background-color: #ffffff !important;
+    filter: unset;
+    border-radius: 100%;
+    height: 155px;
+    width: 155px;
+    background-image: url(https://res.cloudinary.com/stromming-ab/image/upload/t_square3x/v1571513871/global_data/plant_database/1563/1_vekfar);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 5px solid #fff !important;
+}
+
+.folder-layout.folder-l2 .folder-l2-row:nth-child(2) .folder-l2-col.item.item-custom:nth-child(2) {
+    margin: 0 10px;
+    background-position: center !important;
+    text-decoration: none;
+    border-radius: 17px;
+    box-shadow: 0 2px 4px 0 #cecece;
+    width: 100%;
+    padding: 6px !important;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 1) 50%, rgba(1, 184, 255, 1) 50%) !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center;
+    flex-direction: column !important;
+    height: 215px !important;
+}
+
+.folder-layout.folder-l2 .folder-l2-row:nth-child(2) .folder-l2-col.item.item-custom:nth-child(2) img {
+    width: 100%;
+    background-color: #ffffff !important;
+    filter: unset;
+    border-radius: 100%;
+    height: 155px;
+    width: 155px;
+    background-image: url(https://res.cloudinary.com/stromming-ab/image/upload/t_square3x/v1571513871/global_data/plant_database/1561/1_nxujcc);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 5px solid #fff !important;
+}
+
+
+/* akhir 2 menu kedua */
+
+
+/* 2 menu ketiga */
+
+.folder-layout.folder-l2 .folder-l2-row:nth-child(3) .folder-l2-col.item.item-custom:nth-child(1) {
+    margin: 0 10px;
+    background-position: center !important;
+    text-decoration: none;
+    border-radius: 17px;
+    box-shadow: 0 2px 4px 0 #cecece;
+    width: 100%;
+    padding: 6px !important;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 1) 50%, rgba(228, 81, 255, 1) 50%) !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center;
+    flex-direction: column !important;
+    height: 215px !important;
+}
+
+.folder-layout.folder-l2 .folder-l2-row:nth-child(3) .folder-l2-col.item.item-custom:nth-child(1) img {
+    width: 100%;
+    background-color: #ffffff !important;
+    filter: unset;
+    border-radius: 100%;
+    height: 155px;
+    width: 155px;
+    background-image: url(https://res.cloudinary.com/stromming-ab/image/upload/t_square3x/v1571513871/global_data/plant_database/1564/1_atshqs);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 5px solid #fff !important;
+}
+
+.folder-layout.folder-l2 .folder-l2-row:nth-child(3) .folder-l2-col.item.item-custom:nth-child(2) {
+    margin: 0 10px;
+    background-position: center !important;
+    text-decoration: none;
+    border-radius: 17px;
+    box-shadow: 0 2px 4px 0 #cecece;
+    width: 100%;
+    padding: 6px !important;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 1) 50%, rgba(59, 179, 92, 1) 50%) !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center;
+    flex-direction: column !important;
+    height: 215px !important;
+}
+
+.folder-layout.folder-l2 .folder-l2-row:nth-child(3) .folder-l2-col.item.item-custom:nth-child(2) img {
+    width: 100%;
+    background-color: #ffffff !important;
+    filter: unset;
+    border-radius: 100%;
+    height: 155px;
+    width: 155px;
+    background-image: url(https://res.cloudinary.com/stromming-ab/image/upload/t_square3x/v1571513871/global_data/plant_database/1562/1_rlh7gl);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 5px solid #fff !important;
+}
+
+
+/* akhir 2 menu ketiga */
+
+
+/* 2 menu keempat */
+
+.folder-layout.folder-l2 .folder-l2-row:nth-child(4) .folder-l2-col.item.item-custom:nth-child(1) {
+    margin: 0 10px;
+    background-position: center !important;
+    text-decoration: none;
+    border-radius: 17px;
+    box-shadow: 0 2px 4px 0 #cecece;
+    width: 100%;
+    padding: 6px !important;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 1) 50%, rgba(48, 104, 121, 1) 50%) !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center;
+    flex-direction: column !important;
+    height: 215px !important;
+}
+
+.folder-layout.folder-l2 .folder-l2-row:nth-child(4) .folder-l2-col.item.item-custom:nth-child(1) img {
+    width: 100%;
+    background-color: #ffffff !important;
+    filter: unset;
+    border-radius: 100%;
+    height: 155px;
+    width: 155px;
+    background-image: url(https://res.cloudinary.com/stromming-ab/image/upload/t_square3x/v1571513871/global_data/plant_database/1584/1_uawyxz);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 5px solid #fff !important;
+}
+
+.folder-layout.folder-l2 .folder-l2-row:nth-child(4) .folder-l2-col.item.item-custom:nth-child(2) {
+    margin: 0 10px;
+    background-position: center !important;
+    text-decoration: none;
+    border-radius: 17px;
+    box-shadow: 0 2px 4px 0 #cecece;
+    width: 100%;
+    padding: 6px !important;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 1) 50%, rgba(0, 115, 95, 1) 50%) !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center;
+    flex-direction: column !important;
+    height: 215px !important;
+}
+
+.folder-layout.folder-l2 .folder-l2-row:nth-child(4) .folder-l2-col.item.item-custom:nth-child(2) img {
+    width: 100%;
+    background-color: #ffffff !important;
+    filter: unset;
+    border-radius: 100%;
+    height: 155px;
+    width: 155px;
+    background-image: url(https://res.cloudinary.com/stromming-ab/image/upload/t_square3x/v1571513871/global_data/plant_database/0bjVSK9w9Ph3YoQ3QD0D/csj9jcron0qbwv4hkaam);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 5px solid #fff !important;
+}
+
+
+/* akhir 2 menu keempat */
+
+
+/* 2 menu kelima */
+
+.folder-layout.folder-l2 .folder-l2-row:nth-child(5) .folder-l2-col.item.item-custom:nth-child(1) {
+    margin: 0 10px;
+    background-position: center !important;
+    text-decoration: none;
+    border-radius: 17px;
+    box-shadow: 0 2px 4px 0 #cecece;
+    width: 100%;
+    padding: 6px !important;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 1) 50%, rgba(0, 115, 95, 1) 50%) !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center;
+    flex-direction: column !important;
+    height: 215px !important;
+}
+
+.folder-layout.folder-l2 .folder-l2-row:nth-child(5) .folder-l2-col.item.item-custom:nth-child(1) img {
+    width: 100%;
+    background-color: #ffffff !important;
+    filter: unset;
+    border-radius: 100%;
+    height: 155px;
+    width: 155px;
+    background-image: url(https://res.cloudinary.com/stromming-ab/image/upload/t_square3x/v1571513871/global_data/plant_database/1577/rpqbquirctaxmmjcvldx);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 5px solid #fff !important;
+}
+
+.folder-layout.folder-l2 .folder-l2-row:nth-child(5) .folder-l2-col.item.item-custom:nth-child(2) {
+    margin: 0 10px;
+    background-position: center !important;
+    text-decoration: none;
+    border-radius: 17px;
+    box-shadow: 0 2px 4px 0 #cecece;
+    width: 100%;
+    padding: 6px !important;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 1) 50%, rgba(55, 144, 252, 1) 50%) !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center;
+    flex-direction: column !important;
+    height: 215px !important;
+}
+
+.folder-layout.folder-l2 .folder-l2-row:nth-child(5) .folder-l2-col.item.item-custom:nth-child(2) img {
+    width: 100%;
+    background-color: #ffffff !important;
+    filter: unset;
+    border-radius: 100%;
+    height: 155px;
+    width: 155px;
+    background-image: url(https://res.cloudinary.com/stromming-ab/image/upload/t_square3x/v1571513871/global_data/plant_database/mOJFXRjXeKmHxswrY3uF/rhpt1n3o9uhevr05ppwr);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 5px solid #fff !important;
+}
+
+
+/* akhir 2 menu kelima */
+
+
+/* 2 menu keenam */
+
+.folder-layout.folder-l2 .folder-l2-row:nth-child(6) .folder-l2-col.item.item-custom:nth-child(1) {
+    margin: 0 10px;
+    background-position: center !important;
+    text-decoration: none;
+    border-radius: 17px;
+    box-shadow: 0 2px 4px 0 #cecece;
+    width: 100%;
+    padding: 6px !important;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 1) 50%, rgba(255, 194, 63, 1) 50%) !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center;
+    flex-direction: column !important;
+    height: 215px !important;
+}
+
+.folder-layout.folder-l2 .folder-l2-row:nth-child(6) .folder-l2-col.item.item-custom:nth-child(1) img {
+    width: 100%;
+    background-color: #ffffff !important;
+    filter: unset;
+    border-radius: 100%;
+    height: 155px;
+    width: 155px;
+    background-image: url(https://res.cloudinary.com/stromming-ab/image/upload/t_square3x/v1571513871/global_data/plant_database/1563/1_vekfar);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 5px solid #fff !important;
+}
+
+.folder-layout.folder-l2 .folder-l2-row:nth-child(6) .folder-l2-col.item.item-custom:nth-child(2) {
+    margin: 0 10px;
+    background-position: center !important;
+    text-decoration: none;
+    border-radius: 17px;
+    box-shadow: 0 2px 4px 0 #cecece;
+    width: 100%;
+    padding: 6px !important;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 1) 50%, rgba(1, 184, 255, 1) 50%) !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center;
+    flex-direction: column !important;
+    height: 215px !important;
+}
+
+.folder-layout.folder-l2 .folder-l2-row:nth-child(6) .folder-l2-col.item.item-custom:nth-child(2) img {
+    width: 100%;
+    background-color: #ffffff !important;
+    filter: unset;
+    border-radius: 100%;
+    height: 155px;
+    width: 155px;
+    background-image: url(https://res.cloudinary.com/stromming-ab/image/upload/t_square3x/v1571513871/global_data/plant_database/1561/1_nxujcc);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 5px solid #fff !important;
+}
+
+
+/* akhir 2 menu keenam */
+
+
+/* 2 menu ketujuh */
+
+.folder-layout.folder-l2 .folder-l2-row:nth-child(7) .folder-l2-col.item.item-custom:nth-child(1) {
+    margin: 0 10px;
+    background-position: center !important;
+    text-decoration: none;
+    border-radius: 17px;
+    box-shadow: 0 2px 4px 0 #cecece;
+    width: 100%;
+    padding: 6px !important;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 1) 50%, rgba(228, 81, 255, 1) 50%) !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center;
+    flex-direction: column !important;
+    height: 215px !important;
+}
+
+.folder-layout.folder-l2 .folder-l2-row:nth-child(7) .folder-l2-col.item.item-custom:nth-child(1) img {
+    width: 100%;
+    background-color: #ffffff !important;
+    filter: unset;
+    border-radius: 100%;
+    height: 155px;
+    width: 155px;
+    background-image: url(https://res.cloudinary.com/stromming-ab/image/upload/t_square3x/v1571513871/global_data/plant_database/1564/1_atshqs);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 5px solid #fff !important;
+}
+
+.folder-layout.folder-l2 .folder-l2-row:nth-child(7) .folder-l2-col.item.item-custom:nth-child(2) {
+    margin: 0 10px;
+    background-position: center !important;
+    text-decoration: none;
+    border-radius: 17px;
+    box-shadow: 0 2px 4px 0 #cecece;
+    width: 100%;
+    padding: 6px !important;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 1) 50%, rgba(59, 179, 92, 1) 50%) !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center;
+    flex-direction: column !important;
+    height: 215px !important;
+}
+
+.folder-layout.folder-l2 .folder-l2-row:nth-child(7) .folder-l2-col.item.item-custom:nth-child(2) img {
+    width: 100%;
+    background-color: #ffffff !important;
+    filter: unset;
+    border-radius: 100%;
+    height: 155px;
+    width: 155px;
+    background-image: url(https://res.cloudinary.com/stromming-ab/image/upload/t_square3x/v1571513871/global_data/plant_database/1562/1_rlh7gl);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 5px solid #fff !important;
+}
+
+
+/* akhir 2 menu ketujuh */

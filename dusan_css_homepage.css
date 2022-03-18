@@ -1,0 +1,626 @@
+/* CSS to paste in Colors - Advanced Customization CSS/SCSS of your editor */
+
+
+/* Please change the HEX code of the color used below. */
+
+$bg-card: #303843;
+$no-bg-color: transparent;
+$button-text: #000;
+$font-color: #fff;
+$button-bg: #f5c634;
+$general-bg: #272d34;
+
+/* Hide/remove header and haeader title */
+
+ion-header-bar.bar-custom.bar.bar-header {
+    height: 0 !important;
+    background-color: $no-bg-color;
+}
+
+.bar.bar-custom .title {
+    display: none !important;
+}
+
+.bar-custom .button.button-clear {
+    color: $button-bg !important;
+}
+
+
+/* End header */
+
+
+/* Start - Custom Page CSS */
+
+ion-view.module-cms.cms-l1 ion-content {
+    top: 0 !important;
+    background-color: #fff !important;
+}
+
+
+/* Apply to all module - Card */
+
+ion-view.module-cms.cms-l1 .list.card {
+    margin: 0;
+    box-shadow: none;
+}
+
+
+/* End - Custom Page CSS */
+
+
+/* Blok upcoming schedule */
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(4) .content.ng-binding,
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(6) .content.ng-binding,
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(8) .content.ng-binding {
+    display: flex;
+    justify-content: space-between;
+    height: 35px;
+    align-items: center;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(5) .content.ng-binding {
+    padding: 0;
+    display: flex;
+    margin-bottom: 20px;
+    overflow: visible;
+    width: 100% !important;
+    max-width: none !important;
+    overflow-x: scroll !important;
+    overflow-y: hidden !important;
+    white-space: nowrap !important;
+    -webkit-overflow-scrolling: touch !important;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(5) .content.ng-binding p {
+    background: rgb(61, 164, 255);
+    background: linear-gradient(74deg, rgba(61, 164, 255, 1) 0%, rgba(76, 183, 254, 1) 100%);
+    padding: 0;
+    display: inline-flex !important;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 0 1%;
+    min-width: 58% !important;
+    height: 125px;
+    margin: 0 1%;
+    border-radius: 10px;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(5) .content.ng-binding a {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #fff !important;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(5) .content.ng-binding a strong {
+    font-size: 16px;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(5) .content.ng-binding p a span {
+    background-color: #2799f8;
+    padding: 5px;
+    box-shadow: none;
+    border-radius: 5px;
+    border: 0;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(5) .content.ng-binding p:nth-child(1) a {
+    height: 100%;
+    width: 100% !important;
+    border-radius: 10px;
+    background-image: url(https://justapp.id/member/halaman/unggah/article/5c8473cdd78c480742affd7527f0fe1cdok5.png) !important;
+    background-position: bottom right !important;
+    background-size: contain;
+    padding: 10px 60px 10px 10px;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(5) .content.ng-binding p:nth-child(2) a {
+    height: 100%;
+    width: 100% !important;
+    border-radius: 10px;
+    background-image: url(https://justapp.id/member/halaman/unggah/article/c2b365edf3cc350716f1e5ad3bcc74f4dok4.png) !important;
+    background-position: bottom right !important;
+    background-size: contain;
+    padding: 10px 60px 10px 10px;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(5) .content.ng-binding p:nth-child(3) a {
+    height: 100%;
+    width: 100% !important;
+    border-radius: 10px;
+    background-image: url(https://justapp.id/member/halaman/unggah/article/53b7ed0e3b67a327ad1fb5a398436f8bdok3.png) !important;
+    background-position: bottom right !important;
+    background-size: contain;
+    padding: 10px 60px 10px 10px;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(5) .content.ng-binding p:nth-child(4) a {
+    height: 100%;
+    width: 100% !important;
+    border-radius: 10px;
+    background-image: url(https://justapp.id/member/halaman/unggah/article/623b2a9c89780e1c79dbf2f5e075f460dok2.png) !important;
+    background-position: bottom right !important;
+    background-size: contain;
+    padding: 10px 60px 10px 10px;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(5) .content.ng-binding p:nth-child(5) a {
+    height: 100%;
+    width: 100% !important;
+    border-radius: 10px;
+    background-image: url(https://justapp.id/member/halaman/unggah/article/229c833b867d22f6c4950890a188329ddok1.png) !important;
+    background-position: bottom right !important;
+    background-size: contain;
+    padding: 10px 60px 10px 10px;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(5) .content.ng-binding p:nth-child(6) a {
+    height: 100%;
+    width: 100% !important;
+    border-radius: 10px;
+    background-image: url(https://justapp.id/member/halaman/unggah/article/2cb99ff59f767a38cf281ca5a96224d5dok6.png) !important;
+    background-position: bottom right !important;
+    background-size: contain;
+    padding: 10px 60px 10px 10px;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(7) .content.ng-binding {
+    padding: 0;
+    display: flex;
+    margin-bottom: 20px;
+    overflow: visible;
+    width: 100% !important;
+    max-width: none !important;
+    overflow-x: scroll !important;
+    overflow-y: hidden !important;
+    white-space: nowrap !important;
+    -webkit-overflow-scrolling: touch !important;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(7) .content.ng-binding p {
+    width: 100% !important;
+    min-width: 26% !important;
+    height: 45px;
+    margin: 0 1%;
+    background-color: #de1b51 !important;
+    border-radius: 10px;
+    display: inline-flex !important;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(n+9):nth-child(-n+13) .card {
+    margin: 10px;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(5) .item.item-text-wrap.item-custom.sb-cms-text,
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(7) .item.item-text-wrap.item-custom.sb-cms-text {
+    padding: 0;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(n+9):nth-child(-n+13) .item.item-text-wrap.item-custom.sb-cms-text {
+    padding: 0 5px;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(n+9):nth-child(-n+13) a {
+    background-image: url(https://justapp.id/member/halaman/unggah/article/e3d34b0654228b326a355c88584515f8menu-dots-vertical.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 8%;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(4) .content.ng-binding a,
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(6) .content.ng-binding a,
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(8) .content.ng-binding a,
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(14) .content.ng-binding a,
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(16) .content.ng-binding a,
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(18) .content.ng-binding a,
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(20) .content.ng-binding a,
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(22) .content.ng-binding a,
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(25) .content.ng-binding a,
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(27) .content.ng-binding a {
+    background: #ecf0f1;
+    font-size: 14px;
+    text-align: center;
+    color: #e0004d !important;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(4) .item.item-text-wrap.item-custom.sb-cms-text,
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(6) .item.item-text-wrap.item-custom.sb-cms-text {
+    padding: 0 0 12px 5px;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(8) .item.item-text-wrap.item-custom.sb-cms-text {
+    padding: 0 0 0 5px;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(n+9):nth-child(-n+13) p {
+    height: 100%;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(n+9):nth-child(-n+13) p a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 100%;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(n+9):nth-child(-n+13) img.left {
+    padding: 8px;
+    background-color: #d0e4ff;
+    border-radius: 10px;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(n+9):nth-child(-n+13) strong {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(n+9):nth-child(-n+13) span {
+    font-size: 12px;
+    color: #ff9800;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    margin-top: 10px;
+}
+
+ion-view.module-cms.cms-l1 .card .item.item-custom.active,
+ion-view.module-cms.cms-l1 .card .item.item-custom:active {
+    border-color: rgba(255, 255, 255, 0);
+    background-color: rgba(255, 255, 255, 1);
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(3) .card.no-shadow {
+    height: 100%;
+    margin: 0 0 20px 0;
+    padding: 0;
+    background-color: #ecf0f6 !important;
+    border-bottom-left-radius: 100% 50px;
+    border-bottom-right-radius: 100% 50px;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(3) iframe.sb-cms-source {
+    height: 25vh !important;
+}
+
+ion-view.module-cms.cms-l1 ion-content .card.no-shadow .item.item-custom {
+    padding: 0;
+    background-color: transparent;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(19) .card,
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(23) .card {
+    margin: 0 10px;
+    background-color: transparent;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(19) .card .item.item-text-wrap.item-custom.sb-cms-text,
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(23) .card .item.item-text-wrap.item-custom.sb-cms-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    background-color: transparent;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(19) .content.ng-binding,
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(23) .content.ng-binding {
+    padding: 0;
+    display: flex;
+    margin-bottom: 20px;
+    overflow: visible;
+    width: 100% !important;
+    max-width: none !important;
+    overflow-x: scroll !important;
+    overflow-y: hidden !important;
+    white-space: nowrap !important;
+    -webkit-overflow-scrolling: touch !important;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(19) .content.ng-binding p {
+    background-color: #4ab4ff;
+    padding: 10px;
+    display: inline-flex !important;
+    justify-content: center;
+    align-items: center;
+    min-width: 70% !important;
+    margin: 0 1%;
+    border-radius: 10px;
+    background-image: url(https://themekita.com/demo-atlantis-lite-bootstrap/assets/images/bgheader.svg) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(19) .content.ng-binding p a {
+    background-color: #4ab4ff;
+    padding: 0 80px 0 0px;
+    display: inline-flex !important;
+    min-width: 70% !important;
+    margin: 0 1%;
+    border-radius: 10px;
+    background-image: url(https://justapp.id/member/halaman/unggah/article/5c8473cdd78c480742affd7527f0fe1cdok5.png) !important;
+    background-position: bottom right !important;
+    background-repeat: no-repeat !important;
+    background-size: contain;
+    height: 100%;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #fff !important;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(19) .content.ng-binding strong {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    line-height: 1.5;
+}
+
+
+/* Blok Discount */
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(23) .content.ng-binding p:nth-child(1) {
+    background-color: #4ab4ff;
+    padding: 5px;
+    display: inline-flex !important;
+    justify-content: center;
+    align-items: center;
+    min-width: 80% !important;
+    margin: 0 1%;
+    border-radius: 10px;
+    background-image: url(https://d2qjkwm11akmwu.cloudfront.net/banners/93214_25-2-2022_12-49-52.jpeg) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover;
+    height: 150px;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(23) .content.ng-binding p:nth-child(2) {
+    background-color: #4ab4ff;
+    padding: 10px;
+    display: inline-flex !important;
+    justify-content: center;
+    align-items: center;
+    min-width: 80% !important;
+    margin: 0 1%;
+    border-radius: 5px;
+    background-image: url(https://d2qjkwm11akmwu.cloudfront.net/banners/693419_31-1-2022_9-51-30.jpeg) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover;
+    height: 150px;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(23) .content.ng-binding p:nth-child(3) {
+    background-color: #4ab4ff;
+    padding: 10px;
+    display: inline-flex !important;
+    justify-content: center;
+    align-items: center;
+    min-width: 80% !important;
+    margin: 0 1%;
+    border-radius: 5px;
+    background-image: url(https://d2qjkwm11akmwu.cloudfront.net/banners/785075_25-2-2022_14-7-5.jpeg) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover;
+    height: 150px;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(23) .content.ng-binding p:nth-child(4) {
+    background-color: #4ab4ff;
+    padding: 10px;
+    display: inline-flex !important;
+    justify-content: center;
+    align-items: center;
+    min-width: 80% !important;
+    margin: 0 1%;
+    border-radius: 5px;
+    background-image: url(https://d2qjkwm11akmwu.cloudfront.net/banners/715091_25-2-2022_12-58-39.jpeg) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover;
+    height: 150px;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(23) .content.ng-binding p:nth-child(5) {
+    background-color: #4ab4ff;
+    padding: 10px;
+    display: inline-flex !important;
+    justify-content: center;
+    align-items: center;
+    min-width: 80% !important;
+    margin: 0 1%;
+    border-radius: 5px;
+    background-image: url(https://d2qjkwm11akmwu.cloudfront.net/banners/93214_25-2-2022_12-49-52.jpeg) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover;
+    height: 150px;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(23) .content.ng-binding p a {
+    color: transparent !important;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Menghilangkan margin dan box-shadow pada card custom page */
+
+ion-view.module-cms.cms-l1 ion-content .card {
+    margin: 0 10px;
+    box-shadow: none;
+}
+
+
+/* Mengatur ukuran huruf untuk judul blok */
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"] .content.ng-binding h2 {
+    font-size: 16px !important;
+}
+
+
+/* Blok Our medical service */
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(15) .item.item-text-wrap.item-custom.sb-cms-text {
+    padding: 0 !important;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(15) .content.ng-binding {
+    padding: 0;
+    display: flex;
+    margin-bottom: 20px;
+    overflow: visible;
+    width: 100% !important;
+    max-width: none !important;
+    overflow-x: scroll !important;
+    overflow-y: hidden !important;
+    white-space: nowrap !important;
+    -webkit-overflow-scrolling: touch !important;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(15) .content.ng-binding p {
+    background-color: transparent;
+    padding: 0;
+    display: inline-flex !important;
+    justify-content: center;
+    align-items: center;
+    min-width: 70% !important;
+    margin: 0 1%;
+    border-radius: 10px;
+    flex-direction: column;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(15) .content.ng-binding p a {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 100%;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(15) .content.ng-binding p a img {
+    width: 100%;
+    object-fit: cover;
+    height: 145px;
+    border-radius: 5px;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(15) .content.ng-binding strong {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(14) .item.item-text-wrap.item-custom.sb-cms-text {
+    padding: 30px 0 10px 0;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(16) .item.item-text-wrap.item-custom.sb-cms-text,
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(20) .item.item-text-wrap.item-custom.sb-cms-text,
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(22) .item.item-text-wrap.item-custom.sb-cms-text,
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(18) .item.item-text-wrap.item-custom.sb-cms-text {
+    padding: 5px 0 10px 0;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(14) .content.ng-binding,
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(16) .content.ng-binding,
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(18) .content.ng-binding,
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(20) .content.ng-binding,
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(22) .content.ng-binding,
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(25) .content.ng-binding,
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(27) .content.ng-binding {
+    display: flex;
+    justify-content: space-between;
+    height: 35px;
+    align-items: center;
+}
+
+.sb-cms-image div[rn-carousel-indicators] {
+    text-align: center;
+    background-color: #174554;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(24) {
+    margin-top: 20px;
+}
+
+
+/* Sponsors Slider */
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(21) .item.item-text-wrap.item-custom.sb-cms-text {
+    padding: 0;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(21) .content.ng-binding p {
+    padding: 0;
+    display: flex;
+    margin-bottom: 20px;
+    overflow: visible;
+    width: 100% !important;
+    max-width: none !important;
+    overflow-x: scroll !important;
+    overflow-y: hidden !important;
+    white-space: nowrap !important;
+    -webkit-overflow-scrolling: touch !important;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(21) .content.ng-binding img {
+    background-color: #eeeeee;
+    padding: 10px;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    min-width: 60% !important;
+    margin: 0 1%;
+    border-radius: 10px;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(25) {
+    height: 150px;
+    pointer-events: none;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(17) .sb-cms-image ul[rn-carousel] li>div {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 96%;
+    height: 170px !important;
+    border-radius: 10px !important;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(17) ul[rn-carousel]>li {
+    width: 70% !important;
+    height: 100% !important;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(17) .sb-cms-image div[rn-carousel-indicators] {
+    display: none;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(17) .item.item-image-gallery.item-custom.sb-cms-image {
+    height: 170px !important;
+}

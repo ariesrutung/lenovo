@@ -1,0 +1,1473 @@
+.bar.bar-custom .title {
+    display: none;
+}
+
+
+/* FIRST PAGE START - CATEGORY LIST */
+
+.mcommerce-view .card {
+    box-shadow: none !important;
+    border-radius: 10px;
+}
+
+.button.button-clear.header-item .icon.ion-ios-cart {
+    /*position: fixed !important;*/
+    border-radius: 10px;
+    right: 2vw !important;
+    padding: 5px !important;
+    background-color: transparent !important;
+    /* background-image: linear-gradient(90deg, #ff8a00, #e52e71); */
+    min-width: 40px !important;
+    min-height: 40px !important;
+    /* top: 16px; */
+    margin-top: var(--safe-area-inset-top);
+}
+
+
+/* hide app name */
+
+[state="mcommerce-category-list"] .list .item.item-custom:first-child {
+    display: none;
+}
+
+
+/* order history dan my cart - front page */
+
+[state="mcommerce-category-list"] .button-bar {
+    width: 96%;
+    margin-left: 2%;
+}
+
+[state="mcommerce-category-list"] [ng-click="openHistory()"] {
+    padding: 0 0 0 20px !important;
+    width: 45%;
+    background-color: #Fff;
+    border: none !important;
+    margin: 0 2% 0 0;
+    border-radius: 5px !important;
+}
+
+[state="mcommerce-category-list"] [ng-click="openCart()"] {
+    padding: 0 0 0 20px !important;
+    width: 45%;
+    background-color: #Fff;
+    border: none !important;
+    margin: 0 0 0 2%;
+    border-radius: 5px !important;
+}
+
+
+/* Search of mcommerce category list / front page */
+
+[state="mcommerce-category-list"] .list .item.item-input,
+[state="mcommerce-subcategory-list"] .list .item.item-input {
+    background-color: transparent !important;
+    border: none !important;
+    border-bottom: 2px solid #fff !important;
+    width: 96%;
+    margin: 5px 2% 15px 2%;
+}
+
+[state="mcommerce-category-list"] .item.item-input:after,
+[state="mcommerce-subcategory-list"] .item.item-input:after,
+[state="folder2-category-list"] .item.item-input:after {
+    visibility: visible;
+    width: 40px;
+    height: 40px;
+    margin-top: 3px;
+    margin-right: 0;
+    content: ' ';
+    border: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    background-color: transparent !important;
+    /*background-image: linear-gradient(90deg,#ff8a00,#e52e71);*/
+    padding: 7px;
+    background: #eb01a5;
+    background-image: url("https://archive.org/download/tambah_202110/cari.png"), linear-gradient(90deg, #ff8a00, #e52e71);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+[state="folder2-category-list"] .ion-search:before {
+    display: none;
+}
+
+
+/* change size all item item - mcommerce category list / front page */
+
+[state="mcommerce-category-list"] .list .item.item-custom,
+[state="mcommerce-subcategory-list"] .list .item.item-custom {
+    width: 29.33%;
+    display: inline-block;
+    margin: 5px 2%;
+    border-radius: 5px;
+    position: relative;
+    padding: 0 !important;
+}
+
+[state="mcommerce-category-list"] .item-thumbnail-left>img:first-child {
+    position: absolute;
+    top: 10px;
+    left: 25%;
+    max-width: 50%;
+    max-height: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+[state="mcommerce-category-list"] .list .item.item-custom h2 {
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+}
+
+
+/* FIRST PAGE - CATEGORY LIST END */
+
+
+/* SECOND PAGE - SUBCATEGORY LIST START */
+
+
+/* item image and name */
+
+[state="mcommerce-subcategory-list"] [ng-click="showItem(cover)"] {
+    display: none;
+}
+
+
+/* item name */
+
+[state="mcommerce-subcategory-list"] .list .item.item-custom h2 {
+    margin-top: 80px;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+}
+
+[state="mcommerce-subcategory-list"] [ng-if="item.subtitle"] {
+    text-align: center;
+    background-color: orange !important;
+    font-weight: bold;
+    margin-bottom: 0 !important;
+}
+
+
+/* item price */
+
+[state="mcommerce-subcategory-list"] .item-thumbnail-left>img:first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    max-height: 60%;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+
+/* SECOND PAGE - SUBCATEGORY LIST END */
+
+
+/* THIRD PAGE - MCOMMERCE VIEW-PRODUCT START */
+
+
+/* change card color */
+
+.mcommerce-view.mcommerce-product .card .item.item-custom {
+    border: none !important;
+    background-color: #fff;
+    color: #000 !important;
+}
+
+.mcommerce-view.mcommerce-product .card {
+    box-shadow: none !important;
+    margin: 0;
+    border-radius: 0 !important;
+}
+
+
+/* thumbnail image */
+
+.mcommerce-view.mcommerce-product [ng-if="product.picture.length"] {
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    background-color: transparent !important;
+}
+
+.mcommerce-view.mcommerce-product .card:nth-child(1) {
+    margin: 10px 2% 0 2%;
+    width: 96%;
+    border: 0 !important;
+}
+
+.mcommerce-view.mcommerce-product .card:nth-child(1) .item.item-text-wrap.text-center.item-custom {
+    background-color: transparent;
+}
+
+.mcommerce-view.mcommerce-product [ng-if="product.picture.length"] ion-slide.slider-slide img {
+    border-radius: 50%;
+    width: 250px !important;
+    height: 250px !important;
+    margin: 0 auto !important;
+    object-fit: cover;
+    border: 5px solid #424244;
+}
+
+.mcommerce-view.mcommerce-product div#homepage_slider {
+    width: 250px !important;
+    height: 250px !important;
+    border-radius: 50px !important;
+    min-height: 250px !important;
+    background-color: transparent;
+    margin: 0 auto !important;
+}
+
+.mcommerce-view.mcommerce-product .card:nth-child(2) {
+    margin: 0;
+    width: 100%;
+    border: 0 !important;
+    margin-top: -166px;
+    background-color: #fff !important;
+    border-top-left-radius: 100% 50px !important;
+    position: relative;
+    z-index: -999;
+    border-radius: 0;
+}
+
+.mcommerce-view.mcommerce-product .card:nth-child(2) .item.item-body.item-custom {
+    border-radius: 0 0 5px 5px !important;
+    margin-top: 0;
+    background-color: #fff !important;
+    padding-top: 190px;
+    border-top-left-radius: 100% 50px !important;
+    border-top-right-radius: 0 !important;
+    border-radius: 0;
+}
+
+.mcommerce-view.mcommerce-product .card:nth-child(1) .item.item-text-wrap.text-center.item-custom h2 {
+    color: #fff;
+}
+
+
+/* margin top each card */
+
+.mcommerce-view.mcommerce-product .card:nth-child(3),
+.mcommerce-view.mcommerce-product .card:nth-child(4) {
+    margin: 0;
+    width: 100%;
+    border-radius: 0;
+}
+
+.mcommerce-view.mcommerce-product .card:nth-child(1) .item.item-body.item-custom {
+    border-radius: 5px 5px 0 0 !important;
+}
+
+.mcommerce-view.mcommerce-product .card:nth-child(2) .item.item-body.item-custom {
+    border-radius: 0 0 5px 5px !important;
+}
+
+
+/* qty */
+
+.mcommerce-view.mcommerce-product .item.item-input.item-custom.input-number-sb {
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}
+
+.mcommerce-view.mcommerce-product .item.item-input.item-custom.input-number-sb input.text-center.input {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.mcommerce-view.mcommerce-product .card:nth-child(3) .input-number-sb .item-input-wrapper {
+    border-radius: 0;
+    height: 40px;
+    max-width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mcommerce-view.mcommerce-product .card:nth-child(4) {
+    padding: 30px 0 250px 0;
+    background-color: #fff;
+}
+
+.mcommerce-view.mcommerce-product .card:nth-child(3) .item.item-body.item-custom {
+    border-radius: 0 0 5px 5px !important;
+}
+
+
+/* plus-minus */
+
+.mcommerce-view.mcommerce-product [ng-click="oneLess()"],
+.mcommerce-view.mcommerce-product [ng-click="oneMore()"] {
+    border-radius: 15px;
+    background-color: transparent !important;
+    background-image: linear-gradient(90deg, #ff8a00, #e52e71);
+    /*background-repeat: no-repeat;*/
+    background-size: cover;
+    height: 40px;
+    width: 40px;
+    color: #fff;
+}
+
+
+/* THIRD PAGE - MCOMMERCE VIEW-PRODUCT END */
+
+
+/* THIRD PAGE - MCOMMERCE VIEW-CART START */
+
+.mcommerce-view.mcommerce-cart .item.item-divider.item-divider-custom {
+    background-color: orange;
+    font-weight: bold;
+    font-size: 18px !important;
+    text-align: left;
+    height: 50px;
+}
+
+.mcommerce-view.mcommerce-cart .item.item-divider.item-divider-custom p {
+    font-weight: bold;
+    font-size: 16px !important;
+    padding-top: 10px;
+}
+
+
+/* plus-minus */
+
+.mcommerce-view.mcommerce-cart [ng-click="oneLess()"],
+.mcommerce-view.mcommerce-cart [ng-click="oneMore()"] {
+    border-radius: 10px;
+    background-color: transparent !important;
+    background-image: linear-gradient(90deg, #ff8a00, #e52e71);
+    background-size: cover;
+    height: 30px;
+    width: 30px;
+    color: #fff;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* thumbnail circle */
+
+.mcommerce-view.mcommerce-cart .item-thumbnail-left>img:first-child {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    max-width: 90px;
+    max-height: 90px;
+    width: 100%;
+    height: 100%;
+}
+
+.mcommerce-view.mcommerce-cart .card img {
+    border-radius: 100%;
+}
+
+.mcommerce-view.mcommerce-cart .card [ng-click="goToCategories()"] {
+    position: fixed !important;
+    right: 30vw !important;
+    border-radius: 5px !important;
+    border-width: 0 !important;
+    z-index: 999 !important;
+    box-shadow: 0 5px 30px 0px rgba(0, 0, 0, 1);
+    background-color: transparent !important;
+    background-image: linear-gradient(90deg, #ff8a00, #e52e71);
+    min-width: 40% !important;
+    min-height: 50px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+
+/* total */
+
+.mcommerce-view.mcommerce-cart .item-note {
+    float: right;
+    color: #e52e71;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+/* CHOOSE STORE */
+
+.mcommerce-view.mcommerce-sales-store .list .item-divider.item-divider-custom {
+    background-color: orange !important;
+    color: rgba(0, 0, 0, 1);
+    border: 0 !important;
+    margin-top: 0 !important;
+    text-align: center;
+    height: 50px;
+    width: 96%;
+    margin-left: 2%;
+    border-radius: 10px 10px 0 0;
+}
+
+.mcommerce-view.mcommerce-sales-store .list:last-child label:last-child {
+    border-radius: 0 0 10px 10px !important;
+}
+
+.mcommerce-view.mcommerce-sales-store .list .item-divider.item-divider-custom h2 {
+    padding-top: 5px;
+    font-weight: bold;
+    font-size: 18px !important;
+}
+
+.mcommerce-view.mcommerce-sales-store .item-radio.radio-custom {
+    color: rgba(107, 170, 132, 1);
+    background-color: transparent;
+    width: 96%;
+    margin-left: 2%;
+    border-radius: 0;
+    border: 0 !important;
+}
+
+
+/* LOGIN OR SIGNUP */
+
+.mcommerce-view.mcommerce-sales-customer ion-list[ng-if="!is_loading && !is_logged_in"] .list {
+    background-color: #fff !important;
+    width: 96%;
+    border-radius: 10px !important;
+    margin: 0 2%;
+}
+
+.mcommerce-view.mcommerce-sales-customer ion-list[ng-if="!is_loading && !is_logged_in"] .item-divider.item-divider-custom {
+    border-radius: 10px 10px 0 0;
+}
+
+.mcommerce-view.mcommerce-sales-customer .list .item-divider.item-divider-custom {
+    border-radius: 10px 10px 0 0;
+}
+
+.mcommerce-view.mcommerce-sales-customer [ng-if="!hasguestmode"] {
+    width: 96%;
+    margin-left: 2%;
+    border-radius: 0 0 10px 10px;
+    border: 0 !important;
+    text-align: center;
+}
+
+.mcommerce-view.mcommerce-sales-customer [ng-click="customer_login()"] {
+    width: 30%;
+    margin: 20px 35%;
+    border-radius: 10px;
+    border: 0 !important;
+    background-color: #22a6e6;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 13px 5px;
+    text-align: center;
+}
+
+.mcommerce-view.mcommerce-sales-customer [ng-if="signupEnabled()"] {
+    width: 30%;
+    margin: 10px 35%;
+    border-radius: 10px;
+    border: 0 !important;
+    background-color: #fd6700;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 13px 5px;
+    text-align: center;
+}
+
+.mcommerce-view.mcommerce-sales-customer [ng-click="customer_guestmode()"] {
+    border-radius: 10px;
+    width: 30%;
+    margin: 10px 35% !important;
+    border: 0 !important;
+    background-color: #fd6700;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 13px 5px;
+    text-align: center;
+}
+
+.mcommerce-view.mcommerce-sales-customer [ng-click="customer_guestmode()"] i {
+    display: none !important;
+}
+
+.mcommerce-view.mcommerce-sales-customer .icon.ion-ios-person-outline,
+.mcommerce-view.mcommerce-sales-customer .icon.ion-ios-personadd-outline {
+    display: none;
+}
+
+
+/* MY INFORMATION */
+
+.mcommerce-view.mcommerce-sales-customer .list .item-divider.item-divider-custom {
+    background-color: orange !important;
+    color: rgba(0, 0, 0, 1);
+    border: 0 !important;
+    margin-top: 0 !important;
+    text-align: left;
+    height: 50px;
+    width: 96%;
+    margin-left: 2%;
+    border-radius: 0;
+    margin-top: 5px;
+}
+
+.mcommerce-view.mcommerce-sales-customer .list .item-divider.item-divider-custom h2 {
+    padding-top: 5px;
+    font-weight: bold;
+    font-size: 18px !important;
+}
+
+.mcommerce-view.mcommerce-sales-customer .item.item-input.item-custom {
+    background-color: #fff !important;
+    width: 96%;
+    margin-left: 2%;
+    border-radius: 0;
+    border: 0 !important;
+}
+
+.mcommerce-view.mcommerce-sales-customer .item.item-input.item-custom:last-child {
+    border-radius: 0;
+}
+
+.mcommerce-view.mcommerce-sales-customer .item.item-input.item-custom .input-label.ng-binding {
+    display: none;
+}
+
+.mcommerce-view.mcommerce-sales-customer .item.item-input.item-custom input {
+    min-width: 100%;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    text-align: left;
+}
+
+.mcommerce-view.mcommerce-sales-customer .list:last-child {
+    margin-bottom: 20px;
+}
+
+.mcommerce-view.mcommerce-sales-customer ion-list:nth-child(1) .item-divider.item-divider-custom {
+    border-radius: 10px 10px 0 0;
+}
+
+.mcommerce-view.mcommerce-sales-customer ion-list:nth-child(2) .item-divider.item-divider-custom {
+    border-radius: 10px 10px 0 0;
+}
+
+.mcommerce-view.mcommerce-sales-customer ion-list:nth-child(2) .item.item-input.item-custom:last-child {
+    border-radius: 0 0 10px 10px;
+}
+
+
+/* PENGANTARAN/DELIVERY */
+
+.mcommerce-view.mcommerce-sales-payment .list .item-divider.item-divider-custom {
+    background-color: orange !important;
+    color: rgba(0, 0, 0, 1);
+    border: 0 !important;
+    margin-top: 0 !important;
+    text-align: center;
+    height: 50px;
+    width: 96%;
+    margin-left: 2%;
+    border-radius: 5px 5px 0 0;
+    margin-top: 5px;
+}
+
+[state="mcommerce-sales-delivery"] .list .item-divider.item-divider-custom h2.ng-binding {
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    padding-top: 10px;
+}
+
+.mcommerce-view.mcommerce-sales-error .item-radio.radio-custom {
+    color: rgba(107, 170, 132, 1);
+    background-color: #fff !important;
+    width: 96%;
+    margin-left: 2%;
+    border-radius: 0;
+    border: 0 !important;
+}
+
+.mcommerce-view.mcommerce-sales-error .item-radio.radio-custom:last-child {
+    border-radius: 0 0 5px 5px;
+}
+
+
+/* PEMBAYARAN/PAYMENT */
+
+[state="mcommerce-sales-delivery"] .list .item-divider.item-divider-custom {
+    background-color: orange !important;
+    color: rgba(0, 0, 0, 1);
+    border: 0 !important;
+    margin-top: 0 !important;
+    text-align: center;
+    height: 50px;
+    width: 96%;
+    margin-left: 2%;
+    border-radius: 5px 5px 0 0;
+}
+
+[state="mcommerce-sales-payment"] .list .item-divider.item-divider-custom h2.ng-binding {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    padding-top: 10px;
+}
+
+.mcommerce-view.mcommerce-sales-payment .item-radio.radio-custom {
+    color: rgba(107, 170, 132, 1);
+    background-color: #fff !important;
+    width: 96%;
+    margin-left: 2%;
+    border-radius: 0;
+    border: 0 !important;
+}
+
+.mcommerce-view.mcommerce-sales-payment .item-radio.radio-custom:last-child {
+    border-radius: 0 0 5px 5px;
+}
+
+
+/* REVIEW */
+
+.mcommerce-view.mcommerce-sales-confirmation .card {
+    margin: 0 2% !important;
+    padding: 0;
+    border-radius: 10px;
+}
+
+.mcommerce-view.mcommerce-sales-confirmation .card .item.item-custom.ng-binding {
+    border-radius: 0 0 10px 10px;
+}
+
+.mcommerce-view.mcommerce-sales-confirmation .card:nth-last-child(3) .item.item-custom.ng-binding {
+    border-radius: 0;
+}
+
+.mcommerce-view.mcommerce-sales-confirmation .card:nth-last-child(2) {
+    margin-top: 10px !important;
+}
+
+.mcommerce-view.mcommerce-sales-confirmation .card:nth-last-child(2) .item.item-custom {
+    border-radius: 0;
+}
+
+.mcommerce-view.mcommerce-sales-confirmation .card:nth-last-child(1) {
+    padding-bottom: 100px;
+    margin-top: 10px !important;
+}
+
+.mcommerce-view.mcommerce-sales-confirmation .card:nth-last-child(1) .item:last-child {
+    border-radius: 0 0 10px 10px;
+}
+
+.mcommerce-view.mcommerce-sales-confirmation .item.item-custom.ng-binding:last-child {
+    margin-bottom: 10px !important;
+}
+
+.mcommerce-view.mcommerce-sales-confirmation .item.item-divider.item-divider-custom {
+    background-color: orange;
+    font-weight: bold;
+    font-size: 18px !important;
+    text-align: left;
+    height: 50px;
+}
+
+.mcommerce-view.mcommerce-sales-confirmation .item.item-divider.item-divider-custom p {
+    font-weight: bold;
+    font-size: 16px !important;
+    padding-top: 10px;
+}
+
+
+/* thumbnail circle */
+
+.mcommerce-view.mcommerce-sales-confirmation .item-thumbnail-left>img:first-child {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    max-width: 90px;
+    max-height: 90px;
+    width: 100%;
+    height: 100%;
+}
+
+.mcommerce-view.mcommerce-sales-confirmation .card img {
+    border-radius: 100%;
+}
+
+
+/* total */
+
+.mcommerce-view.mcommerce-sales-confirmation .item-note {
+    float: right;
+    color: #e52e71;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+/* ORDER HISTORY */
+
+.mcommerce-view.mcommerce-sales-history .item.item-text-wrap.item-custom {
+    width: 96%;
+    margin-left: 2%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.mcommerce-view.mcommerce-sales-history-details .item.item-divider.item-divider-custom.item-custom {
+    background-color: orange !important;
+    color: rgba(0, 0, 0, 1);
+    border: 0 !important;
+    margin-top: 0 !important;
+    text-align: center;
+    height: 50px;
+    width: 96%;
+    margin-left: 2%;
+    padding-top: 15px;
+    border-radius: 5px 5px 0 0;
+    margin-top: 10px !important;
+}
+
+.mcommerce-view.mcommerce-sales-history-details .item.item-custom.ng-binding {
+    color: rgba(0, 0, 0, 1);
+    border: 0 !important;
+    margin-top: 0 !important;
+    width: 96%;
+    margin-left: 2%;
+}
+
+.mcommerce-view.mcommerce-sales-history-details .item.item-custom:last-child,
+.mcommerce-view.mcommerce-sales-history-details .item.item-custom.ng-binding:nth-child(4) {
+    border-radius: 0 0 5px 5px !important;
+}
+
+.mcommerce-view.mcommerce-sales-history-details .icon.ion-pricetag {
+    color: #ffa500
+}
+
+.mcommerce-view.mcommerce-sales-history-details .item.item-custom.item-icon-left {
+    color: rgba(0, 0, 0, 1);
+    border: 0 !important;
+    margin-top: 0 !important;
+    width: 96%;
+    margin-left: 2%;
+}
+
+.mcommerce-view.mcommerce-sales-history-details .item.item-custom.item-icon-left p {
+    width: 20%;
+    float: left;
+}
+
+.mcommerce-view.mcommerce-sales-history-details .item.item-custom.item-icon-left h2 {
+    width: 40%;
+    float: left;
+}
+
+.mcommerce-view.mcommerce-sales-history-details .item.item-custom.item-icon-left p.text-right {
+    width: 40%;
+    float: right;
+}
+
+
+/* hidde page title */
+
+.title.title-center.header-item .nav-bar-title.ng-binding {
+    display: none !important;
+}
+
+
+/* header */
+
+.bar.bar-custom {
+    background-color: #424244 !important;
+}
+
+
+/* Halaman Order Success Setelah validasi */
+
+ion-view.mcommerce-view.mcommerce-sales-success ion-content {
+    top: 0 !important;
+    padding-top: 70px;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-success ion-content .card {
+    background-image: url(https://image.flaticon.com/icons/png/512/845/845646.png);
+    background-position: center top 60px;
+    background-repeat: no-repeat;
+    background-size: 80px;
+    background-color: #424244;
+    height: 250px;
+    box-shadow: none;
+    margin-top: 150px;
+    border-radius: 10px;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-success ion-content .card:before {
+    content: "Berhasil";
+    display: block;
+    font-size: 28px;
+    text-align: center;
+    margin: 20px 0;
+    font-weight: bold;
+    color: #fff;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-success ion-content .card .item.item-text-wrap.item-custom.ng-binding {
+    background-color: transparent;
+    font-size: 0;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-success ion-content .card .item.item-text-wrap.item-custom.ng-binding:after {
+    content: "Terima kasih telah berbelanja, kami akan memproses pesanan Anda secepatnya.";
+    display: block;
+    font-size: 16px;
+    padding-top: 80px;
+    text-align: center;
+    color: #fff;
+    line-height: 1.8;
+    font-style: italic;
+    background-color: transparent;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-success ion-content .card i.icon.ion-checkmark-round {
+    display: none;
+}
+
+ion-view.mcommerce-view.mcommerce-cart [ng-if="!object.cart.lines.length"] .item.item-custom p {
+    font-size: 0;
+}
+
+ion-view.mcommerce-view.mcommerce-cart [ng-if="!object.cart.lines.length"]:before {
+    content: "Maaf, keranjang Anda kosong";
+    text-align: center;
+    display: block;
+    background-color: #fff;
+    color: #000;
+    padding: 10px 0;
+}
+
+ion-view.mcommerce-view.mcommerce-cart [ng-if="!object.cart.lines.length"] .item.item-custom:before {
+    content: " ";
+    background-image: url(https://archive.org/download/keranjang_kosong/keranjang_kosong.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    height: 100px;
+}
+
+
+/* Jika produk format diaktifkan */
+
+
+/*[ng-if="product.optionsGroups.length"] {
+    display: block !important;
+    padding: 15px 10px 0 10px !important;
+}
+*/
+
+[ng-if="product.optionsGroups.length"],
+[ng-if="product.choicesGroups.length"] {
+    display: block !important;
+    padding: 0 !important;
+    background-color: #fff;
+    margin: 0 !important;
+    padding-top: 10px !important;
+}
+
+[ng-if="product.choicesGroups.length"] .list.list-inset {
+    margin-top: 0;
+}
+
+[ng-if="product.choicesGroups.length"] .card .list.list-inset ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row !important;
+}
+
+[ng-if="product.choicesGroups.length"] label.no-bottom-border.item.item-checkbox {
+    height: 40px;
+}
+
+[ng-if="product.choicesGroups.length"] .checkbox .checkbox-icon:before,
+[ng-if="product.choicesGroups.length"] .checkbox input:before {
+    border-color: #e6326d;
+}
+
+.mcommerce-view.mcommerce-product .card:nth-last-child(2) .item.item-input.item-custom.input-number-sb {
+    width: 50%;
+    height: 50px;
+    display: flex !important;
+    justify-content: end !important;
+    align-items: center;
+    padding-left: 0;
+}
+
+.mcommerce-view.mcommerce-product .card:nth-last-child(2) .item.item-text-wrap.item-icon-left.item-custom.ng-binding {
+    width: 40%;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #424244;
+    color: #fff !important;
+    margin-left: 20px;
+    background-color: transparent !important;
+    background-image: linear-gradient(90deg, #ff8a00, #e52e71);
+}
+
+.mcommerce-view.mcommerce-product .card:nth-last-child(2) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff !important;
+    padding: 15px 10px;
+}
+
+.mcommerce-view.mcommerce-product .card:nth-last-child(2) .input-number-sb .input-container {
+    position: absolute;
+    right: 5px;
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mcommerce-view.mcommerce-product .card:nth-last-child(2) .item.item-input.item-custom.input-number-sb .input-label.ng-binding {
+    display: none;
+}
+
+.mcommerce-view.mcommerce-product [ng-repeat="optionsGroup in product.optionsGroups"] label .input-label.ng-binding {
+    display: none;
+}
+
+.mcommerce-view.mcommerce-product [ng-repeat="(i, choicesGroup) in product.choicesGroups"] {
+    margin: 0 !important;
+}
+
+.mcommerce-view.mcommerce-product [ng-repeat="optionsGroup in product.optionsGroups"] label.item.item-select.item-input.item-custom:nth-child(2) {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    left: 0 !important;
+    padding: 0 !important;
+}
+
+.mcommerce-view.mcommerce-product [ng-repeat="optionsGroup in product.optionsGroups"] label.item.item-select.item-input.item-custom:nth-child(1) {
+    height: 45px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    left: 0 !important;
+    padding: 0 !important;
+}
+
+.mcommerce-view.mcommerce-product [ng-repeat="optionsGroup in product.optionsGroups"] .list.list-inset {
+    display: flex;
+}
+
+.mcommerce-view.mcommerce-product .card:nth-child(3) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff !important;
+    padding: 15px 10px;
+}
+
+.mcommerce-view.mcommerce-product label[ng-if="product.formatGroups.length"] select {
+    width: 100% !important;
+    text-align: left !important;
+    min-width: 100% !important;
+}
+
+select.ng-valid.ng-not-empty.ng-dirty.ng-valid-parse.ng-touched {
+    width: 100% !important;
+    min-width: 100%;
+    padding-left: 0;
+}
+
+.mcommerce-view.mcommerce-product label[ng-if="product.formatGroups.length"] {
+    height: 45px;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mcommerce-view.mcommerce-product label[ng-if="product.formatGroups.length"] .input-label.ng-binding {
+    display: none;
+}
+
+
+/* Layout Taxi */
+
+ion-side-menu.menu.menu-left.menu-left-open,
+ion-side-menu.menu.menu-left {
+    margin: 2%;
+    min-height: 96%;
+    border-radius: 30px;
+    background-color: transparent !important;
+}
+
+.layout.layout_taxi .taxi-header {
+    width: 100%;
+    /*background: none !important;*/
+    background-position: center center;
+    background-size: 100% !important;
+    padding: 0;
+    height: 180px !important;
+    background-color: #ecf0f6 !important;
+    background-image: linear-gradient(90deg, #ff8a00, #e52e71) !important;
+    border-radius: 0 0 30px 0;
+}
+
+.layout_taxi .line-title {
+    line-height: 6vw;
+    margin-left: 1em;
+    font-weight: 700;
+    font-variant: normal;
+    text-transform: capitalize !important;
+    font-weight: normal;
+}
+
+.layout.layout_taxi ion-content .col-100.text-center span.taxi-signup span.taxi-signup-text.ng-binding,
+.layout.layout_taxi ion-content .col-100.text-center span.taxi-signup span.taxi-or-text.ng-binding {
+    display: none;
+}
+
+.layout.layout_taxi ion-content .taxi-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.layout.layout_taxi ion-content .col-100.text-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.layout.layout_taxi ion-content span.taxi-login-text.ng-binding {
+    border-radius: 10px;
+    /*background-color: #fff !important;*/
+    padding: 10px 25px;
+    background-image: linear-gradient(90deg, #ff8a00, #e52e71);
+    color: #fff;
+}
+
+.layout.layout_taxi ion-content ul.items.homepage-custom {
+    border-radius: 30px 0 0 0;
+    height: 100vh !important;
+    overflow: hidden !important;
+    padding-top: 2rem;
+    min-height: 100vh !important;
+}
+
+.layout.layout_taxi ion-content {
+    padding: 0;
+    background-color: #fe8506 !important;
+    margin: 2%;
+    border-radius: 30px;
+    background: rgb(244, 129, 63);
+    background: linear-gradient(90deg, rgba(244, 129, 63, 1) 0%, rgba(243, 119, 73, 1) 50%, rgba(255, 255, 255, 1) 50%);
+    overflow: hidden;
+}
+
+.layout_taxi .customer-name {
+    width: 100%;
+    font-size: 16px;
+    text-align: left;
+    color: #fff;
+}
+
+.layout_taxi .taxi-header .taxi-avatar-wrapper {
+    height: 25vw;
+    width: 25vw;
+    border: 2px solid #e7346a;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+}
+
+
+/* End Layout Taxi */
+
+
+/* Padlock */
+
+ion-header-bar.bar-custom.bar.bar-header {
+    height: 0 !important;
+    background-color: transparent !important;
+}
+
+ion-view.padlock-view ion-content {
+    top: 0 !important;
+    background-image: linear-gradient(90deg, #ff8a00, #e52e71);
+}
+
+ion-view.padlock-view .card.padlock:before {
+    content: " ";
+    display: block;
+    height: 250px;
+    background-position: top -94px right -204px;
+    background-size: 96%;
+    background-repeat: no-repeat;
+    background-image: url(https://o.remove.bg/downloads/da6ad6cf-7fc7-409e-bbfa-c86b03df002c/153-1531215_tomato-drawing-kamatis-vegetable-tomato-in-clip-art-removebg-preview.png);
+    box-shadow: none;
+}
+
+ion-view.padlock-view .card.padlock {
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+}
+
+ion-view.padlock-view .card.padlock .item.item-text-wrap.item-custom h2:before {
+    content: "Welcome";
+    display: block;
+    font-weight: bold;
+    font-size: 36px;
+    margin-top: -60px;
+    color: #fff;
+}
+
+ion-view.padlock-view .card.padlock h2.ng-binding {
+    font-size: 0 !important;
+}
+
+ion-view.padlock-view .card.padlock .item.item-body.item-custom.text-center {
+    display: none;
+}
+
+ion-view.padlock-view .card.padlock .item.item-custom {
+    border: 0;
+    background-color: transparent;
+    color: #fff;
+    line-height: 1.8;
+    padding: 10px 50px 0 20px;
+    font-size: 14px;
+}
+
+ion-view.padlock-view .card.padlock .item.item-icon-left.item-custom i {
+    display: none;
+}
+
+ion-view.padlock-view .card.padlock .item.item-icon-left.item-custom.ng-binding {
+    margin: 50px 0 0 16px;
+    top: 0 !important;
+    /*background-image: linear-gradient(90deg,#e83864,#fd8208) !important;*/
+    background-image: linear-gradient(90deg, #ff8a00, #e52e71);
+    width: 60%;
+    height: 55px;
+    text-align: center;
+    border-radius: 30px;
+    border: 2px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    font-size: 0;
+}
+
+ion-view.padlock-view .card.padlock .item.item-icon-left.item-custom.ng-binding:after {
+    content: "Masuk atau Register";
+    font-size: 14px;
+}
+
+
+/* End Padlock */
+
+
+/* My Account */
+
+ion-modal-view.customer-view.customer-layout1.modal ion-content {
+    top: 0 !important;
+    background-image: linear-gradient(90deg, #ff8a00, #e52e71);
+}
+
+ion-modal-view.customer-view.customer-layout1.modal div[ng-show="display_login_form"],
+ion-modal-view.customer-view.customer-layout1.modal div[ng-show="display_forgot_password_form"],
+ion-modal-view.customer-view.customer-layout1.modal div[ng-show="display_settings"] {
+    margin: 50px 0 0 0;
+}
+
+ion-modal-view.customer-view.customer-layout1.modal div[ng-show="display_login_form"]:before {
+    content: " ";
+    display: block;
+    height: 170px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(https://o.remove.bg/downloads/da6ad6cf-7fc7-409e-bbfa-c86b03df002c/153-1531215_tomato-drawing-kamatis-vegetable-tomato-in-clip-art-removebg-preview.png);
+    box-shadow: none;
+}
+
+ion-modal-view.customer-view.customer-layout1.modal div[ng-show="display_forgot_password_form"]:before {
+    content: " ";
+    display: block;
+    height: 170px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(https://o.remove.bg/downloads/13ccdd7b-f0cd-44f1-921e-712a8fefb0c3/comhiclipartiturp-removebg-preview.png);
+    box-shadow: none;
+}
+
+ion-modal-view.customer-view.customer-layout1.modal div[ng-show="display_login_form"] label.item.item-input.item-custom,
+ion-modal-view.customer-view.customer-layout1.modal div[ng-show="display_forgot_password_form"] label.item.item-input.item-custom {
+    border-radius: 10px;
+    height: 50px;
+    margin: 15px 0;
+    padding: 0;
+    border: 0;
+    width: 90%;
+    margin-left: 5%;
+}
+
+ion-modal-view.customer-view.customer-layout1.modal .list.card {
+    box-shadow: none;
+}
+
+ion-modal-view.customer-view.customer-layout1.modal i.icon.ion-ios-person {
+    height: 55px;
+    font-size: 40px;
+    color: #ffffff;
+    background-color: #e83866;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 !important;
+    width: 55px;
+}
+
+ion-modal-view.customer-view.customer-layout1.modal i.icon.ion-locked {
+    height: 55px;
+    font-size: 25px;
+    color: #ffffff;
+    background-color: #e83866;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 !important;
+    width: 55px;
+}
+
+ion-modal-view.customer-view.customer-layout1.modal ion-content .list.card input {
+    padding-left: 10px;
+    text-align: left;
+}
+
+ion-modal-view.customer-view.customer-layout1.modal button.button.button-positive-custom {
+    margin: 50px 5% 14px;
+    top: 0 !important;
+    height: 50px;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    background: #e83866;
+    color: #fff;
+    width: 90%;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+ion-modal-view.customer-view.customer-layout1.modal .padding.text-right {
+    width: 100%;
+    padding: 0;
+    color: #fff !important;
+}
+
+ion-modal-view.customer-view.customer-layout1.modal .padding.text-right span,
+ion-modal-view.customer-view.customer-layout1.modal .padding.text-center.ng-binding span,
+ion-modal-view.customer-view.customer-layout1.modal .padding.text-left {
+    color: #fff;
+    font-weight: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ion-modal-view.customer-view.customer-layout1.modal ion-content>.scroll>div:nth-child(3) section.avatar.text-center.padding {
+    background-image: url(https://o.remove.bg/downloads/2edc7bb0-71e0-42e1-95d4-c7cb5935655f/vegetable-stock-photography-food-whole-removebg-preview.png);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+ion-modal-view.customer-view.customer-layout1.modal ion-content>.scroll>div:nth-child(3) .input-label.ng-binding,
+ion-modal-view.customer-view.customer-layout1.modal ion-content>.scroll>div:nth-child(3) .input-label {
+    display: none;
+}
+
+ion-modal-view.customer-view.customer-layout1.modal ion-content>.scroll>div:nth-child(3) .item.item-input.item-custom {
+    border-radius: 10px;
+    margin: 10px 0;
+    background: rgb(255, 255, 255);
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 1) 95%, rgba(254, 135, 4, 1) 95%);
+    /*background-image: url("https://archive.org/download/edit_icon/edit_icon.png"), linear-gradient(90deg, rgba(255,255,255,1) 95%, rgba(254,135,4,1) 95%);*/
+    height: 50px;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+ion-modal-view.customer-view.customer-layout1.modal ion-content>.scroll>div:nth-child(3) sb-clickwrap label,
+ion-modal-view.customer-view.customer-layout1.modal ion-content>.scroll>div:nth-child(3) [ng-model="customer.communication_agreement"] {
+    background-color: transparent !important;
+}
+
+ion-modal-view.customer-view.customer-layout1.modal div[ng-show="display_settings"] .list.card {
+    margin-top: 150px;
+}
+
+ion-modal-view.customer-view.customer-layout1.modal .padding.text-left:before {
+    content: "Silakan kirim email Anda pada kolom nnerikut ini. Kami akan mengirimi Anda kata sandi baru.";
+    line-height: 1.8;
+    text-align: center;
+    display: block;
+}
+
+ion-modal-view.customer-view.customer-layout1.modal .padding.text-left p.ng-binding {
+    display: none;
+}
+
+ion-modal-view.customer-view.customer-layout1.modal ion-content>.scroll>div:nth-child(3) .card label.item.item-custom.bold.ng-binding {
+    border: 0;
+    color: #fff;
+    border-radius: 10px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+}
+
+ion-modal-view.customer-view.customer-layout1.modal ion-content>.scroll>div:nth-child(3) span[ng-click="showPrivacyPolicy()"],
+ion-modal-view.customer-view.customer-layout1.modal ion-content>.scroll>div:nth-child(3) div[ng-click="requestGdprToken()"] {
+    display: none !important;
+}
+
+
+/* End My Account */
+
+
+/* Push Notification */
+
+ion-view.module-push.push-list.push-list-l1 ion-content {
+    background-image: linear-gradient(90deg, #ff8a00, #e52e71);
+    top: 0 !important;
+    padding-top: 70px;
+}
+
+ion-view.module-push.push-list.push-list-l1 ion-content {
+    bottom: 0 !important;
+}
+
+ion-view.module-push.push-list.push-list-l1 .list {
+    padding: 0 5px 100px 5px;
+}
+
+ion-view.module-push.push-list.push-list-l1 ion-item.item-custom.item.item-avatar.item-avatar-square {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    margin: 10px 0;
+    padding: 10px;
+    background-image: linear-gradient(90deg, #ff8a00, #e52e71);
+    border: 2px solid #fe8505 !important;
+}
+
+ion-view.module-push.push-list.push-list-l1 ion-item.item-custom.item.item-avatar.item-avatar-square>img:nth-child(1) {
+    top: 35px;
+    right: 0 !important;
+    left: 85% !important;
+    border-radius: 50px !important;
+}
+
+ion-view.module-push.push-list.push-list-l1 ion-item img {
+    border-radius: 10px;
+}
+
+ion-view.module-push.push-list.push-list-l1 ion-item.item-custom.item.item-avatar.item-avatar-square>img:nth-child(1) {
+    top: 5px;
+    right: 0 !important;
+    left: 84% !important;
+    border-radius: 50px !important;
+    min-width: 55px !important;
+    min-height: 55px !important;
+}
+
+ion-view.module-push.push-list.push-list-l1 p.text-no-wrap.ng-binding {
+    color: #fff !important;
+    font-weight: normal !important;
+    margin-top: 15px;
+}
+
+ion-view.module-push.push-list.push-list-l1 h2 span.ng-binding {
+    font-size: 18px;
+    margin: 10px 0;
+    display: block;
+    color: #fff;
+}
+
+ion-view.module-push.push-list.push-list-l1 span.super-click.assertive {
+    position: absolute;
+    bottom: 15px;
+    width: 40px;
+    background-color: transparent;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ion-view.module-push.push-list.push-list-l1 i.icon.ion-android-delete {
+    font-size: 28px;
+    color: #fff;
+}
+
+ion-view.module-push.push-list.push-list-l1 span[ng-if="item.details.date"] {
+    color: #fff;
+    font-style: italic;
+}
+
+ion-view.module-push.push-list.push-list-l1 span[ng-if="item.details.date"] i.ion-ios-calendar-outline {
+    display: none;
+}
+
+ion-view.module-push.push-list.push-list-l1 span[ng-if="hasItem(item)"] {
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 30px;
+    margin: 0 0 0 10px;
+}
+
+ion-view.module-push.push-list.push-list-l1 p.padding.text-right {
+    padding: 10px 0;
+}
+
+
+/* End Push Notification */

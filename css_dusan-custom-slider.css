@@ -1,0 +1,30 @@
+ion-view.module-cms.cms-l1 .card {
+    box-shadow: none !important;
+    margin: 0 10px;
+} 
+
+ion-view.module-cms.cms-l1 .item.item-text-wrap.item-custom.sb-cms-text {
+    padding: 0;
+}
+
+ion-view.module-cms.cms-l1 .content.ng-binding {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ion-view.module-cms.cms-l1 .content.ng-binding h2 {
+    font-size: 16px;
+}
+
+ion-view.module-cms.cms-l1 .content.ng-binding a {
+    color: #de1b51 !important;
+    background-color: #ecf0f6;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+[ng-switch-when="source"].card.no-shadow .item.item-custom {
+    padding: 10px 0;
+}
+

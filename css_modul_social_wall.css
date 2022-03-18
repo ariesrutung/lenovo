@@ -1,0 +1,161 @@
+/* hide header title */
+.bar.bar-custom .title {
+    display: none;
+}
+
+/* Subheader menu start */
+.module-fanwall.fanwall-list-l1 .bar-subheader .button-bar > .button:last-child {
+    position: fixed !important;
+    top: calc(90vh - 60px) !important;
+    right: 6vw !important;
+    border-radius: 100px !important;
+    border-width: 0 !important;
+    padding: 5px !important;
+    z-index: 999 !important;
+    box-shadow: 5px 5px 5px #888 !important;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff !important;
+}
+
+.module-fanwall.fanwall-list-l1 .bar-subheader {
+    background-color: transparent !important;
+    border-radius: 10px !important;
+    width: 98% !important;
+    margin: 0 1% !important;
+    background-image: none !important;
+    box-shadow: none !important;
+}
+
+.module-fanwall.fanwall-list-l1 .bar-subheader button {
+    background-color: transparent !important;
+}
+
+.module-fanwall.fanwall-list-l1 .bar-subheader .button-bar > .button:hover {
+    background-color: transparent;
+}
+
+.module-fanwall.fanwall-list-l1 .bar-subheader .button-bar > .button {
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px !important;
+}
+
+.module-fanwall.fanwall-list-l1 .bar-subheader button.button.button-custom.button-positive.button-positive-custom.ng-binding.fw-icon-selected.icon-active-custom {
+    background-color: #ecf0f6 !important;
+    border-radius: 30px;
+}
+
+.module-fanwall.fanwall-list-l1 .bar-subheader .button-bar {
+    padding: 5px !important;
+    background-image: none !important;
+    box-shadow: none;
+}
+
+.module-fanwall.fanwall-list-l1 .bar-subheader .button-bar > .button img {
+    margin: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px !important;
+}
+/* Subheader menu end */
+
+
+ion-view[state="fanwall-home"] ion-item.item-custom.item {
+    margin: 5px !important;
+    background-color: #ecf0f6 !important;
+    padding: 5px !important;
+    border-radius: 10px;
+}
+
+ion-view[state="fanwall-home"] .list:last-child fanwall-post-item:nth-child(1) ion-item.item-custom.item {
+    margin-top: 0 !important;
+}
+
+ion-view[state="fanwall-home"] .list:last-child {
+    margin-bottom: 0;
+    background-color: #886aea;
+    border-radius: 30px 30px 0 0;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+ion-view[state="fanwall-home"] .list:last-child fanwall-post-item ion-item.item-custom.item * {
+    color: #fff !important;
+}
+
+ion-view[state="fanwall-home"] .list:last-child fanwall-post-item ion-item.item-custom.item {
+    margin-top: 10px !important;
+    background-color: transparent !important;
+}
+
+ion-view[state="fanwall-home"] .post-body span.ng-binding {
+    line-height: 1.5 !important;
+    font-size: 14px;
+}
+
+ion-view[state="fanwall-home"] .item-avatar.post-author {
+    padding: 0 !important;
+}
+
+ion-view[state="fanwall-home"] .item-avatar.post-author img {
+    display: none;
+}
+
+ion-view[state="fanwall-home"] a.fanwall-image-bg {
+    border-radius: 20px !important;
+}
+
+ion-view[state="fanwall-home"] .post-actions {
+    width: 100%;
+    border-radius: 10px;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 #886aea;
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 0;
+    padding: 5px !important;
+    margin-bottom: 10px !important;
+}
+
+ion-view[state="fanwall-home"] .module-fanwall.fanwall-list-l1 .item .post-author h2 {
+    font-weight: bold;
+    line-height: 16px;
+    height: 100% !important;
+    margin-top: 0 !important;
+}
+
+ion-view[state="fanwall-home"] .item .post-image,
+ion-view[state="fanwall-home"] .fanwall-post-image-container {
+    margin: 0 !important;
+}
+
+ion-view[state="fanwall-home"] ion-item.item-custom.item {
+    display: flex;
+    flex-direction: column;
+}
+
+ion-view[state="fanwall-home"] ion-item.item-custom.item .item-avatar.post-author {
+    order: 1;
+}
+
+ion-view[state="fanwall-home"] ion-item.item-custom.item div:nth-child(2) {
+    order: 2;
+}
+
+ion-view[state="fanwall-home"] ion-item.item-custom.item .post-body {
+    order: 4;
+    border-bottom: 1px solid #fff;
+}
+
+ion-view[state="fanwall-home"] ion-item.item-custom.item .post-actions {
+    order: 3;
+    margin-top: -40px;
+}
