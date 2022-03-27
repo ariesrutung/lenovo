@@ -1,0 +1,268 @@
+ion-header-bar.bar-custom.bar.bar-header {
+    background-color: #fff !important;
+    background-image: url(https://justapp.id/member/halaman/unggah/article/9a30b24bf204565d000006049fc603c6iespa.png);
+    background-position: center right 5px;
+    background-repeat: no-repeat;
+    background-size: 25%;
+    color: transparent;
+}
+
+.bar.bar-custom .title {
+    color: transparent;
+}
+
+button[ng-show="showLeftButton()"] {
+    background-image: url(https://justapp.id/assets/images/toggler_icon.svg) !important;
+    color: transparent !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: 70% !important;
+}
+
+
+/* Mulai Folder v2 */
+ion-view[state="folder2-category-list"] .item.item-image.item-custom img {
+    height: 150px;
+    object-fit: cover;
+    object-position: center center;
+}
+
+ion-view[state="folder2-category-list"] {
+    background-image: none !important;
+    background-color: #fff !important;
+}
+
+ion-view[state="folder2-category-list"] [ng-if="current.showTitle"] {
+    background-color: transparent !important;
+}
+
+ion-view[state="folder2-category-list"] [ng-if="current.showTitle"] h2.ng-binding {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    order: 2;
+    width: 100%;
+}
+
+ion-view[state="folder2-category-list"] [ng-if="current.showTitle"] p.ng-binding {
+    color: #fff !important;
+    font-size: 16px;
+    font-style: italic;
+    order: 1;
+    width: 100%;
+}
+
+
+ion-view[state="folder2-category-list"] [ng-if="current.showTitle"] {
+    background: rgb(194,17,17);
+    background: transparent;
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0 10px;
+    margin-top: 10px;
+}
+
+ion-view[state="folder2-category-list"] .list.folder-layout.folder-l3 {
+    margin-top: 0;
+}
+
+ion-view[state="folder2-category-list"] .list.folder-layout.folder-l3 .folder-l3-row:nth-child(1) {
+    background: rgb(194,17,17);
+    background: linear-gradient(70deg, rgba(194,17,17,1) 0%, rgba(194,17,17,1) 50%, rgba(255,255,255,1) 50%, rgba(250,236,236,1) 75%, rgba(194,17,17,1) 75%, rgba(194,17,17,1) 100%);
+    padding: 70px 10px 15px 10px;
+    display: flex;
+    margin: -71px 0 20px 0;
+    overflow: visible;
+    white-space: nowrap !important;
+    width: 100% !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    white-space: nowrap !important;
+    -webkit-overflow-scrolling: touch !important;
+}
+
+ion-view[state="folder2-category-list"] .list.folder-layout.folder-l3 .folder-l3-row:nth-child(1) .folder-l3-col.item.item-custom {
+    background-color: transparent !important;
+    border-radius: 20px;
+    width: 100% !important;
+    border: 2px solid #fff;
+    min-width: 35% !important;
+    display: inline-block !important;
+    height: 200px;
+    margin: 0 2%;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background: rgb(194,17,17);
+    background: linear-gradient(45deg, rgba(194,17,17,1) 0%, rgba(126,6,6,1) 50%) !important;
+}
+
+.folder-layout.folder-l3 .folder-l3-row:nth-child(1) div.folder-l3-col img {
+    width: 100%;
+    background-image: url(https://img.zonared.com/images/caratulas/6200/6281-th1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    height: 160px;
+}
+
+.folder-layout.folder-l3 .folder-l3-row:nth-child(1) div.folder-l3-col p.folder-subtitle.ng-binding {
+    background-color: #fff !important;
+    color: #000 !important;
+    border-radius: 30px;
+    border: 2px solid #c21111;
+    font-size: 14px !important;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    padding: 0 !important;
+    order: 1 !important;
+    width: 80%;
+    margin: 0 10% 33px 10%;
+}
+
+.folder-layout.folder-l3 .folder-l3-row:nth-child(2) {
+    margin-top: 30px;
+}
+
+
+.folder-layout.folder-l3 .folder-l3-row:nth-child(2) {
+    margin-top: 0;
+    background-image: url(https://res.cloudinary.com/lmn/image/upload/c_limit,h_392,w_696/e_sharpen:100/f_auto,fl_lossy,q_auto/v1/gameskinnyc/e/s/p/esports-banner-2ab5e.jpg);
+    padding: 42px 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.folder-layout.folder-l3 .folder-l3-row:nth-child(2) div.folder-l3-col img {
+    width: 100%;
+    background-image: url(https://asset.kompas.com/crops/BU9kcV24cOLREjfywVv0Xw_jfUs=/151x0:1231x720/750x500/data/photo/2020/06/25/5ef405986c087.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    height: 160px;
+}
+
+.folder-layout.folder-l3 .folder-l3-row:nth-child(2) {
+    display: flex;
+    overflow: visible;
+    white-space: nowrap !important;
+    width: 100% !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    white-space: nowrap !important;
+    -webkit-overflow-scrolling: touch !important;
+}
+
+.folder-layout.folder-l3 .folder-l3-row:nth-child(2) div.folder-l3-col {
+    background-color: #fff;
+    border-radius: 20px;
+    width: 50% !important;
+    min-width: 50% !important;
+    height: 120px;
+    display: inline-block !important;
+    display: flex;
+    border: 2px solid #fff;
+}
+
+.folder-layout.folder-l3 .folder-l3-row:nth-child(2) div.folder-l3-col p.folder-title.ng-binding {
+    text-align: left;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 30px;
+    bottom: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.folder-layout.folder-l3 .folder-l3-row:nth-child(2) div.folder-l3-col p.folder-subtitle.ng-binding {
+    text-align: left;
+    background-color: #fff !important;
+    color: #000 !important;
+    border-radius: 5px 20px;
+    border: 2px solid #38647d;
+    font-size: 14px !important;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    padding: 0 !important;
+    width: 44%;
+    margin: 0 !important;
+    top: 0;
+    height: 30px;
+    right: 0;
+}
+
+
+/* 3 menu ketiga */
+.folder-layout.folder-l3 .folder-l3-row:nth-child(3) {
+    margin-top: 30px;
+    background-image: url(https://www.99.co/blog/indonesia/wp-content/uploads/2022/01/gambar-mobile-legends.png);
+    padding: 40px 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    overflow: visible;
+    white-space: nowrap !important;
+    width: 100% !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    white-space: nowrap !important;
+    -webkit-overflow-scrolling: touch !important;
+}
+
+.folder-layout.folder-l3 .folder-l3-row:nth-child(3) div.folder-l3-col img {
+    width: 100%;
+    background-image: url(https://storage.indoesports.com/images/paquito-mobile-legends-ml-hero-baru-yang-bakal-saingi-chou.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    height: 170px;
+    position: relative;
+}
+
+.folder-layout.folder-l3 .folder-l3-row:nth-child(3) div.folder-l3-col {
+    background-color: #fff !important;
+    width: 75% !important;
+    min-width: 75% !important;
+    display: inline-block !important;
+    padding-bottom: 12px;
+    position: relative;
+    background-image: none !important;
+    border-radius: 10px;
+}
+
+.folder-layout.folder-l3 .folder-l3-row:nth-child(3) div.folder-l3-col p.folder-title.ng-binding {
+    text-align: left;
+    white-space: normal;
+    font-size: 18px;
+    background-color: transparent;
+    display: flex;
+    padding: 0 10px;
+    position: relative;
+    color: #000;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.folder-layout.folder-l3 .folder-l3-row:nth-child(3) div.folder-l3-col p.folder-subtitle.ng-binding {
+    text-align: left;
+    color: #000 !important;
+    font-size: 14px !important;
+    padding: 0 10px !important;
+    white-space: normal;
+    background-color: transparent;
+    position: relative;
+    margin-top: 5px !important;
+}
