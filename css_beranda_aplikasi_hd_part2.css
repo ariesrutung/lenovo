@@ -55,7 +55,8 @@ ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(5) .conten
     margin-bottom: 20px;
     overflow: visible;
     width: 100% !important;
-    overflow-x: auto !important;
+    max-width: none !important;
+    overflow-x: scroll !important;
     overflow-y: hidden !important;
     white-space: nowrap !important;
     -webkit-overflow-scrolling: touch !important;
@@ -65,7 +66,7 @@ ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(5) .conten
     background: rgb(61,164,255);
     background: linear-gradient(74deg, rgba(61,164,255,1) 0%, rgba(76,183,254,1) 100%);
     padding: 0;
-    display: flex !important;
+    display: inline-flex !important;
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
@@ -177,7 +178,8 @@ ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(7) .conten
     margin-bottom: 20px;
     overflow: visible;
     width: 100% !important;
-    overflow-x: auto !important;
+    max-width: none !important;
+    overflow-x: scroll !important;
     overflow-y: hidden !important;
     white-space: nowrap !important;
     -webkit-overflow-scrolling: touch !important;
@@ -190,7 +192,7 @@ ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(7) .conten
     margin: 0 1%;
     background-color: #de1b51 !important;
     border-radius: 10px;
-    display: flex !important;
+    display: inline-flex !important;
     justify-content: center;
     align-items: center;
     color: #fff;
@@ -323,7 +325,8 @@ ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(23) .conte
     margin-bottom: 20px;
     overflow: visible;
     width: 100% !important;
-    overflow-x: auto !important;
+    max-width: none !important;
+    overflow-x: scroll !important;
     overflow-y: hidden !important;
     white-space: nowrap !important;
     -webkit-overflow-scrolling: touch !important;
@@ -332,7 +335,7 @@ ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(23) .conte
 ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(19) .content.ng-binding p {
     background-color: #4ab4ff;
     padding: 10px;
-    display: flex !important;
+    display: inline-flex !important;
     justify-content: center;
     align-items: center;
     min-width: 70% !important;
@@ -347,7 +350,7 @@ ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(19) .conte
 ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(19) .content.ng-binding p a {
     background-color: #4ab4ff;
     padding: 0 80px 0 0px;
-    display: flex !important;
+    display: inline-flex !important;
     min-width: 70% !important;
     margin: 0 1%;
     border-radius: 10px;
@@ -373,7 +376,7 @@ ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(19) .conte
 ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(23) .content.ng-binding p:nth-child(1) {
     background-color: #4ab4ff;
     padding: 5px;
-    display: flex !important;
+    display: inline-flex !important;
     justify-content: center;
     align-items: center;
     min-width: 80% !important;
@@ -389,7 +392,7 @@ ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(23) .conte
 ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(23) .content.ng-binding p:nth-child(2) {
     background-color: #4ab4ff;
     padding: 10px;
-    display: flex !important;
+    display: inline-flex !important;
     justify-content: center;
     align-items: center;
     min-width: 80% !important;
@@ -405,7 +408,7 @@ ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(23) .conte
 ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(23) .content.ng-binding p:nth-child(3) {
     background-color: #4ab4ff;
     padding: 10px;
-    display: flex !important;
+    display: inline-flex !important;
     justify-content: center;
     align-items: center;
     min-width: 80% !important;
@@ -421,7 +424,7 @@ ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(23) .conte
 ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(23) .content.ng-binding p:nth-child(4) {
     background-color: #4ab4ff;
     padding: 10px;
-    display: flex !important;
+    display: inline-flex !important;
     justify-content: center;
     align-items: center;
     min-width: 80% !important;
@@ -437,7 +440,7 @@ ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(23) .conte
 ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(23) .content.ng-binding p:nth-child(5) {
     background-color: #4ab4ff;
     padding: 10px;
-    display: flex !important;
+    display: inline-flex !important;
     justify-content: center;
     align-items: center;
     min-width: 80% !important;
@@ -478,7 +481,8 @@ ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(15) .conte
     margin-bottom: 20px;
     overflow: visible;
     width: 100% !important;
-    overflow-x: auto !important;
+    max-width: none !important;
+    overflow-x: scroll !important;
     overflow-y: hidden !important;
     white-space: nowrap !important;
     -webkit-overflow-scrolling: touch !important;
@@ -487,7 +491,7 @@ ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(15) .conte
 ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(15) .content.ng-binding p {
     background-color: transparent;
     padding: 0;
-    display: flex !important;
+    display: inline-flex !important;
     justify-content: center;
     align-items: center;
     min-width: 70% !important;
@@ -561,7 +565,8 @@ ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(21) .conte
     margin-bottom: 20px;
     overflow: visible;
     width: 100% !important;
-    overflow-x: auto !important;
+    max-width: none !important;
+    overflow-x: scroll !important;
     overflow-y: hidden !important;
     white-space: nowrap !important;
     -webkit-overflow-scrolling: touch !important;
