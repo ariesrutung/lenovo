@@ -1,0 +1,378 @@
+/* MY ACCOUNT */
+
+ion-modal-view.privacy-policy-view ion-content {
+    background-color: #fff !important;
+    border-radius: 40px 40px 0 0 !important;
+    padding-top: 20px;
+    border-top: 15px solid #fff;
+    margin-top: 5px;
+}
+
+
+/* 24032021 */
+
+ion-modal-view.privacy-policy-view ion-content {
+    background-color: #fff !important;
+    border-radius: 40px 40px 0 0 !important;
+    padding-top: 20px;
+    border-top: 15px solid #fff;
+    margin-top: 5px;
+}
+
+
+/* button login, save, & send */
+
+.customer-view.customer-layout1 .button.button-positive.button-positive-custom.ng-binding.button-full {
+    width: 60%;
+    margin: 10px 20%;
+    border-radius: 30px;
+    top: 10px !important;
+    margin-bottom: 30px;
+    background-color: #019031 !important;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+/* End my account */
+
+.customer-view.customer-layout1 .list {
+    margin-bottom: 0;
+}
+
+.customer-view.customer-layout1 .list .padding {
+    padding: 10px;
+    font-size: 12px;
+}
+
+div[ng-show="display_login_form"] .text-right {
+    text-align: right;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll div[ng-show="display_login_form"] div {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll [ng-show="display_login_form"] div.text-center {
+    visibility: hidden;
+    display: flex;
+    flex-direction: row;
+    top: 0;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    font-size: 0;
+    background-color: #898989 !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll [ng-show="display_login_form"] div.text-center:after {
+    content: "DAFTAR";
+    visibility: visible;
+    width: 40%;
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    text-align: center;
+    margin: 0;
+    order: 2;
+    padding: 10px;
+    color: #000;
+    justify-content: center;
+    align-items: center;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll [ng-show="display_login_form"] div.text-center:before {
+    visibility: visible;
+    content: "LOGIN";
+    width: 40%;
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    text-align: center;
+    margin: 0;
+    order: 2;
+    border-bottom: 3px solid #ecf0f6;
+    padding: 10px;
+    cursor: default;
+    pointer-events: none;
+    color: #000;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll [ng-show="display_login_form"] div.list {
+    -webkit-box-ordinal-group: 2;
+    -moz-box-ordinal-group: 2;
+    -ms-flex-order: 2;
+    -webkit-order: 2;
+    order: 2;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll [ng-show="display_login_form"] div.list:before {
+    content: "Senang melihatmu kembali. Silakan Login!";
+    display: flex;
+    font-size: 14px !important;
+    color: #000;
+    margin: 25px 10% 0;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll [ng-show="display_login_form"] div:nth-child(3) {
+    -webkit-box-ordinal-group: 3;
+    -moz-box-ordinal-group: 3;
+    -ms-flex-order: 3;
+    -webkit-order: 3;
+    order: 3;
+    margin-right: 10px;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll div:nth-child(4) {
+    -webkit-box-ordinal-group: 4;
+    -moz-box-ordinal-group: 4;
+    -ms-flex-order: 4;
+    -webkit-order: 4;
+    order: 4;
+}
+
+[ng-show="display_login_form"] .item.item-input.item-custom {
+    display: inline-block;
+    width: 90%;
+    margin: 15px 5%;
+}
+
+[ng-show="display_login_form"] .item.item-input.item-custom i {
+    width: 100%;
+    display: flex;
+    position: relative;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: left;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+[ng-show="display_login_form"] i.icon.ion-ios-person:after {
+    visibility: visible;
+    content: "Username/Email *";
+    color: #000;
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+[ng-show="display_login_form"] i.icon.ion-locked:after {
+    visibility: visible;
+    content: "Kata Sandi *";
+    color: #000;
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+[ng-show="display_login_form"] .item.item-input.item-custom input {
+    width: 100%;
+    display: block;
+    position: relative;
+    text-align: left;
+    padding-left: 10px;
+    color: #000 !important;
+    font-size: 14px;
+    background-color: #ecf0f6;
+    border-radius: 10px;
+    height: 45px;
+}
+
+
+/* placeholder */
+
+[ng-show="display_login_form"] .item.item-input.item-custom input::-webkit-input-placeholder {
+    color: #dbdbdb !important;
+}
+
+[ng-show="display_login_form"] .item.item-input.item-custom input:-moz-placeholder {
+    /* Firefox 18- */
+    color: #dbdbdb !important;
+}
+
+[ng-show="display_login_form"] .item.item-input.item-custom input::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #dbdbdb !important;
+}
+
+[ng-show="display_login_form"] .item.item-input.item-custom input:-ms-input-placeholder {
+    color: #dbdbdb !important;
+}
+
+
+/* placeholder */
+
+[ng-show="display_login_form"] .button.button-positive-custom {
+    border-color: transparent;
+    background-color: #f5ba2e;
+    color: #ffffff;
+    width: 40%;
+    border-radius: 20px;
+    margin: 10px auto;
+    text-transform: uppercase;
+}
+
+[ng-show="display_login_form"]:before,
+[ng-show="display_forgot_password_form"]:before {
+    display: block;
+    width: 100%;
+    height: 205px;
+    margin: 5px auto;
+    position: relative;
+    content: "";
+    background: url(https://freeillustrations.xyz/wp-content/uploads/2021/01/Meeting-Illustrations@4x.png) no-repeat 0 0;
+    background-position: center;
+    background-size: contain;
+}
+
+.customer-view.customer-layout1 div.scroll div:nth-child(3) div>div:nth-child(4).padding.text-center.ng-binding {
+    display: none;
+}
+
+.customer-view.customer-layout1 .item.item-custom.ng-binding {
+    background-color: transparent;
+    border: 0;
+}
+
+
+/* FORGOT PASSWORD PAGE */
+
+[ng-show="display_forgot_password_form"] .padding.text-left {
+    visibility: hidden;
+}
+
+[ng-show="display_forgot_password_form"] .padding.text-left:after {
+    visibility: visible;
+    content: "Silakan masukkan email yang telah Anda daftarkan sebelumnya. Jika merasa belum mendaftar, silakan kembali ke halaman sebelumnya dan klik DAFTAR.";
+    text-align: center;
+    display: block;
+    color: #000;
+    margin-top: -30px;
+}
+
+[ng-show="display_forgot_password_form"] .item.item-input.item-custom {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 10px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+[ng-show="display_forgot_password_form"] .item.item-input.item-custom input {
+    width: 100%;
+    max-height: 45px;
+    text-align: left;
+    background-color: #ecf0f6;
+    padding: 10px;
+    border-radius: 10px;
+    height: 100%;
+}
+
+[ng-show="display_forgot_password_form"] .item.item-input.item-custom i.icon.ion-ios-person:after {
+    content: "Email Anda";
+    margin-left: 10px;
+    font-size: 14px;
+    color: #000;
+}
+
+[ng-show="display_forgot_password_form"] div>div:nth-child(4) {
+    display: none;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content {
+    background-color: #fff !important;
+    border-radius: 30px 30px 0 0;
+    margin-top: 5px;
+}
+
+.customer-view.customer-layout1 .list form.ng-pristine.ng-valid .item.item-input.item-custom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.customer-view.customer-layout1 .list form.ng-pristine.ng-valid .item.item-input.item-custom .input-label.ng-binding,
+.customer-view.customer-layout1 .list form.ng-pristine.ng-valid .input-label {
+    min-width: 100%;
+}
+
+.customer-view.customer-layout1 .list form.ng-pristine.ng-valid input {
+    width: 100%;
+    text-align: left;
+    max-height: 45px;
+    border-radius: 10px;
+    background-color: #ecf0f6 !important;
+    padding: 10px;
+}
+
+.customer-view.customer-layout1 .list form.ng-pristine.ng-valid .item.item-input.item-custom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.customer-view.customer-layout1 section.avatar.text-center.padding {
+    background-color: #ecf0f6;
+    border-radius: 0 30px 30px;
+    background-image: url(https://weblizar.com/wp-content/themes/weblizar-site-June2021/images/home-slider/11.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+    margin-top: -5px;
+    padding-top: 20px;
+}
+
+ion-modal-view.customer-view.customer-layout1 h1.title.ng-binding.title-left {
+    text-align: center;
+    font-size: 16px;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content>.scroll>div:nth-child(3) form {
+    margin-top: 20px;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content>.scroll>div:nth-child(3) form .item.item-input.item-custom {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 5px 15px;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content>.scroll>div:nth-child(3) form .item.item-input.item-custom .input-label.ng-binding {
+    width: 100%;
+    display: block;
+    min-width: 100%;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content>.scroll>div:nth-child(3) form .item.item-input.item-custom input {
+    min-height: 45px !important;
+    max-height: 45px !important;
+    border-radius: 10px;
+    background-color: #ecf0f6 !important;
+    text-align: left;
+    padding: 10px;
+}

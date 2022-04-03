@@ -1,0 +1,141 @@
+/* Layout 1 CSS Start */
+/* Layout 1 */
+.always .layout.l1 .tabs li p {
+    display: none;
+}
+
+.always .layout.l1 .tabs {
+    box-shadow: none;
+    width: 100%;
+    margin-left: 0;
+    border-radius: 0;
+    background-color: #fff;
+    /*bottom: 2vh !important;*/
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0;
+    box-shadow: none !important;
+    border: 0 !important;
+}
+
+.layout.l1 .tab-item img {
+    width: 30px;
+    height: 30px;
+    max-height: 80%;
+}
+
+.always .layout.l1 .tabs li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Akhir Layout 1 */
+
+/* More */
+ion-modal-view.layout.modal.slide-top.layout_modal_generic {
+    background-color: #272d34 !important;
+    opacity: 1;
+}
+
+ion-modal-view.layout.modal.slide-top.layout_modal_generic .list .item.item-avatar.item-center.item-avatar-square.item-custom:nth-child(-n+4) {
+    display: none;
+}
+
+ion-modal-view.layout.modal.slide-top.layout_modal_generic .item.item-avatar.item-center.item-avatar-square.item-custom {
+    background-color: transparent;
+    border: 0;
+    color: #fff;
+}
+
+ion-modal-view.layout.modal.slide-top.layout_modal_generic .item.item-avatar.item-center.item-avatar-square.item-custom h2 {
+    color: #fff;
+}
+
+ion-modal-view.layout.modal.slide-top.layout_modal_generic ion-content {
+    background-color: transparent !important;
+    top: 0 !important;
+    padding: 6vh 0 0 0;
+    max-height: 100vh !important;
+}
+
+ion-modal-view.layout.modal.slide-top.layout_modal_generic ion-content .scroll {
+    background-color: #303843 !important;
+    height: 100% !important;
+    border-radius: 30px;
+    padding-top: 20px;
+}
+
+ion-modal-view.layout.modal.slide-top.layout_modal_generic .item.item-avatar.item-center.item-avatar-square.item-custom:nth-child(n+5) {
+    display: inline-flex;
+    width: 25%;
+    justify-content: space-between !important;
+    align-items: center;
+    flex-direction: column !important;
+    height: 90px;
+    padding: 0;
+    margin: 0;
+    left: 0;
+    right: 0;
+}
+
+ion-modal-view.layout.modal.slide-top.layout_modal_generic .item.item-avatar.item-center.item-avatar-square.item-custom:nth-child(n+5) img {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    right: 0 !important;
+    align-content: center;
+    padding: 0 !important;
+    min-width: 50px !important;
+    min-height: 50px !important;
+    margin: 0 auto;
+    border-radius: 10px;
+    top: 0;
+    background-color: #ecf0f6;
+}
+
+ion-modal-view.layout.modal.slide-top.layout_modal_generic .item.item-avatar.item-center.item-avatar-square.item-custom:nth-child(n+5) h2 {
+    color: #fff;
+    bottom: 0 !important;
+    top: 70px !important;
+    font-size: 12px;
+}
+
+ion-modal-view.layout.modal.slide-top.layout_modal_generic .item.item-center.item-avatar.item-icon-left.item-custom {
+    padding: 0;
+    margin-top: 10px;
+    display: none;
+}
+
+ion-modal-view.layout.modal.slide-top.layout_modal_generic .item.item-center.item-avatar.item-icon-left.item-custom i.icon.ion-close {
+    display: none;
+}
+
+ion-modal-view.layout.modal.slide-top.layout_modal_generic .item.item-center.item-avatar.item-icon-left.item-custom h2 {
+    text-align: center;
+    display: block;
+    width: 100%;
+    color: #f5c634;
+}
+
+ion-modal-view.layout.modal.slide-top.layout_modal_generic .list {
+    margin-top: 20px !important;
+    background-color: #303843;
+}
+
+.layout_modal_generic .close-action {
+    height: calc(45px + var(--safe-area-inset-bottom));
+    box-shadow: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5c634;
+    color: #fff;
+    padding: 0 !important;
+}
+
+.layout_modal_generic .close-action h2.ng-binding {
+    color: #fff;
+}
+/* End of Layout 1 CSS */

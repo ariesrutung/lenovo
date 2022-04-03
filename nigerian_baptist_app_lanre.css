@@ -1,0 +1,1281 @@
+///// PADLOCK///
+/*Padlock*/
+
+ion-view[state="padlock-view"] {
+  z-index: 9 !important;
+}
+
+ion-view[state="padlock-view"] ion-content {
+      top: 0 !important;
+}
+
+ion-view[state="padlock-view"] div.scroll > div.card.padlock {
+  background-color: white;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    padding-top: 65px;
+    background-image: url(https://i.imgur.com/ZqyQuS8.gif);
+    background-size: cover;
+    background-position-x: center;
+}
+
+ion-view[state="padlock-view"] .card .item.item-custom {
+  background-color: transparent;
+    border: 0;
+    color: white !important;
+  text-align: center;
+  padding-left: 12px;
+}
+
+ion-view[state="padlock-view"] div.card.padlock > div.item.item-text-wrap.item-custom {display: none;}
+
+ion-view[state="padlock-view"] div.card.padlock > div.item.item-body.item-custom.text-center {display: none;}
+
+i.icon.ion-ios-paper-outline, i.icon.ion-ios-person-outline {display:none;}
+
+i.icon.ion-locked {visibility:hidden;}
+
+ion-view[state="padlock-view"] div.card.padlock div[ng-if="description"]:before {
+  visibility: visible;
+    content: "Thank you for downloading the Nigerian Baptist Convention Mobile App";
+    color: white;
+    position: relative;
+    font-size: 30px;
+    letter-spacing: 1.5px;
+    display: block;
+    margin-bottom: 10px;
+    white-space: normal;
+    line-height: 30px;
+}
+
+ion-view[state="padlock-view"] div.card.padlock > div:nth-child(3)[ng-show="!isLoading"] {
+  position: relative;
+    top: 3vh;
+}
+
+ion-view[state="padlock-view"] div.card.padlock div[ng-click="padlockLogin()"] {
+  visibility: hidden;
+}
+
+ion-view[state="padlock-view"] div.card.padlock div[ng-click="padlockLogin()"]:after {
+  visibility: visible;
+    content: "GET STARTED";
+    position: absolute;
+    background-color: #ffffff;
+    width: 30%;
+    border-radius: 10px;
+    color: #091D71 !important;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    left: 50px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    line-height: 44px;
+}
+
+ion-view[state="padlock-view"] div.card.padlock div[ng-if="description"] {
+  letter-spacing: 0.5px;
+  text-align: left;
+    padding-left: 50px;
+  padding-right: 20vw;
+    line-height: 25px;
+}
+/*My account Signup-Loggedin*/
+
+/*Use card configuration in My account setting*/
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(5) {display: none;} 
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3) {
+  min-height: 100vh;
+    background-image: url(https://i.imgur.com/O9SRtTM.jpg);
+    background-size: cover;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3) div > section.avatar {
+  padding-top: 65px;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3) .customer-image {
+  border: 3px white solid;
+    padding: 0;
+    width: 120px;
+    height: 120px;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3) .card {
+  background-color: rgba(255,255,255,.80);
+    backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(50px);
+    box-shadow: none;
+    border-radius: 7px;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3) .card .item.item-custom {
+  background-color: transparent;
+    margin: 0;
+    border-top: 0 !important;
+  border: 0;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3) .input-label {
+  display: none;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3) .item-input input,
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3) .item-input textarea {
+  text-align: left;
+  color: black;
+  font-weight: 800;
+  font-family: 'Yanone Kaffeesatz';
+  letter-spacing: 0.8px;
+  border-bottom: 1px #597A7D  dashed;;
+    padding-right: 0;
+    margin-right: 14px;
+    height: 50px;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3) .item-input input::placeholder {
+  color: #222;
+  font-weight: 700;
+  font-family: 'Yanone Kaffeesatz';
+  letter-spacing: 0.5px;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3) .item-checkbox .item-content {
+  text-align: left;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3) .item-checkbox .item-content span {
+  color: rgba(13, 33, 71, 1);
+    letter-spacing: 0.5px;
+    font-weight: 700;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3) .card .item.item-custom.checkbox-custom {
+  border: 0;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3) .button.button-positive-custom {
+  background-color:#2E9FAB ;
+    border: 0;
+    backdrop-filter: blur(35px);
+    letter-spacing: 0.5px;
+    font-weight: 700;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3) div > div.padding.text-center.ng-binding {
+  color: white;
+    letter-spacing: 0.5px;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3) div > div.padding.text-center.ng-binding span {
+  color: #DF9903;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3) .card .item.item-custom.ng-binding[ng-if="customer.is_logged_in"] {
+  color: white;
+    letter-spacing: 0.5px;
+    font-family: 'Yanone Kaffeesatz';
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3) .card .item.item-custom.ng-binding[ng-if="customer.is_logged_in"]:before {
+  content: " ";
+    position: absolute;
+    z-index: -1;
+    top: 5px;
+    left: 10px;
+    right: 10px;
+    bottom: 5px;
+    border: 1px solid  #2E9FAB  ;
+    background-color:  #2E9FAB ;
+    border-radius: 5px;
+    font-family: 'Yanone Kaffeesatz';
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3) div > div.padding.text-right[ng-if="customer.is_logged_in"] {
+  text-align: left;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3) div > div.padding.text-right[ng-if="customer.is_logged_in"] span {
+  color:  #ffffff;
+  letter-spacing: 1.5px;
+  font-weight: normal;
+  font-family: 'Yanone Kaffeesatz';
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3) div > div.padding.text-center[ng-click="logout()"] {
+  background-color: rgba(191, 6, 0, 0.87);
+    width: 55%;
+    margin: auto;
+    border-radius: 7px;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3) div > div.padding.text-center[ng-click="logout()"] span {
+  color: white;
+  letter-spacing: 1.5px;
+  font-family: 'Yanone Kaffeesatz';
+  
+}
+
+
+/* Page source code *//
+ion-view[state="cms-view"] ion-content div.scroll > div:nth-child(4) > div > div.card.no-shadow {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+ion-view[state="cms-view"] ion-content div.scroll > div:nth-child(4) > div > div > div > div.item.item-custom {
+    padding-top: 1px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+ion-view[state="cms-view"] ion-content div.scroll > div:nth-child(3) > div > div.card {
+    margin: 0px;
+}
+
+ion-view[state="cms-view"] ion-content div.scroll > div:nth-child(3) > div > div > div > div.item.item-custom {
+    padding: 0px;
+}
+
+ion-view[state="cms-view"] ion-content div.scroll > div:nth-child(4) > div > div.card {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow: 0 1px 3px rgba(255, 255, 255, 0);
+}
+
+ion-view[state="cms-view"] ion-content div.scroll > div:nth-child(5) > div > div.card {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow: 0 1px 3px rgba(255, 255, 255, 0);
+}
+
+ion-view[state="cms-view"] ion-content div.scroll div div div div div.item.item-text-wrap.item-custom.sb-cms-text {
+    background-color: rgba(255, 255, 255, 0);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+ion-view[state="cms-view"] ion-content div.scroll > div:nth-child(6) > div > div > div > div.item.item-custom {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-color: rgba(252, 249, 249, 0);
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+ion-view[state="cms-view"] ion-content div.scroll > div:nth-child(6) > div > div.card.no-shadow  {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+html > body {
+    background-color: #ffffff00;
+}
+
+ion-view[state="cms-view"] ion-content div.scroll > div:nth-child(7) > div > div.card {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow: 0 1px 3px rgba(255, 255, 255, 0);
+}
+
+ion-view[state="cms-view"] ion-content div.scroll > div:nth-child(8) > div > div > div > div.item.item-custom {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-color: rgba(252, 249, 249, 0);
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+ion-view[state="cms-view"] ion-content div.scroll > div:nth-child(8) > div > div.card.no-shadow  {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+
+ion-view[state="cms-view"] ion-content div.scroll > div:nth-child(8) > div > div.card {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow: 0 1px 3px rgba(255, 255, 255, 0);
+}
+
+
+ion-view[state="cms-view"] ion-content div.scroll > div:nth-child(9) > div > div > div > div.item.item-custom {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-color: rgba(252, 249, 249, 0);
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+iframe.sb-cms-source {
+    border: 0;
+    width: 100%;
+    overflow: hidden;
+    background: none;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.slideshow-container {
+    max-width: 100%;
+    height: 100%;
+    position: relative;
+    margin: auto;
+    background: none;
+}
+
+ion-view[state="cms-view"] ion-content div.scroll > div:nth-child(7) > div > div.card {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow: 0 1px 3px rgba(255, 255, 255, 0);
+}
+
+ion-view[state="cms-view"] ion-content > div.scroll {
+    transform: translate3d(0px, 0px, 0px) scale(1);
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+
+ion-view[state="cms-view"] ion-content div.scroll > div:nth-child(3) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+ion-view[state="cms-view"] ion-content div.scroll > div:nth-child(6) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+ion-view[state="cms-view"] ion-content div.scroll > div:nth-child(9) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+ion-view[state="cms-view"] ion-content div.scroll > div:nth-child(10) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+ion-view[state="cms-view"] ion-content div.scroll div div div div div.item.item-text-wrap.item-custom.sb-cms-text {
+    background-color: rgba(255, 255, 255, 0);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+ion-view[state="cms-view"] ion-content div.scroll div div div.card.no-shadow {
+    box-shadow: none;
+    margin: 5px;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Yanone Kaffeesatz'); 
+    * { 
+        font-family: 'Yanone Kaffeesatz' !important; 
+    } 
+
+
+/** Begin center page title*/
+.title.title-left.header-item {
+text-align:left;
+}
+/** End center page title*/
+
+
+
+/* POPUP */
+.popup-container.active .popup {
+    border-radius: 30px !important;
+    box-shadow: none !important;
+}
+
+.platform-browser .popup-buttons,
+.platform-overview .popup-buttons,
+.platform-ios .popup-buttons,
+.platform-android .popup-buttons {
+    text-align: center !important;
+    background-color: transparent !important;
+    margin-bottom: 10px;
+    border-radius: 50px;
+    width: 100% !important;
+    margin: 10px 0 !important;
+    display: inline-block !important;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 0;
+}
+
+.platform-browser .popup .popup-head,
+.platform-overview .popup .popup-head,
+.platform-ios .popup .popup-head,
+.platform-android .popup .popup-head {
+    padding: 20px 20px 0;
+    border-bottom: 0;
+    text-align: center !important;
+    font-size: 14px;
+    font-weight: bold !important;
+}
+
+h3.popup-title.ng-binding:before {
+    content: " ";
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    color: #fff;
+    background-image: url(https://i.imgur.com/CjF4SbQ.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.platform-browser .popup button.button:first-of-type,
+.platform-overview .popup button.button:first-of-type,
+.platform-ios .popup button.button:first-of-type,
+.platform-android .popup button.button:first-of-type {
+    width: 60% !important;
+    text-align: center !important;
+    border-radius: 30px !important;
+    background-color:rgba(9, 109, 148, 0.88) !important;
+    padding: 10px !important;
+    color: #fff !important;
+    font-size: 12px !important;
+    margin: 10px 0 !important;
+    display: block !important;
+    margin-left: 20% !important;
+}
+
+.platform-browser .popup button.button,
+.platform-overview .popup button.button,
+.platform-ios .popup button.button,
+.platform-android .popup button.button {
+    display: block !important;
+    background-color:rgba(9, 109, 148, 0.88)!important;
+    width: 60% !important;
+    text-align: center !important;
+    padding: 10px !important;
+    border-radius: 20px !important;
+    color: #fff !important;
+    font-size: 12px !important;
+    margin-left: 20% !important;
+}
+
+.platform-browser .popup .popup-body,
+.platform-overview .popup .popup-body,
+.platform-ios .popup .popup-body,
+.platform-android .popup .popup-body {
+    padding: 20px 20px;
+    border-bottom: 0;
+    text-align: center !important;
+}
+
+button[ng-click="share()"] { display: none; }
+
+.customer-layout1 .customer-image {display: none}
+
+/* PADLOCK */
+/* MY ACCOUNT */
+.customer-view.customer-layout1 .list {
+    margin-bottom: 0;
+}
+
+.customer-view.customer-layout1 .list .padding {
+    padding: 10px;
+    font-size: 10px;
+}
+
+div[ng-show="display_login_form"] .text-right {
+    text-align: right;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll div[ng-show="display_login_form"] div {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll [ng-show="display_login_form"] div.text-center {
+    visibility: hidden;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    top: 0;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll [ng-show="display_login_form"] div.text-center:after {
+    content: "SIGNUP HERE > >";
+    visibility: visible;
+    width: 30%;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: 'Yanone Kaffeesatz';
+    display: block;
+    text-align: center;
+    margin: 0 10% 0 60%;
+    -webkit-box-ordinal-group: 1;
+    -moz-box-ordinal-group: 1;
+    -ms-flex-order: 1;
+    -webkit-order: 1;
+    order: 1;
+    padding: 10px;
+    color: #B99002; //login and sign up colour
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll [ng-show="display_login_form"] div.text-center:before {
+    visibility: visible;
+    content: "LOGIN";
+    width: 30%;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: 'Yanone Kaffeesatz';
+    display: block;
+    text-align: center;
+    margin: -40px 60% 0 10%;
+    -webkit-box-ordinal-group: 2;
+    -moz-box-ordinal-group: 2;
+    -ms-flex-order: 2;
+    -webkit-order: 2;
+    order: 2;
+    border-bottom: 2px solid rgba(9, 109, 148, 0.88) ;
+    padding: 10px;
+    cursor: default;
+    pointer-events: none;
+    color: rgba(9, 29, 113, 0.88);
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll [ng-show="display_login_form"] div.list {
+    -webkit-box-ordinal-group: 2;
+    -moz-box-ordinal-group: 2;
+    -ms-flex-order: 2;
+    -webkit-order: 2;
+    order: 2;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll [ng-show="display_login_form"] div:nth-child(3) {
+    -webkit-box-ordinal-group: 3;
+    -moz-box-ordinal-group: 3;
+    -ms-flex-order: 3;
+    -webkit-order: 3;
+    order: 3;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll div:nth-child(4) {
+    -webkit-box-ordinal-group: 4;
+    -moz-box-ordinal-group: 4;
+    -ms-flex-order: 4;
+    -webkit-order: 4;
+    order: 4;
+}
+
+
+[ng-show="display_login_form"] .item.item-input.item-custom {
+    display: inline-block;
+    width: 90%;
+    margin: 15px 5%;
+}
+
+[ng-show="display_login_form"] .item.item-input.item-custom i {
+    width: 100%;
+    display: block;
+    position: relative;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: left;
+}
+[ng-show="display_login_form"] .item.item-input.item-custom i {
+  visibility: hidden;
+}
+
+[ng-show="display_login_form"] i.icon.ion-ios-person:after {
+    visibility: visible;
+    content: "Username/Email";
+    margin-left: -5px;
+    font-family: 'Yanone Kaffeesatz';
+    font-weight: normal;
+    color: #6A7A7C;
+}
+
+[ng-show="display_login_form"] i.icon.ion-locked:after {
+    visibility: visible;
+    content: "Password";
+    margin-left: -5px;
+    font-family: 'Yanone Kaffeesatz';
+    font-weight: normal;
+    color: #6A7A7C;
+}
+
+[ng-show="display_login_form"] .item.item-input.item-custom input {
+    width: 100%;
+    display: block;
+    position: relative;
+    text-align: left;
+    border-bottom: 1px solid rgba(9, 109, 148, 0.88) ;
+    height: 40px;
+    padding-left: 10px;
+    color: rgba(9, 109, 148, 0.88)  !important;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: 'Yanone Kaffeesatz';
+}
+
+/* placeholder */
+[ng-show="display_login_form"] .item.item-input.item-custom input::-webkit-input-placeholder {
+   color: #dbdbdb !important;
+}
+
+[ng-show="display_login_form"] .item.item-input.item-custom input:-moz-placeholder { /* Firefox 18- */
+   color: #dbdbdb !important;
+}
+
+[ng-show="display_login_form"] .item.item-input.item-custom input::-moz-placeholder {  /* Firefox 19+ */
+   color: #dbdbdb !important;
+}
+
+[ng-show="display_login_form"] .item.item-input.item-custom input:-ms-input-placeholder {  
+   color: #dbdbdb !important;
+}
+/* placeholder */
+
+[ng-show="display_login_form"] .button.button-positive-custom {
+    border-color: transparent;
+    background-color: rgba(245, 149, 14, 0.35);
+    color: #ffffff;
+    width: 40%;
+    border-radius: 20px;
+    margin: 10px auto;
+    text-transform: uppercase;
+}
+
+[ng-show="display_login_form"]:before,
+[ng-show="display_forgot_password_form"]:before {
+    display: block;
+    width: 150px;
+    padding-top: 20px;
+    height: 150px;
+    margin: 20px auto 0 auto;   
+    position: relative;
+    content: " ";
+    background: url("https://i.imgur.com/CjF4SbQ.png") no-repeat 0 0;
+    background-size: 100%;
+}
+
+.customer-view.customer-layout1 .button.button-positive-custom {
+    width: 60%;
+    margin: 5px 20%;
+    border-radius: 20px;
+    top: 10px !important;
+    margin-bottom: 30px;
+    background-color: rgba(9, 109, 148, 0.88)  !important;
+    color: #fff !important;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Yanone Kaffeesatz';
+    background-color: rgba(9, 109, 148, 0.88) ;
+    padding: 3px;
+}
+
+.customer-view.customer-layout1 div.scroll div:nth-child(3) div>div:nth-child(4).padding.text-center.ng-binding  {
+    display: none;
+}
+
+ion-modal-view.sb-clickwrap.sb-clickwrap-modal ion-content,
+ion-modal-view.customer-view.customer-layout1 ion-content {
+    background-color: #fff !important;
+    border-radius: 20px 20px 0 0 !important;    
+}
+
+/* FORGOT PASSWORD PAGE */
+[ng-show="display_forgot_password_form"] .padding.text-left {
+    visibility: hidden;
+}
+
+[ng-show="display_forgot_password_form"] .padding.text-left:after {
+    visibility: visible;
+    content: "Kindly input your registered Email. We will send you your new password immediately.";
+    text-align: center;
+    display: block;
+    color: #000;
+    margin-top: -30px;
+}
+
+[ng-show="display_forgot_password_form"] .item.item-input.item-custom {
+    border-radius: 1px;
+    border: 1px solid #597A7D;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 10px;
+}
+
+[ng-show="display_forgot_password_form"] .item.item-input.item-custom input {
+    width: 100%;
+    text-align: center;
+}
+
+[ng-show="display_forgot_password_form"] .ion-ios-person:before {
+    display: none;
+}
+
+[ng-show="display_forgot_password_form"] div>div:nth-child(4) {
+    display: none;
+}
+
+[ng-show="display_forgot_password_form"] .item.item-input.item-custom .icon.ion-ios-person {
+    display: none;
+}
+
+ion-view[state="folder2-category-list"] div.scroll .item-input{
+     border-radius: 10px;
+     margin-right: 25px;
+     margin-left: 25px;
+  background : rgba(242, 137, 39, 0.21);
+}
+
+ion-view[state="folder2-category-list"] div.scroll .item-input i{
+    color:#447484;
+}
+ion-view[state="folder2-category-list"] div.scroll .item-input ::placeholder{
+     color:#447484; 
+}
+ion-view[state="folder2-category-list"] div.list.card{
+     margin-right: 0;
+     margin-left: 0; 
+}
+ion-view[state="folder2-category-list"] div.list.card a{
+     border: rgba(38, 116, 132, 0.21) 1px solid ; 
+     margin: 7px 5px 10px;
+     width: 47%;
+     display: inline-block;
+     border-radius: 10px;
+}
+ion-view[state="folder2-category-list"] div.list.card .ng-binding{
+     color: #162F48;
+}
+ion-view[state="folder2-category-list"] div.list.card .item-custom{
+      background: rgba(236, 236, 236, 0.90); 
+}
+
+ion-view[state="folder2-category-list"] div.list.card a.item-custom{
+       margin-top: 5px; 
+}
+
+ion-nav-view[class=”nav-view-l6″] .profile-info:after{
+display : none;
+}
+
+[state="contact-view"] .ion-person  {
+    content: url('https://i.imgur.com/YOXS36G.png');
+}
+
+[state="contact-view"] .ion-ios-location  {
+    content: url('https://i.imgur.com/Rosa0hd.png');
+}
+.item-icon-left .icon {
+    left: 8px;      
+    display: none;  
+}
+
+ion-view.pane ion-content.has-footer.scroll-content.ionic-scroll.has-header {
+    background-color: #fff !IMPORTANT;
+}
+
+.extended-profile .info-cards:nth-child(2) {
+    margin-top: 0 !important;
+}
+
+.profile-info:after {
+    display: none;
+}
+
+form.extended-profile.ng-pristine.ng-valid.ng-valid-email.ng-valid-max .col.col-20 {
+    background-color: #fff;
+    border-radius: 30px 0 0 0 !important;
+    margin-top: 120px;
+    padding-top: 10px;
+}
+
+form.extended-profile.ng-pristine.ng-valid.ng-valid-email.ng-valid-max .col.col-80 {
+    background-color: #fff;
+    border-radius: 0 30px 0 0 !important;
+    margin-top: 120px;
+    padding-top: 10px;
+}
+
+form.extended-profile.ng-pristine.ng-valid.ng-valid-email.ng-valid-max .col.col-20 img.profile-img.item.item-custom.p-0 {
+    border-radius: 50px !important;
+}
+
+form.extended-profile.ng-pristine.ng-valid.ng-valid-email.ng-valid-max .row.item.item-custom.info-row {
+    height: 220px;
+}
+
+.profile-info.list {
+    background-image: url(https://i.imgur.com/Nt0cpCR.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 190px;
+}
+
+form.extended-profile .list .item.item-custom {
+    border: 0 !important;
+    background-color: transparent !important;
+    color: #000;
+    border-radius: 0 !important;
+    padding: 0;
+}
+
+.extended-profile .info-cards:nth-child(2) {
+    margin-top: 0 !important;
+}
+
+form.extended-profile .info-cards .section-fields {
+    width: 95%;
+    margin: auto;
+    border-radius: 10px;
+    background-color: transparent;
+    color: #000;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+form.extended-profile .info-cards {
+    width: 100% !important;
+    margin: 0 !important;
+    background-color: transparent;
+    margin-bottom: 20px;
+    border-radius: 7px;
+    box-shadow: none !important;
+}
+
+form.extended-profile .info-cards .item-input {
+    background-color: #ecf0f6;
+    color: #000;
+    position: relative;
+    border: 2px solid #ecf0f6;
+    border-radius: 5px;
+    display: inline-block;
+    width: 100%;
+}
+
+form.extended-profile .info-cards .item-input .for-label {
+    display: contents;
+    position: absolute;
+    top: -8px;
+    z-index: 999;
+    right: 10px;
+    background-color: transparent;
+    text-align: right;
+    line-height: .5;
+    border-radius: 20px;
+    width: auto;
+    padding: 5px 15px;
+    color: #000 !important;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px !important;
+}
+
+form.extended-profile .info-cards textarea {
+    background-color: transparent;
+    min-height: 80px;
+}
+
+
+form.extended-profile .checkbox-custom .checkbox input:before,
+form.extended-profile .checkbox-custom .checkbox .checkbox-icon:before {
+    border: 2px solid #c2daff !important;
+    border-radius: 5px !important;
+}
+
+form.extended-profile .checkbox-custom .checkbox input:checked:before,
+form.extended-profile .checkbox-custom .checkbox input:checked + .checkbox-icon:before {
+    background: #ecf0f6 !important;
+    border-color: rgba(238, 75, 99, 1);
+}
+
+/* Geolocation */
+form.extended-profile [ng-switch-when="geoloc"] label {
+    border: 0 !important;
+}
+
+/* Checkbox */
+form.extended-profile .list .item-divider.item-divider-custom {
+    background-color: #fff;
+    color: #000 !important;
+    border: 0 !important;
+}
+
+form.extended-profile p.label.ng-binding {
+    color: #000 !important;
+    font-size: 14px;
+}
+
+form.extended-profile .checkbox-custom {
+    background-color: rgba(255, 255, 255, 1);
+    border: 0;
+}
+
+/* Radio Input */
+form.extended-profile .radio-content {
+    border: 0 !important;
+}
+
+form.extended-profile .item-radio {
+    padding: 0;
+    border: 0 !important;
+}
+
+form.extended-profile .ion-checkmark:before {
+    color: #c2daff !important;
+}
+
+form.extended-profile .item-radio input:checked+.radio-content .item-content {
+    background-color: #ecf0f6;
+}
+
+/* Dropdown */
+form.extended-profile .list .item.item-custom {
+    border: 0 !important;
+    background-color: #fff;
+    color: #000;
+}
+
+form.extended-profile label[ng-switch-when="select"] {
+    display: inline-block !important;
+    padding: 0 10px !important;
+}
+
+form.extended-profile label[ng-switch-when="select"] select {
+    min-width: 100% !important;
+    display: block !important;
+    position: relative !important;
+    background-color: #ecf0f6 !important;
+    height: 45px;
+    padding: 5px !important;
+    border-radius: 5px !important;
+    background-image: url(data:image/png;base64,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);
+    background-position: center right 5px !important;
+    background-repeat: no-repeat !important;
+    background-size: 10px !important;
+}
+
+form.extended-profile .item-select:after {
+    display: none !important;
+}
+
+form.extended-profile label[ng-switch-when="select"] .input-label.ng-binding {
+    display: block;
+    min-width: 100%;
+}
+
+
+
+/* date/time */
+form.extended-profile label[ng-switch-when="date"],
+form.extended-profile label[ng-switch-when="anniversary"],
+form.extended-profile label[ng-switch-when="birthday"] {
+    background-color: transparent !important;
+    border: 0 !important;
+    padding: 0 !important;
+}
+
+
+form.extended-profile label[ng-switch-when="date"] input,
+form.extended-profile label[ng-switch-when="anniversary"] input,
+form.extended-profile label[ng-switch-when="birthday"] input  {
+    border: 2px solid #ecf0f6;
+    background-color: #ecf0f6;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 5px;
+    height: 45px !important;
+}
+
+
+/* Geoloc */
+.checkbox-custom .checkbox input:checked:before,
+.checkbox-custom .checkbox input:checked + .checkbox-icon:before {
+    background: rgba(238, 75, 99, 1);
+    border-color: rgba(238, 75, 99, 1);
+}
+
+/* Range */
+form.extended-profile .item-range {
+    display: block!important;
+    background-color: transparent !important;
+    color: #000!important;
+    border: 0 !important;
+    padding: 0 !important;
+}
+
+form.extended-profile .item-range .input-label {
+    display: table;
+    padding: 7px 10px 7px 0;
+    max-width: 200px;
+    width: 35%;
+    color: #444;
+    font-size: 14px;
+    min-width: 100%;
+}
+
+form.extended-profile .item-range .range {
+    padding: 0;
+}
+
+form.extended-profile .item-range .range input {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+/* Layout */
+.layout.l1 p,
+.layout.l10 p,
+.layout.l2 p {
+height: 16px;
+margin-top: 2px;
+overflow: hidden;
+line-height: 16px;
+font-size: 9px;
+margin-top: -3px;
+margin-bottom: 0;
+padding-bottom: 10px;
+}
+
+ion-side-menus ion-side-menu-content ion-footer-bar ng-include > div > div.layout.l1 > ul {
+display: flex !important;
+z-index: 1000 !important;
+max-height: 55px !important;
+height: 55px !important;
+padding-bottom: 0 !important;
+box-shadow: 0px 1px 2px 2px #ababab !important;
+width: 100%;
+}
+
+ion-side-menus ion-side-menu-content ion-footer-bar ng-include > div > div.layout.l1 > ul > li {
+padding-top: 0 !important;
+}
+
+ion-side-menus ion-side-menu-content ion-footer-bar ng-include > div > div.layout.l1 > ul > li:nth-child(1) {
+  order: 3;
+  background-position: center center;
+  display: block;
+  background-size: cover;
+  border: none;
+  line-height: 23px;
+  bottom: 22px;
+  background-color: #182B6E;
+  border-radius: 10px;
+  box-shadow: rgb(144 144 144) 0px 0px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ion-side-menus ion-side-menu-content ion-footer-bar ng-include > div > div.layout.l1 > ul > li:nth-child(1) p {
+position: absolute;
+right: 0;
+left: 0;
+bottom: -1px;
+display: none;
+}
+
+ion-side-menus ion-side-menu-content ion-footer-bar ng-include > div > div.layout.l1 > ul > li:nth-child(2) {
+order: 2;
+}
+
+ion-side-menus ion-side-menu-content ion-footer-bar ng-include > div > div.layout.l1 > ul > li:nth-child(3) {
+order: 1;
+}
+
+ion-side-menus ion-side-menu-content ion-footer-bar ng-include > div > div.layout.l1 > ul > li:nth-child(4),
+ion-side-menus ion-side-menu-content ion-footer-bar ng-include > div > div.layout.l1 > ul > li:nth-child(5) {
+order: 4;
+}
+
+.gtx-trans-icon {
+display: none !Important;
+}
+
+.layout .tab-item img {
+  margin-left: 0 !important;
+}
+
+ion-modal-view.layout.modal.slide-top.layout_modal_generic {
+    background: #fff !important;
+    opacity: 1;
+}
+
+ion-modal-view.layout.modal.slide-top.layout_modal_generic ion-content {
+    background-color: #fff !important;
+    padding: 0;
+}
+
+ion-modal-view.layout.modal.slide-top.layout_modal_generic .list .item.item-custom:nth-child(-n+5) {
+    display: none;
+}
+
+ion-modal-view.layout.modal.slide-top.layout_modal_generic .list .item.item-custom {
+    border: 0;
+    background-color: #e9e9e9;
+    color: #000;
+    margin: 10px 2%;
+    width: 96%;
+    border-radius: 10px;
+}
+
+ion-modal-view.layout.modal.slide-top.layout_modal_generic [ng-click="closeMore();"] h2 {
+    color: orange;
+}
+
+ion-modal-view.layout.modal.slide-top.layout_modal_generic [ng-click="closeMore();"] i {
+    display: none;
+}
+
+ion-modal-view.layout.modal.slide-top.layout_modal_generic [ng-click="closeMore();"] {
+    width: 30% !important;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 28px !important;
+    margin-left: 68% !important;
+    min-height: 50px !important;
+}
+
+.always .layout.l1 .tabs {
+    background-color: #fff !important;
+}
+
+.always .layout.l1 .tabs p.ng-binding {
+    color: #000;
+}
+
+
+.info-cards input::placeholder,
+form.extended-profile .info-cards textarea::placeholder {
+  color: #000;
+  opacity: 1;
+}
+
+.info-cards input:-ms-input-placeholder,
+form.extended-profile .info-cards textarea:-ms-input-placeholder {
+  color: #000;
+}
+
+.info-cards input::-ms-input-placeholder,
+form.extended-profile .info-cards textarea::-ms-input-placeholder {
+  color: #000;
+}
+
+[ng-click="takePicture(field)"] {
+    padding-left: 50px !important;
+}
+
+form.extended-profile .profile-info.list .row.item.item-custom.info-row {
+    display: none !important;
+}
+
+.profile-info.list img.profile-img.item.item-custom.p-0 {
+    display: none;
+}
+
+.profile-info.list .ng-binding {
+    display: none;
+}
+
+
+/* hide Source header and remove ion-content top*/
+ion-header-bar.bar-custom.bar.bar-header {
+    background-color: transparent !important;
+    background-image: none !important;
+    height: 0 !important;
+}
+
+ion-view.sourcecode-view ion-content.sourcecode-view {
+    top: 0;
+}
+
+/* Swap icon possition */
+ion-header-bar.bar-subheader.bar.bar-header .button-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+ion-header-bar button[ng-if="displayProfile()"] {
+    order: 3;
+}
+
+ion-header-bar button[ng-if="isEnabled('enableUserPost')"] {
+    order: 2;
+}
+
+ion-header-bar button[ng-if="isEnabled('enableNearby')"] {
+    order: 4;
+}
+
+ion-header-bar button[ng-if="isEnabled('enableMap')"] {
+    order: 5;
+}
+
+ion-header-bar button[ng-if="isEnabled('enableGallery')"] {
+    order: 6;
+}
+
+ion-header-bar button[ng-click="showTab('post')"] {
+    order: 1;
+}
+
+
+

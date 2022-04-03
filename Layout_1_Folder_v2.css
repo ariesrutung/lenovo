@@ -1,0 +1,97 @@
+/* Header */
+
+ion-header-bar.bar-custom.bar.bar-header {
+    height: 0 !important;
+    background-image: none !important;
+    background-color: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+}
+
+.bar.bar-custom .title {
+    display: none;
+}
+
+
+/* Akhir header */
+
+ion-view.module-folder2.folder2-layout1 {
+    background-image: url(https://wallpaperaccess.com/full/1224636.jpg) !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+}
+
+ion-view.module-folder2.folder2-layout1 ion-content {
+    background-color: transparent !important;
+    background-image: none !important;
+    border-radius: 30px 30px 0 0;
+    padding-top: 20vh;
+    top: 0 !important;
+    bottom: 0 !important;
+}
+
+ion-view.module-folder2.folder2-layout1 ion-content .scroll {
+    background-color: #fff !important;
+    border-radius: 30px 30px 0 0;
+}
+
+ion-view.module-folder2.folder2-layout1 .list .item.item-image.item-custom {
+    background-color: transparent;
+    padding: 0;
+    border: 0;
+}
+
+ion-view.module-folder2.folder2-layout1 .list .item.item-image.item-custom img {
+    border-radius: 30px 30px 0 0;
+}
+
+ion-view.module-folder2.folder2-layout1 .list .item.item-custom {
+    border: 0;
+    background-color: #fff;
+    color: #000 !important;
+}
+
+ion-view.module-folder2.folder2-layout1 [ng-if="current.showTitle"] h2.ng-binding {
+    color: #000 !important;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+ion-view.module-folder2.folder2-layout1 [ng-if="current.showTitle"] p.ng-binding {
+    color: #000 !important;
+    font-size: 16px !important;
+    white-space: normal;
+    font-style: italic;
+}
+
+ion-view.module-folder2.folder2-layout1 .list:last-child {
+    margin-bottom: 0;
+    background-color: #fff;
+    border-radius: 30px 30px 0 0;
+}
+
+ion-view.module-folder2.folder2-layout1 a.item.item-custom.item-avatar-square.item-avatar.item-center,
+ion-view.module-folder2.folder2-layout1 a.item.item-custom.item-avatar-square.item-avatar {
+    width: 94%;
+    margin: 10px 3%;
+    border-radius: 5px;
+    background: rgb(63, 171, 32);
+    background: linear-gradient(135deg, rgba(63, 171, 32, 1) 14%, rgb(200 105 37) 14%);
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+ion-view.module-folder2.folder2-layout1 a.item.item-custom.item-avatar-square.item-avatar.item-center h2,
+ion-view.module-folder2.folder2-layout1 a.item.item-custom.item-avatar-square.item-avatar h2 {
+    color: #fff !important;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+ion-view.module-folder2.folder2-layout1 a.item.item-custom.item-avatar-square.item-avatar p.ng-binding {
+    color: #fff !important;
+    font-size: 14px;
+    white-space: normal;
+}

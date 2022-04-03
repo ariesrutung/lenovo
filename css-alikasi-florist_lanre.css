@@ -1,0 +1,1586 @@
+/*
+ *---------------------------------------------------------------
+ * BUNDLE CSS APLIKASI FLORIST
+ *---------------------------------------------------------------
+ *
+ * Jika ingin ganti warna, ganti pada warna parameter saja.
+ * Jika ingin ganti gambar, ganti pada gambar parameter saja.
+ */
+
+
+/* WARNA PARAMETER */
+
+$general-font-color: #000;
+$button-text-color: #fff;
+$card-color: #dfe7ff;
+$icon-color: #638eff;
+$transparent-color: transparent;
+$font-white: #fff;
+$font-black: #000;
+$general-bg-color: #fff;
+$blur-bg-color: rgba( 255, 255, 255, 0.25);
+$second-bg-color: #ecf0f6;
+$calendar-icon: url("https://unpkg.com/ionicons@5.5.2/dist/svg/calendar-number-outline.svg");
+$notif-icon: url("https://unpkg.com/ionicons@5.5.2/dist/svg/notifications-outline.svg");
+$tab-icon: url("https://unpkg.com/ionicons@5.5.2/dist/svg/finger-print-outline.svg");
+
+/* Modul yang dipakai dalam bundle ini adalah Attendance, Padlock, My Account, dan layout Elegant */
+
+
+/* HEADER */
+
+.bar.bar-custom .title {
+    display: none !important;
+}
+
+.title.title-left.header-item {
+    height: 0 !important;
+    margin: 0 !important;
+}
+
+.bar-custom .button.button-clear {
+    color: $icon-color !important;
+}
+
+
+/* Header */
+
+
+/* Layout Elegant */
+
+.layout.layout_elegant {
+    width: 100%;
+    margin-top: -35px;
+    background-color: #fff !important;
+    padding-top: 30px;
+    border: 0 !important;
+    border-radius: 40px 40px 0 0 !important;
+    height: 100vh !important;
+    height: 60px;
+}
+
+.layout.layout_elegant .elegantbutton {
+    background-color: #8d5934 !important;
+    border: 2px solid #8d5934 !important;
+    border-radius: 10px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.layout.layout_elegant .elegantbutton .eleganttitle p {
+    border: 0;
+    color: #fff !important;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    font-size: 18px;
+    margin: 0 !important;
+}
+
+.layout.layout_elegant.animated.no-animation p.elegantwelcome.ng-binding {
+    font-size: 18px !important;
+    color: #000 !important;
+    font-weight: bold;
+}
+
+.layout.layout_elegant .eleganticon {
+    float: left;
+    margin-top: 0;
+    margin-left: 15px;
+    color: #fff;
+    width: 40px;
+}
+
+ion-view[state="home"] {
+    background-image: none !important;
+    background-color: #8d5934 !important;
+}
+
+ion-view[state="home"] ion-content:before {
+    background-image: url(http://sugeng-sugih.kap-tbw.com/wp-content/uploads/2021/02/our-services.jpg);
+    background-color: transparent;
+    background-position: center;
+    background-size: 100%;
+    display: block;
+    height: 230px !important;
+    content: " ";
+    width: 100%;
+    border-radius: 10px;
+    margin-left: 0%;
+    margin-top: 0;
+    background-repeat: no-repeat;
+    top: 0 !important;
+}
+
+
+/* Layout Elegant */
+
+button[ng-click="attendanceHistory()"],
+button[ng-click="attendanceHistoryFilter()"] {
+    position: fixed !important;
+    top: calc(85vh - 60px) !important;
+    right: 2vw !important;
+    border-radius: 100px !important;
+    border-width: 0 !important;
+    padding: 5px 12px 5px 12px !important;
+    z-index: 999 !important;
+    box-shadow: 5px 5px 5px #888 !important;
+    width: 60px !important;
+    height: 60px !important;
+    min-height: 60px !important;
+    background-color: $icon-color !important;
+}
+
+ion-view.attendance.attendance-home .button-floating-action {
+    position: fixed !important;
+    top: calc(85vh - 60px) !important;
+    right: 2vw !important;
+    border-radius: 100px !important;
+    border-width: 0 !important;
+    padding: 5px 12px 5px 12px !important;
+    z-index: 999 !important;
+    box-shadow: 5px 5px 5px #888 !important;
+    width: 60px !important;
+    height: 60px !important;
+    min-height: 60px !important;
+    background-color: $icon-color !important;
+}
+
+button[ng-click="attendanceHistory()"] i:before,
+.attendance .button-floating-action:before,
+button[ng-click="attendanceHistoryFilter()"] i:before {
+    color: $font-white;
+}
+
+ion-modal-view.attendance.attendance-details input {
+    color: $icon-color !important;
+}
+
+ion-header-bar.bar-custom.bar.bar-header {
+    height: 0 !important;
+    background-color: $transparent-color !important;
+}
+
+ion-header-bar.bar-subheader.bar-custom.bar.bar-header {
+    top: 20px !important;
+    height: 50px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ion-header-bar.bar-subheader.bar-custom.bar.bar-header .button-bar.text-center {
+    justify-content: center;
+    align-items: center;
+    height: 50px !important;
+}
+
+ion-header-bar.bar-subheader.bar-custom.bar.bar-header .button-bar.text-center .button.button-custom.ng-binding.active {
+    height: 40px !important;
+    border: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $transparent-color;
+    color: $icon-color !important;
+    font-size: 16px !important;
+    border-radius: 0;
+}
+
+.button.button-custom.ng-binding {
+    height: 40px !important;
+    border: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $transparent-color;
+    color: $font-black !important;
+    font-size: 16px !important;
+    border-radius: 0;
+}
+
+ion-header-bar.bar-subheader.bar-custom.bar.bar-header .button-bar.text-center .button.button-custom.ng-binding.active:after {
+    content: " ";
+    border-bottom: 2px solid $icon-color !important;
+    display: block !important;
+    height: 45px !important;
+    width: 70% !important;
+    margin-left: 18%;
+}
+
+
+/* END HEADER */
+
+
+/* LAYOUT 1*/
+
+.always .layout.l1 .tabs {
+    box-shadow: none;
+    background-color: $icon-color !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.always .layout.l1 .tabs li.col.col-20.tab-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 !important;
+}
+
+.always .layout.l1 .tabs li img {
+    margin: 0;
+}
+
+.always .layout.l1 .tabs li p {
+    display: none;
+}
+
+.always .layout.l1 .tabs li.col.col-20.tab-item:nth-child(3) {
+    border-radius: 50%;
+    background-color: $icon-color !important;
+    width: 70px !important;
+    height: 70px !important;
+    max-width: 70px;
+    border: 2px solid $font-white;
+    bottom: 20px !important;
+    background: $icon-color;
+    box-shadow: inset 20px 20px 60px $icon-color, inset -20px -20px 60px $card-color;
+}
+
+.always .layout.l1 .tabs li.col.col-20.tab-item:nth-child(3) img {
+    width: 50px;
+    height: 50px;
+}
+
+
+/*More*/
+
+ion-modal-view.layout.modal.slide-top.layout_modal_generic {
+    background-color: $font-white;
+    opacity: 1;
+}
+
+
+/* LAYOUT */
+
+
+/* ATENDANCE HOME */
+
+ion-view.attendance.attendance-home ion-content {
+    bottom: 45px !important;
+}
+
+ion-view.attendance.attendance-home {
+    background-image: none !important;
+    background-color: #fff !important;
+}
+
+ion-view.attendance.attendance-home .row.check-in-out-buttons.text-center {
+    display: flex;
+    flex-direction: column;
+}
+
+ion-view.attendance.attendance-home .card.attendance-check-in-out-box {
+    display: block;
+    width: 100% !important;
+    margin: 0;
+}
+
+ion-view.attendance.attendance-home .col.check-in-out-checkin button.button.check-in-out-button.ng-binding.button-positive-custom {
+    width: 200px !important;
+    height: 200px !important;
+    border-radius: 50% !important;
+    background: linear-gradient(90deg, $icon-color 0%, #95b2ff 100%);
+    border: 0 !important;
+    padding-top: 100px;
+    box-shadow: 5px 5px 5px #d6d6d6 !important;
+    border-radius: 50px;
+    background: linear-gradient(145deg, $icon-color, #0d1c46);
+    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px $font-white;
+    color: $font-white !important;
+}
+
+ion-view.attendance.attendance-home .col.check-in-out-checkin button.button.check-in-out-button.ng-binding.button-positive-custom:after {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    bottom: -6px;
+    left: -6px;
+    content: ' ';
+    background-image: $tab-icon;
+    background-repeat: no-repeat;
+    background-size: 101px;
+    background-position: center top 30px;
+}
+
+ion-view.attendance.attendance-home .col.check-in-out-checkin button.button.check-in-out-button.ng-binding.button-custom,
+ion-view.attendance.attendance-home .col.check-in-out-checkout button.button.check-in-out-button.ng-binding.button-custom {
+    display: none;
+}
+
+ion-view.attendance.attendance-home .col.check-in-out-checkout button.button.check-in-out-button.ng-binding.button-positive-custom {
+    width: 200px !important;
+    height: 200px !important;
+    border-radius: 50% !important;
+    border: 0 !important;
+    background: rgb(71, 82, 158);
+    background: linear-gradient(90deg, #e91e63 0%, #ff9800 100%);
+    padding-top: 100px;
+    box-shadow: 5px 5px 5px $card-color !important;
+    color: $font-white !important;
+}
+
+ion-view.attendance.attendance-home .col.check-in-out-checkout button.button.check-in-out-button.ng-binding.button-positive-custom:after {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    bottom: -6px;
+    left: -6px;
+    content: ' ';
+    background-image: $tab-icon;
+    background-repeat: no-repeat;
+    background-size: 101px;
+    background-position: center top 30px;
+}
+
+ion-view.attendance.attendance-home .card {
+    box-shadow: none !important;
+}
+
+ion-view.attendance.attendance-home ng-include {
+    display: block !important;
+}
+
+ion-view.attendance.attendance-home ng-include .card.attendance-customer-box {
+    display: inline-block;
+    width: 80% !important;
+    margin: 0 !important;
+    float: left !important;
+}
+
+ion-view.attendance.attendance-home ng-include .card:nth-child(2) {
+    width: 20% !important;
+    display: inline-block;
+    float: right;
+    margin: 0;
+}
+
+ion-view.attendance.attendance-home ng-include .card:nth-child(2) .item.item-icon-left.ng-binding {
+    font-size: 0 !important;
+    background-image: $notif-icon;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 45px;
+    background-color: $transparent-color !important;
+}
+
+ion-view.attendance.attendance-home ng-include .card:nth-child(2) .item.item-icon-left.ng-binding i.icon.ion-email {
+    display: none;
+}
+
+ion-view.attendance.attendance-home ng-include .card:nth-child(2) .item.item-icon-left.ng-binding .badge.badge-assertive-custom {
+    background-color: $icon-color;
+    color: $font-white;
+    display: flex;
+    position: absolute;
+    top: 3px !important;
+    right: 15px !important;
+}
+
+ion-view.attendance.attendance-home p.location_status {
+    font-size: 0;
+    width: 0vw;
+}
+
+ion-view.attendance.attendance-home .item.item-custom.remove-border.text-center {
+    padding-top: 0;
+    background-color: $transparent-color !important;
+}
+
+ion-view.attendance.attendance-home .card.attendance-check-in-out-box .item.item-custom.remove-border {
+    background-color: $transparent-color;
+}
+
+ion-view.attendance.attendance-home h2.name-title.ng-binding,
+ion-view.attendance.attendance-home p.current_date.ng-binding {
+    text-align: left;
+}
+
+ion-view.attendance.attendance-home p.current_date.ng-binding {
+    font-size: 13px;
+}
+
+ion-view.attendance.attendance-home p.location_status marquee.ng-binding {
+    font-size: 13px !important;
+    position: fixed;
+}
+
+ion-view.attendance.attendance-home h2.name-title.ng-binding {
+    text-align: left;
+    color: $icon-color !important;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 900;
+}
+
+ion-view.attendance.attendance-home .col.check-in-out-clock.check-in-out-hour,
+ion-view.attendance.attendance-home .col.check-in-out-clock.check-in-out-min,
+ion-view.attendance.attendance-home .col.check-in-out-clock.check-in-out-second {
+    background-color: $card-color;
+    border-radius: 50px;
+    margin: 0 5px;
+}
+
+ion-view.attendance.attendance-home p.checkedin-time.text-center.ng-binding {
+    background-color: $transparent-color;
+    margin: 18px 0 0 0;
+    padding: 10px;
+    font-size: 16px;
+    color: $icon-color;
+    font-weight: bold;
+}
+
+ion-view.attendance.attendance-home p.now-time.text-center.ng-binding {
+    background-color: $transparent-color;
+    margin: 18px 0 0 0;
+    padding: 10px;
+    font-size: 16px;
+    color: $icon-color;
+    font-weight: bold;
+}
+
+ion-view.attendance.attendance-home span.clock-count.icon.icon-active-custom.ng-binding {
+    color: $icon-color !important;
+}
+
+
+/*UPCOMMING HOLIDAY*/
+
+ion-view.attendance.attendance-home ng-include>div.card:nth-child(4) {
+    border-radius: 30px 30px 0 0;
+    margin-top: 25px !important;
+}
+
+ion-view.attendance.attendance-home ng-include>div.card:nth-child(n+4) {
+    background-color: $transparent-color !important;
+    padding: 0;
+    margin: 0;
+}
+
+ion-view.attendance.attendance-home ng-include>div.card:nth-child(n+4) .item.item-divider.item-divider-custom.ng-binding {
+    background-color: $transparent-color;
+    font-size: 16px !important;
+    font-weight: bold;
+}
+
+ion-view.attendance.attendance-home ng-include>div.card:nth-child(n+4) .item.item-custom {
+    background-color: $card-color;
+    border-radius: 10px !important;
+    margin: 10px 0;
+    border: 0 !important;
+    width: 96%;
+    margin-left: 2%;
+}
+
+ion-view.attendance.attendance-home ng-include>div.card:nth-child(n+4) .item.item-custom span.item-note.ng-binding {
+    background-color: #95b2ff;
+    padding: 10px;
+    margin-top: 9px !important;
+    margin-right: -10px;
+    color: $font-white !important;
+    font-size: 12px;
+    border-radius: 30px;
+    transform: rotate(45deg);
+    padding-top: 0;
+    border: 0 !important;
+    top: 0 !important;
+}
+
+ion-view.attendance.attendance-home ng-include>div.card:nth-child(n+4) .item.item-custom span.item-note.ng-binding:before {
+    content: " ";
+    display: block;
+    height: 9px;
+    background-color: $card-color;
+    width: 70%;
+    margin-left: 15%;
+    border-radius: 0 0 30px 30px;
+    margin-bottom: 5px;
+    margin-top: -2px;
+}
+
+ion-view.attendance.attendance-home ng-include>div.card:nth-last-child(1) {
+    padding-bottom: 100px !important;
+}
+
+
+/* END ATENDANCE HOME */
+
+
+/* MESSAGE ATTENDANCE */
+
+ion-view.attendance.attendance-message ion-content {
+    top: 0 !important;
+    padding-top: 70px !important;
+    overflow: scroll !important;
+}
+
+ion-view.attendance.attendance-message ion-content .list:after {
+    content: " ";
+    height: 150px !important;
+    display: block;
+}
+
+ion-view.attendance.attendance-message .list .item-divider.item-divider-custom {
+    background-color: $transparent-color;
+    color: $font-black;
+    border: 0;
+}
+
+ion-view.attendance.attendance-message .list .item.item-custom {
+    background-color: $card-color;
+    color: $font-black;
+    border: 0;
+}
+
+ion-view.attendance.attendance-message form ion-footer-bar {
+    bottom: 10vh !important;
+    width: 96% !important;
+    background-color: $card-color !important;
+    border: 0 !important;
+    background-image: none !important;
+    margin-left: 2% !important;
+    border-radius: 5px !important;
+}
+
+ion-view.attendance.attendance-message .item.item-body.item-custom.text-left {
+    width: 80%;
+    margin: 10px !important;
+    border-radius: 0 20px 20px 20px;
+    background-color: #daedfd !important;
+}
+
+ion-view.attendance.attendance-message .item.item-body.item-custom.text-left p {
+    line-height: 1.8;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+ion-view.attendance.attendance-message .item.item-body.item-custom.text-right {
+    width: 80%;
+    margin: 10px !important;
+    border-radius: 20px 0 20px 20px;
+    margin-left: 18% !important;
+}
+
+ion-view.attendance.attendance-message .item.item-body.item-custom.text-right p {
+    line-height: 1.8;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+button.button.button-icon.icon.ion-ios-paperplane.footer-btn::before {
+    color: $icon-color;
+    opacity: 1 !important;
+}
+
+
+/* MESSAGE ATTENDANCE */
+
+
+/*ATTENDANCE DETAIL*/
+
+ion-modal-view.attendance.attendance-details {
+    top: 0 !important;
+    padding-top: 70px !important;
+    overflow: scroll !important;
+}
+
+ion-modal-view.attendance.attendance-details ion-content {
+    padding-top: 60px !important;
+}
+
+ion-modal-view.attendance.attendance-details ion-header-bar.bar-subheader.bar-custom.bar.bar-header {
+    top: 100px !important;
+}
+
+ion-modal-view.attendance.attendance-details .col.leave-details-col {
+    background-color: $transparent-color;
+    border-radius: 30px;
+    margin: 10px;
+    padding: 10px;
+    border: none;
+}
+
+ion-modal-view.attendance.attendance-details span.leave-count.ng-binding {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+ion-modal-view.attendance.attendance-details span.item-note.ng-binding {
+    color: $icon-color;
+}
+
+ion-modal-view.attendance.attendance-details a.pull-right.ng-binding {
+    color: red !important;
+}
+
+ion-modal-view.attendance.attendance-details .card .item.item-custom {
+    border: 0;
+    background-color: $card-color;
+    color: $font-black;
+    border-radius: 10px !important;
+}
+
+
+/*ATTENDANCE DETAIL*/
+
+
+/*LEAVE*/
+
+ion-modal-view.attendance.attendance-details .list.card {
+    box-shadow: none;
+    margin: 10px;
+    padding: 0 !important;
+    border-radius: 10px !important;
+    box-shadow: none;
+}
+
+ion-modal-view.attendance.attendance-details .list.card:nth-child(1) {
+    margin-top: 50px !important;
+}
+
+ion-view.attendance.attendance-home .card.attendance-leave-box {
+    width: 97% !important;
+    display: block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    max-width: 96% !important;
+    min-width: 96% !important;
+    left: 0 !important;
+    right: 0 !important;
+    float: none !important;
+}
+
+ion-view.attendance.attendance-home ng-include>div.card.attendance-leave-box:nth-child(4) .item.item-custom {
+    background-color: $transparent-color;
+    margin: 0;
+    width: 100%;
+}
+
+ion-view.attendance.attendance-home ng-include>div.card.attendance-leave-box:nth-child(4) {
+    border-radius: 0 !important;
+    margin: 0 !important;
+    background-color: $transparent-color !important;
+}
+
+ion-modal-view.attendance.attendance-details .list.card label.item.item-custom.item-input.item-select.remove-border,
+ion-modal-view.attendance.attendance-details .list.card label.item.item-custom.item-input.item-stacked-label.remove-border,
+ion-modal-view.attendance.attendance-details .list.card .item.item-custom.remove-border {
+    border-radius: 0 !important;
+    background-color: $transparent-color;
+    padding: 10px !important;
+}
+
+ion-modal-view.attendance.attendance-details .list.card .item.item-custom.remove-border .button.button-positive-custom {
+    border: 0;
+    background-color: $icon-color;
+    color: $font-white !important;
+    opacity: 1;
+    border-radius: 30px !important;
+}
+
+ion-modal-view.attendance.attendance-details .list.card label textarea {
+    line-height: 1.8;
+    height: 150px;
+    background-color: $transparent-color !important;
+    border-radius: 10px !important;
+    padding: 10px !important;
+}
+
+ion-modal-view.attendance.attendance-details .list.card p.ng-binding {
+    white-space: normal;
+    margin-bottom: 10px !important;
+}
+
+
+/*LEAVE*/
+
+
+/*HISTORY*/
+
+ion-modal-view.attendance.attendance-hisotry ion-content {
+    top: 0 !important;
+    padding-top: 110px !important;
+}
+
+ion-modal-view.attendance.attendance-hisotry .list .item-divider.item-divider-custom {
+    background-color: $transparent-color;
+    color: $font-black !important;
+    border: 0 !important;
+}
+
+ion-modal-view.attendance.attendance-hisotry .list .item.item-custom {
+    background-color: transparent;
+    color: $font-black;
+    border: 0 !important;
+    width: 96%;
+}
+
+ion-modal-view.attendance.attendance-hisotry [ng-if="attendance_history.history.length"] {
+    background-color: $card-color !important;
+    border: 0 !important;
+    width: 96%;
+    margin: 10px 2%;
+    border-radius: 10px;
+    padding-left: 55px;
+    background-image: $calendar-icon;
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: 45px;
+}
+
+ion-modal-view.attendance.attendance-hisotry span.item-note.ng-binding {
+    color: $icon-color;
+}
+
+ion-modal-view.attendance.attendance-hisotry .button.button-positive-custom {
+    border: 0;
+    background-color: $icon-color;
+    color: $font-white !important;
+    opacity: 1;
+    border-radius: 30px !important;
+}
+
+ion-modal-view.attendance.attendance-hisotry ion-content .list.card {
+    box-shadow: none !important;
+}
+
+
+/*HISTORY*/
+
+
+/*CATALOG PRO HOME*/
+
+ion-view.catalogpro.catalogpro-home ion-content#catalogpro-content {
+    top: 0 !important;
+    padding-top: 70px !important;
+}
+
+ion-view.catalogpro.catalogpro-home ion-content#catalogpro-content .list .item.item-custom {
+    border: 0;
+    background-color: $transparent-color;
+    color: $font-black !important;
+    padding: 0;
+    margin: 0;
+}
+
+ion-view.catalogpro.catalogpro-home ion-content#catalogpro-content .row {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+ion-view.catalogpro.catalogpro-home ion-content#catalogpro-content .col.col-50.product-border-bottom.product-border-right,
+ion-view.catalogpro.catalogpro-home ion-content#catalogpro-content .col.col-50.product-border-bottom {
+    background-color: #ebf0f4;
+    border-radius: 10px;
+    margin: 10px 2%;
+    max-width: 46% !important;
+}
+
+ion-view.catalogpro.catalogpro-home ion-content#catalogpro-content .catalogpro-product-grid-img {
+    min-height: 158px;
+    border-radius: 20px !important;
+}
+
+
+/*CATALOG PRO HOME*/
+
+
+/*CATALOG PRO DETAIL*/
+
+ion-modal-view.catalogpro.catalogpro-filter-orders ion-content {
+    top: 0 !important;
+    padding-top: 70px !important;
+}
+
+ion-modal-view.catalogpro.catalogpro-filter-orders .item.item-custom.product-slider.remove-border .product-feature-img {
+    object-fit: cover !important;
+    width: 80% !important;
+    margin-left: 10% !important;
+    border-radius: 30px !important;
+}
+
+
+/*CATALOG PRO DETAIL*/
+
+
+/* PADLOCK */
+
+ion-view.padlock-view ion-content {
+    top: 0 !important;
+}
+
+ion-view.padlock-view .card.padlock {
+    box-shadow: none !important;
+    margin-top: 60px;
+}
+
+ion-view.padlock-view .card.padlock .item.item-body.item-custom.text-center {
+    width: 220px;
+    height: 220px;
+    background-color: $card-color;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ion-view.padlock-view .card.padlock .item.item-text-wrap.item-custom {
+    display: none;
+}
+
+ion-view.padlock-view .card.padlock .item.item-body.item-custom.text-center i.icon.ion-locked:after {
+    content: "Florist";
+    font-size: 39px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    text-shadow: 1px 1px 2px #505050;
+    color: $icon-color;
+    line-height: 1.3;
+}
+
+ion-view.padlock-view .card.padlock>div:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+ion-view.padlock-view .card.padlock>div:nth-child(3) .item.item-icon-left.item-custom {
+    text-align: center;
+    margin-top: 50px;
+    padding: 10px;
+    line-height: 1.8;
+}
+
+ion-view.padlock-view .card.padlock>div:nth-child(3) .item.item-icon-left.item-custom span {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+ion-view.padlock-view .card.padlock>div:nth-child(3) .item.item-icon-left.item-custom i {
+    display: none;
+}
+
+ion-view.padlock-view .card.padlock .item.item-body.item-custom.text-center i {
+    font-size: 0 !important;
+}
+
+ion-view.padlock-view .card.padlock>div:nth-child(3) .item.item-icon-left.item-custom.ng-binding {
+    background-color: $icon-color;
+    width: 80%;
+    border-radius: 30px;
+    color: $font-white;
+    font-size: 0;
+}
+
+ion-view.padlock-view .card.padlock>div:nth-child(3) .item.item-icon-left.item-custom.ng-binding:after {
+    content: "Mulai";
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $font-white;
+}
+
+
+/* END PADLOCK */
+
+
+/* MY ACCOUNT */
+
+ion-modal-view.customer-view.customer-layout1 ion-content {
+    top: 0 !important;
+    position: absolute;
+    background-color: $transparent-color !important;
+}
+
+
+/* Login Page */
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_login_form"] {
+    height: 100%;
+    width: 100%;
+    max-height: 100%;
+    padding-top: 10vh;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_login_form"]:before {
+    content: "Florist";
+    font-size: 39px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    text-shadow: 1px 1px 2px #505050;
+    color: $icon-color;
+    line-height: 1.3;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    background-color: $card-color !important;
+    border-radius: 50%;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_login_form"] label.item.item-input.item-custom {
+    padding: 20px 0;
+    text-align: left;
+    display: block;
+    padding: 5px 15px 10px 15px !important;
+    background-color: $transparent-color !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_login_form"] .list {
+    width: 80%;
+    margin-left: 10%;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_login_form"] label.item.item-input.item-custom i.icon.ion-ios-person,
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_login_form"] label.item.item-input.item-custom i.icon.ion-locked {
+    font-size: 0 !important;
+}
+
+
+/*    ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_login_form"] label.item.item-input.item-custom i.icon.ion-ios-person:after {
+    content: "Email";
+    font-size: 16px;
+    top: 0;
+    margin-top: 0;
+    text-align: center !important;
+    display: block;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_login_form"] label.item.item-input.item-custom i.icon.ion-locked:after {
+    content: "Kata Sandi";
+    font-size: 16px;
+    top: 0;
+    margin-top: 0;
+    text-align: center !important;
+    display: block;
+}*/
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_login_form"] label.item.item-input.item-custom:nth-child(2) {
+    padding: 20px 0;
+    text-align: left;
+    display: block;
+    padding-top: 0;
+    width: 98%;
+    background-color: $transparent-color;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_login_form"] label.item.item-input.item-custom input {
+    background-color: $second-bg-color;
+    padding: 15px;
+    border-radius: 30px;
+    height: 45px;
+    width: 96% !important;
+    text-align: center;
+    margin-left: 2%;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_login_form"] .list .item.item-custom {
+    border: 0 !important;
+    background-color: $button-text-color !important;
+    color: $general-font-color !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_login_form"] label.item.item-input.item-custom:nth-child(1) {
+    padding: 10px 0;
+    text-align: left;
+    display: block;
+    border-radius: 10px 10px 0 0 !important;
+    width: 98%;
+    background-color: $transparent-color;
+}
+
+
+/* placeholder */
+
+
+/*[ng-show="display_login_form"] .item.item-input.item-custom input::-webkit-input-placeholder {
+   color: $transparent-color !important;
+}
+
+[ng-show="display_login_form"] .item.item-input.item-custom input:-moz-placeholder {
+   color: $transparent-color !important;
+}
+
+[ng-show="display_login_form"] .item.item-input.item-custom input::-moz-placeholder {
+   color: $transparent-color !important;
+}
+
+[ng-show="display_login_form"] .item.item-input.item-custom input:-ms-input-placeholder {  
+   color: $transparent-color !important;
+}*/
+
+
+/* placeholder */
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_login_form"] .padding.text-right span {
+    color: $icon-color;
+    text-transform: capitalize;
+    font-size: 14px !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_login_form"] .padding.text-right {
+    width: 93%;
+    margin-left: 0;
+    padding-top: 0;
+    color: $button-text-color !important;
+    font-weight: normal !important;
+    padding-right: 0;
+    text-align: center;
+    font-size: 12px;
+    background-color: $transparent-color;
+    border-radius: 0 0 30px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_login_form"] .button.button-positive-custom {
+    background-color: $icon-color;
+    color: $font-white !important;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    width: 86%;
+    border-radius: 30px;
+    border: 0;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-click="displayAccountForm()"] span:after {
+    content: " Buat Akun di Sini";
+    font-size: 14px;
+    color: $icon-color;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-click="displayAccountForm()"]:before {
+    content: "Pengguna baru? ";
+    font-size: 14px;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-click="displayAccountForm()"] span {
+    font-size: 0;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-click="displayAccountForm()"] {
+    display: block;
+    font-size: 0;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_login_form"] div[ng-if="myAccount.settings.enable_registration"] {
+    padding-top: 20px;
+    background-color: $transparent-color;
+    padding-bottom: 0;
+    margin-top: 0;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_login_form"]>div {
+    background-color: $transparent-color;
+    border-radius: 30px;
+    width: 96%;
+    margin-left: 2%;
+    padding: 6px 0 25px 0;
+    margin-bottom: 40px !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_login_form"]>div>div:nth-child(1) {
+    order: 1;
+    margin-bottom: 0 !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_login_form"]>div>div:nth-child(2) {
+    order: 2;
+    margin-bottom: 0;
+    border-radius: 30px 30px 0 0 !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 !important;
+    background-color: $transparent-color !important;
+    width: 100% !important;
+    margin-left: 0 !important;
+    padding: 0;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_login_form"]>div>div:nth-child(5) {
+    order: 5;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_login_form"]>div>div:nth-child(3) {
+    order: 3;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_login_form"]>div>div:nth-child(4) {
+    order: 4;
+    background-color: $general-bg-color;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_login_form"]>div {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Account Setting */
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_settings"] {
+    width: 90%;
+    height: 50vh !important;
+    padding-top: 25vh;
+    margin-left: 5%;
+    background-color: $transparent-color !important;
+    border-radius: 20px;
+    max-height: 100vh;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_settings"]>div {
+    background-color: $general-bg-color;
+    border-radius: 20px;
+    padding: 5px 10px 20px 10px;
+    /*background-image: url(https://ensiklopediakesaguan.com/wp-content/uploads/2021/06/bg_1.png);*/
+    /*background-position: left top;*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: contain;*/
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_settings"] .list .item-divider.item-divider-custom {
+    background-color: $transparent-color;
+    color: $general-font-color;
+    border: 0;
+    font-size: 18px;
+    text-align: left;
+    font-weight: bold;
+    border-bottom: 2px dashed $general-bg-color;
+    padding-bottom: 15px;
+}
+
+
+/* Forgot Password */
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_forgot_password_form"] {
+    width: 100%;
+    background-color: $transparent-color;
+    border-radius: 10px;
+    height: 100% !important;
+    padding-top: 60vh;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_forgot_password_form"]:before {
+    content: "Florist";
+    font-size: 39px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    text-shadow: 1px 1px 2px #505050;
+    color: $icon-color;
+    line-height: 1.3;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    background-color: $card-color !important;
+    border-radius: 50%;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_forgot_password_form"] {
+    width: 100%;
+    background-color: $transparent-color;
+    border-radius: 10px;
+    height: 100% !important;
+    padding-top: 10vh;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_forgot_password_form"] .padding.text-left {
+    padding: 0 10px !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_forgot_password_form"]>div {
+    background-color: $transparent-color;
+    border-radius: 30px;
+    width: 96%;
+    margin-left: 2%;
+    padding: 5px 0;
+    margin-bottom: 40px !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_forgot_password_form"] .button.button-positive-custom {
+    background-color: $icon-color;
+    color: $font-white !important;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    width: 90%;
+    border-radius: 30px;
+    border: 0;
+    margin-left: 5%;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_forgot_password_form"] .padding.text-left p:nth-child(1):after {
+    content: "Masukkan email yang terdaftar pada kolom di bawah ini, kami akan mengirimmu kata sandi baru.";
+    font-size: 14px;
+    line-height: 1.8;
+    text-align: center;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_forgot_password_form"] .padding.text-left p {
+    font-size: 0;
+    text-align: center;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_forgot_password_form"] .padding.text-left p:nth-child(2) {
+    display: none;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_forgot_password_form"] label.item.item-input.item-custom i.icon.ion-ios-person,
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_forgot_password_form"] label.item.item-input.item-custom i.icon.ion-locked {
+    font-size: 0 !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_forgot_password_form"] .list .item.item-custom {
+    border: 0;
+    background-color: $transparent-color;
+    color: $general-font-color;
+    display: block;
+    width: 95%;
+    padding: 0 10px 10px 10px;
+    margin-left: 2.5%;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_forgot_password_form"] label.item.item-input.item-custom input {
+    background-color: $second-bg-color;
+    padding: 15px;
+    border-radius: 30px;
+    height: 50px;
+    text-align: center;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_forgot_password_form"] div[ng-click="displayLoginForm()"] span {
+    height: 0;
+    font-size: 0;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_forgot_password_form"] div[ng-click="displayLoginForm()"] span:after {
+    content: " Masuk di Sini";
+    padding: 0;
+    font-size: 14px;
+    color: $icon-color;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_forgot_password_form"] div[ng-click="displayLoginForm()"]:before {
+    content: "Sudah Punya Akun? ";
+    font-size: 14px;
+    color: $general-font-color;
+    margin-bottom: 5px;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_forgot_password_form"] div[ng-click="displayLoginForm()"] {
+    padding-bottom: 20px;
+    background-color: $transparent-color;
+    display: block;
+    font-size: 0;
+    margin-top: 20px;
+    color: $icon-color;
+}
+
+
+/* Regist */
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) {
+    padding: 0;
+    height: 100% !important;
+    position: relative;
+    padding-top: 0vh;
+}
+
+
+/*ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .item.item-input.item-custom {
+    background-image: $edit-icon;
+    background-position: center right 13px;
+    background-repeat: no-repeat;
+    background-size: 18px;
+}*/
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3)>div {
+    background-color: $transparent-color;
+    width: 100%;
+    padding-bottom: 25px;
+    border-radius: 30px !important;
+    margin-bottom: 30px !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .list {
+    background-color: $transparent-color;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 0;
+    margin: 0 15px
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3)>div>div:nth-child(3) {
+    background-color: $button-text-color;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+    margin: 0 15px;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .list .item.item-custom {
+    border: 0;
+    color: $general-font-color;
+    border-radius: 30px;
+    background-color: $second-bg-color;
+    margin: 10px 0;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .item.item-input.item-custom .input-label.ng-binding,
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) label.item.item-input.item-custom .input-label {
+    display: none;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .item.item-input.item-custom input {
+    max-width: 100%;
+    text-align: left;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) label.checkbox-custom h2 span,
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .checkbox-custom .item-content.disable-pointer-events span {
+    color: $icon-color !important;
+    padding-left: 0;
+    font-size: 0;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .checkbox-custom {
+    background-color: $transparent-color !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) label.checkbox-custom h2>span:nth-child(1):after {
+    content: "Dengan mencentang ini, saya menyetujui Kebijakan Privasi Sinua Desain.";
+    font-size: 11px;
+    color: $icon-color;
+    padding-left: 0 !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) label.checkbox-custom .item-content.disable-pointer-events>span.ng-binding:after {
+    content: "Pemberitahuan Terbaru";
+    font-size: 11px;
+    color: $icon-color;
+    padding-left: 0 !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .button.button-positive-custom {
+    border: 0;
+    background-color: $icon-color;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: $button-text-color;
+    font-weight: bold;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) div[ng-click="displayLoginForm()"] span {
+    height: 0;
+    font-size: 0;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) div[ng-click="displayLoginForm()"] span:after {
+    content: " Masuk di Sini";
+    font-size: 14px;
+    padding: 0;
+    color: $icon-color;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) div[ng-click="displayLoginForm()"]:before {
+    content: "Sudah Punya Akun? ";
+    font-size: 14px;
+    text-align: center;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) div[ng-click="displayLoginForm()"] {
+    padding-bottom: 0 !important;
+    background-color: $transparent-color;
+    padding-top: 0 !important;
+    display: block;
+    font-size: 0 !important;
+    margin-top: 0;
+    color: $general-font-color;
+    text-align: center !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) span.bold.positive.positive-custom.ng-binding {
+    color: $icon-color;
+    font-weight: normal;
+    display: flex;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .checkbox-custom {
+    background-color: $transparent-color !important;
+    margin: 0 !important;
+    padding-left: 55px;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .checkbox-custom .checkbox input:before,
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .checkbox-custom .checkbox .checkbox-icon:before {
+    border-color: $icon-color;
+    height: 25px !important;
+    width: 30px !important;
+    border-radius: 5px !important;
+    background-color: $transparent-color;
+    margin: 0;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .padding.text-right {
+    padding: 0;
+    display: block !important;
+    text-align: left;
+    font-size: 11px;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) [ng-click="displayLoginForm()"] {
+    text-align: left;
+    font-size: 0 !important;
+    padding: 0;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) [ng-click="logout()"] {
+    background-color: $transparent-color;
+    width: 100%;
+    padding: 0;
+    border-radius: 10px 0 0 10px;
+    background-size: 28px;
+    border: 0 !important;
+    margin-left: 0;
+    text-align: center;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+[ng-click="customer.change_password = !customer.change_password"] {
+    background-color: $transparent-color !important;
+    color: $icon-color !important;
+}
+
+[ng-click="customer.change_password = !customer.change_password; checkPasswordStatus()"] {
+    background-color: transparent !impor tant;
+    font-weight: normal;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .checkbox-square .checkbox-icon:after {
+    border-width: 2px;
+    top: 28%;
+    left: 34%;
+    width: 18px;
+    height: 10px;
+}
+
+
+/* account setting */
+
+ion-modal-view.customer-view.customer-layout1 [ng-show="display_settings"] .list .item.item-custom {
+    border: 0;
+    background-color: $transparent-color;
+    border-radius: 5px;
+}
+
+ion-modal-view.customer-view.customer-layout1 [ng-show="display_settings"] .item-checkbox .checkbox {
+    left: 0 !important;
+    padding-left: 0 !important;
+}
+
+
+/* privacy policy */
+
+ion-modal-view.privacy-policy-view {
+    background-image: none !important;
+}
+
+ion-modal-view.privacy-policy-view ion-content {
+    background-color: $general-bg-color !important;
+    padding-top: 70px !important;
+}
+
+ion-modal-view.privacy-policy-view .item-text-custom {
+    border: 0;
+    background: $transparent-color;
+    padding-top: 75px;
+}
+
+
+/* After User login */
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) [ng-if="customer.is_logged_in"] [ng-click="showPrivacyPolicy()"] {
+    display: none;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) [ng-click="requestGdprToken()"] {
+    display: none;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) div[ng-class="{'padding': card_design}"]>button[ng-click="registerOrSave()"] {
+    background-color: $icon-color;
+    color: $font-white !important;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    width: 90%;
+    border-radius: 30px;
+    border: 0;
+    margin-left: 5% !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) div[ng-class="{'padding': card_design}"] {
+    width: 100% !important;
+    left: 0 !important;
+    right: 0 !important;
+    border: 0 !important;
+    margin: 0 !important;
+    background-color: $transparent-color !important;
+    margin-left: 0 !important;
+    position: relative;
+    display: block;
+    padding-bottom: 10px;
+}
+
+
+/* END MY ACCOUNT */

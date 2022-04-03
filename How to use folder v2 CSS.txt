@@ -1,0 +1,14 @@
+Config your Folder v2 to be like below:
+1. Folder section tab - Manage Folder - Edit Folder, fill in title and subtitle, tick show cover and show title, select inherit global layout in replace layout option, add image for cover according to requested size. For example, in the demo image above, Game Popular is the subtitle, while SPECIAL PROMO is the title.
+
+2. Still on the Folders tab - Manage Folders, pay attention to the Folders section. In the demo image above, the menus like Fortnite, PUBG, etc. is a subfolder, so not another module in the folder. To add a subfolder, please click the + (plus) icon.
+
+3. After your subfolder has been created, follow the same steps as the first step above, which is to add titles, subtitles, etc. The cover image or thumbnail will be used when you open the subfolder. As for the thumbnails on the menu that will be displayed on the front, the images will be added using CSS. For example, Fortnite is a title, while TOPUP is a subtitle. do the same for the 3 subfolders on the first line. Then, the 3 subfolders on the second line differ only in the title: Free Fire and subtitle: More. Meanwhile, the next sub-subfolders are filled with titles and subtitles as in general. For example, title: Game Free Fire, while subtitle: A battle royale game developed by 111 Dots Studio. Try between the title and subtitle not too long, it is recommended to only use 1 or 2 words for the title, and 6-9 words for the subtitle.
+
+4. Switch to the Design tab, please select Layout 3. The background is not used in this tutorial.
+5. On the Settings tab, none of the options are checked.
+
+How to use:
+Copy and paste this CSS to your Colors tab > Advanced Customization CSS / SCSS Section of your editor.
+You will get 2 .txt file, it is an instruction file and CSS file.
+If you get some error while using (paste) the code, contact appteam.

@@ -2,16 +2,13 @@
 
 <head>
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-    <meta
-        content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0"
-        name="viewport">
+    <meta content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" name="viewport">
     <meta content="black" name="apple-mobile-web-app-status-bar-style">
     <meta content="IE=8" http-equiv="X-UA-Compatible">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <title>Greatings</title>
+    <title>Homepage</title>
     <style type="text/css">
         <style>@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Poppins:wght@200&display=swap');
-
         html,
         body,
         p,
@@ -28,7 +25,7 @@
             border: none;
             font-family: 'Poppins', sans-serif !important;
         }
-
+        
         body {
             font-size: 15px;
             width: 100%;
@@ -38,17 +35,18 @@
             -webkit-text-size-adjust: none;
             -webkit-touch-callout: none;
             line-height: 1;
-/*            background-color: transparent !important;
-            background-image: url(https://www.halodoc.com/assets/img/home-v2/webp/home-banner-v3.svg);
-            background-position: center;
+            /* background-color: #ecf0f6 !important; */
+            background-color: transparent !important;
+            background-image: url(YOUR_IMG_URL);
+            background-position: center center !important;
             background-repeat: no-repeat;
-            background-size: contain;*/
+            background-size: contain;
         }
-
+        
         body::-webkit-scrollbar {
             display: none;
         }
-
+        
         .private {
             display: none;
             border: none;
@@ -65,64 +63,127 @@
             color: #337ab7;
             display: none !important;
         }
-
+        
         .button2 {
             background-color: #008CBA;
         }
-
+        
         .button3 {
             background-color: #f44336;
         }
-
+        
         .button5 {
             background-color: #555555;
         }
-
-
-        div#userWelcomeInfo center {
+        
+        div#username center {
             color: #f25070;
             font-size: 18px;
             font-weight: bold;
             padding: 0 0 0 20px;
         }
-
-        div#userWelcomeInfo {
-            padding: 0;
+        
+        div#username {
+            padding: 0 10px;
         }
-
-        div#userWelcomeInfo h6 {
+        
+        div#username h5 {
+            text-transform: capitalize;
+            font-size: 16px;
+            font-weight: bold;
+            color: #000;
+        }
+        
+        div#username h6 {
             color: #000;
             text-align: left;
             margin-top: 26px;
         }
-
-        div#userWelcomeInfo center h5 {
+        
+        div#username center h5 {
             color: #387093;
             font-size: 18px;
             font-weight: bold;
             text-transform: capitalize;
             text-align: left;
         }
-
+        
         div#lblGreetings {
-            margin-top: 50px;
+            margin-top: 0;
             padding: 0 0 0 20px;
-            font-style: italic;
-            font-size: 15px;
+            font-size: 14px;
+            order: 1;
+            color: #000;
+        }
+        
+        .booking a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        .booking a:hover {
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .booking {
+            margin: 0 20px;
+            background-color: #de1b51;
+            width: 25%;
+            padding: 10px;
+            text-align: center;
+            color: #fff !important;
+            border-radius: 10px;
+        }
+        
+        .message p {
+            padding: 0 0 0 20px;
+            font-size: 14px;
+            color: #000;
+        }
+        
+        .top {
+            display: flex;
+            align-items: center;
+        }
+        
+        .top .welcome {
+            order: 2;
+        }
+        
+        .user_welcome {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            height: 100%;
         }
     </style>
 </head>
 
 <body>
-    <div id="lblGreetings"></div>
-    <center>
-        <div id="userWelcomeInfo">
+    <div class="user_welcome">
+        <div class="top">
+            <div class="welcome">
+                <!-- <label id="greeting"></label> -->
+                <div id="username">
+                </div>
+                <div id="profil"></div>
+                <a class="private">Edit Profil</a>
+                <!-- <a class="private" data-offline="true" data-params="" data-state="my-account" target="_top" href="javascript:void(0);">Edit Profil</a> -->
+            </div>
+            <div id="lblGreetings"></div>
         </div>
-        <div id="profil"></div>
-        <a class="private" data-offline="true" data-params="" data-state="my-account" target="_top"
-            href="javascript:void(0);">Edit Profil</a>
-        <label id="greeting"></label>
-    </center>
+
+        <div class="message">
+            <p>Glad to have you here</p>
+        </div>
+        <div class="booking">
+            <a data-offline="false" data-params="value_id:188402" data-state="booking-view">Inbox</a>
+        </div>
+    </div>
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -131,9 +192,9 @@
         var customer = parent.angular.element(parent.document.body).injector().get('Customer').customer;
         console.log("customer object");
         if (customer && customer.isLoggedIn) {
-            var welcomeStr = "<center><h5>" + customer.firstname + " " + customer.lastname + " <br/>";
-            document.getElementById("userWelcomeInfo").innerHTML = welcomeStr;
-            // document.getElementById("userWelcomeInfo").innerHTML=customerImg;
+            var welcomeStr = "<div><h5>" + customer.firstname + " " + customer.lastname + " <br/>";
+            document.getElementById("username").innerHTML = welcomeStr;
+            // document.getElementById("username").innerHTML=customerImg;
         }
 
         var x = document.getElementsByClassName("private");
@@ -154,9 +215,9 @@
 
         // Akhir JS untuk customer
         var inAppLinks = document.querySelectorAll("a[data-state]");
-        [].forEach.call(inAppLinks, function (el) {
+        [].forEach.call(inAppLinks, function(el) {
             el.href = "javascript:void(0);";
-            el.addEventListener("click", function () {
+            el.addEventListener("click", function() {
                 parent.postMessage("state-go=state:" + el.attributes["data-state"].value + ",offline:" + el.attributes["data-offline"].value + "," + el.attributes["data-params"].value + "", "*");
             });
         });
@@ -178,4 +239,5 @@
             '<b>' + greet + '</b>';
     </script>
 </body>
+
 </html>

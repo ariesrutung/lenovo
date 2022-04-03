@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Title Here</title>
+
+    <style>
+        /* Start - CSS Call Username */
+        
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Poppins:wght@200&display=swap');
+        html,
+        body,
+        p,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        a,
+        div {
+            font-family: 'Poppins', sans-serif !important;
+        }
+        
+        body {
+            font-size: 15px;
+            width: 100%;
+            height: 100%;
+            /* background-color: #ecf0f6 !important; */
+            background-color: transparent !important;
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+        
+        div#username {
+            padding: 0 10px;
+        }
+        
+        div#username h5 {
+            text-transform: capitalize;
+            font-size: 16px;
+            font-weight: bold;
+            color: #000;
+            margin: 0 !important;
+        }
+        
+        div#lblGreetings {
+            margin-top: 0;
+            padding: 0 0 0 20px;
+            font-size: 14px;
+            order: 1;
+            color: #000;
+        }
+        
+        .booking a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        .booking a:hover {
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .booking {
+            margin: 0 20px;
+            background-color: #de1b51;
+            width: 25%;
+            padding: 10px;
+            text-align: center;
+            color: #fff !important;
+            border-radius: 10px;
+        }
+        
+        .message p {
+            padding: 0 0 0 20px;
+            font-size: 14px;
+            color: #000;
+            margin: 10px 0 15px 0;
+        }
+        
+        .top {
+            display: flex;
+            align-items: center;
+        }
+        
+        .top .welcome {
+            order: 2;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .user_welcome {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            background-image: url(https://login2.plagtibmobile.com/images/application/250/features/custom_page/5776/62487f7c36dbc.jpg);
+            background-position: center center !important;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 10px 0;
+            width: 98%;
+            margin: 5px 1% 0 1% !important;
+        }
+        /* End - CSS Call Username */
+        /* Start - 1th block CSS */
+        
+        div#block_1a p:nth-child(1) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin: 0 1%;
+            background-color: #eaeaea;
+            flex: 0 0 58%;
+            border-radius: 10px;
+            background-image: url(https://img.freepik.com/free-vector/abstract-banner-background-with-red-shapes_1361-3348.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            -webkit-box-shadow: 0 10px 6px -6px #777;
+            -moz-box-shadow: 0 10px 6px -6px #777;
+            box-shadow: 0 10px 6px -6px #777;
+        }
+        
+        div#block_1a {
+            display: flex;
+            background-color: #dae6f2;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px 0 0 0;
+            width: 98%;
+            margin: 20px 1% 0 1%;
+            border-radius: 10px 10px 0 0;
+        }
+        
+        div#block_1a a {
+            height: 100px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: transparent;
+        }
+        
+        div#block_1a p:nth-child(2) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 1%;
+            background-color: #eaeaea;
+            flex: 0 0 38%;
+            border-radius: 10px;
+            background-image: url(https://cdn.pixabay.com/photo/2015/10/29/14/38/web-1012467__340.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            -webkit-box-shadow: 0 10px 6px -6px #777;
+            -moz-box-shadow: 0 10px 6px -6px #777;
+            box-shadow: 0 10px 6px -6px #777;
+        }
+        
+        div#block_1b {
+            display: flex;
+            background-color: #dae6f2;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px 0 0 0;
+            width: 98%;
+            margin: 0 1% 0 1%;
+            border-radius: 0;
+        }
+        
+        div#block_1b a {
+            height: 100px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: transparent;
+        }
+        
+        div#block_1b p:nth-child(2) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 1%;
+            background-color: #eaeaea;
+            flex: 0 0 58%;
+            border-radius: 10px;
+            background-image: url(https://cdn.pixabay.com/photo/2015/10/29/14/38/web-1012467__340.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            -webkit-box-shadow: 0 10px 6px -6px #777;
+            -moz-box-shadow: 0 10px 6px -6px #777;
+            box-shadow: 0 10px 6px -6px #777;
+        }
+        
+        div#block_1b p:nth-child(1) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin: 0 1%;
+            background-color: #eaeaea;
+            flex: 0 0 38%;
+            border-radius: 10px;
+            background-image: url(https://cdn.pixabay.com/photo/2015/10/29/14/38/web-1012467__340.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            -webkit-box-shadow: 0 10px 6px -6px #777;
+            -moz-box-shadow: 0 10px 6px -6px #777;
+            box-shadow: 0 10px 6px -6px #777;
+        }
+        
+        div#block_1c {
+            display: flex;
+            background-color: #dae6f2;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px 0 0 0;
+            width: 98%;
+            margin: 0 1% 0 1%;
+            border-radius: 0 0 10px 10px !important;
+        }
+        
+        div#block_1c p {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin: 0 1%;
+            background-color: #eaeaea;
+            flex: 0 0 98%;
+            border-radius: 10px;
+            background-image: url(https://cdn.pixabay.com/photo/2015/10/29/14/38/web-1012467__340.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            -webkit-box-shadow: 0 10px 6px -6px #777;
+            -moz-box-shadow: 0 10px 6px -6px #777;
+            box-shadow: 0 10px 6px -6px #777;
+        }
+        
+        div#block_1c a {
+            height: 100px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: transparent;
+        }
+        
+        #block_3.content.ng-binding {
+            padding: 0;
+            display: flex;
+            overflow: visible;
+            width: 96% !important;
+            overflow-x: auto !important;
+            overflow-y: hidden !important;
+            white-space: nowrap !important;
+            -webkit-overflow-scrolling: touch !important;
+            margin: 5px 2%;
+        }
+        
+        #block_3.content.ng-binding p {
+            width: 100% !important;
+            min-width: 38% !important;
+            height: 80px;
+            margin: 0 1%;
+            background-color: #de1b51 !important;
+            border-radius: 10px;
+            display: flex !important;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            background-image: url(https://cdn.pixabay.com/photo/2015/10/29/14/38/web-1012467__340.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            -webkit-box-shadow: 0 10px 6px -6px #777;
+            -moz-box-shadow: 0 10px 6px -6px #777;
+            box-shadow: 0 10px 6px -6px #777;
+        }
+        
+        #block_3.content.ng-binding p a {
+            font-size: 12px;
+            font-size: 12px;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: transparent !important;
+        }
+        
+        #block_3.content.ng-binding p a:hover {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        #block_3.content.ng-binding p a:-webkit-any-link {
+            text-decoration: none;
+        }
+        /* End - 1th block CSS */
+        /* Start - 2nd block CSS */
+        
+        #block_2.content.ng-binding {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 20px 2% 0 2%;
+        }
+        
+        #block_2.content.ng-binding h2 {
+            padding: 0 !important;
+            margin: 0 !important;
+            font-size: 18px;
+            font-weight: bold !important;
+        }
+        
+        #block_2.content.ng-binding h2 strong {
+            color: #000;
+        }
+        
+        #block_2.content.ng-binding p a {
+            color: #387ef5 !important;
+            text-decoration: none;
+        }
+        
+        #block_2.content.ng-binding p {
+            padding: 0;
+            margin: 0;
+        }
+        /* End - 2nd block CSS */
+        /* Start - 2nd block CSS */
+        
+        #block_4.content.ng-binding {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 20px 2% 0 2%;
+        }
+        
+        #block_4.content.ng-binding h2 {
+            padding: 0 !important;
+            margin: 0 !important;
+            font-size: 18px;
+            font-weight: bold !important;
+        }
+        
+        #block_4.content.ng-binding h2 strong {
+            color: #000;
+        }
+        
+        #block_4.content.ng-binding p a {
+            color: #387ef5 !important;
+            text-decoration: none;
+        }
+        
+        #block_4.content.ng-binding p {
+            padding: 0;
+            margin: 0;
+        }
+        /* End - 2nd block CSS */
+        /* Start - 5th Block CSS */
+        /* div#block_5 {
+            padding: 0;
+            display: flex;
+            margin: 0;
+            overflow: visible;
+            width: 100% !important;
+            overflow-x: auto !important;
+            overflow-y: scroll !important;
+            white-space: nowrap !important;
+            -webkit-overflow-scrolling: touch !important;
+            flex-direction: column;
+            height: 200px;
+        } */
+        
+        div#block_5 p:nth-child(1) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 96%;
+            margin: 13px 2%;
+            background-color: #eaeaea;
+            flex: 0 0 98%;
+            border-radius: 10px;
+            background-image: url(https://cdn.pixabay.com/photo/2015/10/29/14/38/web-1012467__340.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            -webkit-box-shadow: 0 10px 6px -6px #777;
+            -moz-box-shadow: 0 10px 6px -6px #777;
+            box-shadow: 0 10px 6px -6px #777;
+            height: 99px;
+        }
+        
+        div#block_5 p:nth-child(2) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 96%;
+            margin: 13px 2%;
+            background-color: #eaeaea;
+            flex: 0 0 98%;
+            border-radius: 10px;
+            background-image: url(https://cdn.pixabay.com/photo/2015/10/29/14/38/web-1012467__340.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            -webkit-box-shadow: 0 10px 6px -6px #777;
+            -moz-box-shadow: 0 10px 6px -6px #777;
+            box-shadow: 0 10px 6px -6px #777;
+            height: 99px;
+        }
+        
+        div#block_5 p:nth-child(3) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 96%;
+            margin: 13px 2%;
+            background-color: #eaeaea;
+            flex: 0 0 98%;
+            border-radius: 10px;
+            background-image: url(https://cdn.pixabay.com/photo/2015/10/29/14/38/web-1012467__340.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            -webkit-box-shadow: 0 10px 6px -6px #777;
+            -moz-box-shadow: 0 10px 6px -6px #777;
+            box-shadow: 0 10px 6px -6px #777;
+            height: 99px;
+        }
+        
+        div#block_5 p:nth-child(4) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 96%;
+            margin: 13px 2%;
+            background-color: #eaeaea;
+            flex: 0 0 98%;
+            border-radius: 10px;
+            background-image: url(https://cdn.pixabay.com/photo/2015/10/29/14/38/web-1012467__340.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            -webkit-box-shadow: 0 10px 6px -6px #777;
+            -moz-box-shadow: 0 10px 6px -6px #777;
+            box-shadow: 0 10px 6px -6px #777;
+            height: 99px;
+        }
+        
+        div#block_5 p:nth-child(5) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 96%;
+            margin: 13px 2%;
+            background-color: #eaeaea;
+            flex: 0 0 98%;
+            border-radius: 10px;
+            background-image: url(https://cdn.pixabay.com/photo/2015/10/29/14/38/web-1012467__340.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            -webkit-box-shadow: 0 10px 6px -6px #777;
+            -moz-box-shadow: 0 10px 6px -6px #777;
+            box-shadow: 0 10px 6px -6px #777;
+            height: 99px;
+        }
+        
+        div#block_5 p:nth-child(6) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 96%;
+            margin: 13px 2%;
+            background-color: #eaeaea;
+            flex: 0 0 98%;
+            border-radius: 10px;
+            background-image: url(https://cdn.pixabay.com/photo/2015/10/29/14/38/web-1012467__340.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            -webkit-box-shadow: 0 10px 6px -6px #777;
+            -moz-box-shadow: 0 10px 6px -6px #777;
+            box-shadow: 0 10px 6px -6px #777;
+            height: 99px;
+        }
+        
+        div#block_5 p:nth-child(7) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 96%;
+            margin: 13px 2%;
+            background-color: #eaeaea;
+            flex: 0 0 98%;
+            border-radius: 10px;
+            background-image: url(https://cdn.pixabay.com/photo/2015/10/29/14/38/web-1012467__340.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            -webkit-box-shadow: 0 10px 6px -6px #777;
+            -moz-box-shadow: 0 10px 6px -6px #777;
+            box-shadow: 0 10px 6px -6px #777;
+            height: 99px;
+        }
+        
+        div#block_5 p a {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: transparent !important;
+        }
+        /* End - 5th Block CSS */
+    </style>
+</head>
+
+<body>
+    <!-- 1th block - header call user name -->
+    <div class="user_welcome">
+        <div class="top">
+            <div class="welcome">
+                <!-- <label id="greeting"></label> -->
+                <div id="username">
+                </div>
+                <!-- <div id="profil"></div> -->
+                <!-- <a class="private">Edit Profil</a> -->
+                <!-- <a class="private" data-offline="true" data-params="" data-state="my-account" target="_top" href="javascript:void(0);">Edit Profil</a> -->
+            </div>
+            <div id="lblGreetings"></div>
+        </div>
+
+        <div class="message">
+            <p>Glad to have you here</p>
+        </div>
+        <div class="booking">
+            <a data-offline="false" data-params="value_id:188402" data-state="booking-view">Inbox</a>
+        </div>
+    </div>
+    <!-- 1th block - header call user name -->
+
+    <!-- 2nd block  -->
+    <div id="block_1a" class="content ng-binding" ng-bind-html="block.content | trusted_html" sb-a-click="">
+        <p><a data-offline="true" data-params="value_id:188523" data-state="places-list">Cardiology</a></p>
+        <p><a data-offline="true" data-params="value_id:188523" data-state="places-categories" class="">Psychologist</a></p>
+    </div>
+    <div id="block_1b" class="content ng-binding" ng-bind-html="block.content | trusted_html" sb-a-click="">
+        <p><a data-offline="false" data-params="value_id:188411" data-state="appointment-view">Quick Test</a></p>
+        <p><a data-offline="false" data-params="value_id:188411" data-state="appointment-view">Viralogist</a></p>
+    </div>
+    <div id="block_1c" class="content ng-binding" ng-bind-html="block.content | trusted_html" sb-a-click="">
+        <p><a data-offline="false" data-params="value_id:188411" data-state="appointment-view">Viralogist</a></p>
+    </div>
+    <!-- 2nd block  -->
+
+    <!-- 3th block -->
+    <div id="block_2" class="content ng-binding" ng-bind-html="block.content | trusted_html" sb-a-click="">
+        <h2><strong>LAYANAN PREMIUM</strong></h2>
+        <p><a data-offline="false" data-params="value_id:137385" data-state="catalogpro-home">View All</a></p>
+    </div>
+    <!-- 3th block -->
+
+    <!-- 4th block  -->
+    <div id="block_3" class="content ng-binding" ng-bind-html="block.content | trusted_html" sb-a-click="">
+        <p><a data-offline="true" data-params="value_id:188523" data-state="places-list">Cardiology</a></p>
+        <p><a data-offline="true" data-params="value_id:188523" data-state="places-categories" class="">Psychologist</a></p>
+        <p><a data-offline="false" data-params="value_id:188411" data-state="appointment-view">Quick Test</a></p>
+        <p><a data-offline="false" data-params="value_id:188411" data-state="appointment-view">Viralogist</a></p>
+        <p><a data-offline="true" data-params="value_id:188523" data-state="places-list">Surgeon</a></p>
+        <p><a data-offline="true" data-params="value_id:188523" data-state="places-categories">Pediatrician</a></p>
+        <p><a data-offline="false" data-params="value_id:188411" data-state="appointment-view">Radiologists</a></p>
+        <p><a data-offline="false" data-params="value_id:188411" data-state="appointment-view">Orthodontist</a></p>
+    </div>
+    <!-- 4th block  -->
+
+    <!-- 5th block -->
+    <div id="block_4" class="content ng-binding" ng-bind-html="block.content | trusted_html" sb-a-click="">
+        <h2><strong>LAYANAN PREMIUM</strong></h2>
+        <p><a data-offline="false" data-params="value_id:137385" data-state="catalogpro-home">View All</a></p>
+    </div>
+    <!-- 5th block -->
+
+    <!-- 6th block  -->
+    <div id="block_5" class="content ng-binding" ng-bind-html="block.content | trusted_html" sb-a-click="">
+        <p><a data-offline="true" data-params="value_id:188523" data-state="places-list">Cardiology</a></p>
+        <p><a data-offline="true" data-params="value_id:188523" data-state="places-categories" class="">Psychologist</a></p>
+        <p><a data-offline="false" data-params="value_id:188411" data-state="appointment-view">Quick Test</a></p>
+        <p><a data-offline="false" data-params="value_id:188411" data-state="appointment-view">Viralogist</a></p>
+        <p><a data-offline="true" data-params="value_id:188523" data-state="places-list">Surgeon</a></p>
+    </div>
+    <!-- 6th block  -->
+
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script>
+    var customer = parent.angular.element(parent.document.body).injector().get('Customer').customer;
+    console.log("customer object");
+    if (customer && customer.isLoggedIn) {
+        var welcomeStr = "<div><h5>" + customer.firstname + " <br/>";
+        document.getElementById("username").innerHTML = welcomeStr;
+    }
+
+    var myDate = new Date();
+    var hrs = myDate.getHours();
+
+    var greet;
+
+    if (hrs < 12)
+        greet = 'Good Morning';
+    else if (hrs >= 12 && hrs <= 17)
+        greet = 'Good Afternoon';
+    else if (hrs >= 17 && hrs <= 24)
+        greet = 'Good Evening';
+
+    document.getElementById('lblGreetings').innerHTML =
+        '<b>' + greet + '</b>';
+</script>
+
+</html>
