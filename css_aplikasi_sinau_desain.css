@@ -1,0 +1,2990 @@
+/*
+ *---------------------------------------------------------------
+ * BUNDLE CSS APLIKASI SINAU DESAIN
+ *---------------------------------------------------------------
+ *
+ * Jika ingin ganti warna, ganti pada warna parameter saja.
+ * Jika ingin ganti gambar, ganti pada gambar parameter saja.
+ */
+
+
+/* WARNA PARAMETER */
+
+$ion-content: #fff;
+$ion-view: #293072;
+$transparent-color: transparent;
+$second-bg-color: #ecf0f6;
+$icon-color: #009909;
+$general-font-color: #000;
+$button-text-color: #fff;
+$border-transparent: rgba( 255, 255, 255, 0.18);
+$bg-image: url(https://ensiklopediakesaguan.com/wp-content/uploads/2021/05/dealer_1.png);
+$login-img: url(https://ensiklopediakesaguan.com/wp-content/uploads/2021/05/log-out.png);
+$bg-image-bottom: url(https://ensiklopediakesaguan.com/wp-content/uploads/2021/06/bg_2.png);
+$bg-image-top: url(https://ensiklopediakesaguan.com/wp-content/uploads/2021/06/bg_1.png);
+$logo-image: url(https://ensiklopediakesaguan.com/wp-content/uploads/2021/06/undangdong.png);
+$close-button-icon: url(https://ensiklopediakesaguan.com/wp-content/uploads/2021/05/close_btn.png);
+$bg-image-left: url(https://ensiklopediakesaguan.com/wp-content/uploads/2021/06/bg_3.png);
+$img-icon: url(https://ensiklopediakesaguan.com/wp-content/uploads/2021/07/img-1.png);
+$padlock-bg: url(https://image.freepik.com/free-vector/cute-muslim-couple-with-flower_21630-743.jpg);
+$edit-icon: url(https://ensiklopediakesaguan.com/wp-content/uploads/2021/07/edit.png);
+
+/* PADLOCK */
+
+ion-view[state="padlock-view"] {
+    z-index: 9 !important;
+}
+
+ion-view[state="padlock-view"] ion-content {
+    top: 0 !important;
+}
+
+ion-view[state="padlock-view"] div.scroll>div.card.padlock {
+    background-color: blue;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    padding-top: 65px;
+    background-image: url(https://cdn131.picsart.com/319115594097201.jpg);
+    background-size: cover;
+    background-position-x: center;
+}
+
+ion-view[state="padlock-view"] .card .item.item-custom {
+    background-color: $transparent-color;
+    border: 0;
+    color: $ion-content;
+    text-align: center;
+    padding-left: 12px;
+}
+
+ion-view[state="padlock-view"] div.card.padlock>div.item.item-text-wrap.item-custom {
+    display: none;
+}
+
+ion-view[state="padlock-view"] div.card.padlock>div.item.item-body.item-custom.text-center {
+    display: none;
+}
+
+i.icon.ion-ios-paper-outline,
+i.icon.ion-ios-person-outline {
+    display: none;
+}
+
+i.icon.ion-locked {
+    visibility: hidden;
+}
+
+ion-view[state="padlock-view"] div.card.padlock div[ng-if="description"]:before {
+    visibility: visible;
+    content: "Maaf, Seluruh Fitur Dikunci.";
+    color: white;
+    position: relative;
+    font-size: 25px;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 10px;
+    white-space: normal;
+    line-height: 30px;
+}
+
+ion-view[state="padlock-view"] div.card.padlock>div:nth-child(3)[ng-show="!isLoading"] {
+    position: relative;
+    top: 3vh;
+}
+
+ion-view[state="padlock-view"] div.card.padlock div[ng-click="padlockLogin()"] {
+    visibility: hidden;
+}
+
+ion-view[state="padlock-view"] div.card.padlock div[ng-click="padlockLogin()"]:after {
+    visibility: visible;
+    content: "Login Sekarang";
+    position: absolute;
+    background-color: $ion-view;
+    width: 40%;
+    border-radius: 30px;
+    color: white !important;
+    font-weight: 900;
+    letter-spacing: 1px;
+    left: 50px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    line-height: 44px;
+}
+
+ion-view[state="padlock-view"] div.card.padlock div[ng-if="description"] {
+    letter-spacing: 0.5px;
+    text-align: left;
+    padding-left: 50px !important;
+    padding-right: 10vw;
+    line-height: 1.8;
+}
+
+
+/* END PADLOCK */
+
+
+/* MY ACCOUNT */
+
+ion-modal-view.customer-view.customer-layout1 {
+    border: 0;
+    border-radius: 0;
+    background-image: none !important;
+    background-color: $ion-view !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content {
+    background-color: $ion-content !important;
+    margin-top: 70px !important;
+    border-radius: 30px 30px 0 0;
+}
+
+ion-modal-view.customer-view.customer-layout1 .list .item.item-custom {
+    background-color: $transparent-color;
+    color: $ion-view !important;
+    border-bottom: 2px solid $ion-view;
+    margin: 15px 7%;
+    border-radius: 0;
+    width: 88%;
+}
+
+ion-modal-view.customer-view.customer-layout1 [ng-model="customer.communication_agreement"] span.ng-binding {
+    font-size: 14px !important;
+    color: $ion-view !important;
+    font-weight: 500;
+}
+
+ion-modal-view.customer-view.customer-layout1 .button.button-positive-custom {
+    border: 0;
+    background-color: $ion-view;
+    color: $ion-content !important;
+    text-transform: uppercase;
+    width: 90%;
+    margin: 0 5% 20px 5%;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(3) .item.item-custom input.text-right,
+ion-modal-view.customer-view.customer-layout1 label.item.item-input.item-custom input {
+    color: $ion-view !important;
+    font-size: 16px !important;
+    font-weight: bold;
+    text-align: left;
+}
+
+ion-modal-view.customer-view.customer-layout1>ion-header-bar {
+    z-index: 10;
+    background-color: $transparent-color;
+    border-bottom: 0 !important;
+}
+
+ion-modal-view.customer-view.customer-layout1>ion-header-bar>div.buttons>button.button.button-clear[ng-click="appSettings()"] {
+    background-color: $ion-content;
+    opacity: 0.6;
+    display: none;
+}
+
+ion-modal-view.customer-view.customer-layout1>ion-header-bar>div.buttons>button.button.button-clear[ng-click="closeAction()"] {
+    background-color: $transparent-color;
+    opacity: 1;
+}
+
+ion-modal-view.customer-view.customer-layout1>ion-header-bar>div.buttons>button.button.button-clear>i.icon.ion-sb-close-modal {
+    color: black;
+}
+
+ion-modal-view.customer-view.customer-layout1>ion-header-bar>h1 {
+    color: white;
+    letter-spacing: 0.5px;
+    visibility: hidden;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div[ng-show="display_login_form"] {
+    padding-top: 45vh !important;
+    background-color: transparent !important;
+    background: no-repeat;
+    height: 100vh !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div[ng-show="display_login_form"]>div {
+    background-color: $ion-content;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 96%;
+    margin: -70px 2% 0 2% !important;
+    padding: 25px 0;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div[ng-show="display_login_form"]>div>div.list.card {
+    box-shadow: none;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div[ng-show="display_login_form"]>div>div.list.card>div.margin-bottom {
+    display: none;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div[ng-show="display_login_form"]>div>div.padding.text-center.ng-binding {
+    position: absolute;
+    top: 10vh;
+    right: 0;
+    left: 0;
+    color: $ion-view;
+    font-weight: normal;
+    letter-spacing: 0;
+    -webkit-text-stroke: thin;
+}
+
+ion-modal-view.customer-view.customer-layout1 div[ng-show="display_login_form"]>div>div.padding.text-center.ng-binding>span {
+    display: block;
+    background-color: $ion-view;
+    width: fit-content;
+    margin: auto;
+    color: $ion-content;
+    margin-top: 7px;
+    padding: 10px 15px;
+    opacity: 0.9;
+    border-radius: 30px;
+    letter-spacing: 0.8px;
+    text-transform: capitalize;
+    font-weight: normal;
+}
+
+i.icon.ion-ios-person,
+i.icon.ion-locked {
+    display: none;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div[ng-show="display_login_form"]>div>div.list.card>label:nth-child(4) {
+    padding-top: 30px;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div[ng-show="display_login_form"]>div>div.list.card>label {
+    background-color: $transparent-color;
+    margin: 0;
+    border: 0;
+    border-bottom: 1px #b2b2b2 solid;
+    margin-bottom: 7px;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div[ng-show="display_login_form"]>div>div.list.card>label>input::-webkit-input-placeholder {
+    color: black;
+    letter-spacing: 0.5px;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div[ng-show="display_login_form"]>div>div.padding>button {
+    background-image: linear-gradient(135deg, #1e1e1e, #1b1b1b);
+    color: white;
+    border: 0;
+    border-radius: 8px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div[ng-show="display_login_form"]>div>div.padding.text-right {
+    text-align: center;
+    order: 2;
+    border: 0;
+    padding: 10px;
+    width: 60%;
+    margin-left: 20%;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div[ng-show="display_login_form"]>div>div.padding.text-right>span {
+    color: #21265e;
+    letter-spacing: 0.5px;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) {
+    position: absolute;
+    width: 100%;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .avatar.text-center.padding {
+    padding-top: 70px;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(5) {
+    background-color: $ion-content !important;
+    margin: 0;
+    width: 96%;
+    margin-left: 2%;
+    border-radius: 0;
+    display: none;
+}
+
+ion-modal-view.customer-view.customer-layout1 span[ng-click="showPrivacyPolicy()"] {
+    text-align: left;
+    display: flex;
+    padding: 0 15px;
+}
+
+ion-modal-view.customer-view.customer-layout1 div[ng-click="requestGdprToken()"] {
+    display: none;
+}
+
+
+/*Myaccount - Signup*/
+
+ion-modal-view.customer-view.customer-layout1 div>img {
+    padding: 1px;
+}
+
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(3) .item.item-custom {
+    background-color: $transparent-color;
+    color: $ion-view !important;
+    border-bottom: 2px solid $ion-view;
+    margin: 15px 7%;
+    width: 88%;
+    text-align: left !important;
+    border-radius: 0;
+}
+
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(3) {
+    background-color: $transparent-color;
+    background-image: none;
+}
+
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(3) div.input-label.ng-binding,
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(3) div.input-label {
+    display: none;
+}
+
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(3) div.list.card {
+    box-shadow: none;
+}
+
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(3) div.list.card>div.item.item-input.item-custom,
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(3) div.list.card>label.item.item-input.item-custom {
+    background-color: #ddd;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    opacity: 0.8;
+    border: none;
+}
+
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(3) div.list.card input {
+    text-align: left;
+    color: black;
+    font-weight: 1000;
+}
+
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(3) div.list.card input::placeholder,
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(3) div.list.card input::-webkit-input-placeholder {
+    color: black;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(3) div.list.card>sb-clickwrap>label,
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(3) div.list.card>label.checkbox-custom.item-custom.item-text-wrap.item.item-checkbox.ng-empty.ng-valid,
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(3) div.list.card>label.checkbox-custom.item-custom.item-text-wrap.item.item-checkbox.ng-valid.ng-not-empty {
+    background-color: transparent !important;
+    border: none !important;
+    -webkit-text-stroke: thin;
+}
+
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(3) div.list.card>sb-clickwrap>label>div.item-content.disable-pointer-events>h2,
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(3) div.list.card>sb-clickwrap>label>div.item-content.disable-pointer-events>h2>span,
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(3) div.list.card>label>div.item-content.disable-pointer-events,
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(3) div.list.card>label>div.item-content.disable-pointer-events,
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(3) div.list.card>label>div.item-content.disable-pointer-events>span,
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(3) div.list.card>label>div.item-content.disable-pointer-events>span {
+    text-align: left;
+    font-weight: 1000;
+    color: $ion-view !important;
+    letter-spacing: 0.5px;
+}
+
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(3) div.list.card>sb-clickwrap>label,
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(3) div.list.card>label.checkbox-custom.item-custom.item-text-wrap.item.item-checkbox.ng-empty.ng-valid,
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(3) div.list.card>label.checkbox-custom.item-custom.item-text-wrap.item.item-checkbox.ng-valid.ng-not-empty {
+    background-color: $ion-view !important;
+    border: none !important;
+    -webkit-text-stroke: thin;
+    opacity: 0.8;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(3)>div>div:nth-child(3).padding>button,
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(3)>div>div:nth-child(4).padding>button {
+    background-image: linear-gradient(135deg, #1e1e1e, #1b1b1b);
+    border: 0;
+    letter-spacing: 0.5px;
+}
+
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(3)>div>div.padding.text-center {
+    margin: 10px;
+    margin-top: 0;
+    border-radius: 5px;
+    background-color: $transparent-color;
+    border: 0;
+    color: $ion-view;
+}
+
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(3)>div>div.padding.text-center span {
+    color: $ion-view;
+    letter-spacing: 0.5px;
+}
+
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(3) label.checkbox-custom {
+    background-color: transparent !important;
+    color: $ion-view !important;
+    border: 0 !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(3) label.checkbox-custom h2 span,
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(3) label.checkbox-custom label.checkbox-custom span.ng-binding {
+    color: $ion-view;
+    font-size: 14px;
+}
+
+i.icon.ion-sb-close-modal {
+    visibility: hidden;
+}
+
+i.icon.ion-sb-close-modal:after {
+    content: "";
+    background-image: url(https://i.imgur.com/NTV7Vd7.png);
+    background-size: 80%;
+    visibility: visible;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-position: center center;
+    background-color: $ion-content;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(3) div div.list.card>label.item.item-custom.ng-binding {
+    background-color: #ddd;
+    margin: 10px 0px 10px 0px;
+    border: 1px black solid;
+    color: black;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    border-radius: 5px;
+}
+
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(3) div>div.padding.text-right {
+    text-align: center;
+    letter-spacing: 0.5px;
+    color: black;
+    font-weight: bold;
+    background-color: $ion-content;
+    opacity: 0.8;
+    width: 95%;
+    margin: auto;
+    border-radius: 5px;
+}
+
+
+/*Forgot password*/
+
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(2)[ng-show="display_forgot_password_form"] {
+    margin-top: 30vh;
+    background-color: $ion-content !important;
+    color: $ion-view !important;
+    border-radius: 30px;
+    padding: 20px 0;
+    text-align: center !important;
+    display: flex;
+    justify-content: center;
+    width: 96%;
+    margin-left: 2%;
+}
+
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(2)[ng-show="display_forgot_password_form"] div>div.padding.text-left {
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(2)[ng-show="display_forgot_password_form"] div>div.list.card {
+    margin: 0px 10px;
+    box-shadow: none;
+}
+
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(2)[ng-show="display_forgot_password_form"] div>div:nth-child(3)>button {
+    background-image: $ion-view;
+    border: 0;
+    letter-spacing: 0.5px;
+}
+
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(2)[ng-show="display_forgot_password_form"] div>div.padding.text-center.ng-binding {
+    margin: 0 10px;
+    border: 0;
+    border-radius: 5px;
+    color: $ion-view;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+}
+
+
+/*Privacy policy*/
+
+ion-modal-view.sb-clickwrap.sb-clickwrap-modal.modal.has-background-image.slide-in-right-left div.scroll>div.list.card {
+    margin: 0;
+}
+
+ion-modal-view.sb-clickwrap.sb-clickwrap-modal.modal.has-background-image.slide-in-right-left ion-item {
+    background-color: $transparent-color;
+}
+
+ion-modal-view.sb-clickwrap.sb-clickwrap-modal.modal.has-background-image.slide-in-right-left ion-item>p:nth-child(n+6) {
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+ion-modal-view.sb-clickwrap.sb-clickwrap-modal {
+    background-color: $ion-view !important;
+    background-image: none !important;
+}
+
+ion-modal-view.sb-clickwrap.sb-clickwrap-modal ion-content {
+    margin-top: 70px;
+    background-color: $ion-content !important;
+    border-radius: 30px 30px 0 0;
+}
+
+ion-modal-view.sb-clickwrap.sb-clickwrap-modal ion-content .list {
+    background-color: transparent !important;
+}
+
+
+/* END MY ACCOUNT */
+
+
+/* FORM */
+
+.module-form2.form2.form2-home.form2-home-l1 ion-item:nth-of-type(1) p {
+    text-align: left;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.module-form2.form2.form2-home.form2-home-l1 label {
+    display: inline-block;
+    width: 100%;
+    border: 0;
+    background-color: $transparent-color;
+    color: #000;
+}
+
+.module-form2.form2.form2-home.form2-home-l1 label input,
+.module-form2.form2.form2-home.form2-home-l1 label textarea {
+    display: block;
+    width: 96%;
+    margin: 0 0 0 -.5%;
+    text-align: left;
+    padding: 20px;
+    border: 2px solid #e1e1e1;
+    border-radius: 5px;
+}
+
+.module-form2.form2.form2-home.form2-home-l1 label textarea {
+    height: 70px;
+}
+
+.module-form2.form2.form2-home.form2-home-l1 label.item-select.form2-select {
+    width: 96%;
+    margin: 0 .5% 0 3.5%;
+    border: 2px solid #e1e1e1;
+    border-radius: 5px;
+}
+
+.module-form2.form2.form2-home.form2-home-l1 .button.button-positive-custom {
+    width: 30%;
+    margin-left: 35%;
+    border: 0;
+    border-radius: 5px;
+    background-color: $ion-view;
+}
+
+.module-form2.form2.form2-home.form2-home-l1 .input-label {
+    width: 100% !important;
+    display: block;
+    margin: 0;
+    min-width: 100%;
+}
+
+form2-pictures.form2-image ion-item.item-custom.upload-title.item.ng-binding {
+    background-color: $transparent-color;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.module-form2 .form2-image .upload-action i.icon.ion-image.add-image-icon {
+    display: none;
+}
+
+.module-form2 .form2-image .upload-action {
+    padding: 10px;
+    background-color: $transparent-color;
+}
+
+img.form2-illustration {
+    width: 96% !important;
+    border-radius: 5px;
+    margin-left: 2%;
+}
+
+
+/* SURVEY */
+
+ion-view[state="surveys-view"] {
+    background-image: none !important;
+}
+
+ion-view[state="surveys-view"] ion-content {
+    background-color: $ion-content !important;
+}
+
+ion-view[state="surveys-view"] #surveyList:before {
+    content: " ";
+    display: block;
+    height: 180px;
+    background-image: url(https://ensiklopediakesaguan.com/wp-content/uploads/2021/04/servizi-pubblicitari.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom-left-radius: 100% 50px !important;
+    border-bottom-right-radius: 100% 50px !important;
+    margin: 0;
+}
+
+ion-view[state="surveys-view"] .list .item.text-center.item-custom.item-text-wrap.ng-binding {
+    text-align: left;
+    line-height: 1.8;
+    font-style: italic;
+}
+
+ion-view[state="surveys-view"] .item.item-divider.item-divider-custom.item-text-wrap h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+ion-view[state="surveys-view"] .list .item-divider.item-divider-custom {
+    background-color: $transparent-color;
+    color: #000;
+    border: 0;
+}
+
+ion-view[state="surveys-view"] label.item.item-input.item-custom.item-text-wrap {
+    display: inline-block;
+    width: 100% !important;
+    padding: 5px 12px;
+}
+
+ion-view[state="surveys-view"] label.item.item-input.item-custom.item-text-wrap span {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+}
+
+ion-view[state="surveys-view"] div[ng-switch-when="texte"]:before {
+    content: "Silakan isi data yang diminta berikut dan klik NEXTuntuk melanjutkan atau PREVIOUS untuk kembali.";
+    display: block;
+    margin: 10px;
+    font-style: italic;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+ion-view[state="surveys-view"] .item.item-input.item-custom {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+ion-view[state="surveys-view"] .item.item-input.item-custom input {
+    border-bottom: 2px solid #ecf0f6;
+    width: 96% !important;
+    max-width: 96% !important;
+}
+
+ion-view[state="surveys-view"] .col.text-right span.button.button-custom {
+    border: 0;
+    background-color: #0d8d0d;
+    color: $ion-content;
+    border-radius: 10px;
+}
+
+ion-view[state="surveys-view"] .col.text-left span.button.button-custom {
+    border: 0;
+    background-color: #3498db;
+    color: $ion-content;
+    border-radius: 10px;
+}
+
+
+/* Lokasi */
+
+ion-view[state="surveys-view"] div[ng-switch-when="geoloc"]:before {
+    content: "Silakan klik radio button untuk mendapatkan lokasi otomatis dan klik NEXT untuk melanjutkan atau PREVIOUS untuk kembali.";
+    display: block;
+    margin: 10px;
+    font-style: italic;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+ion-view[state="surveys-view"] div[ng-switch-when="geoloc"] .checkbox-custom {
+    background-color: transparent !important;
+    border: 0;
+}
+
+ion-view[state="surveys-view"] div[ng-switch-when="geoloc"] .item-checkbox .item-content span {
+    white-space: normal;
+    color: #0d8d0d;
+    font-size: 14px !important;
+}
+
+ion-view[state="surveys-view"] div[ng-switch-when="geoloc"] .checkbox input:checked+.checkbox-icon:before {
+    background: rgba(255, 255, 255, 1);
+    border-color: #3498db;
+    border-radius: 5px;
+}
+
+ion-view[state="surveys-view"] div[ng-switch-when="geoloc"] .checkbox .checkbox-icon:before {
+    border: 2px solid #0d8d0d;
+    border-radius: 5px;
+}
+
+
+/* Kolom Email */
+
+ion-view[state="surveys-view"] div[ng-switch-when="email"]:before {
+    content: "contoh email: example@email.com";
+    font-size: 14px;
+    font-weight: normal;
+    color: #3498db !important;
+    display: block;
+    font-style: italic;
+    margin: 10px;
+}
+
+
+/* Kolom Add image */
+
+ion-view[state="surveys-view"] div[ng-switch-when="image"] .item.item-divider.item-divider-custom.item-text-wrap p {
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+ion-view[state="surveys-view"] div[ng-switch-when="image"] .item.item-divider.item-divider-custom.item-text-wrap:after {
+    content: "Gambar Yang Anda Unggah akan dijadikan data pendukung untuk penguatan hasil survey. Harap upload gambar sebagaimana mestinya.";
+    display: block;
+    margin: 10px 0;
+    font-style: italic;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+
+/* Kolom Checkbox */
+
+ion-view[state="surveys-view"] div[ng-switch-when="checkbox"] .item.item-divider.item-divider-custom p {
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+ion-view[state="surveys-view"] div[ng-switch-when="checkbox"] .item.item-divider.item-divider-custom p:after {
+    content: "Silakan pilih hobi Anda. Bisa centang lebih dari satu pilihan.";
+    display: block;
+    margin: 10px 0;
+    font-style: italic;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+ion-view[state="surveys-view"] div[ng-switch-when="checkbox"] label.checkbox-custom {
+    background-color: $transparent-color;
+    border: 0;
+    margin-left: 20px;
+}
+
+ion-view[state="surveys-view"] div[ng-switch-when="checkbox"] .item-checkbox .item-content span {
+    white-space: normal;
+    color: #0d8d0d;
+    font-size: 14px !important;
+}
+
+ion-view[state="surveys-view"] div[ng-switch-when="checkbox"] .checkbox-custom .checkbox input:checked+.checkbox-icon:before {
+    background: rgba(255, 255, 255, 1);
+    border-color: #3498db;
+    border-radius: 5px;
+}
+
+ion-view[state="surveys-view"] div[ng-switch-when="checkbox"] .checkbox-custom .checkbox .checkbox-icon:before {
+    border: 2px solid #0d8d0d;
+    border-radius: 5px;
+}
+
+
+/* dropdown */
+
+ion-view[state="surveys-view"] [ng-switch-when="select"].item.item-input.item-select.item-custom.item-text-wrap {
+    width: 96% !important;
+    margin: 10px 2%;
+    border-radius: 5px;
+    background-color: #008000;
+}
+
+ion-view[state="surveys-view"] [ng-switch-when="select"].item.item-input.item-select.item-custom.item-text-wrap .input-label.item-text-wrap.ng-binding {
+    color: $ion-content !important;
+}
+
+ion-view[state="surveys-view"] [ng-switch-when="select"].item.item-input.item-select.item-custom.item-text-wrap select {
+    color: $ion-content !important;
+    font-size: 16px !important;
+}
+
+ion-view[state="surveys-view"] [ng-switch-when="select"].item-select:after {
+    color: $ion-content;
+}
+
+
+/* Textarea */
+
+ion-view[state="surveys-view"] div[ng-switch-when="textarea"] textarea {
+    line-height: 1.8;
+    border-bottom: 2px solid #ecf0f6;
+    padding-bottom: 10px;
+    font-style: italic;
+    font-size: 13px;
+}
+
+
+/* radio button */
+
+ion-view[state="surveys-view"] [ng-switch-when="radio"] .item-radio.radio-custom {
+    color: #008000;
+    background-color: $transparent-color;
+    border: 0 !important;
+}
+
+ion-view[state="surveys-view"] [ng-switch-when="radio"] .item-radio.radio-custom input {
+    background-color: transparent !important;
+    border: 0;
+}
+
+ion-view[state="surveys-view"] [ng-switch-when="radio"] .radio-content .item-content.disable-pointer-events {
+    background-color: transparent !important;
+    border: 0 !important;
+    margin-left: 20px;
+}
+
+ion-view[state="surveys-view"] [ng-switch-when="radio"] .item-radio input:checked+.radio-content .radio-icon {
+    visibility: visible;
+    margin-right: 20px;
+}
+
+.module-form2 .form2-radio .radio-title {
+    padding: 5px 15px;
+    font-weight: normal !important;
+    background-color: $transparent-color;
+    white-space: normal;
+}
+
+ion-view[state="surveys-view"] [ng-bind-html="thank_you"] {
+    text-align: center;
+}
+
+ion-view[state="surveys-view"] [ng-bind-html="thank_you"]:before {
+    content: " ";
+    display: block;
+    background-image: url(https://www.flaticon.com/svg/vstatic/svg/1140/1140023.svg?token=exp=1619943277~hmac=efe781a…);
+    height: 150px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100px;
+}
+
+ion-view[state="surveys-view"] [ng-show="isCurrentPage('view_end')"] .button.button-custom {
+    border: 0;
+    background-color: #008000;
+    color: $ion-content;
+    width: 90%;
+    margin: 10px 5%;
+}
+
+.module-form2 .form2-radio label {
+    background-color: transparent !important;
+}
+
+.module-form2 .list .form2-radio label .radio-content {
+    border: 0 !important;
+    padding-left: 20px;
+    color: #28a54c;
+    background-color: transparent !important;
+    height: 35px;
+}
+
+.item.item-custom.item-icon-left.form2-date i {
+    display: none;
+}
+
+.module-form2 .list .form2-radio .item-content.disable-pointer-events,
+.module-form2 .list .item.item-custom.item-icon-left.form2-date {
+    background-color: transparent !important;
+    padding: 0 10px;
+    font-size: 14px;
+}
+
+.item.item-custom.item-icon-left.form2-date p.ng-binding {
+    font-size: 14px;
+}
+
+.item.item-custom.item-icon-left.form2-date .col-60,
+.item.item-custom.item-icon-left.form2-date .col-40 {
+    min-width: 100%;
+    display: block;
+}
+
+.item.item-custom.item-icon-left.form2-date .row {
+    display: inline-block;
+    min-width: 100%;
+}
+
+.item.item-custom.item-icon-left.form2-date .row input {
+    display: block;
+    width: 100%;
+    margin: 0 0 0 -0.5%;
+    text-align: left;
+    padding: 20px !important;
+    border: 2px solid #e1e1e1 !important;
+    border-radius: 5px;
+}
+
+ion-item.item-divider.item-divider-custom.form2-divider.item {
+    background-color: transparent !important;
+}
+
+ion-item.item-divider.item-divider-custom.form2-divider.item p.ng-binding {
+    color: #6e62a0;
+    font-size: 18px;
+    line-height: 1.5;
+    white-space: normal;
+}
+
+.module-form2 img.form2-illustration {
+    width: 100% !important;
+    height: 185px;
+    display: block;
+    object-fit: cover;
+    border-bottom-left-radius: 100% 50px !important;
+    border-bottom-right-radius: 100% 50px !important;
+    margin: 0;
+}
+
+
+/* form & history */
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 ion-content {
+    bottom: 0 !important;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .tabs.tabs-icon-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 20%;
+    height: 150px !important;
+    background-color: transparent;
+    padding: 0 !important;
+    background-image: none;
+    border: 0 !important;
+    border-radius: 15px;
+    left: 2px;
+    bottom: 5px;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .tabs.tabs-icon-top a i {
+    color: #fff;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .tabs.tabs-icon-top a {
+    color: #fff;
+    opacity: 1;
+    background-color: $ion-view;
+    min-height: 60px !important;
+    width: 60px;
+    border-radius: 10px !important;
+    padding: 5px;
+    height: 50px !important;
+    margin: 5px 0;
+    max-height: 60px !important;
+}
+
+[ng-switch-when="radio"] .item.item-divider.item-divider-custom.item-text-wrap p.label.ng-binding {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+
+/* Text input default */
+
+input::-webkit-input-placeholder {
+    color: $ion-view !important;
+}
+
+input:-moz-placeholder {
+    /* Firefox 18- */
+    color: $ion-view !important;
+}
+
+input::-moz-placeholder {
+    /* Firefox 19+ */
+    color: $ion-view !important;
+}
+
+input:-ms-input-placeholder {
+    color: $ion-view !important;
+}
+
+
+/* Text input default */
+
+textarea::-webkit-input-placeholder {
+    color: $ion-view !important;
+}
+
+textarea:-moz-placeholder {
+    /* Firefox 18- */
+    color: $ion-view !important;
+}
+
+textarea::-moz-placeholder {
+    /* Firefox 19+ */
+    color: $ion-view !important;
+}
+
+textarea:-ms-input-placeholder {
+    color: $ion-view !important;
+}
+
+textarea::placeholder {
+    color: $ion-view !important;
+}
+
+
+/* LAYOUT 4 */
+
+ion-view[state="home"] {
+    background-color: $ion-view !important;
+    background-image: none !important;
+}
+
+.layout.l4 ion-content {
+    position: absolute;
+    width: 100vw;
+    height: 64vh;
+    padding-bottom: var(--safe-area-inset-bottom);
+    bottom: 0;
+    top: initial !important;
+    background-color: $ion-content !important;
+    border-radius: 30px 30px 0 0;
+    padding-top: 20px;
+}
+
+div.new_slider {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 96%;
+    border-radius: 10px;
+    margin: 2%;
+}
+
+.slider-pager.hide {
+    position: absolute;
+    bottom: 70vh !important;
+    z-index: 1;
+    width: 100%;
+    height: 15px;
+    text-align: center;
+    display: inline !important;
+    text-align: left;
+    margin-left: 25px;
+}
+
+span.slider-pager-page.active {
+    height: 10px;
+    width: 30px;
+    border-radius: 30px;
+    background-color: #000;
+}
+
+span.slider-pager-page {
+    height: 10px;
+    width: 15px;
+    border-radius: 30px;
+    background-color: #000;
+}
+
+span.slider-pager-page i {
+    font-size: 0;
+}
+
+.layout.l4 li .items.homepage-custom.border-custom {
+    background-color: #ecf0f6;
+    border-radius: 10px !important;
+    margin-bottom: 10px !important;
+    margin-top: 10px !important;
+    padding: 10px !important;
+    height: 8vh !important;
+    width: 8vh !important;
+}
+
+.layout.l4 li {
+    float: left;
+    width: 25%;
+}
+
+.layout.l4 li p {
+    overflow: hidden;
+    letter-spacing: 0;
+    width: 100%;
+    padding: 0;
+    text-align: center !important;
+    margin: 0 !important;
+    text-transform: capitalize;
+    font-weight: normal;
+    font-size: 12px !important;
+}
+
+.layout.l4 li.text-center.homepage-custom.transparent:nth-child(n+7) {
+    width: 96%;
+    background-color: $ion-view;
+    border-radius: 10px;
+    margin: 2%;
+    height: 150px;
+    padding: 10px;
+    border: 2px solid $ion-view;
+}
+
+.layout.l4 li.text-center.homepage-custom.transparent:nth-child(7) {
+    background-image: url(https://ensiklopediakesaguan.com/wp-content/uploads/2018/11/slide-1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center right;
+    margin-top: 50px;
+}
+
+.layout.l4 li.text-center.homepage-custom.transparent:nth-child(7):before {
+    content: "Layanan Lainnya";
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: -50px !important;
+    text-align: left;
+    position: absolute;
+    width: 100%;
+    margin-left: 10px !important;
+    left: 0;
+    color: #293072;
+}
+
+.layout.l4 li.text-center.homepage-custom.transparent:nth-child(8) {
+    background-image: url(https://ensiklopediakesaguan.com/wp-content/uploads/revslider/2-11.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+
+.layout.l4 li.text-center.homepage-custom.transparent:nth-child(9) {
+    background-image: url(https://ensiklopediakesaguan.com/wp-content/uploads/2018/11/banner-image-500x434.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+
+.layout.l4 li.text-center.homepage-custom.transparent:nth-child(10) {
+    background-image: url(https://demo.zozothemes.com/pixelz/wp-content/uploads/sites/24/2018/10/resource_illustrations_4x2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+
+.layout.l4 li.text-center.homepage-custom.transparent:nth-child(11) {
+    background-image: url(https://demo.zozothemes.com/pixelz/wp-content/uploads/sites/24/2018/10/resource_illustrations_4x2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+
+.layout.l4 li.text-center.homepage-custom.transparent:nth-child(n+7) p {
+    font-size: 18px !important;
+    font-weight: bold;
+    color: $ion-content;
+    text-align: left !important;
+    padding: 0 50% 0 0;
+    line-height: 1.5;
+    height: 150px;
+}
+
+.layout.l4 li.text-center.homepage-custom.transparent:nth-child(n+7) .items.homepage-custom.border-custom {
+    margin: 0;
+}
+
+
+/* CONTACT */
+
+ion-view.contact-view ion-content {
+    background-color: $ion-content !important;
+}
+
+ion-view.contact-view ion-content .list.card {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    box-shadow: none;
+}
+
+ion-view.contact-view ion-content .list.card>div:nth-child(1) {
+    order: 4;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding-left: 90px;
+}
+
+ion-view.contact-view ion-content .list.card>div:nth-child(2) {
+    order: 1;
+}
+
+ion-view.contact-view ion-content .list.card>div:nth-child(3) {
+    order: 3;
+}
+
+ion-view.contact-view ion-content .list.card>div:nth-child(4) {
+    order: 4;
+    padding-left: 110px;
+    background-color: transparent !important;
+    margin-top: -45px;
+    position: relative !important;
+    z-index: 999 !important;
+}
+
+ion-view.contact-view ion-content .list.card>div:nth-child(4) i,
+ion-view.contact-view ion-content .list.card>div:nth-child(5) i {
+    display: none;
+}
+
+ion-view.contact-view ion-content .list.card>div:nth-child(5) {
+    order: 4;
+    height: 150px;
+    padding: 75px 10px 10px 20px !important;
+    margin-top: -60px;
+}
+
+ion-view.contact-view ion-content [ng-show="contact.name"] {
+    margin-top: -40px;
+    position: relative;
+    z-index: 999;
+    width: 90%;
+    margin-left: 5% !important;
+    border-radius: 15px 15px 0 0 !important;
+}
+
+ion-view.contact-view ion-content i.icon.ion-person {
+    font-size: 0;
+    background-image: url(https://image.flaticon.com/icons/png/512/149/149071.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 70px;
+}
+
+ion-view.contact-view ion-content .padding {
+    padding: 10px 20px;
+    background-color: $ion-content;
+}
+
+ion-view.contact-view ion-content .padding .button.button-custom {
+    border: 0;
+    background-color: $ion-view;
+    color: $ion-content;
+    text-align: left;
+    padding-left: 45px;
+}
+
+
+/* Kirim email in contact */
+
+ion-view[state="contact-form"] {
+    background-color: $ion-view !important;
+    background-image: none !important;
+}
+
+ion-view[state="contact-form"] ion-content {
+    background-color: $ion-content !important;
+    background-image: none !important;
+    border-radius: 30px 30px 0 0;
+    margin-top: 70px;
+    padding-top: 30px;
+}
+
+ion-view[state="contact-form"] form.ng-pristine.ng-invalid.ng-invalid-required.ng-valid-email:before {
+    content: "Kirim Email";
+    padding: 10px 15px;
+    font-size: 22px;
+    color: $ion-view;
+    font-weight: bold;
+}
+
+ion-view[state="contact-form"] .list:before {
+    content: "Silakan kirim feed back Anda dengan mengisi bisang-bidang yang diminta di bawah ini.";
+    padding: 10px 15px;
+    white-space: normal !important;
+    line-height: 1.5;
+    color: $ion-view;
+    display: block;
+}
+
+ion-view[state="contact-form"] ion-content label.item.item-input.item-custom {
+    color: $ion-view !important;
+    width: 96%;
+}
+
+ion-view[state="contact-form"] ion-content {
+    background-color: $ion-content !important;
+}
+
+ion-view[state="contact-form"] ion-content .list .item.item-custom {
+    border: 0;
+    background-color: $transparent-color;
+    color: $ion-content !important;
+}
+
+ion-view[state="contact-form"] ion-content label.item.item-input.item-custom input {
+    border: 2px solid $ion-view;
+    border-radius: 5px;
+    min-width: 96% !important;
+    height: 45px;
+    padding: 10px;
+}
+
+ion-view[state="contact-form"] ion-content textarea {
+    color: $ion-view !important;
+    border: 2px solid $ion-view;
+    border-radius: 5px;
+    padding: 10px;
+    height: 100px;
+}
+
+ion-view[state="contact-form"] ion-content .button.button-positive-custom {
+    border: 0;
+    background-color: $ion-view;
+    color: $ion-content;
+    width: 90%;
+    border-radius: 5px;
+    margin: 0 5%;
+    text-transform: uppercase;
+}
+
+
+/* PUSH NOTIFICATION */
+
+ion-view.module-push.push-list.push-list-l1 ion-content {
+    background-color: $ion-view !important;
+    padding-top: 60px !important;
+}
+
+ion-view.module-push.push-list.push-list-l1 .list .item.item-custom {
+    border: 0;
+    background-color: $ion-content;
+    color: $ion-content;
+    width: 96%;
+    margin: 10px 2%;
+    border-radius: 10px;
+    padding-right: 20px;
+}
+
+ion-view.module-push.push-list.push-list-l1 span.super-click.assertive {
+    background-color: $ion-view !important;
+    border-radius: 50px;
+    margin-top: -15px;
+    margin-right: -10px;
+    color: $ion-content !important;
+    padding: 0;
+    width: 40px !important;
+    height: 40px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -999;
+    position: fixed;
+    right: 0;
+}
+
+ion-view.module-push.push-list.push-list-l1 span.ng-binding {
+    color: $ion-view !important;
+}
+
+ion-view.module-push.push-list.push-list-l1 p.text-no-wrap.ng-binding {
+    color: $ion-view !important;
+    line-height: 1.8;
+}
+
+
+/* ATENDANCE HOME */
+
+
+/* Menjadikan attendance as an inbox module */
+
+ion-view.attendance.attendance-home [ng-if="is_logged_in && payout_data.settings.leave_enable"],
+[ng-click="showScanCamera()"],
+[ng-click="action.tab = 'attendance'"],
+[ng-click="action.tab = 'leaves'"],
+[ng-if="!is_loading && payout_data.settings.holiday_enable == 1"],
+[ng-click="attendanceHistory()"],
+.card.attendance-check-in-out-box {
+    display: none !important;
+}
+
+ion-view.attendance.attendance-home,
+ion-view.attendance.attendance-message {
+    background-image: none !important;
+    background-color: $ion-view !important;
+}
+
+ion-view.attendance.attendance-home ion-content,
+ion-view.attendance.attendance-message ion-content {
+    background-color: $ion-content !important;
+    margin-top: 70px !important;
+    border-radius: 30px 30px 0 0;
+}
+
+ion-view.attendance.attendance-home ion-content:before {
+    content: " ";
+    display: block;
+    height: 150px;
+    background-image: url(https://anydesk.com/_static/img/background/anydesk-globe-shadow-89c421.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+ion-view.attendance.attendance-home .row.check-in-out-buttons.text-center {
+    display: flex;
+    flex-direction: column;
+}
+
+ion-view.attendance.attendance-home .card.attendance-check-in-out-box {
+    display: block;
+    width: 100% !important;
+    margin: 0;
+}
+
+ion-view.attendance.attendance-message .list {
+    margin-bottom: 0;
+    padding-bottom: 100px !important;
+    margin-bottom: 100px;
+}
+
+ion-view.attendance.attendance-home .col.check-in-out-checkin button.button.check-in-out-button.ng-binding.button-custom,
+ion-view.attendance.attendance-home .col.check-in-out-checkout button.button.check-in-out-button.ng-binding.button-custom {
+    display: none;
+}
+
+ion-view.attendance.attendance-home .col.check-in-out-checkout button.button.check-in-out-button.ng-binding.button-positive-custom {
+    width: 200px !important;
+    height: 200px !important;
+    border-radius: 50% !important;
+    border: 0 !important;
+    background: rgb(71, 82, 158);
+    background: linear-gradient(90deg, #e91e63 0%, #ff9800 100%);
+    padding-top: 100px;
+    box-shadow: 5px 5px 5px #dfe7ff !important;
+}
+
+ion-view.attendance.attendance-home .col.check-in-out-checkout button.button.check-in-out-button.ng-binding.button-positive-custom:after {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    bottom: -6px;
+    left: -6px;
+    content: ' ';
+    background-image: url(https://ensiklopediakesaguan.com/wp-content/uploads/2021/07/tap_attendance.png);
+    background-repeat: no-repeat;
+    background-size: 101px;
+    background-position: center top 30px;
+}
+
+ion-view.attendance.attendance-home .card {
+    box-shadow: none !important;
+}
+
+ion-view.attendance.attendance-home ng-include {
+    display: block !important;
+}
+
+ion-view.attendance.attendance-home ng-include .card.attendance-customer-box {
+    display: block;
+    width: 100% !important;
+    margin: 0 !important;
+}
+
+ion-view.attendance.attendance-home ng-include .card:nth-child(2) .item.item-icon-left.ng-binding i.icon.ion-email {
+    display: none;
+}
+
+ion-view.attendance.attendance-home ng-include .card:nth-child(2) .item.item-icon-left.ng-binding .badge.badge-assertive-custom {
+    background-color: #638eff;
+    color: $ion-content;
+    position: absolute;
+    top: 3px !important;
+    right: 15px !important;
+    margin-top: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ion-view.attendance.attendance-home p.location_status {
+    font-size: 0;
+    width: 0vw;
+}
+
+ion-view.attendance.attendance-home .item.item-custom.remove-border.text-center {
+    padding-top: 0;
+    background-color: transparent !important;
+}
+
+ion-view.attendance.attendance-home .card.attendance-check-in-out-box .item.item-custom.remove-border {
+    background-color: $transparent-color;
+}
+
+ion-view.attendance.attendance-home h2.name-title.ng-binding,
+ion-view.attendance.attendance-home p.current_date.ng-binding {
+    text-align: center;
+}
+
+ion-view.attendance.attendance-home h2.name-title.ng-binding {
+    color: $ion-view !important;
+    font-size: 24px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+ion-view.attendance.attendance-home p.current_date.ng-binding {
+    font-size: 13px;
+    color: $ion-view;
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+ion-view.attendance.attendance-home p.working_status.icon.icon-warning-custom.ng-binding {
+    animation: kedip 1.5s infinite;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+@keyframes kedip {
+    0% {
+        color: red;
+    }
+    47% {
+        color: #000;
+    }
+    62% {
+        color: $transparent-color;
+    }
+    97% {
+        color: $transparent-color;
+    }
+    100% {
+        color: #000;
+    }
+}
+
+ion-view.attendance.attendance-home p.location_status marquee.ng-binding {
+    font-size: 13px !important;
+    position: fixed;
+}
+
+ion-view.attendance.attendance-message .item.item-body.item-custom {
+    background-color: transparent !important;
+}
+
+ion-view[state="attendance-home"] .item.item-icon-left.ng-binding:after {
+    content: "Mulai Chat";
+    display: flex;
+    background-color: $transparent-color;
+    text-align: center;
+    color: $ion-content !important;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+ion-view[state="attendance-home"] .item.item-icon-left.ng-binding {
+    display: flex;
+    margin-top: 120px;
+    background-color: $ion-view;
+    padding: 17px;
+    text-align: center;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin-left: 20%;
+    font-size: 0;
+}
+
+[ng-if="is_logged_in && !is_loading && payout_data.settings.is_message_admin"]:before {
+    content: "Untuk memulai chating dengan admin, silakan klik tombol Mulai Chat di bawah ini.";
+    display: block;
+    line-height: 1.8;
+    width: 96%;
+    text-align: center;
+    margin: 0 2%;
+    background-color: $ion-content;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+ion-view.attendance.attendance-home p.checkedin-time.text-center.ng-binding {
+    background-color: $transparent-color;
+    margin: 18px 0 0 0;
+    padding: 10px;
+    font-size: 16px;
+    color: #638eff;
+    font-weight: bold;
+}
+
+ion-view.attendance.attendance-home p.now-time.text-center.ng-binding {
+    background-color: $transparent-color;
+    margin: 18px 0 0 0;
+    padding: 10px;
+    font-size: 16px;
+    color: #638eff;
+    font-weight: bold;
+}
+
+ion-view.attendance.attendance-home span.clock-count.icon.icon-active-custom.ng-binding {
+    color: #638eff !important;
+}
+
+
+/* Page list chat */
+
+ion-view.attendance.attendance-message .item.item-divider.item-divider-custom.text-center.ng-binding {
+    background-color: $transparent-color;
+    color: $ion-content;
+    font-size: 0;
+}
+
+ion-view.attendance.attendance-message .item.item-divider.item-divider-custom.text-center.ng-binding:after {
+    content: "History chat dengan Admin";
+    font-size: 16px;
+}
+
+ion-view.attendance.attendance-message .item.item-body.item-custom.text-right {
+    width: 96%;
+    margin: 10px 2%;
+    border-radius: 10px;
+}
+
+ion-view.attendance.attendance-message .item.item-body.item-custom.text-right p {
+    color: $ion-view;
+}
+
+ion-view.attendance.attendance-message .item.item-body.item-custom.text-right {
+    width: 90%;
+    margin: 0px 2% 10px 8%;
+    border-radius: 10px;
+    background-color: #f1f1f1 !important;
+    border: 0;
+}
+
+form.ng-pristine.ng-valid .bar.bar-stable.bar-footer {
+    background-image: none !important;
+    border: 0 !important;
+    background-color: $ion-content !important;
+    height: 60px;
+}
+
+ion-view.attendance.attendance-message .item.item-body.item-custom.text-left p {
+    color: $ion-view;
+}
+
+ion-view.attendance.attendance-message .item.item-body.item-custom.text-left {
+    width: 90%;
+    margin: 10px 8% 10px 2%;
+    border-radius: 10px;
+    background-color: #f1f1f1 !important;
+    border: 0;
+}
+
+
+/* User not login yet */
+
+ion-view.attendance.attendance-home .item.item-body.item-custom.attendance-login-button.remove-border {
+    background-color: $transparent-color;
+}
+
+ion-view.attendance.attendance-home .button.button-positive-custom:after {
+    content: "Login";
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ion-view.attendance.attendance-home .button.button-positive-custom {
+    border: 0;
+    background-color: $ion-content;
+    color: #000;
+    font-size: 0;
+    width: 60%;
+    margin: 20px 20%;
+}
+
+
+/* END ATTENDANCE */
+
+
+/*SOCIAL WALL*/
+
+ion-view.module-fanwall.fanwall-list.fanwall-list-l1,
+ion-modal-view.module-fanwall.fanwall-new.fanwall-new-l1,
+ion-modal-view.module-fanwall.fanwall-comment.fanwall-comment-l1 {
+    background-color: $ion-view !important;
+    background-image: none !important;
+}
+
+ion-modal-view.module-fanwall.fanwall-new.fanwall-new-l1 ion-content,
+ion-view.module-fanwall.fanwall-list.fanwall-list-l1 ion-content,
+ion-modal-view.module-fanwall.fanwall-comment.fanwall-comment-l1 ion-content,
+ion-view.module-folder2.folder2-layout2 ion-content {
+    margin-top: 70px !important;
+    background-color: $ion-content !important;
+    top: 0 !important;
+    border-radius: 30px 30px 0 0;
+}
+
+ion-header-bar.bar-custom.bar.bar-header {
+    background-color: transparent;
+}
+
+ion-view.module-fanwall.fanwall-list.fanwall-list-l1 .bar-subheader {
+    bottom: 0 !important;
+    top: 88vh !important;
+    width: 80%;
+    margin: 10px 10%;
+    border-radius: 30px !important;
+    background-color: $ion-view !important;
+    padding: 0px !important;
+    background-image: none !important;
+    height: 50px;
+    border: 0 !important;
+}
+
+ion-view.module-fanwall.fanwall-list.fanwall-list-l1 .bar-subheader .button-bar>.button img.fw-icon-header {
+    height: 27px !important;
+    margin-top: 0px !important;
+}
+
+ion-view.module-fanwall.fanwall-list.fanwall-list-l1 .button-bar>.button.button-positive-custom {
+    border: 0;
+    background-color: $transparent-color !important;
+    color: $button-text-color !important;
+    font-size: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button.button.button-custom.button-positive.button-positive-custom.ng-binding.icon-custom {
+    filter: invert(1);
+}
+
+button.button.button-custom.button-positive.button-positive-custom.ng-binding.icon-custom.activated {
+    background-color: $transparent-color !important;
+}
+
+ion-view.module-fanwall.fanwall-list.fanwall-list-l1 button.button.button-custom.button-positive.button-positive-custom.ng-binding.fw-icon-selected.icon-active-custom {
+    color: red !important;
+    background-color: $transparent-color !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ion-view.module-fanwall.fanwall-list.fanwall-list-l1 .module-fanwall.fanwall-list-l1 .bar-subheader .button-bar>.button.button-positive-custom.activated {
+    background-color: $transparent-color !important;
+}
+
+ion-view.module-fanwall.fanwall-list.fanwall-list-l1 ion-item.item-custom.item {
+    width: 96%;
+    margin-left: 2%;
+    border-radius: 20px;
+}
+
+ion-view.module-fanwall.fanwall-list.fanwall-list-l1 .item .post-body~.post-actions {
+    /*border-bottom: 1px solid $ion-view;*/
+    margin-top: 5px;
+}
+
+ion-view.module-fanwall.fanwall-list.fanwall-list-l1 .item-avatar.post-author h2 {
+    text-transform: capitalize;
+}
+
+ion-view.module-fanwall.fanwall-list.fanwall-list-l1 .item .post-body p {
+    overflow: initial;
+    text-overflow: initial;
+    white-space: initial;
+    line-height: 1.5;
+    text-transform: none;
+}
+
+ion-view.module-fanwall.fanwall-list.fanwall-list-l1 .post-body h2.ng-binding {
+    font-size: 18px;
+    font-style: italic;
+}
+
+ion-view.module-fanwall.fanwall-list.fanwall-list-l1 #baguetteBox-overlay .full-image img {
+    border-radius: 10px;
+}
+
+ion-view.module-fanwall.fanwall-list.fanwall-list-l1 div#google-maps {
+    border-radius: 20px 20px 0 0;
+    padding-top: 29px !important;
+    background-color: $transparent-color !important;
+}
+
+ion-view.module-fanwall.fanwall-list.fanwall-list-l1 .fanwall-gallery {
+    width: 96%;
+    margin-left: 2%;
+}
+
+ion-view.module-fanwall.fanwall-list.fanwall-list-l1 .fanwall-gallery .gallery-item {
+    border-radius: 10px;
+}
+
+ion-view.module-fanwall.fanwall-list.fanwall-list-l1 fanwall-post-item:nth-last-child(1):after {
+    content: " ";
+    display: block;
+    height: 100px;
+}
+
+ion-view.module-fanwall.fanwall-list.fanwall-list-l1 ion-list.list-posts.disable-user-behavior .list ion-item {
+    background-color: #f3f3f3;
+    text-transform: capitalize;
+}
+
+ion-view.module-fanwall.fanwall-list.fanwall-list-l1 ion-list.list-posts.disable-user-behavior .list ion-item>h2.ng-binding {
+    font-size: 0 !important;
+    font-weight: bold;
+    color: $ion-view;
+}
+
+ion-view.module-fanwall.fanwall-list.fanwall-list-l1 ion-list.list-posts.disable-user-behavior .list ion-item>h2.ng-binding:after {
+    content: "Unggahan Saya";
+    font-size: 18px;
+    color: $ion-view;
+}
+
+ion-view.module-fanwall.fanwall-list.fanwall-list-l1 ion-list.list-posts.disable-user-behavior .list ion-item span.pull-right {
+    font-size: 12px !important;
+    color: $icon-color !important;
+}
+
+ion-view.module-fanwall.fanwall-list.fanwall-list-l1 ion-list.list-posts.disable-user-behavior .list ion-item .post-images {
+    width: 96%;
+    margin-left: 2%;
+    border-radius: 10px;
+    background-color: #ecf0f6 !important;
+    padding: 5px;
+}
+
+ion-view.module-fanwall.fanwall-list.fanwall-list-l1 ion-content.fanwall-profile {
+    padding-top: 0 !important;
+}
+
+ion-view.module-fanwall.fanwall-list.fanwall-list-l1 ion-content.fanwall-profile ion-item.item-divider.item-divider-custom.section-title.item {
+    background-color: $transparent-color !important;
+}
+
+ion-view.module-fanwall.fanwall-list.fanwall-list-l1 .customer-actions button {
+    background-color: $ion-view !important;
+    border: 0;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 30px;
+}
+
+ion-view.module-fanwall.fanwall-list.fanwall-list-l1 .customer-actions button i {
+    display: none;
+}
+
+ion-view.module-fanwall.fanwall-list.fanwall-list-l1 .customer-fullname.ng-binding {
+    color: $ion-view;
+    font-weight: bold;
+}
+
+
+/*BUTON X PREVIEW PHOTO SOCIAL WALL*/
+
+#baguetteBox-overlay .full-image img {
+    box-shadow: none !important;
+    border-radius: 10px;
+}
+
+.baguetteBox-button#close-button svg {
+    display: none;
+}
+
+.baguetteBox-button#close-button {
+    top: 20px;
+    right: 45% !important;
+    width: 40px !important;
+    height: 40px;
+    margin: 0 auto !important;
+    display: flex;
+    background-image: $close-button-icon;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.ion-camera:before,
+.ion-paper-airplane:before,
+.ion-sb-like:before,
+.ion-sb-comment:before,
+.ion-sb-share-outline:before,
+.ion-more:before,
+.ion-sb-location-on::before {
+    color: $ion-view;
+    font-weight: bold;
+}
+
+
+/* NEW POST */
+
+ion-modal-view.module-fanwall.fanwall-new.fanwall-new-l1 ion-content .list {
+    border-radius: 20px !important;
+    padding: 5px;
+    width: 100%;
+    margin-left: 0%;
+    padding-bottom: 70px;
+    background-color: $transparent-color;
+    border: 0;
+}
+
+
+/* Jika moderasi post diaktifkan */
+
+ion-modal-view.module-fanwall.fanwall-new.fanwall-new-l1 ion-content [ng-if="enbleModeration"] {
+    background-color: #c2e0c4;
+    width: 96%;
+    margin: 10px 2%;
+    border-radius: 10px !important;
+    padding: 0 !important;
+    margin-top: 25px;
+}
+
+ion-modal-view.module-fanwall.fanwall-new.fanwall-new-l1 ion-content [ng-if="enbleModeration"]>div {
+    background-color: $transparent-color;
+    padding: 8px;
+    font-size: 13px;
+}
+
+ion-modal-view.module-fanwall.fanwall-new.fanwall-new-l1 ion-content .list ion-item.item-custom.item-avatar.post-author.item {
+    background: $transparent-color;
+    border: 0 !important;
+}
+
+.module-fanwall.fanwall-new-l1 .new-post-items .item .new-post-author {
+    margin-top: 4px;
+    color: $ion-view;
+}
+
+ion-modal-view.module-fanwall.fanwall-new.fanwall-new-l1 p.post-location {
+    white-space: normal;
+    font-size: 11px !important;
+    color: $ion-view !important;
+    font-weight: bold;
+}
+
+ion-modal-view.module-fanwall.fanwall-new.fanwall-new-l1 .new-post-items .item textarea {
+    line-height: 1.8;
+    padding: 10px !important;
+    border-radius: 5px;
+    background-color: $transparent-color;
+    border: 1.5px solid $ion-view !important;
+    height: 150px;
+}
+
+ion-modal-view.module-fanwall.fanwall-new.fanwall-new-l1 ion-item.item-icon-left.item-custom.upload-action.item p:after {
+    content: "Unggah Foto";
+    font-size: 14px;
+    color: $ion-view;
+    font-weight: bold;
+}
+
+ion-modal-view.module-fanwall.fanwall-new.fanwall-new-l1 ion-item.item-icon-left.item-custom.upload-action.item p {
+    font-size: 0;
+}
+
+ion-modal-view.module-fanwall.fanwall-new.fanwall-new-l1 i.icon.ion-image.add-image-icon {
+    display: none;
+}
+
+ion-modal-view.module-fanwall.fanwall-new.fanwall-new-l1 ion-item.item-icon-left.item-custom.upload-action.item .col-10 {
+    font-size: 0 !important;
+    background-image: url(https://ensiklopediakesaguan.com/wp-content/uploads/2021/07/img-1.png);
+    background-position: left top !important;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: $transparent-color;
+    filter: drop-shadow(2px 4px 6px blue);
+}
+
+ion-modal-view.module-fanwall.fanwall-new.fanwall-new-l1 button[ng-click="sendPost();"] {
+    background-color: $ion-view !important;
+    border: 0 !important;
+    bottom: 0px !important;
+    width: 100% !important;
+    border-radius: 0 !important;
+}
+
+ion-modal-view.module-fanwall.fanwall-new.fanwall-new-l1 ion-item.item-image.item-custom.item {
+    background-color: $transparent-color;
+}
+
+ion-modal-view.module-fanwall.fanwall-new.fanwall-new-l1 ion-item.item-image.item-custom.item img {
+    width: 100%;
+    object-fit: cover;
+    height: 160px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border-radius: 10px;
+}
+
+ion-modal-view.module-fanwall.fanwall-new.fanwall-new-l1 fanwall-pictures ion-item.item-image.item-custom.item {
+    padding: 0 !important;
+    margin: 0;
+    margin-top: 0;
+    padding-top: 15px !important;
+    background-color: $button-text-color !important;
+}
+
+.module-fanwall.fanwall-new-l1 .remove-image-list,
+.module-fanwall.fanwall-new-l1 .remove-image-card {
+    position: absolute;
+    right: 6px;
+    top: 45px;
+}
+
+.module-fanwall.fanwall-new-l1 .remove-image-list i.icon,
+.module-fanwall.fanwall-new-l1 .remove-image-card i.icon {
+    font-size: 26px;
+    background-color: $ion-content;
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+}
+
+ion-modal-view.module-fanwall.fanwall-new.fanwall-new-l1 i.item-note.ion-plus.arrow-center {
+    display: none;
+}
+
+ion-modal-view.module-fanwall.fanwall-new.fanwall-new-l1 ion-item.item-custom.item-avatar.post-author.item,
+ion-modal-view.module-fanwall.fanwall-new.fanwall-new-l1 ion-item.item-icon-left.item-custom.upload-action.item {
+    margin: 0 !important;
+    border: 0 !important;
+    background: $transparent-color;
+}
+
+ion-modal-view.module-fanwall.fanwall-new.fanwall-new-l1 ion-item.item-input.item-custom.item {
+    padding: 10px !important;
+    background: $transparent-color;
+    border: 0 !important;
+    margin: 0 !important;
+}
+
+ion-modal-view.module-fanwall.fanwall-new.fanwall-new-l1 ion-item.item-custom.item-avatar.post-author.item {
+    border-radius: 20px 20px 0 0;
+    background: $ion-content;
+    border: 0 !important;
+}
+
+ion-modal-view.module-fanwall.fanwall-new.fanwall-new-l1 ion-item.item-icon-left.item-custom.upload-action.item {
+    background: $transparent-color;
+    border: 0 !important;
+}
+
+
+/*EDIT COMMENT*/
+
+ion-modal-view.module-fanwall.fanwall-new.fanwall-new-l1 ion-item.item-icon-left.item-custom.item {
+    background-color: $transparent-color;
+    margin: 0 !important;
+    border-radius: 0 0 20px 20px;
+}
+
+ion-modal-view.module-fanwall.fanwall-new.fanwall-new-l1 ion-item.item-icon-left.item-custom.item .col-10 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 30px;
+    border-radius: 50px;
+    font-size: 0 !important;
+    background-image: $img-icon;
+    background-position: left top !important;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: $transparent-color;
+}
+
+ion-modal-view.module-fanwall.fanwall-new.fanwall-new-l1 ion-item.item-icon-left.item-custom.item .col-10 i {
+    display: none;
+}
+
+ion-modal-view.module-fanwall.fanwall-new.fanwall-new-l1 .button.button-assertive-custom {
+    border: 0;
+    background-color: $icon-color;
+    color: $button-text-color;
+    width: 95%;
+    bottom: 20px;
+    border-radius: 0 10px 10px 0;
+}
+
+
+/* WRITE COMMENT FIELDS*/
+
+ion-modal-view.module-fanwall.fanwall-comment.fanwall-comment-l1 ion-footer-bar.comment-footer {
+    border: 0;
+    height: 70px;
+    width: 100%;
+    border-radius: 0;
+    background-color: $ion-content !important;
+    bottom: 0;
+    box-shadow: none;
+    padding: 0;
+}
+
+ion-modal-view.module-fanwall.fanwall-comment.fanwall-comment-l1 ion-footer-bar.comment-footer textarea {
+    resize: none;
+    margin: 0;
+    height: 90px;
+    width: 100%;
+    padding: 8px 33px 7px 16px;
+    border-radius: 10px;
+    line-height: 1.5;
+}
+
+ion-modal-view.module-fanwall.fanwall-comment.fanwall-comment-l1 ion-footer-bar.comment-footer .picture-badge {
+    font-size: 10px;
+    padding: 0 6px 0 5px;
+    margin-left: -12px;
+}
+
+
+/*WRITE COMMENT FIELDS*/
+
+
+/* NEW POST */
+
+
+/*SOCIAL WALL COMMENT*/
+
+ion-modal-view.module-fanwall.fanwall-comment.fanwall-comment-l1 ion-content {
+    background-color: $ion-content!important;
+    background-image: $bg-image-left;
+    background-position: right top !important;
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 0 !important;
+    padding-top: 60px;
+}
+
+ion-modal-view.module-fanwall.fanwall-comment.fanwall-comment-l1 fanwall-comment-item:nth-of-type(1n+1) ion-item {
+    border: 0;
+    background-color: $second-bg-color;
+    color: $general-font-color;
+    width: 90%;
+    margin: 5px 2% 5px 8%;
+    border-radius: 20px;
+    background-image: $bg-image-bottom;
+    background-position: right top !important;
+    background-repeat: no-repeat;
+    background-size: contain;
+    backdrop-filter: blur( 4px);
+    -webkit-backdrop-filter: blur( 4px);
+    border-radius: 10px;
+    border: 1px solid $transparent-color;
+}
+
+ion-modal-view.module-fanwall.fanwall-comment.fanwall-comment-l1 fanwall-comment-item:nth-last-child(1) ion-item {
+    margin-bottom: 150px !important;
+}
+
+ion-modal-view.module-fanwall.fanwall-comment.fanwall-comment-l1 fanwall-comment-item:nth-of-type(2n+2) ion-item {
+    background-color: $second-bg-color !important;
+    width: 90% !important;
+    margin: 5px 8% 5px 2% !important;
+    border-radius: 10px;
+    background-image: $bg-image-left;
+    background-position: left bottom !important;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+/*NOONE COMMENT*/
+
+ion-item.item-custom.text-center.no-post.item.ng-binding,
+ion-view.module-fanwall.fanwall-list.fanwall-list-l1 ion-item.item-custom.text-center.no-post.item {
+    border-radius: 20px;
+    width: 90%;
+    margin: 50px 5%;
+    background: $transparent-color;
+    backdrop-filter: blur( 4px);
+    -webkit-backdrop-filter: blur( 4px);
+    border-radius: 10px;
+    border: 0;
+}
+
+
+/*SOCIAL WALL COMMENT*/
+
+
+/*BLOCKED USER*/
+
+ion-modal-view.module-fanwall.fanwall-list.fanwall-list-l1 ion-content {
+    background-image: $bg-image-top;
+    background-position: left top !important;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: $ion-content!important;
+    top: 0 !important;
+    padding-top: 0 !important;
+}
+
+ion-modal-view.module-fanwall.fanwall-list.fanwall-list-l1 ion-item.item-custom.item.ng-binding {
+    text-align: center;
+    background: $transparent-color;
+}
+
+
+/*END SOCIAL WALL
+
+
+/* WP */
+
+ion-view.module-wordpress2.wordpress2-layout1.wordpress2-list {
+    background-image: none !important;
+    background-color: $ion-view !important;
+}
+
+ion-view.module-wordpress2.wordpress2-layout1.wordpress2-list ion-content {
+    margin-top: 70px !important;
+    background-color: transparent !important;
+}
+
+ion-view.module-wordpress2.wordpress2-layout1.wordpress2-list .item.item-image.item-custom img {
+    width: 96%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+ion-view.module-wordpress2.wordpress2-layout1.wordpress2-list [ng-if="query.showTitle && (query.title)"] {
+    display: none;
+}
+
+ion-view.module-wordpress2.wordpress2-layout1.wordpress2-list .list:nth-child(1) {
+    background-color: $transparent-color;
+}
+
+ion-view.module-wordpress2.wordpress2-layout1.wordpress2-list .list:nth-child(1) .item.item-custom {
+    border: 0;
+    background-color: $transparent-color;
+    color: $ion-content;
+}
+
+ion-view.module-wordpress2.wordpress2-layout1.wordpress2-list .list:nth-child(1) .item.item-custom h2.ng-binding,
+ion-view.module-wordpress2.wordpress2-layout1.wordpress2-list .list:nth-child(1) .item.item-custom p.ng-binding {
+    display: none;
+}
+
+ion-view.module-wordpress2.wordpress2-layout1.wordpress2-list .list:nth-child(2) {
+    background-color: $ion-content;
+    padding-top: 25px;
+    border-radius: 30px 30px 0 0;
+}
+
+ion-view.module-wordpress2.wordpress2-layout1.wordpress2-list .list a {
+    width: 96%;
+    margin-left: 2%;
+    display: inline-block;
+    background-color: #ecf0f6;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+ion-view.module-wordpress2.wordpress2-layout1.wordpress2-list .list a img {
+    display: block !important;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    height: 200px;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+ion-view.module-wordpress2.wordpress2-layout1.wordpress2-list .list a h2.ng-binding {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    white-space: normal;
+    border-left: 10px solid #0e7bc4;
+    padding-left: 10px;
+}
+
+ion-view.module-wordpress2.wordpress2-layout1.wordpress2-list .list a p.ng-binding p {
+    width: 100%;
+    white-space: normal;
+    margin-top: 10px;
+}
+
+ion-view.module-wordpress2.wordpress2-layout1.wordpress2-list .list a p a {
+    width: 30%;
+    margin: 10px 0;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: $ion-content !important;
+    border-radius: 10px;
+    background-color: #0e7bc4;
+    padding: 5px;
+    display: block;
+    margin-left: 70%;
+}
+
+
+/* END WP */
+
+.layout_taxi .items {
+    padding-top: 0;
+}
+
+.layout_taxi .lines {
+    height: 15vw;
+}
+
+.layout.layout_taxi ion-content div.scroll .taxi-header {
+    background-color: transparent !important;
+    background: none !important;
+    /*  background: url(https://ensiklopediakesaguan.com/wp-content/uploads/2021/04/miro_on_the_way.svg) !important; */
+    background-position: center bottom !important;
+    background-repeat: no-repeat !important;
+    background-size: 70% !important;
+    height: 200px;
+    margin-top: -5px;
+    border-radius: 0 0 30px 30px;
+}
+
+.taxi-header .row:nth-child(2) span.pull-left.customer-name.ng-binding {
+    color: #fff;
+    font-size: 14px;
+    text-align: left;
+    padding-left: 10vh;
+}
+
+.taxi-header [ng-if="customer"] {
+    padding: 0 !important;
+    text-align: center !important;
+}
+
+.layout_taxi .taxi-header .taxi-avatar-wrapper {
+    height: 25vw;
+    width: 25vw;
+    border: 0 !important;
+    border-radius: 50px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.layout_taxi .taxi-header .taxi-avatar {
+    height: 25vw !important;
+    width: 25vw !important;
+    left: 0;
+    right: 0;
+}
+
+.layout.layout_taxi ion-content div.scroll ul.items.homepage-custom {
+    background-color: transparent;
+}
+
+ion-side-menu.menu.menu-left.menu-left-open,
+ion-side-menu.menu.menu-left {
+    background-color: transparent !important;
+    width: 96vw !important;
+}
+
+.layout.layout_taxi ion-content {
+    z-index: 3;
+    backdrop-filter: blur(2rem);
+    display: flex;
+    background: linear-gradient( to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+    height: 94vh !important;
+    margin: 3vh 3vw;
+    border-radius: 30px;
+    width: 75vw;
+}
+
+.layout_taxi .lines {
+    height: 15vw;
+    display: flex;
+    background: linear-gradient( to left top, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.08));
+    border-radius: 5px;
+    margin: 1rem 2vw;
+    padding: 0rem;
+    width: 85vw;
+}
+
+.taxi-header:before {
+    content: "Welcome";
+    display: block !important;
+    font-size: 28px;
+    bottom: 20px;
+    font-weight: bold;
+    margin-bottom: 10px !important;
+    text-align: center !important;
+}
+
+.layout_taxi .line-title {
+    line-height: 6vw;
+    margin-left: 1em;
+    font-variant: normal;
+    font-size: 14px;
+    font-weight: normal;
+    color: #000;
+}
+
+.layout_taxi li:nth-child(n+5) img.line-icon {
+    filter: invert(1);
+}
+
+.layout.layout_taxi ion-content div.scroll .taxi-header .col-100.text-center span.taxi-signup span:nth-child(1),
+.layout.layout_taxi ion-content div.scroll .taxi-header .col-100.text-center span.taxi-signup span:nth-child(2) {
+    display: none;
+}
+
+.layout.layout_taxi ion-content div.scroll .taxi-header .col-100.text-center span.taxi-signup {
+    width: 40% !important;
+    background-color: #fff !important;
+    padding: 10px;
+    text-align: left;
+    border-radius: 10px;
+    display: block;
+    margin-left: 30%;
+    background-image: url(https://ensiklopediakesaguan.com/wp-content/uploads/2021/04/logout.png);
+    background-position: center right 10px;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    padding-left: 20px;
+}
+
+
+/* FOLDER V2 CSS START HERE */
+
+.bar.bar-custom .title {
+    color: transparent;
+}
+
+button[ng-show="showLeftButton()"] {
+    background-image: url(https://justapp.id/assets/images/toggler_icon.svg) !important;
+    color: transparent !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: 70% !important;
+}
+
+
+/* Mulai Folder v2 */
+
+ion-view[state="folder2-category-list"] .item.item-image.item-custom img {
+    height: 150px;
+    object-fit: cover;
+    object-position: center center;
+}
+
+ion-view[state="folder2-category-list"] {
+    background-image: none !important;
+    background-color: #fff !important;
+}
+
+ion-view[state="folder2-category-list"] [ng-if="current.showTitle"] {
+    background-color: transparent !important;
+}
+
+ion-view[state="folder2-category-list"] [ng-if="current.showTitle"] h2.ng-binding {
+    color: #fff !important;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    order: 2;
+    width: 100%;
+    text-align: left !important;
+    ;
+}
+
+ion-view[state="folder2-category-list"] [ng-if="current.showTitle"] p.ng-binding {
+    color: #fff !important;
+    font-size: 16px;
+    font-style: italic;
+    order: 1;
+    width: 100%;
+    text-align: left !important;
+    ;
+}
+
+ion-view[state="folder2-category-list"] [ng-if="current.showTitle"] {
+    background: rgb(194, 17, 17);
+    background: transparent;
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0 10px;
+    margin-top: 10px;
+}
+
+ion-view[state="folder2-category-list"] .list.folder-layout.folder-l3 {
+    margin-top: 0;
+}
+
+ion-view[state="folder2-category-list"] .list.folder-layout.folder-l3 .folder-l3-row:nth-child(1) {
+    background: rgb(194, 17, 17);
+    background: linear-gradient(70deg, rgba(194, 17, 17, 1) 0%, rgba(194, 17, 17, 1) 50%, rgba(255, 255, 255, 1) 50%, rgba(250, 236, 236, 1) 75%, rgba(194, 17, 17, 1) 75%, rgba(194, 17, 17, 1) 100%);
+    padding: 70px 10px 15px 10px;
+    display: flex;
+    margin: -71px 0 20px 0;
+    overflow: visible;
+    white-space: nowrap !important;
+    width: 100% !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    white-space: nowrap !important;
+    -webkit-overflow-scrolling: touch !important;
+}
+
+ion-view[state="folder2-category-list"] .list.folder-layout.folder-l3 .folder-l3-row:nth-child(1) .folder-l3-col.item.item-custom {
+    background-color: transparent !important;
+    border-radius: 20px;
+    width: 100% !important;
+    border: 2px solid #fff;
+    min-width: 35% !important;
+    display: inline-block !important;
+    height: 200px;
+    margin: 0 2%;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background: rgb(194, 17, 17);
+    background: linear-gradient(45deg, rgba(194, 17, 17, 1) 0%, rgba(126, 6, 6, 1) 50%) !important;
+}
+
+ion-view[state="folder2-category-list"] .list.folder-layout.folder-l3 .folder-l3-row:nth-child(1) .folder-l3-col.item.item-custom p.folder-title.ng-binding,
+.folder-layout.folder-l3 .folder-l3-row:nth-child(2) div.folder-l3-col p.folder-title.ng-binding {
+    color: #fff !important;
+}
+
+.folder-layout.folder-l3 .folder-l3-row:nth-child(3) div.folder-l3-col p.folder-title.ng-binding,
+.folder-layout.folder-l3 .folder-l3-row:nth-child(3) div.folder-l3-col p.folder-title.ng-binding {
+    color: #000;
+}
+
+.folder-layout.folder-l3 .folder-l3-row:nth-child(1) div.folder-l3-col:nth-child(1) img {
+    width: 100%;
+    background-image: url(https://img.zonared.com/images/caratulas/6200/6281-th1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    height: 160px;
+}
+
+.folder-layout.folder-l3 .folder-l3-row:nth-child(1) div.folder-l3-col:nth-child(2) img {
+    width: 100%;
+    background-image: url(https://assets.pikiran-rakyat.com/crop/0x0:0x0/x/photo/2022/02/12/3564874286.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    height: 160px;
+}
+
+.folder-layout.folder-l3 .folder-l3-row:nth-child(1) div.folder-l3-col:nth-child(3) img {
+    width: 100%;
+    background-image: url(https://www.kibrispdr.org/dwn/0/mobile-legends-hero-wallpaper.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    height: 160px;
+}
+
+.folder-layout.folder-l3 .folder-l3-row:nth-child(1) div.folder-l3-col p.folder-subtitle.ng-binding {
+    background-color: #fff !important;
+    color: #000 !important;
+    border-radius: 30px;
+    border: 2px solid #c21111;
+    font-size: 14px !important;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    padding: 0 !important;
+    order: 1 !important;
+    width: 80%;
+    margin: 0 10% 33px 10%;
+}
+
+.folder-layout.folder-l3 .folder-l3-row:nth-child(2) {
+    margin-top: 30px;
+}
+
+.folder-layout.folder-l3 .folder-l3-row:nth-child(2) {
+    margin-top: 0;
+    background-image: url(https://res.cloudinary.com/lmn/image/upload/c_limit,h_392,w_696/e_sharpen:100/f_auto,fl_lossy,q_auto/v1/gameskinnyc/e/s/p/esports-banner-2ab5e.jpg);
+    padding: 42px 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.folder-layout.folder-l3 .folder-l3-row:nth-child(2) div.folder-l3-col:nth-child(1) img {
+    width: 100%;
+    background-image: url(https://assets.promediateknologi.com/crop/0x0:0x0/x/photo/2022/01/13/1732254345.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    height: 160px;
+}
+
+.folder-layout.folder-l3 .folder-l3-row:nth-child(2) div.folder-l3-col:nth-child(2) img {
+    width: 100%;
+    background-image: url(https://static.republika.co.id/uploads/member/images/news/ktesgoms9c.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    height: 160px;
+}
+
+.folder-layout.folder-l3 .folder-l3-row:nth-child(2) div.folder-l3-col:nth-child(3) img {
+    width: 100%;
+    background-image: url(https://selular.id/wp-content/uploads/2021/06/valorant-logo-characters-red-pink-PC.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    height: 160px;
+}
+
+.folder-layout.folder-l3 .folder-l3-row:nth-child(2) {
+    display: flex;
+    overflow: visible;
+    white-space: nowrap !important;
+    width: 100% !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    white-space: nowrap !important;
+    -webkit-overflow-scrolling: touch !important;
+}
+
+.folder-layout.folder-l3 .folder-l3-row:nth-child(2) div.folder-l3-col {
+    background-color: #fff;
+    border-radius: 20px;
+    width: 50% !important;
+    min-width: 50% !important;
+    height: 120px;
+    display: inline-block !important;
+    display: flex;
+    border: 2px solid #fff;
+}
+
+.folder-layout.folder-l3 .folder-l3-row:nth-child(2) div.folder-l3-col p.folder-title.ng-binding {
+    text-align: left;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 30px;
+    bottom: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.folder-layout.folder-l3 .folder-l3-row:nth-child(2) div.folder-l3-col p.folder-subtitle.ng-binding {
+    text-align: left;
+    background-color: #fff !important;
+    color: #000 !important;
+    border-radius: 5px 20px;
+    border: 2px solid #38647d;
+    font-size: 14px !important;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    padding: 0 !important;
+    width: 44%;
+    margin: 0 !important;
+    top: 0;
+    height: 30px;
+    right: 0;
+}
+
+
+/* 3 menu ketiga */
+
+.folder-layout.folder-l3 .folder-l3-row:nth-child(3) {
+    margin-top: 30px;
+    background-image: url(https://www.99.co/blog/indonesia/wp-content/uploads/2022/01/gambar-mobile-legends.png);
+    padding: 40px 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    overflow: visible;
+    white-space: nowrap !important;
+    width: 100% !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    white-space: nowrap !important;
+    -webkit-overflow-scrolling: touch !important;
+}
+
+.folder-layout.folder-l3 .folder-l3-row:nth-child(3) div.folder-l3-col:nth-child(1) img {
+    width: 100%;
+    background-image: url(https://storage.indoesports.com/images/paquito-mobile-legends-ml-hero-baru-yang-bakal-saingi-chou.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    height: 170px;
+    position: relative;
+}
+
+.folder-layout.folder-l3 .folder-l3-row:nth-child(3) div.folder-l3-col:nth-child(2) img {
+    width: 100%;
+    background-image: url(https://storage.indoesports.com/images/paquito-mobile-legends-ml-hero-baru-yang-bakal-saingi-chou.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    height: 170px;
+    position: relative;
+}
+
+.folder-layout.folder-l3 .folder-l3-row:nth-child(3) div.folder-l3-col:nth-child(3) img {
+    width: 100%;
+    background-image: url(https://storage.indoesports.com/images/paquito-mobile-legends-ml-hero-baru-yang-bakal-saingi-chou.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    height: 170px;
+    position: relative;
+}
+
+.folder-layout.folder-l3 .folder-l3-row:nth-child(3) div.folder-l3-col {
+    background-color: #fff !important;
+    width: 75% !important;
+    min-width: 75% !important;
+    display: inline-block !important;
+    padding-bottom: 12px;
+    position: relative;
+    background-image: none !important;
+    border-radius: 10px;
+}
+
+.folder-layout.folder-l3 .folder-l3-row:nth-child(3) div.folder-l3-col p.folder-title.ng-binding {
+    text-align: left;
+    white-space: normal;
+    font-size: 18px;
+    background-color: transparent;
+    display: flex;
+    padding: 0 10px;
+    position: relative;
+    color: #000;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.folder-layout.folder-l3 .folder-l3-row:nth-child(3) div.folder-l3-col p.folder-subtitle.ng-binding {
+    text-align: left;
+    color: #000 !important;
+    font-size: 14px !important;
+    padding: 0 10px !important;
+    white-space: normal;
+    background-color: transparent;
+    position: relative;
+    margin-top: 5px !important;
+}
+
+
+/* 4 Menu keempat */
+
+.folder-layout.folder-l3 .folder-l3-row:nth-child(4) {
+    margin-top: 30px;
+    background-image: url(https://www.jakmall.com/blog/content/images/2020/11/20f535c616bbe807a1166e5661b396fd.jpg);
+    padding: 40px 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    overflow: visible;
+    white-space: nowrap !important;
+    width: 100% !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    white-space: nowrap !important;
+    -webkit-overflow-scrolling: touch !important;
+}
+
+.folder-layout.folder-l3 .folder-l3-row:nth-child(4) div.folder-l3-col:nth-child(1) img {
+    width: 100%;
+    background-image: url(https://static.upoint.id/images/news/16405923122699138433122431573047397016825924907087512n.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    height: 170px;
+    position: relative;
+}
+
+.folder-layout.folder-l3 .folder-l3-row:nth-child(4) div.folder-l3-col:nth-child(2) img {
+    width: 100%;
+    background-image: url(https://static.upoint.id/images/news/16405923122699138433122431573047397016825924907087512n.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    height: 170px;
+    position: relative;
+}
+
+.folder-layout.folder-l3 .folder-l3-row:nth-child(4) div.folder-l3-col:nth-child(3) img {
+    width: 100%;
+    background-image: url(https://static.upoint.id/images/news/16405923122699138433122431573047397016825924907087512n.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    height: 170px;
+    position: relative;
+}
+
+.folder-layout.folder-l3 .folder-l3-row:nth-child(4) div.folder-l3-col {
+    background-color: #fff !important;
+    width: 75% !important;
+    min-width: 75% !important;
+    display: inline-block !important;
+    padding-bottom: 12px;
+    position: relative;
+    background-image: none !important;
+    border-radius: 10px;
+}
+
+.folder-layout.folder-l3 .folder-l3-row:nth-child(4) div.folder-l3-col p.folder-title.ng-binding {
+    text-align: left;
+    white-space: normal;
+    font-size: 18px;
+    background-color: transparent;
+    display: flex;
+    padding: 0 10px;
+    position: relative;
+    color: #000;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.folder-layout.folder-l3 .folder-l3-row:nth-child(4) div.folder-l3-col p.folder-subtitle.ng-binding {
+    text-align: left;
+    color: #000 !important;
+    font-size: 14px !important;
+    padding: 0 10px !important;
+    white-space: normal;
+    background-color: transparent;
+    position: relative;
+    margin-top: 5px !important;
+}
+
+ion-view.module-fanwall.fanwall-list.fanwall-list-l1 .bar-subheader {
+    bottom: 0 !important;
+    top: 88vh !important;
+    width: 80%;
+    margin: 10px 10%;
+    border-radius: 30px !important;
+    background-color: #293072 !important;
+    padding: 0px !important;
+    background-image: none !important;
+    height: 50px;
+    border: 0 !important;
+}
+
+ion-view.module-fanwall.fanwall-list.fanwall-list-l1 .bar-subheader .button-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ion-view.module-fanwall.fanwall-list.fanwall-list-l1 .bar-subheader .button-bar [ng-click="newPost()"] {
+    order: 3 !important;
+    height: 60px;
+    width: 60px;
+    background-color: #391212 !important;
+    border-radius: 50%;
+    margin-top: -50px;
+}
+
+ion-view.module-fanwall.fanwall-list.fanwall-list-l1 .bar-subheader .button-bar [ng-class="classTab('profile')"] {
+    order: 5;
+}
+
+ion-view.module-fanwall.fanwall-list.fanwall-list-l1 .bar-subheader .button-bar [ng-class="classTab('gallery')"] {
+    order: 4;
+}
+
+ion-view.module-fanwall.fanwall-list.fanwall-list-l1 .bar-subheader .button-bar [ng-class="classTab('nearby')"] {
+    order: 2;
+}
+
+ion-view.module-fanwall.fanwall-list.fanwall-list-l1 .bar-subheader .button-bar [ng-class="classTab('post')"] {
+    order: 1;
+}

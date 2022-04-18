@@ -1,0 +1,2465 @@
+/*
+ *---------------------------------------------------------------
+ * BUNDLE CSS APLIKASI UNDANGDONG
+ *---------------------------------------------------------------
+ *
+ * Jika ingin ganti warna, ganti pada warna parameter saja.
+ * Jika ingin ganti gambar, ganti pada gambar parameter saja.
+ */
+
+
+/* WARNA PARAMETER */
+
+$general-bg-color: #f9c6c3;
+$transparent-color: transparent;
+$blur-bg-color: rgba( 255, 255, 255, 0.25);
+$second-bg-color: #ecf0f6;
+$icon-color: #ff5b56;
+$general-font-color: #000;
+$button-text-color: #fff;
+$border-transparent: rgba( 255, 255, 255, 0.18);
+$bg-image: url(https://ensiklopediakesaguan.com/wp-content/uploads/2021/05/dealer_1.png);
+$login-img: url(https://ensiklopediakesaguan.com/wp-content/uploads/2021/05/log-out.png);
+$bg-image-bottom: url(https://ensiklopediakesaguan.com/wp-content/uploads/2021/06/bg_2.png);
+$bg-image-top: url(https://ensiklopediakesaguan.com/wp-content/uploads/2021/06/bg_1.png);
+$logo-image: url(https://ensiklopediakesaguan.com/wp-content/uploads/2021/06/undangdong.png);
+$close-button-icon: url(https://ensiklopediakesaguan.com/wp-content/uploads/2021/05/close_btn.png);
+$bg-image-left: url(https://ensiklopediakesaguan.com/wp-content/uploads/2021/06/bg_3.png);
+$img-icon: url(https://ensiklopediakesaguan.com/wp-content/uploads/2021/06/img.png);
+$padlock-bg: url(https://image.freepik.com/free-vector/cute-muslim-couple-with-flower_21630-743.jpg);
+
+/* HEADER */
+
+.bar-custom .button.button-clear {
+    border: 0 !important;
+    background: none;
+    box-shadow: none;
+    color: $icon-color !important;
+    font-size: 16px;
+    padding: 0 5px;
+}
+
+.bar.bar-custom .title {
+    display: none !important;
+    color: $transparent-color;
+}
+
+ion-header-bar.bar-custom.bar.bar-header {
+    height: 0 !important;
+    background-color: $transparent-color !important;
+}
+
+
+/* END HEADER */
+
+
+/* LAYOUT 4 */
+
+ion-view[state="home"] ion-content.homepage.scroll-content.ionic-scroll.scroll-content-false {
+    background-color: $button-text-color !important;
+    background-image: $bg-image-bottom;
+    background-position: left bottom !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+ion-view[state="home"] ion-content.homepage.scroll-content.ionic-scroll.scroll-content-false:after {
+    content: "Undangdong Versi 1.0";
+    display: block;
+    font-size: 14px;
+    color: $icon-color;
+    text-align: center;
+    margin-top: -45px;
+    font-style: italic;
+}
+
+.layout.l4 ion-content {
+    position: absolute;
+    height: 35vh;
+    padding-bottom: var(--safe-area-inset-bottom);
+    bottom: 10vh;
+    top: initial;
+    background-color: $general-bg-color!important;
+    width: 94%;
+    margin: 0 3%;
+    border-radius: 20px;
+    filter: drop-shadow(1px 2px 1px $second-bg-color);
+    background-image: $bg-image-top;
+    background-position: left top !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.layout.l4 .inner-scroll {
+    width: 100%;
+    height: 100%;
+    padding: 20px 0 !important;
+}
+
+.layout.l4 li {
+    float: left;
+    width: 23%;
+    height: 105px;
+    margin: 0 1%;
+}
+
+.layout.l4 li .items {
+    position: relative;
+    height: 8vh;
+    padding: 5px;
+    border-radius: 10px !important;
+    border-width: 3px;
+    border-style: solid;
+    width: 8vh;
+    margin: 0 auto 5px auto;
+    background-color: $second-bg-color;
+}
+
+.layout.l4 li p {
+    text-transform: capitalize;
+    line-height: 20px;
+    height: 20px;
+    overflow: hidden;
+    font-size: 12px;
+    width: 100%;
+}
+
+.slider-slides ion-slide.slider-slide .new_slider {
+    border-bottom-right-radius: 100% 25px !important;
+    border-bottom-left-radius: 100% 25px !important;
+}
+
+.slider-pager {
+    position: absolute;
+    bottom: 20px;
+    z-index: 1;
+    width: 100%;
+    height: 15px;
+    display: block !important;
+    top: 5%;
+    text-align: left;
+    padding-left: 15px;
+}
+
+.slider-pager .slider-pager-page {
+    display: inline-block;
+    margin: 0 3px;
+    color: $transparent-color;
+    text-decoration: none;
+    opacity: .3;
+    background-color: $icon-color;
+    width: 13px !important;
+    height: 7px;
+    border-radius: 10px;
+}
+
+span.slider-pager-page.active {
+    display: inline-block;
+    margin: 0 3px;
+    color: $transparent-color;
+    text-decoration: none;
+    opacity: 1;
+    background-color: $icon-color;
+    width: 20px !important;
+    height: 7px;
+    border-radius: 10px;
+}
+
+
+/* AKHIR LAYOUT 4 */
+
+
+/* CONTACT */
+
+ion-view.contact-view ion-content {
+    top: 0 !important;
+    background-image: $bg-image-bottom;
+    background-position: left bottom !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: $general-bg-color!important;
+}
+
+ion-view.contact-view ion-content .list.card {
+    background-color: $transparent-color;
+    box-shadow: none;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+ion-view.contact-view ion-content .card .item.item-custom {
+    border: 0;
+    background-color: $transparent-color;
+    color: $general-font-color;
+}
+
+ion-view.contact-view ion-content .list.card [ng-show="contact.street"].item.item-icon-left.item-custom i,
+ion-view.contact-view ion-content .list.card [ng-show="contact.description"] i {
+    display: none;
+}
+
+ion-view.contact-view ion-content .list.card [ng-show="contact.street"].item.item-icon-left.item-custom p {
+    color: $general-font-color;
+    font-size: 14px;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+}
+
+ion-view.contact-view ion-content .list.card [ng-show="contact.street"].item.item-icon-left.item-custom {
+    margin-top: -50px;
+    width: 90%;
+    margin-left: 5%;
+    background-color: $general-bg-color !important;
+    padding: 17px 0;
+    display: none;
+}
+
+ion-view.contact-view ion-content .padding button.button.button-custom.item-icon-left.ng-binding.button-block {
+    display: inline-block;
+    width: 96%;
+    padding-top: 30px;
+    font-weight: bold;
+    background-color: white;
+    pointer-events: none;
+    font-size: 0;
+    margin: 10px 2% !important;
+    border-radius: 10px !important;
+    left: 0 !important;
+    right: 0 !important;
+    height: 200px;
+    background: $blur-bg-color;
+    backdrop-filter: blur( 4px);
+    -webkit-backdrop-filter: blur( 4px);
+    border-radius: 10px;
+    border: 1px solid $border-transparent;
+}
+
+ion-view.contact-view ion-content [ng-show="contact.name"] h2 {
+    font-size: 18px !important;
+    font-weight: bold !important;
+    padding: 10px !important;
+}
+
+ion-view.contact-view ion-content [ng-show="contact.name"] i {
+    display: none !important;
+}
+
+ion-view.contact-view ion-content [ng-show="contact.name"] {
+    margin-bottom: 0 !important;
+    position: absolute;
+    z-index: 999;
+    width: 60%;
+    margin-left: 20% !important;
+    background-color: $general-bg-color !important;
+    padding: 11px;
+    height: 35px;
+    font-size: 18px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border-bottom-left-radius: 100px 50px;
+    border-bottom-right-radius: 100px 50px;
+    display: none !important;
+}
+
+ion-view.contact-view ion-content [ng-show="contact.name"] {
+    order: 3;
+}
+
+ion-view.contact-view ion-content [ng-show="!contact.name"] {
+    order: 1;
+}
+
+ion-view.contact-view ion-content [ng-if="contact.cover_url"] {
+    order: 2;
+    height: 270px;
+}
+
+ion-view.contact-view ion-content [ng-show="contact.street"] {
+    order: 4;
+}
+
+ion-view.contact-view ion-content [ng-show="contact.description"] {
+    order: 5;
+}
+
+ion-view.contact-view ion-content [ng-if="contact.cover_url"] img {
+    background-size: cover;
+    display: block;
+    height: 270px;
+    object-fit: cover;
+}
+
+
+/* SCRIPT HTML */
+
+ion-view.contact-view ion-content [ng-bind-html="contact.description | trusted_html"] p {
+    font-size: 13px;
+    line-height: 1.8;
+    font-style: italic;
+}
+
+ion-view.contact-view ion-content [ng-bind-html="contact.description | trusted_html"] h2 {
+    font-size: 24px !important;
+    font-style: italic;
+}
+
+[ng-bind-html="contact.description | trusted_html"] .menu-home img {
+    background-color: $second-bg-color !important;
+    border-radius: 30px;
+}
+
+[ng-bind-html="contact.description | trusted_html"] .menu-home div.desc {
+    color: $general-font-color;
+}
+
+
+/* AKHIR SCRIPT HTML */
+
+ion-view.contact-view ion-content .list.card [ng-show="contact.description"] {
+    margin-top: -50px;
+    width: 90%;
+    margin-left: 5%;
+    background-color: $button-text-color !important;
+    padding: 15px;
+    border-radius: 10px;
+    background: $blur-bg-color;
+    backdrop-filter: blur( 4px);
+    -webkit-backdrop-filter: blur( 4px);
+    border-radius: 10px;
+    border: 1px solid $border-transparent;
+    margin-bottom: 10px;
+}
+
+.item-text-wrap.item-custom.ng-binding h2 {
+    color: $icon-color;
+}
+
+ion-view.contact-view ion-content .padding {
+    display: block;
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+}
+
+ion-view.contact-view ion-content .padding:before {
+    content: "Fitur Undangdong";
+    font-size: 24px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    margin: 20px;
+    font-style: italic;
+    color: $icon-color;
+}
+
+ion-view.contact-view ion-content button[ng-if="contact.phone"]:before {
+    content: "Terdapat berbagai macam pilihan tema dengan desain yang cantik dan elegan.";
+    display: block;
+    line-height: 1.8;
+    font-style: italic;
+    font-size: 13px;
+    font-weight: normal;
+    margin-top: 55px;
+    color: $general-font-color;
+}
+
+ion-view.contact-view ion-content [ng-click="showMap();"]:before {
+    content: "Semua informasi mempelai tertampil secara lengkap di undangan.";
+    display: block;
+    line-height: 1.8;
+    font-style: italic;
+    font-size: 13px;
+    font-weight: normal;
+    margin-top: 55px;
+    color: $general-font-color;
+}
+
+ion-view.contact-view ion-content button[ng-if="contact.email"]:before {
+    content: "Tersedia fitur penampil waktu dan lokasi akad, resepsi hingga acara unduh mantu.";
+    display: block;
+    line-height: 1.8;
+    font-style: italic;
+    font-size: 13px;
+    font-weight: normal;
+    margin-top: 55px;
+    color: $general-font-color;
+}
+
+ion-view.contact-view ion-content button[ng-if="contact.website_url"]:before {
+    content: "Tersedia galeri foto dan video streaming untuk dokumentasi pre/wedding.";
+    display: block;
+    line-height: 1.8;
+    font-style: italic;
+    font-size: 13px;
+    font-weight: normal;
+    margin-top: 55px;
+    color: $general-font-color;
+}
+
+ion-view.contact-view ion-content button[ng-if="contact.facebook_url"]:before {
+    content: "Tampilan peta lokasi acara yang terintegrasi dengan Google Maps.";
+    display: block;
+    line-height: 1.8;
+    font-style: italic;
+    font-size: 13px;
+    font-weight: normal;
+    margin-top: 55px;
+    color: $general-font-color;
+}
+
+ion-view.contact-view ion-content button[ng-if="contact.twitter_url"]:before {
+    content: "Ceritakan kisah cinta & quotes pernikahanmu kepada tamu undangan.";
+    display: block;
+    line-height: 1.8;
+    font-style: italic;
+    font-size: 13px;
+    font-weight: normal;
+    margin-top: 55px;
+    color: $general-font-color;
+}
+
+ion-view.contact-view ion-content button[ng-if="contact.phone"] i {
+    left: 0;
+    right: 0;
+    height: 70px !important;
+    width: 70px !important;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    background-color: $button-text-color;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://image.flaticon.com/icons/png/512/23/23310.png) !important;
+    background-size: 50px!important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    color: $transparent-color !important;
+}
+
+ion-view.contact-view ion-content [ng-click="showMap();"] i {
+    left: 0;
+    right: 0;
+    height: 70px !important;
+    width: 70px !important;
+    text-align: center;
+    border-radius: 50%;
+    margin: 10px auto !important;
+    background-color: $button-text-color;
+    display: block !important;
+    background-image: url(https://image.flaticon.com/icons/png/512/3884/3884552.png) !important;
+    background-size: 50px!important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    color: $transparent-color !important;
+}
+
+ion-view.contact-view ion-content button[ng-if="contact.email"] i {
+    left: 0;
+    right: 0;
+    height: 70px !important;
+    width: 70px !important;
+    text-align: center;
+    border-radius: 50%;
+    margin: 10px auto !important;
+    background-color: $button-text-color;
+    display: block !important;
+    background-image: url(https://image.flaticon.com/icons/png/512/24/24432.png) !important;
+    background-size: 50px!important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    color: $transparent-color !important;
+}
+
+ion-view.contact-view ion-content button[ng-if="contact.website_url"] i {
+    left: 0;
+    right: 0;
+    height: 70px !important;
+    width: 70px !important;
+    text-align: center;
+    border-radius: 50%;
+    margin: 10px auto !important;
+    background-color: $button-text-color;
+    display: block !important;
+    background-image: url(https://image.flaticon.com/icons/png/512/957/957529.png) !important;
+    background-size: 50px!important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    color: $transparent-color !important;
+}
+
+ion-view.contact-view ion-content button[ng-if="contact.facebook_url"] i {
+    left: 0;
+    right: 0;
+    height: 70px !important;
+    width: 70px !important;
+    text-align: center;
+    border-radius: 50%;
+    margin: 10px auto !important;
+    background-color: $button-text-color;
+    display: block !important;
+    background-image: url(https://image.flaticon.com/icons/png/512/1298/1298184.png) !important;
+    background-size: 50px!important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    color: $transparent-color !important;
+}
+
+ion-view.contact-view ion-content button[ng-if="contact.twitter_url"] i {
+    left: 0;
+    right: 0;
+    height: 70px !important;
+    width: 70px !important;
+    text-align: center;
+    border-radius: 50%;
+    margin: 10px auto !important;
+    background-color: $button-text-color;
+    display: block !important;
+    background-image: url(https://image.flaticon.com/icons/png/512/1298/1298204.png) !important;
+    background-size: 50px!important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    color: $transparent-color !important;
+}
+
+
+/* END CONTACT */
+
+
+/* PADLOCK */
+
+ion-view.padlock-view ion-content {
+    background-image: $padlock-bg;
+    background-position: top !important;
+    /*background-size: 100% !important;*/
+    background-repeat: no-repeat;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100vw !important;
+    margin: 0 !important;
+    top: 0 !important;
+}
+
+ion-view.padlock-view ion-content .scroll {
+    height: 100% !important;
+    width: 100% !important;
+    position: absolute !important;
+    background-image: $bg-image-left;
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+ion-view.padlock-view ion-content .card.padlock {
+    margin-top: 60vh;
+    border-radius: 20px;
+    padding: 10px 10px 30px 10px;
+    background-color: $general-bg-color;
+    box-shadow: none;
+    background-image: $bg-image-top;
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+ion-view.padlock-view ion-content .card .item.item-custom {
+    border: 0;
+    background-color: $transparent-color;
+    color: $general-font-color;
+}
+
+ion-view.padlock-view ion-content .item.item-text-wrap.item-custom h2.ng-binding:before {
+    content: "Selamat Datang di";
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    color: $icon-color;
+}
+
+ion-view.padlock-view ion-content .item.item-text-wrap.item-custom h2.ng-binding:after {
+    content: "Undangdong";
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    margin: 5px 0;
+    font-style: italic;
+    color: $icon-color;
+}
+
+ion-view.padlock-view ion-content .item.item-text-wrap.item-custom h2.ng-binding {
+    font-size: 0;
+    text-align: center;
+    padding: 10px;
+}
+
+ion-view.padlock-view ion-content .item.item-body.item-custom.text-center i.icon.ion-locked {
+    font-size: 0 !important;
+}
+
+ion-view.padlock-view ion-content .item.item-body.item-custom.text-center {
+    height: 72px;
+    background-image: $logo-image;
+    background-size: contain;
+    border-radius: 50%;
+    width: 100px;
+    background-position: center top !important;
+    margin: 0 auto 10px auto;
+    background-repeat: no-repeat;
+    padding: 0 !important;
+}
+
+ion-view.padlock-view ion-content [ng-click="padlockLogout()"] {
+    width: 60% !important;
+    background-color: $transparent-color !important;
+    font-size: 0 !important;
+    color: $icon-color !important;
+    text-align: center !important;
+    border-radius: 30px !important;
+    margin-left: 20% !important;
+    padding: 10px 0 !important;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid $icon-color !important;
+}
+
+ion-view.padlock-view ion-content [ng-click="padlockLogout()"]:after {
+    content: "Keluar";
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+ion-view.padlock-view ion-content [ng-click="padlockLogin()"] {
+    width: 60% !important;
+    background-color: $transparent-color !important;
+    font-size: 0 !important;
+    color: $icon-color !important;
+    text-align: center !important;
+    border-radius: 30px !important;
+    margin-left: 20% !important;
+    padding: 10px 0 !important;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid $icon-color !important;
+}
+
+ion-view.padlock-view ion-content [ng-click="padlockLogin()"]:after {
+    content: "Mulai";
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+ion-view.padlock-view ion-content p[ng-if="!app_is_locked"]:after {
+    content: "Akun Anda belum disetujui.";
+    font-size: 14px;
+    font-style: italic;
+}
+
+ion-view.padlock-view ion-content p[ng-if="!app_is_locked"] {
+    text-align: center;
+    font-size: 0;
+}
+
+ion-view.padlock-view ion-content .item.item-icon-left.item-custom.ng-binding i {
+    display: none;
+}
+
+ion-view.padlock-view ion-content .item.item-icon-left.item-custom i {
+    display: none;
+}
+
+ion-view.padlock-view ion-content .item.item-icon-left.item-custom {
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+/* END PADLOCK */
+
+
+/* MY ACCOUNT */
+
+ion-modal-view.customer-view.customer-layout1 ion-content {
+    top: 0 !important;
+    position: absolute;
+    overflow: hidden;
+    background-image: url(https://ensiklopediakesaguan.com/wp-content/uploads/2021/06/pexels-monica-turlui-7137417-scaled.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* Login Page */
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_login_form"] {
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+    max-height: 100%;
+    padding-top: 44vh;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_login_form"] label.item.item-input.item-custom {
+    padding: 20px 0;
+    text-align: left;
+    display: block;
+    padding: 5px 15px 10px 15px !important;
+    background-color: $transparent-color !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_login_form"] .list {
+    width: 80%;
+    margin-left: 10%;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_login_form"] label.item.item-input.item-custom i.icon.ion-ios-person,
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_login_form"] label.item.item-input.item-custom i.icon.ion-locked {
+    font-size: 0 !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_login_form"] label.item.item-input.item-custom i.icon.ion-ios-person:after {
+    content: "Email";
+    font-size: 16px;
+    top: 0;
+    margin-top: 0;
+    text-align: center !important;
+    display: block;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_login_form"] label.item.item-input.item-custom i.icon.ion-locked:after {
+    content: "Kata Sandi";
+    font-size: 16px;
+    top: 0;
+    margin-top: 0;
+    text-align: center !important;
+    display: block;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_login_form"] label.item.item-input.item-custom:nth-child(2) {
+    padding: 20px 0;
+    text-align: left;
+    display: block;
+    padding-top: 0;
+    width: 98%;
+    background-color: $transparent-color;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_login_form"] label.item.item-input.item-custom input {
+    background-color: $second-bg-color;
+    padding: 15px;
+    border-radius: 30px;
+    height: 50px;
+    width: 100% !important;
+    text-align: center;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_login_form"] .list .item.item-custom {
+    border: 0 !important;
+    background-color: $button-text-color !important;
+    color: $general-font-color !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_login_form"] label.item.item-input.item-custom:nth-child(1) {
+    padding: 10px 0;
+    text-align: left;
+    display: block;
+    border-radius: 10px 10px 0 0 !important;
+    width: 98%;
+    background-color: $transparent-color;
+}
+
+
+/* placeholder */
+
+[ng-show="display_login_form"] .item.item-input.item-custom input::-webkit-input-placeholder {
+    color: $transparent-color !important;
+}
+
+[ng-show="display_login_form"] .item.item-input.item-custom input:-moz-placeholder {
+    /* Firefox 18- */
+    color: $transparent-color !important;
+}
+
+[ng-show="display_login_form"] .item.item-input.item-custom input::-moz-placeholder {
+    /* Firefox 19+ */
+    color: $transparent-color !important;
+}
+
+[ng-show="display_login_form"] .item.item-input.item-custom input:-ms-input-placeholder {
+    color: $transparent-color !important;
+}
+
+
+/* placeholder */
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_login_form"] .padding.text-right span {
+    color: $icon-color;
+    text-transform: capitalize;
+    font-size: 12px !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_login_form"] .padding.text-right {
+    width: 100%;
+    margin-left: 0;
+    padding-top: 0;
+    color: $button-text-color !important;
+    font-weight: normal !important;
+    letter-spacing: 1px;
+    padding-right: 0;
+    text-align: center;
+    font-size: 12px;
+    background-color: $transparent-color;
+    border-radius: 0 0 30px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_login_form"] .button.button-positive-custom {
+    background-color: $transparent-color;
+    color: $icon-color !important;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    width: 88%;
+    border-radius: 30px;
+    border: 2px solid $icon-color;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-click="displayAccountForm()"] span:after {
+    content: "Buat Akun di Sini";
+    font-size: 16px;
+    color: $icon-color;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-click="displayAccountForm()"]:before {
+    content: "Pengguna baru?";
+    font-size: 14px;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-click="displayAccountForm()"] span {
+    display: block;
+    font-size: 0;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-click="displayAccountForm()"] {
+    display: block;
+    font-size: 0;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_login_form"] div[ng-if="myAccount.settings.enable_registration"] {
+    padding-top: 20px;
+    background-color: $transparent-color;
+    padding-bottom: 0;
+    margin-top: 0;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_login_form"]>div {
+    background-color: $general-bg-color;
+    border-radius: 30px;
+    width: 96%;
+    margin-left: 2%;
+    padding: 6px 10px 25px 10px;
+    margin-bottom: 40px !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_login_form"]>div>div:nth-child(4) {
+    background-color: $general-bg-color;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_login_form"]>div>div:nth-child(1) {
+    order: 1;
+    margin-bottom: 0 !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_login_form"]>div>div:nth-child(1):before {
+    content: " ";
+    display: block;
+    height: 5px;
+    width: 50px;
+    background-color: $icon-color;
+    margin: 0 auto;
+    border-radius: 50px;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_login_form"]>div>div:nth-child(2) {
+    order: 2;
+    margin-bottom: 0;
+    border-radius: 30px 30px 0 0 !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 !important;
+    background-color: $transparent-color !important;
+    width: 100% !important;
+    margin-left: 0 !important;
+    padding: 0;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_login_form"]>div>div:nth-child(5) {
+    order: 5;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_login_form"]>div>div:nth-child(3) {
+    order: 4;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_login_form"]>div>div:nth-child(4) {
+    order: 3;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_login_form"]>div {
+    display: flex;
+    flex-direction: column;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_login_form"]>div>div:nth-child(4) {
+    background-color: $transparent-color !important;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 0;
+}
+
+
+/* Account Setting */
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_settings"] {
+    width: 90%;
+    height: 50vh !important;
+    margin-top: 45vh;
+    margin-left: 5%;
+    background-color: $transparent-color !important;
+    border-radius: 30px;
+    overflow: hidden;
+    max-height: 100vh;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_settings"]>div {
+    background-color: $general-bg-color;
+    border-radius: 30px;
+    padding: 5px 10px 20px 10px;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_settings"] .list .item-divider.item-divider-custom {
+    background-color: $transparent-color;
+    color: $general-font-color;
+    border: 0;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 2px dashed $general-bg-color;
+    padding-bottom: 15px;
+}
+
+
+/* Forgot Password */
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_forgot_password_form"] {
+    width: 100%;
+    background-color: $transparent-color;
+    overflow: scroll;
+    border-radius: 10px;
+    height: 100% !important;
+    padding-top: 60vh;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_forgot_password_form"] .padding.text-left {
+    padding-top: 0;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_forgot_password_form"]>div {
+    background-color: $general-bg-color;
+    border-radius: 30px;
+    width: 96%;
+    margin-left: 2%;
+    padding: 10px;
+    margin-bottom: 40px !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_forgot_password_form"] .padding.text-left:before {
+    content: " ";
+    display: block;
+    height: 5px;
+    width: 50px;
+    background-color: $icon-color;
+    margin: 0 auto 10px auto;
+    border-radius: 30px;
+    padding: 0;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_forgot_password_form"] .button.button-positive-custom {
+    background-color: $transparent-color!important;
+    margin-top: 0 !important;
+    width: 92%;
+    margin-left: 4%;
+    border: 2px solid $icon-color;
+    border-radius: 30px !important;
+    color: $icon-color;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_forgot_password_form"] .padding.text-left p:nth-child(1):after {
+    content: "Masukkan email yang terdaftar pada kolom di bawah ini, kami akan mengirimmu kata sandi baru";
+    font-size: 14px;
+    line-height: 1.8;
+    font-style: italic;
+    text-align: center;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_forgot_password_form"] .padding.text-left p {
+    font-size: 0;
+    text-align: center;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_forgot_password_form"] .padding.text-left p:nth-child(2) {
+    display: none;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_forgot_password_form"] label.item.item-input.item-custom i.icon.ion-ios-person,
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_forgot_password_form"] label.item.item-input.item-custom i.icon.ion-locked {
+    font-size: 0 !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_forgot_password_form"] label.item.item-input.item-custom i.icon.ion-ios-person:after {
+    content: "Email";
+    font-size: 16px;
+    top: 0;
+    margin-top: 0;
+    display: block;
+    text-align: center !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_forgot_password_form"] .list .item.item-custom {
+    border: 0;
+    background-color: $transparent-color;
+    color: $general-font-color;
+    display: block;
+    width: 100%;
+    padding: 10px;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_forgot_password_form"] label.item.item-input.item-custom input {
+    background-color: $second-bg-color;
+    padding: 15px;
+    border-radius: 30px;
+    height: 50px;
+    text-align: center;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_forgot_password_form"] div[ng-click="displayLoginForm()"] span {
+    height: 0;
+    font-size: 0;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_forgot_password_form"] div[ng-click="displayLoginForm()"] span:after {
+    content: "Masuk di Sini";
+    padding: 0;
+    display: block;
+    font-size: 16px;
+    color: $icon-color;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_forgot_password_form"] div[ng-click="displayLoginForm()"]:before {
+    content: "Sudah Punya Akun?";
+    display: block;
+    font-size: 14px;
+    color: $general-font-color;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_forgot_password_form"] div[ng-click="displayLoginForm()"] {
+    padding-bottom: 20px;
+    background-color: $transparent-color;
+    display: block;
+    font-size: 0;
+    margin-top: 20px;
+    color: $icon-color;
+}
+
+
+/* Regist */
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) {
+    padding: 0;
+    overflow: scroll;
+    height: 100% !important;
+    position: relative;
+    padding-top: 60vh;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .item.item-input.item-custom {
+    background-image: url(https://image.flaticon.com/icons/png/512/1828/1828911.png);
+    background-position: center right 13px;
+    background-repeat: no-repeat;
+    background-size: 18px;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) section.avatar.text-center.padding:before {
+    content: " ";
+    display: block;
+    height: 5px;
+    width: 50px;
+    background-color: $icon-color;
+    margin: 0 auto 10px auto;
+    border-radius: 50px;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3)>div {
+    background-color: $general-bg-color;
+    width: 96%;
+    margin-left: 2%;
+    padding-bottom: 25px;
+    border-radius: 30px !important;
+    margin-bottom: 30px !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .list {
+    background-color: $transparent-color;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 0;
+    margin: 0 15px
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3)>div>div:nth-child(3) {
+    background-color: $button-text-color;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+    margin: 0 15px;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .list .item.item-custom {
+    border: 0;
+    color: #000;
+    border-radius: 0;
+    background-color: transparent;
+    margin: 10px 0;
+    display: grid;
+    flex-direction: column;
+    padding: 0;
+}
+
+
+/* Civility my account */
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .list .item.item-custom.item-select select {
+    width: 100%;
+    max-width: 100%;
+    text-align: right;
+    min-height: 45px !important;
+    max-height: 45px;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .list label.item.item-input.item-custom.item-select {
+    display: flex !important;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column !important;
+    height: 45px;
+    background-color: #f6f6f6 !important;
+    border-radius: 10px !important;
+    padding: 10px !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .list label.item.item-input.item-custom.item-select select {
+    display: block;
+    width: 100%;
+    min-width: 100%;
+    height: 45px;
+    text-align: right;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .item.item-input.item-custom .input-label.ng-binding,
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) label.item.item-input.item-custom .input-label {
+    display: block;
+    width: 100%;
+    text-align: left;
+    min-width: 100%;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .item.item-input.item-custom input {
+    max-width: 100%;
+    text-align: left;
+    min-height: 45px !important;
+    max-height: 45px;
+    background-color: #f6f6f6;
+    background-image: url(https://halloteknisi.com/thumbnails/ikon/pen.jpg);
+    background-position: center right 13px;
+    background-repeat: no-repeat;
+    background-size: 18px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) label.checkbox-custom h2 span,
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .checkbox-custom .item-content.disable-pointer-events span {
+    color: $icon-color !important;
+    padding-left: 0;
+    font-size: 0;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .checkbox-custom {
+    background-color: $transparent-color !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) label.checkbox-custom h2>span:nth-child(1):after {
+    content: "Saya Setuju dengan Kebijakan Privasi";
+    font-size: 11px;
+    color: $icon-color;
+    padding-left: 0 !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) label.checkbox-custom .item-content.disable-pointer-events>span.ng-binding:after {
+    content: "Pemberitahuan Terbaru";
+    font-size: 11px;
+    color: $icon-color;
+    padding-left: 0 !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .button.button-positive-custom {
+    border: 0;
+    background-color: $icon-color;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: $button-text-color;
+    font-weight: bold;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) div[ng-click="displayLoginForm()"] span {
+    height: 0;
+    font-size: 0;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) div[ng-click="displayLoginForm()"] span:after {
+    content: "Masuk di Sini";
+    font-size: 16px;
+    padding: 0;
+    display: block;
+    color: $icon-color;
+    text-align: center;
+    margin-top: -10px;
+    font-weight: bold;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) div[ng-click="displayLoginForm()"]:before {
+    content: "Sudah Punya Akun?";
+    display: block;
+    font-size: 14px;
+    text-align: center;
+    color: $general-font-color;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) div[ng-click="displayLoginForm()"] {
+    padding-bottom: 0 !important;
+    background-color: $transparent-color;
+    padding-top: 0 !important;
+    display: block;
+    font-size: 0 !important;
+    margin-top: 0;
+    color: $general-font-color;
+    text-align: center !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) span.bold.positive.positive-custom.ng-binding {
+    color: $button-text-color;
+    font-weight: normal;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .checkbox-custom .checkbox input:before,
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .checkbox-custom .checkbox .checkbox-icon:before {
+    border-color: $icon-color;
+    height: 20px !important;
+    width: 20px !important;
+    border-radius: 5px !important;
+    background-color: $transparent-color;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .padding.text-right {
+    padding: 0;
+    display: block !important;
+    text-align: left;
+    font-size: 11px;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) [ng-click="displayLoginForm()"] {
+    text-align: left;
+    font-size: 0 !important;
+    padding: 0;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) [ng-click="logout()"] {
+    background-color: $icon-color;
+    width: 35%;
+    padding: 10px 35px;
+    border-radius: 10px 0 0 10px;
+    background-size: 28px;
+    border: 0 !important;
+    display: block;
+    margin-left: 65%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+[ng-click="customer.change_password = !customer.change_password"] {
+    background-color: $transparent-color !important;
+    color: $icon-color !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .checkbox-square .checkbox-icon:after {
+    border-width: 2px;
+    top: 20%;
+    left: 30%;
+    width: 11px;
+    height: 7px;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .list label.item-checkbox {
+    padding: 10px 48px !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .list label.item.item-input.item-custom:nth-child(2) .input-label.ng-binding {
+    font-size: 0 !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .list label.item.item-custom:nth-child(2) .input-label.ng-binding:after {
+    content: "Address *";
+    font-size: 14px;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .list .iti-mobile-custom .iti {
+    width: 100%;
+    padding-right: 0;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .list .item.item-input.item-custom.iti-mobile-custom input#customer_mobile {
+    padding-left: 52px !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .item.item-input.item-custom input::-webkit-input-placeholder {
+    color: transparent;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .item.item-input.item-custom input :-moz-placeholder {
+    /* Firefox 18- */
+    color: transparent;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .item.item-input.item-custom input ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: transparent;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .item.item-input.item-custom input :-ms-input-placeholder {
+    color: transparent;
+}
+
+
+/* account setting */
+
+ion-modal-view.customer-view.customer-layout1 [ng-show="display_settings"] .list .item.item-custom {
+    border: 0;
+    background-color: $transparent-color;
+    border-radius: 5px;
+}
+
+ion-modal-view.customer-view.customer-layout1 [ng-show="display_settings"] .item-checkbox .checkbox {
+    left: 0 !important;
+    padding-left: 0 !important;
+}
+
+
+/* privacy policy */
+
+ion-modal-view.privacy-policy-view {
+    background-image: none !important;
+}
+
+ion-modal-view.privacy-policy-view ion-content {
+    background-color: $general-bg-color !important;
+    padding-top: 70px !important;
+}
+
+ion-modal-view.privacy-policy-view .item-text-custom {
+    border: 0;
+    background: $transparent-color;
+    padding-top: 75px;
+}
+
+
+/* After User login */
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) [ng-if="customer.is_logged_in"] [ng-click="showPrivacyPolicy()"] {
+    display: none;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) [ng-click="requestGdprToken()"] {
+    display: none;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) div[ng-class="{'padding': card_design}"]>button[ng-click="registerOrSave()"] {
+    background-color: $transparent-color!important;
+    margin-top: 0 !important;
+    width: 92%;
+    margin-left: 4%;
+    border: 2px solid $icon-color;
+    border-radius: 30px !important;
+    color: $icon-color;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) div[ng-class="{'padding': card_design}"] {
+    width: 92% !important;
+    left: 0 !important;
+    right: 0 !important;
+    border: 0 !important;
+    margin: 0 !important;
+    background-color: $transparent-color !important;
+    margin-left: 4% !important;
+    border-radius: 0 0 10px 10px;
+    position: relative;
+    display: block;
+    padding-bottom: 10px;
+}
+
+
+/* END MY ACCOUNT */
+
+
+/* MODUL VIDEO*/
+
+ion-view.video-view ion-content {
+    top: 0 !important;
+    padding-top: 60px !important;
+    background-image: $bg-image-top;
+    background-position: left top !important;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: $general-bg-color!important;
+}
+
+ion-view.video-view .card {
+    padding: 0;
+    box-shadow: none;
+    border-radius: 10px;
+}
+
+ion-view.video-view .item.item-text-wrap.item-custom p {
+    font-size: 14px;
+    line-height: 1.8;
+    font-style: italic;
+}
+
+ion-view.video-view .sprite {
+    background-size: 13%;
+    background-position: 95% 90%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-image: url(https://image.flaticon.com/icons/png/512/3308/3308709.png);
+    background-repeat: no-repeat;
+    background-color: $transparent-color;
+}
+
+[on-item-clicked="showGallery(object)"] .tooltip.tooltip-custom {
+    color: $button-text-color;
+    background-color: $second-bg-color;
+    width: 96% !important;
+    margin-left: 2%;
+    right: 0;
+    left: 0;
+    height: 85vh;
+    border-radius: 10px;
+    background-image: $bg-image-top;
+    background-position: left top !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+}
+
+[on-item-clicked="showGallery(object)"] .tooltip.tooltip-custom i {
+    color: $transparent-color;
+}
+
+[on-item-clicked="showGallery(object)"] .tooltip ul {
+    padding-top: 10px;
+}
+
+[on-item-clicked="showGallery(object)"] .tooltip ul li {
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 1.8;
+    display: inline-flex;
+    width: 46%;
+    text-align: center;
+    background-color: $icon-color;
+    margin: 5px 2%;
+    padding: 0;
+    left: 0 !important;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    flex-direction: row;
+}
+
+
+/*AKHIR VIDEO*/
+
+
+/*SOCIAL WALL*/
+
+ion-view.module-fanwall.fanwall-list.fanwall-list-l1 ion-content {
+    height: 100vh !important;
+    overflow: scroll;
+    padding-top: 60px !important;
+    background-image: $bg-image-top;
+    background-position: left top !important;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: $general-bg-color!important;
+    top: 0 !important;
+    margin-top: 0 !important;
+}
+
+ion-view.module-fanwall.fanwall-list.fanwall-list-l1 .bar-subheader {
+    bottom: 0 !important;
+    top: 90vh !important;
+    width: 90%;
+    margin: 10px 5%;
+    border-radius: 30px !important;
+    background-color: $general-bg-color!important;
+    padding: 0 !important;
+    background-image: none !important;
+}
+
+ion-view.module-fanwall.fanwall-list.fanwall-list-l1 .button-bar>.button.button-positive-custom {
+    border: 0;
+    background-color: $transparent-color !important;
+    color: $button-text-color !important;
+    font-size: 0 !important;
+}
+
+button.button.button-custom.button-positive.button-positive-custom.ng-binding.icon-custom.activated {
+    background-color: $transparent-color !important;
+}
+
+ion-view.module-fanwall.fanwall-list.fanwall-list-l1 button.button.button-custom.button-positive.button-positive-custom.ng-binding.fw-icon-selected.icon-active-custom {
+    color: red !important;
+    background-color: $transparent-color !important;
+}
+
+ion-view.module-fanwall.fanwall-list.fanwall-list-l1 .module-fanwall.fanwall-list-l1 .bar-subheader .button-bar>.button.button-positive-custom.activated {
+    background-color: $transparent-color !important;
+}
+
+ion-view.module-fanwall.fanwall-list.fanwall-list-l1 ion-item.item-custom.item {
+    width: 96%;
+    margin-left: 2%;
+    border-radius: 20px;
+}
+
+ion-view.module-fanwall.fanwall-list.fanwall-list-l1 .item .post-body~.post-actions {
+    border-top: 1px solid $icon-color;
+    margin-top: 5px;
+}
+
+ion-view.module-fanwall.fanwall-list.fanwall-list-l1 .item-avatar.post-author h2 {
+    text-transform: capitalize;
+}
+
+ion-view.module-fanwall.fanwall-list.fanwall-list-l1 .item .post-body p {
+    overflow: initial;
+    text-overflow: initial;
+    white-space: initial;
+    font-size: 14px !important;
+    line-height: 1.8;
+    font-style: italic;
+}
+
+ion-view.module-fanwall.fanwall-list.fanwall-list-l1 .post-body h2.ng-binding {
+    font-size: 18px;
+    font-style: italic;
+}
+
+ion-view.module-fanwall.fanwall-list.fanwall-list-l1 #baguetteBox-overlay .full-image img {
+    border-radius: 10px;
+}
+
+ion-view.module-fanwall.fanwall-list.fanwall-list-l1 div#google-maps {
+    border-radius: 20px 20px 0 0;
+    padding-top: 29px !important;
+    background-color: $transparent-color !important;
+}
+
+ion-view.module-fanwall.fanwall-list.fanwall-list-l1 .fanwall-gallery {
+    width: 96%;
+    margin-left: 2%;
+}
+
+ion-view.module-fanwall.fanwall-list.fanwall-list-l1 .fanwall-gallery .gallery-item {
+    border-radius: 10px;
+}
+
+ion-view.module-fanwall.fanwall-list.fanwall-list-l1 fanwall-post-item:nth-last-child(1):after {
+    content: " ";
+    display: block;
+    height: 100px;
+}
+
+ion-view.module-fanwall.fanwall-list.fanwall-list-l1 ion-list.list-posts.disable-user-behavior .list ion-item {
+    background-color: $second-bg-color;
+    text-transform: capitalize;
+    background-image: $bg-image-left;
+    background-position: right top !important;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+ion-view.module-fanwall.fanwall-list.fanwall-list-l1 ion-list.list-posts.disable-user-behavior .list ion-item>h2.ng-binding {
+    font-size: 0 !important;
+    font-style: italic;
+    font-weight: bold;
+    color: $icon-color;
+}
+
+ion-view.module-fanwall.fanwall-list.fanwall-list-l1 ion-list.list-posts.disable-user-behavior .list ion-item>h2.ng-binding:after {
+    content: "Unggahan Saya";
+    font-size: 18px;
+    color: $icon-color;
+}
+
+ion-view.module-fanwall.fanwall-list.fanwall-list-l1 ion-list.list-posts.disable-user-behavior .list ion-item span.pull-right {
+    font-size: 12px !important;
+    color: $icon-color !important;
+}
+
+ion-view.module-fanwall.fanwall-list.fanwall-list-l1 ion-content.fanwall-profile {
+    padding-top: 0 !important;
+}
+
+ion-view.module-fanwall.fanwall-list.fanwall-list-l1 ion-content.fanwall-profile ion-item.item-divider.item-divider-custom.section-title.item {
+    background-color: $transparent-color !important;
+}
+
+ion-view.module-fanwall.fanwall-list.fanwall-list-l1 .customer-actions button {
+    background-color: $icon-color !important;
+    border: 0;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+ion-view.module-fanwall.fanwall-list.fanwall-list-l1 .customer-actions button i {
+    display: none;
+}
+
+ion-view.module-fanwall.fanwall-list.fanwall-list-l1 .customer-fullname.ng-binding {
+    color: $icon-color;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+/*BUTON X PREVIEW PHOTO SOCIAL WALL*/
+
+#baguetteBox-overlay .full-image img {
+    box-shadow: none !important;
+    border-radius: 10px;
+}
+
+.baguetteBox-button#close-button svg {
+    display: none;
+}
+
+.baguetteBox-button#close-button {
+    top: 20px;
+    right: 45% !important;
+    width: 40px !important;
+    height: 40px;
+    margin: 0 auto !important;
+    display: flex;
+    background-image: $close-button-icon;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.ion-camera:before,
+.ion-paper-airplane:before,
+.ion-sb-like:before,
+.ion-sb-comment:before,
+.ion-sb-share-outline:before,
+.ion-more:before,
+.ion-sb-location-on::before {
+    color: $icon-color;
+}
+
+
+/* NEW POST */
+
+ion-modal-view.module-fanwall.fanwall-new.fanwall-new-l1 ion-content {
+    background-color: $general-bg-color!important;
+    top: 0 !important;
+    padding-top: 60px;
+    background-image: $bg-image-top;
+    background-position: left top !important;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: $general-bg-color!important;
+    bottom: 0 !important;
+}
+
+ion-modal-view.module-fanwall.fanwall-new.fanwall-new-l1 ion-content .list {
+    background-color: $transparent-color;
+    border-radius: 20px !important;
+    padding: 5px;
+    width: 100%;
+    margin-left: 0%;
+    padding-bottom: 70px;
+    background: $blur-bg-color;
+    backdrop-filter: blur( 4px);
+    -webkit-backdrop-filter: blur( 4px);
+    border: 0;
+}
+
+ion-modal-view.module-fanwall.fanwall-new.fanwall-new-l1 ion-content .list ion-item.item-custom.item-avatar.post-author.item {
+    background: $transparent-color;
+    border: 0 !important;
+}
+
+ion-modal-view.module-fanwall.fanwall-new.fanwall-new-l1 p.post-location {
+    white-space: normal;
+    font-style: italic;
+    font-size: 11px !important;
+    color: $icon-color !important;
+}
+
+ion-modal-view.module-fanwall.fanwall-new.fanwall-new-l1 .new-post-items .item textarea {
+    line-height: 1.8;
+    padding: 10px;
+    border-radius: 20px;
+    background: rgba( 255, 255, 255, 0.01);
+    backdrop-filter: blur( 4px);
+    -webkit-backdrop-filter: blur( 4px);
+    border: 0;
+    background: linear-gradient(145deg, #f1d1d3, #fbd4d2);
+}
+
+ion-modal-view.module-fanwall.fanwall-new.fanwall-new-l1 ion-item.item-icon-left.item-custom.upload-action.item p:after {
+    content: "Unggah Foto";
+    font-size: 14px;
+    color: $icon-color;
+}
+
+ion-modal-view.module-fanwall.fanwall-new.fanwall-new-l1 ion-item.item-icon-left.item-custom.upload-action.item p {
+    font-size: 0;
+}
+
+ion-modal-view.module-fanwall.fanwall-new.fanwall-new-l1 i.icon.ion-image.add-image-icon {
+    display: none;
+}
+
+ion-modal-view.module-fanwall.fanwall-new.fanwall-new-l1 ion-item.item-icon-left.item-custom.upload-action.item .col-10 {
+    font-size: 0 !important;
+    background-image: $img-icon;
+    background-position: left top !important;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: $transparent-color;
+}
+
+ion-modal-view.module-fanwall.fanwall-new.fanwall-new-l1 button[ng-click="sendPost();"] {
+    background-color: $icon-color !important;
+    border: 0 !important;
+    bottom: 20px !important;
+    width: 50% !important;
+    border-radius: 0 30px 30px 0;
+}
+
+ion-modal-view.module-fanwall.fanwall-new.fanwall-new-l1 ion-item.item-image.item-custom.item {
+    background-color: $transparent-color;
+}
+
+ion-modal-view.module-fanwall.fanwall-new.fanwall-new-l1 ion-item.item-image.item-custom.item img {
+    width: 100%;
+    object-fit: cover;
+    height: 160px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border-radius: 10px;
+}
+
+ion-modal-view.module-fanwall.fanwall-new.fanwall-new-l1 fanwall-pictures ion-item.item-image.item-custom.item {
+    padding: 0 !important;
+    margin: 0;
+    margin-top: 0;
+    padding-top: 15px !important;
+    background-color: $button-text-color !important;
+}
+
+.module-fanwall.fanwall-new-l1 .remove-image-list,
+.module-fanwall.fanwall-new-l1 .remove-image-card {
+    position: absolute;
+    right: 6px;
+    top: 45px;
+}
+
+.module-fanwall.fanwall-new-l1 .remove-image-list i.icon,
+.module-fanwall.fanwall-new-l1 .remove-image-card i.icon {
+    font-size: 26px;
+    background-color: $general-bg-color;
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+}
+
+ion-modal-view.module-fanwall.fanwall-new.fanwall-new-l1 i.item-note.ion-plus.arrow-center {
+    display: none;
+}
+
+ion-modal-view.module-fanwall.fanwall-new.fanwall-new-l1 ion-item.item-custom.item-avatar.post-author.item,
+ion-modal-view.module-fanwall.fanwall-new.fanwall-new-l1 ion-item.item-icon-left.item-custom.upload-action.item {
+    margin: 0 !important;
+    border: 0 !important;
+    background: $transparent-color;
+}
+
+ion-modal-view.module-fanwall.fanwall-new.fanwall-new-l1 ion-item.item-input.item-custom.item {
+    padding: 10px !important;
+    background: $transparent-color;
+    border: 0 !important;
+    margin: 0 !important;
+}
+
+ion-modal-view.module-fanwall.fanwall-new.fanwall-new-l1 ion-item.item-custom.item-avatar.post-author.item {
+    border-radius: 20px 20px 0 0;
+    background: $blur-bg-color;
+    border: 0 !important;
+}
+
+ion-modal-view.module-fanwall.fanwall-new.fanwall-new-l1 ion-item.item-icon-left.item-custom.upload-action.item {
+    background: $transparent-color;
+    border: 0 !important;
+}
+
+
+/*EDIT COMMENT*/
+
+ion-modal-view.module-fanwall.fanwall-new.fanwall-new-l1 ion-item.item-icon-left.item-custom.item {
+    background-color: $transparent-color;
+    margin: 0 !important;
+    border-radius: 0 0 20px 20px;
+}
+
+ion-modal-view.module-fanwall.fanwall-new.fanwall-new-l1 ion-item.item-icon-left.item-custom.item .col-10 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 30px;
+    border-radius: 50px;
+    font-size: 0 !important;
+    background-image: $img-icon;
+    background-position: left top !important;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: $transparent-color;
+}
+
+ion-modal-view.module-fanwall.fanwall-new.fanwall-new-l1 ion-item.item-icon-left.item-custom.item .col-10 i {
+    display: none;
+}
+
+ion-modal-view.module-fanwall.fanwall-new.fanwall-new-l1 .button.button-assertive-custom {
+    border: 0;
+    background-color: $icon-color;
+    color: $button-text-color;
+    width: 50%;
+    bottom: 20px;
+    border-radius: 0 30px 30px 0;
+}
+
+
+/* WRITE COMMENT FIELDS*/
+
+ion-modal-view.module-fanwall.fanwall-comment.fanwall-comment-l1 ion-footer-bar.comment-footer {
+    border-top-width: 1px;
+    border-bottom-width: 0;
+    background-position: top;
+    height: 100px;
+    width: 96%;
+    margin-left: 2%;
+    bottom: 10px;
+    background: $blur-bg-color !important;
+    box-shadow: 0 8px 32px 0 rgb(31 38 135 / 37%);
+    backdrop-filter: blur( 4px);
+    -webkit-backdrop-filter: blur( 4px);
+    border-radius: 10px;
+    border: 1px solid $border-transparent;
+}
+
+ion-modal-view.module-fanwall.fanwall-comment.fanwall-comment-l1 ion-footer-bar.comment-footer textarea {
+    resize: none;
+    margin: 0;
+    height: 90px;
+    width: 100%;
+    padding: 8px 33px 7px 16px;
+    border-radius: 10px;
+    line-height: 1.5;
+}
+
+ion-modal-view.module-fanwall.fanwall-comment.fanwall-comment-l1 ion-footer-bar.comment-footer .picture-badge {
+    font-size: 10px;
+    padding: 0 6px 0 5px;
+    margin-left: -12px;
+}
+
+
+/*WRITE COMMENT FIELDS*/
+
+
+/* NEW POST */
+
+
+/*SOCIAL WALL COMMENT*/
+
+ion-modal-view.module-fanwall.fanwall-comment.fanwall-comment-l1 ion-content {
+    background-color: $general-bg-color!important;
+    background-image: $bg-image-left;
+    background-position: right top !important;
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 0 !important;
+    padding-top: 60px;
+}
+
+ion-modal-view.module-fanwall.fanwall-comment.fanwall-comment-l1 fanwall-comment-item:nth-of-type(1n+1) ion-item {
+    border: 0;
+    background-color: $second-bg-color;
+    color: $general-font-color;
+    width: 90%;
+    margin: 5px 2% 5px 8%;
+    border-radius: 20px;
+    background-image: $bg-image-bottom;
+    background-position: right top !important;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background: $blur-bg-color;
+    backdrop-filter: blur( 4px);
+    -webkit-backdrop-filter: blur( 4px);
+    border-radius: 10px;
+    border: 1px solid $border-transparent;
+}
+
+ion-modal-view.module-fanwall.fanwall-comment.fanwall-comment-l1 fanwall-comment-item:nth-last-child(1) ion-item {
+    margin-bottom: 150px !important;
+}
+
+ion-modal-view.module-fanwall.fanwall-comment.fanwall-comment-l1 fanwall-comment-item:nth-of-type(2n+2) ion-item {
+    background-color: $second-bg-color !important;
+    width: 90% !important;
+    margin: 5px 8% 5px 2% !important;
+    border-radius: 20px;
+    background-image: $bg-image-left;
+    background-position: left bottom !important;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+/*NOONE COMMENT*/
+
+ion-item.item-custom.text-center.no-post.item.ng-binding {
+    border-radius: 20px;
+    width: 90%;
+    margin: 50px 5%;
+    background: $blur-bg-color;
+    backdrop-filter: blur( 4px);
+    -webkit-backdrop-filter: blur( 4px);
+    border-radius: 10px;
+    border: 0;
+}
+
+
+/*SOCIAL WALL COMMENT*/
+
+
+/*END SOCIAL WALL
+
+
+/*DISCOUNT*/
+
+ion-view[state="discount-list"] ion-content {
+    top: 0 !important;
+    padding-top: 60px !important;
+    background-image: $bg-image-top;
+    background-position: left top !important;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: $general-bg-color!important;
+}
+
+ion-view[state="discount-list"] .list .item.item-custom {
+    border: 0;
+    background-color: $second-bg-color;
+    color: $general-font-color;
+    margin: 15px 2%;
+    border-radius: 15px;
+    width: 96%;
+    padding: 0 0 25px 0;
+}
+
+ion-view[state="discount-list"] .list .item.item-custom .item-image img {
+    border-radius: 10px 10px 0 0;
+}
+
+ion-view[state="discount-list"] .list .item.item-custom h2.ng-binding {
+    padding: 10px 0;
+    background-color: $icon-color;
+    width: 70%;
+    border-radius: 0 30px 30px 0;
+    padding-left: 10px;
+    color: $button-text-color;
+    font-size: 18px;
+    font-style: italic;
+}
+
+ion-view[state="discount-list"] .list .item.item-custom p.ng-binding {
+    padding: 10px;
+    height: 65px;
+    line-height: 1.8;
+    font-style: italic;
+}
+
+ion-view[state="discount-list"] .list .item.item-custom p.ng-binding p {
+    white-space: normal;
+    font-size: 14px;
+}
+
+
+/*DISCOUNT VIEW*/
+
+ion-view[state="discount-view"] ion-content {
+    top: 0 !important;
+    padding-top: 60px !important;
+    background-color: $general-bg-color!important;
+    background-image: $bg-image-left;
+    background-position: right top !important;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+ion-view[state="discount-view"] ion-content .list {
+    width: 96%;
+    margin-left: 2%;
+    border-radius: 20px !important;
+    padding: 0;
+    background-color: $second-bg-color;
+    background-image: $bg-image-left;
+    background-position: right top !important;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background: $blur-bg-color;
+    box-shadow: 0 8px 32px 0 rgb(31 38 135 / 37%);
+    backdrop-filter: blur( 4px);
+    -webkit-backdrop-filter: blur( 4px);
+    border-radius: 10px;
+    border: 1px solid $border-transparent;
+    display: flex;
+    flex-direction: column;
+}
+
+ion-view[state="discount-view"] .list .item-divider.item-divider-custom,
+ion-view[state="discount-view"] .item.item-image.item-custom,
+ion-view[state="discount-view"] .item.item-icon-left.item-custom {
+    background-color: $transparent-color;
+    color: $button-text-color;
+    border: 0;
+    padding: 20px 0;
+}
+
+ion-view[state="discount-view"] i.icon.ion-ios-information-outline,
+ion-view[state="discount-view"] i.icon.ion-ios-pricetag-outline,
+ion-view[state="discount-view"] i.icon.ion-android-warning,
+ion-view[state="discount-view"] i.icon.ion-ios-calendar-outline {
+    display: none;
+}
+
+ion-view[state="discount-view"] div[ng-if="promotion.title"] {
+    order: 2;
+    background-color: $icon-color !important;
+    margin: 10px 0;
+    padding: 10px !important;
+    font-size: 18px !important;
+    font-style: italic;
+    color: $button-text-color !important;
+    width: 60%;
+    border-radius: 0 30px 30px 0;
+}
+
+ion-view[state="discount-view"] div[ng-if="promotion.title"] h2.ng-binding {
+    font-size: 18px;
+    color: $button-text-color !important;
+}
+
+ion-view[state="discount-view"] div[ng-if="!!promotion.picture.length"] {
+    order: 1;
+    padding: 0 !important;
+    border-radius: 20px 20px 0 0;
+}
+
+ion-view[state="discount-view"] div[ng-click="confirmBeforeUse();"] {
+    order: 3;
+    padding: 10px !important;
+    background-color: $transparent-color !important;
+}
+
+ion-view[state="discount-view"] div[ng-click="confirmBeforeUse();"] p {
+    color: $general-bg-color !important;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+ion-view[state="discount-view"] div[ng-if="promotion.description_html"] {
+    order: 4;
+    padding: 10px !important;
+    background-color: $transparent-color !important;
+}
+
+ion-view[state="discount-view"] div[ng-if="promotion.description_html"] p {
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+ion-view[state="discount-view"] div[ng-if="promotion.conditions"] {
+    order: 5;
+    padding: 30px 10px !important;
+    background-color: $transparent-color !important;
+}
+
+ion-view[state="discount-view"] div[ng-if="promotion.conditions"] p.ng-binding {
+    animation: kedip 1.5s infinite;
+    font-size: 14px;
+    font-style: italic;
+}
+
+@keyframes kedip {
+    0% {
+        color: $general-bg-color;
+    }
+    47% {
+        color: $icon-color;
+    }
+    62% {
+        color: $transparent-color;
+    }
+    97% {
+        color: $transparent-color;
+    }
+    100% {
+        color: $icon-color;
+    }
+}
+
+ion-view[state="discount-view"] div[ng-if="promotion.end_at"] {
+    order: 6;
+    padding: 5px 0 0 0 !important;
+    text-align: center;
+    width: 60%;
+    border-radius: 30px 30px 0 0;
+    margin-left: 20%;
+    background-color: $general-bg-color !important;
+}
+
+ion-view[state="discount-view"] div[ng-if="promotion.end_at"] p {
+    font-size: 14px;
+    font-style: italic;
+    color: $button-text-color !important;
+}
+
+ion-view[state="discount-view"] ion-content:after {
+    content: " ";
+    display: block;
+    height: 150px;
+}
+
+
+/*DISCOUNT VIEW*/
+
+
+/* END DISCOUNT*/
+
+
+/* END PUSH NOTIFICATION */
+
+ion-view.module-push.push-list.push-list-l1 ion-content {
+    top: 0 !important;
+    padding-top: 70px !important;
+    background-color: $general-bg-color !important;
+    background-image: $bg-image-left;
+    background-position: right top !important;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+ion-view.module-push.push-list.push-list-l1 .list .item.item-custom {
+    border: 0;
+    background-color: $second-bg-color;
+    color: $general-font-color;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-image: $bg-image-bottom;
+    background-position: right top !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+ion-view.module-push.push-list.push-list-l1 ion-item.item-custom.item.item-avatar>div {
+    order: 1;
+}
+
+ion-view.module-push.push-list.push-list-l1 ion-item.item-custom.item.item-avatar>p {
+    order: 3;
+    padding: 0 0 0 10px;
+    font-size: 13px;
+    line-height: 1.8;
+    font-style: italic;
+    border-left: 3px solid $icon-color;
+    margin: 10px;
+}
+
+ion-view.module-push.push-list.push-list-l1 ion-item.item-custom.item.item-avatar>h2 {
+    order: 2;
+    padding: 0 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+ion-view.module-push.push-list.push-list-l1 ion-item.item-custom.item.item-avatar>img {
+    order: 2;
+    top: 5px;
+    left: 5px;
+    max-width: 60px;
+    max-height: 60px;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+ion-view.module-push.push-list.push-list-l1 p.padding.text-right {
+    width: 80%;
+    background-color: $icon-color !important;
+    margin-top: -35px;
+    z-index: 999;
+    position: relative;
+    margin-left: 10%;
+    border-radius: 10px;
+    padding: 15px 0;
+    text-align: center;
+    color: $button-text-color;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ion-view.module-push.push-list.push-list-l1 p.padding.text-right span {
+    text-align: center !important;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    border-radius: 30px 0 0 30px;
+    font-style: italic;
+}
+
+ion-view.module-push.push-list.push-list-l1 p.padding.text-right i.ion-ios-calendar-outline {
+    display: none;
+}
+
+ion-view.module-push.push-list.push-list-l1 p.padding.text-right span[ng-if="hasItem(item)"] {
+    width: 30%;
+    background-color: $general-bg-color;
+    font-size: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    top: 0 !important;
+    padding: 5px !important;
+}
+
+ion-view.module-push.push-list.push-list-l1 p.padding.text-right span[ng-if="hasItem(item)"] i {
+    display: none;
+}
+
+ion-view.module-push.push-list.push-list-l1 p.padding.text-right span[ng-if="hasItem(item)"] span {
+    font-size: 0;
+}
+
+ion-view.module-push.push-list.push-list-l1 p.padding.text-right span[ng-if="hasItem(item)"] span:after {
+    content: "Detail";
+    font-size: 14px;
+    color: $icon-color;
+}
+
+
+/* END PUSH NOTIFICATION */
+
+
+/* SOUCE CODE */
+
+ion-view.sourcecode-view ion-content.sourcecode-view {
+    top: 0 !important;
+    background-color: $general-bg-color!important;
+    background-image: $bg-image-left;
+    background-position: right top !important;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+/* END SOUCE CODE */
+
+
+/* CUSTOM PAGE */
+
+ion-view.module-cms.cms-l1 ion-content {
+    top: 0 !important;
+    background-color: $general-bg-color !important;
+    background-image: $bg-image-left;
+    background-position: right top !important;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 15px;
+}
+
+ion-view.module-cms.cms-l1 ion-content .card.no-shadow {
+    box-shadow: none;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+ion-view.module-cms.cms-l1 ion-content .card {
+    padding: 0;
+    box-shadow: none;
+    background-color: #ecf0f6 !important;
+    border-radius: 10px;
+}
+
+ion-view.module-cms.cms-l1 ion-content .card .item.item-custom {
+    border: 0;
+    background-color: transparent;
+    color: #000;
+}
+
+
+/*SOURCE CODE*/
+
+ion-view.module-cms.cms-l1 ion-content div[ng-switch-when="source"] {
+    margin-bottom: 20px !important;
+}
+
+
+/*IMAGE*/
+
+ion-view.module-cms.cms-l1 ion-content [ng-switch-when="image"] .item.item-custom.padding.description.ng-binding {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+/*COVER*/
+
+ion-view.module-cms.cms-l1 ion-content div[ng-switch-when="cover"] {
+    height: 200px !important;
+    object-fit: cover !important;
+    object-position: top !important;
+    /*margin-top: 20px !important;*/
+}
+
+ion-view.module-cms.cms-l1 ion-content div[ng-switch-when="cover"].card.no-shadow img {
+    height: 200px !important;
+    object-fit: cover;
+    width: 96%;
+    border-radius: 10px;
+    margin: 0 2%;
+}
+
+
+/*BUTTON*/
+
+ion-view.module-cms.cms-l1 ion-content div[ng-switch-when="button"] {
+    margin-top: -25px;
+    background-color: #ecf0f6 !important;
+    position: relative;
+    width: 60%;
+    margin-left: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+ion-view.module-cms.cms-l1 ion-content div[ng-switch-when="button"] i.icon.ion-ios-world-outline {
+    display: none;
+}
+
+ion-view.module-cms.cms-l1 ion-content div[ng-switch-when="button"] .item.item-text-wrap.item-icon-left.item-custom.ng-binding {
+    padding: 15px;
+}
+
+
+/*TEXT*/
+
+ion-view.module-cms.cms-l1 ion-content div[ng-switch-when="text"] .item.item-text-wrap.item-custom.sb-cms-text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+ion-view.module-cms.cms-l1 ion-content div[ng-repeat="block in blocks"]:nth-last-child(1) {
+    padding-bottom: 100px !important;
+}
+
+
+/* END CUSTOM PAGE */

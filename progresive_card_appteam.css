@@ -1,0 +1,176 @@
+/* PROGRESIVE CARD CSS START HERE */
+
+ion-modal-view.loyaltycard-view ion-header-bar {
+    display: none;
+}
+
+ion-modal-view.loyaltycard-view {
+    height: 60vh !important;
+    top: 48vh !important;
+}
+
+ion-modal-view.loyaltycard-view [ng-if="unlock_by_qrcode"] {
+    display: inline-block;
+    width: 50%;
+    height: 40px;
+    padding: 0;
+}
+
+ion-modal-view.loyaltycard-view [ng-if="unlock_by_qrcode"] {
+    display: inline-flex;
+    width: 50%;
+    height: 60px;
+    padding: 0;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+ion-modal-view.loyaltycard-view [ng-if="unlock_by_qrcode"] h2.ng-binding {
+    text-transform: uppercase;
+    color: #fff;
+}
+
+ion-modal-view.loyaltycard-view .item.item-custom[ng-if="unlock_by_qrcode"]:nth-child(3) {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 10px;
+}
+
+ion-modal-view.loyaltycard-view .item.item-custom[ng-if="unlock_by_qrcode"]:nth-child(3) button[ng-click="openScanCamera()"] {
+    font-size: 12px;
+}
+
+ion-modal-view.loyaltycard-view .pad .buttons button {
+    background-color: transparent;
+    color: #fff;
+}
+
+ion-modal-view.loyaltycard-view .pad .buttons button:nth-child(-n+6) {
+    width: 15%;
+    border-radius: 0px;
+    font-size: 25px;
+    padding: 0 !important;
+    border: 2px solid #ecf0f6 !important;
+    margin: 0.8%;
+}
+
+.item.item-divider.item-divider-custom.text-center:nth-child(4) h2.ng-binding {
+    color: #fff;
+    border-top: 1px solid #fff;
+    padding-top: 10px;
+}
+
+ion-modal-view.loyaltycard-view .dots .dot {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    margin: 0 7px;
+    border: 1px solid;
+    border-radius: 2ex;
+    color: #fff;
+}
+
+ion-modal-view.loyaltycard-view .pad .buttons button:nth-last-child(2) {
+    display: none !important;
+}
+
+ion-modal-view.loyaltycard-view .pad .buttons button:nth-child(n+7) {
+    width: 18%;
+    border-radius: 0px;
+    font-size: 25px;
+    padding: 0 !important;
+    border: 2px solid #ecf0f6 !important;
+    margin: 5px 1%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: unset !important;
+}
+
+ion-modal-view.loyaltycard-view .pad .buttons button:nth-child(12) {
+    border-top: none;
+    border-right: none;
+    margin: 0 !important;
+}
+
+ion-modal-view.loyaltycard-view .list .item-divider.item-divider-custom,
+ion-view[state="progressiveloyaltycards_view"] .list .item.item-custom {
+    background-color: transparent;
+    color: #000;
+    border: 0 !important;
+}
+
+ion-modal-view.loyaltycard-view ion-content {
+    background-color: #fa3e05 !important;
+    top: 0 !important;
+    padding-top: 20px;
+    border-radius: 0 !important;
+}
+
+.platform-overview.platform-cordova ion-modal-view {
+    border-radius: 0 !important;
+    box-shadow: none!important;
+}
+
+
+/* New */
+
+ion-view[state="progressiveloyaltycards_view"] button.button.button-custom.stamp_btn.common-btn.ng-binding {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin: 0 25%;
+    font-size: 0;
+}
+
+ion-view[state="progressiveloyaltycards_view"] button.button.button-custom.stamp_btn.common-btn.ng-binding:before {
+    content: "CONVALIDA PUNTI";
+    font-size: 16px;
+}
+
+ion-view[state="progressiveloyaltycards_view"] button.button.button-custom.stamp_btn.common-btn.ng-binding:after {
+    display: none !important;
+}
+
+ion-modal-view.loyaltycard-view .list .item.item-custom {
+    border: 0 !important;
+}
+
+ion-modal-view.loyaltycard-view .item.item-custom.item-select select {
+    text-align: right;
+    font-size: 20px !important;
+}
+
+ion-modal-view.loyaltycard-view .item.item-select.item-custom p.title.ng-binding:after {
+    content: "INSERISCI PUNTI";
+    font-size: 20px;
+    color: #fff;
+}
+
+ion-modal-view.loyaltycard-view .item.item-select.item-custom p.title.ng-binding {
+    font-size: 0;
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+ion-modal-view.loyaltycard-view .item-select:after {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    margin-top: -3px;
+    width: 0;
+    height: 0;
+    border-top: 5px solid;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    color: #fff;
+    content: "";
+    pointer-events: none;
+}
+
+
+/* PROGRESIVE CARD CSS END HERE */

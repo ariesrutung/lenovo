@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Rekening</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <style>
+        .alert-success {
+            color: #155724;
+            background-color: #d4edda;
+            border-color: #c3e6cb;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="modal-dialog modal-sm m-0" role="document">
+        <div class="modal-content border-0">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalGiftLabel">List Rekening Romeo &amp; Juliet Store</h5>
+            </div>
+            <div class="modal-body">
+                <div class="text-center mb-3 romeojuliet">
+                    <img src="https://www.nicepng.com/png/detail/533-5335867_yayasan-seva-bhuana-mission-pawsible-charity-organization-icons.png" class="w-25">
+                    <h5 class="font-bold text-center">Romeo &amp; Juliet Store</h5>
+                </div>
+                <div class="alert alert-success text-muted" role="alert">
+                    Klik <b>icon clipboard </b> untuk kopi nomor rekekning!
+                </div>
+                <div class="row">
+                    <div class="col-8">
+                        <b>Mandiri </b><br>
+                        <span onClick='copyText(this)'>1600002563548
+                                <i class="bi-clipboard"></i>
+                        </span><br> a/n Romeo <br>
+                    </div>
+                    <div class="col-4 d-flex justify-content-center align-items-center">
+                        <img src="https://www.pusdiklatpal.com/wp-content/uploads/2015/03/Logo-Bank-Mandiri.png" class="logo-bank w-100 mt-2">
+                    </div>
+                </div>
+
+                <hr>
+                <div class="row">
+                    <div class="col-8">
+                        <b>Bank BCA </b><br>
+                        <span onClick='copyText(this)'>10838387
+                            <i class="bi-clipboard"></i></span><br> a/n Juliet<br>
+                    </div>
+                    <div class="col-4 d-flex justify-content-center align-items-center">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Bank_Central_Asia.svg/1280px-Bank_Central_Asia.svg.png" class="logo-bank w-100 mt-2">
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-8">
+                        <b>BNI </b><br>
+                        <span onClick='copyText(this)'>584859861
+                                <i class="bi-clipboard"></i>
+                            </span><br> a/n Ayah Romeo <br>
+
+                    </div>
+                    <div class="col-4 d-flex justify-content-center align-items-center">
+                        <img src="https://1.bp.blogspot.com/-6MYl1qm5rf0/X5JH7iqKJcI/AAAAAAAAHWY/vjHRwotZB7EqzQBwspOdQKM3kQKiy3S2gCLcBGAsYHQ/s1510/logo-bni.png" class="logo-bank w-100 mt-2">
+                    </div>
+                </div>
+
+                <hr>
+                <div class="row">
+                    <div class="col-8">
+                        <b>Jenius BTPN </b><br>
+                        <span onClick='copyText(this)'>449121288445
+                                <i class="bi-clipboard"></i></span><br> a/n Tante Juliet<br>
+
+                    </div>
+                    <div class="col-4 d-flex justify-content-center align-items-center">
+                        <img src="https://upload.wikimedia.org/wikipedia/id/8/89/Jenius-logo.png" class="logo-bank w-100 mt-2">
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-8">
+                        <b>Paypal </b><br>
+                        <span onClick='kopiText(this)'>romeo@juliet.com
+                                <i class="bi-clipboard"></i></span><br> a/n Paman Juliet<br>
+                    </div>
+                    <div class="col-4 d-flex justify-content-center align-items-center">
+                        <img src="https://e7.pngegg.com/pngimages/180/94/png-clipart-logo-paypal-payment-system-money-paypal-blue-text.png" class="logo-bank w-100 mt-2">
+                    </div>
+                </div>
+                <hr>
+                <hr>
+                <div class="alert alert-success" role="alert">
+                    Anda juga dapat melakukan pembayaran menggunakan e-walet. Silakan gunakan kode qr di bawah ini!
+                </div>
+
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <img src="https://demo.datengdong.com/uploads/original/qris/iao8blunwz.png" class="mx-auto w-50 d-flex justify-content-center">
+                    </div>
+                    <div class="col-sm-12 text-center">
+                        OVO
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <img src="https://demo.datengdong.com/uploads/original/qris/iao8blunwz.png" class="mx-auto w-50 d-flex justify-content-center">
+                    </div>
+                    <div class="col-sm-12 text-center">
+                        Gopay
+                    </div>
+                </div>
+
+                <hr>
+            </div>
+        </div>
+    </div>
+
+    <script src=https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js></script>
+    <script src=https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js></script>
+    <script>
+        function copyText(element) {
+            var range, selection, worked;
+
+            if (document.body.createTextRange) {
+                range = document.body.createTextRange();
+                range.moveToElementText(element);
+                range.select();
+            } else if (window.getSelection) {
+                selection = window.getSelection();
+                range = document.createRange();
+                range.selectNodeContents(element);
+                selection.removeAllRanges();
+                selection.addRange(range);
+            }
+
+            try {
+                document.execCommand('copy');
+                alert('Nomor rekening berhasil dikopi');
+            } catch (err) {
+                alert('gagal mengopi Nomor rekening');
+            }
+        }
+
+        function kopiText(element) {
+            var range, selection, worked;
+
+            if (document.body.createTextRange) {
+                range = document.body.createTextRange();
+                range.moveToElementText(element);
+                range.select();
+            } else if (window.getSelection) {
+                selection = window.getSelection();
+                range = document.createRange();
+                range.selectNodeContents(element);
+                selection.removeAllRanges();
+                selection.addRange(range);
+            }
+
+            try {
+                document.execCommand('copy');
+                alert('Email berhasil dikopi');
+            } catch (err) {
+                alert('Gagal mengopy email');
+            }
+        }
+    </script>
+</body>
+
+
+
+</html>

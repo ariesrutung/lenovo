@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        a {
+            color: white;
+        }
+        
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+        }
+        
+        .col-1 {
+            width: 8.33%;
+        }
+        
+        .col-2 {
+            width: 16.66%;
+        }
+        
+        .col-3 {
+            width: 25%;
+        }
+        
+        .col-4 {
+            width: 33.33%;
+        }
+        
+        .col-5 {
+            width: 41.66%;
+        }
+        
+        .col-6 {
+            width: 50%;
+        }
+        
+        .col-7 {
+            width: 58.33%;
+        }
+        
+        .col-8 {
+            width: 66.66%;
+        }
+        
+        .col-9 {
+            width: 75%;
+        }
+        
+        .col-10 {
+            width: 83.33%;
+        }
+        
+        .col-11 {
+            width: 91.66%;
+        }
+        
+        .col-12 {
+            width: 100%;
+        }
+        
+        html {
+            font-family: "Lucida Sans", sans-serif;
+            font-size: 10px;
+        }
+        
+        .header {
+            background-color: #6b46e5;
+            color: #ffffff;
+            padding: 15px;
+        }
+        
+        .menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .menu li {
+            padding: 8px;
+            margin-bottom: 7px;
+            background-color: #33b5e5;
+            color: #ffffff;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        }
+        
+        .menu li:hover {
+            background-color: #0099cc;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Buka Eksternal Link</h1>
+    </div>
+
+    <div class="row">
+        <div class="col-3 menu">
+            <ul>
+                <li>
+                    <!-- WhatsApp-->
+                    <a href="whatsapp://send?text=Hello%2C%20JustApp!" target="_system"><img src="https://img.icons8.com/officel/80/000000/whatsapp.png" height="80px"></a>
+                </li>
+                <li>
+                    <!-- WhatsApp buka nomor tertentu untuk android & ios-->
+                    <a href="whatsapp://send?text=Hello%2C%20JustApp!&phone=+6281248803652&abid=+6281248803652"><img src="https://img.icons8.com/officel/80/000000/whatsapp.png" height="80px"></a>
+                </li>
+                <li>
+                    <!-- Telpon -->
+                    <a href="tel://+33012345678" target="_system"><img src="https://image.flaticon.com/icons/svg/273/273501.svg" height="80px" </a> </li>
+                <li>
+                    <!-- Sms -->
+                    <a href="sms://+3312345678?body=Hello%2C%20JustApp!."><img src="https://image.flaticon.com/icons/svg/234/234129.svg" height="80px"></a>
+                </li>
+                <li>
+                    <!-- Email-->
+                    <a href="mailto://a.rutung@csscoder" target="_system"><img src="https://image.flaticon.com/icons/svg/204/204322.svg" height="80px"></a>
+                </li>
+                <li>
+                    <!-- Google Maps - geo:latitude,longitude -  Lihat selengkapnya di https://developers.google.com/maps/documentation/urls/android-intents -->
+                    <a href="geo:48.858370,2.294481" target="_system"><img src="https://image.flaticon.com/icons/svg/382/382522.svg" height="80px"></a>
+                </li>
+                <li>
+                    <!-- Cari tempat tertentu - geo:latitude,longitude?q=restaurants - Lihat selengkapnya di https://developers.google.com/maps/documentation/urls/android-intents -->
+                    <a href="geo:48.858370,2.294481?q=restaurants" target="_system"><img src="https://image.flaticon.com/icons/svg/608/608671.svg" height="80px"></a>
+                </li>
+                <li>
+                    <!-- Aplikasi Waze-->
+                    <a href="waze://?ll=43.5367,1.52806&navigate=yes" target="_system"><img src="https://image.flaticon.com/icons/svg/1527/1527531.svg" height="80px"></a>
+                </li>
+
+            </ul>
+        </div>
+
+        <div class="col-9">
+            <h1>Buka link keluar aplikasi</h1>
+            <p>JustApp bisa membuat custome page dengan bahasa HTML</p>
+            <p>Hubungi kami sekarang juga</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

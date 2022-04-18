@@ -1,227 +1,203 @@
-///// PADLOCK///
-/*Padlock*/
-
-ion-view[state="padlock-view"] {
-  z-index: 9 !important;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
 }
 
-ion-view[state="padlock-view"] ion-content {
-      top: 0 !important;
-}
-
-ion-view[state="padlock-view"] div.scroll > div.card.padlock {
-  background-color: white;
-    margin: 0;
+.content.ng-binding {
     padding: 0;
-    height: 100vh;
-    padding-top: 65px;
-    background-image: url(https://i.imgur.com/ZqyQuS8.gif);
-    background-size: cover;
-    background-position-x: center;
+    display: flex;
+    margin-bottom: 20px;
+    overflow: visible;
+    width: 100% !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    white-space: nowrap !important;
+    -webkit-overflow-scrolling: touch !important;
 }
 
-ion-view[state="padlock-view"] .card .item.item-custom {
-  background-color: transparent;
-    border: 0;
-    color: white !important;
-  text-align: center;
-  padding-left: 12px;
-}
-
-ion-view[state="padlock-view"] div.card.padlock > div.item.item-text-wrap.item-custom {display: none;}
-
-ion-view[state="padlock-view"] div.card.padlock > div.item.item-body.item-custom.text-center {display: none;}
-
-i.icon.ion-ios-paper-outline, i.icon.ion-ios-person-outline {display:none;}
-
-i.icon.ion-locked {visibility:hidden;}
-
-ion-view[state="padlock-view"] div.card.padlock div[ng-if="description"]:before {
-  visibility: visible;
-    content: "Thank you for downloading the Nigerian Baptist Convention Mobile App";
-    color: white;
-    position: relative;
-    font-size: 30px;
-    letter-spacing: 1.5px;
-    display: block;
-    margin-bottom: 10px;
-    white-space: normal;
-    line-height: 30px;
-}
-
-ion-view[state="padlock-view"] div.card.padlock > div:nth-child(3)[ng-show="!isLoading"] {
-  position: relative;
-    top: 3vh;
-}
-
-ion-view[state="padlock-view"] div.card.padlock div[ng-click="padlockLogin()"] {
-  visibility: hidden;
-}
-
-ion-view[state="padlock-view"] div.card.padlock div[ng-click="padlockLogin()"]:after {
-  visibility: visible;
-    content: "GET STARTED";
-    position: absolute;
-    background-color: #ffffff;
-    width: 30%;
+.content.ng-binding p {
+    background-color: transparent;
+    padding: 0;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    min-width: 70% !important;
+    margin: 0 1%;
     border-radius: 10px;
-    color: #091D71 !important;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-    left: 50px;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    line-height: 44px;
+    flex-direction: column;
 }
 
-ion-view[state="padlock-view"] div.card.padlock div[ng-if="description"] {
-  letter-spacing: 0.5px;
-  text-align: left;
-    padding-left: 50px;
-  padding-right: 20vw;
-    line-height: 25px;
-}
-/*My account Signup-Loggedin*/
-
-/*Use card configuration in My account setting*/
-ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(5) {display: none;} 
-
-ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3) {
-  min-height: 100vh;
-    background-image: url(https://i.imgur.com/O9SRtTM.jpg);
-    background-size: cover;
+.content.ng-binding p a {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 100%;
 }
 
-ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3) div > section.avatar {
-  padding-top: 65px;
+.content.ng-binding p a img {
+    width: 100%;
+    object-fit: cover;
+    height: 145px;
+    border-radius: 5px;
 }
 
-ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3) .customer-image {
-  border: 3px white solid;
+.content.ng-binding p a {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 100%;
+    white-space: normal;
+    font-size: 12px;
+    color: #000;
+}
+
+.content.ng-binding strong {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.content.ng-binding p a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+.content.ng-binding p a:-webkit-any-link {
+    text-decoration: none;
+    color: #000;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) div>section.avatar {
+    padding-top: 65px;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .customer-image {
+    border: 3px white solid;
     padding: 0;
     width: 120px;
     height: 120px;
 }
 
-ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3) .card {
-  background-color: rgba(255,255,255,.80);
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .card {
+    background-color: rgba(255, 255, 255, .80);
     backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
     box-shadow: none;
     border-radius: 7px;
 }
 
-ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3) .card .item.item-custom {
-  background-color: transparent;
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .card .item.item-custom {
+    background-color: transparent;
     margin: 0;
     border-top: 0 !important;
-  border: 0;
+    border: 0;
 }
 
-ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3) .input-label {
-  display: none;
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .input-label {
+    display: none;
 }
 
-ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3) .item-input input,
-ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3) .item-input textarea {
-  text-align: left;
-  color: black;
-  font-weight: 800;
-  font-family: 'Yanone Kaffeesatz';
-  letter-spacing: 0.8px;
-  border-bottom: 1px #597A7D  dashed;;
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .item-input input,
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .item-input textarea {
+    text-align: left;
+    color: black;
+    font-weight: 800;
+    font-family: 'Yanone Kaffeesatz';
+    letter-spacing: 0.8px;
+    border-bottom: 1px #597A7D dashed;
+    ;
     padding-right: 0;
     margin-right: 14px;
     height: 50px;
 }
 
-ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3) .item-input input::placeholder {
-  color: #222;
-  font-weight: 700;
-  font-family: 'Yanone Kaffeesatz';
-  letter-spacing: 0.5px;
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .item-input input::placeholder {
+    color: #222;
+    font-weight: 700;
+    font-family: 'Yanone Kaffeesatz';
+    letter-spacing: 0.5px;
 }
 
-ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3) .item-checkbox .item-content {
-  text-align: left;
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .item-checkbox .item-content {
+    text-align: left;
 }
 
-ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3) .item-checkbox .item-content span {
-  color: rgba(13, 33, 71, 1);
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .item-checkbox .item-content span {
+    color: rgba(13, 33, 71, 1);
     letter-spacing: 0.5px;
     font-weight: 700;
 }
 
-ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3) .card .item.item-custom.checkbox-custom {
-  border: 0;
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .card .item.item-custom.checkbox-custom {
+    border: 0;
 }
 
-ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3) .button.button-positive-custom {
-  background-color:#2E9FAB ;
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .button.button-positive-custom {
+    background-color: #2E9FAB;
     border: 0;
     backdrop-filter: blur(35px);
     letter-spacing: 0.5px;
     font-weight: 700;
 }
 
-ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3) div > div.padding.text-center.ng-binding {
-  color: white;
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) div>div.padding.text-center.ng-binding {
+    color: white;
     letter-spacing: 0.5px;
 }
 
-ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3) div > div.padding.text-center.ng-binding span {
-  color: #DF9903;
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) div>div.padding.text-center.ng-binding span {
+    color: #DF9903;
 }
 
-ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3) .card .item.item-custom.ng-binding[ng-if="customer.is_logged_in"] {
-  color: white;
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .card .item.item-custom.ng-binding[ng-if="customer.is_logged_in"] {
+    color: white;
     letter-spacing: 0.5px;
     font-family: 'Yanone Kaffeesatz';
 }
 
-ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3) .card .item.item-custom.ng-binding[ng-if="customer.is_logged_in"]:before {
-  content: " ";
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .card .item.item-custom.ng-binding[ng-if="customer.is_logged_in"]:before {
+    content: " ";
     position: absolute;
     z-index: -1;
     top: 5px;
     left: 10px;
     right: 10px;
     bottom: 5px;
-    border: 1px solid  #2E9FAB  ;
-    background-color:  #2E9FAB ;
+    border: 1px solid #2E9FAB;
+    background-color: #2E9FAB;
     border-radius: 5px;
     font-family: 'Yanone Kaffeesatz';
 }
 
-ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3) div > div.padding.text-right[ng-if="customer.is_logged_in"] {
-  text-align: left;
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) div>div.padding.text-right[ng-if="customer.is_logged_in"] {
+    text-align: left;
 }
 
-ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3) div > div.padding.text-right[ng-if="customer.is_logged_in"] span {
-  color:  #ffffff;
-  letter-spacing: 1.5px;
-  font-weight: normal;
-  font-family: 'Yanone Kaffeesatz';
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) div>div.padding.text-right[ng-if="customer.is_logged_in"] span {
+    color: #ffffff;
+    letter-spacing: 1.5px;
+    font-weight: normal;
+    font-family: 'Yanone Kaffeesatz';
 }
 
-ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3) div > div.padding.text-center[ng-click="logout()"] {
-  background-color: rgba(191, 6, 0, 0.87);
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) div>div.padding.text-center[ng-click="logout()"] {
+    background-color: rgba(191, 6, 0, 0.87);
     width: 55%;
     margin: auto;
     border-radius: 7px;
 }
 
-ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3) div > div.padding.text-center[ng-click="logout()"] span {
-  color: white;
-  letter-spacing: 1.5px;
-  font-family: 'Yanone Kaffeesatz';
-  
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) div>div.padding.text-center[ng-click="logout()"] span {
+    color: white;
+    letter-spacing: 1.5px;
+    font-family: 'Yanone Kaffeesatz';
 }
 
 
-/* Page source code *//
-ion-view[state="cms-view"] ion-content div.scroll > div:nth-child(4) > div > div.card.no-shadow {
+/* Page source code */
+
+ion-view[state="cms-view"] ion-content div.scroll>div:nth-child(4)>div>div.card.no-shadow {
     margin-left: 0px;
     margin-right: 0px;
     margin-top: 0px;
@@ -230,7 +206,7 @@ ion-view[state="cms-view"] ion-content div.scroll > div:nth-child(4) > div > div
     padding-bottom: 0px;
 }
 
-ion-view[state="cms-view"] ion-content div.scroll > div:nth-child(4) > div > div > div > div.item.item-custom {
+ion-view[state="cms-view"] ion-content div.scroll>div:nth-child(4)>div>div>div>div.item.item-custom {
     padding-top: 1px;
     padding-left: 0px;
     padding-bottom: 0px;
@@ -238,15 +214,15 @@ ion-view[state="cms-view"] ion-content div.scroll > div:nth-child(4) > div > div
     background-color: rgba(255, 255, 255, 0);
 }
 
-ion-view[state="cms-view"] ion-content div.scroll > div:nth-child(3) > div > div.card {
+ion-view[state="cms-view"] ion-content div.scroll>div:nth-child(3)>div>div.card {
     margin: 0px;
 }
 
-ion-view[state="cms-view"] ion-content div.scroll > div:nth-child(3) > div > div > div > div.item.item-custom {
+ion-view[state="cms-view"] ion-content div.scroll>div:nth-child(3)>div>div>div>div.item.item-custom {
     padding: 0px;
 }
 
-ion-view[state="cms-view"] ion-content div.scroll > div:nth-child(4) > div > div.card {
+ion-view[state="cms-view"] ion-content div.scroll>div:nth-child(4)>div>div.card {
     margin-top: 0px;
     margin-bottom: 0px;
     margin-left: 20px;
@@ -254,7 +230,7 @@ ion-view[state="cms-view"] ion-content div.scroll > div:nth-child(4) > div > div
     box-shadow: 0 1px 3px rgba(255, 255, 255, 0);
 }
 
-ion-view[state="cms-view"] ion-content div.scroll > div:nth-child(5) > div > div.card {
+ion-view[state="cms-view"] ion-content div.scroll>div:nth-child(5)>div>div.card {
     margin-top: 0px;
     margin-bottom: 0px;
     margin-left: 20px;
@@ -268,7 +244,7 @@ ion-view[state="cms-view"] ion-content div.scroll div div div div div.item.item-
     padding-bottom: 20px;
 }
 
-ion-view[state="cms-view"] ion-content div.scroll > div:nth-child(6) > div > div > div > div.item.item-custom {
+ion-view[state="cms-view"] ion-content div.scroll>div:nth-child(6)>div>div>div>div.item.item-custom {
     padding-top: 0px;
     padding-bottom: 0px;
     background-color: rgba(252, 249, 249, 0);
@@ -276,18 +252,18 @@ ion-view[state="cms-view"] ion-content div.scroll > div:nth-child(6) > div > div
     padding-right: 0px;
 }
 
-ion-view[state="cms-view"] ion-content div.scroll > div:nth-child(6) > div > div.card.no-shadow  {
+ion-view[state="cms-view"] ion-content div.scroll>div:nth-child(6)>div>div.card.no-shadow {
     margin-top: 0px;
     margin-bottom: 0px;
     margin-left: 0px;
     margin-right: 0px;
 }
 
-html > body {
+html>body {
     background-color: #ffffff00;
 }
 
-ion-view[state="cms-view"] ion-content div.scroll > div:nth-child(7) > div > div.card {
+ion-view[state="cms-view"] ion-content div.scroll>div:nth-child(7)>div>div.card {
     margin-top: 20px;
     margin-bottom: 0px;
     margin-left: 20px;
@@ -295,7 +271,7 @@ ion-view[state="cms-view"] ion-content div.scroll > div:nth-child(7) > div > div
     box-shadow: 0 1px 3px rgba(255, 255, 255, 0);
 }
 
-ion-view[state="cms-view"] ion-content div.scroll > div:nth-child(8) > div > div > div > div.item.item-custom {
+ion-view[state="cms-view"] ion-content div.scroll>div:nth-child(8)>div>div>div>div.item.item-custom {
     padding-top: 0px;
     padding-bottom: 0px;
     background-color: rgba(252, 249, 249, 0);
@@ -303,15 +279,14 @@ ion-view[state="cms-view"] ion-content div.scroll > div:nth-child(8) > div > div
     padding-right: 0px;
 }
 
-ion-view[state="cms-view"] ion-content div.scroll > div:nth-child(8) > div > div.card.no-shadow  {
+ion-view[state="cms-view"] ion-content div.scroll>div:nth-child(8)>div>div.card.no-shadow {
     margin-top: 0px;
     margin-bottom: 0px;
     margin-left: 0px;
     margin-right: 0px;
 }
 
-
-ion-view[state="cms-view"] ion-content div.scroll > div:nth-child(8) > div > div.card {
+ion-view[state="cms-view"] ion-content div.scroll>div:nth-child(8)>div>div.card {
     margin-top: 0px;
     margin-bottom: 0px;
     margin-left: 20px;
@@ -319,8 +294,7 @@ ion-view[state="cms-view"] ion-content div.scroll > div:nth-child(8) > div > div
     box-shadow: 0 1px 3px rgba(255, 255, 255, 0);
 }
 
-
-ion-view[state="cms-view"] ion-content div.scroll > div:nth-child(9) > div > div > div > div.item.item-custom {
+ion-view[state="cms-view"] ion-content div.scroll>div:nth-child(9)>div>div>div>div.item.item-custom {
     padding-top: 0px;
     padding-bottom: 0px;
     background-color: rgba(252, 249, 249, 0);
@@ -335,7 +309,8 @@ iframe.sb-cms-source {
     background: none;
 }
 
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     border: none;
@@ -349,7 +324,7 @@ html, body {
     background: none;
 }
 
-ion-view[state="cms-view"] ion-content div.scroll > div:nth-child(7) > div > div.card {
+ion-view[state="cms-view"] ion-content div.scroll>div:nth-child(7)>div>div.card {
     margin-top: 0px;
     margin-bottom: 0px;
     margin-left: 20px;
@@ -357,29 +332,28 @@ ion-view[state="cms-view"] ion-content div.scroll > div:nth-child(7) > div > div
     box-shadow: 0 1px 3px rgba(255, 255, 255, 0);
 }
 
-ion-view[state="cms-view"] ion-content > div.scroll {
+ion-view[state="cms-view"] ion-content>div.scroll {
     transform: translate3d(0px, 0px, 0px) scale(1);
     display: grid;
     grid-template-columns: 50% 50%;
 }
 
-
-ion-view[state="cms-view"] ion-content div.scroll > div:nth-child(3) {
+ion-view[state="cms-view"] ion-content div.scroll>div:nth-child(3) {
     grid-column-start: 1;
     grid-column-end: 3;
 }
 
-ion-view[state="cms-view"] ion-content div.scroll > div:nth-child(6) {
+ion-view[state="cms-view"] ion-content div.scroll>div:nth-child(6) {
     grid-column-start: 1;
     grid-column-end: 3;
 }
 
-ion-view[state="cms-view"] ion-content div.scroll > div:nth-child(9) {
+ion-view[state="cms-view"] ion-content div.scroll>div:nth-child(9) {
     grid-column-start: 1;
     grid-column-end: 3;
 }
 
-ion-view[state="cms-view"] ion-content div.scroll > div:nth-child(10) {
+ion-view[state="cms-view"] ion-content div.scroll>div:nth-child(10) {
     grid-column-start: 1;
     grid-column-end: 3;
 }
@@ -390,28 +364,29 @@ ion-view[state="cms-view"] ion-content div.scroll div div div div div.item.item-
     padding-bottom: 5px;
 }
 
-
 ion-view[state="cms-view"] ion-content div.scroll div div div.card.no-shadow {
     box-shadow: none;
     margin: 5px;
 }
 
-
-@import url('https://fonts.googleapis.com/css?family=Yanone Kaffeesatz'); 
-    * { 
-        font-family: 'Yanone Kaffeesatz' !important; 
-    } 
+@import url('https://fonts.googleapis.com/css?family=Yanone Kaffeesatz');
+* {
+    font-family: 'Yanone Kaffeesatz' !important;
+}
 
 
 /** Begin center page title*/
+
 .title.title-left.header-item {
-text-align:left;
+    text-align: left;
 }
+
+
 /** End center page title*/
 
 
-
 /* POPUP */
+
 .popup-container.active .popup {
     border-radius: 30px !important;
     box-shadow: none !important;
@@ -466,7 +441,7 @@ h3.popup-title.ng-binding:before {
     width: 60% !important;
     text-align: center !important;
     border-radius: 30px !important;
-    background-color:rgba(9, 109, 148, 0.88) !important;
+    background-color: rgba(9, 109, 148, 0.88) !important;
     padding: 10px !important;
     color: #fff !important;
     font-size: 12px !important;
@@ -480,7 +455,7 @@ h3.popup-title.ng-binding:before {
 .platform-ios .popup button.button,
 .platform-android .popup button.button {
     display: block !important;
-    background-color:rgba(9, 109, 148, 0.88)!important;
+    background-color: rgba(9, 109, 148, 0.88)!important;
     width: 60% !important;
     text-align: center !important;
     padding: 10px !important;
@@ -499,12 +474,20 @@ h3.popup-title.ng-binding:before {
     text-align: center !important;
 }
 
-button[ng-click="share()"] { display: none; }
+button[ng-click="share()"] {
+    display: none;
+}
 
-.customer-layout1 .customer-image {display: none}
+.customer-layout1 .customer-image {
+    display: none
+}
+
 
 /* PADLOCK */
+
+
 /* MY ACCOUNT */
+
 .customer-view.customer-layout1 .list {
     margin-bottom: 0;
 }
@@ -565,7 +548,7 @@ ion-modal-view.customer-view.customer-layout1 ion-content div.scroll [ng-show="d
     -webkit-order: 1;
     order: 1;
     padding: 10px;
-    color: #B99002; //login and sign up colour
+    color: #B99002;
 }
 
 ion-modal-view.customer-view.customer-layout1 ion-content div.scroll [ng-show="display_login_form"] div.text-center:before {
@@ -583,7 +566,7 @@ ion-modal-view.customer-view.customer-layout1 ion-content div.scroll [ng-show="d
     -ms-flex-order: 2;
     -webkit-order: 2;
     order: 2;
-    border-bottom: 2px solid rgba(9, 109, 148, 0.88) ;
+    border-bottom: 2px solid rgba(9, 109, 148, 0.88);
     padding: 10px;
     cursor: default;
     pointer-events: none;
@@ -614,7 +597,6 @@ ion-modal-view.customer-view.customer-layout1 ion-content div.scroll div:nth-chi
     order: 4;
 }
 
-
 [ng-show="display_login_form"] .item.item-input.item-custom {
     display: inline-block;
     width: 90%;
@@ -629,8 +611,9 @@ ion-modal-view.customer-view.customer-layout1 ion-content div.scroll div:nth-chi
     font-size: 16px;
     text-align: left;
 }
+
 [ng-show="display_login_form"] .item.item-input.item-custom i {
-  visibility: hidden;
+    visibility: hidden;
 }
 
 [ng-show="display_login_form"] i.icon.ion-ios-person:after {
@@ -656,31 +639,37 @@ ion-modal-view.customer-view.customer-layout1 ion-content div.scroll div:nth-chi
     display: block;
     position: relative;
     text-align: left;
-    border-bottom: 1px solid rgba(9, 109, 148, 0.88) ;
+    border-bottom: 1px solid rgba(9, 109, 148, 0.88);
     height: 40px;
     padding-left: 10px;
-    color: rgba(9, 109, 148, 0.88)  !important;
+    color: rgba(9, 109, 148, 0.88) !important;
     font-size: 16px;
     font-weight: normal;
     font-family: 'Yanone Kaffeesatz';
 }
 
+
 /* placeholder */
+
 [ng-show="display_login_form"] .item.item-input.item-custom input::-webkit-input-placeholder {
-   color: #dbdbdb !important;
+    color: #dbdbdb !important;
 }
 
-[ng-show="display_login_form"] .item.item-input.item-custom input:-moz-placeholder { /* Firefox 18- */
-   color: #dbdbdb !important;
+[ng-show="display_login_form"] .item.item-input.item-custom input:-moz-placeholder {
+    /* Firefox 18- */
+    color: #dbdbdb !important;
 }
 
-[ng-show="display_login_form"] .item.item-input.item-custom input::-moz-placeholder {  /* Firefox 19+ */
-   color: #dbdbdb !important;
+[ng-show="display_login_form"] .item.item-input.item-custom input::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #dbdbdb !important;
 }
 
-[ng-show="display_login_form"] .item.item-input.item-custom input:-ms-input-placeholder {  
-   color: #dbdbdb !important;
+[ng-show="display_login_form"] .item.item-input.item-custom input:-ms-input-placeholder {
+    color: #dbdbdb !important;
 }
+
+
 /* placeholder */
 
 [ng-show="display_login_form"] .button.button-positive-custom {
@@ -699,7 +688,7 @@ ion-modal-view.customer-view.customer-layout1 ion-content div.scroll div:nth-chi
     width: 150px;
     padding-top: 20px;
     height: 150px;
-    margin: 20px auto 0 auto;   
+    margin: 20px auto 0 auto;
     position: relative;
     content: " ";
     background: url("https://i.imgur.com/CjF4SbQ.png") no-repeat 0 0;
@@ -712,27 +701,29 @@ ion-modal-view.customer-view.customer-layout1 ion-content div.scroll div:nth-chi
     border-radius: 20px;
     top: 10px !important;
     margin-bottom: 30px;
-    background-color: rgba(9, 109, 148, 0.88)  !important;
+    background-color: rgba(9, 109, 148, 0.88) !important;
     color: #fff !important;
     border: none;
     font-size: 20px;
     font-weight: bold;
     font-family: 'Yanone Kaffeesatz';
-    background-color: rgba(9, 109, 148, 0.88) ;
+    background-color: rgba(9, 109, 148, 0.88);
     padding: 3px;
 }
 
-.customer-view.customer-layout1 div.scroll div:nth-child(3) div>div:nth-child(4).padding.text-center.ng-binding  {
+.customer-view.customer-layout1 div.scroll div:nth-child(3) div>div:nth-child(4).padding.text-center.ng-binding {
     display: none;
 }
 
 ion-modal-view.sb-clickwrap.sb-clickwrap-modal ion-content,
 ion-modal-view.customer-view.customer-layout1 ion-content {
     background-color: #fff !important;
-    border-radius: 20px 20px 0 0 !important;    
+    border-radius: 20px 20px 0 0 !important;
 }
 
+
 /* FORGOT PASSWORD PAGE */
+
 [ng-show="display_forgot_password_form"] .padding.text-left {
     visibility: hidden;
 }
@@ -771,55 +762,61 @@ ion-modal-view.customer-view.customer-layout1 ion-content {
     display: none;
 }
 
-ion-view[state="folder2-category-list"] div.scroll .item-input{
-     border-radius: 10px;
-     margin-right: 25px;
-     margin-left: 25px;
-  background : rgba(242, 137, 39, 0.21);
+ion-view[state="folder2-category-list"] div.scroll .item-input {
+    border-radius: 10px;
+    margin-right: 25px;
+    margin-left: 25px;
+    background: rgba(242, 137, 39, 0.21);
 }
 
-ion-view[state="folder2-category-list"] div.scroll .item-input i{
-    color:#447484;
-}
-ion-view[state="folder2-category-list"] div.scroll .item-input ::placeholder{
-     color:#447484; 
-}
-ion-view[state="folder2-category-list"] div.list.card{
-     margin-right: 0;
-     margin-left: 0; 
-}
-ion-view[state="folder2-category-list"] div.list.card a{
-     border: rgba(38, 116, 132, 0.21) 1px solid ; 
-     margin: 7px 5px 10px;
-     width: 47%;
-     display: inline-block;
-     border-radius: 10px;
-}
-ion-view[state="folder2-category-list"] div.list.card .ng-binding{
-     color: #162F48;
-}
-ion-view[state="folder2-category-list"] div.list.card .item-custom{
-      background: rgba(236, 236, 236, 0.90); 
+ion-view[state="folder2-category-list"] div.scroll .item-input i {
+    color: #447484;
 }
 
-ion-view[state="folder2-category-list"] div.list.card a.item-custom{
-       margin-top: 5px; 
+ion-view[state="folder2-category-list"] div.scroll .item-input ::placeholder {
+    color: #447484;
 }
 
-ion-nav-view[class=”nav-view-l6″] .profile-info:after{
-display : none;
+ion-view[state="folder2-category-list"] div.list.card {
+    margin-right: 0;
+    margin-left: 0;
 }
 
-[state="contact-view"] .ion-person  {
+ion-view[state="folder2-category-list"] div.list.card a {
+    border: rgba(38, 116, 132, 0.21) 1px solid;
+    margin: 7px 5px 10px;
+    width: 47%;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+ion-view[state="folder2-category-list"] div.list.card .ng-binding {
+    color: #162F48;
+}
+
+ion-view[state="folder2-category-list"] div.list.card .item-custom {
+    background: rgba(236, 236, 236, 0.90);
+}
+
+ion-view[state="folder2-category-list"] div.list.card a.item-custom {
+    margin-top: 5px;
+}
+
+ion-nav-view[class=”nav-view-l6″] .profile-info:after {
+    display: none;
+}
+
+[state="contact-view"] .ion-person {
     content: url('https://i.imgur.com/YOXS36G.png');
 }
 
-[state="contact-view"] .ion-ios-location  {
+[state="contact-view"] .ion-ios-location {
     content: url('https://i.imgur.com/Rosa0hd.png');
 }
+
 .item-icon-left .icon {
-    left: 8px;      
-    display: none;  
+    left: 8px;
+    display: none;
 }
 
 ion-view.pane ion-content.has-footer.scroll-content.ionic-scroll.has-header {
@@ -928,7 +925,6 @@ form.extended-profile .info-cards textarea {
     min-height: 80px;
 }
 
-
 form.extended-profile .checkbox-custom .checkbox input:before,
 form.extended-profile .checkbox-custom .checkbox .checkbox-icon:before {
     border: 2px solid #c2daff !important;
@@ -936,17 +932,21 @@ form.extended-profile .checkbox-custom .checkbox .checkbox-icon:before {
 }
 
 form.extended-profile .checkbox-custom .checkbox input:checked:before,
-form.extended-profile .checkbox-custom .checkbox input:checked + .checkbox-icon:before {
+form.extended-profile .checkbox-custom .checkbox input:checked+.checkbox-icon:before {
     background: #ecf0f6 !important;
     border-color: rgba(238, 75, 99, 1);
 }
 
+
 /* Geolocation */
+
 form.extended-profile [ng-switch-when="geoloc"] label {
     border: 0 !important;
 }
 
+
 /* Checkbox */
+
 form.extended-profile .list .item-divider.item-divider-custom {
     background-color: #fff;
     color: #000 !important;
@@ -963,7 +963,9 @@ form.extended-profile .checkbox-custom {
     border: 0;
 }
 
+
 /* Radio Input */
+
 form.extended-profile .radio-content {
     border: 0 !important;
 }
@@ -981,7 +983,9 @@ form.extended-profile .item-radio input:checked+.radio-content .item-content {
     background-color: #ecf0f6;
 }
 
+
 /* Dropdown */
+
 form.extended-profile .list .item.item-custom {
     border: 0 !important;
     background-color: #fff;
@@ -1017,8 +1021,8 @@ form.extended-profile label[ng-switch-when="select"] .input-label.ng-binding {
 }
 
 
-
 /* date/time */
+
 form.extended-profile label[ng-switch-when="date"],
 form.extended-profile label[ng-switch-when="anniversary"],
 form.extended-profile label[ng-switch-when="birthday"] {
@@ -1027,10 +1031,9 @@ form.extended-profile label[ng-switch-when="birthday"] {
     padding: 0 !important;
 }
 
-
 form.extended-profile label[ng-switch-when="date"] input,
 form.extended-profile label[ng-switch-when="anniversary"] input,
-form.extended-profile label[ng-switch-when="birthday"] input  {
+form.extended-profile label[ng-switch-when="birthday"] input {
     border: 2px solid #ecf0f6;
     background-color: #ecf0f6;
     padding: 5px;
@@ -1041,13 +1044,16 @@ form.extended-profile label[ng-switch-when="birthday"] input  {
 
 
 /* Geoloc */
+
 .checkbox-custom .checkbox input:checked:before,
-.checkbox-custom .checkbox input:checked + .checkbox-icon:before {
+.checkbox-custom .checkbox input:checked+.checkbox-icon:before {
     background: rgba(238, 75, 99, 1);
     border-color: rgba(238, 75, 99, 1);
 }
 
+
 /* Range */
+
 form.extended-profile .item-range {
     display: block!important;
     background-color: transparent !important;
@@ -1076,78 +1082,78 @@ form.extended-profile .item-range .range input {
 }
 
 
-
 /* Layout */
+
 .layout.l1 p,
 .layout.l10 p,
 .layout.l2 p {
-height: 16px;
-margin-top: 2px;
-overflow: hidden;
-line-height: 16px;
-font-size: 9px;
-margin-top: -3px;
-margin-bottom: 0;
-padding-bottom: 10px;
+    height: 16px;
+    margin-top: 2px;
+    overflow: hidden;
+    line-height: 16px;
+    font-size: 9px;
+    margin-top: -3px;
+    margin-bottom: 0;
+    padding-bottom: 10px;
 }
 
-ion-side-menus ion-side-menu-content ion-footer-bar ng-include > div > div.layout.l1 > ul {
-display: flex !important;
-z-index: 1000 !important;
-max-height: 55px !important;
-height: 55px !important;
-padding-bottom: 0 !important;
-box-shadow: 0px 1px 2px 2px #ababab !important;
-width: 100%;
+ion-side-menus ion-side-menu-content ion-footer-bar ng-include>div>div.layout.l1>ul {
+    display: flex !important;
+    z-index: 1000 !important;
+    max-height: 55px !important;
+    height: 55px !important;
+    padding-bottom: 0 !important;
+    box-shadow: 0px 1px 2px 2px #ababab !important;
+    width: 100%;
 }
 
-ion-side-menus ion-side-menu-content ion-footer-bar ng-include > div > div.layout.l1 > ul > li {
-padding-top: 0 !important;
+ion-side-menus ion-side-menu-content ion-footer-bar ng-include>div>div.layout.l1>ul>li {
+    padding-top: 0 !important;
 }
 
-ion-side-menus ion-side-menu-content ion-footer-bar ng-include > div > div.layout.l1 > ul > li:nth-child(1) {
-  order: 3;
-  background-position: center center;
-  display: block;
-  background-size: cover;
-  border: none;
-  line-height: 23px;
-  bottom: 22px;
-  background-color: #182B6E;
-  border-radius: 10px;
-  box-shadow: rgb(144 144 144) 0px 0px 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+ion-side-menus ion-side-menu-content ion-footer-bar ng-include>div>div.layout.l1>ul>li:nth-child(1) {
+    order: 3;
+    background-position: center center;
+    display: block;
+    background-size: cover;
+    border: none;
+    line-height: 23px;
+    bottom: 22px;
+    background-color: #182B6E;
+    border-radius: 10px;
+    box-shadow: rgb(144 144 144) 0px 0px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-ion-side-menus ion-side-menu-content ion-footer-bar ng-include > div > div.layout.l1 > ul > li:nth-child(1) p {
-position: absolute;
-right: 0;
-left: 0;
-bottom: -1px;
-display: none;
+ion-side-menus ion-side-menu-content ion-footer-bar ng-include>div>div.layout.l1>ul>li:nth-child(1) p {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: -1px;
+    display: none;
 }
 
-ion-side-menus ion-side-menu-content ion-footer-bar ng-include > div > div.layout.l1 > ul > li:nth-child(2) {
-order: 2;
+ion-side-menus ion-side-menu-content ion-footer-bar ng-include>div>div.layout.l1>ul>li:nth-child(2) {
+    order: 2;
 }
 
-ion-side-menus ion-side-menu-content ion-footer-bar ng-include > div > div.layout.l1 > ul > li:nth-child(3) {
-order: 1;
+ion-side-menus ion-side-menu-content ion-footer-bar ng-include>div>div.layout.l1>ul>li:nth-child(3) {
+    order: 1;
 }
 
-ion-side-menus ion-side-menu-content ion-footer-bar ng-include > div > div.layout.l1 > ul > li:nth-child(4),
-ion-side-menus ion-side-menu-content ion-footer-bar ng-include > div > div.layout.l1 > ul > li:nth-child(5) {
-order: 4;
+ion-side-menus ion-side-menu-content ion-footer-bar ng-include>div>div.layout.l1>ul>li:nth-child(4),
+ion-side-menus ion-side-menu-content ion-footer-bar ng-include>div>div.layout.l1>ul>li:nth-child(5) {
+    order: 4;
 }
 
 .gtx-trans-icon {
-display: none !Important;
+    display: none !Important;
 }
 
 .layout .tab-item img {
-  margin-left: 0 !important;
+    margin-left: 0 !important;
 }
 
 ion-modal-view.layout.modal.slide-top.layout_modal_generic {
@@ -1200,21 +1206,20 @@ ion-modal-view.layout.modal.slide-top.layout_modal_generic [ng-click="closeMore(
     color: #000;
 }
 
-
 .info-cards input::placeholder,
 form.extended-profile .info-cards textarea::placeholder {
-  color: #000;
-  opacity: 1;
+    color: #000;
+    opacity: 1;
 }
 
 .info-cards input:-ms-input-placeholder,
 form.extended-profile .info-cards textarea:-ms-input-placeholder {
-  color: #000;
+    color: #000;
 }
 
 .info-cards input::-ms-input-placeholder,
 form.extended-profile .info-cards textarea::-ms-input-placeholder {
-  color: #000;
+    color: #000;
 }
 
 [ng-click="takePicture(field)"] {
@@ -1235,6 +1240,7 @@ form.extended-profile .profile-info.list .row.item.item-custom.info-row {
 
 
 /* hide Source header and remove ion-content top*/
+
 ion-header-bar.bar-custom.bar.bar-header {
     background-color: transparent !important;
     background-image: none !important;
@@ -1245,7 +1251,9 @@ ion-view.sourcecode-view ion-content.sourcecode-view {
     top: 0;
 }
 
+
 /* Swap icon possition */
+
 ion-header-bar.bar-subheader.bar.bar-header .button-bar {
     display: flex;
     justify-content: center;
@@ -1276,6 +1284,3 @@ ion-header-bar button[ng-if="isEnabled('enableGallery')"] {
 ion-header-bar button[ng-click="showTab('post')"] {
     order: 1;
 }
-
-
-
