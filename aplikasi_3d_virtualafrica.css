@@ -1,0 +1,760 @@
+ .layout.fabmenu .r9 li:nth-child(-n+4),  .layout.fabmenu .r99 li:nth-child(-n+4) { display: none !important; } 
+
+ .layout.l91 .r9 li:nth-child(-n+5),  .layout.l91 .r99 li:nth-child(-n+5) { display: none !important; } 
+
+
+.booking-view .list .item.item-custom { margin: 5px; }
+
+.customer-view button {
+  border-radius: 30px;
+  text-transform: uppercase;
+}
+
+.contact-view .button.button-custom {
+  border-radius: 30px;
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+ 
+@-webkit-keyframes zoomIn {
+  0% {
+  opacity: 0;
+  -webkit-transform: scale3d(.3, .3, .3);
+  transform: scale3d(.3, .3, .3);
+  }
+  50% {
+  opacity: 1;
+  }
+}
+ 
+@keyframes zoomIn {
+  0% {
+  opacity: 0;
+  -webkit-transform: scale3d(.3, .3, .3);
+  transform: scale3d(.3, .3, .3);
+  }
+  50% {
+  opacity: 1;
+  }
+}
+
+/***** START: Video CSS *****/
+
+/* Main Gradient Background - You can change the hex color codes here */
+.video-view {
+  background-image: linear-gradient(120deg, #FFFFFF 0%, #FFFFFF 100%) !important;
+}
+
+/* Card */
+.video-view .card  {
+  border-radius: 0px !important;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); 
+}
+
+/* Play Button Image - You can change the opacity & Image URL here */
+.video-view .sprite {
+  background-image: url("https://i.imgur.com/AdhRVpO.png");
+  background-color: rgba(255,255,255,0.1)
+} 
+
+/* Card Item - You can change opacity here */
+.video-view .card .item.item-custom {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: transparent !important;
+}
+
+/***** END: Video CSS *****/
+
+
+/***** ACCORDION FAQ CSS *****/
+
+.module-accordionfaq ion-content { background: rgba(6, 20, 204, 1) !important; }
+
+.module-accordionfaq .card ion-item.item { padding: 0; }
+
+.module-accordionfaq .item.item-custom .faq-title {
+    color: #ffffff !important;
+    background: rgba(0, 197, 204, 1) !important;
+    padding: 12px;
+}
+
+.module-accordionfaq .item.item-custom p {
+    padding: 12px;
+    font-size: 14px;
+}
+
+.module-accordionfaq .card, .module-accordionfaq .button.button-custom { border-radius: 0px; }
+
+
+
+/* Form v2 */
+.module-form2 .form2-divider:nth-of-type(1) p {
+    text-align: left;
+    font-weight: bold;
+    font-size: 16px !important;
+    margin-top: 10px;
+}
+
+label.radio-custom.radio-item.item.item-radio.ng-valid.ng-not-empty,
+label.radio-custom.radio-item.item.item-radio.ng-empty.ng-valid {
+    border: 0;
+}
+
+.item.item-custom.item-icon-left.form2-datetime .row .col-50:nth-child(1) {
+    flex: 0 0 100%;
+    max-width: 100%;  
+    display: block;
+}
+
+.item.item-custom.item-icon-left.form2-datetime .row .col-50:nth-child(2) {
+    flex: 0 0 100%;
+    max-width: 100%;  
+    display: block;
+}
+
+.item.item-custom.item-icon-left.form2-datetime .row {
+    display: inline-block;
+}
+
+.module-form2 .form2-datetime input[type="text"],
+.module-form2 .form2-date input[type="text"] {
+    width: 100%;
+    text-align: left;
+    font-size: 14px !important;
+    font-weight: bold;
+    color: rgba(0, 194, 203, 1);
+}
+
+.ion-clock:before {
+    color: rgba(0, 194, 203, 1);
+}
+
+.item.item-custom.item-icon-left.form2-datetime p {
+    overflow: visible;
+    text-overflow: unset;
+    white-space: normal;  
+}
+
+.radio-content {
+    width: 96%;
+    margin: 0 .5% 0 3.5%;
+    border: 2px solid #e1e1e1;
+    border-radius: 5px; 
+}
+
+.module-form2.form2.form2-home.form2-home-l1 label {
+    display: inline-block;
+    width: 100%;
+  
+}
+
+.module-form2.form2.form2-home.form2-home-l1 label input,
+.module-form2.form2.form2-home.form2-home-l1 label textarea {
+    display: block;
+    width: 100%;
+    margin: 0 0 0 -.5%;
+    text-align: left;
+    padding: 20px;
+    border: 2px solid #e1e1e1;
+    border-radius: 5px;
+}
+
+.module-form2.form2.form2-home.form2-home-l1 label.item-select.form2-select {
+    width: 96%;
+    margin: 0 .5% 0 3.5%;
+    border: 2px solid #e1e1e1;
+    border-radius: 5px;
+}
+
+.module-form2.form2.form2-home.form2-home-l1 .button.button-positive-custom {
+    width: 30%;
+    margin-left: 35%;
+    border: 0;
+    border-radius: 5px;
+    background-color: #18bd5b;
+}
+
+.module-form2.form2.form2-home.form2-home-l1 .input-label {
+    width: 100% !important;
+    display: block;
+    margin: 0;
+}
+
+img.form2-illustration {
+    width: 96% !important;
+    border-radius: 5px;
+    margin-left: 2%;
+}
+
+.module-form2 ion-item.item-custom.radio-title.item.ng-binding {
+    overflow: visible;
+    text-overflow: unset;
+    white-space: normal;  
+    font-weight: normal;
+}
+
+/*
+ * Just change the hex code of parameter color. F.e. $ion-content: #fff; to $ion-content: #ecf0f6; .
+ */
+
+
+/* PARAMETER COLOR */
+
+$ion-content: #fff;
+$ion-view: #293072;
+$transparent-color: transparent;
+$second-bg-color: #ecf0f6;
+$icon-color: #009909;
+$general-font-color: #000;
+$button-text-color: #fff;
+$border-transparent: #ffffff2e;
+
+/* MY ACCOUNT */
+
+ion-modal-view.customer-view.customer-layout1 {
+    border: 0;
+    border-radius: 0;
+    background-image: none !important;
+    background-color: $ion-view !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content {
+    background-color: $ion-content !important;
+    margin-top: 70px !important;
+    border-radius: 30px 30px 0 0;
+}
+
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(3) .list .item.item-custom,
+ion-modal-view.customer-view.customer-layout1 div[ng-show="display_login_form"] .list .item.item-custom,
+ion-modal-view.customer-view.customer-layout1 div.scroll > div:nth-child(2)[ng-show="display_forgot_password_form"] .list .item.item-custom{
+    background-color: $transparent-color;
+    color: $ion-view !important;
+    border-bottom: 2px solid $ion-view;
+    margin: 15px 7%;
+    border-radius: 0;
+    width: 88%;
+}
+
+ion-modal-view.customer-view.customer-layout1 [ng-model="customer.communication_agreement"] span.ng-binding {
+    font-size: 14px !important;
+    color: $ion-view !important;
+    font-weight: 500;
+}
+
+ion-modal-view.customer-view.customer-layout1 .button.button-positive-custom {
+    border: 0;
+    background-color: $ion-view;
+    color: $ion-content !important;
+    text-transform: uppercase;
+    width: 90%;
+    margin: 0 5% 20px 5%;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(3) .item.item-custom input.text-right,
+ion-modal-view.customer-view.customer-layout1 label.item.item-input.item-custom input {
+    color: $ion-view !important;
+    font-size: 16px !important;
+    font-weight: bold;
+    text-align: left;
+}
+
+ion-modal-view.customer-view.customer-layout1>ion-header-bar {
+    z-index: 10;
+    background-color: $transparent-color;
+    border-bottom: 0 !important;
+    background-image: none !important;
+}
+
+ion-modal-view.customer-view.customer-layout1>ion-header-bar>div.buttons>button.button.button-clear[ng-click="appSettings()"] {
+    background-color: $transparent-color;
+    color: #fff !important;
+}
+
+ion-modal-view.customer-view.customer-layout1>ion-header-bar>div.buttons>button.button.button-clear[ng-click="closeAction()"] {
+    background-color: $transparent-color;
+    opacity: 1;
+}
+
+ion-modal-view.customer-view.customer-layout1>ion-header-bar>div.buttons>button.button.button-clear>i.icon.ion-sb-close-modal {
+    color: $general-font-color;
+}
+
+ion-modal-view.customer-view.customer-layout1>ion-header-bar>h1 {
+    color: white;
+    letter-spacing: 0.5px;
+    visibility: hidden;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div[ng-show="display_login_form"] {
+    padding-top: 45vh !important;
+    background-color: transparent !important;
+    background: no-repeat;
+    height: 100vh !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div[ng-show="display_login_form"]>div {
+    background-color: $ion-content;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 96%;
+    margin: -70px 2% 0 2% !important;
+    padding: 25px 0;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div[ng-show="display_login_form"]>div>div.list.card {
+    box-shadow: none;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div[ng-show="display_login_form"]>div>div.list.card>div.margin-bottom {
+    display: none;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div[ng-show="display_login_form"]>div>div.padding.text-center.ng-binding {
+    position: absolute;
+    top: 10vh;
+    right: 0;
+    left: 0;
+    color: $ion-view;
+    font-weight: normal;
+    letter-spacing: 0;
+    -webkit-text-stroke: thin;
+}
+
+ion-modal-view.customer-view.customer-layout1 div[ng-show="display_login_form"]>div>div.padding.text-center.ng-binding>span {
+    display: block;
+    background-color: $ion-view;
+    width: fit-content;
+    margin: auto;
+    color: $ion-content;
+    margin-top: 7px;
+    padding: 10px 15px;
+    opacity: 0.9;
+    border-radius: 30px;
+    letter-spacing: 0.8px;
+    text-transform: capitalize;
+    font-weight: normal;
+}
+
+i.icon.ion-ios-person,
+i.icon.ion-locked {
+    display: none;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div[ng-show="display_login_form"]>div>div.list.card>label:nth-child(4) {
+    padding-top: 30px;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div[ng-show="display_login_form"]>div>div.list.card>label {
+    background-color: $transparent-color;
+    margin: 0;
+    border: 0;
+    border-bottom: 1px #b2b2b2 solid;
+    margin-bottom: 7px;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div[ng-show="display_login_form"]>div>div.list.card>label>input::-webkit-input-placeholder {
+    color: $general-font-color;
+    letter-spacing: 0.5px;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div[ng-show="display_login_form"]>div>div.padding>button {
+    background-image: linear-gradient(135deg, #1e1e1e, #1b1b1b);
+    color: white;
+    border: 0;
+    border-radius: 8px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div[ng-show="display_login_form"]>div>div.padding.text-right {
+    text-align: center;
+    order: 2;
+    border: 0;
+    padding: 10px;
+    width: 60%;
+    margin-left: 20%;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div[ng-show="display_login_form"]>div>div.padding.text-right>span {
+    color: #21265e;
+    letter-spacing: 0.5px;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) {
+    position: absolute;
+    width: 100%;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .avatar.text-center.padding {
+    padding-top: 70px;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(5) {
+    background-color: $ion-content !important;
+    margin: 0;
+    width: 96%;
+    margin-left: 2%;
+    border-radius: 0;
+    display: none;
+}
+
+ion-modal-view.customer-view.customer-layout1 span[ng-click="showPrivacyPolicy()"] {
+    text-align: left;
+    display: flex;
+    padding: 0 15px;
+}
+
+ion-modal-view.customer-view.customer-layout1 div[ng-click="requestGdprToken()"] {
+    display: none;
+}
+
+
+/*Myaccount - Signup*/
+
+ion-modal-view.customer-view.customer-layout1 div>img {
+    padding: 1px;
+}
+
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(3) .item.item-custom {
+    background-color: $transparent-color;
+    color: $ion-view !important;
+    border-bottom: 2px solid $ion-view;
+    margin: 15px 7%;
+    width: 88%;
+    text-align: left !important;
+    border-radius: 0;
+}
+
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(3) {
+    background-color: $transparent-color;
+    background-image: none;
+}
+
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(3) div.input-label.ng-binding,
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(3) div.input-label {
+    display: none;
+}
+
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(3) div.list.card {
+    box-shadow: none;
+}
+
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(3) div.list.card>div.item.item-input.item-custom,
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(3) div.list.card>label.item.item-input.item-custom {
+    background-color: #ddd;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    opacity: 0.8;
+    border: none;
+}
+
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(3) div.list.card input {
+    text-align: left;
+    color: $general-font-color;
+    font-weight: 1000;
+}
+
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(3) div.list.card input::placeholder,
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(3) div.list.card input::-webkit-input-placeholder {
+    color: $general-font-color;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(3) div.list.card>sb-clickwrap>label,
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(3) div.list.card>label.checkbox-custom.item-custom.item-text-wrap.item.item-checkbox.ng-empty.ng-valid,
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(3) div.list.card>label.checkbox-custom.item-custom.item-text-wrap.item.item-checkbox.ng-valid.ng-not-empty {
+    background-color: transparent !important;
+    border: none !important;
+    -webkit-text-stroke: thin;
+}
+
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(3) div.list.card>sb-clickwrap>label>div.item-content.disable-pointer-events>h2,
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(3) div.list.card>sb-clickwrap>label>div.item-content.disable-pointer-events>h2>span,
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(3) div.list.card>label>div.item-content.disable-pointer-events,
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(3) div.list.card>label>div.item-content.disable-pointer-events,
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(3) div.list.card>label>div.item-content.disable-pointer-events>span,
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(3) div.list.card>label>div.item-content.disable-pointer-events>span {
+    text-align: left;
+    font-weight: 1000;
+    color: $ion-view !important;
+    letter-spacing: 0.5px;
+}
+
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(3) div.list.card>sb-clickwrap>label,
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(3) div.list.card>label.checkbox-custom.item-custom.item-text-wrap.item.item-checkbox.ng-empty.ng-valid,
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(3) div.list.card>label.checkbox-custom.item-custom.item-text-wrap.item.item-checkbox.ng-valid.ng-not-empty {
+    background-color: $ion-view !important;
+    border: none !important;
+    -webkit-text-stroke: thin;
+    opacity: 0.8;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(3)>div>div:nth-child(3).padding>button,
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(3)>div>div:nth-child(4).padding>button {
+    background-image: linear-gradient(135deg, #1e1e1e, #1b1b1b);
+    border: 0;
+    letter-spacing: 0.5px;
+}
+
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(3)>div>div.padding.text-center {
+    margin: 10px;
+    margin-top: 0;
+    border-radius: 5px;
+    background-color: $transparent-color;
+    border: 0;
+    color: $ion-view;
+}
+
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(3)>div>div.padding.text-center span {
+    color: $ion-view;
+    letter-spacing: 0.5px;
+}
+
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(3) label.checkbox-custom {
+    background-color: $transparent-color !important;
+    color: $ion-view !important;
+    border: 0 !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(3) label.checkbox-custom h2 span,
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(3) label.checkbox-custom label.checkbox-custom span.ng-binding {
+    color: $ion-view;
+    font-size: 14px;
+}
+
+i.icon.ion-sb-close-modal {
+    visibility: hidden;
+}
+
+i.icon.ion-sb-close-modal:after {
+    content: "";
+    background-image: url(https://i.imgur.com/NTV7Vd7.png);
+    background-size: 80%;
+    visibility: visible;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-position: center center;
+    background-color: $ion-content;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(3) div div.list.card>label.item.item-custom.ng-binding {
+    background-color: #ddd;
+    margin: 10px 0px 10px 0px;
+    border: 1px black solid;
+    color: $general-font-color;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    border-radius: 5px;
+}
+
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(3) div>div.padding.text-right {
+    text-align: center;
+    letter-spacing: 0.5px;
+    color: $general-font-color;
+    font-weight: bold;
+    background-color: $ion-content;
+    opacity: 0.8;
+    width: 95%;
+    margin: auto;
+    border-radius: 5px;
+}
+
+
+/*Forgot password*/
+
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(2)[ng-show="display_forgot_password_form"] {
+    margin-top: 30vh;
+    background-color: $ion-content !important;
+    color: $ion-view !important;
+    border-radius: 30px;
+    padding: 20px 0;
+    text-align: center !important;
+    display: flex;
+    justify-content: center;
+    width: 96%;
+    margin-left: 2%;
+}
+
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(2)[ng-show="display_forgot_password_form"] div>div.padding.text-left {
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(2)[ng-show="display_forgot_password_form"] div>div.list.card {
+    margin: 0px 10px;
+    box-shadow: none;
+}
+
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(2)[ng-show="display_forgot_password_form"] div>div:nth-child(3)>button {
+    background-image: $ion-view;
+    border: 0;
+    letter-spacing: 0.5px;
+}
+
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(2)[ng-show="display_forgot_password_form"] div>div.padding.text-center.ng-binding {
+    margin: 0 10px;
+    border: 0;
+    border-radius: 5px;
+    color: $ion-view;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+}
+
+
+/* Account setting page */
+
+ion-modal-view.customer-view.customer-layout1 div[ng-show="display_settings"] .list .item-divider.item-divider-custom {
+    background-color: $transparent-color;
+    border: 0;
+}
+
+ion-modal-view.customer-view.customer-layout1 div[ng-show="display_settings"] ion-item.item-divider.item-divider-custom.item.ng-binding {
+    padding-top: 8vh !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 div[ng-show="display_settings"] .list .item.item-custom {
+    border: 0;
+    background-color: transparent;
+    color: #000;
+}
+
+ion-modal-view.customer-view.customer-layout1 div[ng-show="display_settings"] .list .item.item-custom .input-label.ng-binding,
+ion-modal-view.customer-view.customer-layout1 div[ng-show="display_settings"] .list .item.item-custom select {
+    color: #000 !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(3) sb-clickwrap label.checkbox-custom.item-checkbox,
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(3) label.checkbox-custom.item-text-wrap.item-checkbox {
+    margin: 0 7% !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(3) label.item.item-input.item-custom .input-label.ng-binding {
+    width: 100%;
+    min-width: 100%;
+    text-align: left;
+}
+
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(3) label.item.item-input.item-custom  {
+    margin: 0;
+    border-color: transparent;
+    display: block;
+    padding: 4px 10px;
+}
+
+
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(3) .item.item-custom input {
+    width: 100%;
+    min-width: 100%;
+    border-radius: 20px;
+    border-color: transparent;
+    box-shadow: 0 0 3px #333;
+    display: block;
+    text-align: left;
+    padding: 10px;
+    height: 45px;
+}
+
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(3) sb-clickwrap label.checkbox-custom.item-custom.item-text-wrap.item-checkbox,
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(3) label.checkbox-custom.item-custom.item-text-wrap.item.item-checkbox {
+    padding-left: 48px;
+}
+
+/*Privacy policy*/
+
+ion-modal-view.sb-clickwrap.sb-clickwrap-modal.modal.has-background-image.slide-in-right-left div.scroll>div.list.card {
+    margin: 0;
+}
+
+ion-modal-view.sb-clickwrap.sb-clickwrap-modal.modal.has-background-image.slide-in-right-left ion-item {
+    background-color: $transparent-color;
+}
+
+ion-modal-view.sb-clickwrap.sb-clickwrap-modal.modal.has-background-image.slide-in-right-left ion-item>p:nth-child(n+6) {
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+ion-modal-view.sb-clickwrap.sb-clickwrap-modal {
+    background-color: $ion-view !important;
+    background-image: none !important;
+}
+
+ion-modal-view.sb-clickwrap.sb-clickwrap-modal ion-content {
+    margin-top: 70px;
+    background-color: $ion-content !important;
+    border-radius: 30px 30px 0 0;
+    top: 0 !important;
+}
+
+ion-modal-view.sb-clickwrap.sb-clickwrap-modal ion-content .list {
+    background-color: transparent !important;
+}
+
+ion-modal-view.sb-clickwrap.sb-clickwrap-modal ion-header-bar {
+    background-color: transparent;
+    height: 0 !important;
+    background-image: none !important;
+}
+
+input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #293072 !important;
+}
+input::-moz-placeholder { /* Firefox 19+ */
+  color: #293072 !important;
+}
+input:-ms-input-placeholder { /* IE 10+ */
+  color: #293072 !important;
+}
+input:-moz-placeholder { /* Firefox 18- */
+  color: #293072 !important;
+}
+
+
+/* END MY ACCOUNT */
+
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(3) sb-clickwrap label.checkbox-custom.item-custom.item-text-wrap.item-checkbox,
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(3) label.checkbox-custom.item-custom.item-text-wrap.item.item-checkbox {
+    padding-left: 48px !important;
+    margin: 10px 0 !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(3) .list .item.item-custom {
+    background-color: $transparent-color;
+    color: $ion-view !important;
+    border-bottom: 2px solid $ion-view;
+    border-radius: 0;
+    width: 100%;
+    padding: 2px 10px !important;
+    margin: 0 !important;
+    border-color: transparent;
+    display: block;
+}
+
+ion-modal-view.customer-view.customer-layout1 div.scroll>div:nth-child(3) label.item.item-input.item-custom .input-label.ng-binding {
+    width: 100%;
+    min-width: 100%;
+    text-align: left;
+}
+
+

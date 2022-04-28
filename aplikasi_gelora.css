@@ -1,0 +1,382 @@
+/* Menambahkan logo gelora bagian header */
+
+ion-header-bar.bar-custom.bar.bar-header {
+    background-color: #2fc4ef;
+}
+
+ion-header-bar.bar-custom.bar.bar-header .title {
+    background-image: url(https://justapp.id/member/halaman/unggah/article/3e15b4c83a0e2b6b84ae5c61f2a2beeblogo-horizontal.png) !important;
+    background-repeat: no-repeat !important;
+    background-size: 50% !important;
+    background-position: center !important;
+    margin: 0 !important;
+    height: 100%;
+}
+
+ion-header-bar.bar-custom.bar.bar-header button.button.back-button.buttons.button-clear.header-item,
+ion-header-bar.bar-custom.bar.bar-header .buttons.buttons-right.header-item {
+    margin: 0 !important;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    color: #fff;
+}
+
+
+/* Menghilangkan title */
+
+.bar.bar-custom .title {
+    color: transparent;
+}
+
+
+/* Layout 1 */
+
+ion-view[state="home"] {
+    background-color: #fff !important;
+    background-image: none !important;
+}
+
+.always .layout.l1 .tabs img {
+    margin: 0 !important;
+}
+
+.always .layout.l1 .tabs {
+    display: flex;
+    justify-content: space-around;
+    border: 0 !important;
+    box-shadow: 0 0px 5px #2fc4ef;
+}
+
+.always .layout.l1 .tabs li p {
+    display: none;
+}
+
+.always .layout.l1 .tabs li {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* End of Layout 1 */
+
+
+/* Custom Page */
+
+
+/* ID CARD */
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(3) .card.no-shadow {
+    background-color: #2fc4ef !important;
+    padding: 10px;
+    border-radius: 10px;
+    background: #0187a3;
+    background-image: url(https://justapp.id/member/halaman/unggah/article/16aed7d0790fad2a36a74d10815efba4peta-Indonesia.png);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: top 10px right;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(3) .card.no-shadow .item.item-custom {
+    padding: 0;
+    background-color: transparent;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(3) iframe.sb-cms-source {
+    border: 0;
+    width: 100%;
+    overflow: hidden;
+    height: 25vh !important;
+    background-image: url(https://justapp.id/member/halaman/unggah/article/aef304a4af320fd5164c1d8437ae1e2clogo-utama.png);
+    background-repeat: no-repeat;
+    background-size: 25%;
+    background-position: left top;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(4),
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(5) {
+    margin: 0 !important;
+    width: 100%;
+    height: auto !important;
+    background-color: transparent;
+    padding: 0;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(4) .card[ng-switch-when="text"],
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(5) .card[ng-switch-when="text"] {
+    box-shadow: none;
+    margin: 0;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(4) .card[ng-switch-when="text"] .content.ng-binding,
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(5) .card[ng-switch-when="text"] .content.ng-binding {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5px 0;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(4) .card[ng-switch-when="text"] .item.item-text-wrap.item-custom.sb-cms-text,
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(5) .card[ng-switch-when="text"] .item.item-text-wrap.item-custom.sb-cms-text {
+    padding: 0;
+    background-color: transparent;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(4) .card[ng-switch-when="text"] .content.ng-binding p,
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(5) .card[ng-switch-when="text"] .content.ng-binding p {
+    background-color: #2fc4ef;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100px;
+    border-radius: 10px;
+    color: #fff;
+    padding: 5px;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(4) .card[ng-switch-when="text"] .content.ng-binding p:nth-child(1) a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background-image: url(https://justapp.id/member/halaman/unggah/article/82d9bacc2a8291b7efdaa25d3806b134informasi.png);
+    background-position: center top 5px;
+    background-repeat: no-repeat;
+    background-size: 60%;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(4) .card[ng-switch-when="text"] .content.ng-binding p:nth-child(2) a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background-image: url(https://justapp.id/member/halaman/unggah/article/7fd0b9ec5c3389b4836628057451827bmember.png);
+    background-position: center top 5px;
+    background-repeat: no-repeat;
+    background-size: 60%;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(4) .card[ng-switch-when="text"] .content.ng-binding p:nth-child(3) a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background-image: url(https://justapp.id/member/halaman/unggah/article/be50dbb9caed986c63130a0d7a0a9d96kegiatan.png);
+    background-position: center top 5px;
+    background-repeat: no-repeat;
+    background-size: 60%;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(5) .card[ng-switch-when="text"] .content.ng-binding p:nth-child(1) a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background-image: url(https://justapp.id/member/halaman/unggah/article/a2ed0727860af93b1684f9df7f409b17video.png);
+    background-position: center top 5px;
+    background-repeat: no-repeat;
+    background-size: 60%;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(5) .card[ng-switch-when="text"] .content.ng-binding p:nth-child(2) a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background-image: url(https://justapp.id/member/halaman/unggah/article/8e1321aee6f667ffe096873e896044d3ebook.png);
+    background-position: center top 5px;
+    background-repeat: no-repeat;
+    background-size: 60%;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(5) .card[ng-switch-when="text"] .content.ng-binding p:nth-child(3) a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background-image: url(https://justapp.id/member/halaman/unggah/article/b490333f34f80bc331e5a1fb8abd5d6fdonasi.png);
+    background-position: center top 5px;
+    background-repeat: no-repeat;
+    background-size: 60%;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(6) .card[ng-switch-when="text"] {
+    box-shadow: none;
+    margin: 20px 10px 0 10px !important;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(7) .card[ng-switch-when="text"] {
+    margin: 0 10px 10px 10px !important;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(6) .item.item-text-wrap.item-custom.sb-cms-text {
+    padding: 0;
+    background-color: transparent;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(8) .card[ng-switch-when="text"],
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(9) .card[ng-switch-when="text"] {
+    box-shadow: none;
+    margin: 0;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(8) .card[ng-switch-when="text"] .item.item-text-wrap.item-custom.sb-cms-text {
+    background-color: transparent;
+    padding: 0 10px;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(8) .card[ng-switch-when="text"] .content.ng-binding,
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(6) .card[ng-switch-when="text"] .content.ng-binding {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0 !important;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(9) .card[ng-switch-when="text"] .content.ng-binding {
+    padding: 0;
+    display: flex;
+    margin-bottom: 20px;
+    overflow: visible;
+    width: 100% !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    white-space: nowrap !important;
+    -webkit-overflow-scrolling: touch !important;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(9) .card[ng-switch-when="text"] .item.item-text-wrap.item-custom.sb-cms-text {
+    padding: 5px;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(9) .card[ng-switch-when="text"] .content.ng-binding p:nth-child(1) {
+    width: 100% !important;
+    min-width: 58% !important;
+    height: 138px;
+    margin: 0 1%;
+    background-color: #2fc4ef !important;
+    border-radius: 10px;
+    display: flex !important;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    background-image: url(https://builder.justapp.id/images/application/1351/features/custom_page/195545/620aa6f5d5785.jpg) !important;
+    background-position: center !important;
+    background-size: cover !important;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(9) .card[ng-switch-when="text"] .content.ng-binding p:nth-child(2) {
+    width: 100% !important;
+    min-width: 58% !important;
+    height: 138px;
+    margin: 0 1%;
+    background-color: #2fc4ef !important;
+    border-radius: 10px;
+    display: flex !important;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    background-image: url(https://www.partaigelora.id/wp-content/uploads/2020/04/nilai-nilai.jpg) !important;
+    background-position: center !important;
+    background-size: cover !important;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(9) .card[ng-switch-when="text"] .content.ng-binding p:nth-child(3) {
+    width: 100% !important;
+    min-width: 58% !important;
+    height: 138px;
+    margin: 0 1%;
+    background-color: #2fc4ef !important;
+    border-radius: 10px;
+    display: flex !important;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    background-image: url(https://builder.justapp.id/images/application/1351/features/custom_page/195545/620aa6f5d5785.jpg) !important;
+    background-position: center !important;
+    background-size: cover !important;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(9) .card[ng-switch-when="text"] .content.ng-binding p:nth-child(4) {
+    width: 100% !important;
+    min-width: 58% !important;
+    height: 138px;
+    margin: 0 1%;
+    background-color: #2fc4ef !important;
+    border-radius: 10px;
+    display: flex !important;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    background-image: url(https://builder.justapp.id/images/application/1351/features/custom_page/195545/620aa6f5d5785.jpg) !important;
+    background-position: center !important;
+    background-size: cover !important;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(9) .card[ng-switch-when="text"] .content.ng-binding p a {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #fff !important;
+    text-align: left;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+ion-view.module-cms.cms-l1 .card[ng-switch-when="file"] {
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+}
+
+ion-view.module-cms.cms-l1 .card[ng-switch-when="file"] .item.item-custom {
+    border-color: rgba(255, 255, 255, 0);
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(68, 68, 68, 1);
+    background: rgb(213, 216, 217);
+    background: linear-gradient( 90deg, rgba(213, 216, 217, 1) 12%, rgba(240, 240, 240, 1) 12%);
+    padding-left: 50px;
+    border-radius: 5px;
+    margin: 10px;
+    border: 1px solid #d5d8d9 !important;
+}
+
+ion-view.module-cms.cms-l1 .card[ng-switch-when="file"] i.icon.ion-paperclip {
+    background-image: url(https://unpkg.com/ionicons@5.5.2/dist/svg/document-outline.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-size: 0;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-last-child(1) .card[ng-switch-when="file"] {
+    padding-bottom: 50px;
+}

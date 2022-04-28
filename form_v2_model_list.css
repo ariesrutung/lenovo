@@ -1,0 +1,447 @@
+/* CSS Form v2 Desain List */
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list {
+    padding: 12px;
+    margin: 0;
+    box-shadow: none;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list ion-item.form2-divider p.ng-binding {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list ion-item.form2-richtext {
+    font-style: italic;
+    line-height: 1.8;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list ion-item.form2-richtext p {
+    font-size: 11px !important;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list label.form2-textarea {
+    padding: 0;
+    margin: 15px 0 0 0;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list label.form2-textarea .input-label.ng-binding {
+    width: 100%;
+    min-width: 100%;
+    margin-top: 5px;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .padding {
+    padding: 30px 10px 100px 10px !important;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .padding button {
+    margin-top: 0;
+    background-color: #04435c;
+    border: 0 !important;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(-45deg,#ee7752,#e73c7e,#23a6d5,#23d5ab);
+    background-size: 400% 400%;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list label.form2-checkbox span.ng-binding {
+    color: #000;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list:first-child {
+    padding-top: 66px !important;
+}
+
+/* gambar ilustrasi form v2 */
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list img.form2-illustration {
+    width: 100%;
+    margin: 0;
+    border-radius: 10px;
+}
+
+/* Form v2 tab */
+ion-view.module-form2.form2.form2-home.form2-home-l1 .form2-tabs,
+.tabs.tabs-icon-top.form2-tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 94%;
+    top: calc(var(--safe-area-inset-top) + 55px);
+    margin: 0 3% !important;
+    border-radius: 10px;
+    background-color: #89b0be;
+    background-image: none !important;
+    border: 0 !important;
+    padding: 5px !important;
+    height: 40px !important;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .form2-tabs a.tab-item.ng-binding,
+a.tab-item.ng-binding {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-width: 46%;
+    background-color: #fff !important;
+    padding: 0;
+    margin: 0 2%;
+    border-radius: 30px;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .form2-tabs a.tab-item.ng-binding i {
+    margin: 0 10px;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+/* Detail Form */
+ion-modal-view.module-form2.form2-modal.form2-display-modal .list {
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+}
+
+ion-modal-view.module-form2.form2-modal.form2-display-modal .list .item-divider.item-divider-custom p.ng-binding {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+ion-modal-view.module-form2.form2-modal.form2-display-modal .list label.form2-text {
+    display: block;
+    text-align: left;
+    margin: 0 !important;
+    padding: 0 0 0 16px;
+}
+
+ion-modal-view.module-form2.form2-modal.form2-display-modal .list label.form2-text .input-label.ng-binding {
+    padding: 0;
+}
+
+ion-modal-view.module-form2.form2-modal.form2-display-modal .list label.form2-text .input-label.ng-binding {
+    width: 100%;
+    max-width: 100%;
+    font-size: 12px !important;
+}
+
+ion-modal-view.module-form2.form2-modal.form2-display-modal .list label.form2-text input,
+ion-modal-view.module-form2.form2-modal.form2-display-modal .list label.form2-textarea textarea {
+    text-align: left;
+    color: #2f7df2;
+    font-style: italic;
+    padding: 0 !important;
+    height: 30px;
+    font-size: 12px;
+}
+
+ion-modal-view.module-form2.form2-modal.form2-display-modal .list ion-item.item-image img.form2-pictures {
+    max-height: 25vh;
+    width: 100%;
+    max-width: 90%;
+    margin: 6px auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+ion-modal-view.module-form2.form2-modal.form2-display-modal .list:nth-last-child(1) {
+    margin-bottom: 40px !important;
+    padding-bottom: 100px !important;
+}
+
+ion-modal-view.module-form2.form2-modal.form2-display-modal div[ng-if="cardDesign"] {
+    background-color: #ecf0f6 !important;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 10px;
+    border: 1px dashed #5a6068;
+}
+
+ion-modal-view.module-form2.form2-modal.form2-display-modal .list label.form2-checkbox i.checkbox-icon {
+    display: none;
+}
+
+ion-modal-view.module-form2.form2-modal.form2-display-modal .list label.form2-checkbox {
+    padding: 5px 0 0 16px;
+}
+
+ion-modal-view.module-form2.form2-modal.form2-display-modal .list .form2-divider {
+    padding: 10px 10px 0;
+}
+
+ion-modal-view.module-form2.form2-modal.form2-display-modal .list ion-item.form2-richtext.item {
+    padding: 10px;
+}
+
+ion-modal-view.module-form2.form2-modal.form2-display-modal .list label.form2-text {
+    display: block;
+    text-align: left;
+    margin: 0 !important;
+    padding: 5px 10px;
+}
+
+ion-modal-view.module-form2.form2-modal.form2-display-modal .list label.form2-textarea {
+    padding: 5px 10px;
+}
+
+ion-modal-view.module-form2.form2-modal.form2-display-modal .list label.form2-textarea textarea {
+    padding-top: 5px !important;
+}
+
+ion-modal-view.module-form2.form2-modal.form2-display-modal .list label.form2-checkbox {
+    font-style: italic;
+    padding: 3px 10px;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list .form2-radio {
+    padding: 0;
+    margin: 15px 0 0 0;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list .radio-content .item-content.disable-pointer-events {
+    max-height: 45px !important;
+    display: block !important;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 1);
+    color: #444;
+    padding-left: 5px;
+    border-radius: 5px;
+    margin: 0 !important;
+    border: 1px solid #d5d8d9 !important;
+    width: 100% !important;
+    border-left: 5px solid #89b0be !important;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list .radio-content {
+    padding: 0;
+    margin: 0;
+    border: 0 !important;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list .item-radio.radio-custom {
+    border: 0;
+    margin-bottom: 10px;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list label.form2-select {
+    padding: 0 !important;
+    display: block !important;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 1);
+    color: #444;
+    border-radius: 5px;
+    margin: 15px 0 0 0!important;
+    border: 1px solid #d5d8d9 !important;
+    width: 100% !important;
+    border-left: 5px solid #89b0be !important;
+    max-height: 45px !important;
+    height: 45px !important;
+    background-image: url(https://unpkg.com/ionicons@5.5.2/dist/svg/caret-down-outline.svg);
+    background-position: center right 5px;
+    background-repeat: no-repeat;
+    background-size: 20px;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list label.form2-select .input-label.ng-binding {
+    padding: 5px !important;
+    width: 100%;
+    min-width: 100%;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list label.form2-select:after {
+    display: none;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list label.form2-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: left !important;
+    min-width: 100%;
+    padding: 0 !important;
+    margin-top: 15px;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list label.form2-number .input-label.ng-binding {
+    text-align: left;
+    width: 100%;
+    min-width: 100%;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list .input-label.ng-binding {
+    padding: 5px !important;
+    width: 100%;
+    min-width: 100%;
+    font-size: 12px;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list input,
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list textarea {
+    font-size: 12px;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list label.form2-number input {
+    max-height: 45px !important;
+    display: block !important;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 1);
+    color: #444;
+    border-radius: 5px;
+    margin: 0 !important;
+    border: 1px solid #d5d8d9 !important;
+    width: 100% !important;
+    border-left: 5px solid #89b0be !important;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list label.form2-checkbox {
+    max-height: 45px !important;
+    display: block !important;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 1);
+    color: #444;
+    border-radius: 5px;
+    margin: 0 0 5px 0 !important;
+    border: 1px solid #d5d8d9 !important;
+    width: 100% !important;
+    border-left: 5px solid #89b0be !important;
+}
+
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list label.form2-textarea textarea {
+    display: block !important;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 1);
+    color: #444;
+    padding-left: 5px !important;
+    border-radius: 5px;
+    margin: 0 !important;
+    border: 1px solid #d5d8d9 !important;
+    width: 100% !important;
+    border-left: 5px solid #89b0be !important;  
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list form2-clickwrap.form2-clickwrap label.checkbox-custom.item-checkbox,
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list label.checkbox-custom.item-custom.form2-checkbox.item.item-checkbox,
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list ion-item.upload-action,
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list .form2-date,
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list .form2-datetime {
+    max-height: 45px !important;
+    display: block !important;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 1);
+    color: #444;
+    border-radius: 5px;
+    margin: 0 0 5px 0 !important;
+    border: 1px solid #d5d8d9 !important;
+    width: 100% !important;
+    border-left: 5px solid #89b0be !important;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list .form2-date {
+    max-height: 45px !important;
+    display: block !important;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 1);
+    color: #444;
+    border-radius: 5px;
+    margin: 10px 0 !important;
+    border: 1px solid #d5d8d9 !important;
+    width: 100% !important;
+    border-left: 5px solid #89b0be !important;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list label.form2-text input {
+    max-height: 45px !important;
+    display: block !important;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 1);
+    color: #444;
+    padding-left: 5px !important;
+    border-radius: 5px;
+    margin: 0 !important;
+    border: 1px solid #d5d8d9 !important;
+    width: 100% !important;
+    border-left: 5px solid #89b0be !important;
+}
+/* tanpa padding */
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list .item-divider.item-divider-custom {
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(31, 31, 31, 1);
+    border: rgba(247, 247, 247, 0);
+    padding: 0;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list ion-item.form2-richtext {
+    font-style: italic;
+    line-height: 1.8;
+    padding: 0;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list label.form2-text .input-label.ng-binding,
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list ion-item.radio-title.item.ng-binding,
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list ion-item.upload-title.item.ng-binding,
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list label.item-stacked-label.form2-textarea .input-label.ng-binding,
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list ion-item.form2-divider p.ng-binding,
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list label.form2-number .input-label.ng-binding {
+    min-width: 100%;
+    font-weight: bold;
+    font-size: 12px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list label.form2-select .input-label.ng-binding {
+    height: 100% !important;
+    display: flex;
+    align-items: center;
+    padding-left: 5px !important;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list label.form2-text {
+    display: block;
+    width: 100%;
+    text-align: left;
+    min-width: 100%;
+    padding: 0;
+    margin-top: 15px;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list form2-pictures.form2-image>div {
+    margin-top: 15px !important;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list form2-clickwrap.form2-clickwrap {
+    margin-top: 15px !important;
+    display: block;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list form2-location.form2-geolocation label.checkbox-custom.item-checkbox {
+    display: block !important;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 1);
+    color: #444;
+    border-radius: 5px;
+    margin: 0 0 5px 0 !important;
+    border: 1px solid #d5d8d9 !important;
+    width: 100% !important;
+    border-left: 5px solid #89b0be !important;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 button.button.button-positive.button-positive-custom.ng-binding.button-full {
+    margin-top: 0;
+    background-color: #04435c;
+    border: 0 !important;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(-45deg,#ee7752,#e73c7e,#23a6d5,#23d5ab);
+    background-size: 400% 400%;
+    width: 94%;
+    margin: 0 3%;
+    border-radius: 10px;
+}

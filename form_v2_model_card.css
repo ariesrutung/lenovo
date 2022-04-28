@@ -1,0 +1,929 @@
+/* Set home bg */
+ion-view[state="home"] {
+    background-image: none !important;
+    background-color: #fff !important;
+}
+
+.always .layout.l1 .tabs {
+    box-shadow: none !important;
+    border: 0 !important;
+}
+
+
+/* CUSTOM P[AGE START HERE */
+/* Remove card shadow and margin */
+ion-view.module-cms.cms-l1 .card {
+    margin: 0 !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+
+/* remove item padding and set background color */
+ion-view.module-cms.cms-l1 .card .item.item-text-wrap.item-custom.sb-cms-text {
+    padding: 0 !important;
+    background-color: transparent !important;
+    border: 0 !important;
+}
+
+
+/* set color of card title  */
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"] .card .content.ng-binding a {
+    color: transparent !important;
+}
+
+
+/* 1TH BLOCK START */
+ion-view.module-cms.cms-l1 .card.no-shadow .item.item-custom {
+    padding: 0;
+    background-color: transparent !important;
+    border: 0 !important;
+}
+
+ion-view.module-cms.cms-l1 iframe.sb-cms-source {
+    height: 20vh !important;
+}
+/* 1TH BLOCK END */
+
+
+/* 2ND BLOCK START */
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(4) .card .content.ng-binding p:nth-child(1) {
+    width: 55%;
+    display: inline-flex;
+    background-color: #ecf0f6;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 10%), 0px 1px 3px 0px rgba(0, 0, 0, 8%);
+    border-radius: 10px;
+    margin: 10px 2%;
+    background-image: url(https://plagtibmobile.files.wordpress.com/2017/11/cdzxjjgumaauycj.jpg?w=512);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(4) .card .content.ng-binding p:nth-child(2) {
+    width: 36%;
+    display: inline-flex;
+    background-color: #ecf0f6;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 10%), 0px 1px 3px 0px rgba(0, 0, 0, 8%);
+    border-radius: 10px;
+    margin: 10px 2%;
+    background-image: url(https://plagtibmobile.files.wordpress.com/2021/03/test2.png?resize=100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(4) .card .content.ng-binding p:nth-child(3) {
+    width: 36%;
+    display: inline-flex;
+    background-color: #ecf0f6;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 10%), 0px 1px 3px 0px rgba(0, 0, 0, 8%);
+    border-radius: 10px;
+    margin: 10px 2%;
+    background-image: url(https://plagtibmobile.files.wordpress.com/2021/03/test1.png?resize=100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(4) .card .content.ng-binding p:nth-child(4) {
+    width: 55%;
+    display: inline-flex;
+    background-color: #ecf0f6;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 10%), 0px 1px 3px 0px rgba(0, 0, 0, 8%);
+    border-radius: 10px;
+    margin: 10px 2%;
+    background-image: url(https://plagtibmobile.files.wordpress.com/2021/03/test3.png?resize=100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(4) .card .content.ng-binding p:nth-child(5) {
+    width: 96%;
+    display: inline-flex;
+    background-color: #ecf0f6;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 10%), 0px 1px 3px 0px rgba(0, 0, 0, 8%);
+    border-radius: 10px;
+    margin: 10px 2%;
+    background-image: url(https://plagtibmobile.files.wordpress.com/2021/03/test4.png?);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(4) .card .content.ng-binding {
+    display: block;
+}
+/* 2ND BLOCK END */
+
+
+/* 3TH BLOCK START */
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(5) .card .content.ng-binding {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 10px 10px 10px;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(5) .card .content.ng-binding p a {
+    color: #387ef5 !important;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(5) .card .content.ng-binding h2 strong {
+    color: #000;
+}
+/* 3TH BLOCK END */
+
+
+/* 4TH BLOCK START */
+/* Horizontal card */
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(6) .card .content.ng-binding {
+    padding: 0;
+    display: flex;
+    margin-bottom: 20px;
+    overflow: visible;
+    white-space: nowrap !important;
+    width: 100% !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    white-space: nowrap !important;
+    -webkit-overflow-scrolling: touch !important;
+}
+
+
+/* first card */
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(6) .card .content.ng-binding p:nth-child(1) {
+    width: 100% !important;
+    min-width: 35% !important;
+    display: inline-flex !important;
+    height: 60px;
+    margin: 0 2%;
+    background-color: #ecf0f6 !important;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://plagtibmobile.files.wordpress.com/2021/03/test3.png?resize=100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* second card */
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(6) .card .content.ng-binding p:nth-child(2) {
+    width: 100% !important;
+    min-width: 35% !important;
+    display: inline-flex !important;
+    height: 60px;
+    margin: 0 2%;
+    background-color: #ecf0f6 !important;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://plagtibmobile.files.wordpress.com/2021/03/test3.png?resize=100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* thirt card */
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(6) .card .content.ng-binding p:nth-child(3) {
+    width: 100% !important;
+    min-width: 35% !important;
+    display: inline-flex !important;
+    height: 60px;
+    margin: 0 2%;
+    background-color: #ecf0f6 !important;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://plagtibmobile.files.wordpress.com/2021/03/test3.png?resize=100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* fourt card */
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(6) .card .content.ng-binding p:nth-child(4) {
+    width: 100% !important;
+    min-width: 35% !important;
+    display: inline-flex !important;
+    height: 60px;
+    margin: 0 2%;
+    background-color: #ecf0f6 !important;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://plagtibmobile.files.wordpress.com/2021/03/test3.png?resize=100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* fifth card */
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(6) .card .content.ng-binding p:nth-child(5) {
+    width: 100% !important;
+    min-width: 35% !important;
+    display: inline-flex !important;
+    height: 60px;
+    margin: 0 2%;
+    background-color: #ecf0f6 !important;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://plagtibmobile.files.wordpress.com/2021/03/test3.png?resize=100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* sixth card */
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(6) .card .content.ng-binding p:nth-child(6) {
+    width: 100% !important;
+    min-width: 35% !important;
+    display: inline-flex !important;
+    height: 60px;
+    margin: 0 2%;
+    background-color: #ecf0f6 !important;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://plagtibmobile.files.wordpress.com/2021/03/test3.png?resize=100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* eight card */
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(6) .card .content.ng-binding p:nth-child(7) {
+    width: 100% !important;
+    min-width: 35% !important;
+    display: inline-flex !important;
+    height: 60px;
+    margin: 0 2%;
+    background-color: #ecf0f6 !important;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://plagtibmobile.files.wordpress.com/2021/03/test3.png?resize=100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* ninenth card */
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(6) .card .content.ng-binding p:nth-child(8) {
+    width: 100% !important;
+    min-width: 35% !important;
+    display: inline-flex !important;
+    height: 60px;
+    margin: 0 2%;
+    background-color: #ecf0f6 !important;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://plagtibmobile.files.wordpress.com/2021/03/test3.png?resize=100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* 4TH BLOCK START */
+
+
+/* 5TH BLOCK START */
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(7) .card .content.ng-binding {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 10px 10px 10px;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(7) .card .content.ng-binding p a {
+    color: #387ef5 !important;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(7) .card .content.ng-binding h2 strong {
+    color: #000;
+}
+/* 5TH BLOCK END */
+
+
+/* 6TH BLOCK START */
+/* vertical card */
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(8) .card .content.ng-binding {
+    padding: 0;
+    display: flex;
+    margin-bottom: 20px;
+    width: 98% !important;
+    overflow-x: hidden !important;
+    overflow-y: scroll !important;
+    white-space: nowrap !important;
+    -webkit-overflow-scrolling: touch !important;
+    height: 90px !important;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 1% 5px 1%;
+}
+
+
+/* 1th card */
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(8) .card .content.ng-binding p:nth-child(1) {
+    width: 98% !important;
+    min-width: 98% !important;
+    display: flex !important;
+    flex-direction: column;
+    height: 80px;
+    margin: 7px 2%;
+    background-color: #ecf0f6 !important;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    min-height: 80px;
+    background-image: url(https://plagtibmobile.files.wordpress.com/2021/03/test4.png?);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* 2nd card */
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(8) .card .content.ng-binding p:nth-child(2) {
+    width: 98% !important;
+    min-width: 98% !important;
+    display: flex !important;
+    flex-direction: column;
+    height: 80px;
+    margin: 7px 2%;
+    background-color: #ecf0f6 !important;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    min-height: 80px;
+    background-image: url(https://plagtibmobile.files.wordpress.com/2021/03/test4.png?);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* 3th card */
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(8) .card .content.ng-binding p:nth-child(3) {
+    width: 98% !important;
+    min-width: 98% !important;
+    display: flex !important;
+    flex-direction: column;
+    height: 80px;
+    margin: 7px 2%;
+    background-color: #ecf0f6 !important;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    min-height: 80px;
+    background-image: url(https://plagtibmobile.files.wordpress.com/2021/03/test4.png?);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* 4th card */
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(8) .card .content.ng-binding p:nth-child(4) {
+    width: 98% !important;
+    min-width: 98% !important;
+    display: flex !important;
+    flex-direction: column;
+    height: 80px;
+    margin: 7px 2%;
+    background-color: #ecf0f6 !important;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    min-height: 80px;
+    background-image: url(https://plagtibmobile.files.wordpress.com/2021/03/test4.png?);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* 5th card */
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(8) .card .content.ng-binding p:nth-child(5) {
+    width: 98% !important;
+    min-width: 98% !important;
+    display: flex !important;
+    flex-direction: column;
+    height: 80px;
+    margin: 7px 2%;
+    background-color: #ecf0f6 !important;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    min-height: 80px;
+    background-image: url(https://plagtibmobile.files.wordpress.com/2021/03/test4.png?);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* 6th card */
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(8) .card .content.ng-binding p:nth-child(6) {
+    width: 98% !important;
+    min-width: 98% !important;
+    display: flex !important;
+    flex-direction: column;
+    height: 80px;
+    margin: 7px 2%;
+    background-color: #ecf0f6 !important;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    min-height: 80px;
+    background-image: url(https://plagtibmobile.files.wordpress.com/2021/03/test4.png?);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* 7th card */
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(8) .card .content.ng-binding p:nth-child(7) {
+    width: 98% !important;
+    min-width: 98% !important;
+    display: flex !important;
+    flex-direction: column;
+    height: 80px;
+    margin: 7px 2%;
+    background-color: #ecf0f6 !important;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    min-height: 80px;
+    background-image: url(https://plagtibmobile.files.wordpress.com/2021/03/test4.png?);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* 8th card */
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(8) .card .content.ng-binding p:nth-child(8) {
+    width: 98% !important;
+    min-width: 98% !important;
+    display: flex !important;
+    flex-direction: column;
+    height: 80px;
+    margin: 7px 2%;
+    background-color: #ecf0f6 !important;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    min-height: 80px;
+    background-image: url(https://plagtibmobile.files.wordpress.com/2021/03/test4.png?);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* 6TH BLOCK START */
+
+
+/* CSS Form v2 Desain Card */
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list.card {
+    padding: 12px;
+    margin: 0;
+    box-shadow: none;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list.card ion-item.form2-divider p.ng-binding {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list.card ion-item.form2-richtext {
+    font-style: italic;
+    line-height: 1.8;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list.card ion-item.form2-richtext p {
+    font-size: 11px !important;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list.card label.form2-textarea {
+    padding: 0;
+    margin: 15px 0 0 0;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list.card label.form2-textarea .input-label.ng-binding {
+    width: 100%;
+    min-width: 100%;
+    margin-top: 5px;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .padding {
+    padding: 30px 10px 100px 10px !important;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .padding button {
+    margin-top: 0;
+    background-color: #04435c;
+    border: 0 !important;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(-45deg,#ee7752,#e73c7e,#23a6d5,#23d5ab);
+    background-size: 400% 400%;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list.card label.form2-checkbox span.ng-binding {
+    color: #000;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list.card:first-child {
+    padding-top: 66px !important;
+}
+
+/* gambar ilustrasi form v2 */
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list.card img.form2-illustration {
+    width: 100%;
+    margin: 0;
+    border-radius: 10px;
+}
+
+/* Form v2 tab */
+ion-view.module-form2.form2.form2-home.form2-home-l1 .form2-tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 94%;
+    top: calc(var(--safe-area-inset-top) + 55px);
+    margin: 0 3% !important;
+    border-radius: 10px;
+    background-color: #89b0be;
+    background-image: none !important;
+    border: 0 !important;
+    padding: 5px !important;
+    height: 40px !important;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .form2-tabs a.tab-item.ng-binding {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-width: 46%;
+    background-color: #fff !important;
+    padding: 0;
+    margin: 0 2%;
+    border-radius: 30px;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .form2-tabs a.tab-item.ng-binding i {
+    margin: 0 10px;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+/* Detail Form */
+ion-modal-view.module-form2.form2-modal.form2-display-modal .list.card {
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+}
+
+ion-modal-view.module-form2.form2-modal.form2-display-modal .list.card .item-divider.item-divider-custom p.ng-binding {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+ion-modal-view.module-form2.form2-modal.form2-display-modal .list.card label.form2-text {
+    display: block;
+    text-align: left;
+    margin: 0 !important;
+    padding: 0 0 0 16px;
+}
+
+ion-modal-view.module-form2.form2-modal.form2-display-modal .list.card label.form2-text .input-label.ng-binding {
+    padding: 0;
+}
+
+ion-modal-view.module-form2.form2-modal.form2-display-modal .list.card label.form2-text .input-label.ng-binding {
+    width: 100%;
+    max-width: 100%;
+    font-size: 12px !important;
+}
+
+ion-modal-view.module-form2.form2-modal.form2-display-modal .list.card label.form2-text input,
+ion-modal-view.module-form2.form2-modal.form2-display-modal .list.card label.form2-textarea textarea {
+    text-align: left;
+    color: #2f7df2;
+    font-style: italic;
+    padding: 0 !important;
+    height: 30px;
+    font-size: 12px;
+}
+
+ion-modal-view.module-form2.form2-modal.form2-display-modal .list.card ion-item.item-image img.form2-pictures {
+    max-height: 25vh;
+    width: 100%;
+    max-width: 90%;
+    margin: 6px auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+ion-modal-view.module-form2.form2-modal.form2-display-modal .list.card:nth-last-child(1) {
+    margin-bottom: 40px !important;
+    padding-bottom: 100px !important;
+}
+
+ion-modal-view.module-form2.form2-modal.form2-display-modal div[ng-if="cardDesign"] {
+    background-color: #ecf0f6 !important;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 10px;
+    border: 1px dashed #5a6068;
+}
+
+ion-modal-view.module-form2.form2-modal.form2-display-modal .list.card label.form2-checkbox i.checkbox-icon {
+    display: none;
+}
+
+ion-modal-view.module-form2.form2-modal.form2-display-modal .list.card label.form2-checkbox {
+    padding: 5px 0 0 16px;
+}
+
+ion-modal-view.module-form2.form2-modal.form2-display-modal .list.card .form2-divider {
+    padding: 10px 10px 0;
+}
+
+ion-modal-view.module-form2.form2-modal.form2-display-modal .list.card ion-item.form2-richtext.item {
+    padding: 10px;
+}
+
+ion-modal-view.module-form2.form2-modal.form2-display-modal .list.card label.form2-text {
+    display: block;
+    text-align: left;
+    margin: 0 !important;
+    padding: 5px 10px;
+}
+
+ion-modal-view.module-form2.form2-modal.form2-display-modal .list.card label.form2-textarea {
+    padding: 5px 10px;
+}
+
+ion-modal-view.module-form2.form2-modal.form2-display-modal .list.card label.form2-textarea textarea {
+    padding-top: 5px !important;
+}
+
+ion-modal-view.module-form2.form2-modal.form2-display-modal .list.card label.form2-checkbox {
+    font-style: italic;
+    padding: 3px 10px;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list.card .form2-radio {
+    padding: 0;
+    margin: 15px 0 0 0;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list.card .radio-content .item-content.disable-pointer-events {
+    max-height: 45px !important;
+    display: block !important;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 1);
+    color: #444;
+    padding-left: 5px;
+    border-radius: 5px;
+    margin: 0 !important;
+    border: 1px solid #d5d8d9 !important;
+    width: 100% !important;
+    border-left: 5px solid #89b0be !important;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list.card .radio-content {
+    padding: 0;
+    margin: 0;
+    border: 0 !important;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list.card .item-radio.radio-custom {
+    border: 0;
+    margin-bottom: 10px;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list.card label.form2-select {
+    padding: 0 !important;
+    display: block !important;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 1);
+    color: #444;
+    border-radius: 5px;
+    margin: 15px 0 0 0!important;
+    border: 1px solid #d5d8d9 !important;
+    width: 100% !important;
+    border-left: 5px solid #89b0be !important;
+    max-height: 45px !important;
+    height: 45px !important;
+    background-image: url(https://unpkg.com/ionicons@5.5.2/dist/svg/caret-down-outline.svg);
+    background-position: center right 5px;
+    background-repeat: no-repeat;
+    background-size: 20px;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list.card label.form2-select .input-label.ng-binding {
+    padding: 5px !important;
+    width: 100%;
+    min-width: 100%;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list.card label.form2-select:after {
+    display: none;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list.card label.form2-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: left !important;
+    min-width: 100%;
+    padding: 0 !important;
+    margin-top: 15px;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list.card label.form2-number .input-label.ng-binding {
+    text-align: left;
+    width: 100%;
+    min-width: 100%;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list.card .input-label.ng-binding {
+    padding: 5px !important;
+    width: 100%;
+    min-width: 100%;
+    font-size: 12px;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list.card input,
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list.card textarea {
+    font-size: 12px;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list.card label.form2-number input {
+    max-height: 45px !important;
+    display: block !important;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 1);
+    color: #444;
+    border-radius: 5px;
+    margin: 0 !important;
+    border: 1px solid #d5d8d9 !important;
+    width: 100% !important;
+    border-left: 5px solid #89b0be !important;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list.card label.form2-checkbox {
+    max-height: 45px !important;
+    display: block !important;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 1);
+    color: #444;
+    border-radius: 5px;
+    margin: 0 0 5px 0 !important;
+    border: 1px solid #d5d8d9 !important;
+    width: 100% !important;
+    border-left: 5px solid #89b0be !important;
+}
+
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list.card label.form2-textarea textarea {
+    display: block !important;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 1);
+    color: #444;
+    padding-left: 5px !important;
+    border-radius: 5px;
+    margin: 0 !important;
+    border: 1px solid #d5d8d9 !important;
+    width: 100% !important;
+    border-left: 5px solid #89b0be !important;  
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list.card form2-clickwrap.form2-clickwrap label.checkbox-custom.item-checkbox,
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list.card label.checkbox-custom.item-custom.form2-checkbox.item.item-checkbox,
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list.card ion-item.upload-action,
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list.card .form2-date,
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list.card .form2-datetime {
+    max-height: 45px !important;
+    display: block !important;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 1);
+    color: #444;
+    border-radius: 5px;
+    margin: 0 0 5px 0 !important;
+    border: 1px solid #d5d8d9 !important;
+    width: 100% !important;
+    border-left: 5px solid #89b0be !important;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list.card label.form2-text input {
+    max-height: 45px !important;
+    display: block !important;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 1);
+    color: #444;
+    padding-left: 5px !important;
+    border-radius: 5px;
+    margin: 0 !important;
+    border: 1px solid #d5d8d9 !important;
+    width: 100% !important;
+    border-left: 5px solid #89b0be !important;
+}
+/* tanpa padding */
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list.card .item-divider.item-divider-custom {
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(31, 31, 31, 1);
+    border: rgba(247, 247, 247, 0);
+    padding: 0;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list.card ion-item.form2-richtext {
+    font-style: italic;
+    line-height: 1.8;
+    padding: 0;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list.card label.form2-text .input-label.ng-binding,
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list.card ion-item.radio-title.item.ng-binding,
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list.card ion-item.upload-title.item.ng-binding,
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list.card label.item-stacked-label.form2-textarea .input-label.ng-binding,
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list.card ion-item.form2-divider p.ng-binding,
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list.card label.form2-number .input-label.ng-binding {
+    min-width: 100%;
+    font-weight: bold;
+    font-size: 12px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list.card label.form2-select .input-label.ng-binding {
+    height: 100% !important;
+    display: flex;
+    align-items: center;
+    padding-left: 5px !important;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list.card label.form2-text {
+    display: block;
+    width: 100%;
+    text-align: left;
+    min-width: 100%;
+    padding: 0;
+    margin-top: 15px;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list.card form2-pictures.form2-image>div {
+    margin-top: 15px !important;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list.card form2-clickwrap.form2-clickwrap {
+    margin-top: 15px !important;
+    display: block;
+}
+
+ion-view.module-form2.form2.form2-home.form2-home-l1 .list.card form2-location.form2-geolocation label.checkbox-custom.item-checkbox {
+    display: block !important;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 1);
+    color: #444;
+    border-radius: 5px;
+    margin: 0 0 5px 0 !important;
+    border: 1px solid #d5d8d9 !important;
+    width: 100% !important;
+    border-left: 5px solid #89b0be !important;
+}
