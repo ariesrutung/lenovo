@@ -428,3 +428,72 @@ ion-modal-view.privacy-policy-view .col.col-100.padding.item-text-custom.ng-bind
 }
 
 /* END PRIVACY POLICY */
+
+
+.layout.layout_rapi .rapi_workouts_list .rapi_item .rapi_img-container {
+    transform: skew(-28deg);
+    float: left;
+    width: 250px;
+    height: 150px;
+    border-radius: 10px 0 0 10px;
+    overflow: hidden;
+    left: -49px;
+    position: relative;
+}
+
+.layout.layout_rapi .rapi_workouts_list .rapi_item .rapi_img-container .rapi_img {
+    transform: skew(28deg);
+    position: relative;
+    left: 47px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+}
+
+.rapi_item.item.border-custom.homepage-custom.translucent:nth-child(1) {
+    background-color: green !important;
+}
+
+.rapi_item.item.border-custom.homepage-custom.translucent:nth-child(1) h2 {
+    color: #000;
+}
+
+.rapi_item.item.border-custom.homepage-custom.translucent:nth-child(2) {
+    background-color: yellow !important;
+}
+
+.rapi_item.item.border-custom.homepage-custom.translucent:nth-child(2) h2 {
+    color: #000;
+}
+
+.rapi_item.item.border-custom.homepage-custom.translucent:nth-child(3) {
+    background-color: black !important;
+}
+
+.rapi_item.item.border-custom.homepage-custom.translucent:nth-child(3) h2 {
+    color: #000;
+}
+
+.rapi_item.item.border-custom.homepage-custom.translucent:nth-child(4) {
+    background-color: red !important;
+}
+
+.rapi_item.item.border-custom.homepage-custom.translucent:nth-child(4) h2 {
+    color: #000;
+}
+
+.rapi_item.item.border-custom.homepage-custom.translucent:nth-child(5) {
+    background-color: white !important;
+}
+
+.rapi_item.item.border-custom.homepage-custom.translucent:nth-child(5) h2 {
+    color: #000;
+}
+
+.rapi_item.item.border-custom.homepage-custom.translucent:nth-child(6) {
+    background-color: grey !important;
+}
+
+.rapi_item.item.border-custom.homepage-custom.translucent:nth-child(6) h2 {
+    color: #000;
+}
