@@ -16,33 +16,12 @@ $grey-color: #ecf0f6;
 $blue-color: #387093;
 $black-color: #000;
 $icon-filter: url(https://justapp.id/member/halaman/unggah/article/552899bdce385b43cbd9a4945d3533b9filter.png);
-$icon-cart: url(https://justapp.id/member/halaman/unggah/article/9d1a45f55ba5da6b3e14c130b8c7782dcart.png);
 $clear-icon: url(https://justapp.id/member/halaman/unggah/article/875e18f369123ab4938e54ad15968fc9clearicon.png);
 $location-icon: url(https://justapp.id/member/halaman/unggah/article/1b085074c679766777acc53e171dddfclokasi_icon.png);
 $check-icon: url(https://image.flaticon.com/icons/png/512/845/845646.png);
-$stamp-icon: url(https://thumbs.dreamstime.com/b/grunge-blue-received-word-oval-rubber-seal-stamp-white-background-183914133.jpg);
-$history-page-banner: url(https://www.halodoc.com/assets/img/home-v2/webp/home-banner-v3.svg);
-$tab-location-banner: url(https://d1vbn70lmn1nqe.cloudfront.net/prod/wp-content/uploads/2022/01/03100504/X-Manfaat-Minyak-Ikan-untuk-Kesehatan-Anak.jpg.webp);
-$tab-categories-banner: url(https://d1vbn70lmn1nqe.cloudfront.net/prod/wp-content/uploads/2022/01/14102543/Ketahui-Obat-Obatan-untuk-Mengatasi-Herpes-Oral.jpg.webp);
-$tab-sarvices-banner: url(https://d1vbn70lmn1nqe.cloudfront.net/prod/wp-content/uploads/2022/01/14074002/ketahui-kalori-dalam-singkong-rebus-sebelum-memulai-diet-halodoc.jpg.webp);
-$tab-providers-banner: url(https://d1bpj0tv6vfxyp.cloudfront.net/articles/776296_16-3-2021_11-57-17.webp);
-$tab-calendars-banner: url(https://d1vbn70lmn1nqe.cloudfront.net/prod/wp-content/uploads/2022/01/14103516/Seberapa-Efektif-Vaksin-Booster-Cegah-Omicron_.jpg.webp);
-$tab-informations-banner: url(https://d1bpj0tv6vfxyp.cloudfront.net/articles/c7592c48-3c61-4988-a1c6-2be26384673e_article_image_url.webp);
-$tab-confirm-banner: url(https://d1bpj0tv6vfxyp.cloudfront.net/articles/8d18cbe0-1bf7-4c2c-ad74-af0ebb1c455e_article_image_url.webp);
-$tab-thanks-banner: url(https://d1bpj0tv6vfxyp.cloudfront.net/articles/3a01f007-2e1d-4911-885a-446d6eecd4b0_article_image_url.webp);
-$history-booking-banner: url(https://script.viserlab.com/docrib/assets/images/frontend/banner/5fc4e19491c0b1606738324.jpg);
 $newswall-comment-banner: url(https://script.viserlab.com/docrib/assets/images/frontend/banner/5fc4e19491c0b1606738324.jpg);
 $fb-icon: url(https://justapp.id/member/halaman/unggah/article/a2470df23102e9dd1b8b2bfae8d79de1facebook.png);
 $wa-icon: url(https://justapp.id/member/halaman/unggah/article/e60d81e9de01cfa2b055ce4a0b9dff72whatsapp.png);
-$empty-cart-icon: url(https://assets.materialup.com/uploads/66fb8bdf-29db-40a2-996b-60f3192ea7f0/preview.png);
-$close-icon: url(https://justapp.id/member/halaman/unggah/article/94901b5c3813b13f36382cabb32eb523close_icon.png);
-$padlock-bg: url(https://walrus-assets.s3.amazonaws.com/img/AdamsNeilson_NarrativeMedicine_735.jpg);
-$homepage-banner: url(https://www.alodokter.com/packs/images/new-home/doctor-189afe01ded0ecc6d81203846182ef0b.png);
-$receipt-icon: url(https://justapp.id/member/halaman/unggah/article/3cad4b3b144306bd52dd1f250ce64a5dreceipt_halodokter.png);
-$forward-icon: url(https://unpkg.com/ionicons@5.5.2/dist/svg/arrow-forward-outline.svg);
-$doctor-icon: url(https://www.halodoc.com/assets/svg/cari-dokter-icon.svg);
-$hospital-icon: url(https://www.halodoc.com/assets/img/home-v2/png/visit-hospital-v2.png);
-$chat-icon: url(https://www.halodoc.com/assets/img/home-v2/png/chat-doctor-v2.png);
 ion-view.pane.has-background-image {
     background-image: none !important;
     background-color: $white-color !important;
@@ -63,65 +42,6 @@ ion-header-bar.bar-custom.bar.bar-header {
 .bar-custom .button.button-clear {
     color: $blue-color !important;
 }
-
-
-/* Sub header */
-
-.view_appointment .tab-nav.tabs {
-    background-color: $transparent-color !important;
-    border: 0 !important;
-    background-image: none !important;
-    top: 40px !important;
-    height: 40px !important;
-    min-height: 40px !important;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.view_appointment .tab-nav.tabs a i {
-    font-size: 24px !important;
-    color: $white-color !important;
-    opacity: 1 !important;
-}
-
-.view_appointment .tab-nav.tabs a span {
-    display: none;
-}
-
-.view_appointment .tab-nav.tabs a.item.item-custom.tab-item.tab-item-active {
-    background-color: $yellow-color !important;
-    border-radius: 30px;
-    color: $white-color !important;
-    font-weight: normal !important;
-    padding: 0 3px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: -5px 3px;
-    height: 30px !important;
-}
-
-.view_appointment .tab-nav.tabs a.item.item-custom.tab-item {
-    opacity: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: $transparent-color !important;
-}
-
-.view_appointment .tab-nav.tabs a.item.item-custom.tab-item.tab-item-active i {
-    margin-top: 3px !important;
-}
-
-.view_appointment .tabs-icon-top .item.item-custom.tab-item {
-    opacity: 1;
-    height: 30px !important;
-}
-
-
-/* End header */
 
 
 /* Layout 1 */
@@ -335,96 +255,9 @@ ion-modal-view.layout.modal.slide-top.layout_modal_generic .list .item-avatar-sq
     display: none !important;
 }
 
-[state="mcommerce-category-list"] [ng-click="openHistory()"] {
-    padding: 0 0 0 20px !important;
-    width: 15%;
-    background-color: $transparent-color;
-    border: none !important;
-    margin: 0 2% 0 0;
-    border-radius: 50px !important;
-    position: fixed;
-    right: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 0;
-    color: #3a5897;
-    margin-top: 20px;
-    top: var(--safe-area-inset-top) !important;
-    background-image: $receipt-icon;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 25px;
-}
-
-[state="mcommerce-category-list"] [ng-click="openHistory()"]:before,
-[state="mcommerce-category-list"] [ng-click="openCart()"]:before {
-    color: $transparent-color !important;
-}
-
-[state="mcommerce-category-list"] [ng-click="openCart()"] {
-    padding: 0 !important;
-    width: 20%;
-    background-color: $transparent-color;
-    border: none !important;
-    margin: 0 0 0 2%;
-    border-radius: 50px !important;
-    position: fixed;
-    right: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 0;
-    color: #3a5897;
-    margin-top: 20px;
-    top: var(--safe-area-inset-top) !important;
-    background-image: $icon-cart;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 25px;
-}
-
-[state="mcommerce-category-list"] [ng-click="openCart()"] span.badge {
-    top: -15px;
-    background-color: transparent;
-    color: #387093;
-}
-
-ion-view[state="mcommerce-category-list"] ion-content .list:nth-child(2) {
-    padding-top: 60px;
-    background-color: $transparent-color !important;
-}
-
-ion-view[state="mcommerce-category-list"] ion-content .list:nth-child(2) .item.item-image.item-custom {
-    display: none;
-}
-
-ion-view[state="mcommerce-category-list"] ion-content .list:nth-child(2) .item-image .list-img,
-ion-view[state="mcommerce-category-list"] ion-content .list:nth-child(2) .item-image img:first-child {
-    width: 100%;
-    vertical-align: middle;
-    height: 100px;
-    object-fit: contain;
-    object-position: center right;
-}
-
-ion-view[state="mcommerce-category-list"] ion-content .list:nth-child(2) .item.item-custom {
-    width: 100%;
-    margin: 0;
-    height: 100%;
-    background-color: $transparent-color !important;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
 ion-header-bar.bar-custom.bar.bar-header {
     height: 0 !important;
     background-color: $transparent-color !important;
-}
-
-ion-view[state="mcommerce-category-list"] ion-content {
-    top: 0 !important;
 }
 
 .bar.bar-custom .title {
@@ -434,22 +267,6 @@ ion-view[state="mcommerce-category-list"] ion-content {
 .button.button-custom.active,
 .button.button-custom.activated {
     background-color: $transparent-color !important;
-}
-
-ion-view[state="mcommerce-category-list"] ion-content .list:nth-child(2)>div {
-    width: 96%;
-    border-radius: 15px;
-    margin: 0 2%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    height: 172px;
-    background-image: $homepage-banner;
-    background-color: $transparent-color !important;
-    background-position: center right;
-    background-repeat: no-repeat;
-    background-size: contain;
 }
 
 
@@ -1349,618 +1166,6 @@ ion-view[state="places-view"] ion-content {
 }
 
 
-/* icon backward dan keranjang */
-
-.bar .back-button .icon:before,
-.ion-ios-cart::before,
-.bar .buttons-right span,
-.ion-clipboard::before,
-.ion-android-arrow-back:before {
-    color: $blue-color;
-}
-
-
-/* mengatur shadow card & list */
-
-.card,
-.list {
-    box-shadow: none !important;
-}
-
-
-/* list bagian atas */
-
-ion-view[state="mcommerce-category-list"] ion-content .list>div>div.item.item-custom>h2 {
-    font-size: 24px;
-    font-weight: bold;
-    color: $blue-color;
-    margin-top: -15px;
-}
-
-ion-view[state="mcommerce-category-list"] ion-content .list>div>div.item.item-custom>p {
-    font-size: 14px;
-    font-weight: bold;
-}
-
-
-/* kolom cari bagian kategori */
-
-ion-view[state="mcommerce-category-list"] ion-content .list>div>label {
-    width: 96%;
-    margin-left: 2%;
-    border-radius: 30px;
-}
-
-
-/* mengatur bagian kategori */
-
-ion-view[state="mcommerce-category-list"] ion-content .list>.item.item-custom:nth-child(2),
-ion-view[state="mcommerce-category-list"] ion-content .list>.item.item-custom:nth-child(3),
-ion-view[state="mcommerce-category-list"] ion-content .list>.item.item-custom:nth-child(4),
-ion-view[state="mcommerce-category-list"] ion-content .list>.item.item-custom:nth-child(5),
-ion-view[state="mcommerce-category-list"] ion-content .list>.item.item-custom:nth-child(6),
-ion-view[state="mcommerce-category-list"] ion-content .list>.item.item-custom:nth-child(7),
-ion-view[state="mcommerce-category-list"] ion-content .list>.item.item-custom:nth-child(8),
-ion-view[state="mcommerce-category-list"] ion-content .list>.item.item-custom:nth-child(9),
-ion-view[state="mcommerce-category-list"] ion-content .list>.item.item-custom:nth-child(10) {
-    background-color: $grey-color;
-    border-radius: 15px;
-    display: inline-block;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    height: 100%;
-    width: 46%;
-    margin: 10px 2% 0 2%;
-    padding: 5px;
-}
-
-ion-view[state="mcommerce-category-list"] ion-content .list>.item.item-custom:nth-child(3) img,
-ion-view[state="mcommerce-category-list"] ion-content .list>.item.item-custom:nth-child(4) img,
-ion-view[state="mcommerce-category-list"] ion-content .list>.item.item-custom:nth-child(5) img,
-ion-view[state="mcommerce-category-list"] ion-content .list>.item.item-custom:nth-child(6) img,
-ion-view[state="mcommerce-category-list"] ion-content .list>.item.item-custom:nth-child(7) img,
-ion-view[state="mcommerce-category-list"] ion-content .list>.item.item-custom:nth-child(8) img,
-ion-view[state="mcommerce-category-list"] ion-content .list>.item.item-custom:nth-child(9) img,
-ion-view[state="mcommerce-category-list"] ion-content .list>.item.item-custom:nth-child(10) img {
-    position: relative;
-    top: 0;
-    left: 0;
-    max-width: 100%;
-    width: 100%;
-    height: 50%;
-    border-radius: 15px;
-    max-height: 50%;
-    object-fit: cover;
-    object-position: center top;
-}
-
-ion-view[state="mcommerce-category-list"] ion-content .list>.item.item-custom h2 {
-    font-size: 18px;
-    font-weight: bold;
-    color: $black-color;
-    text-align: left;
-    z-index: 999;
-    margin: 5px 0 0 0 !important;
-    padding: 5px;
-    border-radius: 0 50px 50px 0;
-}
-
-ion-view[state="mcommerce-category-list"] ion-content .list>.item.item-custom p {
-    overflow: visible;
-    text-overflow: initial;
-    white-space: normal;
-    font-size: 14px !important;
-    z-index: 999;
-    color: $black-color;
-    padding: 4px;
-}
-
-
-/* subkategori */
-
-ion-view[state="mcommerce-subcategory-list"] ion-content .scroll>div.list:nth-child(2) {
-    display: none;
-}
-
-
-/* cari subkategori */
-
-ion-view[state="mcommerce-subcategory-list"] ion-content .list>div>label {
-    width: 96%;
-    margin: 5px 2%;
-    border-radius: 30px;
-}
-
-ion-view[state="mcommerce-subcategory-list"] ion-content .item.item-custom.item-thumbnail-left {
-    border-radius: 25px;
-    width: 44%;
-    margin: 10px 3%;
-    border: 0;
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 10px !important;
-    background-color: #ecf0f6;
-}
-
-ion-view[state="mcommerce-subcategory-list"] ion-content .item.item-custom.item-thumbnail-left img {
-    top: 0;
-    left: 0;
-    max-width: 100px;
-    max-height: 100px;
-    width: 100%;
-    height: 100%;
-    float: right;
-    position: relative;
-    margin: 0 auto;
-    border-radius: 10px !important;
-}
-
-ion-view[state="mcommerce-subcategory-list"] ion-content .item.item-custom.item-thumbnail-left h2 {
-    font-size: 16px !important;
-    font-weight: bold;
-    white-space: normal;
-    text-align: center;
-    margin-top: 10px;
-}
-
-ion-view[state="mcommerce-subcategory-list"] ion-content .item.item-custom.item-thumbnail-left p.three-lines.ng-binding {
-    font-size: 14px !important;
-    font-weight: bold;
-    color: $blue-color;
-    text-align: center;
-    margin-top: 10px;
-}
-
-ion-view[state="mcommerce-subcategory-list"] ion-content .item.item-custom.item-thumbnail-left p.three-lines.ng-binding:after {
-    content: "Detail";
-    display: block;
-    margin-top: 10px;
-    background-color: #387093;
-    color: #fff;
-    padding: 5px;
-    border-radius: 30px;
-    font-weight: normal;
-}
-
-ion-view.mcommerce-view.mcommerce-product div.card:nth-child(4) .button.button-custom {
-    border: 0;
-    border-radius: 30px;
-    color: $white-color;
-    background-color: #4b7d9d;
-    padding: 0;
-}
-
-
-/* bagian produk view */
-
-
-/* menghilangkan titik di bawah gambar, icon price tag, cart */
-
-.ion-record::before,
-.ion-pricetag:before,
-.ion-ios-cart-outline:before,
-.ion-information-circled:before {
-    display: none !important;
-}
-
-
-/* mengatur card pertama/harga */
-
-ion-view.mcommerce-view.mcommerce-product div.card:nth-child(1) {
-    padding: 0;
-    margin: 0 !important;
-}
-
-
-/* mengatur card kedua/qty & add cart */
-
-ion-view.mcommerce-view.mcommerce-product div.card:nth-child(2) {
-    border-radius: 0;
-    background-color: $transparent-color !important;
-    padding: 0;
-    margin: 0 !important;
-}
-
-ion-view[state="mcommerce-product-view"] div#homepage_slider {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100% !important;
-}
-
-ion-view[state="mcommerce-product-view"] div#homepage_slider img {
-    object-fit: contain;
-    height: 100% !important;
-}
-
-
-/* mengatur card ketiga/qty & add cart */
-
-ion-view.mcommerce-view.mcommerce-product .card [ng-if="product.picture.length"] {
-    padding: 0;
-    height: 150px !important;
-}
-
-ion-view.mcommerce-view.mcommerce-product .card .item.item-custom {
-    border: 0;
-    background-color: $transparent-color;
-}
-
-ion-view.mcommerce-view.mcommerce-product div.card:nth-child(3) .item.item-input.item-custom.input-number-sb.ng-not-empty.ng-valid {
-    width: 100% !important;
-    left: 0;
-    right: 0;
-    float: left;
-    height: 48px;
-    padding-left: 0;
-    border-radius: 30px;
-    background-color: $transparent-color !important;
-}
-
-ion-view.mcommerce-view.mcommerce-product div.card:nth-child(3) .item.item-input.item-custom.input-number-sb.ng-not-empty.ng-valid .input-label.ng-binding {
-    display: none;
-}
-
-ion-view.mcommerce-view.mcommerce-product div.card:nth-child(3) .input-number-sb .input-container {
-    position: absolute;
-    right: 0;
-    left: 0;
-    text-align: center;
-    display: block;
-}
-
-ion-view.mcommerce-view.mcommerce-product div.card:nth-child(3) .item-input-wrapper input {
-    color: $black-color;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-ion-view.mcommerce-view.mcommerce-product div.card:nth-child(3) .button.button-small.button-custom.button-left,
-ion-view.mcommerce-view.mcommerce-product div.card:nth-child(3) .button.button-small.button-custom.button-right {
-    background-color: $blue-color;
-    border: 0;
-    border-radius: 50%;
-    color: $white-color;
-}
-
-.input-number-sb .item-input-wrapper {
-    border-radius: 0;
-    height: 31px;
-    display: inline-block;
-    max-width: 50px;
-}
-
-ion-view.mcommerce-view.mcommerce-product div.card:nth-child(2) .item.item-body.item-custom span {
-    font-size: 18px !important;
-    font-weight: bold;
-    color: $black-color;
-}
-
-ion-view.mcommerce-view.mcommerce-product div.card:nth-child(3) {
-    background-color: $transparent-color !important;
-    width: 100% !important;
-    margin: 0 0 10px 0 !important;
-    border-radius: 0 !important;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-ion-view.mcommerce-view.mcommerce-product div.card:nth-child(3) .item.item-divider.item-divider-custom {
-    display: none;
-}
-
-ion-view.mcommerce-view.mcommerce-product [ng-if="product.optionsGroups.length"] {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 !important;
-}
-
-div[ng-repeat="optionsGroup in product.optionsGroups"] {
-    width: 100%;
-}
-
-div[ng-repeat="optionsGroup in product.optionsGroups"] .list.list-inset {
-    margin: 0;
-}
-
-ion-view.mcommerce-view.mcommerce-product [ng-if="product.optionsGroups.length"] .list.list-inset {
-    padding: 0;
-    margin: 0;
-}
-
-ion-view.mcommerce-view.mcommerce-product [change-qty="changeQuantity(qty)"] .input-label.ng-binding {
-    display: none;
-}
-
-ion-view.mcommerce-view.mcommerce-product [change-qty="changeQuantity(qty)"] {
-    height: 45px;
-    width: 35%;
-}
-
-ion-view.mcommerce-view.mcommerce-product [ng-click="addProduct()"] {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #4b7d9d !important;
-    color: $white-color;
-    padding: 10px;
-    width: 50%;
-    margin: 0px 3%;
-    border-radius: 30px;
-}
-
-ion-view.mcommerce-view.mcommerce-product div.card:nth-child(3) .item.item-text-wrap.item-icon-left.item-custom.ng-binding {
-    width: 50% !important;
-    background-color: $blue-color !important;
-    top: 0;
-    padding: 10px;
-    text-align: center;
-    display: inline-block;
-    border-radius: 30px;
-    margin: 0 2%;
-    text-transform: capitalize;
-    color: $white-color;
-}
-
-
-/* deskripsi produk */
-
-ion-view.mcommerce-view.mcommerce-product div.card {
-    background-color: $transparent-color !important;
-    width: 100% !important;
-    margin: 0 !important;
-    box-shadow: none !important;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-}
-
-ion-view.mcommerce-view.mcommerce-product div.card:nth-child(4) .item.item-divider.item-divider-custom {
-    background-color: $transparent-color;
-    color: $white-color;
-    width: 100%;
-    margin: 30px 0 0 0 !important;
-    padding: 0 !important;
-    display: none;
-}
-
-ion-view.mcommerce-view.mcommerce-product div.card:nth-child(4) .item.item-divider.item-divider-custom,
-ion-view.mcommerce-view.mcommerce-product div.card:nth-child(4) .item.item-body.item-custom.ng-binding {
-    background-color: $transparent-color;
-    margin: 0 !important;
-    padding: 0 !important;
-}
-
-ion-view.mcommerce-view.mcommerce-product div.card:nth-child(4) .item.item-divider.item-divider-custom h2 {
-    margin-top: 0;
-    color: $black-color !important;
-    font-weight: bold;
-    font-size: 16px;
-}
-
-ion-view.mcommerce-view.mcommerce-product div.card:nth-child(4) .item-body p {
-    margin-top: 0;
-    color: $black-color !important;
-    font-size: 14px;
-    margin-bottom: 50px !important;
-}
-
-
-/* Commerce cart view */
-
-
-/* DETAIL PRODUCT - CART VIEW */
-
-ion-view[state="commercepro-cart-view"] ion-content {
-    background-color: $white-color !important;
-    border-radius: 40px 40px 0 0 !important;
-    margin-top: 5px !important;
-}
-
-ion-view[state="commercepro-cart-view"] ion-content .card {
-    box-shadow: none;
-}
-
-ion-view.mcommerce-view.mcommerce-cart .item.item-input.item-custom.input-number-sb .input-label.ng-binding {
-    display: none;
-}
-
-ion-view.mcommerce-view.mcommerce-cart .input-number-sb .input-container {
-    position: absolute;
-    right: 0;
-    left: 0;
-    text-align: center;
-    display: block;
-}
-
-ion-view.mcommerce-view.mcommerce-cart .button.button-small.button-custom.button-left,
-ion-view.mcommerce-view.mcommerce-cart .button.button-small.button-custom.button-right,
-ion-view.mcommerce-view.mcommerce-cart .button.button-small.button-custom.button-left.activated,
-ion-view.mcommerce-view.mcommerce-cart .button.button-small.button-custom.button-right.activated {
-    background-color: #4b7d9d;
-    border: 0;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-}
-
-ion-view.mcommerce-view.mcommerce-cart .item-input-wrapper input,
-ion-view.mcommerce-view.mcommerce-cart .ion-minus:before,
-ion-view.mcommerce-view.mcommerce-cart .ion-plus:before {
-    color: $white-color;
-    font-size: 16px;
-}
-
-ion-view.mcommerce-view.mcommerce-cart .item-input-wrapper input {
-    color: #03ad53;
-}
-
-ion-view.mcommerce-view.mcommerce-cart .item.item-text-wrap.item-icon-left.item-custom.ng-binding {
-    width: 50% !important;
-    left: 0;
-    right: 0;
-    float: right;
-    height: 48px;
-    background-color: #03ad53;
-    color: $white-color;
-    border-radius: 30px;
-    text-transform: uppercase;
-}
-
-.mcommerce-view.mcommerce-cart .item.item-divider.item-divider-custom p {
-    font-weight: bold;
-    font-size: 16px;
-}
-
-.mcommerce-view.mcommerce-cart .icon.ion-clipboard:before,
-.mcommerce-view.mcommerce-cart .icon.ion-calculator:before,
-.mcommerce-view.mcommerce-product .icon.ion-ios-upload-outline {
-    display: none;
-}
-
-.mcommerce-view.mcommerce-cart .item.item-thumbnail-left.item-icon-right.item-custom img {
-    border-radius: 50%;
-}
-
-ion-view.mcommerce-view.mcommerce-sales-customer .list .item.item-custom .input-label {
-    text-align: left;
-}
-
-ion-view.mcommerce-view.mcommerce-sales-customer .list {
-    padding: 0 15px;
-}
-
-ion-view.mcommerce-view.mcommerce-cart ion-content div.scroll div.card div.item.item-input.item-custom.input-number-sb {
-    height: 50px;
-    width: 40%;
-    margin-left: 60%;
-}
-
-
-/* CART */
-
-
-/* Total */
-
-ion-view.mcommerce-view .ion-trash-a:before {
-    color: red;
-}
-
-.mcommerce-view.mcommerce-cart div.card .item.item-thumbnail-left.item-icon-right.item-custom {
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    flex-direction: column;
-    font-size: 14px;
-}
-
-.mcommerce-view.mcommerce-cart div.card .item.item-thumbnail-left.item-icon-right.item-custom p.ng-binding {
-    font-size: 14px;
-}
-
-.mcommerce-view.mcommerce-cart div.card:nth-last-child(2) {
-    background-color: $transparent-color;
-    margin: 0 2% 20px 2% !important;
-    width: 96% !important;
-    box-shadow: #d3d3d3 0px 2px 4px 0px;
-    border-radius: 5px;
-}
-
-
-/* If cart is empty */
-
-.mcommerce-view.mcommerce-cart [ng-if="!object.cart.lines.length"] {
-    height: 150px;
-    background-image: $empty-cart-icon;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    box-shadow: none !important;
-}
-
-.mcommerce-view.mcommerce-cart div.card:nth-last-child(2) div {
-    background: $white-color !important;
-    width: 100%;
-    margin: 0 !important;
-}
-
-.mcommerce-view.mcommerce-cart div.card:nth-last-child(2) div:nth-child(1) {
-    background: $white-color !important;
-    margin: 0 !important;
-    width: 100%;
-    border-radius: 5px 5px 0 0 !important;
-}
-
-.mcommerce-view.mcommerce-cart div.card:nth-last-child(2) div:last-child {
-    background: $white-color !important;
-    margin: 0 !important;
-    width: 100%;
-    border-radius: 0 !important;
-}
-
-.mcommerce-view.mcommerce-cart div.card:nth-last-child(2) .item.item-divider.item-divider-custom {
-    text-align: center;
-    background-color: #eee4cd !important;
-}
-
-.mcommerce-view.mcommerce-cart div.card:nth-last-child(2) .item.item-divider.item-divider-custom strong {
-    font-size: 18px;
-}
-
-.mcommerce-view.mcommerce-cart div.card:nth-last-child(2) div span {
-    font-weight: bold;
-    font-size: 16px;
-    color: $black-color;
-}
-
-
-/* Continue Shopping */
-
-.mcommerce-view.mcommerce-cart ion-content div.card:nth-last-child(1) {
-    background: $transparent-color !important;
-    width: 100% !important;
-    margin: 0;
-    border-radius: 0 0 20px 20px;
-    box-shadow: none !important;
-}
-
-.mcommerce-view.mcommerce-cart div.card:nth-last-child(1) div.item.item-icon-left.item-custom.ng-binding {
-    width: 70%;
-    margin-left: 15%;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    text-align: center;
-    text-transform: capitalize;
-    padding: 10px 0;
-    font-weight: normal;
-    background-color: #4b7d9d !important;
-    color: $white-color;
-}
-
-.mcommerce-view.mcommerce-cart div.card:nth-last-child(1) .ion-ios-arrow-back:before {
-    display: none;
-}
-
-.mcommerce-view.mcommerce-cart [ng-if="object.cart.discount_enabled"] span {
-    color: $black-color;
-    border: 1px solid #f5ba2e;
-    padding: 05px;
-    border-radius: 10px;
-}
-
-
-/* add gratuity (optional) */
-
-[state="mcommerce-cart-view"] div.item.item-custom.ng-binding:nth-child(6) {
-    display: none !important;
-}
-
-
 /* Modul Places */
 
 
@@ -2513,13 +1718,6 @@ i.icon.ion-sb-list1 {
     background-size: contain;
 }
 
-i.icon.ion-ios-cart {
-    background-image: $icon-cart;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
 i.icon.ion-sb-clear-brush::before,
 i.icon.ion-ios-cart:before,
 i.icon.ion-sb-grid-33::before,
@@ -2541,1187 +1739,6 @@ i.icon.ion-sb-map {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-}
-
-ion-view.mcommerce-view.mcommerce-product [ng-bind-html="product.description | trusted_html"] {
-    padding: 0;
-}
-
-ion-view.mcommerce-view.mcommerce-product div.card:nth-child(5) .item.item-divider.item-divider-custom {
-    padding: 10px 0 0 0;
-}
-
-ion-view.mcommerce-view.mcommerce-product div.card:nth-child(5) .item.item-divider.item-divider-custom h2.ng-binding {
-    font-size: 18px;
-    font-weight: bold;
-}
-
-ion-view.mcommerce-view.mcommerce-product [ng-if="product.optionsGroups.length"] .list.list-inset label:nth-child(2) {
-    display: none;
-    margin: 0;
-}
-
-ion-view[state="mcommerce-cart-view"] .card {
-    background-color: $white-color;
-    border-radius: 10px;
-    box-shadow: #d3d3d3 0px 1px 4px 1px !important;
-}
-
-
-/* Buyers Information */
-
-ion-view.mcommerce-view.mcommerce-sales-customer label.item.item-input.item-custom {
-    display: block;
-    width: 96%;
-    padding: 0;
-    margin: 0 2%;
-}
-
-ion-view.mcommerce-view.mcommerce-sales-customer .list .item.item-custom .input-label {
-    text-align: left;
-    width: 100%;
-    min-width: 100%;
-    font-size: 14px;
-}
-
-ion-view.mcommerce-view.mcommerce-sales-customer label.item.item-input.item-custom input {
-    border: 0;
-    appearance: none;
-    background-clip: padding-box;
-    background-color: #e9f7fe;
-    border-radius: 10px;
-    border-style: none;
-    box-sizing: border-box;
-    color: #054462;
-    display: block;
-    padding: 15px;
-    transition: none 0s;
-    width: 100%;
-    height: 50px;
-    text-align: left;
-}
-
-ion-view.mcommerce-view.mcommerce-sales-customer ion-list.disable-user-behavior:last-child:after {
-    content: " ";
-    display: block;
-    height: 100px;
-}
-
-ion-view.mcommerce-view.mcommerce-sales-payment ion-item.item-divider.item-divider-custom.item h2.ng-binding,
-ion-view.mcommerce-view.mcommerce-sales-error ion-item.item-divider.item-divider-custom.item h2.ng-binding,
-ion-view.mcommerce-view.mcommerce-sales-customer ion-item.item-divider.item-divider-custom.item h2.ng-binding {
-    font-size: 18px;
-    color: #4b7d9d;
-    font-weight: bold;
-    margin-top: 20px;
-}
-
-
-/* Delivery Method */
-
-ion-view.mcommerce-view.mcommerce-sales-payment .radio-content,
-ion-view.mcommerce-view.mcommerce-sales-error .radio-content {
-    width: 96%;
-    margin: 0 0.5% 0 3.5%;
-    border: 0 !important;
-    border-radius: 5px;
-}
-
-ion-view.mcommerce-view.mcommerce-sales-payment .radio-content span.ng-binding,
-ion-view.mcommerce-view.mcommerce-sales-error .radio-content span.ng-binding {
-    color: $black-color;
-    font-size: 16px;
-}
-
-ion-view.mcommerce-view.mcommerce-sales-payment .item-radio.radio-custom,
-ion-view.mcommerce-view.mcommerce-sales-error .item-radio.radio-custom {
-    color: $black-color;
-    border: 1px solid #4b7d9d !important;
-    width: 96%;
-    margin: 5px 2%;
-    border-radius: 5px;
-    background: rgb(75, 125, 157);
-    background: linear-gradient(90deg, rgba(75, 125, 157, 1) 10%, rgba(255, 255, 255, 1) 10%);
-}
-
-ion-view.mcommerce-view.mcommerce-sales-payment .item-radio.radio-custom.item-complex .item-content,
-ion-view.mcommerce-view.mcommerce-sales-payment .item-radio.radio-custom.item-radio .item-content,
-ion-view.mcommerce-view.mcommerce-sales-error .item-radio.radio-custom.item-complex .item-content,
-ion-view.mcommerce-view.mcommerce-sales-error .item-radio.radio-custom.item-radio .item-content {
-    background-color: $transparent-color;
-}
-
-ion-view.mcommerce-view.mcommerce-sales-payment .item-complex .item-content,
-ion-view.mcommerce-view.mcommerce-sales-payment .item-radio .item-content,
-ion-view.mcommerce-view.mcommerce-sales-error .item-complex .item-content,
-ion-view.mcommerce-view.mcommerce-sales-error .item-radio .item-content {
-    position: relative;
-    z-index: 2;
-    padding: 12px 35px 12px 30px;
-    border: none;
-    background-color: $white-color;
-}
-
-ion-view.mcommerce-view.mcommerce-sales-payment i.radio-icon.disable-pointer-events.icon.ion-checkmark,
-ion-view.mcommerce-view.mcommerce-sales-error i.radio-icon.disable-pointer-events.icon.ion-checkmark {
-    background-color: #4b7d9d;
-}
-
-ion-view.mcommerce-view.mcommerce-sales-error .ion-checkmark:before,
-ion-view.mcommerce-view.mcommerce-sales-payment .ion-checkmark:before {
-    color: $white-color;
-}
-
-
-/* Confirmation Page */
-
-ion-view.mcommerce-view.mcommerce-sales-confirmation {
-    background-image: none !important;
-    background-color: #ecf0f6 !important;
-}
-
-ion-view.mcommerce-view.mcommerce-sales-confirmation .card .item-divider.item-divider-custom {
-    background-color: #fff !important;
-    color: #000;
-    border: 0 !important;
-    border-bottom: 2px solid #ecf0f6 !important;
-}
-
-ion-view.mcommerce-view.mcommerce-sales-confirmation .card {
-    box-shadow: #f0f0f0 0px 2px 4px 0px !important;
-    border-radius: 5px;
-    margin: 10px 15px;
-}
-
-ion-view.mcommerce-view.mcommerce-sales-confirmation .card .item.item-divider.item-divider-custom p strong i {
-    display: none;
-}
-
-ion-view.mcommerce-view.mcommerce-sales-confirmation .card .item.item-thumbnail-left.item-icon-right.item-custom p.ng-binding {
-    display: flex;
-    align-items: center;
-    font-size: 14px;
-}
-
-ion-view.mcommerce-view.mcommerce-sales-confirmation .item.item-thumbnail-left.item-icon-right.item-custom {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 0;
-}
-
-ion-view.mcommerce-view.mcommerce-sales-confirmation .card .item.item-custom.ng-binding {
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: bold;
-}
-
-ion-view.mcommerce-view.mcommerce-sales-confirmation .item.item-thumbnail-left.item-icon-right.item-custom p.text-right.ng-binding strong {
-    margin-right: 20px;
-}
-
-ion-view.mcommerce-view.mcommerce-sales-confirmation .card .item.item-divider.item-divider-custom p strong {
-    font-size: 16px;
-    color: #9a9a9a;
-}
-
-ion-view.mcommerce-view.mcommerce-sales-confirmation .card .item.item-custom {
-    border: 0;
-    background-color: #fff;
-    color: #9a9a9a;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start !important;
-}
-
-ion-view.mcommerce-view.mcommerce-sales-confirmation .card .item.item-custom .item-note,
-ion-view.mcommerce-view.mcommerce-sales-confirmation .card ion-item.item-custom.text-right.item.ng-binding {
-    color: #253682 !important;
-}
-
-ion-view.mcommerce-view.mcommerce-sales-confirmation .card .item.item-thumbnail-left.item-icon-right.item-custom p.text-right.ng-binding {
-    text-align: right !important;
-    width: 100% !important;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding-right: 20px !important;
-}
-
-ion-view.mcommerce-view.mcommerce-sales-confirmation .card .item.item-custom span.item-note strong.ng-binding,
-ion-view.mcommerce-view.mcommerce-sales-confirmation .card .item.item-custom.ng-binding span.item-note.ng-binding,
-ion-view.mcommerce-view.mcommerce-sales-confirmation .card ion-item.item-custom.item .col-25.text-right.ng-binding {
-    font-weight: bold;
-    color: #253682;
-    font-size: 14px;
-}
-
-ion-view.mcommerce-view.mcommerce-sales-confirmation .card:nth-last-child(1):after {
-    content: " ";
-    display: block;
-    padding-bottom: 100px;
-}
-
-
-/* Halaman Order Success Setelah validasi */
-
-ion-view.mcommerce-view.mcommerce-sales-success ion-content {
-    top: 0 !important;
-    padding-top: 70px;
-}
-
-ion-view.mcommerce-view.mcommerce-sales-success ion-content .card {
-    background-image: $check-icon;
-    background-position: center top 60px;
-    background-repeat: no-repeat;
-    background-size: 80px;
-    background-color: $white-color;
-    height: 250px;
-    box-shadow: none;
-    margin-top: 150px;
-    border-radius: 10px;
-    box-shadow: #d3d3d3 0px 2px 4px 0px;
-}
-
-ion-view.mcommerce-view.mcommerce-sales-success ion-content .card:before {
-    content: "Berhasil";
-    display: block;
-    font-size: 28px;
-    text-align: center;
-    margin: 20px 0;
-    font-weight: bold;
-}
-
-ion-view.mcommerce-view.mcommerce-sales-success ion-content .card .item.item-text-wrap.item-custom.ng-binding {
-    background-color: $transparent-color;
-    font-size: 0;
-}
-
-ion-view.mcommerce-view.mcommerce-sales-success ion-content .card .item.item-text-wrap.item-custom.ng-binding:after {
-    content: "Terima kasih telah berbelanja, kami akan memproses pesanan Anda secepatnya.";
-    display: block;
-    font-size: 16px;
-    padding-top: 80px;
-    text-align: center;
-    color: $black-color;
-    line-height: 1.8;
-    font-style: italic;
-    background-color: $transparent-color;
-}
-
-ion-view.mcommerce-view.mcommerce-sales-success ion-content .card i.icon.ion-checkmark-round {
-    display: none;
-}
-
-
-/* Halaman Riwayat Pesanan */
-
-ion-view.mcommerce-view.mcommerce-sales-history ion-content {
-    top: 0 !important;
-    padding-top: 0;
-    background: $white-color !important;
-}
-
-ion-view.mcommerce-view.mcommerce-sales-history ion-content .item.item-text-wrap.item-custom p.ng-binding:nth-child(3) {
-    margin-top: 10px !important;
-}
-
-ion-view.mcommerce-view.mcommerce-sales-history ion-content .item.item-text-wrap.item-custom p.ng-binding:nth-child(2) {
-    display: none !important;
-}
-
-
-/* menambahkan gambar */
-
-ion-view.mcommerce-view.mcommerce-sales-history .scroll:before {
-    content: " ";
-    color: $transparent-color;
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: block;
-    height: 113px;
-    background-image: $history-page-banner;
-    object-fit: contain !important;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    width: 100%;
-}
-
-ion-view.mcommerce-view.mcommerce-sales-history .list [ng-click="showDetails(order.order_id)"] {
-    border: 0;
-    width: 96%;
-    margin: 10px 2%;
-    background-color: $transparent-color;
-    border-bottom: 1px dashed $black-color;
-    background-image: $stamp-icon;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 72px;
-    padding-right: 25px;
-}
-
-ion-view.mcommerce-view.mcommerce-sales-history ion-content .list:before {
-    content: "List Pesanan";
-    display: block;
-    font-size: 24px;
-    font-style: italic;
-    margin: 25px 2% 10px 5%;
-    color: #4b7d9d;
-    font-weight: bold;
-    position: fixed;
-    top: 50px;
-}
-
-
-/*text */
-
-ion-view.mcommerce-view.mcommerce-sales-history .list .item.item-text-wrap.item-custom h2,
-ion-view.mcommerce-view.mcommerce-sales-history .list .item.item-text-wrap.item-custom strong,
-ion-view.mcommerce-view.mcommerce-sales-history .list .item.item-text-wrap.item-custom span,
-ion-view.mcommerce-view.mcommerce-sales-history .list .item.item-text-wrap.item-custom p {
-    color: $black-color !important;
-    font-weight: normal;
-    margin-top: 5px;
-    text-transform: capitalize;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
-/* icon */
-
-ion-view.mcommerce-view.mcommerce-sales-history .list .item.item-text-wrap.item-custom i {
-    display: none;
-}
-
-
-/* Halaman Detail dari Riwayat Pesanan */
-
-ion-view.mcommerce-view.mcommerce-sales-history-details ion-content {
-    top: 0 !important;
-    padding-top: 70px;
-    background-color: $white-color !important;
-}
-
-ion-view.mcommerce-view.mcommerce-sales-history-details ion-content>.scroll:before {
-    content: "Detail Pesanan";
-    display: block;
-    font-size: 24px;
-    font-style: italic;
-    margin: 25px 2% 20px 3%;
-    color: #4b7d9d;
-    font-weight: bold;
-}
-
-ion-view.mcommerce-view.mcommerce-sales-history-details ion-content>.scroll:after {
-    content: " ";
-    display: block;
-    height: 50px;
-}
-
-ion-view.mcommerce-view.mcommerce-sales-history-details .list {
-    background-color: $white-color;
-    padding: 0;
-    margin: 10px;
-    border-radius: 10px;
-    border: 1px dashed #4b7d9d;
-}
-
-ion-view.mcommerce-view.mcommerce-sales-history-details .list .item.item-custom {
-    border: 0;
-    background-color: $transparent-color;
-    color: #4b7d9d;
-}
-
-ion-view.mcommerce-view.mcommerce-sales-history-details .list .item.item-divider.item-divider-custom.item-custom:nth-child(n+2) strong {
-    font-weight: bold;
-    font-size: 18px;
-    margin-top: 16px !important;
-    display: block;
-}
-
-ion-view.mcommerce-view.mcommerce-sales-history-details .list .item.item-custom.item-icon-left h2.ng-binding {
-    margin-top: 15px;
-}
-
-ion-view.mcommerce-view.mcommerce-sales-history-details .list .item.item-custom.item-icon-left p.text-right strong {
-    margin-bottom: 10px !important;
-    display: block;
-}
-
-ion-view.mcommerce-view.mcommerce-sales-history-details .item.item-custom.ng-binding {
-    border: 0;
-    background-color: $transparent-color;
-    color: #4b7d9d;
-    white-space: normal;
-}
-
-ion-view.mcommerce-view.mcommerce-sales-history-details .list>div:nth-last-child(2) {
-    font-weight: bold;
-    font-size: 18px;
-}
-
-ion-view.mcommerce-view.mcommerce-sales-history-details .list>div:nth-last-child(-n+3),
-ion-view.mcommerce-view.mcommerce-sales-history-details .list>div:nth-child(4) {
-    display: none;
-}
-
-ion-view.mcommerce-view.mcommerce-sales-history-details .list>div:nth-child(1) {
-    background-color: #f1f1f1fa !important;
-    width: 100%;
-    text-align: center;
-    margin: 0;
-    border-radius: 10px 10px 0 0;
-    padding: 0;
-    border: 0 !important;
-}
-
-ion-view.mcommerce-view.mcommerce-sales-history-details .list>div:nth-child(1) h2 strong {
-    color: $black-color;
-    font-weight: normal;
-    text-align: revert;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    padding: 10px;
-    font-size: 18px;
-}
-
-ion-view.mcommerce-view.mcommerce-sales-history-details p.text-right {
-    padding: 0 10px 0 0;
-}
-
-ion-view.mcommerce-view.mcommerce-sales-history-details span.pull-right.ng-binding {
-    font-size: 18px;
-    font-weight: bold;
-    color: $black-color;
-    font-style: italic;
-}
-
-
-/* Kolom detail pesanan */
-
-ion-view.mcommerce-view.mcommerce-sales-history-details .item.item-custom.item-icon-left {
-    border-bottom: 1px dashed #4b7d9d;
-    width: 96%;
-    margin-left: 2%;
-    border-left: 0;
-    border-right: 0;
-    font-weight: normal;
-    background-color: $transparent-color;
-    font-style: italic;
-    padding: 0;
-    white-space: normal;
-}
-
-ion-view.mcommerce-view.mcommerce-sales-history-details .item.item-custom.item-icon-left strong {
-    font-weight: normal;
-    font-size: 14px;
-}
-
-ion-view.mcommerce-view.mcommerce-sales-history-details .item.item-custom.item-icon-left i.icon.ion-pricetag {
-    display: none;
-}
-
-[ng-if="!object.cart.lines.length"] p.ng-binding {
-    text-align: center;
-    font-size: 14px;
-}
-
-
-/* Ending CSS untuk module Commerce */
-
-
-/* APPOINTMENT*/
-
-ion-view.view_appointment ion-content.appointment {
-    top: 0 !important;
-}
-
-ion-view.view_appointment ion-content.has-tabs-top.appointment {
-    top: 0 !important;
-}
-
-ion-view.view_appointment ion-content.appointment .card.cover_image {
-    margin: 0 !important;
-    border: 0 !important;
-    margin-top: -5px !IMPORTANT;
-}
-
-.view_appointment .card button.button.button-block.button-custom.ng-binding:nth-child(1),
-.view_appointment .card button.button.button-block.button-custom.ng-binding:nth-child(2) {
-    visibility: hidden;
-}
-
-.view_appointment .card button.button.button-block.button-custom.ng-binding:nth-child(1):after {
-    visibility: visible;
-    content: "Riwayat Janjian";
-    display: block;
-    background-color: #516dff;
-    width: 80%;
-    margin-left: 10%;
-    border-radius: 30px;
-    color: $white-color;
-    padding: 0;
-    border: 2px solid $white-color;
-    height: 50px;
-}
-
-.view_appointment .card button.button.button-block.button-custom.ng-binding:nth-child(2):after {
-    visibility: visible;
-    content: "Buat Janji Baru";
-    display: block;
-    background-color: #516dff;
-    width: 80%;
-    margin-left: 10%;
-    border-radius: 30px;
-    color: $white-color;
-    padding: 0;
-    border: 2px solid $white-color;
-    height: 50px;
-}
-
-
-/* Halaman Pilih lokasi */
-
-ion-view.view_appointment .tab-nav.tabs {
-    display: none !important;
-}
-
-ion-tabs.tabs-icon-top.tabs-negative.tabs-top.tabs-striped .tab-nav.tabs {
-    display: none !important;
-    top: 0 !important;
-}
-
-
-/* Tab Location */
-
-ion-view.view_appointment ion-content .tab-locations:before {
-    content: " ";
-    display: block;
-    background-image: $tab-location-banner;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 250px;
-    margin-bottom: -75px;
-    position: relative;
-}
-
-.tab-locations .list.card:before {
-    content: " ";
-    background-color: $white-color;
-    border-radius: 30px 30px 0 0;
-    height: 100px;
-    display: block;
-    padding: 31px 10px;
-    margin-top: -69px;
-    z-index: -999;
-}
-
-.tab-locations .list.card {
-    border-radius: 30px 30px 0 0;
-    background-color: $white-color !important;
-    margin: 0;
-}
-
-.tab-locations .list.card .item.item-divider.item-divider-custom {
-    background-color: $transparent-color;
-}
-
-.tab-locations .list.card .item.item-divider.item-divider-custom h2 {
-    font-weight: bold;
-    font-size: 20px;
-    color: #516dff;
-}
-
-.tab-locations .list.card .item.item-custom.item-location i {
-    color: #516dff !important;
-}
-
-.tab-locations .list.card .item.item-custom.item-location {
-    background-color: #f3f2f3;
-    box-shadow: #d3d3d3 0px 2px 4px 0px;
-    border-radius: 10px;
-    margin: 12px 1%;
-    width: 48%;
-    display: inline-block;
-}
-
-
-/* Tab Categories */
-
-.tab-categories:before {
-    content: " ";
-    display: block;
-    background-image: $tab-categories-banner;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 250px;
-    margin-bottom: -60px;
-    position: relative;
-    width: 100%;
-}
-
-.tab-categories .list.card:before {
-    content: " ";
-    background-color: $white-color;
-    border-radius: 30px 30px 0 0;
-    height: 100px;
-    display: block;
-    padding: 31px 10px;
-    margin-top: -75px;
-    z-index: -999;
-}
-
-.tab-categories .list.card {
-    border-radius: 30px 30px 0 0;
-    background-color: $white-color !important;
-    margin: 0;
-    padding-bottom: 100px;
-}
-
-.tab-categories .list.card .item.item-divider.item-divider-custom {
-    background-color: $transparent-color;
-}
-
-.tab-categories .list.card .item.item-divider.item-divider-custom h2 {
-    font-weight: bold;
-    font-size: 20px;
-    color: #516dff;
-}
-
-.tab-categories .list.card .item.item-custom.item-category i {
-    color: #516dff !important;
-}
-
-.tab-categories .list.card .item.item-custom.item-category {
-    background-color: #f3f2f3;
-    box-shadow: #d3d3d3 0px 2px 4px 0px;
-    border-radius: 10px;
-    margin: 12px 1%;
-    width: 48%;
-    display: inline-block;
-}
-
-.tab-categories .list.card .item.item-custom.item-category .row {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.tab-categories .list.card .item.item-custom.item-category .row .col.col-90 {
-    display: block;
-    width: 100%;
-    max-width: 100%;
-    padding: 0;
-}
-
-.tab-categories .list.card .item.item-custom.item-category .row .col.col-90 h2 {
-    text-align: center;
-    font-size: 14px;
-}
-
-.tab-categories .list.card .item.item-custom.item-category .row .col.col-10 {
-    display: block;
-    width: 100%;
-    max-width: 100%;
-    text-align: center;
-    padding: 0;
-}
-
-.tab-categories .list.card .item.item-custom.item-category .row .col.col-10 i {
-    text-align: center;
-    display: block;
-    left: 0;
-    margin: 0;
-    padding: 0;
-    width: 10%;
-    margin-right: 45%;
-    transform: rotate(90deg);
-}
-
-
-/* Tab Services */
-
-ion-view.view_appointment ion-content .tab-services:before {
-    content: " ";
-    display: block;
-    background-image: $tab-sarvices-banner;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 250px;
-    margin-bottom: -60px;
-    position: relative;
-}
-
-.tab-services .list.card:before {
-    content: " ";
-    background-color: $white-color;
-    border-radius: 30px 30px 0 0;
-    height: 100px;
-    display: block;
-    padding: 0;
-    margin-top: -69px;
-    z-index: -999;
-}
-
-.tab-services .list.card {
-    border-radius: 30px 30px 0 0;
-    background-color: $white-color !important;
-    margin: 0;
-    padding-bottom: 100px;
-}
-
-.tab-services .list.card .item.item-divider.item-divider-custom {
-    background-color: $transparent-color;
-}
-
-.tab-services .list.card .item.item-divider.item-divider-custom h2 {
-    font-weight: bold;
-    font-size: 20px;
-    color: #516dff;
-}
-
-.tab-services .list.card .item.item-custom.service i {
-    display: none;
-}
-
-.tab-services .list.card .item.item-custom.service {
-    background-color: #f3f2f3 !important;
-    box-shadow: #d3d3d3 0px 2px 4px 0px;
-    border-radius: 10px;
-    margin: 12px 1%;
-    width: 48%;
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.tab-services .list.card .item.item-custom.service .col.col-100 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 5px;
-}
-
-.view_appointment .service .row.price .col.col-100 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.tab-services .list.card .item.item-custom.service .col.col-100 h2.ng-binding {
-    font-size: 16px;
-    font-weight: bold;
-}
-
-.view_appointment .service-price {
-    padding-right: 10px;
-    font-size: 16px;
-    opacity: 1;
-    margin-top: 10px;
-}
-
-
-/* Tabs Provider */
-
-ion-view.view_appointment ion-content .tab-providers:before {
-    content: " ";
-    display: block;
-    background-image: $tab-providers-banner;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 250px;
-    margin-bottom: -60px;
-    position: relative;
-}
-
-.tab-providers .list.card:before {
-    content: " ";
-    background-color: $white-color;
-    border-radius: 30px 30px 0 0;
-    height: 100px;
-    display: block;
-    padding: 31px 10px;
-    margin-top: -69px;
-    z-index: -999;
-}
-
-.tab-providers .list.card {
-    border-radius: 30px 30px 0 0;
-    background-color: $white-color !important;
-    margin: 0;
-    padding-bottom: 100px;
-}
-
-.tab-providers .list.card .item.item-divider.item-divider-custom {
-    background-color: $transparent-color;
-}
-
-.tab-providers .list.card .item.item-divider.item-divider-custom h2 {
-    font-weight: bold;
-    font-size: 20px;
-    color: #516dff;
-}
-
-.tab-providers .list.card .providers_gap .item.item-custom.item-thumbnail-custom.provider i {
-    color: #516dff !important;
-}
-
-.tab-providers .list.card .providers_gap .item.item-custom.item-thumbnail-custom.provider {
-    background-color: #f3f2f3 !important;
-    box-shadow: #d3d3d3 0px 2px 4px 0px;
-    border-radius: 10px;
-    margin: 12px 2%;
-    width: 96%;
-}
-
-
-/* Part Calendar */
-
-ion-view.view_appointment ion-content .part-calendar:before {
-    content: " ";
-    display: block;
-    background-image: $tab-calendars-banner;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 250px;
-    margin-bottom: -60px;
-    position: relative;
-}
-
-.part-calendar .list.card:before {
-    content: " ";
-    background-color: $white-color;
-    border-radius: 30px 30px 0 0;
-    height: 100px;
-    display: block;
-    padding: 31px 10px;
-    margin-top: -69px;
-    z-index: -999;
-}
-
-.part-calendar .list.card {
-    border-radius: 30px 30px 0 0;
-    background-color: $white-color !important;
-    margin: 0;
-    padding-bottom: 100px;
-}
-
-.part-calendar .item.item-divider.item-divider-custom {
-    background-color: $transparent-color;
-}
-
-.part-calendar .item.item-divider.item-divider-custom h2 {
-    font-weight: bold;
-    font-size: 20px;
-    color: #516dff;
-}
-
-.part-calendar .list.card td:after {
-    background-image: none !important;
-    display: none !important;
-}
-
-.view_appointment #calendar {
-    position: relative;
-    overflow: hidden;
-    height: 420px !important;
-    width: 100%;
-    font-size: 14px;
-    cursor: pointer;
-}
-
-.view_appointment div#calendar tr>td {
-    background-color: $white-color;
-    border: 0;
-    font-size: 16px;
-    height: 60px;
-    padding: 17px;
-}
-
-.view_appointment td.today {
-    font-weight: 700;
-    background-color: $white-color !important;
-    color: $blue-color;
-}
-
-td.item-divider.item-divider-custom {
-    font-weight: bold;
-    font-size: 29px !important;
-    color: red !important;
-}
-
-.view_appointment th {
-    background-color: $transparent-color;
-    color: $white-color;
-    text-shadow: none !important;
-    font-weight: 400;
-    border: 0 !important;
-}
-
-.view_appointment .active {
-    background-color: $blue-color;
-    border-radius: 0 !important;
-}
-
-
-/* Tab Information */
-
-.tab-informations:before {
-    content: " ";
-    display: block;
-    background-image: $tab-informations-banner;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 250px;
-    margin-bottom: -60px;
-    position: relative;
-}
-
-.tab-informations .list.card:before {
-    content: " ";
-    background-color: $white-color;
-    border-radius: 30px 30px 0 0;
-    height: 100px;
-    display: block;
-    padding: 31px 10px;
-    margin-top: -69px;
-    z-index: -999;
-}
-
-.tab-informations .list.card {
-    border-radius: 30px 30px 0 0;
-    background-color: $white-color !important;
-    margin: 0;
-    padding-bottom: 100px;
-}
-
-.tab-informations .list.card .item.item-divider.item-divider-custom {
-    background-color: $transparent-color;
-}
-
-.tab-informations .list.card .item.item-divider.item-divider-custom h2 {
-    font-weight: bold;
-    font-size: 20px;
-    color: #516dff;
-}
-
-.tab-informations .list.card button.button.button-custom.button-block.ng-binding {
-    background-color: #516dff;
-    width: 80%;
-    border-radius: 30px;
-    border: 2px solid $white-color;
-    color: $white-color;
-    margin-left: 10%;
-}
-
-.tab-informations .list.card label.item.item-custom.item-input.item-stacked-label {
-    width: 96%;
-    margin-left: 2%;
-}
-
-.tab-informations .list.card label.item.item-custom.item-input.item-stacked-label input {
-    padding: 20px 10px;
-    border: 2px solid #516dff;
-    border-radius: 10px;
-}
-
-.tab-informations .list.card label.item.item-custom.item-input.item-stacked-label textarea {
-    padding: 20px 10px;
-    border: 2px solid #516dff;
-    border-radius: 10px;
-}
-
-
-/* placeholder */
-
-.tab-informations .list.card label input::-webkit-input-placeholder {
-    color: #eaeaea !important;
-}
-
-.tab-informations .list.card label input:-moz-placeholder {
-    /* Firefox 18- */
-    color: #eaeaea !important;
-}
-
-.tab-informations .list.card label input::-moz-placeholder {
-    /* Firefox 19+ */
-    color: #eaeaea !important;
-}
-
-.tab-informations .list.card label input:-ms-input-placeholder {
-    color: #eaeaea !important;
-}
-
-
-/* placeholder */
-
-
-/* Tab Confirmasi */
-
-.tab-confirm-informations:before {
-    content: " ";
-    display: block;
-    background-image: $tab-confirm-banner;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 250px;
-    margin-bottom: -60px;
-    position: relative;
-}
-
-.tab-confirm-informations .list.card:before {
-    content: " ";
-    background-color: $white-color;
-    border-radius: 30px 30px 0 0;
-    height: 100px;
-    display: block;
-    padding: 31px 10px;
-    margin-top: -69px;
-    z-index: -999;
-}
-
-.tab-confirm-informations .list.card {
-    border-radius: 30px 30px 0 0;
-    background-color: $white-color !important;
-    margin: 0;
-    padding-bottom: 100px;
-}
-
-.tab-confirm-informations .list.card .item.item-divider.item-divider-custom {
-    background-color: $transparent-color;
-}
-
-.tab-confirm-informations .list.card .item.item-divider.item-divider-custom h2 {
-    font-weight: bold;
-    font-size: 20px;
-    color: #516dff;
-}
-
-.tab-confirm-informations .list.card .item.item-custom {
-    width: 90%;
-    margin-left: 5%;
-}
-
-.tab-confirm-informations .list.card button.button.button-block.button-custom.ng-binding {
-    background-color: #516dff;
-    width: 80%;
-    border-radius: 30px;
-    border: 2px solid $white-color;
-    color: $white-color;
-    margin-left: 10%;
-}
-
-
-/* Tab Terima KAsih */
-
-.tab-thanks:before {
-    content: " ";
-    display: block;
-    background-image: $tab-thanks-banner;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 250px;
-    margin-bottom: -60px;
-    position: relative;
-}
-
-.tab-thanks .list.card:before {
-    content: " ";
-    background-color: $white-color;
-    border-radius: 30px 30px 0 0;
-    height: 150px;
-    display: block;
-    padding: 31px 10px;
-    margin-top: -69px;
-    z-index: -999;
-}
-
-.tab-thanks .list.card {
-    border-radius: 30px 30px 0 0;
-    background-color: $white-color !important;
-    margin: 0;
-    padding-bottom: 100px;
-}
-
-.tab-thanks .list.card .item.item-divider.item-divider-custom {
-    background-color: $transparent-color;
-}
-
-.tab-thanks .list.card .item.item-divider.item-divider-custom h2 {
-    font-weight: bold;
-    font-size: 20px;
-    color: #516dff;
-    text-align: center;
-}
-
-.tab-thanks .list.card p.thank_text_last.ng-binding {
-    text-align: center;
-}
-
-ion-view[state="appointment-booked"] ion-content div[ng-repeat="booking in appointmentlist"] {
-    background-color: $grey-color;
-    padding: 5px;
-    width: 96%;
-    margin: 5px 2%;
-    border-radius: 10px;
-}
-
-ion-view[state="appointment-booked"] ion-content .list .item.item-custom {
-    border: 0;
-    background-color: $transparent-color;
-    color: $black-color;
-}
-
-ion-view[state="appointment-booked"] ion-content {
-    top: 0 !important;
-}
-
-ion-view[state="appointment-booked"] ion-content.appointment .card {
-    margin: 70px 2% 10px 2%;
-    background-color: $grey-color;
-    width: 96%;
-    border-radius: 10px;
-}
-
-ion-view[state="appointment-booked"] div[ng-repeat="booking in appointmentlist"] .item.item-custom {
-    border: 0;
-    background-color: $transparent-color;
-    color: $black-color;
-}
-
-ion-view[state="appointment-notification"] ion-content.appointment {
-    top: 70px !important;
-}
-
-ion-view[state="appointment-booked"] .list:before {
-    display: block;
-    height: 200px;
-    content: " ";
-    background-image: $history-booking-banner;
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: cover;
 }
 
 
@@ -3751,8 +1768,20 @@ ion-view[state="newswall-list"] .row.list .col.col-50 {
     justify-content: center;
     align-items: center;
     min-width: 90% !important;
-    margin: 0 1% 0 3%;
+    margin: 0 3% 0 0;
     border-radius: 10px;
+}
+
+on-view[state="newswall-list"] .row.list .col.col-50:last-child {
+    margin: 0;
+}
+
+ion-view[state="newswall-list"] .row.list .col.col-100 {
+    padding: 0;
+}
+
+ion-view[state="newswall-list"] .l6 {
+    margin: 10px;
 }
 
 ion-view[state="newswall-list"] .row.list {
@@ -3769,13 +1798,14 @@ ion-view[state="newswall-list"] .row.list {
 }
 
 ion-view[state="newswall-list"] .col.col-100 .item.item-custom.item-body {
-    background-color: #ecf0f6;
-    margin: 0 2%;
-    max-width: 96%;
+    background-color: #253682;
+    margin: 0;
+    max-width: 100%;
     border-radius: 0;
     padding: 0;
     width: 100%;
     height: auto !important;
+    border: 0;
 }
 
 ion-view[state="newswall-list"] .col.col-100 .item.item-custom.item-body .item-image {
@@ -3783,13 +1813,14 @@ ion-view[state="newswall-list"] .col.col-100 .item.item-custom.item-body .item-i
 }
 
 ion-view[state="newswall-list"] ion-content .col.col-50 .item.item-custom.item-body {
-    background-color: #ecf0f6;
+    background-color: #253682;
     margin: 0;
     max-width: 100%;
     border-radius: 0;
     padding: 0;
     width: 100%;
     height: auto !important;
+    border: 0 !important;
 }
 
 ion-view[state="newswall-list"] ion-content .col.col-50 .item.item-custom.item-body h2.ng-binding,
@@ -3801,6 +1832,7 @@ ion-view[state="newswall-list"] .col.col-100 .item.item-custom.item-body h2.ng-b
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    color: #fff;
 }
 
 ion-view[state="newswall-list"] ion-content .col.col-50 .item.item-custom.item-body p.ng-binding,
@@ -3860,7 +1892,7 @@ ion-view[state="newswall-view"] .list:first-child.card .item.item-avatar.item-bu
     border-radius: 5px;
     background-color: #fff !important;
     z-index: 999;
-    box-shadow: 0px 3px 6px 0px rgb(0 0 0 / 10%), 0px 1px 3px 0px rgb(0 0 0 / 8%);
+    border: 1px solid #dfe1e6;
 }
 
 ion-view[state="newswall-view"] .list:first-child.card .item.item-image.item-custom {
@@ -3901,6 +1933,10 @@ ion-view[state="newswall-view"] .list:first-child.card .item.item-icon-left.item
     margin: 10px 0 5px 0;
     order: 3;
     padding: 0 12px;
+}
+
+ion-view[state="newswall-view"] .list:first-child.card .item.item-icon-left.item-button-right.item-custom span.ng-binding {
+    color: #929292;
 }
 
 ion-view[state="newswall-view"] .list:first-child.card .item.item-icon-left.item-button-right.item-custom i.icon.ion-calendar {
@@ -3986,11 +2022,43 @@ ion-view[state="newswall-comment"] ion-content .list:before {
 /* Push Notif */
 
 ion-view.module-push.push-list.push-list-l1 .list ion-item.item-custom.item.item-avatar.item-avatar-square {
-    background-color: $white-color;
-    box-shadow: #d3d3d3 0px 2px 4px 0px;
-    margin: 5px 1%;
-    max-width: 96%;
-    border-radius: 10px;
+    margin: 5px 5%;
+    max-width: 88%;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 0;
+    box-shadow: none;
+    border: 0;
+    background: #f9bf00;
+    background: linear-gradient(135deg, rgba(249, 191, 0, 1) 30%, rgba(37, 54, 130, 1) 30%, rgba(37, 54, 130, 1) 60%, rgba(249, 191, 0, 1) 60%);
+}
+
+ion-view.module-push.push-list.push-list-l1 .list ion-item.item-custom.item.item-avatar.item-avatar-square>img {
+    display: none;
+}
+
+ion-view.module-push.push-list.push-list-l1 .list ion-item.item-custom.item.item-avatar.item-avatar-square p.text-no-wrap.ng-binding,
+ion-view.module-push.push-list.push-list-l1 .list ion-item.item-custom.item.item-avatar.item-avatar-square h2 {
+    padding: 10px;
+    background-color: #fff;
+    margin: 0;
+}
+
+ion-view.module-push.push-list.push-list-l1 .list ion-item.item-custom.item.item-avatar.item-avatar-square h2 span.super-click.assertive {
+    position: fixed;
+    right: 6px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 48px;
+    border-radius: 50%;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: none;
+    margin-top: -10px;
+    background-color: #253682;
 }
 
 
@@ -4382,8 +2450,7 @@ ion-view.module-cms.cms-l1 .list.card {
 /* Blok upcoming schedule */
 
 ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(4) .content.ng-binding,
-ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(6) .content.ng-binding,
-ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(8) .content.ng-binding {
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(6) .content.ng-binding {
     display: flex;
     justify-content: space-between;
     height: 35px;
@@ -4410,11 +2477,15 @@ ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(5) .conten
     flex-direction: column;
     min-width: 75% !important;
     height: 125px;
-    margin: 0 1%;
-    border-radius: 10px;
+    margin: 0 2% 0 0;
+    border-radius: 0;
     border: 0;
     background: rgb(230, 33, 41);
     background: linear-gradient(45deg, rgba(230, 33, 41, 1) 10%, rgba(249, 191, 0, 1) 10%, rgba(249, 191, 0, 1) 20%, rgba(37, 54, 130, 1) 20%);
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(5) .content.ng-binding p:last-child {
+    margin: 0;
 }
 
 ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(5) .content.ng-binding a {
@@ -4441,7 +2512,7 @@ ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(5) .conten
 ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(5) .content.ng-binding p:nth-child(1) a {
     height: 100%;
     width: 100% !important;
-    border-radius: 10px;
+    border-radius: 0;
     padding: 10px 95px 10px 10px;
     margin: 0;
     background-image: url(https://i.imgur.com/77SyAwO.png);
@@ -4454,7 +2525,7 @@ ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(5) .conten
 ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(5) .content.ng-binding p:nth-child(2) a {
     height: 100%;
     width: 100% !important;
-    border-radius: 10px;
+    border-radius: 0;
     padding: 10px;
     margin: 0;
 }
@@ -4462,7 +2533,7 @@ ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(5) .conten
 ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(5) .content.ng-binding p:nth-child(3) a {
     height: 100%;
     width: 100% !important;
-    border-radius: 10px;
+    border-radius: 0;
     padding: 10px;
     margin: 0;
 }
@@ -4470,7 +2541,7 @@ ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(5) .conten
 ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(5) .content.ng-binding p:nth-child(4) a {
     height: 100%;
     width: 100% !important;
-    border-radius: 10px;
+    border-radius: 0;
     padding: 10px;
     margin: 0;
 }
@@ -4478,7 +2549,7 @@ ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(5) .conten
 ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(5) .content.ng-binding p:nth-child(5) a {
     height: 100%;
     width: 100% !important;
-    border-radius: 10px;
+    border-radius: 0;
     padding: 10px;
     margin: 0;
 }
@@ -4486,7 +2557,7 @@ ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(5) .conten
 ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(5) .content.ng-binding p:nth-child(6) a {
     height: 100%;
     width: 100% !important;
-    border-radius: 10px;
+    border-radius: 0;
     padding: 10px;
     margin: 0;
 }
@@ -4506,8 +2577,8 @@ ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(7) .conten
 ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(7) .content.ng-binding p {
     width: 100% !important;
     min-width: 70% !important;
-    margin: 0 1%;
-    border-radius: 10px;
+    margin: 0 2% 0 0;
+    border-radius: 0;
     display: flex !important;
     justify-content: center;
     align-items: center;
@@ -4515,6 +2586,10 @@ ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(7) .conten
     background: #ecf0f6;
     /*background: linear-gradient(45deg, rgba(37, 54, 130, 1) 90%, rgba(249, 191, 0, 1) 90%); */
     background-color: transparent;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(7) .content.ng-binding p:last-child {
+    margin: 0;
 }
 
 ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(7) .content.ng-binding p:nth-child(1) a {
@@ -4527,7 +2602,7 @@ ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(7) .conten
     background-size: cover;
     background-repeat: no-repeat;
     height: 150px;
-    border-radius: 10px;
+    border-radius: 0;
     color: transparent !important;
     background-color: #ecf0f6;
 }
@@ -4542,7 +2617,7 @@ ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(7) .conten
     background-size: cover;
     background-repeat: no-repeat;
     height: 150px;
-    border-radius: 10px;
+    border-radius: 0;
     color: transparent !important;
     background-color: #ecf0f6;
 }
@@ -4557,7 +2632,7 @@ ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(7) .conten
     background-size: cover;
     background-repeat: no-repeat;
     height: 150px;
-    border-radius: 10px;
+    border-radius: 0;
     color: transparent !important;
     background-color: #ecf0f6;
 }
@@ -4572,11 +2647,13 @@ ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(7) .conten
     background-size: cover;
     background-repeat: no-repeat;
     height: 150px;
-    border-radius: 10px;
+    border-radius: 0;
     color: transparent !important;
     background-color: #ecf0f6;
 }
 
+
+/* 
 ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(n+9):nth-child(-n+13) .card {
     margin: 10px;
 }
@@ -4601,17 +2678,20 @@ ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(n+9):nth-c
 
 ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(n+9):nth-child(-n+13) a {
     margin: 0 !important;
+} */
+
+ion-view.module-cms.cms-l1 .item.item-text-wrap.item-custom.sb-cms-text {
+    padding: 0;
 }
 
 ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(4) .content.ng-binding a,
 ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(6) .content.ng-binding a,
-ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(8) .content.ng-binding a,
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(10) .content.ng-binding a,
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(12) .content.ng-binding a,
 ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(14) .content.ng-binding a,
-ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(16) .content.ng-binding a,
-ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(20) .content.ng-binding a,
-ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(22) .content.ng-binding a,
-ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(25) .content.ng-binding a,
-ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(27) .content.ng-binding a {
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(18) .content.ng-binding a,
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(21) .content.ng-binding a,
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(23) .content.ng-binding a {
     background: #ecf0f1;
     font-size: 14px;
     text-align: center;
@@ -4622,13 +2702,15 @@ ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(27) .conte
 
 ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(4) .item.item-text-wrap.item-custom.sb-cms-text,
 ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(6) .item.item-text-wrap.item-custom.sb-cms-text {
-    padding: 0 0 12px 5px;
+    padding: 0 0 5px 0;
 }
 
 ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(8) .item.item-text-wrap.item-custom.sb-cms-text {
-    padding: 0 0 0 5px;
+    padding: 0;
 }
 
+
+/* 
 ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(n+9):nth-child(-n+13) .content.ng-binding {
     height: 100%;
 }
@@ -4678,7 +2760,7 @@ ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(n+9):nth-c
     color: #fff;
     width: 40%;
     text-align: center;
-}
+} */
 
 ion-view.module-cms.cms-l1 .card .item.item-custom.active,
 ion-view.module-cms.cms-l1 .card .item.item-custom:active {
@@ -4716,14 +2798,14 @@ ion-view.module-cms.cms-l1 ion-content .card.no-shadow .item.item-custom {
     bottom: 0;
 }
 
-ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(19) .card,
-ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(23) .card {
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(9) .card,
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(19) .card {
     margin: 0 10px;
     background-color: transparent;
 }
 
-ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(19) .card .item.item-text-wrap.item-custom.sb-cms-text,
-ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(23) .card .item.item-text-wrap.item-custom.sb-cms-text {
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(9) .card .item.item-text-wrap.item-custom.sb-cms-text,
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(19) .card .item.item-text-wrap.item-custom.sb-cms-text {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -4731,8 +2813,8 @@ ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(23) .card 
     background-color: transparent;
 }
 
-ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(19) .content.ng-binding,
-ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(23) .content.ng-binding {
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(9) .content.ng-binding,
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(19) .content.ng-binding {
     padding: 0;
     display: flex;
     margin-bottom: 20px;
@@ -4744,25 +2826,25 @@ ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(23) .conte
     -webkit-overflow-scrolling: touch !important;
 }
 
-ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(19) .content.ng-binding p {
-    padding: 5px;
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(9) .content.ng-binding p {
+    padding: 10px 5px;
     display: flex !important;
     justify-content: center;
     align-items: center;
     min-width: 70% !important;
     margin: 0;
-    border-radius: 10px;
-    background: #f9bf00;
-    background: linear-gradient(135deg, rgba(249, 191, 0, 1) 40%, rgba(37, 54, 130, 1) 40%);
+    border-radius: 0;
+    background: rgb(249, 191, 0);
+    background: linear-gradient(135deg, rgba(249, 191, 0, 1) 30%, rgba(37, 54, 130, 1) 30%, rgba(37, 54, 130, 1) 60%, rgba(249, 191, 0, 1) 60%);
 }
 
-ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(19) .content.ng-binding p a {
-    background-color: #e62129;
-    padding: 10px;
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(9) .content.ng-binding p a {
+    background-color: #253682;
+    padding: 5px;
     display: flex !important;
     min-width: 70% !important;
     margin: 0 1%;
-    border-radius: 10px;
+    border-radius: 0;
     height: 100%;
     justify-content: space-evenly;
     flex-direction: column;
@@ -4770,16 +2852,17 @@ ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(19) .conte
     color: #fff !important;
     font-size: 14px;
     line-height: 1.8;
+    border: 2px solid #f9bf00;
 }
 
-ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(19) .content.ng-binding p a span:last-child {
-    background-color: #253682;
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(9) .content.ng-binding p a span:last-child {
+    background-color: #f9bf00;
     padding: 10px 20px;
     margin-top: 15px;
     border-radius: 30px;
 }
 
-ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(19) .content.ng-binding strong {
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(9) .content.ng-binding strong {
     font-size: 20px;
     font-weight: bold;
     line-height: 1.3;
@@ -4789,7 +2872,7 @@ ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(19) .conte
 
 /* Blok Discount */
 
-ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(23) .content.ng-binding p:nth-child(1) {
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(19) .content.ng-binding p:nth-child(1) {
     background-color: #4ab4ff;
     padding: 5px;
     display: flex !important;
@@ -4805,7 +2888,7 @@ ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(23) .conte
     height: 150px;
 }
 
-ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(23) .content.ng-binding p:nth-child(2) {
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(19) .content.ng-binding p:nth-child(2) {
     background-color: #4ab4ff;
     padding: 10px;
     display: flex !important;
@@ -4821,7 +2904,7 @@ ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(23) .conte
     height: 150px;
 }
 
-ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(23) .content.ng-binding p:nth-child(3) {
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(19) .content.ng-binding p:nth-child(3) {
     background-color: #4ab4ff;
     padding: 10px;
     display: flex !important;
@@ -4837,7 +2920,7 @@ ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(23) .conte
     height: 150px;
 }
 
-ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(23) .content.ng-binding p:nth-child(4) {
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(19) .content.ng-binding p:nth-child(4) {
     background-color: #4ab4ff;
     padding: 10px;
     display: flex !important;
@@ -4853,7 +2936,7 @@ ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(23) .conte
     height: 150px;
 }
 
-ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(23) .content.ng-binding p:nth-child(5) {
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(19) .content.ng-binding p:nth-child(5) {
     background-color: #4ab4ff;
     padding: 10px;
     display: flex !important;
@@ -4869,7 +2952,7 @@ ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(23) .conte
     height: 150px;
 }
 
-ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(23) .content.ng-binding p a {
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(19) .content.ng-binding p a {
     color: transparent !important;
     width: 100%;
     height: 100%;
@@ -4893,8 +2976,158 @@ ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"] .content.ng-binding 
 
 /* Blok Our medical service */
 
-ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(15) .item.item-text-wrap.item-custom.sb-cms-text {
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(11) .item.item-text-wrap.item-custom.sb-cms-text {
     padding: 0 !important;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(11) .content.ng-binding {
+    padding: 0;
+    display: flex;
+    margin-bottom: 20px;
+    overflow: visible;
+    width: 100% !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    white-space: nowrap !important;
+    -webkit-overflow-scrolling: touch !important;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(11) .content.ng-binding p {
+    background-color: transparent;
+    padding: 0;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    min-width: 70% !important;
+    margin: 0 2% 0 0;
+    border-radius: 0;
+    flex-direction: column;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(11) .content.ng-binding p:last-child {
+    margin: 0;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(11) .content.ng-binding p a {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 100%;
+    width: 100%;
+    background-color: #253682;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(11) .content.ng-binding p a:nth-child(1) {
+    border-radius: 0;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(11) .content.ng-binding p a:nth-child(2) {
+    border-radius: 0;
+    padding: 0 10px 10px 10px;
+    color: #fff !important;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(11) .content.ng-binding p:nth-child(1) a:nth-child(1):after {
+    content: "PENDIDIKAN";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    clip-path: polygon(100% 0, 95% 51%, 100% 100%, 0% 100%, 0 49%, 0% 0%);
+    background-color: #f9bf00;
+    color: #fff;
+    padding: 5px 20px;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(11) .content.ng-binding p:nth-child(2) a:nth-child(1):after {
+    content: "POLITIK";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    clip-path: polygon(100% 0, 95% 51%, 100% 100%, 0% 100%, 0 49%, 0% 0%);
+    background-color: #f9bf00;
+    color: #fff;
+    padding: 5px 20px;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(11) .content.ng-binding p:nth-child(3) a:nth-child(1):after {
+    content: "FASHION";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    clip-path: polygon(100% 0, 95% 51%, 100% 100%, 0% 100%, 0 49%, 0% 0%);
+    background-color: #f9bf00;
+    color: #fff;
+    padding: 5px 20px;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(11) .content.ng-binding p:nth-child(4) a:nth-child(1):after {
+    content: "BOLA";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    clip-path: polygon(100% 0, 95% 51%, 100% 100%, 0% 100%, 0 49%, 0% 0%);
+    background-color: #f9bf00;
+    color: #fff;
+    padding: 5px 20px;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(11) .content.ng-binding p a img {
+    width: 100%;
+    object-fit: cover;
+    height: 145px;
+    border-radius: 0;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(11) .content.ng-binding strong {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(10) .item.item-text-wrap.item-custom.sb-cms-text {
+    padding: 0 0 5px 0;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(9) .card {
+    margin-top: 5px;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(12) .item.item-text-wrap.item-custom.sb-cms-text,
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(14) .item.item-text-wrap.item-custom.sb-cms-text,
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(18) .item.item-text-wrap.item-custom.sb-cms-text {
+    padding: 5px 0 10px 0;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(10) .content.ng-binding,
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(12) .content.ng-binding,
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(14) .content.ng-binding,
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(18) .content.ng-binding,
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(21) .content.ng-binding,
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(23) .content.ng-binding {
+    display: flex;
+    justify-content: space-between;
+    height: 35px;
+    align-items: center;
+}
+
+.sb-cms-image div[rn-carousel-indicators] {
+    text-align: center;
+    background-color: #174554;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(20) {
+    margin-top: 20px;
+}
+
+
+/* Sponsors Slider */
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(15) .item.item-text-wrap.item-custom.sb-cms-text {
+    padding: 0;
 }
 
 ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(15) .content.ng-binding {
@@ -4910,157 +3143,6 @@ ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(15) .conte
 }
 
 ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(15) .content.ng-binding p {
-    background-color: transparent;
-    padding: 0;
-    display: flex !important;
-    justify-content: center;
-    align-items: center;
-    min-width: 70% !important;
-    margin: 0 1%;
-    border-radius: 10px;
-    flex-direction: column;
-}
-
-ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(15) .content.ng-binding p a {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    width: 100%;
-    width: 100%;
-    background-color: #253682;
-}
-
-ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(15) .content.ng-binding p a:nth-child(1) {
-    border-radius: 10px 10px 0 0;
-}
-
-ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(15) .content.ng-binding p a:nth-child(2) {
-    border-radius: 0 0 10px 10px;
-    padding: 0 10px 10px 10px;
-    color: #fff !important;
-}
-
-ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(15) .content.ng-binding p:nth-child(1) a:nth-child(1):after {
-    content: "PENDIDIKAN";
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    clip-path: polygon(100% 0, 95% 51%, 100% 100%, 0% 100%, 0 49%, 0% 0%);
-    background-color: #f9bf00;
-    color: #fff;
-    padding: 5px 20px;
-}
-
-ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(15) .content.ng-binding p:nth-child(2) a:nth-child(1):after {
-    content: "POLITIK";
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    clip-path: polygon(100% 0, 95% 51%, 100% 100%, 0% 100%, 0 49%, 0% 0%);
-    background-color: #f9bf00;
-    color: #fff;
-    padding: 5px 20px;
-}
-
-ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(15) .content.ng-binding p:nth-child(3) a:nth-child(1):after {
-    content: "FASHION";
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    clip-path: polygon(100% 0, 95% 51%, 100% 100%, 0% 100%, 0 49%, 0% 0%);
-    background-color: #f9bf00;
-    color: #fff;
-    padding: 5px 20px;
-}
-
-ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(15) .content.ng-binding p:nth-child(4) a:nth-child(1):after {
-    content: "BOLA";
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    clip-path: polygon(100% 0, 95% 51%, 100% 100%, 0% 100%, 0 49%, 0% 0%);
-    background-color: #f9bf00;
-    color: #fff;
-    padding: 5px 20px;
-}
-
-ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(15) .content.ng-binding p a img {
-    width: 100%;
-    object-fit: cover;
-    height: 145px;
-    border-radius: 5px;
-}
-
-ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(15) .content.ng-binding strong {
-    font-size: 16px;
-    margin: 10px 0;
-}
-
-ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(14) .item.item-text-wrap.item-custom.sb-cms-text {
-    padding: 20px 0 8px 0;
-}
-
-ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(19) .card {
-    margin-top: 20px;
-}
-
-ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(18) {
-    display: none;
-}
-
-ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(16) .item.item-text-wrap.item-custom.sb-cms-text,
-ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(20) .item.item-text-wrap.item-custom.sb-cms-text,
-ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(22) .item.item-text-wrap.item-custom.sb-cms-text,
-ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(18) .item.item-text-wrap.item-custom.sb-cms-text {
-    padding: 5px 0 10px 0;
-}
-
-ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(14) .content.ng-binding,
-ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(16) .content.ng-binding,
-ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(20) .content.ng-binding,
-ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(22) .content.ng-binding,
-ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(25) .content.ng-binding,
-ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(27) .content.ng-binding {
-    display: flex;
-    justify-content: space-between;
-    height: 35px;
-    align-items: center;
-}
-
-.sb-cms-image div[rn-carousel-indicators] {
-    text-align: center;
-    background-color: #174554;
-}
-
-ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(24) {
-    margin-top: 20px;
-}
-
-
-/* Sponsors Slider */
-
-ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(21) .item.item-text-wrap.item-custom.sb-cms-text {
-    padding: 0;
-}
-
-ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(21) .content.ng-binding {
-    padding: 0;
-    display: flex;
-    margin-bottom: 20px;
-    overflow: visible;
-    width: 100% !important;
-    overflow-x: auto !important;
-    overflow-y: hidden !important;
-    white-space: nowrap !important;
-    -webkit-overflow-scrolling: touch !important;
-}
-
-ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(21) .content.ng-binding p {
     padding: 0;
     display: flex;
     align-items: center;
@@ -5070,7 +3152,7 @@ ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(21) .conte
     height: 100px;
 }
 
-ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(21) .content.ng-binding img {
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(15) .content.ng-binding img {
     background-color: #253682;
     padding: 10px;
     display: flex !important;
@@ -5078,51 +3160,60 @@ ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(21) .conte
     align-items: center;
     min-width: 60% !important;
     margin: 0 5px 0 0;
-    border-radius: 10px;
+    border-radius: 0;
     height: 100%;
     object-fit: contain;
 }
 
-ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(25) {
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(21) {
     height: 150px;
     pointer-events: none;
 }
 
-ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(17) .sb-cms-image ul[rn-carousel] li>div {
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(13) .sb-cms-image ul[rn-carousel] li>div {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     width: 96%;
     height: 170px !important;
-    border-radius: 10px !important;
+    border-radius: 0 !important;
 }
 
-ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(17) ul[rn-carousel]>li {
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(13) ul[rn-carousel]>li {
     width: 70% !important;
     height: 100% !important;
 }
 
-ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(17) .sb-cms-image div[rn-carousel-indicators] {
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(13) .sb-cms-image div[rn-carousel-indicators] {
     display: none;
 }
 
-ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(17) .item.item-image-gallery.item-custom.sb-cms-image {
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(13) .item.item-image-gallery.item-custom.sb-cms-image {
     height: 170px !important;
+    background-color: transparent !important;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(13) .card>div {
+    padding: 10px;
+    background: rgb(37, 54, 130);
+    background: linear-gradient(225deg, rgba(37, 54, 130, 1) 15%, rgba(249, 191, 0, 1) 15%, rgba(249, 191, 0, 1) 25%, rgba(37, 54, 130, 1) 25%);
 }
 
 
 /* CSS FOR CALENDAR START HERE */
 
 ion-view[state="event-list"] .list:nth-child(n+3)>div {
-    padding: 0;
     display: flex;
-    margin: 0 3%;
+    margin: 10px 3%;
     overflow: visible;
     width: 94% !important;
     overflow-x: auto !important;
     overflow-y: hidden !important;
     white-space: nowrap !important;
     -webkit-overflow-scrolling: touch !important;
+    padding: 10px;
+    background: rgb(249, 191, 0);
+    background: linear-gradient(135deg, rgba(249, 191, 0, 1) 30%, rgba(37, 54, 130, 1) 30%, rgba(37, 54, 130, 1) 60%, rgba(249, 191, 0, 1) 60%);
 }
 
 
@@ -5294,31 +3385,31 @@ ion-view[state="event-list"] .list>div div:nth-child(n+2) {
     align-items: flex-start;
     flex-direction: column;
     min-width: 75% !important;
-    border: 0;
-    border-radius: 10px;
-    margin: 10px 10px 10px 0;
-    height: 130px;
-    background: black;
+    border-radius: 0;
+    margin: 5px 10px 5px 0;
     overflow: hidden;
-    padding: 10px;
+    padding: 0;
+    background: #253682;
+    border: 1px solid #f9bf00;
 }
 
 ion-view[state="event-list"] .list>div div:last-child {
-    margin: 10px 0 !important;
+    margin: 5px 0 !important;
 }
 
 ion-view[state="event-list"] .item.item-custom.item-thumbnail-left img {
     width: 100%;
     min-width: 100%;
     height: 100%;
-    min-height: 100%;
+    min-height: 120px;
     left: 0;
     bottom: 0;
     top: 0;
     object-position: center right;
-    border-radius: 10px !important;
+    border-radius: 0;
     object-fit: cover;
-    opacity: 0.2;
+    display: block;
+    position: relative;
 }
 
 ion-view[state="event-list"] .item.item-custom.item-thumbnail-left h2.ng-binding {
@@ -5327,6 +3418,12 @@ ion-view[state="event-list"] .item.item-custom.item-thumbnail-left h2.ng-binding
     white-space: normal;
     color: #fff;
     line-height: 1.8;
+    padding-right: 35px
+}
+
+ion-view[state="event-list"] .item.item-custom.item-thumbnail-left h2.ng-binding,
+ion-view[state="event-list"] .item.item-custom.item-thumbnail-left p.ng-binding {
+    padding: 0 10px;
 }
 
 ion-view[state="event-list"] .item.item-custom.item-thumbnail-left p.ng-binding {
@@ -5343,7 +3440,8 @@ ion-view[state="event-list"] .list:nth-child(3):before {
     font-weight: bold;
     margin: 0 3%;
     min-height: 30px;
-    background-color: #ecf0f6;
+    background-color: transparent;
+    color: #000;
     padding: 10px;
     border-radius: 5px;
     width: 94%;
@@ -5356,7 +3454,8 @@ ion-view[state="event-list"] .list:nth-child(4):before {
     font-weight: bold;
     margin: 0 3%;
     min-height: 30px;
-    background-color: #ecf0f6;
+    background-color: transparent;
+    color: #000;
     padding: 10px;
     border-radius: 5px;
     width: 94%;
@@ -5369,7 +3468,8 @@ ion-view[state="event-list"] .list:nth-child(5):before {
     font-weight: bold;
     margin: 0 3%;
     min-height: 30px;
-    background-color: #ecf0f6;
+    background-color: transparent;
+    color: #000;
     padding: 10px;
     border-radius: 5px;
     width: 94%;
@@ -5382,7 +3482,8 @@ ion-view[state="event-list"] .list:nth-child(6):before {
     font-weight: bold;
     margin: 0 3%;
     min-height: 30px;
-    background-color: #ecf0f6;
+    background-color: transparent;
+    color: #000;
     padding: 10px;
     border-radius: 5px;
     width: 94%;
@@ -5395,7 +3496,8 @@ ion-view[state="event-list"] .list:nth-child(7):before {
     font-weight: bold;
     margin: 0 3%;
     min-height: 30px;
-    background-color: #ecf0f6;
+    background-color: transparent;
+    color: #000;
     padding: 10px;
     border-radius: 5px;
     width: 94%;
@@ -5408,7 +3510,8 @@ ion-view[state="event-list"] .list:nth-child(8):before {
     font-weight: bold;
     margin: 0 3%;
     min-height: 30px;
-    background-color: #ecf0f6;
+    background-color: transparent;
+    color: #000;
     padding: 10px;
     border-radius: 5px;
     width: 94%;
@@ -5420,7 +3523,7 @@ ion-view[state="event-list"] .list>div>.item.item-divider.item-divider-custom.ng
     top: 0;
     right: 3%;
     padding: 10px;
-    color: #000;
+    color: #253682;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -6388,11 +4491,315 @@ ion-view.module-folder2.folder2-layout1 .list:nth-child(4) a.item.item-custom.it
 }
 
 ion-view[state="newswall-view"] .list:first-child.card [ng-if="item.subtitle"] {
-    order: 2;
     z-index: 999;
-    background-color: transparent;
+    position: fixed;
+    right: 0;
+    top: 15vh;
+    background-color: #f9bf00;
+    clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 5% 48%, 0% 0%);
+    padding: 5px 20px;
+    color: #fff;
 }
 
 ion-view[state="newswall-view"] .list:first-child.card [ng-if="item.message"] {
     order: 3;
+}
+
+.loader:after {
+    content: "This may take few seconds. Please wait.";
+    display: block;
+    position: relative;
+    width: 90%;
+    margin: auto;
+    color: black;
+    height: auto;
+}
+
+
+/* Payment */
+
+ion-view[state="enterprisepayment"] ion-content:before {
+    content: "Donasi";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+ion-view[state="enterprisepayment"] ion-content {
+    top: 70px;
+}
+
+ion-view[state="enterprisepayment"] ion-content .card.balanced {
+    box-shadow: none;
+}
+
+ion-view[state="enterprisepayment"] ion-content .card.balanced:before {
+    content: " ";
+    display: block;
+    height: 150px;
+    background-image: url(https://cdni.iconscout.com/illustration/free/thumb/online-money-donation-5029325-4186546.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+ion-view[state="enterprisepayment"] ion-content .card.balanced span.input-label.ng-binding:after {
+    content: "Berapapun jumlah bantuan Anda, nilainya sangat berharga bagi mereka yang membutuhkan. Masukkan nominal yang akan didonasikan pada kolom berikut ini!";
+    font-size: 14px;
+    white-space: normal;
+    line-height: 1.8;
+}
+
+ion-view[state="enterprisepayment"] ion-content .card.balanced span.input-label.ng-binding {
+    width: 100%;
+    min-width: 100%;
+    font-size: 0;
+    margin-bottom: 25px;
+}
+
+ion-view[state="enterprisepayment"] ion-content .card.balanced input {
+    min-width: 100%;
+    background-color: #ecf0f6;
+    padding: 10px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+ion-view[state="enterprisepayment"] .button.button-custom:after {
+    content: "Berikutnya";
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ion-view[state="enterprisepayment"] .button.button-custom {
+    border: 0;
+    background-color: #253682;
+    color: #fff;
+    font-size: 0;
+    text-transform: uppercase;
+}
+
+ion-view[state="enterprisepayment_process"] .scroll>div {
+    margin: 15px;
+}
+
+ion-view[state="enterprisepayment_process"] .item.item-custom.amountdiv h2.ng-binding {
+    animation: blinkingText 1.2s infinite;
+}
+
+@keyframes blinkingText {
+    0% {
+        color: #f9bf00;
+    }
+    49% {
+        color: #f9bf00;
+    }
+    60% {
+        color: transparent;
+    }
+    99% {
+        color: transparent;
+    }
+    100% {
+        color: #f9bf00;
+    }
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+
+ion-view[state="enterprisepayment"] ion-content .card.balanced input::-webkit-outer-spin-button,
+ion-view[state="enterprisepayment"] ion-content .card.balanced input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+/* Firefox */
+
+ion-view[state="enterprisepayment"] ion-content .card.balanced input[type=number] {
+    -moz-appearance: textfield;
+}
+
+ion-view[state="enterprisepayment_process"] .item.item-custom.amountdiv {
+    padding: 20px 0 !important;
+}
+
+ion-view[state="enterprisepayment_process"] .item.item-custom.amountdiv .ng-binding,
+ion-view[state="enterprisepayment_process"] .optionsdiv h4.ng-binding,
+ion-modal-view.modal ion-content .scroll>form>.list label.item.item-input.item-stacked-label span {
+    color: #7f7f7f;
+    font-size: 16px;
+    text-transform: capitalize;
+    min-width: 100%;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+ion-view[state="enterprisepayment_process"] .optionsdiv {
+    padding: 0;
+}
+
+ion-view[state="enterprisepayment_process"] .butt_img {
+    border: 1px solid #253682 !important;
+}
+
+ion-view[state="enterprisepayment_process"] .scroll>div>div:last-child {
+    display: inline-block;
+    margin: 0 !important;
+    width: 100%;
+}
+
+ion-view[state="enterprisepayment_process"] .scroll>div>div:last-child div {
+    display: inline-flex;
+    width: 46%;
+    margin: 2%;
+}
+
+ion-modal-view.modal.slide-in-up.ng-enter.active.ng-enter-active ion-content.backgruound-gradiant .scroll>.list:before {
+    content: "Detail Donatur";
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 18px;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+ion-modal-view.modal.slide-in-up.ng-enter.active.ng-enter-active ion-content.backgruound-gradiant .scroll>.list label.item.item-input {
+    border: 0;
+    padding: 5px 15px;
+}
+
+ion-modal-view.modal.slide-in-up.ng-enter.active.ng-enter-active ion-content.backgruound-gradiant .scroll>.list label.item.item-input span.input-label.ng-binding {
+    font-size: 14px !important;
+    color: #a6a6a6;
+}
+
+ion-modal-view.modal.slide-in-up.ng-enter.active.ng-enter-active ion-content.backgruound-gradiant .scroll>.list label.item.item-input input[type="text"],
+ion-modal-view.modal ion-content .scroll>form>.list label.item.item-input.item-stacked-label input {
+    background-color: #ecf0f6;
+    padding: 10px;
+    border-radius: 10px;
+    height: 50px;
+}
+
+ion-modal-view.modal.slide-in-up.ng-enter.active.ng-enter-active ion-content.backgruound-gradiant.scroll-content.ionic-scroll.has-header .scroll>form>.list label.item.item-input.item-stacked-label {
+    padding: 0;
+    border: 0;
+    margin-bottom: 15px;
+}
+
+ion-modal-view.modal.slide-in-up.ng-enter.active.ng-enter-active ion-content.backgruound-gradiant.scroll-content.ionic-scroll.has-header .scroll>form>.list label.item.item-input.item-select {
+    border: 0;
+    background-color: transparent;
+    border-radius: 10px;
+    margin: 10px 0 !important;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0;
+}
+
+ion-modal-view.modal.slide-in-up.ng-enter.active.ng-enter-active ion-content.backgruound-gradiant.scroll-content.ionic-scroll.has-header .scroll>form>.list label.item.item-input.item-select select {
+    background-color: #ecf0f6;
+    padding: 10px;
+    text-align: left;
+    width: 100%;
+    min-width: 100%;
+    display: block;
+    position: relative;
+    height: 50px;
+    border-radius: 10px;
+    background-image: url(https://unpkg.com/ionicons@5.5.2/dist/svg/caret-down-outline.svg);
+    background-position: center right 15px;
+    background-repeat: no-repeat;
+    background-size: 15px;
+}
+
+ion-modal-view.modal.slide-in-up.ng-enter.active.ng-enter-active ion-content.backgruound-gradiant.scroll-content.ionic-scroll.has-header .scroll>form>.list label.item.item-input.item-select:after {
+    display: none;
+}
+
+ion-modal-view.modal.slide-in-up.ng-enter.active.ng-enter-active ion-content.backgruound-gradiant.scroll-content.ionic-scroll.has-header .scroll>form>.list label.item.item-input.item-select .input-label {
+    padding: 0;
+    width: 100%;
+    min-width: 100%;
+    display: block !important;
+    position: relative;
+    font-size: 16px;
+    color: #7f7f7f;
+}
+
+ion-modal-view.modal.slide-in-up.ng-enter.active.ng-enter-active ion-content.backgruound-gradiant.scroll-content.ionic-scroll.has-header .scroll>form>.list label .item-select select {
+    padding: 0 36px 0 0;
+    max-width: 100%;
+}
+
+ion-modal-view.modal.slide-in-up.ng-enter.active.ng-enter-active ion-content.backgruound-gradiant.scroll-content.ionic-scroll.has-header .scroll>form>.list {
+    padding: 20px;
+    border: 0 !important;
+    box-shadow: none !important;
+}
+
+ion-modal-view.modal.slide-in-up.ng-enter.active.ng-enter-active ion-content .scroll>.list {
+    padding: 20px;
+}
+
+ion-modal-view.modal.slide-in-up.ng-enter.active.ng-enter-active ion-content .scroll>.list label.item.item-input {
+    border: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+ion-modal-view.modal.slide-in-up.ng-enter.active.ng-enter-active ion-content .scroll>.list label.item.item-input:last-child span.input-label.ng-binding:before {
+    content: "Komentar";
+}
+
+ion-modal-view.modal.slide-in-up.ng-enter.active.ng-enter-active ion-content .scroll>.list label.item.item-input:last-child input[type="text"] {
+    background-color: #ecf0f6;
+    padding: 10px;
+    border-radius: 10px;
+    max-height: 70px;
+}
+
+ion-modal-view.modal.slide-in-up.ng-enter.active.ng-enter-active ion-content .scroll>.list label.item.item-input:first-child:before {
+    content: "Silakan lengkapi data-data dibawah ini agar donasi Anda terdata dengan baik.";
+    display: block;
+    margin: 0 0 20px 0;
+    white-space: normal;
+    line-height: 1.8;
+}
+
+ion-modal-view.modal.slide-in-up.ng-enter.active.ng-enter-active ion-content .scroll>.row .col.col-25,
+ion-modal-view.modal ion-content .scroll>form>.row .col.col-25 {
+    display: none;
+}
+
+ion-modal-view.modal.slide-in-up.ng-enter.active.ng-enter-active ion-content .scroll>.row .col.col-50 {
+    min-width: 100%;
+}
+
+ion-modal-view.modal.slide-in-up.ng-enter.active.ng-enter-active ion-content .scroll>.row .col.col-50 .button.button-positive {
+    border: 0;
+    background-color: #253682;
+    color: #fff;
+    text-transform: uppercase;
+    width: 90%;
+    margin: 0 5% 100px 5%;
+}
+
+ion-modal-view.modal.slide-in-up.ng-enter.active.ng-enter-active ion-content.backgruound-gradiant.scroll-content.ionic-scroll.has-header .scroll>form>.row .col.col-50 {
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 94%;
+    margin: 0 3%;
 }
