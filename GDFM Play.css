@@ -1371,3 +1371,48 @@ ion-modal-view.customer-view.customer-layout1 .button.button-positive-custom spa
 ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-last-child(1)>div {
     padding-bottom: 100px;
 }
+
+/* 20 APRIL 2022 */
+
+ion-view[state="discount-list"] ion-content,
+ion-view[state="discount-view"] ion-content {
+    padding-top: 70px;
+}
+
+[ng-click="addProduct()"] {
+    background-color: #c00707 !important;
+    border-radius: 30px !important;
+    display: flex;
+    margin: 25px 30% !important;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    font-size: 0;
+    padding: 15px !important;
+}
+
+[ng-click="addProduct()"] i.icon.ion-ios-cart-outline {
+    display: none;
+}
+
+[ng-click="addProduct()"]:after {
+    content: "Buy";
+    font-size: 18px;
+    padding: 0;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-payment .item-radio.radio-custom:nth-child(2) span.ng-binding:after {
+    content: "Bayar di tempat";
+    font-size: 16px;
+}
+ion-view.mcommerce-view.mcommerce-sales-payment .item-radio.radio-custom:nth-child(2) span.ng-binding {
+    font-size: 0 !important;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-payment .item-radio.radio-custom:nth-child(3) span.ng-binding:after {
+    content: "Transfer Bank";
+    font-size: 16px;
+}
+ion-view.mcommerce-view.mcommerce-sales-payment .item-radio.radio-custom:nth-child(3) span.ng-binding {
+    font-size: 0 !important;
+}
