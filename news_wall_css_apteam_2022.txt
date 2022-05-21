@@ -1,0 +1,325 @@
+/* News Wall CSS Start Here */
+
+$white-color: #fff;
+$yellow-color: #f5c634;
+$transparent-color: transparent;
+$grey-color: #ecf0f6;
+$blue-color: #387093;
+$black-color: #000;
+$newswall-comment-banner: url(https://i.imgur.com/kX0hZtc.jpg);
+$newswall-header: url(https://i.imgur.com/GTBnoRU.jpg);
+ion-view[state="newswall-view"] ion-content {
+    top: 0 !important;
+}
+
+ion-view[state="newswall-list"] ion-content:before {
+    content: " ";
+    display: block;
+    height: 150px;
+    background-image: $newswall-header;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+ion-view[state="newswall-list"] ion-content .scroll {
+    background-color: $white-color;
+    padding-top: 10px;
+    border-top-left-radius: 100% 50px;
+    border-top-right-radius: 100% 50px;
+}
+
+ion-view[state="newswall-list"] ion-content .scroll:before {
+    content: "Lets go! Here you can see the latest news everyday.";
+    display: block;
+    padding: 12px;
+}
+
+ion-view[state="newswall-view"] .list:first-child.card [ng-if="item.subtitle"] {
+    z-index: 999;
+    position: fixed;
+    right: 0;
+    top: 15vh;
+    background-color: $yellow-color;
+    clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 5% 48%, 0% 0%);
+    padding: 5px 20px;
+    color: $white-color;
+}
+
+ion-view[state="newswall-view"] .list:first-child.card [ng-if="item.message"] {
+    order: 3;
+}
+
+ion-view[state="newswall-list"] ion-content .scroll>div:nth-last-child(1):after {
+    content: " ";
+    display: block;
+    padding-bottom: 50px;
+}
+
+ion-view[state="newswall-list"] .row.list .col.col-50 {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 90% !important;
+    -moz-box-flex: 0;
+    -moz-flex: 0 0 90% !important;
+    -ms-flex: 0 0 90% !important;
+    flex: 0 0 90% !important;
+    max-width: 90% !important;
+    background-color: transparent;
+    padding: 0;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    min-width: 90% !important;
+    margin: 0 3% 0 0;
+    border-radius: 10px;
+}
+
+on-view[state="newswall-list"] .row.list .col.col-50:last-child {
+    margin: 0;
+}
+
+ion-view[state="newswall-list"] .row.list .col.col-100 {
+    padding: 0;
+}
+
+ion-view[state="newswall-list"] .l6 {
+    margin: 10px;
+}
+
+ion-view[state="newswall-list"] .row.list {
+    padding: 0;
+    display: flex;
+    margin-bottom: 20px;
+    overflow: visible;
+    width: 100% !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    white-space: nowrap !important;
+    -webkit-overflow-scrolling: touch !important;
+    margin-bottom: 20px;
+}
+
+ion-view[state="newswall-list"] .col.col-100 .item.item-custom.item-body {
+    background-color: $blue-color;
+    margin: 0;
+    max-width: 100%;
+    border-radius: 0;
+    padding: 0;
+    width: 100%;
+    height: auto !important;
+    border: 0;
+}
+
+ion-view[state="newswall-list"] .col.col-100 .item.item-custom.item-body .item-image {
+    height: 130px;
+}
+
+ion-view[state="newswall-list"] ion-content .col.col-50 .item.item-custom.item-body {
+    background-color: $blue-color;
+    margin: 0;
+    max-width: 100%;
+    border-radius: 0;
+    padding: 0;
+    width: 100%;
+    height: auto !important;
+    border: 0 !important;
+}
+
+ion-view[state="newswall-list"] ion-content .col.col-50 .item.item-custom.item-body h2.ng-binding,
+ion-view[state="newswall-list"] .col.col-100 .item.item-custom.item-body h2.ng-binding {
+    font-size: 14px !important;
+    font-weight: bold !important;
+    line-height: 1.5;
+    padding: 0 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: $white-color;
+}
+
+ion-view[state="newswall-list"] ion-content .col.col-50 .item.item-custom.item-body p.ng-binding,
+ion-view[state="newswall-list"] ion-content .row.list .item.item-custom.item-body .item-content p.ng-binding {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: polygon(100% 0, 95% 51%, 100% 100%, 0% 100%, 0 49%, 0% 0%);
+    background-color: $yellow-color;
+    color: $white-color;
+    padding: 5px 20px;
+    width: 30%;
+    font-size: 10px !important;
+}
+
+ion-view[state="newswall-list"] ion-content .col.col-50 .item-image {
+    border-radius: 0;
+    height: 135px !important;
+}
+
+ion-view[state="newswall-view"] .list:first-child.card {
+    display: flex;
+    flex-direction: column;
+}
+
+ion-view[state="newswall-view"] .list:first-child.card .item.item-avatar.item-button-right.item-custom h2.ng-binding {
+    order: 2;
+    text-align: left;
+    width: 100%;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+ion-view[state="newswall-view"] .list:first-child.card .item.item-avatar.item-button-right.item-custom p.ng-binding {
+    font-size: 16px;
+    font-weight: bold;
+    order: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    line-height: 1.5;
+    width: 100%;
+}
+
+ion-view[state="newswall-view"] .list:first-child.card .item.item-avatar.item-button-right.item-custom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 !important;
+    width: 96%;
+    min-width: 96%;
+    margin: 0 2%;
+    order: 2;
+    margin-top: -50px;
+    position: relative;
+    padding: 10px !important;
+    border-radius: 5px;
+    background-color: $white-color !important;
+    z-index: 999;
+    border: 1px solid $grey-color;
+}
+
+ion-view[state="newswall-view"] .list:first-child.card .item.item-image.item-custom {
+    order: 1;
+}
+
+ion-view[state="newswall-view"] .list:first-child.card .item.item-text-wrap.item-custom.ng-binding {
+    order: 4;
+}
+
+ion-view[state="newswall-view"] .list:first-child.card .item.item-text-wrap.item-custom.ng-binding p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+ion-view[state="newswall-view"] .list:first-child.card .item.item-text-wrap.item-icon-left.item-custom.ng-binding {
+    order: 5
+}
+
+ion-view[state="newswall-view"] .list:first-child.card .item.item-avatar.item-button-right.item-custom img {
+    position: relative !important;
+    top: 0;
+    left: 0;
+    max-width: 40px;
+    max-height: 40px;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    order: 3;
+    display: none;
+}
+
+ion-view[state="newswall-view"] .list:first-child.card .item.item-icon-left.item-button-right.item-custom {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    text-align: left;
+    margin: 10px 0 5px 0;
+    order: 3;
+    padding: 0 12px;
+}
+
+ion-view[state="newswall-view"] .list:first-child.card .item.item-icon-left.item-button-right.item-custom span.ng-binding {
+    color: #929292;
+}
+
+ion-view[state="newswall-view"] .list:first-child.card .item.item-icon-left.item-button-right.item-custom i.icon.ion-calendar {
+    display: none;
+}
+
+ion-view[state="newswall-view"] .list:last-child.card {
+    background-color: $grey-color !important;
+    width: 96%;
+    border-radius: 10px;
+    margin: 10px 2%;
+}
+
+ion-view[state="newswall-view"] .list:last-child.card .item-divider.item-divider-custom {
+    background-color: $transparent-color;
+    color: $black-color;
+    border: 0;
+    padding-top: 10px;
+}
+
+ion-view[state="newswall-view"] .list:last-child.card .item.item-text-wrap.item-button-right.item-custom.item-avatar {
+    background-color: $transparent-color;
+}
+
+
+/* NewsWall Write Comment */
+
+ion-view[state="newswall-comment"] ion-content {
+    top: 0 !important;
+}
+
+ion-view[state="newswall-comment"] ion-content textarea {
+    border: 2px solid $grey-color;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+ion-view[state="newswall-comment"] ion-content .list .item.item-custom {
+    border: 0;
+    background-color: $white-color;
+    color: $black-color;
+    padding: 0;
+}
+
+ion-view[state="newswall-comment"] ion-content .list {
+    width: 100%;
+    margin: -34px 0 30px 0;
+    border-radius: 30px 30px 0 0 !important;
+    background-color: $white-color;
+    padding: 15px;
+}
+
+ion-view[state="newswall-comment"] ion-content .button.button-positive-custom {
+    border: 0;
+    background-color: $blue-color;
+    color: $white-color;
+    width: 60%;
+    border-radius: 30px;
+    margin: 0 20%;
+}
+
+ion-view[state="newswall-comment"] ion-content:before {
+    content: " ";
+    height: 235px;
+    display: block;
+    background-position: center top;
+    background-image: $newswall-comment-banner;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+ion-view[state="newswall-comment"] ion-content .list:before {
+    display: block;
+    height: 70px;
+    width: 100%;
+    content: "Write a comment here ...";
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+
+/* News Wall CSS End Here */

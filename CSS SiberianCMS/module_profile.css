@@ -1,0 +1,236 @@
+
+/* PROFILE */
+$bg-color: #fff;
+$font-color: #000;
+$button-bg-color: #5b37b7;
+$icon-color: #5b37b7;
+$border-color: #ecf0f6;
+
+
+ion-view[state="extendedprofile-view"] ion-content {
+    background-color: $bg-color !important;
+}
+
+ion-view[state="extendedprofile-view"] form .list .item.item-divider.item-divider-custom {
+    background-color: $bg-color;
+}
+
+ion-view[state="extendedprofile-view"] form .list .item.item-divider.item-divider-custom h2 {
+    font-size: 24px;
+    color: $font-color;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+
+ion-view[state="extendedprofile-view"] form:before {
+    content: " ";
+    background-image: url(https://ensiklopediakesaguan.com/wp-content/uploads/2021/04/chi-siamo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    height: 150px;
+}
+
+ion-view[state="extendedprofile-view"] label.item.item-input.item-custom {
+    text-align: left;
+    color: $font-color !important;
+    display: inline-block;
+    width: 100%;
+    padding: 0;
+    border: 0;
+}
+
+
+ion-view[state="extendedprofile-view"] label.item.item-input.item-custom .input-label.ng-binding,
+ion-view[state="extendedprofile-view"] .item.item-divider.item-divider-custom p {
+    text-align: left;
+    color: $font-color !important;
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+ion-view[state="extendedprofile-view"] label.item.item-input.item-custom input {
+    text-align: left;
+    color: $font-color !important;
+    display: block;
+    max-width: 96%;
+    margin-left: 2%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid $border-color;
+    height: 50px;
+}
+
+ion-view[state="extendedprofile-view"] label.item.item-input.item-custom textarea {
+    text-align: left;
+    color: $font-color !important;
+    display: block;
+    max-width: 96%;
+    margin-left: 2%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid $border-color;
+    height: 100px;
+}
+
+ion-view[state="extendedprofile-view"] [ng-switch-when="checkbox"] label.checkbox-custom {
+    border: 0;
+    padding-left: 50px;
+    margin-left: 10px;
+}
+
+ion-view[state="extendedprofile-view"] input:checked + .checkbox-icon:after {
+    border-color: #fff;
+}
+
+ion-view[state="extendedprofile-view"] [ng-switch-when="checkbox"] .checkbox-custom .checkbox .checkbox-icon:before {
+    border-color: #5b37b7;
+    background: #fff;
+    border-radius: 10px;
+}
+
+ion-view[state="extendedprofile-view"] [ng-switch-when="checkbox"] .checkbox-custom .checkbox input:checked + .checkbox-icon:before {
+    background: #5b37b7;
+    border-color: #5b37b7;
+}
+
+/* RADIO */
+ion-view[state="extendedprofile-view"] [ng-switch-when="radio"] label.item-radio.radio-custom {
+    border: 0;
+    padding-left: 5px;
+    margin-left: 10px;
+}
+
+
+ion-view[state="extendedprofile-view"] [ng-switch-when="checkbox"] .item.item-divider.item-divider-custom,
+ion-view[state="extendedprofile-view"] [ng-switch-when="radio"] .item.item-divider.item-divider-custom {
+    padding: 0;
+}
+
+ion-view[state="extendedprofile-view"] [ng-switch-when="radio"] .item.item-divider.item-divider-custom label .radio-content div {
+    width: 90%;
+    background-color: $bg-color !important;
+    margin: 10px !important;
+    border-radius: 10px;
+}
+
+ion-view[state="extendedprofile-view"] [ng-switch-when="radio"] .item.item-divider.item-divider-custom label .radio-content i.icon {
+    margin-right: 30px;
+    text-align: center;
+}
+
+/* IMAGE */
+ion-view[state="extendedprofile-view"] [ng-switch-when="image"]:before {
+    content: "Profile Img *";
+    display: block;
+    color: $font-color;
+    margin-left: 10px;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+ion-view[state="extendedprofile-view"] [ng-switch-when="image"] .item.item-icon-left.item-custom.ng-binding {
+    text-align: left;
+    background-image: url(https://ensiklopediakesaguan.com/wp-content/uploads/2021/03/add-3.png);
+    background-repeat: no-repeat;
+    background-size: 31px;
+    background-position: center right 30px;
+}
+
+ion-view[state="extendedprofile-view"] div[ng-switch-when="image"] .item.item-image.item-custom img {
+    width: 96%;
+    margin: 5px 2%;
+    border-radius: 10px;
+}
+
+/* GEOLOCATION */
+ion-view[state="extendedprofile-view"] [ng-switch-when="geoloc"] label.checkbox-custom.item.item-checkbox.ng-valid.ng-not-empty {
+    border: 0;
+}
+
+ion-view[state="extendedprofile-view"] [ng-switch-when="geoloc"] .checkbox-custom .checkbox input:before, .checkbox-custom .checkbox .checkbox-icon:before {
+    border-color: #5b37b7;
+    background: #fff;
+    border-radius: 10px;
+}
+
+ion-view[state="extendedprofile-view"] [ng-switch-when="geoloc"]  .checkbox-custom .checkbox input:checked + .checkbox-icon:before {
+    background: #5b37b7;
+    border-color: #5b37b7;
+}
+
+/* CHECK BOX */
+ion-view[state="extendedprofile-view"] [ng-switch-when="checkbox"] .checkbox-custom .checkbox input:before,
+ion-view[state="extendedprofile-view"] [ng-switch-when="checkbox"] .checkbox-custom .checkbox .checkbox-icon:before {
+    border-color: rgb(91 55 183);
+}
+
+ion-view[state="extendedprofile-view"] [ng-switch-when="radio"] .radio-icon,
+ion-view[state="extendedprofile-view"] i.icon.ion-image {
+    color: $icon-color;
+}
+
+/* USER ROLES */
+ion-view[state="extendedprofile-view"] [ng-switch-when="userroles"] {
+    margin: 10px 0;
+}
+
+ion-view[state="extendedprofile-view"] [ng-switch-when="userroles"] .item.item-divider.item-divider-custom p {
+    padding: 0 !important;
+    
+}
+
+
+ion-view[state="extendedprofile-view"] .checkbox-custom {
+    border: 0;
+    background-color: $bg-color;;
+}
+
+
+ion-view[state="extendedprofile-view"] label[ng-switch-when="telephone"].card .item.item-divider.item-divider-custom p {
+    padding: 0 !important;  
+}
+
+
+ion-view[state="extendedprofile-view"] label[ng-switch-when="telephone"].card .checkbox-custom {
+    text-align: left;
+    color: $font-color !important;
+    max-width: 96%;
+    margin-left: 2%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid $border-color;
+    height: 50px;
+}
+
+
+/* button save */
+ion-view[state="extendedprofile-view"] button.button.button-block.button-custom.ng-binding {
+    width: 80%;
+    margin-left: 10%;
+    background-color: $button-bg-color;
+    border-radius: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    background-image: url(https://ensiklopediakesaguan.com/wp-content/uploads/2021/04/send-2.png);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center right 30px;
+}
+
+
+
+
+
+
+

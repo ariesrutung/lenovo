@@ -1,0 +1,1173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+ section {
+	 border: 2px solid #ededed;
+	 background-color: #e8f7fc;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 min-height: 100vh;
+	 overflow-Y: hidden;
+	 font-family: 'Montserrat', sans-serif;
+	 color: #320b75;
+}
+ section h1 {
+	 color: #320b75;
+	 font-weight: 600;
+}
+ section p {
+	 color: #333;
+	 font-size: 0.75em;
+}
+ .range-container {
+	 position: relative;
+	 display: block;
+	 margin: 25px 0;
+}
+ .value {
+	 display: inline-block;
+	 float: right;
+	 margin: 0 auto;
+	 font-size: 1.5em;
+	 color: #8844fc;
+	 font-weight: 600;
+	 line-height: 15px;
+}
+ input[type="range"] {
+	 position: relative;
+	 margin: 25px 0;
+	 display: block;
+	 width: 350px;
+	 height: 10px;
+	 -webkit-appearance: none;
+	 background-color: #8844fc;
+	 border-radius: 5px;
+	 outline: none;
+	 pointer-events: none;
+}
+ input[type="range"]::-webkit-slider-thumb {
+	 width: 30px;
+	 height: 30px;
+	 border-radius: 50%;
+	 -webkit-appearance: none;
+	 box-shadow: 2px 2px 4px rgba(51, 51, 51, 0.5), inset -2px -2px 2px #ededed;
+	 background-color: #fff;
+	 pointer-events: auto;
+}
+ input[type="range"]::-webkit-slider-thumb:active {
+	 transform: scale(1.5);
+}
+ .btn {
+	 border: 2px solid #53c92e;
+	 background-color: #53c92e;
+	 color: #fff;
+	 border-radius: 25px;
+}
+ .btn:hover {
+	 transform: scale(1.2);
+	 color: #fff;
+}
+ #donateBtn {
+	 position: relative;
+	 margin: 50px 0;
+	 width: 100px;
+	 height: 35px;
+	 display: block;
+	 border-radius: 25px;
+	 outline: none;
+	 font-size: 0.85em;
+	 border: 2px solid #53c92e;
+	 background-color: #53c92e;
+	 color: #fff;
+	 visibility: hidden;
+	 text-align: center;
+	 line-height: 30px;
+	 text-decoration: none;
+	 box-shadow: 2px 2px 2px rgba(51, 51, 51, 0.5);
+}
+ #donateBtn:hover {
+	 transform: scale(1.2);
+	 color: #fff;
+}
+ #donateBtn.appear {
+	 animation: buttonAppear 1s ease-in-out forwards;
+	 animation-iteration-count: 1;
+	 visibility: visible;
+}
+ @keyframes buttonAppear {
+	 0% {
+		 transform: translateX(0px);
+	}
+	 10%, 30%, 50%, 70%, 90% {
+		 transform: translateX(-2px);
+	}
+	 20%, 40%, 60%, 80% {
+		 transform: translateX(2px);
+	}
+}
+ .cap {
+	 position: absolute;
+	 top: 0;
+	 right: 0;
+	 left: 0;
+	 bottom: 0;
+	 margin: 0px auto;
+	 position: absolute;
+	 width: 100px;
+	 height: 50px;
+	 background-color: #51c6ed;
+	 border-radius: 50% / 100% 100% 20% 20%;
+	 border: 2px solid #333;
+	 z-index: 1;
+	 box-shadow: inset 2px 2px 2px #26a6d1, 2px 2px 2px rgba(51, 51, 51, 0.5);
+}
+ .cap:before {
+	 content: '';
+	 position: absolute;
+	 width: 100%;
+	 height: 20%;
+	 border-radius: 50% / 100% 100% 0 0;
+	 border: 2px solid #333;
+	 background-color: #3aafd6;
+	 bottom: 0px;
+	 box-shadow: inset 2px 2px 2px #26a6d1;
+}
+ .bag {
+	 position: absolute;
+	 position: absolute;
+	 top: 0;
+	 right: 0;
+	 left: 0;
+	 bottom: 0;
+	 margin: 250px auto;
+	 width: 100px;
+	 height: 100px;
+	 border: 2px solid #333;
+	 border-radius: 50% / 100% 100% 40% 40%;
+	 background-color: #aae0f2;
+	 box-shadow: inset -5px 2px 2px #70c4e0, 3px 5px 5px rgba(51, 51, 51, 0.5);
+	 z-index: 2;
+	 margin-right: 25px;
+}
+ .bag:before {
+	 content: '';
+	 position: absolute;
+	 left: 35%;
+	 top: -12%;
+	 width: 25px;
+	 height: 12px;
+	 border-radius: 50% / 100% 100% 0 0;
+	 border: 2px solid #333;
+}
+ .bag:after {
+	 content: '';
+	 position: absolute;
+	 bottom: 15%;
+	 left: 15%;
+	 width: 70%;
+	 height: 50%;
+	 background-color: inherit;
+	 box-shadow: inherit;
+	 border: inherit;
+	 border-radius: inherit;
+}
+ .wrap {
+	 position: absolute;
+	 position: absolute;
+	 top: 0;
+	 right: 0;
+	 left: 0;
+	 bottom: 0;
+	 margin: 200px auto;
+	 width: 100%;
+	 height: 50px;
+}
+ .book {
+	 position: absolute;
+	 top: 10%;
+	 left: 10px;
+	 margin-left: 120px;
+	 width: 15px;
+	 height: 50px;
+	 box-shadow: 2px 2px 2px rgba(51, 51, 51, 0.5);
+	 border-radius: 50% / 5px 5px 2px 2px;
+	 background-color: #ededed;
+	 background-image: linear-gradient(90deg, rgba(255, 255, 255, .07) 50%, transparent 50%), linear-gradient(90deg, rgba(255, 255, 255, .13) 50%, transparent 50%), linear-gradient(90deg, transparent 50%, rgba(255, 255, 255, .17) 50%), linear-gradient(90deg, transparent 50%, rgba(255, 255, 255, .19) 50%);
+	 background-size: 13px, 29px, 37px, 53px;
+	 border: 2px solid #ad0927;
+	 border-bottom: none;
+	 z-index: 1;
+}
+ .ball {
+	 position: absolute;
+	 top: 0;
+	 right: 0;
+	 left: 0;
+	 bottom: 0;
+	 margin: 270px auto;
+	 width: 70px;
+	 height: 70px;
+	 background: radial-gradient(ellipse at center, rgba(73, 155, 234, 1) 0%, rgba(32, 124, 229, 1) 100%);
+	 border-radius: 50%;
+	 border: 2px solid #333;
+	 z-index: 2;
+	 animation: bounceBall 0.5s ease-in-out;
+	 animation-iteration-count: 1;
+}
+ @keyframes bounceBall {
+	 0% {
+		 transform: translate(0);
+	}
+	 10%, 30%, 50%, 70%, 90% {
+		 transform: translateY(-5px);
+	}
+	 20%, 40%, 60%, 80% {
+		 transform: translateY(5px);
+	}
+	 20%, 60% {
+		 border-radius: 50% / 50% 50% 70% 70%;
+	}
+	 40%, 80% {
+		 border-radius: 50% / 50% 50% 60% 60%;
+	}
+}
+ .kid {
+	 position: relative;
+	 margin: 25px auto;
+	 width: 300px;
+	 height: 300px;
+	 z-index: 0;
+}
+ .kid .head {
+	 position: relative;
+	 margin: 0 auto;
+	 width: 100px;
+	 height: 100px;
+	 border: 2px solid #333;
+	 background-color: #fec195;
+	 border-radius: 50%;
+	 box-shadow: inset -3px -3px #dc9564;
+}
+ .dirt {
+	 position: absolute;
+	 top: 55%;
+	 width: 15px;
+	 height: 10px;
+	 background-color: #d2b799;
+	 border-radius: 50%;
+}
+ .dirt.left {
+	 left: 15%;
+}
+ .dirt.right {
+	 right: 15%;
+}
+ .ears {
+	 position: absolute;
+	 top: 32%;
+	 width: 10px;
+	 height: 20px;
+	 background-color: #fec195;
+	 border: 2px solid #333;
+}
+ .ears.left {
+	 left: -10px;
+	 box-shadow: inset -2px -2px #dc9564;
+	 z-index: 0;
+	 transform: rotate(10deg);
+	 border-radius: 50% / 100% 0 0 100%;
+}
+ .ears.right {
+	 right: -10px;
+	 box-shadow: inset -2px -2px #dc9564;
+	 z-index: 0;
+	 transform: rotate(-10deg);
+	 border-radius: 50Array/0Array 100% 100% 0;
+}
+ .eyes {
+	 position: absolute;
+	 top: 20%;
+	 width: 30%;
+	 height: 30%;
+	 background-color: #fff;
+	 border: 2px solid #333;
+	 border-radius: 50%;
+	 overflow: hidden;
+	 transition: all 0.25s ease-in-out;
+}
+ .eyes.left:before, .eyes.right:before {
+	 content: '';
+	 position: absolute;
+	 top: -60%;
+	 left: -5%;
+	 width: 120%;
+	 height: 100%;
+	 background-color: #fec195;
+	 border-radius: 50%;
+	 box-shadow: inset -3px -3px #dc9564;
+	 z-index: 1;
+}
+ .eyes.left {
+	 left: 10%;
+}
+ .eyes.left .pupil, .eyes.right .pupil {
+	 position: absolute;
+	 bottom: 10%;
+	 width: 70%;
+	 height: 70%;
+	 border: 2px solid #333;
+	 background-color: #67340b;
+	 border-radius: 50%;
+}
+ .eyes.left .pupil:before, .eyes.right .pupil:before {
+	 content: '';
+	 position: absolute;
+	 top: 20%;
+	 left: 15%;
+	 width: 70%;
+	 height: 70%;
+	 background-color: #000;
+	 border-radius: 50%;
+}
+ .eyes.left .pupil:after, .eyes.right .pupil:after {
+	 content: '';
+	 position: absolute;
+	 top: 20%;
+	 right: 5%;
+	 width: 30%;
+	 height: 30%;
+	 background-color: #fff;
+	 border-radius: 50%;
+}
+ .eyes.left .pupil {
+	 left: 20%;
+}
+ .eyes.right .pupil {
+	 right: 20%;
+}
+ .eyes.right {
+	 right: 10%;
+}
+ .eyes.left.semi:before, .eyes.right.semi:before {
+	 top: -100%;
+	 transition: all 0.25s ease-in-out;
+}
+ .nose {
+	 position: absolute;
+	 top: 50%;
+	 left: 45%;
+	 width: 10px;
+	 height: 10px;
+	 border-radius: 50%;
+	 border-top: 2px solid rgba(51, 51, 51, 0.5);
+	 z-index: 1;
+}
+ .mouth {
+	 position: absolute;
+	 top: 70%;
+	 left: 30%;
+	 width: 35px;
+	 height: 15px;
+	 border-radius: 50%;
+	 border-top: 2px solid #8e5b39;
+	 transition: all 0.25s ease-in-out;
+}
+ .mouth.semi {
+	 top: 55%;
+	 border-radius: 20%;
+	 border-top: 0;
+	 border-bottom: 2px solid #8e5b39;
+	 transition: all 0.25s ease-in-out;
+}
+ .mouth.full {
+	 top: 65%;
+	 left: 32%;
+	 border-radius: 50Array/0Array 0 100% 100%;
+	 border-bottom: 2px solid #8e5b39;
+	 transition: all 0.25s ease-in-out;
+	 background-color: #fff;
+}
+ .hair {
+	 position: absolute;
+	 top: 0;
+	 right: 0;
+	 left: 0;
+	 bottom: 0;
+	 margin: -10px auto;
+	 width: 100px;
+	 height: 50px;
+	 background-color: #333;
+	 border-top-left-radius: 50%;
+	 border-top-right-radius: 50%;
+}
+ .part {
+	 position: absolute;
+	 width: 40px;
+	 height: 20px;
+	 border-radius: 50% / 100% 100% 0 0;
+	 background-color: #333;
+	 box-shadow: inset 2px 2px #1e1e1e;
+	 z-index: 2;
+}
+ .part:nth-of-type(1) {
+	 left: 5%;
+	 transform: rotate(-45deg);
+}
+ .part:nth-of-type(2) {
+	 left: 15%;
+	 transform: rotate(-60deg);
+}
+ .part:nth-of-type(3) {
+	 left: 30%;
+	 transform: rotate(-30deg);
+}
+ .part:nth-of-type(4) {
+	 left: 50%;
+	 transform: rotate(-20deg);
+}
+ .body {
+	 position: absolute;
+	 top: 0;
+	 right: 0;
+	 left: 0;
+	 bottom: 0;
+	 margin: 100px auto;
+	 width: 100%;
+	 height: calc(100% - 150px);
+}
+ .neck {
+	 position: absolute;
+	 top: 0;
+	 right: 0;
+	 left: 0;
+	 bottom: 0;
+	 margin: -10px auto;
+	 width: 30px;
+	 height: 30px;
+	 background-color: #fec195;
+	 border-radius: 50%;
+	 z-index: -1;
+	 border-bottom: 2px solid #333;
+	 box-shadow: inset -5px -2px 1px #dc9564;
+}
+ .shirt {
+	 position: relative;
+	 margin: -2px auto;
+	 width: 90px;
+	 height: 110px;
+	 border: 2px solid #333;
+	 background-color: #f8ff1f;
+	 border-radius: 10%;
+	 box-shadow: inset -10px 5px #e1e81a;
+	 z-index: -1;
+}
+ .shirt:before {
+	 content: '';
+	 position: absolute;
+	 top: 3.5px;
+	 left: -32%;
+	 width: 40px;
+	 height: 25px;
+	 background-color: #f8ff1f;
+	 border: 2px solid #333;
+	 border-radius: 50% / 20% 100% 0% 20%;
+	 transform: rotate(-80deg);
+	 border-bottom: none;
+	 box-shadow: inset -5px 5px #e1e81a;
+}
+ .shirt:after {
+	 content: '';
+	 position: absolute;
+	 top: 3.5px;
+	 right: -32%;
+	 width: 40px;
+	 height: 25px;
+	 background-color: #f8ff1f;
+	 border: 2px solid #333;
+	 border-radius: 50% / 100% 20% 20% 20%;
+	 transform: rotate(80deg);
+	 border-bottom: none;
+	 box-shadow: inset 5px 5px #e1e81a;
+}
+ .shirt.new {
+	 background-color: #7bd1ed;
+	 box-shadow: inset -10px 5px #51b5d6;
+	 transition: all 0.25s ease-in-out;
+}
+ .shirt.new:before {
+	 background-color: #7bd1ed;
+	 box-shadow: inset -10px 5px #51b5d6;
+}
+ .shirt.new:after {
+	 background-color: #7bd1ed;
+	 box-shadow: inset -10px 5px #51b5d6;
+}
+ .patch {
+	 position: absolute;
+	 top: 50%;
+	 width: 15px;
+	 height: 35px;
+	 border: 50% / 20px 25px 15px 10px;
+	 border: 2px solid #333;
+	 border-left: none;
+}
+ .patch:before {
+	 content: '';
+	 position: absolute;
+	 top: 30%;
+	 left: 80%;
+	 width: 7px;
+	 height: 2px;
+	 background-color: #333;
+	 box-shadow: 0px 5px #333, 0px 10px #333;
+}
+ .patch.left {
+	 left: 0;
+	 box-shadow: inset -2px 2px #6acc7e;
+	 background-color: #91eba3;
+}
+ .patch.center {
+	 top: 35%;
+	 left: 50%;
+	 border-left: 2px solid #333;
+	 background-color: #f2b600;
+	 box-shadow: inset -2px 2px #d19e06;
+	 width: 20px;
+	 height: 30px;
+	 transform: rotate(20deg);
+}
+ .patch.center:before {
+	 content: '';
+	 position: absolute;
+	 width: 7px;
+	 height: 2px;
+	 box-shadow: -15px -2px #333, -15px 10px #333, 0px 10px #333;
+}
+ .hand {
+	 position: absolute;
+	 top: 90%;
+	 left: -7px;
+	 width: 20px;
+	 height: 20px;
+	 border-radius: 50%;
+	 background-color: #fec195;
+	 border: 2px solid #333;
+	 border-top: none;
+}
+ .hand .toes {
+	 position: absolute;
+	 width: 7px;
+	 height: 15px;
+	 border: 2px solid #333;
+	 border-radius: 30%;
+	 border-top: 0;
+	 background-color: #fec195;
+}
+ .hand .toes:nth-of-type(1) {
+	 top: 50%;
+	 left: 50%;
+}
+ .hand .toes:nth-of-type(2) {
+	 top: 50%;
+	 left: -10%;
+}
+ .hand .toes:nth-of-type(3) {
+	 top: 50%;
+	 left: 10%;
+}
+ .hand .toes:nth-of-type(4) {
+	 top: 50%;
+	 left: 30%;
+}
+ .arms {
+	 position: absolute;
+	 top: 10px;
+	 width: 10px;
+	 height: 90px;
+	 background-color: #fec195;
+	 border: 2px solid #333;
+	 border-bottom: none;
+}
+ .arms.left {
+	 left: -20%;
+	 z-index: -1;
+	 transform: rotate(10deg);
+	 box-shadow: inset 2px 2px #dc9564;
+}
+ .arms.left .hand {
+	 box-shadow: inset 2px 2px #dc9564;
+}
+ .arms.right {
+	 right: -20%;
+	 z-index: -1;
+	 transform: rotate(-10deg);
+	 box-shadow: inset -2px 2px #dc9564;
+}
+ .arms.right .hand {
+	 box-shadow: inset -2px -2px #dc9564;
+}
+ .shorts {
+	 position: absolute;
+	 top: 0;
+	 right: 0;
+	 left: 0;
+	 bottom: 0;
+	 margin: 80px auto;
+	 width: 90px;
+	 height: 40px;
+	 border: 2px solid #333;
+	 background-color: #37a344;
+	 border-radius: 50% / 20% 20% 10% 10%;
+	 z-index: -2;
+	 box-shadow: inset -2px 2px 2px #0d911d, inset 2px -2px #0d911d;
+}
+ .shorts:before {
+	 content: '';
+	 position: absolute;
+	 bottom: -30%;
+	 left: -2px;
+	 width: 40%;
+	 height: 40%;
+	 border-radius: 50Array/0Array 0 20% 20%;
+	 border: 2px solid #333;
+	 background-color: #37a344;
+	 border-top: none;
+	 box-shadow: inset 2px -2px 2px #0d911d;
+}
+ .shorts:after {
+	 content: '';
+	 position: absolute;
+	 bottom: -30%;
+	 right: -2px;
+	 width: 40%;
+	 height: 40%;
+	 border-radius: 50Array/0Array 0 20% 20%;
+	 border: 2px solid #333;
+	 background-color: #37a344;
+	 border-top: none;
+	 box-shadow: inset 2px -2px 2px #0d911d;
+}
+ .shorts.new {
+	 background-color: #ebecfa;
+	 box-shadow: inset 2px -2px 2px #c1c6f5;
+}
+ .shorts.new:before {
+	 background-color: #ebecfa;
+	 box-shadow: inset 2px -2px 2px #c1c6f5;
+}
+ .shorts.new:after {
+	 background-color: #ebecfa;
+	 box-shadow: inset 2px -2px 2px #c1c6f5;
+}
+ .shorts .patch {
+	 width: 20px;
+	 height: 20px;
+	 background-color: yellow;
+	 box-shadow: inset 2px 2px #dbf026;
+	 transform: rotate(10deg);
+	 border-left: 2px solid #333;
+}
+ .shorts .patch:before {
+	 content: '';
+	 position: absolute;
+	 top: 10%;
+	 box-shadow: none;
+	 transform: rotate(10deg);
+}
+ .foot {
+	 position: absolute;
+	 top: 90%;
+	 width: 50px;
+	 height: 25px;
+	 border-radius: 50%;
+	 background-color: #fec195;
+	 border: 2px solid #333;
+	 box-shadow: inset 5px -5px #d2b799;
+}
+ .legs {
+	 position: absolute;
+	 top: 100%;
+	 width: 15px;
+	 height: 70px;
+	 border: 2px solid #333;
+	 background-color: #fec195;
+	 z-index: -3;
+	 border-bottom: none;
+}
+ .legs.left {
+	 left: 10%;
+	 box-shadow: inset 2px 2px #dc9564;
+}
+ .legs.left .foot {
+	 left: -35px;
+	 transform: rotate(-15deg);
+	 border-right: 0;
+}
+ .legs.left .foot.shoe {
+	 background-color: #3ea1c2;
+	 box-shadow: none;
+	 transition: all 0.25s ease-in-out;
+}
+ .legs.left .foot.shoe:before {
+	 content: '';
+	 position: absolute;
+	 width: 15px;
+	 height: 20px;
+	 background-color: #fff;
+	 top: -15px;
+	 right: -3px;
+	 transform: rotate(15deg);
+	 border: 2px solid #333;
+	 border-radius: 50Array/0Array 0 20% 20%;
+}
+ .legs.right {
+	 right: 10%;
+	 box-shadow: inset -2px 2px #dc9564;
+}
+ .legs.right .foot {
+	 right: -35px;
+	 transform: rotate(15deg);
+	 border-left: 0;
+}
+ .legs.right .foot.shoe {
+	 background-color: #3ea1c2;
+	 box-shadow: none;
+	 transition: all 0.25s ease-in-out;
+}
+ .legs.right .foot.shoe:before {
+	 content: '';
+	 position: absolute;
+	 width: 15px;
+	 height: 20px;
+	 background-color: #fff;
+	 top: -15px;
+	 left: -3px;
+	 transform: rotate(-15deg);
+	 border: 2px solid #333;
+	 border-radius: 50Array/0Array 0 20% 20%;
+}
+ .dis-left {
+	 opacity: 0;
+	 transition: all 0.25s ease-in-out;
+}
+ .ap-left {
+	 opacity: 1;
+	 transition: all 0.25s ease-in-out;
+}
+ legend {
+	 border-bottom: 2px solid #8844fc;
+	 color: #320b75;
+}
+ @media only screen and (min-width: 480px) {
+	 section {
+		 padding-top: 25px;
+	}
+}
+ @media only screen and (min-width: 320px) {
+	 section {
+		 overflow-x: hidden;
+		 padding: 10px auto;
+	}
+}
+ 
+    </style>
+</head>
+<body>
+    <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-12">
+              
+              <div class="ball dis-left"></div>
+              <div class="wrap">
+                <div class="book dis-left"></div>  
+              </div>
+              <div class="cap dis-left"></div>
+              <div class="bag dis-left"></div>
+              <div class="kid">
+                <div class="hair">
+                  <div class="part"></div>
+                  <div class="part"></div>
+                  <div class="part"></div>
+                  <div class="part"></div>
+                </div>
+                <div class="head">
+                  <div class="dirt left"></div>
+                  <div class="dirt right"></div>
+                  <div class="ears left"></div>
+                  <div class="ears right"></div>
+                  <div class="eyes left">
+                    <div class="pupil"></div>
+                  </div>
+                  <div class="eyes right">
+                    <div class="pupil"></div>
+                  </div>
+                  <div class="nose"></div>
+                  <div class="mouth"></div>
+                </div>  
+                <div class="body">
+                  <div class="shirt">
+                    <div class="patch left"></div>
+                    <div class="patch center"></div>
+                    <div class="neck"></div>
+                    <div class="arms left">
+                      <div class="hand">
+                        <div class="toes"></div>
+                        <div class="toes"></div>
+                        <div class="toes"></div>
+                        <div class="toes"></div>
+                      </div>
+                    </div>
+                    <div class="arms right">
+                      <div class="hand">
+                        <div class="toes"></div>
+                        <div class="toes"></div>
+                        <div class="toes"></div>
+                        <div class="toes"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="shorts">
+                    <div class="patch"></div>
+                    <div class="legs left">
+                      <div class="foot"></div>
+                    </div>
+                    <div class="legs right">
+                      <div class="foot"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-lg-6 col-xs-12">
+              <h1>WE NEED YOUR HELP</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio eos, reprehenderit distinctio commodi magnam, eius mollitia, voluptas quasi quod architecto velit. Voluptatibus ex debitis quibusdam cumque. Cumque omnis, eos?</p>
+              <div class="range-container">
+                <h4>I wanna help with: <span class="value">$0</span></h4>
+                <input type="range" min="0" max="100" step="10"/>
+              </div>
+              <a href="#infos" data-scroll id="donateBtn">Continue</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="infos">
+        <div class="container">
+        <form class="form-horizontal" role="form">
+          <fieldset>
+            <legend>Payment</legend>
+            <div class="form-group">
+              <label class="col-sm-3 control-label" for="card-holder-name">Email Address</label>
+              <div class="col-sm-9">
+                <input type="email" class="form-control" name="email-address" id="email-address" placeholder="Email Address">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-3 control-label" for="card-holder-name">Name on Card</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" name="card-holder-name" id="card-holder-name" placeholder="Card Holder's Name">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-3 control-label" for="card-number">Card Number</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" name="card-number" id="card-number" placeholder="Debit/Credit Card Number">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-3 control-label" for="expiry-month">Expiration Date</label>
+              <div class="col-sm-9">
+                <div class="row">
+                  <div class="col-xs-3">
+                    <select class="form-control col-sm-2" name="expiry-month" id="expiry-month">
+                      <option>Month</option>
+                      <option value="01">Jan (01)</option>
+                      <option value="02">Feb (02)</option>
+                      <option value="03">Mar (03)</option>
+                      <option value="04">Apr (04)</option>
+                      <option value="05">May (05)</option>
+                      <option value="06">June (06)</option>
+                      <option value="07">July (07)</option>
+                      <option value="08">Aug (08)</option>
+                      <option value="09">Sep (09)</option>
+                      <option value="10">Oct (10)</option>
+                      <option value="11">Nov (11)</option>
+                      <option value="12">Dec (12)</option>
+                    </select>
+                  </div>
+                  <div class="col-xs-3">
+                    <select class="form-control" name="expiry-year">
+                      <option value="17">2017</option>
+                      <option value="18">2018</option>
+                      <option value="19">2019</option>
+                      <option value="20">2020</option>
+                      <option value="21">2021</option>
+                      <option value="22">2022</option>
+                      <option value="23">2023</option>
+                      <option value="24">2024</option>
+                      <option value="25">2025</option>
+                      <option value="26">2026</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-3 control-label" for="cvv">Card CVV</label>
+              <div class="col-sm-3">
+                <input type="text" class="form-control" name="cvv" id="cvv" placeholder="Security Code">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-offset-3 col-sm-9">
+                <button type="submit" class="btn">Pay Now</button>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+      </section>
+
+      <script>
+
+smoothScroll.init();
+  setTimeout(function(){
+    range.defaultValue = 0;
+  },0.1);
+  function addClass(el, className){
+      el.className += ' '+className;   
+  }
+
+  function removeClass(el, className){
+      var elClass = ' '+el.className+' ';
+      while(elClass.indexOf(' '+className+' ') != -1){
+           elClass = elClass.replace(' '+className+' ', '');
+      }
+      el.className = elClass;
+  }
+
+  var range = document.querySelector('input[type="range"]');
+  range.defaultValue = 0;
+  var button = document.getElementById('donateBtn');
+  var patches = [];
+  var patchLeft = document.querySelector('.shirt .patch.left');
+  var patchCenter = document.querySelector('.shirt .patch.center');
+  var patchShorts = document.querySelector('.shorts .patch');
+  var dirtLeft = document.querySelector('.head .dirt.left');
+  var dirtRight = document.querySelector('.head .dirt.right');
+  var mouth = document.querySelector('.mouth');
+  var eyesLeft = document.querySelector('.eyes.left');
+  var eyesRight = document.querySelector('.eyes.right');
+  var shirt = document.querySelector('.shirt');
+  var shorts = document.querySelector('.shorts');
+  var footLeft = document.querySelector('.shorts .legs.left .foot');
+  var footRight = document.querySelector('.shorts .legs.right .foot');
+  var ball = document.querySelector('.ball');
+  var cap = document.querySelector('.cap');
+  var bag = document.querySelector('.bag');
+
+  patches.push(patchLeft);
+  patches.push(patchCenter);
+  patches.push(patchShorts);
+  patches.push(dirtLeft);
+  patches.push(dirtRight);
+  patches.push(mouth);
+  patches.push(eyesLeft);
+  patches.push(eyesRight);
+  patches.push(shirt);
+  patches.push(shorts);
+  patches.push(footLeft);
+  patches.push(footRight);
+  patches.push(ball);
+  patches.push(cap);
+  patches.push(bag);
+  var prev = 0;
+
+  var getValue = function(){
+    var current = 0;
+    var newVal = range.value;
+    if(newVal > 0) {
+      addClass(button,"appear");
+      //Remove the Left Patch
+      if(newVal >= 10 && newVal < 20 && newVal >= prev){
+          current = 0;
+          removeClass(patches[current], "ap-left");
+          addClass(patches[current],"dis-left");
+          prev = newVal;
+      } 
+      //Add the Left Patch
+      else if(newVal >= 10 && newVal < 20 && newVal < prev){
+        current = 1;
+          removeClass(patches[current],"dis-left"); 
+        addClass(patches[current],"ap-left");
+          prev = newVal;
+      } 
+      //Remove the Center Patch
+      else if(newVal >= 20 && newVal < 30 && newVal >= prev){
+          current = 1;
+          removeClass(patches[current], "ap-left");
+          addClass(patches[current],"dis-left");
+          prev = newVal;
+      } 
+      //Add the Center Patch
+      else if(newVal >= 20 && newVal < 30 && newVal < prev){
+          current = 2;
+        addClass(patches[current],"ap-left");
+        removeClass(patches[current],"dis-left"); 
+        current--;
+          prev = newVal;
+      } 
+      //Remove the Shorts Patch
+      else if(newVal >= 30 && newVal < 40 && newVal >= prev){
+          current = 2;
+          removeClass(patches[current], "ap-left");
+          addClass(patches[current],"dis-left");
+          prev = newVal;
+      } 
+      //Add the Shorts Patch
+      else if(newVal >= 30 && newVal < 40 && newVal < prev){
+          current = 4;
+          while(current >= 3){
+          addClass(patches[current],"ap-left");
+          removeClass(patches[current],"dis-left"); 
+          current--;
+        }
+          prev = newVal;
+      } 
+      //Remove the Dirties
+      else if(newVal >= 40 && newVal < 50 && newVal >= prev){
+          current = 3;
+          while(current < 5){
+            removeClass(patches[current], "ap-left");
+            addClass(patches[current],"dis-left");
+            current++;
+        }
+          prev = newVal;
+      } 
+      //Add the Previous State
+      else if(newVal >= 40 && newVal < 50 && newVal < prev){
+          current = 9;
+          while(current >= 5){
+            if(current <= 9 && current > 7){
+              removeClass(patches[current],"new");
+          } else {
+            removeClass(patches[current],"semi");
+          }
+          current--;
+        }
+          prev = newVal;
+      } 
+      //Change Mouth and Eyes and the Clothes
+      else if(newVal >= 50 && newVal < 60 && newVal >= prev){
+          current = 5;
+          while(current <= 9){
+            if(current >= 5 && current < 8){
+              addClass(patches[current],"semi");
+          } else {
+            addClass(patches[current],"new");
+          }
+          current++;
+        }
+          prev = newVal;
+      } 
+      //Remove the Shoes
+      else if(newVal >= 50 && newVal < 60 && newVal < prev){
+          current = 11;
+          while(current >= 10){
+            removeClass(patches[current], "shoe"); 
+            current--;
+        }
+          prev = newVal;
+      }
+      //Add Shoes
+      else if(newVal >= 60 && newVal < 70 && newVal >= prev){
+          current = 10;
+          while(current < 12){
+            addClass(patches[current], "shoe");
+            current++;
+        }
+          prev = newVal;
+      } 
+      //Remove Ball
+      else if(newVal >= 60 && newVal < 70 && newVal < prev){
+          current = 12;
+          removeClass(patches[current], "ap-left");
+          addClass(patches[current],"dis-left"); 
+          prev = newVal;
+      }
+      //Add Ball
+      else if(newVal >= 70 && newVal < 80 && newVal >= prev){
+          current = 12;
+          removeClass(patches[current], "dis-left");
+          addClass(patches[current], "ap-left");
+          prev = newVal;
+      } 
+      //Remove Cap
+      else if(newVal >= 70 && newVal < 80 && newVal < prev){
+          current = 13;
+          removeClass(patches[current], "ap-left");
+          addClass(patches[current],"dis-left"); 
+          prev = newVal;
+      }
+      //Add The Cap
+      else if(newVal >= 80 && newVal < 90 && newVal >= prev){
+          current = 13;
+          removeClass(patches[current], "dis-left");
+          addClass(patches[current], "ap-left");
+          prev = newVal;
+      } 
+      //Remove the Bag
+      else if(newVal >= 80 && newVal < 90 && newVal < prev){
+          current = 14;
+          removeClass(patches[current], "ap-left");
+          addClass(patches[current],"dis-left"); 
+          prev = newVal;
+      }
+      //Add The Bag
+      else if(newVal >= 90 && newVal < 100 && newVal >= prev){
+          current = 14;
+          removeClass(patches[current], "dis-left");
+          addClass(patches[current], "ap-left");
+
+          
+          var temp = patches[5].className.split(" ")
+          if(temp.indexOf("full") > 0){
+            removeClass(patches[5], "full");
+          addClass(patches[5],"semi");  
+          }
+          prev = newVal;
+      }
+      //Add The Full smile
+      else if(newVal >= 100){
+          current = 5;
+          removeClass(patches[current], "semi");
+          addClass(patches[current], "full");
+          prev = newVal;
+      }
+      //Add everythingx
+      } else {
+      removeClass(button,"appear");
+        for(let i in patches){
+          if(i <= 6){
+              addClass(patches[i],"ap-left");
+              removeClass(patches[i],"dis-left");
+          }
+        }
+      }
+
+    var c = "$";
+    c = c.concat(newVal);
+    var targetValue = document.querySelector(".value");
+    targetValue.innerHTML = c;
+  }
+  range.addEventListener("input",getValue);
+      </script>
+</body>
+</html>

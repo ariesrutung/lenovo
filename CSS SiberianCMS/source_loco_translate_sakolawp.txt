@@ -1,0 +1,2095 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: SakolaWP\n"
+"POT-Creation-Date: 2020-08-14 17:11+0700\n"
+"PO-Revision-Date: 2021-03-20 13:24+0000\n"
+"Last-Translator: \n"
+"Language-Team: Bahasa Indonesia\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-KeywordsList: _e;__;esc_html_e;esc_html__\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: js\n"
+"X-Poedit-SearchPathExcluded-1: .git\n"
+"X-Poedit-SearchPathExcluded-2: public/js\n"
+"X-Poedit-SearchPathExcluded-3: admin/js\n"
+"Report-Msgid-Bugs-To: \n"
+"Language: id_ID\n"
+"X-Loco-Version: 2.5.2; wp-5.7"
+#: admin/partials/sakolawp-admin-display.php:216
+#: admin/partials/sakolawp-exam.php:68 admin/partials/sakolawp-exam.php:176
+#: admin/partials/sakolawp-exam.php:324 admin/partials/sakolawp-exam.php:483
+#: settings.php:251 templates/parent/homework.php:66
+#: templates/student/homework.php:65 templates/teacher/exam_edit.php:167
+#: templates/teacher/exam_questions.php:253
+#: templates/teacher/exam_results.php:155 templates/teacher/examroom.php:84
+#: templates/teacher/homework.php:127 templates/teacher/my_routines.php:102
+#: templates/teacher/myaccount.php:281 templates/teacher/online_exams.php:125
+msgid " - "
+msgstr "-"
+#: templates/administrator/view_user.php:20
+#: templates/parent/class_routine.php:33 templates/parent/online_exams.php:33
+#: templates/student/class_routine.php:31 templates/student/online_exams.php:30
+msgid "-"
+msgstr "-"
+#: settings.php:262
+msgid "-admin-"
+msgstr "-admin-"
+#: settings.php:268
+msgid "-parent-"
+msgstr "Orang Tua"
+#: settings.php:265
+msgid "-teacher-"
+msgstr "Guru"
+#: templates/teacher/view_exam_result.php:286
+msgid "0"
+msgstr "0"
+#: templates/student/view_exam_result.php:194
+#: templates/student/view_exam_result.php:204
+#: templates/student/view_exam_result.php:221
+#: templates/teacher/view_exam_result.php:247
+#: templates/teacher/view_exam_result.php:257
+#: templates/teacher/view_exam_result.php:274
+msgid "A"
+msgstr "A"
+#: admin/partials/sakolawp-manage-attendance.php:206
+#: admin/partials/sakolawp-manage-report-attendance.php:333
+#: templates/teacher/manage_attendance_view.php:229
+#: templates/teacher/report_attendance_view.php:155
+#: templates/teacher/report_attendance_view.php:278
+msgid "Absent"
+msgstr "Tidak Hadir"
+#: admin/partials/sakolawp-admin-display.php:285
+#: admin/partials/sakolawp-homework.php:55
+#: admin/partials/sakolawp-manage-class.php:42
+#: admin/partials/sakolawp-manage-section.php:47
+#: admin/partials/sakolawp-manage-subject.php:46
+msgid "Action"
+msgstr "Aksi"
+#: admin/partials/sakolawp-license.php:25
+msgid "Activated! Your license is valid."
+msgstr "Teraktivasi! Lisensi Anda Valid"
+#: admin/partials/sakolawp-assign-student.php:114
+#: admin/partials/sakolawp-manage-class.php:90
+#: admin/partials/sakolawp-manage-section.php:147
+#: admin/partials/sakolawp-manage-subject.php:166
+msgid "Add"
+msgstr "Tambah"
+#: templates/teacher/add_new_question.php:74
+msgid "Add A Question"
+msgstr "Buat Pertanyaan Baru"
+#: admin/partials/sakolawp-manage-class.php:27
+msgid "Add Class"
+msgstr "Buat Kelas"
+#: templates/teacher/view_homework_student.php:119
+msgid "Add Comment :"
+msgstr "Tambah Komentar"
+#: admin/partials/sakolawp-admin-display.php:268
+#: admin/partials/sakolawp-manage-routine.php:52 sakolawp-post-type.php:17
+#: sakolawp-post-type.php:75 templates/teacher/homework.php:96
+#: templates/teacher/online_exams.php:90
+#: templates/teacher/questions_bank.php:44
+msgid "Add New"
+msgstr "Tambah Baru"
+#: admin/partials/sakolawp-manage-class.php:80
+msgid "Add New Class"
+msgstr "Buat Kelas Baru"
+#: admin/partials/sakolawp-manage-routine.php:218
+msgid "Add New Class Routine"
+msgstr "Buat Kelas Baru untuk Rutinitas"
+#: sakolawp-post-type.php:74
+msgid "Add New Event"
+msgstr "Tambah Kegiatan Baru"
+#: templates/teacher/online_exams.php:164
+#: templates/teacher/online_exams.php:174
+msgid "Add New Exam"
+msgstr "Buat Ujian Baru"
+#: templates/teacher/homework.php:163 templates/teacher/homework.php:174
+msgid "Add New Homework"
+msgstr "Buat Pekerjaan Rumah Baru"
+#: sakolawp-post-type.php:16
+msgid "Add New News"
+msgstr "Buat Berita Baru"
+#: templates/teacher/questions_bank.php:109
+msgid "Add New Question"
+msgstr "Buat Pertanyaan Baru"
+#: admin/partials/sakolawp-manage-section.php:103
+msgid "Add New Section"
+msgstr "Tambahkan Sesi Baru"
+#: admin/partials/sakolawp-manage-subject.php:105
+msgid "Add New Subject"
+msgstr "Tambah Pelajaran Baru"
+#: templates/teacher/exam_questions.php:378
+msgid "Add Question"
+msgstr "Tambah Pertanyaan"
+#: admin/partials/sakolawp-manage-section.php:26
+msgid "Add Section"
+msgstr "Tambah Sesi"
+#: admin/partials/sakolawp-assign-student.php:46
+msgid "Add Student To Class"
+msgstr "Tambahkan Siswa ke Kelas"
+#: admin/partials/sakolawp-manage-subject.php:25
+msgid "Add Subject"
+msgstr "Tambah Pelajaran"
+#: templates/administrator/navigation.php:39
+msgid "Admin Panel"
+msgstr "Panel Admin"
+#: settings.php:278 settings.php:286
+msgid "Administrator"
+msgstr "Administrator"
+#: sakolawp-post-type.php:72
+msgid "All Event"
+msgstr "Semua Kegiatan"
+#: sakolawp-post-type.php:14
+msgid "All News"
+msgstr "Semua Berita"
+#: template/myaccount-template.php:36
+msgid "Already a member?"
+msgstr "Sudah Menjadi Member?"
+#: admin/partials/sakolawp-manage-routine.php:327
+#: admin/partials/sakolawp-manage-routine.php:365
+msgid "AM"
+msgstr "AM"
+#: admin/partials/sakolawp-exam.php:252
+#: templates/parent/view_exam_result.php:161
+#: templates/student/view_exam_result.php:162
+#: templates/teacher/exam_questions.php:163
+#: templates/teacher/exam_questions.php:323
+#: templates/teacher/questions_bank.php:53
+#: templates/teacher/view_exam_result.php:209
+msgid "Answer"
+msgstr "Jawaban"
+#: admin/partials/sakolawp-manage-routine.php:47
+msgid "Apply"
+msgstr "Terapkan"
+#: admin/class-sakolawp-admin.php:216 admin/class-sakolawp-admin.php:237
+#: admin/class-sakolawp-admin.php:294 admin/class-sakolawp-admin.php:315
+#: admin/partials/sakolawp-admin-display.php:302
+#: admin/partials/sakolawp-admin-display.php:327
+#: admin/partials/sakolawp-manage-report-attendance.php:78
+#: admin/partials/sakolawp-manage-report-attendance.php:167
+#: admin/partials/sakolawp-manage-report-attendance.php:221
+#: templates/parent/attendance_report.php:54
+#: templates/parent/report_attendance_view.php:67
+#: templates/student/attendance_report.php:52
+#: templates/student/report_attendance_view.php:68
+#: templates/teacher/attendance_report.php:79
+#: templates/teacher/report_attendance_view.php:86
+#: templates/teacher/report_attendance_view.php:140
+msgid "April"
+msgstr "April"
+#: admin/class-sakolawp-admin.php:166 admin/class-sakolawp-admin.php:367
+#: admin/class-sakolawp-admin.php:444 admin/class-sakolawp-admin.php:559
+#: admin/class-sakolawp-admin.php:929
+msgid "Are you sure ?"
+msgstr "Apakah Kamu Yakin?"
+#: admin/class-sakolawp-admin.php:136
+#: admin/partials/sakolawp-assign-student.php:34
+#: admin/partials/sakolawp-student-area.php:39
+msgid "Assign Student"
+msgstr "Menetapkan Siswa"
+#: templates/teacher/homeworkroom.php:61
+msgid "Attachment"
+msgstr "Lampiran"
+#: admin/class-sakolawp-admin.php:133
+#: admin/partials/sakolawp-manage-attendance.php:177
+#: templates/parent/attendance_report.php:35 templates/parent/navigation.php:57
+#: templates/parent/report_attendance_view.php:39
+#: templates/student/attendance_report.php:32
+#: templates/student/navigation.php:60
+#: templates/student/report_attendance_view.php:48
+msgid "Attendance"
+msgstr "Kehadiran"
+#: admin/partials/sakolawp-manage-attendance.php:30
+#: admin/partials/sakolawp-manage-report-attendance.php:37
+#: templates/student/report_attendance_view.php:115
+#: templates/teacher/attendance_report.php:29
+#: templates/teacher/report_attendance_view.php:36
+msgid "Attendance Report"
+msgstr "Laporan Kehadiran"
+#: templates/teacher/attendance_report.php:36
+#: templates/teacher/manage_attendance.php:89
+#: templates/teacher/manage_attendance_view.php:129
+#: templates/teacher/navigation.php:51
+#: templates/teacher/report_attendance_view.php:43
+msgid "Attendances"
+msgstr "Semua Kehadiran"
+#: templates/teacher/attendance_report.php:41
+#: templates/teacher/manage_attendance.php:94
+#: templates/teacher/manage_attendance_view.php:134
+#: templates/teacher/report_attendance_view.php:48
+msgid "Attendances Report"
+msgstr "Semua Laporan Kehadiran"
+#: admin/class-sakolawp-admin.php:220 admin/class-sakolawp-admin.php:241
+#: admin/class-sakolawp-admin.php:298 admin/class-sakolawp-admin.php:319
+#: admin/partials/sakolawp-admin-display.php:310
+#: admin/partials/sakolawp-admin-display.php:335
+#: admin/partials/sakolawp-manage-report-attendance.php:86
+#: admin/partials/sakolawp-manage-report-attendance.php:175
+#: admin/partials/sakolawp-manage-report-attendance.php:229
+#: templates/parent/attendance_report.php:62
+#: templates/parent/report_attendance_view.php:75
+#: templates/student/attendance_report.php:60
+#: templates/student/report_attendance_view.php:76
+#: templates/teacher/attendance_report.php:87
+#: templates/teacher/report_attendance_view.php:94
+#: templates/teacher/report_attendance_view.php:144
+msgid "August"
+msgstr "Agustus"
+#: templates/student/view_exam_result.php:195
+#: templates/student/view_exam_result.php:205
+#: templates/student/view_exam_result.php:222
+#: templates/teacher/view_exam_result.php:248
+#: templates/teacher/view_exam_result.php:258
+#: templates/teacher/view_exam_result.php:275
+msgid "B"
+msgstr "B"
+#: admin/partials/sakolawp-exam.php:131 admin/partials/sakolawp-exam.php:239
+#: admin/partials/sakolawp-exam.php:387
+#: admin/partials/sakolawp-homework.php:124
+#: admin/partials/sakolawp-homework.php:241
+#: templates/parent/homeworkroom.php:42 templates/student/homeworkroom.php:122
+#: templates/teacher/add_new_question.php:77
+#: templates/teacher/edit_bank_question.php:84
+#: templates/teacher/homeworkroom.php:38
+#: templates/teacher/homeworkroom_details.php:40
+#: templates/teacher/homeworkroom_edit.php:71
+#: templates/teacher/view_bank_question.php:28
+#: templates/teacher/view_exam_question.php:30
+#: templates/teacher/view_homework_student.php:78
+msgid "Back"
+msgstr "Kembali"
+#: templates/administrator/view_user.php:48
+#: templates/parent/edit_profile.php:106 templates/student/edit_profile.php:106
+#: templates/teacher/edit_profile.php:93
+msgid "Biographical Information"
+msgstr "Informasi Data Diri"
+#: templates/parent/report_attendance_view.php:147
+#: templates/parent/report_attendance_view.php:176
+#: templates/student/report_attendance_view.php:154
+#: templates/student/report_attendance_view.php:183
+msgid "Break"
+msgstr "Istirahat"
+#: templates/teacher/exam_questions.php:220
+msgid "Bulk Delete"
+msgstr "Hapus Masal"
+#: templates/student/view_exam_result.php:196
+#: templates/student/view_exam_result.php:206
+#: templates/student/view_exam_result.php:223
+#: templates/teacher/view_exam_result.php:249
+#: templates/teacher/view_exam_result.php:259
+#: templates/teacher/view_exam_result.php:276
+msgid "C"
+msgstr "C"
+#: admin/partials/sakolawp-license.php:90
+msgid "Changelog: "
+msgstr "Ubah Catatan"
+#: admin/class-sakolawp-admin.php:493 admin/class-sakolawp-admin.php:608
+#: admin/class-sakolawp-admin.php:716
+#: admin/partials/sakolawp-admin-display.php:190
+#: admin/partials/sakolawp-assign-student.php:84
+#: admin/partials/sakolawp-exam.php:42 admin/partials/sakolawp-exam.php:167
+#: admin/partials/sakolawp-exam.php:315 admin/partials/sakolawp-exam.php:474
+#: admin/partials/sakolawp-homework.php:46
+#: admin/partials/sakolawp-homework.php:195
+#: admin/partials/sakolawp-homework.php:339
+#: admin/partials/sakolawp-manage-class.php:39
+#: admin/partials/sakolawp-manage-report-attendance.php:46
+#: admin/partials/sakolawp-manage-report-attendance.php:129
+#: admin/partials/sakolawp-manage-routine.php:227
+#: admin/partials/sakolawp-manage-section.php:41
+#: admin/partials/sakolawp-manage-section.php:115
+#: admin/partials/sakolawp-manage-subject.php:40
+#: admin/partials/sakolawp-manage-subject.php:118 settings.php:225
+#: settings.php:321 templates/parent/homework.php:40
+#: templates/parent/view_exam_result.php:84 templates/student/homework.php:38
+#: templates/student/view_exam_result.php:84
+#: templates/teacher/add_new_question.php:130
+#: templates/teacher/edit_bank_question.php:138
+#: templates/teacher/exam_edit.php:158 templates/teacher/exam_questions.php:244
+#: templates/teacher/exam_questions.php:325
+#: templates/teacher/exam_results.php:146 templates/teacher/examroom.php:75
+#: templates/teacher/homework.php:104 templates/teacher/homework.php:186
+#: templates/teacher/homeworkroom.php:91
+#: templates/teacher/homeworkroom_details.php:113
+#: templates/teacher/homeworkroom_edit.php:130
+#: templates/teacher/manage_attendance.php:103
+#: templates/teacher/manage_attendance_view.php:144
+#: templates/teacher/marks.php:186 templates/teacher/marks.php:255
+#: templates/teacher/myaccount.php:255 templates/teacher/online_exams.php:99
+#: templates/teacher/online_exams.php:182
+#: templates/teacher/questions_bank.php:55
+#: templates/teacher/report_attendance_view.php:56
+#: templates/teacher/view_bank_question.php:80
+#: templates/teacher/view_exam_result.php:109
+msgid "Class"
+msgstr "Kelas"
+#: admin/partials/sakolawp-manage-attendance.php:40
+#: admin/partials/sakolawp-manage-routine.php:36
+#: admin/partials/sakolawp-student-area.php:50
+#: admin/partials/sakolawp-student-area.php:81
+#: templates/teacher/attendance_report.php:49
+msgid "Class :"
+msgstr "Kelas:"
+#: admin/class-sakolawp-admin.php:402 admin/class-sakolawp-admin.php:405
+#: admin/partials/sakolawp-manage-class.php:85
+msgid "Class Name"
+msgstr "Nama Kelas"
+#: admin/class-sakolawp-admin.php:700
+msgid "Class Routine Edit"
+msgstr "Edit Kelas Rutinitas"
+#: templates/parent/class_routine.php:28 templates/parent/navigation.php:45
+#: templates/student/navigation.php:46
+msgid "Class Routines"
+msgstr "Kelas Rutinitas"
+#: admin/partials/sakolawp-manage-attendance.php:135
+#: templates/parent/homeworkroom.php:149 templates/student/homeworkroom.php:270
+msgid "Class:"
+msgstr "Kelas:"
+#: admin/class-sakolawp-admin.php:129
+#: admin/partials/sakolawp-manage-class.php:26
+msgid "Classes"
+msgstr "Kelas"
+#: admin/partials/sakolawp-license.php:68
+msgid "Click Here!"
+msgstr "Klik di Sini"
+#: admin/class-sakolawp-admin.php:169 admin/class-sakolawp-admin.php:252
+#: admin/class-sakolawp-admin.php:330 admin/class-sakolawp-admin.php:370
+#: admin/class-sakolawp-admin.php:411 admin/class-sakolawp-admin.php:447
+#: admin/class-sakolawp-admin.php:527 admin/class-sakolawp-admin.php:562
+#: admin/class-sakolawp-admin.php:660 admin/class-sakolawp-admin.php:903
+#: admin/class-sakolawp-admin.php:932 templates/teacher/exam_questions.php:377
+msgid "Close"
+msgstr "Tutup"
+#: templates/teacher/questions_bank.php:93
+msgid "Confirm Delete ?"
+msgstr "Konfirmasi Hapus?"
+#: templates/parent/view_exam_result.php:160
+#: templates/student/view_exam_result.php:161
+#: templates/teacher/view_exam_result.php:208
+msgid "Correct"
+msgstr "Benar"
+#: templates/parent/view_exam_result.php:120
+#: templates/student/view_exam_result.php:121
+#: templates/teacher/add_new_question.php:121
+#: templates/teacher/edit_bank_question.php:129
+#: templates/teacher/view_bank_question.php:71
+#: templates/teacher/view_exam_question.php:73
+#: templates/teacher/view_exam_result.php:171
+msgid "Correct Answer"
+msgstr "Jawaban Benar"
+#: templates/teacher/add_new_question.php:157
+#: templates/teacher/homework.php:248 templates/teacher/online_exams.php:281
+msgid "Create"
+msgstr "Buat"
+#: templates/administrator/view_user.php:52
+msgid "Current Class"
+msgstr "Kelas Terkini"
+#: templates/student/view_exam_result.php:197
+#: templates/student/view_exam_result.php:207
+#: templates/student/view_exam_result.php:224
+#: templates/teacher/view_exam_result.php:250
+#: templates/teacher/view_exam_result.php:260
+#: templates/teacher/view_exam_result.php:277
+msgid "D"
+msgstr "D"
+#: admin/partials/sakolawp-admin-display.php:24
+msgid "Dashboard"
+msgstr "Dashboard"
+#: templates/parent/report_attendance_view.php:115
+msgid "DATE"
+msgstr "TANGGAL"
+#: single-sakolawp-event.php:114
+#: templates/student/report_attendance_view.php:122
+#: templates/teacher/manage_attendance.php:122
+#: templates/teacher/manage_attendance_view.php:163
+msgid "Date"
+msgstr "Tanggal"
+#: admin/partials/sakolawp-manage-attendance.php:61
+msgid "Date :"
+msgstr "Date:"
+#: templates/parent/myaccount.php:261 templates/parent/online_exams.php:45
+#: templates/student/myaccount.php:261 templates/student/online_exams.php:42
+#: templates/teacher/myaccount.php:258 templates/teacher/online_exams.php:102
+msgid "Date End"
+msgstr "Tanggal Akhir"
+#: templates/parent/myaccount.php:260 templates/parent/online_exams.php:44
+#: templates/student/myaccount.php:260 templates/student/online_exams.php:41
+#: templates/teacher/myaccount.php:257 templates/teacher/online_exams.php:101
+msgid "Date Start"
+msgstr "Tanggal Mulai"
+#: admin/partials/sakolawp-manage-attendance.php:165
+msgid "Date:"
+msgstr "Tanggal:"
+#: admin/class-sakolawp-admin.php:772
+#: admin/partials/sakolawp-manage-routine.php:271
+msgid "Day"
+msgstr "hari"
+#: admin/partials/sakolawp-manage-report-attendance.php:336
+#: templates/teacher/report_attendance_view.php:158
+#: templates/teacher/report_attendance_view.php:281
+msgid "Day Off"
+msgstr "Hari Libur"
+#: admin/partials/sakolawp-license.php:72
+msgid "Deactivate License"
+msgstr "Nonaktifkan Lisensi"
+#: admin/class-sakolawp-admin.php:224 admin/class-sakolawp-admin.php:245
+#: admin/class-sakolawp-admin.php:302 admin/class-sakolawp-admin.php:323
+#: admin/partials/sakolawp-admin-display.php:318
+#: admin/partials/sakolawp-admin-display.php:343
+#: admin/partials/sakolawp-manage-report-attendance.php:94
+#: admin/partials/sakolawp-manage-report-attendance.php:183
+#: admin/partials/sakolawp-manage-report-attendance.php:237
+#: templates/parent/attendance_report.php:70
+#: templates/parent/report_attendance_view.php:83
+#: templates/student/attendance_report.php:68
+#: templates/student/report_attendance_view.php:84
+#: templates/teacher/attendance_report.php:95
+#: templates/teacher/report_attendance_view.php:102
+#: templates/teacher/report_attendance_view.php:148
+msgid "December"
+msgstr "Desember"
+#: admin/class-sakolawp-admin.php:170 admin/class-sakolawp-admin.php:371
+#: admin/class-sakolawp-admin.php:448 admin/class-sakolawp-admin.php:563
+#: admin/class-sakolawp-admin.php:933
+#: admin/partials/sakolawp-admin-display.php:362
+#: admin/partials/sakolawp-manage-class.php:63
+#: admin/partials/sakolawp-manage-routine.php:179
+#: admin/partials/sakolawp-manage-section.php:77
+#: admin/partials/sakolawp-manage-subject.php:79
+#: templates/teacher/exam_questions.php:166
+#: templates/teacher/exam_questions.php:212 templates/teacher/homework.php:149
+#: templates/teacher/online_exams.php:150
+#: templates/teacher/questions_bank.php:94
+msgid "Delete"
+msgstr "Hapus"
+#: admin/class-sakolawp-admin.php:358
+msgid "Delete Class"
+msgstr "Hapus Kelas"
+#: admin/class-sakolawp-admin.php:435
+msgid "Delete Section"
+msgstr "Hapus Sesi"
+#: admin/class-sakolawp-admin.php:157
+msgid "Delete Semester"
+msgstr "Hapus Semester"
+#: admin/class-sakolawp-admin.php:550 admin/class-sakolawp-admin.php:920
+msgid "Delete Subject"
+msgstr "Hapus Pelajaran"
+#: templates/parent/homeworkroom.php:192 templates/student/homeworkroom.php:313
+msgid "Delivered"
+msgstr "Terkirim"
+#: templates/teacher/homeworkroom.php:65
+msgid "Delivered Date"
+msgstr "Tanggal Kirim"
+#: admin/partials/sakolawp-homework.php:118
+#: admin/partials/sakolawp-homework.php:235
+msgid "Delivered Homework"
+msgstr "Pekerjaan Rumah Terkirim"
+#: admin/partials/sakolawp-homework.php:251
+#: templates/teacher/homeworkroom_details.php:48
+msgid "Delivery Status"
+msgstr "Status Pengiriman"
+#: templates/student/examroom.php:29 templates/teacher/exam_edit.php:87
+#: templates/teacher/homework.php:227
+#: templates/teacher/homeworkroom_edit.php:86
+#: templates/teacher/online_exams.php:230
+msgid "Description"
+msgstr "Deskripsi"
+#: admin/class-sakolawp-admin.php:140
+msgid "Documentation"
+msgstr "Dokumentasi"
+#: templates/student/exam.php:234
+msgid "Done Exam"
+msgstr "Ujian Selesai"
+#: templates/parent/view_exam_result.php:141
+#: templates/parent/view_exam_result.php:213 templates/student/exam.php:199
+#: templates/student/view_exam_result.php:142
+#: templates/student/view_exam_result.php:214
+#: templates/teacher/view_exam_result.php:192
+#: templates/teacher/view_exam_result.php:267
+msgid "Doubt"
+msgstr "Ragu-Ragu"
+#: admin/partials/sakolawp-homework.php:145
+#: templates/parent/homeworkroom.php:67 templates/student/homeworkroom.php:148
+#: templates/teacher/homeworkroom.php:61
+msgid "Download Attachment"
+msgstr "Unduh Lampairan"
+#: admin/class-sakolawp-admin.php:990 templates/parent/homeworkroom.php:98
+#: templates/student/homeworkroom.php:193
+#: templates/teacher/view_homework_student.php:103
+msgid "Download File"
+msgstr "Unduh Fail"
+#: admin/partials/sakolawp-admin-display.php:193
+#: admin/partials/sakolawp-exam.php:45
+msgid "Due"
+msgstr "Jatuh Tempo"
+#: admin/partials/sakolawp-exam.php:192 admin/partials/sakolawp-exam.php:340
+#: admin/partials/sakolawp-exam.php:499 admin/partials/sakolawp-homework.php:52
+#: templates/parent/homework.php:42 templates/student/homework.php:40
+#: templates/teacher/homework.php:106
+#: templates/teacher/homeworkroom_edit.php:90
+msgid "Due Date"
+msgstr "Tanggal Jatuh Tempo"
+#: templates/parent/homeworkroom.php:174 templates/student/homeworkroom.php:295
+msgid "Due Date:"
+msgstr "Tanggal Jatuh Tempo:"
+#: templates/teacher/homework.php:230
+msgid "Due End"
+msgstr "Akhir Jatuh Tempo"
+#: admin/partials/sakolawp-exam.php:216 admin/partials/sakolawp-exam.php:364
+#: admin/partials/sakolawp-exam.php:523 templates/teacher/exam_edit.php:207
+#: templates/teacher/exam_questions.php:293
+#: templates/teacher/exam_results.php:195 templates/teacher/examroom.php:124
+#: templates/teacher/view_exam_result.php:143
+msgid "Duration"
+msgstr "Durasi"
+#: templates/teacher/online_exams.php:270
+msgid "Duration (Minutes)"
+msgstr "Durasi (Minutes)"
+#: templates/teacher/exam_edit.php:124
+msgid "Duration (minutes)"
+msgstr "Durasi (minutes)"
+#: templates/student/examroom.php:44
+msgid "Duration :"
+msgstr "Durasi:"
+#: templates/administrator/view_user.php:40
+#: templates/parent/edit_profile.php:90 templates/student/edit_profile.php:90
+#: templates/teacher/edit_profile.php:77
+msgid "E-mail *"
+msgstr "E-mail*"
+#: admin/partials/sakolawp-admin-display.php:358
+#: admin/partials/sakolawp-manage-class.php:59
+#: admin/partials/sakolawp-manage-routine.php:176
+#: admin/partials/sakolawp-manage-section.php:74
+#: admin/partials/sakolawp-manage-subject.php:75
+#: templates/teacher/homeworkroom.php:32
+#: templates/teacher/homeworkroom_details.php:34
+#: templates/teacher/homeworkroom_edit.php:65
+#: templates/teacher/questions_bank.php:88
+#: templates/teacher/view_homework_student.php:69
+msgid "Edit"
+msgstr "Ubah"
+#: admin/class-sakolawp-admin.php:387
+msgid "Edit Class"
+msgstr "Ubah Kelas"
+#: sakolawp-post-type.php:76
+msgid "Edit Event"
+msgstr "Edit Kegiatan"
+#: templates/teacher/exam_edit.php:71 templates/teacher/exam_questions.php:136
+#: templates/teacher/examroom.php:37 templates/teacher/view_exam_result.php:35
+msgid "Edit Exam"
+msgstr "Ubah Ujian"
+#: templates/teacher/exam_results.php:43
+msgid "Edit Exams"
+msgstr "Ubah Semua Ujian"
+#: sakolawp-post-type.php:18
+msgid "Edit News"
+msgstr "Ubah Berita"
+#: admin/class-sakolawp-admin.php:470 admin/class-sakolawp-admin.php:510
+msgid "Edit Section"
+msgstr "Ubah Sesi"
+#: admin/class-sakolawp-admin.php:186
+msgid "Edit Semester"
+msgstr "Ubah Semester"
+#: admin/class-sakolawp-admin.php:585
+msgid "Edit Subject"
+msgstr "Ubah Pelajaran"
+#: template/register-template.php:26
+msgid "Email"
+msgstr "Email"
+#: sakolawp.php:693
+msgid "Email already registered"
+msgstr "Email Sudah Terdaftar"
+#: templates/teacher/exam_results.php:108
+msgid "Empty"
+msgstr "Kosong"
+#: admin/class-sakolawp-admin.php:230 admin/class-sakolawp-admin.php:308
+#: admin/partials/sakolawp-admin-display.php:282
+msgid "End"
+msgstr "Akhir"
+#: templates/parent/view_exam_result.php:92
+#: templates/student/view_exam_result.php:92
+#: templates/teacher/exam_edit.php:183 templates/teacher/exam_questions.php:269
+#: templates/teacher/exam_results.php:171 templates/teacher/examroom.php:100
+#: templates/teacher/view_exam_result.php:123
+msgid "End Date"
+msgstr "Tanggal Akhir"
+#: templates/teacher/exam_edit.php:113
+msgid "End Hour"
+msgstr "Jam Akhir"
+#: admin/partials/sakolawp-license.php:53
+msgid "Enter your Envato username here"
+msgstr "Masukkan Username Evanto"
+#: admin/partials/sakolawp-license.php:51
+msgid "Enter your Envato username here to update"
+msgstr "Masukkan Username Evanto di Sini untuk Update"
+#: admin/partials/sakolawp-license.php:47
+msgid "Envato Username"
+msgstr "Username Evanto"
+#: sakolawp.php:802
+msgid "Error"
+msgstr "Eror"
+#: sakolawp-post-type.php:70 single-sakolawp-event.php:106
+#: templates/administrator/myaccount.php:36
+#: templates/administrator/navigation.php:57 templates/parent/event_post.php:14
+#: templates/parent/myaccount.php:38 templates/parent/navigation.php:81
+#: templates/student/event_post.php:14 templates/student/myaccount.php:37
+#: templates/student/navigation.php:84 templates/teacher/event_post.php:14
+#: templates/teacher/myaccount.php:37 templates/teacher/navigation.php:94
+msgid "Event"
+msgstr "Kegiatan"
+#: sakolawp-post-type.php:126
+msgid "Event Date"
+msgstr "Tanggal Kegiatan"
+#: templates/administrator/event_post.php:59
+#: templates/administrator/event_post.php:82
+#: templates/administrator/myaccount.php:161
+#: templates/administrator/myaccount.php:185 templates/parent/event_post.php:65
+#: templates/parent/event_post.php:88 templates/parent/myaccount.php:163
+#: templates/parent/myaccount.php:187 templates/student/myaccount.php:162
+#: templates/student/myaccount.php:186 templates/teacher/myaccount.php:162
+#: templates/teacher/myaccount.php:186
+msgid "Event Start"
+msgstr "Kegiatan Dimulai"
+#: admin/partials/sakolawp-exam.php:109 templates/teacher/exam_edit.php:62
+#: templates/teacher/exam_questions.php:127
+#: templates/teacher/exam_results.php:25 templates/teacher/examroom.php:28
+#: templates/teacher/view_exam_result.php:26
+msgid "Exam Detail"
+msgstr "Detail Ujian"
+#: templates/parent/myaccount.php:319 templates/parent/online_exams.php:98
+#: templates/student/exam.php:235 templates/student/myaccount.php:319
+#: templates/student/online_exams.php:111
+msgid "Exam Done"
+msgstr "Ujian Selesai"
+#: templates/parent/view_exam_result.php:101
+#: templates/student/view_exam_result.php:102
+#: templates/teacher/view_exam_result.php:149
+msgid "Exam Done in"
+msgstr "Ujian Akan Berakhir pada"
+#: templates/parent/view_exam_result.php:100
+#: templates/student/view_exam_result.php:101
+msgid "Exam Duration"
+msgstr "Durasi Ujian"
+#: templates/teacher/exam_edit.php:108 templates/teacher/online_exams.php:249
+msgid "Exam End"
+msgstr "Akhir Ujian"
+#: admin/partials/sakolawp-exam.php:149 admin/partials/sakolawp-exam.php:297
+#: admin/partials/sakolawp-exam.php:456 templates/teacher/exam_edit.php:141
+#: templates/teacher/exam_questions.php:227
+#: templates/teacher/exam_results.php:128 templates/teacher/examroom.php:58
+msgid "Exam Information"
+msgstr "Informasi Ujian"
+#: admin/partials/sakolawp-exam.php:119
+#: templates/parent/view_exam_result.php:28
+#: templates/student/view_exam_result.php:28
+#: templates/teacher/view_exam_result.php:47
+msgid "Exam Result"
+msgstr "Hasil Ujian"
+#: templates/teacher/exam_edit.php:92 templates/teacher/online_exams.php:235
+msgid "Exam Start"
+msgstr "Mulai Ujian"
+#: admin/class-sakolawp-admin.php:138 admin/partials/sakolawp-exam.php:29
+msgid "Exams"
+msgstr "Ujian"
+#: admin/partials/sakolawp-admin-display.php:120 sakolawp.php:974
+msgid "Exams Created"
+msgstr "Ujian Telah Dibuat"
+#: admin/partials/sakolawp-admin-display.php:134 sakolawp.php:988
+msgid "Exams Taken By Student"
+msgstr "Ujian Dikerjakan Siswa"
+#: templates/teacher/add_new_question.php:94
+#: templates/teacher/edit_bank_question.php:102
+msgid "Excerpt"
+msgstr "Kutipan"
+#: admin/class-sakolawp-admin.php:214 admin/class-sakolawp-admin.php:235
+#: admin/class-sakolawp-admin.php:292 admin/class-sakolawp-admin.php:313
+#: admin/partials/sakolawp-admin-display.php:298
+#: admin/partials/sakolawp-admin-display.php:323
+#: admin/partials/sakolawp-manage-report-attendance.php:74
+#: admin/partials/sakolawp-manage-report-attendance.php:163
+#: admin/partials/sakolawp-manage-report-attendance.php:217
+#: templates/parent/attendance_report.php:50
+#: templates/parent/report_attendance_view.php:63
+#: templates/student/attendance_report.php:48
+#: templates/student/report_attendance_view.php:64
+#: templates/teacher/attendance_report.php:75
+#: templates/teacher/report_attendance_view.php:82
+#: templates/teacher/report_attendance_view.php:138
+msgid "February"
+msgstr "Februari"
+#: settings.php:35
+msgid "Female"
+msgstr "Perempuan"
+#: admin/partials/sakolawp-homework.php:145
+msgid "File:"
+msgstr "Fail:"
+#: templates/parent/homeworkroom.php:65 templates/student/homeworkroom.php:148
+msgid "Files : "
+msgstr "Fail:"
+#: template/register-template.php:30 templates/administrator/view_user.php:32
+#: templates/parent/edit_profile.php:82 templates/student/edit_profile.php:82
+#: templates/teacher/edit_profile.php:69
+msgid "First Name"
+msgstr "Nama Depan"
+#: admin/partials/sakolawp-manage-routine.php:141
+#: templates/parent/class_routine.php:71 templates/student/class_routine.php:70
+#: templates/teacher/my_routines.php:62
+msgid "Fri"
+msgstr "Jumat"
+#: admin/class-sakolawp-admin.php:793
+#: admin/partials/sakolawp-manage-routine.php:140
+#: admin/partials/sakolawp-manage-routine.php:287
+#: templates/parent/class_routine.php:70 templates/student/class_routine.php:69
+#: templates/teacher/my_routines.php:61
+msgid "Friday"
+msgstr "Jumat"
+#: settings.php:31
+msgid "Gender"
+msgstr "Jenis Kelamin"
+#: templates/administrator/myaccount.php:23 templates/parent/myaccount.php:25
+#: templates/student/myaccount.php:24 templates/teacher/myaccount.php:24
+msgid "Hello,"
+msgstr "Hai"
+#: admin/partials/sakolawp-admin-display.php:60
+#: admin/partials/sakolawp-admin-display2.php:49
+msgid "Hello, "
+msgstr "Hai"
+#: admin/partials/sakolawp-homework.php:27
+#: admin/partials/sakolawp-homework.php:115
+#: admin/partials/sakolawp-homework.php:232
+#: templates/teacher/homeworkroom.php:22
+#: templates/teacher/homeworkroom_details.php:24
+#: templates/teacher/homeworkroom_edit.php:55
+#: templates/teacher/navigation.php:64
+#: templates/teacher/view_homework_student.php:59
+msgid "Homework"
+msgstr "Pekerjaan Rumah"
+#: templates/parent/homeworkroom.php:74
+msgid "Homework Delivered"
+msgstr "Pekerjaan Rumah Terkirim"
+#: admin/partials/sakolawp-homework.php:252
+#: templates/teacher/homeworkroom_details.php:49
+msgid "Homework Detail"
+msgstr "Detail Pekerjaan Rumah"
+#: admin/partials/sakolawp-homework.php:157
+#: admin/partials/sakolawp-homework.php:301
+#: templates/teacher/homeworkroom.php:73
+#: templates/teacher/homeworkroom_details.php:95
+#: templates/teacher/homeworkroom_edit.php:112
+msgid "Homework Information"
+msgstr "Informasi Pekerjaan Rumah"
+#: templates/parent/homeworkroom.php:78
+msgid "Homework Not Delivered"
+msgstr "Pekerjaan Rumah Tidak Terkirim"
+#: templates/teacher/homeworkroom.php:27
+#: templates/teacher/homeworkroom_details.php:29
+#: templates/teacher/homeworkroom_edit.php:60
+#: templates/teacher/view_homework_student.php:64
+msgid "Homework Reports"
+msgstr "Laporan Pekerjaan Rumah"
+#: admin/class-sakolawp-admin.php:137 templates/parent/navigation.php:51
+#: templates/student/navigation.php:54
+msgid "Homeworks"
+msgstr "Pekerjaan Rumah"
+#: admin/partials/sakolawp-admin-display.php:148 sakolawp.php:1002
+msgid "Homeworks Created"
+msgstr "Pekerjaan Rumah Berhasil Dibuat"
+#: admin/partials/sakolawp-admin-display.php:162 sakolawp.php:1016
+msgid "Homeworks Taken By Student"
+msgstr "Pekerjaan Rumah Dierjakan Oleh Siswa"
+#: admin/class-sakolawp-admin.php:824
+#: admin/partials/sakolawp-manage-routine.php:303
+#: admin/partials/sakolawp-manage-routine.php:341
+msgid "Hour"
+msgstr "Jam"
+#: admin/class-sakolawp-admin.php:875
+msgid "hour"
+msgstr "Jam"
+#: admin/partials/sakolawp-license.php:67
+msgid "How to get purchase code?"
+msgstr "Bagaimana mendapatkan Kode Pembayaran?"
+#: admin/partials/sakolawp-license.php:74
+msgid ""
+"If you wish to use this license for activating plugin on a different server, "
+"you can first release your license from this server by deactivating it below."
+msgstr ""
+"Jika Anda mennggunakan lisensi ini untuk mengaktivasi plugin di server yang "
+"berbeda, Anda terlebih dahulu mendeaktivasi lisensi yang ada di server ini. "
+#: templates/teacher/exam_questions.php:364
+msgid "Import"
+msgstr "Impor"
+#: templates/teacher/exam_questions.php:151
+msgid "Import Question"
+msgstr "Impor Pertanyaan"
+#: templates/teacher/exam_questions.php:310
+msgid "Import Questions"
+msgstr "Impor Semua Pertanyaan"
+#: sakolawp.php:767
+msgid "Incorrect password"
+msgstr "Kata Sandi Salah"
+#: templates/parent/homeworkroom.php:111 templates/student/homeworkroom.php:231
+msgid "Information"
+msgstr "Informasi"
+#: sakolawp.php:689
+msgid "Invalid email"
+msgstr "Email Tidak Valid"
+#: sakolawp.php:681 sakolawp.php:756
+msgid "Invalid username"
+msgstr "Username Tidak Valid"
+#: admin/partials/sakolawp-admin-display.php:110 sakolawp.php:964
+msgid "Item Name"
+msgstr "Nama Item"
+#: admin/class-sakolawp-admin.php:213 admin/class-sakolawp-admin.php:234
+#: admin/class-sakolawp-admin.php:291 admin/class-sakolawp-admin.php:312
+#: admin/partials/sakolawp-admin-display.php:296
+#: admin/partials/sakolawp-admin-display.php:321
+#: admin/partials/sakolawp-manage-report-attendance.php:72
+#: admin/partials/sakolawp-manage-report-attendance.php:161
+#: admin/partials/sakolawp-manage-report-attendance.php:215
+#: templates/parent/attendance_report.php:48
+#: templates/parent/report_attendance_view.php:61
+#: templates/student/attendance_report.php:46
+#: templates/student/report_attendance_view.php:62
+#: templates/teacher/attendance_report.php:73
+#: templates/teacher/report_attendance_view.php:80
+#: templates/teacher/report_attendance_view.php:137
+msgid "January"
+msgstr "Januari"
+#: admin/class-sakolawp-admin.php:219 admin/class-sakolawp-admin.php:240
+#: admin/class-sakolawp-admin.php:297 admin/class-sakolawp-admin.php:318
+#: admin/partials/sakolawp-admin-display.php:308
+#: admin/partials/sakolawp-admin-display.php:333
+#: admin/partials/sakolawp-manage-report-attendance.php:84
+#: admin/partials/sakolawp-manage-report-attendance.php:173
+#: admin/partials/sakolawp-manage-report-attendance.php:227
+#: templates/parent/attendance_report.php:60
+#: templates/parent/report_attendance_view.php:73
+#: templates/student/attendance_report.php:58
+#: templates/student/report_attendance_view.php:74
+#: templates/teacher/attendance_report.php:85
+#: templates/teacher/report_attendance_view.php:92
+#: templates/teacher/report_attendance_view.php:143
+msgid "July"
+msgstr "Juli"
+#: admin/class-sakolawp-admin.php:218 admin/class-sakolawp-admin.php:239
+#: admin/class-sakolawp-admin.php:296 admin/class-sakolawp-admin.php:317
+#: admin/partials/sakolawp-admin-display.php:306
+#: admin/partials/sakolawp-admin-display.php:331
+#: admin/partials/sakolawp-manage-report-attendance.php:82
+#: admin/partials/sakolawp-manage-report-attendance.php:171
+#: admin/partials/sakolawp-manage-report-attendance.php:225
+#: templates/parent/attendance_report.php:58
+#: templates/parent/report_attendance_view.php:71
+#: templates/student/attendance_report.php:56
+#: templates/student/report_attendance_view.php:72
+#: templates/teacher/attendance_report.php:83
+#: templates/teacher/report_attendance_view.php:90
+#: templates/teacher/report_attendance_view.php:142
+msgid "June"
+msgstr "Juni"
+#: template/myaccount-template.php:35
+msgid "Keep me logged in"
+msgstr "Ingatkan Saya"
+#: templates/teacher/marks.php:315 templates/teacher/marks.php:319
+#: templates/teacher/marks.php:322 templates/teacher/marks.php:326
+#: templates/teacher/marks.php:331 templates/teacher/marks.php:337
+#: templates/teacher/marks.php:344 templates/teacher/marks.php:352
+#: templates/teacher/marks.php:361 templates/teacher/marks.php:371
+#: templates/teacher/marks.php:382
+msgid "Lab 1"
+msgstr "Lab 1"
+#: templates/teacher/marks.php:391
+msgid "Lab 10"
+msgstr "Lab 10"
+#: templates/teacher/marks.php:323 templates/teacher/marks.php:327
+#: templates/teacher/marks.php:332 templates/teacher/marks.php:338
+#: templates/teacher/marks.php:345 templates/teacher/marks.php:353
+#: templates/teacher/marks.php:362 templates/teacher/marks.php:372
+#: templates/teacher/marks.php:383
+msgid "Lab 2"
+msgstr "Lab 2 "
+#: templates/teacher/marks.php:328 templates/teacher/marks.php:333
+#: templates/teacher/marks.php:339 templates/teacher/marks.php:346
+#: templates/teacher/marks.php:354 templates/teacher/marks.php:363
+#: templates/teacher/marks.php:373 templates/teacher/marks.php:384
+msgid "Lab 3"
+msgstr "Lab 3"
+#: templates/teacher/marks.php:334 templates/teacher/marks.php:340
+#: templates/teacher/marks.php:347 templates/teacher/marks.php:355
+#: templates/teacher/marks.php:364 templates/teacher/marks.php:374
+#: templates/teacher/marks.php:385
+msgid "Lab 4"
+msgstr "Lab 4"
+#: templates/teacher/marks.php:341 templates/teacher/marks.php:348
+#: templates/teacher/marks.php:356 templates/teacher/marks.php:365
+#: templates/teacher/marks.php:375 templates/teacher/marks.php:386
+msgid "Lab 5"
+msgstr "Lab 5"
+#: templates/teacher/marks.php:349 templates/teacher/marks.php:357
+#: templates/teacher/marks.php:366 templates/teacher/marks.php:376
+#: templates/teacher/marks.php:387
+msgid "Lab 6"
+msgstr "Lab 6"
+#: templates/teacher/marks.php:358 templates/teacher/marks.php:367
+#: templates/teacher/marks.php:377 templates/teacher/marks.php:388
+msgid "Lab 7"
+msgstr "Lab 7"
+#: templates/teacher/marks.php:368 templates/teacher/marks.php:378
+#: templates/teacher/marks.php:389
+msgid "Lab 8"
+msgstr "Lab 8"
+#: templates/teacher/marks.php:379 templates/teacher/marks.php:390
+msgid "Lab 9"
+msgstr "Lab 9"
+#: template/register-template.php:34 templates/administrator/view_user.php:36
+#: templates/parent/edit_profile.php:86 templates/student/edit_profile.php:86
+#: templates/teacher/edit_profile.php:73
+msgid "Last Name"
+msgstr "Nama Belakang"
+#: admin/partials/sakolawp-homework.php:276
+#: admin/partials/sakolawp-manage-attendance.php:205
+#: admin/partials/sakolawp-manage-report-attendance.php:332
+#: templates/teacher/homeworkroom_details.php:72
+#: templates/teacher/manage_attendance_view.php:224
+#: templates/teacher/report_attendance_view.php:154
+#: templates/teacher/report_attendance_view.php:277
+msgid "Late"
+msgstr "Terlambat"
+#: admin/partials/sakolawp-admin-display.php:183
+msgid "Latest Exams"
+msgstr "Ujian Terbaru"
+#: admin/partials/sakolawp-license.php:36
+msgid "License code"
+msgstr "Kode Lisensi"
+#: template/myaccount-template.php:40
+msgid "Login"
+msgstr "Login"
+#: template/myaccount-template.php:26
+msgid "Login Account"
+msgstr "Login Akun"
+#: template/myaccount-template.php:24 template/register-template.php:17
+msgid "logo"
+msgstr "Logo"
+#: admin/partials/sakolawp-admin-display.php:25
+msgid "Main Setting"
+msgstr "Pengaturan Utama"
+#: settings.php:34
+msgid "Male"
+msgstr "Laki-Laki"
+#: admin/class-sakolawp-admin.php:133
+#: templates/teacher/manage_attendance.php:82
+#: templates/teacher/manage_attendance_view.php:122
+msgid "Manage Attendance"
+msgstr "Atur Kehadiran"
+#: admin/class-sakolawp-admin.php:129
+msgid "Manage Classes"
+msgstr "Atur Kelas"
+#: admin/class-sakolawp-admin.php:134
+msgid "Manage Report Attendance"
+msgstr "Atur Laporan Kehadiran"
+#: admin/class-sakolawp-admin.php:132
+msgid "Manage Routines"
+msgstr "Atur Rutinitas"
+#: admin/class-sakolawp-admin.php:130
+msgid "Manage Sections"
+msgstr "Atur Sesi"
+#: admin/class-sakolawp-admin.php:131
+msgid "Manage Subjects"
+msgstr "Atur Pelajaran"
+#: admin/class-sakolawp-admin.php:215 admin/class-sakolawp-admin.php:236
+#: admin/class-sakolawp-admin.php:293 admin/class-sakolawp-admin.php:314
+#: admin/partials/sakolawp-admin-display.php:300
+#: admin/partials/sakolawp-admin-display.php:325
+#: admin/partials/sakolawp-manage-report-attendance.php:76
+#: admin/partials/sakolawp-manage-report-attendance.php:165
+#: admin/partials/sakolawp-manage-report-attendance.php:219
+#: templates/parent/attendance_report.php:52
+#: templates/parent/report_attendance_view.php:65
+#: templates/student/attendance_report.php:50
+#: templates/student/report_attendance_view.php:66
+#: templates/teacher/attendance_report.php:77
+#: templates/teacher/report_attendance_view.php:84
+#: templates/teacher/report_attendance_view.php:139
+msgid "March"
+msgstr "Maret"
+#: admin/partials/sakolawp-exam.php:253 admin/partials/sakolawp-exam.php:396
+#: admin/partials/sakolawp-homework.php:254
+#: templates/parent/view_exam_result.php:98
+#: templates/parent/view_exam_result.php:111
+#: templates/parent/view_exam_result.php:162 templates/parent/view_mark.php:30
+#: templates/student/view_exam_result.php:99
+#: templates/student/view_exam_result.php:112
+#: templates/student/view_exam_result.php:163
+#: templates/student/view_mark.php:30 templates/teacher/exam_questions.php:164
+#: templates/teacher/exam_results.php:63
+#: templates/teacher/homeworkroom_details.php:50
+#: templates/teacher/view_exam_question.php:82
+#: templates/teacher/view_exam_result.php:131
+#: templates/teacher/view_exam_result.php:162
+#: templates/teacher/view_exam_result.php:210
+msgid "Mark"
+msgstr "Tanda"
+#: templates/teacher/view_homework_student.php:123
+msgid "Mark :"
+msgstr "Tanda:"
+#: templates/parent/homeworkroom.php:198 templates/student/homeworkroom.php:319
+msgid "Mark:"
+msgstr "Tanda:"
+#: templates/parent/marks.php:32 templates/parent/navigation.php:69
+#: templates/student/my_marks.php:30 templates/student/navigation.php:72
+#: templates/teacher/marks.php:164 templates/teacher/marks.php:233
+#: templates/teacher/navigation.php:82
+msgid "Marks"
+msgstr "Tanda"
+#: templates/student/homeworkroom.php:160
+#: templates/student/homeworkroom.php:199 templates/teacher/homework.php:244
+msgid "Max file size up to 10MB"
+msgstr "Ukuran Maksimal File Adalah 10MB"
+#: admin/class-sakolawp-admin.php:217 admin/class-sakolawp-admin.php:238
+#: admin/class-sakolawp-admin.php:295 admin/class-sakolawp-admin.php:316
+#: admin/partials/sakolawp-admin-display.php:304
+#: admin/partials/sakolawp-admin-display.php:329
+#: admin/partials/sakolawp-manage-report-attendance.php:80
+#: admin/partials/sakolawp-manage-report-attendance.php:169
+#: admin/partials/sakolawp-manage-report-attendance.php:223
+#: templates/parent/attendance_report.php:56
+#: templates/parent/report_attendance_view.php:69
+#: templates/student/attendance_report.php:54
+#: templates/student/report_attendance_view.php:70
+#: templates/teacher/attendance_report.php:81
+#: templates/teacher/report_attendance_view.php:88
+#: templates/teacher/report_attendance_view.php:141
+msgid "May"
+msgstr "Mei"
+#: admin/partials/sakolawp-exam.php:200 admin/partials/sakolawp-exam.php:348
+#: admin/partials/sakolawp-exam.php:507
+msgid "Minimum Mark"
+msgstr "Tanda Minimum"
+#: templates/student/examroom.php:50
+msgid "Minimum Mark :"
+msgstr "Tanda Minimum:"
+#: templates/teacher/exam_edit.php:191 templates/teacher/exam_questions.php:277
+#: templates/teacher/exam_results.php:179 templates/teacher/examroom.php:108
+msgid "Minimum Score"
+msgstr "Skor Minimal"
+#: templates/teacher/online_exams.php:275
+msgid "Minimum Test Score"
+msgstr "Kriteria Ketuntasan Minimum"
+#: admin/partials/sakolawp-manage-routine.php:313
+#: admin/partials/sakolawp-manage-routine.php:351
+msgid "Minute"
+msgstr "Menit"
+#: admin/class-sakolawp-admin.php:835 admin/class-sakolawp-admin.php:885
+#: templates/parent/view_exam_result.php:100 templates/student/examroom.php:44
+#: templates/student/view_exam_result.php:101
+#: templates/teacher/exam_edit.php:210 templates/teacher/exam_questions.php:296
+#: templates/teacher/exam_results.php:198 templates/teacher/examroom.php:127
+#: templates/teacher/view_exam_result.php:145
+msgid "Minutes"
+msgstr "Menit"
+#: admin/partials/sakolawp-exam.php:219 admin/partials/sakolawp-exam.php:367
+#: admin/partials/sakolawp-exam.php:526
+msgid "minutes"
+msgstr "Menit"
+#: admin/partials/sakolawp-manage-routine.php:129
+#: templates/parent/class_routine.php:55 templates/student/class_routine.php:54
+#: templates/teacher/my_routines.php:46
+msgid "Mon"
+msgstr "Senin"
+#: admin/class-sakolawp-admin.php:789
+#: admin/partials/sakolawp-manage-routine.php:128
+#: admin/partials/sakolawp-manage-routine.php:283
+#: templates/parent/class_routine.php:54 templates/student/class_routine.php:53
+#: templates/teacher/my_routines.php:45
+msgid "Monday"
+msgstr "Senin"
+#: admin/partials/sakolawp-manage-report-attendance.php:67
+#: admin/partials/sakolawp-manage-report-attendance.php:156
+#: templates/student/attendance_report.php:41
+#: templates/student/report_attendance_view.php:57
+#: templates/teacher/attendance_report.php:68
+#: templates/teacher/report_attendance_view.php:75
+msgid "Month"
+msgstr "Bulan"
+#: sakolawp.php:706
+msgid "Must select a role"
+msgstr "Harus Pilih Wewenang"
+#: sakolawp.php:171 templates/administrator/navigation.php:45
+#: templates/parent/navigation.php:39 templates/student/navigation.php:39
+#: templates/teacher/navigation.php:40
+msgid "My Account"
+msgstr "Akun Saya"
+#: templates/parent/homework.php:28 templates/student/homework.php:26
+#: templates/teacher/homework.php:90
+msgid "My Class Homeworks"
+msgstr "Pekerjaan Rumah Kelasku"
+#: templates/student/class_routine.php:26 templates/teacher/my_routines.php:21
+msgid "My Class Routines"
+msgstr "Rutinitas Kelasku"
+#: templates/teacher/questions_bank.php:37
+msgid "My Questions"
+msgstr "Pertanyaan Saya"
+#: templates/teacher/navigation.php:58
+msgid "My Routines"
+msgstr "Rutinitas Saya"
+#: templates/teacher/homeworkroom_details.php:47
+#: templates/teacher/report_attendance_view.php:165
+#: templates/teacher/report_attendance_view.php:256
+msgid "Name"
+msgstr "Nama"
+#: admin/class-sakolawp-admin.php:269
+msgid "New Semester"
+msgstr "Semester Baru"
+#: sakolawp-post-type.php:12 templates/administrator/myaccount.php:35
+#: templates/administrator/navigation.php:51 templates/parent/myaccount.php:37
+#: templates/parent/navigation.php:75 templates/parent/news_post.php:14
+#: templates/student/myaccount.php:36 templates/student/navigation.php:78
+#: templates/student/news_post.php:14 templates/teacher/myaccount.php:36
+#: templates/teacher/navigation.php:88 templates/teacher/news_post.php:14
+msgid "News"
+msgstr "Berita"
+#: templates/administrator/myaccount.php:32 templates/parent/myaccount.php:34
+#: templates/student/myaccount.php:33 templates/teacher/myaccount.php:33
+msgid "News & Events"
+msgstr "Berita & Kegiatan"
+#: admin/class-sakolawp-admin.php:1106
+#: templates/teacher/view_exam_result.php:206
+msgid "No"
+msgstr "Tidak"
+#: admin/partials/sakolawp-license.php:29
+msgid "No license has been provided yet or the provided license is invalid."
+msgstr "Belum ada lisensi tersedia atau lisensi tidak valid."
+#: admin/partials/sakolawp-exam.php:439
+msgid "No Mark"
+msgstr "Tidak Ada Tanda"
+#: templates/parent/view_exam_result.php:135
+#: templates/parent/view_exam_result.php:210
+#: templates/parent/view_exam_result.php:216
+#: templates/student/view_exam_result.php:136
+#: templates/student/view_exam_result.php:211
+#: templates/student/view_exam_result.php:217
+#: templates/teacher/view_exam_result.php:186
+#: templates/teacher/view_exam_result.php:264
+#: templates/teacher/view_exam_result.php:270
+msgid "Not Answered"
+msgstr "Tidak Dijawab"
+#: settings.php:254 settings.php:258 templates/administrator/view_user.php:23
+msgid "Not Assign Yet."
+msgstr "Belum Dimasukkan"
+#: templates/parent/homeworkroom.php:189 templates/student/homeworkroom.php:310
+msgid "Not Delivered"
+msgstr "Tidak Terkirim"
+#: sakolawp-post-type.php:21 sakolawp-post-type.php:79
+msgid "Not found"
+msgstr "Tidak Ditemukan"
+#: sakolawp-post-type.php:22 sakolawp-post-type.php:80
+msgid "Not found in Trash"
+msgstr "Tidak Ditemukan di Kotak Sampah"
+#: templates/parent/homeworkroom.php:202 templates/student/homeworkroom.php:323
+msgid "Not Marked"
+msgstr "Belum Ditandai"
+#: templates/parent/report_attendance_view.php:153
+#: templates/parent/report_attendance_view.php:159
+#: templates/parent/report_attendance_view.php:162
+#: templates/parent/report_attendance_view.php:182
+#: templates/parent/report_attendance_view.php:188
+#: templates/parent/report_attendance_view.php:191
+#: templates/student/report_attendance_view.php:160
+#: templates/student/report_attendance_view.php:166
+#: templates/student/report_attendance_view.php:169
+#: templates/student/report_attendance_view.php:189
+#: templates/student/report_attendance_view.php:195
+#: templates/student/report_attendance_view.php:198
+msgid "Not Present"
+msgstr "Tidak hadir"
+#: templates/parent/myaccount.php:316 templates/parent/online_exams.php:95
+#: templates/parent/online_exams.php:101 templates/student/myaccount.php:316
+#: templates/student/myaccount.php:324 templates/student/online_exams.php:108
+#: templates/student/online_exams.php:116
+msgid "Not Started"
+msgstr "Tidak Dimuali"
+#: templates/parent/myaccount.php:323
+msgid "Not Taken"
+msgstr "Tidak Diambil"
+#: admin/class-sakolawp-admin.php:223 admin/class-sakolawp-admin.php:244
+#: admin/class-sakolawp-admin.php:301 admin/class-sakolawp-admin.php:322
+#: admin/partials/sakolawp-admin-display.php:316
+#: admin/partials/sakolawp-admin-display.php:341
+#: admin/partials/sakolawp-manage-report-attendance.php:92
+#: admin/partials/sakolawp-manage-report-attendance.php:181
+#: admin/partials/sakolawp-manage-report-attendance.php:235
+#: templates/parent/attendance_report.php:68
+#: templates/parent/report_attendance_view.php:81
+#: templates/student/attendance_report.php:66
+#: templates/student/report_attendance_view.php:82
+#: templates/teacher/attendance_report.php:93
+#: templates/teacher/report_attendance_view.php:100
+#: templates/teacher/report_attendance_view.php:147
+msgid "November"
+msgstr "November"
+#: admin/class-sakolawp-admin.php:222 admin/class-sakolawp-admin.php:243
+#: admin/class-sakolawp-admin.php:300 admin/class-sakolawp-admin.php:321
+#: admin/partials/sakolawp-admin-display.php:314
+#: admin/partials/sakolawp-admin-display.php:339
+#: admin/partials/sakolawp-manage-report-attendance.php:90
+#: admin/partials/sakolawp-manage-report-attendance.php:179
+#: admin/partials/sakolawp-manage-report-attendance.php:233
+#: templates/parent/attendance_report.php:66
+#: templates/parent/report_attendance_view.php:79
+#: templates/student/attendance_report.php:64
+#: templates/student/report_attendance_view.php:80
+#: templates/teacher/attendance_report.php:91
+#: templates/teacher/report_attendance_view.php:98
+#: templates/teacher/report_attendance_view.php:146
+msgid "October"
+msgstr "Oktober"
+#: templates/parent/homeworkroom.php:209 templates/student/homeworkroom.php:330
+msgid "On Review"
+msgstr "Sedang Diperiksa"
+#: admin/partials/sakolawp-homework.php:279
+#: templates/teacher/homeworkroom_details.php:75
+msgid "On Time"
+msgstr "Tepat Waktu"
+#: templates/parent/myaccount.php:249 templates/parent/navigation.php:63
+#: templates/parent/online_exams.php:31 templates/student/myaccount.php:248
+#: templates/student/navigation.php:66 templates/student/online_exams.php:28
+#: templates/teacher/myaccount.php:248 templates/teacher/navigation.php:76
+#: templates/teacher/online_exams.php:83
+msgid "Online Exams"
+msgstr "Ujian Online"
+#: templates/teacher/add_new_question.php:100
+#: templates/teacher/edit_bank_question.php:108
+msgid "Option A"
+msgstr "Pilihan A"
+#: templates/teacher/add_new_question.php:104
+#: templates/teacher/edit_bank_question.php:112
+msgid "Option B"
+msgstr "Pilihan B"
+#: templates/teacher/add_new_question.php:110
+#: templates/teacher/edit_bank_question.php:118
+msgid "Option C"
+msgstr "Pilihan C"
+#: templates/teacher/add_new_question.php:114
+#: templates/teacher/edit_bank_question.php:122
+msgid "Option D"
+msgstr "Pilihan D"
+#: templates/parent/homework.php:43 templates/parent/marks.php:33
+#: templates/student/homework.php:42 templates/student/my_marks.php:31
+#: templates/teacher/exam_questions.php:165
+#: templates/teacher/exam_questions.php:326 templates/teacher/homework.php:107
+#: templates/teacher/myaccount.php:259 templates/teacher/online_exams.php:103
+#: templates/teacher/questions_bank.php:56
+msgid "Options"
+msgstr "Pilihan"
+#: template/waiting.php:14
+msgid "Or contact your school administrator."
+msgstr "Atau Hubungi Admin Sekolah Anda"
+#: sakolawp_add_roles.php:25
+msgid "Parent"
+msgstr "Orang Tua"
+#: sakolawp-post-type.php:71
+msgid "Parent Event:"
+msgstr "Kegiatan Orang Tua"
+#: sakolawp-post-type.php:13
+msgid "Parent News:"
+msgstr "Berita Orang Tua"
+#: admin/partials/sakolawp-admin-display.php:92
+#: admin/partials/sakolawp-admin-display2.php:81
+msgid "Parents"
+msgstr "Orang Tua"
+#: template/myaccount-template.php:32 template/register-template.php:38
+msgid "Password"
+msgstr "Kata Sandi"
+#: templates/parent/edit_profile.php:98 templates/student/edit_profile.php:98
+#: templates/teacher/edit_profile.php:85
+msgid "Password *"
+msgstr "Kata Sandi*"
+#: template/register-template.php:42
+msgid "Password Again"
+msgstr "Kata Sandi Lagi"
+#: sakolawp.php:701
+msgid "Passwords do not match"
+msgstr "Kata sandi Tidak Sama"
+#: admin/partials/sakolawp-manage-attendance.php:208
+#: admin/partials/sakolawp-manage-report-attendance.php:335
+#: templates/teacher/manage_attendance_view.php:239
+#: templates/teacher/report_attendance_view.php:157
+#: templates/teacher/report_attendance_view.php:280
+msgid "Permit"
+msgstr "Izin"
+#: admin/partials/sakolawp-admin-display2.php:95
+msgid ""
+"Please activate your SakolaWP plugin using your purchase code to use this "
+"page."
+msgstr ""
+"Aktifkan Plugin SakolaWP dengan Kode Pemabayaran untuk Mnenggunakan Halaman "
+"Ini"
+#: sakolawp.php:697 sakolawp.php:761
+msgid "Please enter a password"
+msgstr "Silakan Masukkan Kata Sandi"
+#: sakolawp.php:685
+msgid "Please enter a username"
+msgstr "Silakan Masukkan Nama Pengguna"
+#: settings.php:316
+msgid ""
+"Please note that if you change the student classes after assign them to a "
+"class, it will make the content that this student already have disappear."
+msgstr ""
+"Perlu diingat! Jika Anda mengubah kelas siswa setelah siswa sersebut "
+"ditambahkan pada salah satu kelas, data siswa tersebut mungkin tidak akan "
+"ditampilkan."
+#: template/waiting.php:13
+msgid "Please wait until administrator approve your account."
+msgstr "Silakan tunggu hingga Admin menyetujui akun Anda."
+#: admin/partials/sakolawp-license.php:85
+msgid "Plugin Updates"
+msgstr "Update Plugin"
+#: admin/partials/sakolawp-manage-routine.php:328
+#: admin/partials/sakolawp-manage-routine.php:366
+msgid "PM"
+msgstr "PM"
+#: admin/partials/sakolawp-manage-attendance.php:204
+#: admin/partials/sakolawp-manage-report-attendance.php:331
+#: templates/parent/report_attendance_view.php:150
+#: templates/parent/report_attendance_view.php:156
+#: templates/parent/report_attendance_view.php:179
+#: templates/parent/report_attendance_view.php:185
+#: templates/student/report_attendance_view.php:157
+#: templates/student/report_attendance_view.php:163
+#: templates/student/report_attendance_view.php:186
+#: templates/student/report_attendance_view.php:192
+#: templates/teacher/manage_attendance_view.php:219
+#: templates/teacher/report_attendance_view.php:153
+#: templates/teacher/report_attendance_view.php:276
+msgid "Present"
+msgstr "Hadir"
+#: templates/administrator/view_user.php:57
+#: templates/parent/edit_profile.php:111 templates/student/edit_profile.php:111
+#: templates/teacher/edit_profile.php:98
+msgid "Profile Image"
+msgstr "Foto Profil"
+#: admin/partials/sakolawp-exam.php:251
+#: templates/parent/view_exam_result.php:159
+#: templates/student/view_exam_result.php:160
+#: templates/teacher/add_new_question.php:86
+#: templates/teacher/edit_bank_question.php:80
+#: templates/teacher/edit_bank_question.php:93
+#: templates/teacher/exam_edit.php:65 templates/teacher/exam_questions.php:130
+#: templates/teacher/exam_questions.php:322
+#: templates/teacher/exam_results.php:31 templates/teacher/examroom.php:31
+#: templates/teacher/questions_bank.php:52
+#: templates/teacher/view_bank_question.php:24
+#: templates/teacher/view_exam_question.php:26
+#: templates/teacher/view_exam_result.php:29
+#: templates/teacher/view_exam_result.php:207
+msgid "Question"
+msgstr "Pertanyaan"
+#: templates/teacher/exam_questions.php:367
+msgid "Question are exist"
+msgstr "Pertanyaan Telah Ada"
+#: admin/partials/sakolawp-exam.php:114
+#: templates/teacher/exam_questions.php:148
+#: templates/teacher/exam_questions.php:162
+msgid "Questions"
+msgstr "Pertanyaan"
+#: templates/teacher/navigation.php:70
+msgid "Questions Bank"
+msgstr "Bank Soal"
+#: settings.php:313
+msgid "Re-Assign Class"
+msgstr "Masukkan Ulang Kelas"
+#: templates/administrator/event_post.php:125
+#: templates/administrator/myaccount.php:106
+#: templates/administrator/myaccount.php:226
+#: templates/administrator/news_post.php:88 templates/parent/event_post.php:131
+#: templates/parent/myaccount.php:108 templates/parent/myaccount.php:228
+#: templates/parent/news_post.php:93 templates/student/event_post.php:93
+#: templates/student/myaccount.php:107 templates/student/myaccount.php:227
+#: templates/student/news_post.php:93 templates/teacher/event_post.php:93
+#: templates/teacher/myaccount.php:107 templates/teacher/myaccount.php:227
+#: templates/teacher/news_post.php:93
+msgid "Read More"
+msgstr "Baca Selangkapnya"
+#: sakolawp.php:170
+msgid "Register"
+msgstr "Registrasi"
+#: template/register-template.php:19
+msgid "Register New Account"
+msgstr "Registrasi Akun Baru"
+#: template/register-template.php:55
+msgid "Register Your Account"
+msgstr "Registrassi Akun Baru"
+#: settings.php:60
+msgid "Related Student"
+msgstr "Siswa Terkait"
+#: templates/parent/edit_profile.php:102 templates/student/edit_profile.php:102
+#: templates/teacher/edit_profile.php:89
+msgid "Repeat Password *"
+msgstr "Ulangi Kata Sandi*"
+#: admin/class-sakolawp-admin.php:134
+msgid "Report Attendance"
+msgstr "Laporan Kehadiran"
+#: templates/parent/report_attendance_view.php:46
+msgid "Report Detail"
+msgstr "Detail Laporan"
+#: templates/teacher/exam_edit.php:68 templates/teacher/exam_questions.php:133
+#: templates/teacher/exam_results.php:37 templates/teacher/examroom.php:34
+#: templates/teacher/view_exam_result.php:32
+msgid "Result"
+msgstr "Hasil"
+#: templates/administrator/view_user.php:44
+msgid "Role"
+msgstr "Wewenang"
+#: admin/class-sakolawp-admin.php:132
+msgid "Routine"
+msgstr "Rutinitas"
+#: admin/class-sakolawp-admin.php:1065
+msgid "Running Year"
+msgstr "Tahun Berjalan"
+#: admin/class-sakolawp-admin.php:1089
+msgid "Running Years"
+msgstr "Tahun Berjalan"
+#: admin/partials/sakolawp-admin-display2.php:92
+msgid "SakolaWP  Info"
+msgstr "Info SakolaWP"
+#: admin/class-sakolawp-admin.php:141 admin/class-sakolawp-admin.php:145
+#: admin/partials/sakolawp-license.php:22
+msgid "SakolaWP License"
+msgstr "Lisensi SakolaWP"
+#: sakolawp.php:944
+msgid "SakolaWP Statistics"
+msgstr "Statistic SakolaWP"
+#: admin/partials/sakolawp-admin-display.php:103
+msgid "SakolaWP Stats"
+msgstr "Statistik SakolaWP"
+#: admin/partials/sakolawp-manage-routine.php:144
+#: templates/parent/class_routine.php:75 templates/student/class_routine.php:74
+#: templates/teacher/my_routines.php:66
+msgid "Sat"
+msgstr "Sabtu"
+#: admin/class-sakolawp-admin.php:795
+#: admin/partials/sakolawp-manage-routine.php:143
+#: admin/partials/sakolawp-manage-routine.php:289
+#: templates/parent/class_routine.php:74 templates/student/class_routine.php:73
+#: templates/teacher/my_routines.php:65
+msgid "Saturday"
+msgstr "Sabtu"
+#: admin/class-sakolawp-admin.php:331
+#: admin/partials/sakolawp-manage-routine.php:372
+#: templates/teacher/edit_bank_question.php:164
+#: templates/teacher/exam_edit.php:134
+#: templates/teacher/homeworkroom_edit.php:103
+#: templates/teacher/view_homework_student.php:126
+msgid "Save"
+msgstr "Simpan"
+#: admin/class-sakolawp-admin.php:253 admin/class-sakolawp-admin.php:412
+#: admin/class-sakolawp-admin.php:528 admin/class-sakolawp-admin.php:661
+#: admin/class-sakolawp-admin.php:904
+msgid "Save changes"
+msgstr "Simpan Perubahan"
+#: admin/class-sakolawp-admin.php:1056
+msgid "School Name"
+msgstr "Nama Sekolah"
+#: templates/parent/attendance_report.php:91
+#: templates/parent/report_attendance_view.php:104
+#: templates/student/attendance_report.php:88
+#: templates/student/report_attendance_view.php:105
+msgid "Search Attendance"
+msgstr "Cari Kehadiran"
+#: sakolawp-post-type.php:78
+msgid "Search Event"
+msgstr "Cari Kegiatan"
+#: sakolawp-post-type.php:20
+msgid "Search News"
+msgstr "Cari Berita"
+#: admin/class-sakolawp-admin.php:625 admin/class-sakolawp-admin.php:734
+#: admin/partials/sakolawp-assign-student.php:98
+#: admin/partials/sakolawp-homework.php:207
+#: admin/partials/sakolawp-homework.php:351
+#: admin/partials/sakolawp-manage-report-attendance.php:60
+#: admin/partials/sakolawp-manage-report-attendance.php:143
+#: admin/partials/sakolawp-manage-routine.php:73
+#: admin/partials/sakolawp-manage-routine.php:104
+#: admin/partials/sakolawp-manage-routine.php:245
+#: admin/partials/sakolawp-manage-section.php:38
+#: admin/partials/sakolawp-manage-subject.php:37
+#: admin/partials/sakolawp-manage-subject.php:134 settings.php:335
+#: templates/teacher/attendance_report.php:62
+#: templates/teacher/homework.php:203 templates/teacher/homeworkroom.php:103
+#: templates/teacher/homeworkroom_details.php:125
+#: templates/teacher/homeworkroom_edit.php:142
+#: templates/teacher/manage_attendance.php:116
+#: templates/teacher/manage_attendance_view.php:157
+#: templates/teacher/marks.php:201 templates/teacher/marks.php:270
+#: templates/teacher/online_exams.php:201
+#: templates/teacher/report_attendance_view.php:69
+msgid "Section"
+msgstr "Sesi"
+#: admin/partials/sakolawp-manage-attendance.php:54
+#: admin/partials/sakolawp-student-area.php:64
+#: admin/partials/sakolawp-student-area.php:95
+msgid "Section :"
+msgstr "Sesi:"
+#: admin/class-sakolawp-admin.php:485 admin/class-sakolawp-admin.php:488
+#: admin/partials/sakolawp-manage-section.php:108
+msgid "Section Name"
+msgstr "Nama Sesi"
+#: admin/partials/sakolawp-manage-attendance.php:151
+#: templates/parent/homeworkroom.php:161 templates/student/homeworkroom.php:282
+msgid "Section:"
+msgstr "Sesi:"
+#: admin/class-sakolawp-admin.php:130
+#: admin/partials/sakolawp-manage-section.php:25
+msgid "Sections"
+msgstr "Sesi"
+#: admin/class-sakolawp-admin.php:497 admin/class-sakolawp-admin.php:514
+#: admin/class-sakolawp-admin.php:612 admin/class-sakolawp-admin.php:629
+#: admin/class-sakolawp-admin.php:639 admin/class-sakolawp-admin.php:722
+#: admin/class-sakolawp-admin.php:778
+#: admin/partials/sakolawp-admin-display.php:194
+#: admin/partials/sakolawp-assign-student.php:70
+#: admin/partials/sakolawp-assign-student.php:86
+#: admin/partials/sakolawp-assign-student.php:101
+#: admin/partials/sakolawp-exam.php:46
+#: admin/partials/sakolawp-manage-attendance.php:42
+#: admin/partials/sakolawp-manage-attendance.php:56
+#: admin/partials/sakolawp-manage-attendance.php:137
+#: admin/partials/sakolawp-manage-attendance.php:153
+#: admin/partials/sakolawp-manage-report-attendance.php:48
+#: admin/partials/sakolawp-manage-report-attendance.php:62
+#: admin/partials/sakolawp-manage-report-attendance.php:109
+#: admin/partials/sakolawp-manage-report-attendance.php:131
+#: admin/partials/sakolawp-manage-report-attendance.php:145
+#: admin/partials/sakolawp-manage-report-attendance.php:148
+#: admin/partials/sakolawp-manage-report-attendance.php:198
+#: admin/partials/sakolawp-manage-routine.php:38
+#: admin/partials/sakolawp-manage-routine.php:233
+#: admin/partials/sakolawp-manage-routine.php:251
+#: admin/partials/sakolawp-manage-routine.php:264
+#: admin/partials/sakolawp-manage-routine.php:277
+#: admin/partials/sakolawp-manage-section.php:118
+#: admin/partials/sakolawp-manage-section.php:134
+#: admin/partials/sakolawp-manage-subject.php:121
+#: admin/partials/sakolawp-manage-subject.php:137
+#: admin/partials/sakolawp-manage-subject.php:146
+#: admin/partials/sakolawp-student-area.php:52
+#: admin/partials/sakolawp-student-area.php:66
+#: admin/partials/sakolawp-student-area.php:83
+#: admin/partials/sakolawp-student-area.php:97 settings.php:324
+#: settings.php:338 template/register-template.php:48
+#: templates/parent/attendance_report.php:80
+#: templates/parent/report_attendance_view.php:93
+#: templates/student/attendance_report.php:78
+#: templates/student/report_attendance_view.php:94
+#: templates/teacher/add_new_question.php:132
+#: templates/teacher/add_new_question.php:145
+#: templates/teacher/attendance_report.php:110
+#: templates/teacher/edit_bank_question.php:140
+#: templates/teacher/edit_bank_question.php:153
+#: templates/teacher/homework.php:189 templates/teacher/homework.php:206
+#: templates/teacher/homework.php:216 templates/teacher/marks.php:173
+#: templates/teacher/marks.php:188 templates/teacher/marks.php:203
+#: templates/teacher/marks.php:211 templates/teacher/marks.php:242
+#: templates/teacher/marks.php:257 templates/teacher/marks.php:272
+#: templates/teacher/marks.php:287 templates/teacher/online_exams.php:189
+#: templates/teacher/online_exams.php:207
+#: templates/teacher/online_exams.php:220
+#: templates/teacher/report_attendance_view.php:117
+#: templates/teacher/view_bank_question.php:82
+msgid "Select"
+msgstr "Pilih"
+#: template/register-template.php:46
+msgid "Select Your Roles"
+msgstr "Pilih Wewenang Anda"
+#: admin/class-sakolawp-admin.php:201 admin/class-sakolawp-admin.php:204
+#: admin/class-sakolawp-admin.php:279 admin/class-sakolawp-admin.php:282
+#: admin/partials/sakolawp-admin-display.php:276
+#: templates/teacher/marks.php:171 templates/teacher/marks.php:240
+msgid "Semester"
+msgstr "Semester"
+#: admin/partials/sakolawp-admin-display.php:26
+msgid "Semester Periode"
+msgstr "Periode Semester"
+#: templates/student/homeworkroom.php:176
+msgid "Send"
+msgstr "Kirim"
+#: admin/partials/sakolawp-homework.php:149
+msgid "Send At:"
+msgstr "Kirim pada:"
+#: admin/class-sakolawp-admin.php:221 admin/class-sakolawp-admin.php:242
+#: admin/class-sakolawp-admin.php:299 admin/class-sakolawp-admin.php:320
+#: admin/partials/sakolawp-admin-display.php:312
+#: admin/partials/sakolawp-admin-display.php:337
+#: admin/partials/sakolawp-manage-report-attendance.php:88
+#: admin/partials/sakolawp-manage-report-attendance.php:177
+#: admin/partials/sakolawp-manage-report-attendance.php:231
+#: templates/parent/attendance_report.php:64
+#: templates/parent/report_attendance_view.php:77
+#: templates/student/attendance_report.php:62
+#: templates/student/report_attendance_view.php:78
+#: templates/teacher/attendance_report.php:89
+#: templates/teacher/report_attendance_view.php:96
+#: templates/teacher/report_attendance_view.php:145
+msgid "September"
+msgstr "September"
+#: admin/partials/sakolawp-manage-attendance.php:207
+#: admin/partials/sakolawp-manage-report-attendance.php:334
+#: templates/teacher/manage_attendance_view.php:234
+#: templates/teacher/report_attendance_view.php:156
+#: templates/teacher/report_attendance_view.php:279
+msgid "Sick"
+msgstr "Sakit"
+#: templates/teacher/exam_edit.php:129
+msgid "Standard Mark"
+msgstr "Tanda Standar"
+#: admin/class-sakolawp-admin.php:209 admin/class-sakolawp-admin.php:287
+#: admin/partials/sakolawp-admin-display.php:192
+#: admin/partials/sakolawp-admin-display.php:279
+#: admin/partials/sakolawp-exam.php:44 single-sakolawp-event.php:107
+msgid "Start"
+msgstr "Mulai"
+#: admin/partials/sakolawp-exam.php:184 admin/partials/sakolawp-exam.php:332
+#: admin/partials/sakolawp-exam.php:491
+#: templates/parent/view_exam_result.php:91
+#: templates/student/view_exam_result.php:91
+#: templates/teacher/exam_edit.php:175 templates/teacher/exam_questions.php:261
+#: templates/teacher/exam_results.php:163 templates/teacher/examroom.php:92
+#: templates/teacher/view_exam_result.php:120
+msgid "Start Date"
+msgstr "Tanggal Mulai"
+#: templates/student/examroom.php:56
+msgid "Start Exam"
+msgstr "Mulai Ujian"
+#: templates/teacher/exam_edit.php:97
+msgid "Start Hour"
+msgstr "Jam Mulai"
+#: templates/teacher/online_exams.php:239
+msgid "Start Time"
+msgstr "Waktu Mulai"
+#: templates/parent/report_attendance_view.php:116
+msgid "STATUS"
+msgstr "STATUS"
+#: admin/partials/sakolawp-manage-attendance.php:186 settings.php:107
+#: settings.php:226 templates/parent/myaccount.php:262
+#: templates/parent/online_exams.php:46 templates/student/myaccount.php:262
+#: templates/student/online_exams.php:44
+#: templates/student/report_attendance_view.php:123
+#: templates/teacher/manage_attendance_view.php:189
+msgid "Status"
+msgstr "Status"
+#: templates/parent/homeworkroom.php:185 templates/student/homeworkroom.php:306
+msgid "Status:"
+msgstr "Status"
+#: admin/partials/sakolawp-exam.php:395
+#: admin/partials/sakolawp-homework.php:249
+#: admin/partials/sakolawp-manage-attendance.php:29
+#: admin/partials/sakolawp-manage-attendance.php:183
+#: admin/partials/sakolawp-manage-report-attendance.php:36
+#: sakolawp_add_roles.php:15 settings.php:63 template/register-template.php:50
+#: templates/teacher/exam_results.php:62
+#: templates/teacher/manage_attendance_view.php:183
+#: templates/teacher/marks.php:312
+msgid "Student"
+msgstr "Siswa"
+#: admin/class-sakolawp-admin.php:978 templates/parent/homeworkroom.php:88
+msgid "Student Answer"
+msgstr "Jawaban Siswa"
+#: templates/teacher/view_homework_student.php:92
+msgid "Student Answer :"
+msgstr "Jawaban Siswa:"
+#: admin/partials/sakolawp-homework.php:250
+msgid "Student Comment"
+msgstr "Komentar Siswa"
+#: templates/teacher/view_homework_student.php:109
+msgid "Student Comment :"
+msgstr "Komentar Siswa:"
+#: templates/teacher/view_homework_student.php:101
+msgid "Student File :"
+msgstr "Fail Siswa:"
+#: admin/class-sakolawp-admin.php:968
+msgid "Student Homework"
+msgstr "Pekerjaan Rumah Siswa"
+#: admin/partials/sakolawp-assign-student.php:68
+msgid "Student Name"
+msgstr "Nama Siswa"
+#: admin/partials/sakolawp-admin-display.php:82
+#: admin/partials/sakolawp-admin-display2.php:71
+#: admin/partials/sakolawp-manage-report-attendance.php:247
+msgid "Students"
+msgstr "Siswa"
+#: admin/class-sakolawp-admin.php:135
+#: admin/partials/sakolawp-assign-student.php:30
+#: admin/partials/sakolawp-student-area.php:34
+msgid "Students Area"
+msgstr "Kolom Siswa"
+#: admin/class-sakolawp-admin.php:753
+#: admin/partials/sakolawp-admin-display.php:191
+#: admin/partials/sakolawp-exam.php:43 admin/partials/sakolawp-exam.php:156
+#: admin/partials/sakolawp-exam.php:304 admin/partials/sakolawp-exam.php:463
+#: admin/partials/sakolawp-homework.php:43
+#: admin/partials/sakolawp-homework.php:164
+#: admin/partials/sakolawp-homework.php:308
+#: admin/partials/sakolawp-manage-routine.php:258
+#: templates/parent/homework.php:41 templates/parent/marks.php:30
+#: templates/parent/myaccount.php:259 templates/parent/online_exams.php:43
+#: templates/parent/view_exam_result.php:78 templates/parent/view_mark.php:19
+#: templates/student/homework.php:39 templates/student/my_marks.php:28
+#: templates/student/myaccount.php:259 templates/student/online_exams.php:40
+#: templates/student/view_exam_result.php:78
+#: templates/teacher/add_new_question.php:143
+#: templates/teacher/edit_bank_question.php:151
+#: templates/teacher/exam_edit.php:147 templates/teacher/exam_questions.php:233
+#: templates/teacher/exam_questions.php:324
+#: templates/teacher/exam_results.php:134 templates/teacher/examroom.php:64
+#: templates/teacher/homework.php:105 templates/teacher/homework.php:213
+#: templates/teacher/homeworkroom.php:79
+#: templates/teacher/homeworkroom_details.php:101
+#: templates/teacher/homeworkroom_edit.php:118 templates/teacher/marks.php:209
+#: templates/teacher/marks.php:285 templates/teacher/myaccount.php:256
+#: templates/teacher/online_exams.php:100
+#: templates/teacher/online_exams.php:214
+#: templates/teacher/questions_bank.php:54
+#: templates/teacher/view_bank_question.php:91
+#: templates/teacher/view_exam_result.php:101
+msgid "Subject"
+msgstr "Pelajaran"
+#: admin/class-sakolawp-admin.php:600 admin/class-sakolawp-admin.php:603
+#: admin/partials/sakolawp-manage-subject.php:111
+msgid "Subject Name"
+msgstr "Nama Pelajaran"
+#: templates/parent/homeworkroom.php:118 templates/student/homeworkroom.php:238
+msgid "Subject:"
+msgstr "Pelajaran:"
+#: admin/class-sakolawp-admin.php:131
+msgid "Subjects"
+msgstr "Pelajaran"
+#: admin/partials/sakolawp-manage-subject.php:24
+msgid "Subjets"
+msgstr "Pelajaran"
+#: admin/partials/sakolawp-manage-routine.php:126
+#: templates/parent/class_routine.php:51 templates/student/class_routine.php:50
+#: templates/teacher/my_routines.php:42
+msgid "Sun"
+msgstr "Minggu"
+#: admin/class-sakolawp-admin.php:787
+#: admin/partials/sakolawp-manage-routine.php:125
+#: admin/partials/sakolawp-manage-routine.php:281
+#: templates/parent/class_routine.php:50 templates/student/class_routine.php:49
+#: templates/teacher/my_routines.php:41
+msgid "Sunday"
+msgstr "Minggu"
+#: single-sakolawp-event.php:90 single-sakolawp-news.php:87
+msgid "Tags:"
+msgstr "Tag"
+#: templates/student/myaccount.php:321 templates/student/online_exams.php:113
+msgid "Take Exam"
+msgstr "Ambil Ujian"
+#: admin/class-sakolawp-admin.php:635 admin/partials/sakolawp-homework.php:49
+#: admin/partials/sakolawp-manage-section.php:44
+#: admin/partials/sakolawp-manage-section.php:131
+#: admin/partials/sakolawp-manage-subject.php:43
+#: admin/partials/sakolawp-manage-subject.php:143 sakolawp_add_roles.php:5
+#: template/register-template.php:49 templates/parent/marks.php:31
+#: templates/student/homework.php:41 templates/student/my_marks.php:29
+#: templates/student/online_exams.php:43
+msgid "Teacher"
+msgstr "Guru"
+#: admin/partials/sakolawp-homework.php:253
+#: templates/student/homeworkroom.php:339
+msgid "Teacher Comment"
+msgstr "Komentar Guru"
+#: templates/parent/homeworkroom.php:218
+msgid "Teacher Comment:"
+msgstr "Komentar Guru:"
+#: admin/partials/sakolawp-homework.php:176
+#: admin/partials/sakolawp-homework.php:320
+#: templates/parent/homeworkroom.php:130 templates/student/homeworkroom.php:250
+msgid "Teacher:"
+msgstr "Guru:"
+#: admin/partials/sakolawp-admin-display.php:72
+#: admin/partials/sakolawp-admin-display2.php:61
+msgid "Teachers"
+msgstr "Guru"
+#: templates/parent/edit_profile.php:32 templates/student/edit_profile.php:32
+#: templates/teacher/edit_profile.php:19
+msgid "The Email you entered is not valid.  please try again."
+msgstr "Email Yang kamu masukkan tidak valid. Silakan cek kembali."
+#: templates/parent/edit_profile.php:24 templates/student/edit_profile.php:24
+#: templates/teacher/edit_profile.php:11
+msgid "The passwords you entered do not match.  Your password was not updated."
+msgstr ""
+"Kata sandi yang Anda masukkan tidak sama. Kata sandi Anda belum diperbarui."
+#: templates/parent/myaccount.php:335 templates/student/myaccount.php:336
+msgid "There is no exam yet."
+msgstr "Belum Ada Ujian"
+#: templates/administrator/event_post.php:136
+#: templates/administrator/myaccount.php:116
+#: templates/administrator/myaccount.php:237
+#: templates/administrator/news_post.php:99 templates/parent/event_post.php:142
+#: templates/parent/myaccount.php:118 templates/parent/myaccount.php:239
+#: templates/parent/news_post.php:104 templates/student/event_post.php:104
+#: templates/student/myaccount.php:117 templates/student/myaccount.php:238
+#: templates/student/news_post.php:104 templates/teacher/event_post.php:104
+#: templates/teacher/myaccount.php:117 templates/teacher/myaccount.php:238
+#: templates/teacher/news_post.php:104
+msgid "There is no post yet."
+msgstr "Belum ada Postingan"
+#: admin/class-sakolawp-admin.php:1012
+msgid ""
+"There was an error adding this setting. Please try again.  If this persists, "
+"shoot us an email."
+msgstr ""
+"Ada Kesalah mengubah pengaturan. Silakan coba lagi, Jika Masih sama, hubungi "
+"Admin via Email."
+#: templates/parent/edit_profile.php:34 templates/student/edit_profile.php:34
+#: templates/teacher/edit_profile.php:21
+msgid "This email is already used by another user.  try a different one."
+msgstr "Email ini telah digunakan oleh user lain. Silakan gunakan Email lain."
+#: admin/partials/sakolawp-manage-routine.php:138
+#: templates/parent/class_routine.php:67 templates/student/class_routine.php:66
+#: templates/teacher/my_routines.php:58
+msgid "Thr"
+msgstr "Kamis"
+#: admin/class-sakolawp-admin.php:792
+#: admin/partials/sakolawp-manage-routine.php:137
+#: admin/partials/sakolawp-manage-routine.php:286
+#: templates/parent/class_routine.php:66 templates/student/class_routine.php:65
+#: templates/teacher/my_routines.php:57
+msgid "Thursday"
+msgstr "Rabu"
+#: single-sakolawp-event.php:117
+msgid "Time"
+msgstr "Waktu"
+#: admin/class-sakolawp-admin.php:854
+#: admin/partials/sakolawp-manage-routine.php:335
+msgid "Time End"
+msgstr "Waktu Tersiswa"
+#: templates/student/exam.php:135
+msgid "Time Left:"
+msgstr "Waktu Terpakai"
+#: templates/teacher/homework.php:233
+#: templates/teacher/homeworkroom_edit.php:94
+msgid "Time Limit"
+msgstr "Batas Waktu"
+#: templates/teacher/online_exams.php:253
+msgid "Time Over"
+msgstr "Waktu Habis"
+#: admin/class-sakolawp-admin.php:803
+#: admin/partials/sakolawp-manage-routine.php:297
+msgid "Time Start"
+msgstr "Waktu Mulai"
+#: admin/partials/sakolawp-admin-display.php:189
+#: admin/partials/sakolawp-exam.php:41 admin/partials/sakolawp-homework.php:40
+#: templates/parent/homework.php:39 templates/parent/myaccount.php:258
+#: templates/parent/online_exams.php:42 templates/student/homework.php:37
+#: templates/student/myaccount.php:258 templates/student/online_exams.php:39
+#: templates/teacher/exam_edit.php:84 templates/teacher/homework.php:103
+#: templates/teacher/homework.php:224
+#: templates/teacher/homeworkroom_edit.php:82
+#: templates/teacher/homeworkroom_edit.php:83
+#: templates/teacher/myaccount.php:254 templates/teacher/online_exams.php:98
+#: templates/teacher/online_exams.php:227
+msgid "Title"
+msgstr "Judul"
+#: admin/partials/sakolawp-admin-display.php:113 sakolawp.php:967
+#: templates/parent/view_mark.php:391 templates/student/view_mark.php:391
+#: templates/teacher/marks.php:394
+msgid "Total"
+msgstr "Total"
+#: admin/class-sakolawp-admin.php:651
+#: admin/partials/sakolawp-manage-subject.php:158
+msgid "Total Lab"
+msgstr "Total Lab"
+#: templates/teacher/exam_edit.php:199 templates/teacher/exam_questions.php:285
+#: templates/teacher/exam_results.php:187 templates/teacher/examroom.php:116
+#: templates/teacher/view_exam_result.php:137
+msgid "Total Question"
+msgstr "todal Pertanyaan"
+#: admin/partials/sakolawp-exam.php:208 admin/partials/sakolawp-exam.php:356
+#: admin/partials/sakolawp-exam.php:515
+#: templates/parent/view_exam_result.php:99
+#: templates/student/view_exam_result.php:100
+#: templates/teacher/online_exams.php:265
+msgid "Total Questions"
+msgstr "Total Pertanyaan"
+#: templates/student/examroom.php:38
+msgid "Total Questions :"
+msgstr "Total Soal"
+#: admin/partials/sakolawp-manage-routine.php:132
+#: templates/parent/class_routine.php:59 templates/student/class_routine.php:58
+#: templates/teacher/my_routines.php:50
+msgid "Tue"
+msgstr "Selasa"
+#: admin/class-sakolawp-admin.php:790
+#: admin/partials/sakolawp-manage-routine.php:131
+#: admin/partials/sakolawp-manage-routine.php:284
+#: templates/parent/class_routine.php:58 templates/student/class_routine.php:57
+#: templates/teacher/my_routines.php:49
+msgid "Tuesday"
+msgstr "Selasa"
+#: admin/partials/sakolawp-manage-attendance.php:219
+#: templates/parent/edit_profile.php:120 templates/student/edit_profile.php:120
+#: templates/student/homeworkroom.php:216
+#: templates/teacher/edit_profile.php:107
+#: templates/teacher/manage_attendance_view.php:249
+#: templates/teacher/marks.php:752
+msgid "Update"
+msgstr "Perbarui"
+#: sakolawp-post-type.php:77
+msgid "Update Event"
+msgstr "Perbarui Kegiatan"
+#: sakolawp-post-type.php:19
+msgid "Update News"
+msgstr "Perbarui Berita"
+#: templates/parent/edit_profile.php:114 templates/student/edit_profile.php:114
+#: templates/teacher/edit_profile.php:101
+msgid "Upload a File"
+msgstr "Unggah Fail"
+#: templates/teacher/homework.php:239
+msgid "Upload File"
+msgstr "Unggah Fail"
+#: templates/teacher/homework.php:242
+msgid "Upload File..."
+msgstr "Unggah Fail ..."
+#: admin/class-sakolawp-admin.php:1073
+msgid "Use Saturday"
+msgstr "Gunakan Hari Sabtu"
+#: settings.php:111 settings.php:281
+msgid "User Active"
+msgstr "Pengguna Aktif"
+#: settings.php:28
+msgid "User Gender"
+msgstr "Jenis Kelamin"
+#: settings.php:110 settings.php:289
+msgid "User Not Active"
+msgstr "Pengguna Tidak Aktif"
+#: settings.php:104
+msgid "User Status"
+msgstr "Status Pengguna"
+#: template/myaccount-template.php:29 template/register-template.php:22
+msgid "Username"
+msgstr "Nama Pengguna"
+#: sakolawp.php:677
+msgid "Username already taken"
+msgstr "Nama Pengguna Sudah Digunakan"
+#: admin/partials/sakolawp-admin-display.php:238
+#: admin/partials/sakolawp-exam.php:90 admin/partials/sakolawp-homework.php:92
+#: admin/partials/sakolawp-manage-attendance.php:66
+#: admin/partials/sakolawp-manage-attendance.php:170
+#: admin/partials/sakolawp-manage-report-attendance.php:117
+#: admin/partials/sakolawp-manage-report-attendance.php:206
+#: admin/partials/sakolawp-student-area.php:71
+#: admin/partials/sakolawp-student-area.php:102
+#: templates/parent/homework.php:86 templates/parent/marks.php:321
+#: templates/student/my_marks.php:319
+#: templates/teacher/attendance_report.php:118
+#: templates/teacher/exam_questions.php:209
+#: templates/teacher/exam_results.php:114 templates/teacher/homework.php:146
+#: templates/teacher/manage_attendance.php:127
+#: templates/teacher/manage_attendance_view.php:171
+#: templates/teacher/marks.php:217 templates/teacher/marks.php:299
+#: templates/teacher/myaccount.php:303 templates/teacher/online_exams.php:147
+#: templates/teacher/questions_bank.php:91
+#: templates/teacher/report_attendance_view.php:125
+msgid "View"
+msgstr "Lihat"
+#: templates/student/homework.php:98
+#: templates/teacher/homeworkroom_details.php:80
+msgid "View Detail"
+msgstr "Lihat Detail"
+#: admin/partials/sakolawp-homework.php:283
+msgid "View Details"
+msgstr "Lihat Detail"
+#: sakolawp-post-type.php:73
+msgid "View Event"
+msgstr "Lihat Kegiatan"
+#: sakolawp-post-type.php:15
+msgid "View News"
+msgstr "Lihat Berita"
+#: templates/parent/myaccount.php:326 templates/parent/online_exams.php:104
+#: templates/student/myaccount.php:327 templates/student/online_exams.php:119
+#: templates/teacher/exam_results.php:64
+msgid "View Result"
+msgstr "Lihat Hasil"
+#: templates/parent/edit_profile.php:94 templates/student/edit_profile.php:94
+#: templates/teacher/edit_profile.php:81
+msgid "Website"
+msgstr "Laman"
+#: admin/partials/sakolawp-manage-routine.php:135
+#: templates/parent/class_routine.php:63 templates/student/class_routine.php:62
+#: templates/teacher/my_routines.php:54
+msgid "Wed"
+msgstr "Rabu"
+#: admin/class-sakolawp-admin.php:791
+#: admin/partials/sakolawp-manage-routine.php:134
+#: admin/partials/sakolawp-manage-routine.php:285
+#: templates/parent/class_routine.php:62 templates/student/class_routine.php:61
+#: templates/teacher/my_routines.php:53
+msgid "Wednesday"
+msgstr "Kamis"
+#: admin/partials/sakolawp-admin-display.php:61
+#: admin/partials/sakolawp-admin-display2.php:50
+#: templates/administrator/myaccount.php:24 templates/parent/myaccount.php:26
+#: templates/student/myaccount.php:25 templates/teacher/myaccount.php:25
+msgid "Welcome Back"
+msgstr "Selamat Datang Kembali"
+#: templates/parent/view_exam_result.php:126
+#: templates/student/view_exam_result.php:127
+#: templates/teacher/view_exam_result.php:177
+msgid "Wrong Answer"
+msgstr "Jawaban Salah"
+#: admin/partials/sakolawp-manage-report-attendance.php:107
+#: admin/partials/sakolawp-manage-report-attendance.php:196
+#: templates/student/attendance_report.php:76
+#: templates/student/report_attendance_view.php:92
+#: templates/teacher/attendance_report.php:108
+#: templates/teacher/report_attendance_view.php:115
+msgid "Year"
+msgstr "Tahun"
+#: admin/class-sakolawp-admin.php:1105
+msgid "Yes"
+msgstr "Ya"
+#: templates/student/homework.php:110
+msgid "You are not assign to  a class yet"
+msgstr "Kamu Belum Ditambahkan ke Kelas"
+#: templates/parent/class_routine.php:122
+#: templates/parent/report_attendance_view.php:217
+#: templates/student/attendance_report.php:99
+#: templates/student/class_routine.php:119
+#: templates/student/report_attendance_view.php:223
+msgid "You are not assign to a class yet"
+msgstr "Kamu Belum Ditambahkan ke Kelas"
+#: templates/student/exam.php:244
+msgid "You are not assigned to a class yet."
+msgstr "Kamu Belum Ditambahkan ke Kelas"
+#: templates/parent/online_exams.php:116 templates/student/examroom.php:65
+#: templates/student/homeworkroom.php:358
+#: templates/student/online_exams.php:131 templates/teacher/homework.php:161
+msgid "You are not create a homework for your class yet"
+msgstr "Anda Belum Membuat Pekerjaan Rumah Untuk Kelas Anda"
+#: templates/teacher/examroom.php:139 templates/teacher/online_exams.php:162
+msgid "You are not create an exams for your class yet"
+msgstr "Kamu Belum Buat Ujian untuk Kelasmu"
+#: templates/teacher/questions_bank.php:107
+msgid "You are not create any question yet. Create a new ones!"
+msgstr "Kamu Belum Buat Pertanyaan. Buat Sekarang!"
+#: templates/teacher/my_routines.php:118
+msgid "You are not having a routine yet"
+msgstr "Kamu Belum Buat Pertanyaan. Buat Sekarang!"
+#: templates/parent/edit_profile.php:76 templates/student/edit_profile.php:76
+#: templates/teacher/edit_profile.php:63
+msgid "You must be logged in to edit your profile."
+msgstr "Kamu Harus Masuk untuk Ubah Profil"
+#: templates/parent/attendance_report.php:102 templates/parent/homework.php:99
+#: templates/parent/homeworkroom.php:235
+msgid "Your child not assign to a class yet"
+msgstr "Anak Anda Belum Masuk Kelas"
+#: templates/student/homeworkroom.php:171
+#: templates/student/homeworkroom.php:210
+msgid "Your Comment"
+msgstr "Komentar Anda"

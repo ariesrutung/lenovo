@@ -1,0 +1,8 @@
+How to use the CSS
+
+1. Add the Newswall module to your app and make change to the following part.
+    a. Add news content (title, date, subtitle, news content, image) as always in the same way. Otherwise, you must use one word (like FASHION, FOOTBALL, etc.) in the subtitle box to be the news category.
+    Hit OK to save.
+2. Move to the Newswall Design tab, choose Layout 4.
+3. If you want to change the colors and images, you can change the hexa code and image in the colors variables. You can find the colors and iamges variable at the first section of the CSS file.
+4. Just that.

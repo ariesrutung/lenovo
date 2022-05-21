@@ -1,0 +1,38 @@
+How to use the CSS
+
+1.  Add the Calendar module to your app - open the module choose Custom Page  - type Calendars name - hit OK - hit Event - fill out the form.
+    Make sure to add all the data, means there is no empty data.
+2.  To get slider, you should add two event that has a same data. For example: In the Agust 1th, you have to set 2 event.
+
+Title: *
+Subtitle: *
+Description:
+Beginning date: *
+Beginning time: *
+Ending date:
+Ending time: *
+Address:
+Location:
+RSVP URL:
+Ticket Shop URL:
+Website: 
+Illustration:
+
+All the above field must be set.
+
+3.  Virtual Conference, Virtual Seminars, Virtual Workshops, etc. is added by CSS. You cant find dan replace it by type the same word i your editor. 
+4.  If you have more than 8 event, you must duplicate the code below and replace 8 in the nth-child(8) with your nex event number. Dont forget to change the content too.
+
+ion-view[state="event-list"] .list:nth-child(8):before {
+    content: "Virtual Agenda";
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 3%;
+    min-height: 30px;
+    background-color: transparent;
+    color: $black-color;
+    padding: 10px;
+    border-radius: 5px;
+    width: 94%;
+    display: flex;
+}

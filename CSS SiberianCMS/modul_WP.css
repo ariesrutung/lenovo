@@ -1,0 +1,85 @@
+/* WP */
+ion-view.module-wordpress2.wordpress2-layout1.wordpress2-list ion-content {
+    border-radius: 40px 40px 0 0;
+    margin-top: 5px;
+    border-top: 15px solid #fff;
+    background-color: #fff !important;
+}
+
+ion-view.module-wordpress2.wordpress2-layout1.wordpress2-list .item.item-image.item-custom img {
+    width: 70%;
+    object-fit: cover;
+}
+
+
+ion-view.module-wordpress2.wordpress2-layout1.wordpress2-list [ng-if="query.showCover && query.picture"]:after {
+    content: "Semua Artikel";
+    display: block;
+    width: 100%;
+    font-size: 28px;
+    color: #0e7bc4;
+    font-weight: bold;
+    margin-top: 28px;
+    text-align: left;
+    margin-left: 12px;
+}
+
+ion-view.module-wordpress2.wordpress2-layout1.wordpress2-list  .list  {
+	background-color: #fff;
+}
+
+ion-view.module-wordpress2.wordpress2-layout1.wordpress2-list  .list a {
+    width: 96%;
+    margin-left: 2%;
+    display: inline-block;
+    background-color: #ecf0f6;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+ion-view.module-wordpress2.wordpress2-layout1.wordpress2-list .list a img {
+	display: block !important;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    height: 200px;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+ion-view.module-wordpress2.wordpress2-layout1.wordpress2-list .list a h2.ng-binding {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    white-space: normal;
+    border-left: 10px solid #0e7bc4;
+    padding-left: 10px;
+}
+
+ion-view.module-wordpress2.wordpress2-layout1.wordpress2-list .list a p.ng-binding p {
+    width: 100%;
+    white-space: normal;
+  	margin-top: 10px;
+}
+
+ion-view.module-wordpress2.wordpress2-layout1.wordpress2-list .list a p a {
+    width: 30%;
+    margin: 10px 0;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffffff !important;
+    border-radius: 10px;
+    background-color: #0e7bc4;
+    padding: 5px;
+    display: block;
+    margin-left: 70%;
+}

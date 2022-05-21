@@ -336,6 +336,7 @@ ion-view.padlock-view ion-content .card.padlock {
     border-radius: 50px !important;
     background: #fff;
     padding-top: 25px !important;
+    box-shadow: none;
 }
 
 ion-view.padlock-view ion-content .card.padlock .item.item-custom {
@@ -416,6 +417,7 @@ ion-view.padlock-view ion-content .card.padlock .item.item-icon-left.item-custom
 ion-view.padlock-view ion-content .card.padlock .item.item-icon-left.item-custom.ng-binding:after {
     content: "MULAI SEKARANG";
     font-size: 16px;
+    animation: kedip 2s linear infinite alternate both;
 }
 
 ion-view.padlock-view ion-content .card.padlock .item.item-icon-left.item-custom.ng-binding {
@@ -432,6 +434,18 @@ ion-view.padlock-view ion-content .card.padlock .item.item-icon-left.item-custom
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@keyframes kedip {
+    0% {
+        color: red;
+    }
+    50% {
+        color: blue;
+    }
+    100% {
+        color: black;
+    }
 }
 
 
@@ -1748,6 +1762,44 @@ ion-view[state="newswall-view"] ion-content {
     top: 0 !important;
 }
 
+ion-view[state="newswall-list"] ion-content:before {
+    content: " ";
+    display: block;
+    height: 150px;
+    background-image: url(https://media.istockphoto.com/vectors/news-update-vector-digital-news-online-newspaper-concept-site-editing-vector-id1199436528?k=20&m=1199436528&s=612x612&w=0&h=OuqEV1vioVs_6OLbUMwePM_0ABB2Fg1ZpddGu9m5iIY=);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+ion-view[state="newswall-list"] ion-content .scroll {
+    background-color: #fff;
+    padding-top: 10px;
+    border-top-left-radius: 100% 50px;
+    border-top-right-radius: 100% 50px;
+}
+
+ion-view[state="newswall-list"] ion-content .scroll:before {
+    content: "Sudah baca berita apa saja hari ini? Yuk, perbarui informasi yang kamu punya!";
+    display: block;
+    padding: 12px;
+}
+
+ion-view[state="newswall-view"] .list:first-child.card [ng-if="item.subtitle"] {
+    z-index: 999;
+    position: fixed;
+    right: 0;
+    top: 15vh;
+    background-color: #f9bf00;
+    clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 5% 48%, 0% 0%);
+    padding: 5px 20px;
+    color: #fff;
+}
+
+ion-view[state="newswall-view"] .list:first-child.card [ng-if="item.message"] {
+    order: 3;
+}
+
 ion-view[state="newswall-list"] ion-content .scroll>div:nth-last-child(1):after {
     content: " ";
     display: block;
@@ -1844,7 +1896,8 @@ ion-view[state="newswall-list"] ion-content .row.list .item.item-custom.item-bod
     background-color: #f9bf00;
     color: #fff;
     padding: 5px 20px;
-    width: 40%;
+    width: 30%;
+    font-size: 10px !important;
 }
 
 ion-view[state="newswall-list"] ion-content .col.col-50 .item-image {
@@ -2020,6 +2073,29 @@ ion-view[state="newswall-comment"] ion-content .list:before {
 
 
 /* Push Notif */
+
+ion-view.module-push.push-list.push-list-l1 ion-content:before {
+    content: " ";
+    display: block;
+    height: 150px;
+    background-image: url(https://thumbs.dreamstime.com/b/%D0%B2%D0%BD%D0%B8%D0%BC%D0%B0%D0%BD%D0%B8%D0%B5-%D0%B8%D0%BB%D0%B8-%D1%83%D0%B2%D0%B5%D0%B4%D0%BE%D0%BC%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B4%D0%BB%D1%8F-%D0%BC%D0%BE%D0%B1%D0%B8%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-%D0%B8%D0%BB%D0%BB%D1%8E%D1%81%D1%82%D1%80%D0%B0%D1%86%D0%B8%D1%8F-230795426.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+ion-view.module-push.push-list.push-list-l1 ion-content .scroll {
+    background-color: #fff;
+    padding-top: 10px;
+    border-top-left-radius: 100% 50px;
+    border-top-right-radius: 100% 50px;
+}
+
+ion-view.module-push.push-list.push-list-l1 ion-content .scroll:before {
+    content: "Ada info menarik nih? Yuk, kepoin!";
+    display: block;
+    padding: 12px;
+}
 
 ion-view.module-push.push-list.push-list-l1 .list ion-item.item-custom.item.item-avatar.item-avatar-square {
     margin: 5px 5%;
@@ -3216,169 +3292,28 @@ ion-view[state="event-list"] .list:nth-child(n+3)>div {
     background: linear-gradient(135deg, rgba(249, 191, 0, 1) 30%, rgba(37, 54, 130, 1) 30%, rgba(37, 54, 130, 1) 60%, rgba(249, 191, 0, 1) 60%);
 }
 
-
-/* 
-ion-view[state="event-list"] .list:nth-child(3)>div div:nth-child(3) {
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: column;
-    min-width: 75% !important;
-    border: 0;
-    border-radius: 10px;
-    margin: 10px;
-    background-repeat: no-repeat !important;
-    padding: 10px !important;
-    overflow: hidden;
-    background: #C33764;
-    background-image: url("https://subsystem.indihome.co.id/uploads/banner/IH-x-Halo-Homepage_Desktop_(1650x686)_D.jpg");
-    background-position: center;
-    background-size: cover;
-    height: 130px;
+ion-view[state="event-list"] ion-content .scroll {
+    background-color: #fff;
+    padding-top: 10px;
+    border-top-left-radius: 100% 50px;
+    border-top-right-radius: 100% 50px;
 }
 
-ion-view[state="event-list"] .list:nth-child(3)>div div:nth-child(2) {
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: column;
-    min-width: 75% !important;
-    border: 0;
-    border-radius: 10px;
-    margin: 10px;
-    background-repeat: no-repeat !important;
-    padding: 10px !important;
-    overflow: hidden;
-    background: #C33764;
-    background-image: url("https://subsystem.indihome.co.id/uploads/banner/Disney_Web_Desktop_Home_1650px_x_686px_D.jpg");
-    background-position: center;
-    background-size: cover;
-    height: 130px;
+ion-view[state="event-list"] ion-content:before {
+    content: " ";
+    display: block;
+    height: 150px;
+    background-image: url(https://img.freepik.com/free-vector/businessman-planning-events-deadlines-agenda_74855-6274.jpg?w=2000);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
-ion-view[state="event-list"] .list:nth-child(3)>div div:last-child {
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: column;
-    min-width: 75% !important;
-    border: 0;
-    border-radius: 10px;
-    margin: 10px;
-    background-repeat: no-repeat !important;
-    padding: 10px !important;
-    overflow: hidden;
-    background: #C33764;
-    background-image: url("https://subsystem.indihome.co.id/uploads/banner/Gamer_Web_Dekstop_New_V1Homepage_(1650x686)_D.jpg");
-    background-position: center;
-    background-size: cover;
-    height: 130px;
+ion-view[state="event-list"] ion-content .scroll:before {
+    content: "List Virtual Even yang akan datang. Yuk, pantau terus! Siapa tahu kamu bisa mengambil bagian di dalamnya.";
+    display: block;
+    padding: 0 20px 20px 20px;
 }
-
-ion-view[state="event-list"] .list:nth-child(4)>div div:nth-child(3) {
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: column;
-    min-width: 75% !important;
-    border: 0;
-    border-radius: 10px;
-    margin: 10px;
-    background-repeat: no-repeat !important;
-    padding: 10px !important;
-    overflow: hidden;
-    background: #C33764;
-    background-image: url("https://i.ytimg.com/vi/i4SshpWEgtk/maxresdefault.jpg");
-    background-position: center;
-    background-size: cover;
-    height: 130px;
-}
-
-ion-view[state="event-list"] .list:nth-child(4)>div div:nth-child(2) {
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: column;
-    min-width: 75% !important;
-    border: 0;
-    border-radius: 10px;
-    margin: 10px;
-    background-repeat: no-repeat !important;
-    padding: 10px !important;
-    overflow: hidden;
-    background: #C33764;
-    background-image: url("https://i.ytimg.com/vi/4ZUc-uQwM9k/maxresdefault.jpg");
-    background-position: center;
-    background-size: cover;
-    height: 130px;
-}
-
-ion-view[state="event-list"] .list:nth-child(4)>div div:last-child {
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: column;
-    min-width: 75% !important;
-    border: 0;
-    border-radius: 10px;
-    margin: 10px;
-    background-repeat: no-repeat !important;
-    padding: 10px !important;
-    overflow: hidden;
-    background: #C33764;
-    background-image: url("https://i.ytimg.com/vi/kXoVa7SaCaI/maxresdefault.jpg");
-    background-position: center;
-    background-size: cover;
-    height: 130px;
-}
-
-ion-view[state="event-list"] .list:nth-child(5)>div div:nth-child(3) {
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: column;
-    min-width: 75% !important;
-    border: 0;
-    border-radius: 10px;
-    margin: 10px;
-    background-repeat: no-repeat !important;
-    padding: 10px !important;
-    overflow: hidden;
-    background: #C33764;
-    background-image: url("https://subsystem.indihome.co.id/uploads/banner/New_Promo_Paket_Digital_Web_Dekstopbanner_homepage_1650x686_D.jpg");
-    background-position: center;
-    background-size: cover;
-    height: 130px;
-}
-
-ion-view[state="event-list"] .list:nth-child(5)>div div:nth-child(2) {
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: column;
-    min-width: 75% !important;
-    border: 0;
-    border-radius: 10px;
-    margin: 10px;
-    background-repeat: no-repeat !important;
-    padding: 10px !important;
-    overflow: hidden;
-    background: #C33764;
-    background-image: url("https://subsystem.indihome.co.id/uploads/banner/murid_-_terbaik_-_1650_x_686_D.jpg");
-    background-position: center;
-    background-size: cover;
-    height: 130px;
-}
-
-ion-view[state="event-list"] .list:nth-child(5)>div div:last-child {
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: column;
-    min-width: 75% !important;
-    border: 0;
-    border-radius: 10px;
-    margin: 10px;
-    background-repeat: no-repeat !important;
-    padding: 10px !important;
-    overflow: hidden;
-    background: #C33764;
-    background-image: url("https://subsystem.indihome.co.id/uploads/banner/Banner_Jumlah_Koneksi_Web_Desktop_-_Home_1680x686_D.png");
-    background-position: center;
-    background-size: cover;
-    height: 130px;
-} */
 
 ion-view[state="event-list"] .list>div div:nth-child(n+2) {
     justify-content: flex-start;
@@ -3541,17 +3476,11 @@ ion-view[state="event-view"] .list:after {
     order: 100;
 }
 
-ion-view[state="event-view"] .list>div:nth-child(9) i,
-ion-view[state="event-view"] .list>div:nth-child(10) i,
-ion-view[state="event-view"] .list>div:nth-child(11) i,
-ion-view[state="event-view"] .list>div:nth-child(12) i {
+ion-view[state="event-view"] .list>div:nth-child(n+9) i {
     color: #fff;
 }
 
-ion-view[state="event-view"] .list>div:nth-child(9),
-ion-view[state="event-view"] .list>div:nth-child(10),
-ion-view[state="event-view"] .list>div:nth-child(11),
-ion-view[state="event-view"] .list>div:nth-child(12) {
+ion-view[state="event-view"] .list>div:nth-child(n+9) {
     order: 5;
     background-color: #f9bf00;
     width: 94%;
@@ -3563,11 +3492,6 @@ ion-view[state="event-view"] .list>div:nth-child(12) {
 ion-view[state="event-view"] .list>div:nth-child(7),
 ion-view[state="event-view"] .list>div:nth-child(8) {
     order: 4;
-}
-
-ion-view[state="event-view"] .list>div:nth-child(3),
-ion-view[state="event-view"] .list>div:nth-child(5) {
-    order: 3;
 }
 
 ion-view[state="event-view"] .list>div:nth-child(4),
@@ -3597,12 +3521,6 @@ ion-view[state="event-view"] .list>div:nth-child(1) p.ng-binding {
     display: none;
 }
 
-ion-view[state="event-view"] .list>div:nth-child(3) {
-    position: fixed;
-    left: 0;
-    background-color: #fff;
-}
-
 ion-view[state="event-view"] .list>div:nth-child(5) {
     position: fixed;
     right: 0;
@@ -3619,7 +3537,7 @@ ion-view[state="event-view"] .list>div:nth-child(5) {
     margin: 0;
 }
 
-on-view[state="event-view"] .list>div:nth-child(8) br {
+ion-view[state="event-view"] .list>div:nth-child(8) br {
     display: none !important;
 }
 
@@ -3639,17 +3557,11 @@ ion-view[state="event-view"] .list>div:nth-child(7) h2 {
 ion-view[state="event-view"] .list>div:nth-child(3) {
     position: fixed;
     left: 0;
-    background-color: #f9bf00;
     color: #fff;
-    padding: 5px 20px;
-    height: 30px;
-    width: 49%;
-    margin-left: 2%;
-    border-radius: 5px 0 0 5px;
-}
-
-ion-view[state="event-view"] .list>div:nth-child(3) h2 {
-    color: #253682;
+    padding: 0;
+    width: 42px;
+    margin-left: 3px;
+    top: 20px;
 }
 
 ion-view[state="event-view"] .list>div:nth-child(5) {
@@ -3658,18 +3570,38 @@ ion-view[state="event-view"] .list>div:nth-child(5) {
     display: flex;
     justify-content: center;
     align-items: center;
-    clip-path: polygon(100% 0, 95% 51%, 100% 100%, 0% 100%, 0 49%, 0% 0%);
-    background-color: #f9bf00;
+    background-color: transparent;
     color: #fff;
-    padding: 5px 20px;
-    height: 30px;
-    width: 48%;
-    margin-right: 2%;
+    padding: 0;
+    width: 50px;
+    margin-right: 3px;
+    top: 20px;
 }
 
-ion-view[state="event-view"] .list>div:nth-child(5) strong {
-    font-weight: normal !important;
+ion-view[state="event-view"] .list>div:nth-child(3) h2,
+ion-view[state="event-view"] .list>div:nth-child(5) h2 {
+    background-color: #f9bf00;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1.3px;
+    clip-path: polygon(100% 0, 100% 50%, 100% 100%, 50% 98%, 0 100%, 0% 0%);
+    writing-mode: vertical-rl;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+ion-view[state="event-view"] .list>div:nth-child(5) h2 strong {
     color: #253682;
+    font-size: 12px;
+    writing-mode: vertical-rl;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    letter-spacing: 1.3px;
 }
 
 
@@ -4490,19 +4422,23 @@ ion-view.module-folder2.folder2-layout1 .list:nth-child(4) a.item.item-custom.it
     border-radius: 10px !important;
 }
 
-ion-view[state="newswall-view"] .list:first-child.card [ng-if="item.subtitle"] {
-    z-index: 999;
-    position: fixed;
-    right: 0;
-    top: 15vh;
-    background-color: #f9bf00;
-    clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 5% 48%, 0% 0%);
-    padding: 5px 20px;
-    color: #fff;
+.loader:before {
+    height: 40px;
+    width: 40px;
+    margin: 0 auto;
+    content: " ";
+    display: block;
+    background-color: #fff;
+    background-image: url(https://justapp.id/member/halaman/unggah/article/fdb7122e421dbc66a147ed60a50cbe981474.gif);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    visibility: visible;
 }
 
-ion-view[state="newswall-view"] .list:first-child.card [ng-if="item.message"] {
-    order: 3;
+.loader {
+    font-size: 0 !important;
+    visibility: hidden !important;
 }
 
 .loader:after {
@@ -4512,7 +4448,8 @@ ion-view[state="newswall-view"] .list:first-child.card [ng-if="item.message"] {
     width: 90%;
     margin: auto;
     color: black;
-    height: auto;
+    height: 100px;
+    visibility: visible !important;
 }
 
 

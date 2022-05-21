@@ -1,0 +1,268 @@
+/* PADLOCK */
+.bar.bar-custom .title {
+    display: block;
+    text-align: center;
+}
+
+[state="padlock-view"] ion-content {
+    background-color: #fff !important;
+}
+
+[state="padlock-view"] ion-content .card.padlock {
+    max-height: 90vh;
+    display: flex;
+    overflow-x: auto;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    background-color: #ecf0f6;
+    overflow: scroll;
+    width: 100%;
+}
+
+[state="padlock-view"] ion-content .card.padlock:-webkit-scrollbar {
+    display: none;
+}
+
+[state="padlock-view"] ion-content .card.padlock div.item.item-text-wrap.item-custom,
+[state="padlock-view"] ion-content .card.padlock  div.item.item-body.item-custom.text-center {
+    min-width: 100% !important;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 !important;
+    height: 100vh;
+    line-height: 85vh;
+    background-color: #ecf0f6;
+    padding: 10px;
+    border: 0 !important;
+}
+
+
+/* slider pertama */
+[state="padlock-view"] ion-content .card.padlock>div.item.item-text-wrap.item-custom h2:before {
+    content: "Lorem ipsum, atau ringkasnya lipsum, adalah teks standar yang ditempatkan untuk mendemostrasikan elemen grafis atau presentasi visual seperti font, tipografi, dan tata letak.";
+    display: block;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.8;
+    text-align: center;
+    margin-top: 160px;
+}
+
+[state="padlock-view"] ion-content .card.padlock>div.item.item-text-wrap.item-custom h2 {
+    padding: 15px;
+    font-size: 0;
+    background-image: url(https://ensiklopediakesaguan.com/wp-content/uploads/2021/03/undraw_mobile_web_2g8b.svg);
+    background-size: contain;
+    background-position: center top;
+    background-repeat: no-repeat;
+    height: 150px;
+}
+
+[state="padlock-view"] ion-content .card.padlock>div.item.item-text-wrap.item-custom:before {
+    content: " ";
+    background-image: url(https://ensiklopediakesaguan.com/wp-content/uploads/2021/04/bg-header.svg);
+    background-size: contain;
+    background-position: center top;
+    background-repeat: no-repeat;
+    display: block;
+    height: 150px;
+    border-radius: 20px 20px 0 0;
+}
+
+
+/* slide kedua */
+[state="padlock-view"] ion-content .card.padlock div>.item.item-body.item-custom.text-center i {
+    background-image: url(https://ensiklopediakesaguan.com/wp-content/uploads/2021/03/undraw_mobile_web_2g8b.svg);
+    background-size: 60%;
+    background-position: center top;
+    background-repeat: no-repeat;
+    display: block;
+    height: 235px;
+    border-radius: 20px 20px 0 0;
+}
+
+[state="padlock-view"] ion-content .card.padlock>div.item.item-body.item-custom.text-center:after {
+    content: "Lorem ipsum, atau ringkasnya lipsum, adalah teks standar yang ditempatkan untuk mendemostrasikan elemen grafis atau presentasi visual seperti font, tipografi, dan tata letak.";
+    display: block;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.8;
+    text-align: center;
+}
+
+
+[state="padlock-view"] ion-content .card.padlock>div.item.item-body.item-custom.text-center:before {
+    content: " ";
+    background-image: url(https://ensiklopediakesaguan.com/wp-content/uploads/2021/04/bg-header.svg);
+    background-size: contain;
+    background-position: center top;
+    background-repeat: no-repeat;
+    display: block;
+    height: 150px;
+    border-radius: 20px 20px 0 0;
+}
+
+[state="padlock-view"] .card.padlock div:nth-child(3) {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    margin: 0 !important;
+    height: 85vh;
+    line-height: 100vh;
+    background-color: #ecf0f6;
+    padding: 10px !important;
+    border-radius: 30px;
+}
+
+[state="padlock-view"] .card.padlock div:nth-child(3):before {
+    content: " ";
+    background-image: url(https://ensiklopediakesaguan.com/wp-content/uploads/2021/04/bg-header.svg);
+    background-size: contain;
+    background-position: center top;
+    background-repeat: no-repeat;
+    display: block;
+    height: 150px;
+    border-radius: 20px 20px 0 0;
+}
+
+[state="padlock-view"] .card.padlock div:nth-child(3) .item.item-icon-left.item-custom i {
+    font-size: 0;
+}
+
+[state="padlock-view"] .card.padlock div:nth-child(3) .item.item-icon-left.item-custom {
+    background-color: transparent;
+}
+
+[state="padlock-view"] .card.padlock div:nth-child(3) [ng-if="description"] {
+    height: 200px;
+}
+
+[state="padlock-view"] .card.padlock div:nth-child(3) span.ng-binding {
+    max-height: 100px;
+    min-height: 100px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.8;
+}
+
+[state="padlock-view"] .card.padlock div:nth-child(3) .item.item-icon-left.item-custom.ng-binding {
+    height: 60px;
+    color: #fefefe !important;
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    background: rgb(212,94,119);
+    background: linear-gradient(90deg, rgba(212,94,119,1) 0%, rgba(110,65,117,1) 100%) !important;
+    width: 60% !important;
+    border-radius: 10px;
+    margin-left: 20%;
+    padding: 0 !important;
+    top: 9px !important;
+    text-transform: uppercase;
+    font-size: 0;
+    font-weight: bold;
+    margin-top: 0 !important;
+    box-shadow: 1px 1px 3px #1f1f1f;
+}
+
+
+[state="padlock-view"] .card.padlock div:nth-child(3) .item.item-icon-left.item-custom.ng-binding i {
+    display: none;
+}
+
+[state="padlock-view"] .card.padlock div:nth-child(3) .item.item-icon-left.item-custom {
+    padding: 0 !important;
+    left: 0;
+    right: 0;
+    text-align: center;
+    bottom: 0 !important;
+    border: 0 !important;
+    display: inline;
+}
+
+
+[state="padlock-view"] .card.padlock div:nth-child(3):before {
+     content: " ";
+    background-image: url(https://ensiklopediakesaguan.com/wp-content/uploads/2021/04/bg-header.svg);
+    background-size: contain;
+    background-position: center top;
+    background-repeat: no-repeat;
+    display: block;
+    height: 150px;
+    border-radius: 20px 20px 0 0;
+}
+
+[state="padlock-view"] ion-content .card.padlock>div.item.item-body.item-custom.text-center i {
+    padding: 15px;
+    margin-top: -42px !important;
+    background-image: url(https://ensiklopediakesaguan.com/wp-content/uploads/2021/03/undraw_Mobile_app_re_catg-1.svg);
+    background-size: 60%;
+    background-position: center top;
+    background-repeat: no-repeat;
+    display: block;
+    height: 250px;
+    border-radius: 20px 20px 0 0;
+    font-size: 0;
+}
+
+
+[state="padlock-view"] [ng-if="description"]:before {
+    content: " ";
+    background-image: url(https://ensiklopediakesaguan.com/wp-content/uploads/2021/03/undraw_my_app_re_gxtj.svg);
+    background-size: contain;
+    background-position: center top;
+    background-repeat: no-repeat;
+    display: block;
+    height: 150px;
+    border-radius: 20px 20px 0 0;
+    margin-bottom: 50px;
+}
+
+
+
+[state="padlock-view"] ion-content .card.padlock>div.item.item-text-wrap.item-custom h2.ng-binding:after {
+    content: " ";
+    display: block;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.8;
+    text-align: right;
+    margin-top: 50px;
+    color: #b3517e !important;
+    animation: changetext 10s infinite linear;
+}
+
+
+@keyframes changetext {
+    0% { content:"Geser ke Kanan"; }
+    20% { content:"Geser"; }
+    40% { content:"Geser ke Kanan"; }
+    60% { content: "Geser"; }
+    80% { content: "Geser ke Kanan"; }
+    100% { content: "Geser"; }
+}
+
+
+[state="padlock-view"] .card.padlock div:nth-child(3) .item.item-icon-left.item-custom.ng-binding:after {
+    content: " ";
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.8;
+    text-align: right;
+    margin-top: 50px;
+    color: #b3517e !important;
+    animation: changetext 10s infinite linear;
+}
+
+@keyframes changetext {
+    0% { content:"START"; }
+    20% { content:"MULAI"; }
+    40% { content:"LOGIN"; }
+    60% { content: "SIGUP"; }
+    80% { content: "DAFTAR"; }
+    100% { content: "GO"; }
+}

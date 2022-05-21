@@ -1,0 +1,435 @@
+
+/* CSS untuk SAKOLAWP */
+.site-footer {
+    background: #7ba1ea;
+    color: #000000;
+    font-size: 14px;
+}
+
+.site-footer .site-info {
+    position: relative;
+    text-align: center;
+    padding: 35px 0px;
+    background: #ecf0f6;
+    font-weight: 500;
+    color: #000000;
+}
+
+
+.skwp-user {
+		margin: 0;
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-transform: capitalize;
+    margin-bottom: 10px !important;
+    color: #7ba1ea;
+}
+
+@media only screen and (max-width: 768px) {
+.site-header,
+div#header-section {
+    display: none;
+}
+}
+
+
+.news-wrap .tab-nav-btn a {
+    width: 45%;
+    display: inline-block;
+    margin: 0px 1.5%;
+    padding: 10px 0;
+    text-align: center !important;
+}
+
+
+.dash-item.skwp-column.skwp-column-1 div#nav-tab {
+    width: 60%;
+		border: 0;
+}
+
+.skwp-menu-item a:hover {
+    background-color: #8bdbad;
+    color: #ffffff;
+}
+
+.skwp-menu-item.active a {
+    background-color: #ecf0f6;
+    color: #7ba1ea;
+    font-weight: bold;
+    width: 90%;
+    border-radius: 10px;
+    margin-left: 10%;
+}
+
+a:hover {
+    text-decoration-line: none;
+}
+
+@media only screen and (max-width: 768px) {
+.skwp-menu-btn {
+    top: 8px !important;
+    background: #fff;
+    box-shadow: none !important;
+}
+.welcome-wrap h1 {
+    font-size: 25px !important;
+}
+}
+
+.site-footer .site-info {
+    display: none;
+}
+
+.dashboard-inner h3 {
+    font-size: 24px !important;
+
+}
+
+/* EDIT PROFIL */
+.skwp-form-group textarea#editordatateacher {
+    width: 100%;
+}
+
+.exams-online-page.skwp-content-inner.skwp-clearfix form p {
+    display: inline-block;
+    width: 100%;
+}
+
+.exams-online-page.skwp-content-inner.skwp-clearfix form p label {
+    display: block;
+    width: 100%;
+}
+
+
+.exams-online-page.skwp-content-inner.skwp-clearfix form p input,.exams-online-page.skwp-content-inner.skwp-clearfix form p textarea {
+    width: 100%;
+    display: block;
+    border: 0;
+    box-shadow: none;
+    border-radius: 10px;
+}
+
+.input-group.skwp-form-control.mb-2 {
+		color: #7ba1ea;
+    font-weight: bold;
+    font-size: 24px;
+    border: 0;
+    padding-left: 0 !important;
+}
+
+
+.exams-online-page.skwp-content-inner.skwp-clearfix form  input#updateuser {
+    width: 50%;
+    padding: 20px !important;
+    margin-left: 25%;
+    background-color: #7ba1ea;
+    color: #fff;
+    font-size: 16px;
+}
+
+/* kolom cari - Akun Saya */
+div#tableini_filter label input {
+    border-radius: 10px;
+    box-shadow: none;
+}
+
+/* pilih */
+div#tableini_length label {
+    padding-top: 20px !important;
+}
+
+div#tableini_length label select {
+		padding-top: 10px;
+    border-radius: 10px;
+    border: 0;
+    background-color: #f2f2f2;
+    margin-top: -10px;
+}
+
+div#tableini_paginate a#tableini_previous {
+    border: 0;
+    background: #f2f2f2;
+    border-radius: 10px;
+}
+div#tableini_paginate span {
+	color: #fff;
+}
+
+a#tableini_next,
+a#tableini_next.paginate_button.next.disabled {
+    border: 0;
+    background: #f2f2f2;
+    border-radius: 10px;
+}
+
+div#tableini_paginate span a {
+    border: 0;
+    font-weight: bold;
+    font-size: 18px !IMPORTANT;
+    color: red !important;
+    background: transparent;
+}
+
+
+/* Aturan Kehadiran */
+.skwp-column.skwp-column-4 .form-group input.single-daterange.form-control {
+    border: 0;
+    border-radius: 5px;
+    box-shadow: none;
+    color: #7ba1eb;
+    font-weight: bold;
+}
+
+button.btn.btn-rounded.btn-success.btn-upper.skwp-btn.skwp-mt-20 {
+    background: #7ba1eb;
+    border: 0;
+}
+
+.skwp-column.skwp-column-4 .form-group select#class_holder_spe,
+.skwp-column.skwp-column-4 .form-group select#section_holder_spe,
+select#class_holder_spe,
+select#month,select#section_holder_spe,select.skwp-form-control{
+    color: #7ba1eb;
+    background: #f2f2f2;
+    border: 0;
+}
+
+
+.skwp-page-title h5 span.skwp-subtitle {
+    display: none;
+}
+
+.skwp-tab-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-bottom: 0;
+}
+
+.skwp-tab-menu ul li {
+    margin: 0;
+    border-radius: 5px;
+}
+
+li.skwp-tab-items {
+    background-color: #f2f2f2;
+}
+
+
+.skwp-page-title.no-border h5,
+.skwp-page-title h5 {
+    font-size: 22px;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+
+.btn-sm.btn-primary, .btn.btn-primary.skwp-btn {
+    background-color: #7ba1ea;
+    border: 0;
+    color: #ffffff;
+}
+
+table#tableini th {
+    border: 0;
+    font-size: 12px;
+    background-color: #7ba1ea;
+    padding: 10px;
+    text-align: left;
+    color: #fff;
+}
+
+table#tableini th:first-child {
+    border-radius: 5px 0 0 5px;
+}
+
+table#tableini th:last-child {
+    border-radius: 0 5px 5px 0;
+}
+
+/* HALAMAN LOGIN */
+form#sakolawp_login_form h4.sakolawp_header:before {
+    content: ".";
+    display: block;
+    width: 100%;
+    background-image: url(https://themes.network/education-pro/wp-content/uploads/sites/10/2020/09/ep_right.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 150px;
+}
+
+form#sakolawp_login_form h4.sakolawp_header {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+form#sakolawp_login_form h4.sakolawp_header:after {
+    content: "Silakan login menggunakan username dan kata sandi yang diperoleh dari admin sekolah Anda.";
+    font-weight: normal;
+    display: block;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 20px 0;
+}
+
+
+.sakolawp_user_form .swkp-usr-form {
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    border: 0;
+    box-shadow: none;
+    background: #ecf0f6;
+}
+
+#sakolawp_login_submit {
+    background-color: #7ba1eb;
+    width: 60%;
+    max-width: 60%;
+    border-radius: 30px;
+    padding: 15px;
+    outline: none;
+    text-decoration: none;
+    margin-left: 20%;
+    margin-top: 20px;
+}
+
+/* button buat ujian baru */
+button.btn.btn-primary.btn-rounded.btn-upper {
+    background-color: #7ba1eb;
+    color: #fff;
+    border: 0;
+    border-radius: 10px;
+    text-transform: capitalize;
+}
+
+/* Pekerjaan rumah baru */
+form#myForm .skwp-form-group input.skwp-form-control,
+form#myForm .skwp-form-group textarea#editordatateacher,
+textarea.skwp-form-control {
+		box-shadow: none;
+    border: 0;
+    border-radius: 5px;
+}
+
+/* buat soal baru */
+.add-new-questions.questions-table.skwp-content-inner.skwp-clearfix .skwp-row {
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.add-new-questions.questions-table.skwp-content-inner.skwp-clearfix .skwp-row .skwp-form-group.skwp-column.skwp-column-2 {
+    display: inline-block;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100% !important;
+    flex: 0 0 100% !important;
+}
+
+.add-new-questions.questions-table.skwp-content-inner.skwp-clearfix .skwp-row .skwp-form-group.skwp-column.skwp-column-2 label {
+    width: 100%;
+    display: block;
+		margin-top: 10px
+}
+
+.add-new-questions.questions-table.skwp-content-inner.skwp-clearfix .skwp-row .skwp-form-group.skwp-column.skwp-column-2 textarea {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: none;
+    border: 0;
+}
+
+
+.btn-sm.btn-success, .btn.btn-success.skwp-btn {
+    background-color: #7ba1ea;
+    color: #ffffff;
+    border: 0;
+    padding: 15px;
+}
+
+
+.input-group-addon {
+    background-color: #7ba1ea;
+    border: 1px solid rgb(123 161 234);
+		box-shadow: none;
+}
+
+.form-control {
+    border: 1px solid rgb(123 161 234);
+		box-shadow: none;
+}
+
+
+div#exampleModal1 .form-group label {
+    width: 100%;
+    display: block;
+}
+div#exampleModal1 .form-group input, div#exampleModal1 .form-group textarea {
+    box-shadow: none;
+    width: 100%;
+}
+
+.skwp-column.skwp-column-2 input.form-control {
+    box-shadow: none;
+    border: 1px solid #7ba1ea;
+}
+
+
+
+body {
+	background-color: #7ba1ea;
+/*
+	background-image: url(https://generatepress.com/wp-content/themes/generatepress_official/images/bg.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat; */
+}
+
+
+/* HALAMAN REGISTRASI */
+form#sakolawp_registration_form input,
+form#sakolawp_registration_form select {
+    box-shadow: none !important;
+    border: 1px solid #7ba1ea;
+}
+
+.skwp-container {
+    max-width: 100%;
+    margin: auto;
+}
+
+.main-sakolawp-wrap {
+    padding: 0;
+}
+
+
+.site {
+    background: #7ba1ea;
+    position: relative;
+}
+
+.right-sidebar .content-area {
+    padding-right: 39px;
+    border-right: 0;
+    width: 60%;
+    margin-left: 20%;
+}
+
+body.page-template-default.page.page-id-7.logged-in.elementor-default.elementor-kit-186.body-desktop div#primary,
+body.blog.logged-in.elementor-default.elementor-kit-186.body-desktop div#primary,
+body.page-template-default.page.page-id-8.logged-in.elementor-default.elementor-kit-186.body-desktop div#primary,
+body.error404.logged-in.is-customize-preview.elementor-default.elementor-kit-186.body-desktop.customize-partial-edit-shortcuts-shown div#primary,
+body.post-template-default.single.single-post.postid-1.single-format-standard.logged-in.is-customize-preview.elementor-default.elementor-kit-186.body-desktop.customize-partial-edit-shortcuts-shown div#primary,
+body.post-template-default.single.single-post.postid-1.single-format-standard.logged-in.elementor-default.elementor-kit-186.body-desktop div#primary {
+    background-color: #fff;
+    padding: 50px 20px;
+    border-radius: 10px;
+    width: 100%;
+    margin: 20px 0;
+}
+
+

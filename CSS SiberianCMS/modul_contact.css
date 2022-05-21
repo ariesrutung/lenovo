@@ -1,0 +1,189 @@
+/* CONTACT */
+ion-view.contact-view ion-content {
+    background-color: #e3edf6 !important;
+    border-radius: 40px 40px 0 0;
+    margin-top: 5px;
+    border: 0;
+}
+
+ion-view.contact-view ion-content .list.card {
+    box-shadow: none;
+    display: flex;
+    flex-direction: column;
+  	margin: -5px 0 0 0;
+  	border: 0;
+}
+
+.item.item-icon-left.item-custom i {
+    display: none;
+}
+
+.item.item-icon-left.item-custom h2 {
+	text-align: center;
+    width: 100%;
+    color: #0e7bc4;
+    text-transform: capitalize !important;
+}
+
+ion-view.contact-view ion-content .list.card div[ng-show="contact.name"] {
+    order: 3;
+    padding: 10px 0;
+    margin-top: -120px;
+    background-color: transparent;
+    z-index: 999;
+}
+
+ion-view.contact-view ion-content .list.card div.item.item-custom.text-center.ng-hide {
+	order: 1
+}
+
+ion-view.contact-view ion-content .list.card .item.item-image.item-custom {
+	order: 2;
+    background-image: url(https://generatepress.com/wp-content/themes/generatepress_official/images/bg.png);
+	background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+	height: 270px;
+  	border: 0;
+    background-color: #e3edf6;
+}
+
+ion-view.contact-view ion-content .list.card .item.item-image.item-custom img {
+    width: 100px;
+    margin: 40px auto 0 auto !important;
+    border-radius: 50%;
+    object-fit: cover;
+    height: 100px;
+    padding: 0;
+    left: 0;
+    right: 0;
+}
+
+ion-view.contact-view ion-content .list.card div[ng-show="contact.description"] {
+    order: 4 !important;
+    padding: 0 0 10px 0 !important;
+    background-color: transparent;
+}
+
+ion-view.contact-view ion-content .list.card div[ng-show="contact.description"] p {
+    text-align: center;
+    padding: 0;
+    font-weight: bold;
+}
+
+ion-view.contact-view ion-content .list.card div[ng-show="contact.street"] {
+	order: 5 !important;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ecf0f6;
+    width: 90%;
+    margin-left: 5%;
+    padding-bottom: 10px;
+    background-color: transparent;
+}
+
+/* PADDING */
+ion-view.contact-view ion-content .padding {
+  	padding: 0 0 50px 0;
+    color: #919191;
+}
+
+button.button.button-custom.item-icon-left.ng-binding.button-block.activated {
+    background: transparent;
+  	color: #0e7bc4;
+}
+
+ion-view.contact-view ion-content .padding button.button.button-custom.item-icon-left.ng-binding.button-block i {
+    margin-left: -35px;
+    color: #0e7bc4;
+	margin-top: 16px;
+    background-color: transparent;
+    border: 0;
+    color: #000;
+}
+
+ion-view.contact-view ion-content .padding button.button.button-custom.item-icon-left.ng-binding.button-block {
+    border: 0;
+    text-align: left;
+    margin-left: 40px;
+}
+
+/* tambah nomor HP */
+ion-view.contact-view ion-content i.icon.ion-ios-telephone-outline:after {
+    content: "0812458555";
+    margin-top: 15px;
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: 15px;
+}
+
+/* tambah email */
+ion-view.contact-view ion-content i.icon.ion-ios-email-outline:after {
+    content: "kuli@sublime.com";
+    margin-top: 15px;
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: 15px;
+}
+
+/* website */
+ion-view.contact-view ion-content i.icon.ion-ios-world-outline:after {
+    content: "ariesrutung.com";
+    margin-top: 15px;
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: 15px;
+}
+
+/* FACEBOOK */
+ion-view.contact-view ion-content .padding button:nth-child(4) {
+    background-color: #ecf0f6;
+    margin: 25px 5% 0 5% !important;
+    width: 90%;
+    height: 150px;
+  	color: #0e7bc4;
+  	font-weight: bold;
+  	font-size: 18px;
+	background-image: url(https://ensiklopediakesaguan.com/wp-content/uploads/2021/03/facebook.svg);
+    background-repeat: no-repeat;
+    background-size: 80px;
+    background-position: center right 20px;
+    margin-top: 40px !important;
+  	border-radius: 10px; 	
+    border: 1px solid #0e7bc4 !important;
+}
+
+ion-view.contact-view ion-content .padding button:nth-child(5) {
+    background-color: #ecf0f6;
+    margin: 25px 5% 0 5% !important;
+    width: 90%;
+    height: 150px;
+  	color: #0e7bc4;
+  	font-weight: bold;
+  	font-size: 0;
+	background-image: url(https://ensiklopediakesaguan.com/wp-content/uploads/2021/03/whatsapp.svg);
+    background-repeat: no-repeat;
+    background-size: 80px;
+    background-position: center right 20px;
+  	border-radius: 10px; 	
+    border: 1px solid #0e7bc4 !important;
+}
+
+ion-view.contact-view ion-content .padding button:nth-child(5):before {
+    padding: 0 !important;
+    margin: 0 !important;
+  	content: "WhatsApp";
+  	font-weight: bold;
+  	font-size: 18px;
+  	color: #0e7bc4;
+  	visibility: visible !important;
+}
+
+ion-view.contact-view ion-content .padding button:nth-child(4) i,
+ion-view.contact-view ion-content .padding button:nth-child(5) i {
+  	display: none;
+}

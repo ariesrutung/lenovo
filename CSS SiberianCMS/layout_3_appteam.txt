@@ -1,0 +1,285 @@
+ion-view[state="home"] {
+    background-image: none !important;
+    background-color: #f0ebe7 !important;
+}
+
+ion-view[state="home"]>ion-content:before {
+    content: " ";
+    display: block;
+    color: #f8e71d;
+    background-image: url(https://www.seimless.com/wp-content/uploads/2015/08/Header-Banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 180px;
+    top: 0vh !important;
+    width: 100% !important;
+    background-color: #f8e71d;
+    position: absolute;
+    z-index: -999;
+    border-bottom-left-radius: 100% 50px;
+    border-bottom-right-radius: 100% 50px;
+}
+
+div.new_slider {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 94% !important;
+    border-radius: 10px;
+    margin-left: 3%;
+    height: 25vh;
+    top: 11vh !important;
+    opacity: 1;
+    box-shadow: 0 1px 2px 0 #d0d0d0, 0 1px 3px 1px #cbcbcb;
+    position: absolute;
+    z-index: 999;
+    margin-top: 0 !important;
+}
+
+div#homepage_slider .slider-pager.hide {
+    display: inline !important;
+    top: 37vh;
+}
+
+div#homepage_slider span.slider-pager-page.active {
+    background-color: #f5851b;
+    width: 30px;
+    font-size: 0;
+    padding: 0;
+    height: 10px;
+    max-height: 10px;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+div#homepage_slider span.slider-pager-page {
+    background-color: #f8dfb4;
+    width: 15px;
+    font-size: 0;
+    padding: 0;
+    height: 10px;
+    max-height: 10px;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+.layout.l3 ion-content {
+    position: absolute;
+    width: 100%;
+    height: 57%;
+    padding-bottom: var(--safe-area-inset-bottom);
+    bottom: 0;
+    top: initial;
+}
+
+.layout.l3 ul {
+    padding-left: 0;
+    padding-top: 4px;
+}
+
+.layout.l3 li {
+    float: left;
+    width: 23%;
+    height: 100px;
+    margin: 5px 1%;
+}
+
+.layout.l3 ul li:nth-last-child(1):after {
+    content: ".";
+    padding-bottom: 100px;
+    display: block;
+    color: #fff;
+}
+
+
+/* MENU KE-8 - 1 */
+
+.layout.l3 li:nth-child(-n+8) .item.homepage-custom.border-custom {
+    border-radius: 10px !important;
+    background-color: #fff;
+    border: 0;
+    box-shadow: 0 1px 2px 0 #ecf0f6, 0 1px 3px 1px #ecf0f6;
+    width: 9vh;
+    height: 9vh;
+}
+
+.layout.l3 li p {
+    line-height: 20px;
+    height: 20px;
+    overflow: hidden;
+    font-size: 12px;
+    color: #000;
+    text-transform: capitalize;
+    white-space: normal;
+    margin-top: 5px;
+    width: 100%;
+}
+
+
+/* MENU KE-9 - 12 */
+
+.layout.l3 li:nth-child(n+9):nth-child(-n+12) {
+    border-radius: 10px !important;
+    background-color: #345289;
+    border: 0;
+    box-shadow: 0 1px 2px 0 #d0d0d0, 0 1px 3px 1px #cbcbcb;
+    float: left;
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.layout.l3 li:nth-child(9) {
+    background-image: url(https://i.imgur.com/AI0iA49.png);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.layout.l3 li:nth-child(10) {
+    background-image: url(https://i.imgur.com/LjdrqUX.png);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.layout.l3 li:nth-child(11) {
+    background-image: url(https://i.imgur.com/tq9Z1HP.png);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.layout.l3 li:nth-child(12) {
+    background-image: url(https://i.imgur.com/BwX8Axe.png);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.layout.l3 li:nth-child(n+9):nth-child(-n+12) .item.homepage-custom.border-custom {
+    display: none;
+}
+
+.layout.l3 li:nth-child(n+9):nth-child(-n+12) p {
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    text-align: left;
+    padding: 10px;
+    height: 100%;
+    background-color: #fff;
+    width: 60%;
+    border-radius: 10px;
+    top: 0 !important;
+    margin: 0 !important;
+    color: #f14c3a !important;
+    border: 1px solid #ecf0f6;
+    clip-path: polygon(0% 0%, 100% 0, 100% 50%, 75% 100%, 0% 100%);
+}
+
+
+/* text after p */
+
+.layout.l3 li:nth-child(9) p:after {
+    content: "Lorem ipsum, atau ringkasnya lipsum";
+    display: block;
+    width: 100%;
+    font-size: 12px;
+    font-weight: normal;
+    color: #345289;
+    margin: 15px 0;
+}
+
+.layout.l3 li:nth-child(10) p:after {
+    content: "Lorem ipsum, atau ringkasnya lipsum";
+    display: block;
+    width: 100%;
+    font-size: 12px;
+    font-weight: normal;
+    color: #345289;
+    margin: 15px 0;
+}
+
+.layout.l3 li:nth-child(11) p:after {
+    content: "Lorem ipsum, atau ringkasnya lipsum";
+    display: block;
+    width: 100%;
+    font-size: 12px;
+    font-weight: normal;
+    color: #345289;
+    margin: 15px 0;
+}
+
+.layout.l3 li:nth-child(12) p:after {
+    content: "Lorem ipsum, atau ringkasnya lipsum";
+    display: block;
+    width: 100%;
+    font-size: 12px;
+    font-weight: normal;
+    color: #345289;
+    margin: 15px 0;
+}
+
+
+/* MENU KE-13 dst. */
+
+.layout.l3 li:nth-child(n+13) {
+    border-radius: 10px !important;
+    background-color: #345289;
+    border: 0;
+    box-shadow: 0 1px 2px 0 #d0d0d0, 0 1px 3px 1px #cbcbcb;
+    float: left;
+    width: 96% !important;
+    height: 150px;
+    margin: 20px 2% 5px 2%;
+    background-image: url(https://s.tmimgcdn.com/scr/1200x750/198000/couple-cooking-illustration-concept-vector_198039-original.jpg);
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+}
+
+.layout.l3 li:nth-child(n+13) .item.homepage-custom.border-custom {
+    display: none;
+}
+
+.layout.l3 li:nth-child(n+13) p {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    border-radius: 10px;
+    top: 0 !important;
+    margin: 0 !important;
+    color: #fff !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    min-height: 100%;
+    max-height: 100%;
+}
+
+.layout.l3 li:nth-child(n+13) p:after {
+    content: "More";
+    display: block;
+    margin: 0;
+    background-color: #345289;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+    padding: 5px;
+    color: #fff;
+    font-weight: normal;
+    font-size: 12px;
+    clip-path: polygon(0% 0%, 90% 0, 100% 50%, 90% 100%, 0% 100%);
+}

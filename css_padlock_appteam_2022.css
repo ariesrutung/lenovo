@@ -1,0 +1,134 @@
+/* PADLOCK START HERE */
+
+ion-view.padlock-view {
+    z-index: 999 !important;
+}
+
+ion-view.padlock-view ion-content {
+    z-index: 999 !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    padding-top: 45px !important;
+    background-color: #fff !important;
+}
+
+ion-view.padlock-view ion-content .card.padlock {
+    padding: 20px !important;
+    margin: 0 !important;
+    border-radius: 50px !important;
+    background: #fff;
+    padding-top: 25px !important;
+    box-shadow: none;
+}
+
+ion-view.padlock-view ion-content .card.padlock .item.item-custom {
+    background-color: transparent;
+}
+
+ion-view.padlock-view ion-content .card.padlock .item.item-custom h2.ng-binding:after {
+    content: "Your app tagline or short description goes here. You can customize by your own text.";
+    display: block;
+    font-size: 14px;
+    line-height: 1.8;
+    color: #000;
+    padding-top: 20px;
+    text-align: left;
+}
+
+ion-view.padlock-view ion-content .card.padlock .item.item-custom h2.ng-binding {
+    font-size: 0;
+}
+
+ion-view.padlock-view ion-content .card.padlock .item.item-custom h2.ng-binding:before {
+    content: "Your App Name";
+    display: block;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: capitalize !important;
+    padding-top: 20px;
+    color: #253682;
+    text-align: left;
+}
+
+ion-view.padlock-view ion-content .card.padlock .item.item-body.item-custom.text-center {
+    background-image: url(https://vanila-community.imgix.net/threads/draft/6f361f4f-1457-4836-82d6-8493ee5c34d0-1_8QgPF5tXwo5NqhvXXncwSQ.png?expires=1645228800000&ixlib=js-1.2.1&s=af248e2…);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 250px;
+}
+
+ion-view.padlock-view ion-content .card.padlock .item.item-body.item-custom.text-center i.icon.ion-locked {
+    display: none;
+}
+
+ion-view.padlock-view ion-content .card.padlock .item.item-icon-left.item-custom[ng-if="description"] {
+    margin: 0 10px;
+    padding: 10px 10px 10px 40px;
+    text-align: left;
+    background-image: url(https://unpkg.com/ionicons@5.5.2/dist/svg/alert-circle-outline.svg);
+    background-position: center left 5px;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    color: #0f5132;
+    background-color: #d1e7dd;
+    border: 0;
+}
+
+ion-view.padlock-view ion-content .card.padlock .item.item-icon-left.item-custom {
+    padding: 15px;
+    text-align: center;
+}
+
+ion-view.padlock-view ion-content .card.padlock .item.item-icon-left.item-custom i {
+    display: none;
+    padding: 10px 0 !important;
+}
+
+ion-view.padlock-view ion-content .card.padlock .item.item-icon-left.item-custom span.ng-binding:before {
+    content: "Your message to the unregistered user goes here. It is can be something like, Please create an account to unlock all the app features.";
+    font-size: 13px;
+    color: #000 !important;
+}
+
+ion-view.padlock-view ion-content .card.padlock .item.item-icon-left.item-custom span.ng-binding {
+    font-size: 0;
+}
+
+ion-view.padlock-view ion-content .card.padlock .item.item-icon-left.item-custom.ng-binding:after {
+    content: "START NOW";
+    font-size: 16px;
+    animation: kedip 2s linear infinite alternate both;
+}
+
+ion-view.padlock-view ion-content .card.padlock .item.item-icon-left.item-custom.ng-binding {
+    margin: 10% 5%;
+    font-size: 0;
+    border-radius: 15px;
+    width: 90%;
+    color: #323232;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 0;
+    background-color: #fabf01;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes kedip {
+    0% {
+        color: #fff;
+    }
+    50% {
+        color: #253682;
+    }
+    100% {
+        color: #000;
+    }
+}
+
+
+/* PADLOCK END HERE */

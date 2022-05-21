@@ -1,0 +1,43 @@
+ion-view.xdelivery.xdelivery-home .item.item-custom.xdelivery-category-item.category_grid.remove-border .row {
+    margin-top: 20px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    width: 100% !important;
+    -webkit-overflow-scrolling: touch !important;
+}
+
+ion-view.xdelivery.xdelivery-home .item.item-custom.xdelivery-category-item.category_grid.remove-border .row:-webkit-scrollbar {
+    display: none;
+}
+
+ion-view.xdelivery.xdelivery-home .item.item-custom.xdelivery-category-item.category_grid.remove-border .row .col.col-33.text-center {
+    display: inline-block;
+    width: 60% !important;
+    max-width: 60%;
+    background-color: #ecf0f6;
+    margin: 10px 2%;
+    flex: 0 0 60%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+
+ion-view.xdelivery.xdelivery-home .item.item-custom.xdelivery-category-item.category_grid.remove-border img.xdelivery-category-grid-img {
+	width: 55px !important;
+    border-radius: 10px;
+    margin: 2px auto;
+    display: block;
+}
+
+
+ion-view.xdelivery.xdelivery-home .item.item-custom.xdelivery-category-item.category_grid.remove-border p.text-center.category_name.ng-binding {
+	display: block;
+}
+
+
+
+.radio-content .item-content.disable-pointer-events p.ng-binding {
+    white-space: normal;
+}

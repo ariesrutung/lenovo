@@ -1,0 +1,1467 @@
+$bg-color: #f9a6d9;
+$trans: transparent;
+$huruf: #000;
+$button-font: #3498db;
+$login-bg: url(https://image.flaticon.com/icons/png/512/1828/1828466.png);
+$padlock-bg: url(https://image.flaticon.com/icons/png/512/2521/2521818.png);
+$header-icon: #fff;
+$header-icon-color: #ecf0f6;
+$header-bg-color: #d5b11d;
+$sidebar-color: #d5b11d;
+$font-color: #000;
+$transparent-color: transparent;
+$link: #fc0;
+$account-button: #ffcc00;
+$bg-image:  url(https://ensiklopediakesaguan.com/wp-content/uploads/2021/05/dealer_1.png);
+$login-img: url(https://ensiklopediakesaguan.com/wp-content/uploads/2021/05/log-out.png);
+
+
+/* HOMEPAGE MENU */
+.always .layout.l1 .tabs {
+    box-shadow: 0 0 15px #f890d0;
+    background-color: #f9a6d9 !important;
+}
+
+
+/* LAYOUT TAXI */
+
+.ion-navicon-round:before {
+    font-size: 40px !important;
+    color: transparent !important;
+}
+
+i.icon.ion-navicon-round {
+    background: url(https://justapp.id/assets/images/toggler_icon_white.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.layout.layout_taxi .taxi-header {
+    width: 100%;
+    background: url(https://assets.shopfront.envato-static.com/assets/images/bg-page-section.png) !important;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    padding-top: 140px;
+    background-color: #f9a6d9 !important;
+}
+
+.taxi-header .row:nth-child(1) {
+    background-color: #ecf0f6;
+    width: 80%;
+    border-radius: 10px;
+    margin-left: 10%;
+    margin-bottom: -50px;
+    box-shadow: 0 3px 6px 0 #bdbdbd;
+    padding-bottom: 40px;
+    position: relative;
+    z-index: 999;
+    background-size: contain;
+    background-image: url(https://justapp.id/assets/images/css-04.svg);
+    background-position: top left;
+    background-repeat: no-repeat;
+}
+
+div[ng-if="isLoggedIn"].row:nth-child(2) {
+    margin-top: 10px;
+    background-color: transparent;
+    position: relative;
+    z-index: 999;
+}
+
+.layout_taxi .taxi-header .taxi-avatar-wrapper {
+    height: 25vw;
+    width: 25vw;
+    border: 3px solid #f7abda;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+}
+
+ul.items.homepage-custom {
+    margin-top: -55px;
+    display: block;
+    width: 100%;
+    padding-top: 90px;
+    border-top-left-radius: 50% 10% !important;
+    border-top-right-radius: 50% 10% !important;
+}
+
+.homepage-custom .border-custom {
+    border-color: rgba(168, 168, 237, 0);
+    display: inline-block;
+    width: 33.33%;
+}
+
+.layout_taxi .line-box {
+    display: block;
+}
+
+.layout_taxi .lines {
+    height: 23vw;
+}
+
+
+.homepage-custom .border-custom span.line-icon-box img {
+    margin-left: 0 !important;
+    width: 50px;
+    height: 50px;
+    background-color: #ecf0f6;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.homepage-custom .border-custom span {
+    font-weight: normal;
+    font-variant: normal;
+    font-size: 12px;
+    margin: 5px auto !important;
+}
+
+.layout_taxi .line-title {
+    line-height: 6vw;
+    margin: 0 auto !important;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+/* AKHIR LAYOUT TAXI */
+
+/* HEADER */
+ion-header-bar.bar-custom.bar.bar-header {
+    height: 0 !important;
+    background-color: $trans !important;
+}
+
+.bar.bar-custom .title {
+    display: none !important;
+}
+
+ion-header-bar.bar-custom.bar.bar-header i {
+    color: $header-icon;
+}
+
+/* PADLCOK */
+ion-view.padlock-view ion-content,
+ion-modal-view.customer-view.customer-layout1 ion-content {
+    background-color: $bg-color !important;
+    top: 0 !important;
+    padding-top: 70px !important;
+    max-height: 100% !important;
+    height: 100% !important;
+    overflow: hidden;
+}
+
+ion-view.padlock-view ion-content .card.padlock {
+    box-shadow: none;
+}
+
+ion-view.padlock-view ion-content .item.item-text-wrap.item-custom {
+    background: $trans;
+    border: 0;
+    color: $huruf;
+}
+
+ion-view.padlock-view ion-content .item.item-text-wrap.item-custom h2:after {
+    content: "Do it, get prize";
+    font-size: 16px;
+    text-align: center;
+    display: block;
+    font-style: italic;
+}
+
+ion-view.padlock-view ion-content .item.item-text-wrap.item-custom h2 {
+    font-size: 0;
+}
+
+/* icon user padlock */
+ion-view.padlock-view ion-content .item.item-body.item-custom.text-center {
+    background-color: $trans;
+    background-image: url(https://image.flaticon.com/icons/png/512/2521/2521818.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 200px !important;
+  margin-top: 50px;
+}
+
+ion-view.padlock-view ion-content .item.item-body.item-custom.text-center i {
+    font-size: 0;
+}
+
+/* button login padlock */
+ion-view.padlock-view ion-content .item.item-icon-left.item-custom.ng-binding:after {
+    content: "Login";
+    font-size: 16px;
+}
+
+ion-view.padlock-view ion-content .item.item-icon-left.item-custom.ng-binding i {
+    display: none;
+}
+
+ion-view.padlock-view ion-content .item.item-icon-left.item-custom.ng-binding {
+    width: 50%;
+    margin-top: 50px;
+    margin-left: 25%;
+    text-align: center;
+    border-radius: 10px;
+    color: $button-font;
+    font-size: 0;
+    padding: 10px 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://image.flaticon.com/icons/png/512/1828/1828466.png);
+    background-position: center right 25px;
+    background-size: 25px;
+    background-repeat: no-repeat;
+}
+
+
+/* MY ACCOUNT */
+/* Login Page */
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_login_form"] {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_login_form"] .list:before {
+    content: "LOGIN";
+    margin-top: 50px;
+    display: block;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 30px 0;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_login_form"]:before {
+    content: " ";
+    background-color: $trans;
+    background-image: url(https://image.flaticon.com/icons/png/512/2521/2521818.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100px !important;
+    display: block;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_login_form"] label.item.item-input.item-custom {
+    padding: 20px 0;
+    text-align: left;
+    display: block;
+    padding: 5px 15px 10px 15px !important;
+    background-color: transparent !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_login_form"] .list {
+    width: 80%;
+    margin-left: 10%;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_login_form"] label.item.item-input.item-custom i.icon.ion-ios-person,
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_login_form"] label.item.item-input.item-custom i.icon.ion-locked {
+    font-size: 0 !important;
+}
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_login_form"] label.item.item-input.item-custom i.icon.ion-ios-person:after {
+    content: "Email";
+    font-size: 16px;
+    top: 0;
+    margin-top: 0;
+    text-align: left !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_login_form"] label.item.item-input.item-custom i.icon.ion-locked:after {
+    content: "Kata Sandi";
+    font-size: 16px;
+    top: 0;
+    margin-top: 0;
+    text-align: left !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_login_form"] label.item.item-input.item-custom input {
+    background-color: #ecf0f6;
+    padding: 15px;
+    border-radius: 5px;
+    height: 50px;
+}
+
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_login_form"] label.item.item-input.item-custom:nth-child(2) {
+    padding: 20px 0;
+    text-align: left;
+    display: block;
+    padding-top: 0;
+    width: 98%;
+    background-color: transparent;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_login_form"] label.item.item-input.item-custom input {
+    background-color: #ecf0f6;
+    padding: 15px;
+    border-radius: 5px;
+    height: 50px;
+    width: 100% !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_login_form"] .list .item.item-custom {
+    border: 0 !important;
+    background-color: #fff !important;
+    color: #000 !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_login_form"] label.item.item-input.item-custom:nth-child(1) {
+    padding: 20px 0;
+    text-align: left;
+    display: block;
+    border-radius: 10px 10px 0 0 !important;
+    width: 98%;
+    background-color: transparent;
+}
+
+/* placeholder */
+[ng-show="display_login_form"] .item.item-input.item-custom input::-webkit-input-placeholder {
+   color: transparent !important;
+}
+
+[ng-show="display_login_form"] .item.item-input.item-custom input:-moz-placeholder { /* Firefox 18- */
+   color: transparent !important;
+}
+
+[ng-show="display_login_form"] .item.item-input.item-custom input::-moz-placeholder {  /* Firefox 19+ */
+   color: transparent !important;
+}
+
+[ng-show="display_login_form"] .item.item-input.item-custom input:-ms-input-placeholder {  
+   color: transparent !important;
+}
+/* placeholder */
+
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_login_form"] .padding.text-right span {
+    color: #3498db;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_login_form"] .padding.text-right {
+    width: 80%;
+    margin-left: 10%;
+    padding-top: 0;
+    color: #fff !important;
+    font-weight: normal !important;
+    letter-spacing: 1px;
+    padding-right: 0;
+    text-align: center;
+    font-size: 12px;
+    background-color: #fff;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_login_form"] .button.button-positive-custom {
+    background-color: #3498db;
+    color: #fff !important;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    width: 88%;
+    border-radius: 5px;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-click="displayAccountForm()"] span:after {
+    content: "Buat Akun di Sini";
+    font-size: 16px;
+    color: #3498db;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-click="displayAccountForm()"]:before {
+    content: "Pengguna baru?";
+    font-size: 14px;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-click="displayAccountForm()"] span {
+    display: block;
+    font-size: 0;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-click="displayAccountForm()"] {
+    display: block;
+    font-size: 0;
+}
+
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_login_form"] div[ng-if="myAccount.settings.enable_registration"] {
+    padding-top: 50px;
+    background-color: #fff;
+    padding-bottom: 150px;
+    margin-top: 20px;
+    border-top-left-radius: 100% 30%;
+    border-top-right-radius: 100% 30%;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_login_form"]>div>div:nth-child(4) {
+    background-color: #fff;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_login_form"]>div>div:nth-child(1) {
+    order: 1;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_login_form"]>div>div:nth-child(2) {
+    order: 2;
+    margin-bottom: 0;
+    border-radius: 10px 10px 0 0 !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 !important;
+    background-color: #fff !important; 
+    width: 80% !important;
+    margin-left: 10% !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_login_form"]>div>div:nth-child(5) {
+    order: 5;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_login_form"]>div>div:nth-child(3) {
+    order: 4;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_login_form"]>div>div:nth-child(4) {
+    order: 3;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_login_form"]>div {
+    display: flex;
+    flex-direction: column;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_login_form"]>div>div:nth-child(4) {
+    background-color: #fff;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 0;
+}
+
+/* Account Setting */
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_settings"] {
+    width: 80%;
+    height: 50vh !important;
+    margin-top: 10vh;
+    margin-left: 10%;
+    background-color: #fff !important;
+    border-radius: 10px;
+    overflow: hidden;
+    max-height: 100vh;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_settings"] .list .item-divider.item-divider-custom {
+    background-color: transparent;
+    color: #000;
+    border: 0;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 2px dashed #f9a6d9;
+    padding-bottom: 15px;
+}
+
+/* Forgot Password */
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_forgot_password_form"] {
+    width: 100%;
+    background-color: #fff;
+    overflow: hidden;
+    border-radius: 10px;
+    height: 100% !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_forgot_password_form"] .padding.text-left:before {
+    content: "Lupa Kata Sandi";
+    font-size: 24px;
+    padding: 10px 0 20px 0;
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_forgot_password_form"] .button.button-positive-custom {
+    border: 0;
+    background-color: #3498db;
+    color: #fff !important;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    width: 94%;
+    border-radius: 5px;
+    margin-left: 3%;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_forgot_password_form"] .padding.text-left p:nth-child(1):after {
+    content: "Masukkan email yang terdaftar pada kolom di bawah ini, kami akan mengirimmu kata sandi baru";
+    font-size: 14px;
+    line-height: 1.8;
+    font-style: italic;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_forgot_password_form"] .padding.text-left p {
+    font-size: 0;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_forgot_password_form"] .padding.text-left p:nth-child(2) {
+    display: none;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_forgot_password_form"]:before {
+    content: " ";
+    display: block;
+    height: 15px;
+    background-color: #f9a6d9;
+    width: 60%;
+    border-radius: 0 0 20px 20px;
+    margin-left: 20%;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_forgot_password_form"] label.item.item-input.item-custom i.icon.ion-ios-person,
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_forgot_password_form"] label.item.item-input.item-custom i.icon.ion-locked {
+    font-size: 0 !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_forgot_password_form"] label.item.item-input.item-custom i.icon.ion-ios-person:after {
+    content: "Email";
+    font-size: 16px;
+    top: 0;
+    margin-top: 0;
+    text-align: left !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_forgot_password_form"] .list .item.item-custom {
+    border: 0;
+    background-color: transparent;
+    color: #000;
+    display: block;
+    width: 100%;
+    padding: 10px;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_forgot_password_form"] label.item.item-input.item-custom input {
+    background-color: #ecf0f6;
+    padding: 15px;
+    border-radius: 5px;
+    height: 50px;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_forgot_password_form"] div[ng-click="displayLoginForm()"] span {
+    height: 0;
+    font-size: 0;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_forgot_password_form"] div[ng-click="displayLoginForm()"] span:after {
+    content: "Masuk di Sini";
+    font-size: 18px;
+    padding: 0;
+    display: block;
+    color: #3498db;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_forgot_password_form"] div[ng-click="displayLoginForm()"]:before {
+    content: "Sudah Punya Akun?";
+    display: block;
+    font-size: 14px;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div[ng-show="display_forgot_password_form"] div[ng-click="displayLoginForm()"] {
+    padding-bottom: 180px;
+    background-color: #f890d0;
+    padding-top: 50px;
+    border-top-left-radius: 100% 25%;
+    border-top-right-radius: 100% 25%;
+    display: block;
+    font-size: 0;
+    border-top: 15px solid #ffffff;
+    margin-top: 50px;
+    color: #fff;
+}
+
+/* Regist */
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) {
+    padding: 0;
+    overflow: scroll;
+    height: 100% !important;
+    position: relative;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .item.item-input.item-custom {
+    background-image: url(https://image.flaticon.com/icons/png/512/1828/1828911.png);
+    background-position: center right 13px;
+    background-repeat: no-repeat;
+    background-size: 18px;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3) .list {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 0;
+    margin: 0 15px
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3)>div>div:nth-child(3) {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+    margin: 0 15px;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .list .item.item-custom {
+    border: 0;
+    color: $font-color;
+    border-radius: 5px;
+    background-color: $header-icon-color;
+    margin: 10px 0;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .item.item-input.item-custom .input-label.ng-binding,
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) label.item.item-input.item-custom .input-label {
+    display: none;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .item.item-input.item-custom input {
+    max-width: 100%;
+    text-align: left;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) label.checkbox-custom h2 span,
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .checkbox-custom .item-content.disable-pointer-events span {
+    color: $link !important;
+    padding-left: 0;
+    font-size: 0;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3)  .checkbox-custom {
+    background-color: $transparent-color !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3) label.checkbox-custom h2>span:nth-child(1):after {
+    content: "Saya Setuju dengan Kebijakan Privasi";
+    font-size: 11px;
+    color: $link;
+    padding-left: 0 !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3) label.checkbox-custom .item-content.disable-pointer-events>span.ng-binding:after {
+    content: "Pemberitahuan Terbaru";
+    font-size: 11px;
+    color: $link;
+    padding-left: 0 !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .button.button-positive-custom {
+    border: 0;
+    background-color: #3498db;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) div[ng-click="displayLoginForm()"] span {
+    height: 0;
+    font-size: 0;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) div[ng-click="displayLoginForm()"] span:after {
+    content: "Masuk di Sini";
+    font-size: 18px;
+    padding: 0;
+    display: block;
+    color: #3498db;
+    text-align: center;
+    margin-top: -10px;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) div[ng-click="displayLoginForm()"]:before {
+    content: "Sudah Punya Akun?";
+    display: block;
+    font-size: 14px;
+    text-align: center;
+    color: #000;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) div[ng-click="displayLoginForm()"] {
+    padding-bottom: 150px !important;
+    background-color: #fff;
+    padding-top: 20px !important;
+    border-top-left-radius: 100% 25%;
+    border-top-right-radius: 100% 25%;
+    display: block;
+    font-size: 0 !important;
+    border-top: 15px solid #fff;
+    margin-top: 24px;
+    color: #000;
+    text-align: center !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) span.bold.positive.positive-custom.ng-binding {
+    color: $link;
+    font-weight: normal;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .checkbox-custom .checkbox input:before, 
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .checkbox-custom .checkbox .checkbox-icon:before {
+    border-color: $link;
+    height: 20px !important;
+    width: 20px !important;
+    border-radius: 5px !important;
+    background-color: $transparent-color;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .padding.text-right {
+    padding: 0;
+    display: block !important;
+    text-align: left;
+    font-size: 11px;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) [ng-click="displayLoginForm()"] {
+    text-align: left;
+    font-size: 0 !important;
+    padding: 0;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) [ng-click="logout()"] {
+    background-color: $transparent-color;
+    width: 60%;
+    padding: 10px 35px;
+    border-radius: 10px;
+    background-image: $login-img;
+    background-position: center right 10px;
+    background-repeat: no-repeat;
+    background-size: 28px;
+    border: 3px solid $header-icon-color !important;
+    display: block;
+    margin-left: 20%;
+    text-align: left;   
+    margin-top: 25px;
+}
+
+
+[ng-click="customer.change_password = !customer.change_password"] {
+    background-color: $transparent-color !important;
+    color: $link !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .checkbox-square .checkbox-icon:after {
+    border-width: 2px;
+    top: 20%;
+    left: 30%;
+    width: 11px;
+    height: 7px;
+}
+
+
+/* account setting */
+ion-modal-view.customer-view.customer-layout1 [ng-show="display_settings"] .list .item.item-custom {
+    border: 0;
+    background-color: $transparent-color;
+    border-radius: 5px;
+}
+
+
+ion-modal-view.customer-view.customer-layout1 [ng-show="display_settings"] .item-checkbox .checkbox {
+    left: 0 !important;
+    padding-left: 0 !important;
+}
+
+
+/* privacy policy */
+ion-modal-view.privacy-policy-view {
+    background-image: none !important;
+}
+
+ion-modal-view.privacy-policy-view ion-content {
+    background-color: $bg-color !important;
+    padding-top: 70px !important;
+}
+
+ion-modal-view.privacy-policy-view .item-text-custom {
+    border: 0;
+    background: $transparent-color;
+    padding-top: 75px;
+}
+
+
+/* After User login */
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) [ng-if="customer.is_logged_in"] [ng-click="showPrivacyPolicy()"] {
+    display: none;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) [ng-click="requestGdprToken()"] {
+    display: none;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) div[ng-class="{'padding': card_design}"]>button[ng-click="registerOrSave()"] {
+    background-color: #3498db !important;
+    margin-top: 0 !important;
+    width: 92%;
+    border-radius: 10px !important;
+    margin-left: 4%;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) div[ng-class="{'padding': card_design}"] {
+    width: 92% !important;
+    left: 0 !important;
+    right: 0 !important;
+    border: 0 !important;
+    margin: 0 !important;
+    background-color: #fff !important;
+    margin-left: 4% !important;
+    border-radius: 0 0 10px 10px;
+    position: relative;
+    display: block;
+    padding-bottom: 10px;
+}
+
+/* FOLDER V2 */
+ion-view.module-folder2.folder2-layout1 ion-content {
+    background: repeating-linear-gradient(140deg, #ffffff, #ffffff 10px, #fde8f5 10px, #fde8f5 25px );
+    top: 0 !important;
+    /*padding-top: 70px !important;*/
+}
+
+ion-view.module-folder2.folder2-layout1 [ng-if="current.showTitle"] {
+    background-color: #f9a6d9 !important;
+    border-bottom-left-radius: 100% 50%;
+    border-bottom-right-radius: 100% 50%;
+    padding-top: 50px;
+    padding-bottom: 25px;
+    margin-bottom: 30px;
+    background-image: url(https://assets.shopfront.envato-static.com/assets/images/bg-page-section.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+ion-view.module-folder2.folder2-layout1 [ng-if="current.showTitle"] h2 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+ion-view.module-folder2.folder2-layout2 [ng-if="current.showTitle"] h2 {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+}
+
+ion-view.module-folder2.folder2-layout2 .list [ng-if="current.showTitle"] {
+    border: 0;
+    background-color: #f9a6d9;
+    color: #fff;
+    width: 100%;
+    margin-left: 0%;
+    padding-top: 50px;
+    border-bottom-left-radius: 100% 30px;
+    border-bottom-right-radius: 100% 30px;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    background-image: url(https://www.befunky.com/images/site/background-shapes/register-blue-top-left.svg);
+    background-position: center right;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+ion-view.module-folder2.folder2-layout2 .list {
+    padding-top: 0;
+    width: 100%;
+}
+
+
+[ng-if="current.showCover && current.picture"] {
+    width: 96% !important;
+    border-radius: 10px;
+    height: 150px !important;
+    display: none;
+}
+
+ion-view.module-folder2.folder2-layout1 .list .item.item-custom {
+    border: 0;
+    background-color: transparent;
+    color: #000;
+}
+
+ion-view.module-folder2.folder2-layout1 a.item.item-custom.item-avatar-square.item-avatar.item-center img {
+    border-radius: 50px;
+    background-color: #ff1616;
+    padding: 9px;
+    height: 45px !important;
+    max-height: 45px !important;
+    width: 45px !important;
+    max-width: 45px !important;
+}
+
+ion-view.module-folder2.folder2-layout1 a.item.item-custom.item-avatar-square.item-avatar.item-center h2 {
+    text-align: center;
+    display: block;
+    background-color: #272727;
+    padding: 15px 10px;
+    width: 75%;
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+
+/* Subfolder */
+ion-view.module-folder2.folder2-layout2 ion-content {
+    overflow: hidden;
+    width: 100%;
+    height: 100vh !important;
+    background-color: #f890d0 !important;
+    top: 0 !important;
+}
+
+.list.folder-layout.folder-l5 {
+    display: flex;
+    flex-direction: column;
+}
+
+.folder-layout.folder-l5 .folder-l5-row {
+    padding: 0;
+    display: inline-block;
+    margin-bottom: 0 !important;
+    overflow: visible;
+    width: 100%;
+}
+
+.folder-layout.folder-l5 .folder-l5-row div.folder-l5-col, .folder-layout.folder-l5.card .folder-l5-row div.folder-l5-col {
+    max-width: 96%;
+    height: 50px !important;
+    margin-bottom: 20px !important;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 50px !important;
+    background-image: url(https://ensiklopediakesaguan.com/wp-content/uploads/2021/06/survey_ab.png) !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.folder-layout.folder-l5 .folder-l5-row div.folder-l5-col,
+.folder-layout.folder-l5.card .folder-l5-row div.folder-l5-col p {
+    white-space: normal;
+    width: 80% !important;
+    display: block !important;
+    margin-left: 10%;
+}
+
+.folder-layout.folder-l5 .folder-title {
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+/* PUSH NOTIF */
+ion-view.module-push.push-list.push-list-l1 ion-content {
+    background-color: #f890d0 !important;
+    top: 0 !important;
+    padding-top: 70px !important;
+}
+
+ion-view.module-push.push-list.push-list-l1 .list .item.item-custom {
+    border: 0;
+    background-color: #fff;
+    color: #000;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+ion-view.module-push.push-list.push-list-l1 ion-item.item-custom.item.item-avatar>div {
+    order: 1;
+}
+
+ion-view.module-push.push-list.push-list-l1 ion-item.item-custom.item.item-avatar>p {
+    order: 3;
+    padding: 0 0 0 10px;
+    font-size: 13px;
+    line-height: 1.8;
+    font-style: italic;
+    border-left: 3px solid #f890d0;
+    margin: 10px;
+}
+
+ion-view.module-push.push-list.push-list-l1 ion-item.item-custom.item.item-avatar>h2 {
+    order: 2;
+    padding: 0 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+ion-view.module-push.push-list.push-list-l1 ion-item.item-custom.item.item-avatar>img {
+    order: 2;
+    top: 5px;
+    left: 5px;
+    max-width: 60px;
+    max-height: 60px;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+ion-view.module-push.push-list.push-list-l1 p.padding.text-right {
+    width: 80%;
+    background-color: #fff !important;
+    margin-top: -35px;
+    z-index: 999;
+    position: relative;
+    margin-left: 10%;
+    border-radius: 10px;
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+ion-view.module-push.push-list.push-list-l1 p.padding.text-right span {
+    font-size: 16px;
+    text-align: center !important;
+    width: 100%;
+    display: block;
+}
+
+
+ion-view.module-push.push-list.push-list-l1 p.padding.text-right i.ion-ios-calendar-outline {
+    display: none;
+}
+
+ion-view.module-push.push-list.push-list-l1 p.padding.text-right span[ng-if="hasItem(item)"] {
+    display: none;
+}
+/* END PUSH NOTIF */
+
+
+/* CONTACT */
+ion-view.contact-view ion-content {
+    top: 0 !important;
+    background-color: #f9a6d6 !important;
+}
+
+ion-view.contact-view ion-content .list.card {
+    background-color: transparent;
+    box-shadow: none;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+ion-view.contact-view ion-content .card .item.item-custom {
+    border: 0;
+    background-color: transparent;
+    color: #000;
+}
+
+
+ion-view.contact-view ion-content .list.card [ng-show="contact.street"].item.item-icon-left.item-custom i,
+ion-view.contact-view ion-content .list.card [ng-show="contact.description"] i {
+    display: none;
+}
+
+ion-view.contact-view ion-content .list.card [ng-show="contact.street"].item.item-icon-left.item-custom p {
+    color: #000;
+    font-size: 14px;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+}
+
+ion-view.contact-view ion-content .list.card [ng-show="contact.street"].item.item-icon-left.item-custom {
+    margin-top: -50px;
+    width: 90%;
+    margin-left: 5%;
+    background-color: #f9a6d6 !important;
+    padding: 17px 0;
+    display: none;
+}
+
+ion-view.contact-view ion-content .list.card [ng-show="contact.description"] {
+    padding: 10px;
+    background-color: transparent;
+}
+/*
+button.button.button-custom.item-icon-left.ng-binding.button-block:before {
+    content: "Lorem ipsum, atau ringkasnya lipsum, adalah teks standar yang ditempatkan untuk mendemostrasikan elemen grafis atau presentasi visual seperti font, tipografi, dan tata letak.";
+    display: flex !important;
+    line-height: 1.8;
+    font-style: italic;
+    font-size: 13px;
+    font-weight: normal;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+}*/
+/*
+ion-view.contact-view ion-content button.button.button-custom.item-icon-left.ng-binding.button-block i {
+    left: 0;
+    right: 0;
+    height: 70px !important;
+    width: 70px !important;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    background-color: #fff;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://image.flaticon.com/icons/png/512/23/23312.png) !important;
+    background-size: 50px!important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    color: transparent !important;
+}
+*/
+
+ion-view.contact-view ion-content .padding button.button.button-custom.item-icon-left.ng-binding.button-block {
+    display: inline-block;
+    width: 100%;
+    padding-top: 45px;
+    font-weight: bold;
+    background-color: transparent;
+    pointer-events: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0;
+    margin: 0 !important;
+}
+
+ion-view.contact-view ion-content [ng-show="contact.name"] h2 {
+    font-size: 18px !important;
+    font-weight: bold !important;
+    padding: 10px !important;
+}
+
+ion-view.contact-view ion-content [ng-show="contact.name"] i {
+    display: none !important;
+}
+
+ion-view.contact-view ion-content [ng-show="contact.name"] {
+    margin-bottom: 0 !important;
+    position: absolute;
+    z-index: 999;
+    width: 60%;
+    margin-left: 20% !important;
+    background-color: #f9a6d6 !important;
+    padding: 11px;
+    height: 35px;
+    font-size: 18px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border-bottom-left-radius: 100px 50px;
+    border-bottom-right-radius: 100px 50px;
+    display: none !important;
+}
+
+ion-view.contact-view ion-content [ng-show="contact.name"] {
+    order: 3;
+}
+
+ion-view.contact-view ion-content [ng-show="!contact.name"] {
+    order: 1;
+}
+
+ion-view.contact-view ion-content [ng-if="contact.cover_url"] {
+    order: 2;
+    height: 300px;
+}
+
+ion-view.contact-view ion-content [ng-show="contact.street"] {
+    order: 4;
+}
+
+ion-view.contact-view ion-content [ng-show="contact.description"] {
+    order: 5;
+}
+
+ion-view.contact-view ion-content [ng-if="contact.cover_url"] img {
+    background-size: cover;
+    display: block;
+    height: 290px;
+    object-fit: cover;
+}
+
+/* skrip HTML */
+ion-view.contact-view ion-content [ng-bind-html="contact.description | trusted_html"] p {
+    font-size: 13px;
+    line-height: 1.8;
+    font-style: italic;
+}
+
+ion-view.contact-view ion-content [ng-bind-html="contact.description | trusted_html"] h2 {
+    font-size: 24px !important;
+    font-style: italic;
+}
+
+[ng-bind-html="contact.description | trusted_html"] .menu-home img {
+    background-color: #ecf0f6 !important;
+    border-radius: 30px;
+}
+/* Akhir skrip HTML */
+
+ion-view.contact-view ion-content .list.card [ng-show="contact.description"] {
+    margin-top: -50px;
+    width: 90%;
+    margin-left: 5%;
+    background-color: #f9a6d6 !important;
+    padding: 15px;
+}
+
+ion-view.contact-view ion-content .padding:before {
+    content: "Layanan Kami";
+    font-size: 24px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    margin: 20px;
+    font-style: italic;
+}
+
+/* END CONTACT */
+ion-view.contact-view ion-content button[ng-if="contact.phone"]:before {
+    content: "PWA stands for Progressive Web App. This means, you can save the item to the homescreen and use it as an app. These banners will be more assertive and help you convert users to installing your app easier.";
+    display: block;
+    line-height: 1.8;
+    font-style: italic;
+    font-size: 13px;
+    font-weight: normal;
+    margin-top: 55px;
+}
+
+ion-view.contact-view ion-content [ng-click="showMap();"]:before {
+    content: "Add to Home Badges are simple elements that show where your device menu is to indicate how to install the page to your home screen. These are the default interaction of most websites.";
+    display: block;
+    line-height: 1.8;
+    font-style: italic;
+    font-size: 13px;
+    font-weight: normal;
+    margin-top: 55px;
+}
+
+ion-view.contact-view ion-content button[ng-if="contact.email"]:before {
+    content: "Most powerful professional grade CSS extension language. Designed with the popular design lines for the best user experience.";
+    display: block;
+    line-height: 1.8;
+    font-style: italic;
+    font-size: 13px;
+    font-weight: normal;
+    margin-top: 55px;
+}
+
+ion-view.contact-view ion-content button[ng-if="contact.website_url"]:before {
+    content: "Easily changeable theme colors, font and others. Written with a code structure that you can easily understand. Find what you're looking for with organized and structured files.";
+    display: block;
+    line-height: 1.8;
+    font-style: italic;
+    font-size: 13px;
+    font-weight: normal;
+    margin-top: 55px;
+}
+
+ion-view.contact-view ion-content button[ng-if="contact.facebook_url"]:before {
+    content: "These are gorgeous interfaces that can deploy automatically and show the install prompt on Android or the instructions for installing on iOS.";
+    display: block;
+    line-height: 1.8;
+    font-style: italic;
+    font-size: 13px;
+    font-weight: normal;
+    margin-top: 55px;
+}
+
+ion-view.contact-view ion-content button[ng-if="contact.twitter_url"]:before {
+    content: "Ready to use many components. They are great for the mobile interface. Many components that designed for the mobile interface and ready to use.";
+    display: block;
+    line-height: 1.8;
+    font-style: italic;
+    font-size: 13px;
+    font-weight: normal;
+    margin-top: 55px;
+}
+
+
+ion-view.contact-view ion-content button[ng-if="contact.phone"] i {
+    left: 0;
+    right: 0;
+    height: 70px !important;
+    width: 70px !important;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    background-color: #fff;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://image.flaticon.com/icons/png/512/23/23310.png) !important;
+    background-size: 50px!important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    color: transparent !important;
+}
+
+ion-view.contact-view ion-content [ng-click="showMap();"] i {
+    left: 0;
+    right: 0;
+    height: 70px !important;
+    width: 70px !important;
+    text-align: center;
+    border-radius: 50%;
+    margin: 10px auto !important;
+    background-color: #fff;
+    display: block !important;
+    background-image: url(https://image.flaticon.com/icons/png/512/3884/3884552.png) !important;
+    background-size: 50px!important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    color: transparent !important;
+}
+
+ion-view.contact-view ion-content button[ng-if="contact.email"] i {
+    left: 0;
+    right: 0;
+    height: 70px !important;
+    width: 70px !important;
+    text-align: center;
+    border-radius: 50%;
+    margin: 10px auto !important;
+    background-color: #fff;
+    display: block !important;
+    background-image: url(https://image.flaticon.com/icons/png/512/24/24432.png) !important;
+    background-size: 50px!important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    color: transparent !important;
+}
+
+ion-view.contact-view ion-content button[ng-if="contact.website_url"] i {
+    left: 0;
+    right: 0;
+    height: 70px !important;
+    width: 70px !important;
+    text-align: center;
+    border-radius: 50%;
+    margin: 10px auto !important;
+    background-color: #fff;
+    display: block !important;
+    background-image: url(https://image.flaticon.com/icons/png/512/957/957529.png) !important;
+    background-size: 50px!important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    color: transparent !important;
+}
+
+ion-view.contact-view ion-content button[ng-if="contact.facebook_url"] i {
+    left: 0;
+    right: 0;
+    height: 70px !important;
+    width: 70px !important;
+    text-align: center;
+    border-radius: 50%;
+    margin: 10px auto !important;
+    background-color: #fff;
+    display: block !important;
+    background-image: url(https://image.flaticon.com/icons/png/512/1298/1298184.png) !important;
+    background-size: 50px!important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    color: transparent !important;
+}
+
+ion-view.contact-view ion-content button[ng-if="contact.twitter_url"] i {
+    left: 0;
+    right: 0;
+    height: 70px !important;
+    width: 70px !important;
+    text-align: center;
+    border-radius: 50%;
+    margin: 10px auto !important;
+    background-color: #fff;
+    display: block !important;
+    background-image: url(https://image.flaticon.com/icons/png/512/1298/1298204.png) !important;
+    background-size: 50px!important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    color: transparent !important;
+}
+ 
+
+/* Attendance */
+ion-view.attendance.attendance-home ion-content {
+    background-color: #fc0 !important;
+    top: 0 !important;
+    padding-top: 70px;
+}
+
+ion-header-bar.bar-subheader.bar-custom.bar.bar-header {
+    bottom: 0 !important;
+    top: 90%;
+    position: absolute;
+    background-color: #fff !important;
+    height: 70px !important;
+    padding: 15px;
+}
+
+.button.button-custom.active, .button.button-custom.activated {
+    border: 0;
+    background-color: #fc0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #3498db;
+}
+
+
+ion-view.attendance.attendance-home ion-content .card {
+    margin: 20px 5px 0 5px;
+    border-radius: 5px;
+    box-shadow: none;
+}
+
+
+ion-view.attendance.attendance-home ion-content .card:nth-last-child(1) {
+    margin-bottom: 70px;
+}
+
+
+

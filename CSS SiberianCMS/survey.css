@@ -1,0 +1,468 @@
+/* Header */
+.bar.bar-custom .title {
+    color: rgba(48, 48, 48, 1);
+    text-align: center;
+    font-size: 12px;
+    display: none;
+}
+
+
+/* MY ACCOUNT START */
+ion-modal-view.customer-view.customer-layout1 ion-content {
+	background-color: #fff !important;
+}
+
+/* Login Page */
+ion-modal-view.customer-view.customer-layout1 div[ng-show="display_login_form"] {
+	padding: 0 30px;
+}
+
+ion-modal-view.customer-view.customer-layout1 div[ng-show="display_login_form"] .list .item.item-custom {
+    border: 0 !important;
+    background-color: transparent;
+    color: #363636;
+    padding: 15px 0;
+}
+
+ion-modal-view.customer-view.customer-layout1 div[ng-show="display_login_form"] .list:before {
+	content: "Hey, Login Now";
+  	display: block;
+  	text-align: left;
+  	font-size: 28px;
+  	font-weight: bold;
+  	margin: 30px 2%;  	
+}
+
+ion-modal-view.customer-view.customer-layout1 div[ng-show="display_login_form"]:before {
+	content: " ";
+  	height: 200px;
+  	display: block;
+  	background-size: 250px;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-image: url(https://ensiklopediakesaguan.com/wp-content/uploads/2021/04/undraw_Login_re_4vu2.svg);
+}
+
+ion-modal-view.customer-view.customer-layout1 div[ng-show="display_login_form"] label.item.item-input.item-custom input {
+    border-bottom: 2px solid #ecf0f6 !important;
+    padding-bottom: 0px;
+    height: 60px !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 div[ng-show="display_login_form"] i.icon.ion-ios-person,
+ion-modal-view.customer-view.customer-layout1 div[ng-show="display_login_form"] i.icon.ion-locked {
+    display: none;
+}
+
+ion-modal-view.customer-view.customer-layout1 div[ng-show="display_login_form"] .button.button-positive-custom {
+    border: 0;
+    background-color: #b12341;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+ion-modal-view.customer-view.customer-layout1 div[ng-show="display_login_form"] div[ng-click="displayAccountForm()"] {
+    font-size: 11px;
+    text-align: left;
+    padding: 5px 0;
+    color: #007aff;
+}
+
+ion-modal-view.customer-view.customer-layout1 div[ng-show="display_login_form"] .padding.text-right {
+    padding: 0 0 50px 0;
+    margin-top: -15px;
+    text-align: right;
+}
+
+ion-modal-view.customer-view.customer-layout1 div[ng-show="display_login_form"] span[ng-click="displayForgotPasswordForm()"] {
+    color: #3498db !important;
+    font-size: 11px !important;
+}
+/* LOGIN PAGE END */
+
+
+/* FORGOT PASSWORD PAGE */
+ion-modal-view.customer-view.customer-layout1 div[ng-show="display_forgot_password_form"] {
+	padding: 0 30px;
+}
+
+ion-modal-view.customer-view.customer-layout1 div[ng-show="display_forgot_password_form"] .padding.text-left {
+	padding: 0;
+}
+
+
+ion-modal-view.customer-view.customer-layout1 div[ng-show="display_forgot_password_form"] .padding.text-left:before {
+    content: "Forgot Password?";
+    display: block;
+    text-align: left;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 30px 2% 10px 0;
+    line-height: 1.8;
+}
+
+ion-modal-view.customer-view.customer-layout1 div[ng-show="display_forgot_password_form"]:before {
+	content: " ";
+  	height: 200px;
+  	display: block;
+  	background-size: 220px;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-image: url(https://ensiklopediakesaguan.com/wp-content/uploads/2021/03/undraw_emails_6uqr.svg);
+}
+
+ion-modal-view.customer-view.customer-layout1 div[ng-show="display_forgot_password_form"] label.item.item-input.item-custom input {
+    border-bottom: 2px solid #ecf0f6 !important;
+    padding-bottom: 0px;
+    height: 60px !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 div[ng-show="display_forgot_password_form"] i.icon.ion-ios-person {
+    display: none;
+}
+
+ion-modal-view.customer-view.customer-layout1 div[ng-show="display_forgot_password_form"] .button.button-positive-custom {
+    border: 0;
+    background-color: #b12341;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+ion-modal-view.customer-view.customer-layout1 div[ng-show="display_forgot_password_form"] div[ng-click="displayLoginForm()"] {
+    padding: 0;
+    text-align: left;
+    font-size: 11px;
+    color: #3498db;
+}
+
+/* FORGOT PASSWORD PAGE END*/
+
+
+/* SIGNUP PAGE */
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) {
+	padding: 0 30px;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .item.item-input.item-custom .input-label.ng-binding,
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) label.item.item-input.item-custom .input-label {
+    display: none;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .item.item-input.item-custom input {
+    max-width: 100%;
+    text-align: left;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) label.checkbox-custom h2 span,
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .checkbox-custom .item-content.disable-pointer-events span {
+    color: #387ef5 !important;
+    padding-left: 47px;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .button.button-positive-custom {
+    border: 0;
+    background-color: #b12341;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) div[ng-click="displayLoginForm()"] {
+    padding: 0;
+    text-align: left;
+    font-size: 11px;
+    color: #3498db;
+}
+
+
+
+
+/* SURVEY */
+ion-view[state="surveys-view"] {
+	background-image: none !important;
+}
+
+ion-view[state="surveys-view"] ion-content {
+    background-color: #fff !important;
+}
+
+ion-view[state="surveys-view"] #surveyList:before {
+    content: " ";
+    display: block;
+    height: 180px;
+    background-image: url(https://ensiklopediakesaguan.com/wp-content/uploads/2021/04/servizi-pubblicitari.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 96%;
+    margin-left: 2%;
+    border-radius: 20px;
+}
+
+
+ion-view[state="surveys-view"] .list .item.text-center.item-custom.item-text-wrap.ng-binding {
+    text-align: left;
+    line-height: 1.8;
+    font-style: italic;
+}
+
+ion-view[state="surveys-view"] .item.item-divider.item-divider-custom.item-text-wrap h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+ion-view[state="surveys-view"] .list .item-divider.item-divider-custom {
+    background-color: transparent;
+    color: #000;
+    border: 0;
+}
+
+
+ion-view[state="surveys-view"] label.item.item-input.item-custom.item-text-wrap {
+    display: inline-block;
+    width: 100% !important;
+    padding: 5px 12px;
+}
+
+
+ion-view[state="surveys-view"] label.item.item-input.item-custom.item-text-wrap span {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+}
+
+
+ion-view[state="surveys-view"] div[ng-switch-when="texte"]:before {
+    content: "Silakan isi data yang diminta berikut dan klik NEXTuntuk melanjutkan atau PREVIOUS untuk kembali.";
+    display: block;
+    margin: 10px;
+    font-style: italic;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+ion-view[state="surveys-view"] .item.item-input.item-custom {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+ion-view[state="surveys-view"] .item.item-input.item-custom input {
+    border-bottom: 2px solid #ecf0f6;
+    width: 96% !important;
+    max-width: 96% !important;
+}
+
+ion-view[state="surveys-view"] .col.text-right span.button.button-custom {
+    border: 0;
+    background-color: #0d8d0d;
+    color: #fff;
+    border-radius: 10px;
+}
+
+ion-view[state="surveys-view"] .col.text-left span.button.button-custom {
+    border: 0;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 10px;
+}
+
+
+/* Lokasi */
+ion-view[state="surveys-view"] div[ng-switch-when="geoloc"]:before {
+    content: "Silakan klik radio button untuk mendapatkan lokasi otomatis dan klik NEXT untuk melanjutkan atau PREVIOUS untuk kembali.";
+    display: block;
+    margin: 10px;
+    font-style: italic;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+ion-view[state="surveys-view"] div[ng-switch-when="geoloc"] .checkbox-custom {
+    background-color: transparent !important;
+    border: 0;
+}
+
+ion-view[state="surveys-view"] div[ng-switch-when="geoloc"] .item-checkbox .item-content span {
+    white-space: normal;
+    color: #0d8d0d;
+    font-size: 14px !important;
+}
+
+
+ion-view[state="surveys-view"] div[ng-switch-when="geoloc"] .checkbox input:checked + .checkbox-icon:before {
+    background: rgba(255, 255, 255, 1);
+    border-color: #3498db;
+    border-radius: 5px;
+}
+
+ion-view[state="surveys-view"] div[ng-switch-when="geoloc"] .checkbox .checkbox-icon:before {
+    border: 2px solid #0d8d0d;
+    border-radius: 5px;
+}
+
+/* Kolom Email */
+ion-view[state="surveys-view"] div[ng-switch-when="email"]:before {
+    content: "contoh email: example@email.com";
+    font-size: 14px;
+    font-weight: normal;
+    color: #3498db !important;
+    display: block;
+    font-style: italic;
+    margin: 10px;
+}
+
+
+/* Kolom Add image */
+ion-view[state="surveys-view"] div[ng-switch-when="image"] .item.item-divider.item-divider-custom.item-text-wrap p {
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+ion-view[state="surveys-view"] div[ng-switch-when="image"] .item.item-divider.item-divider-custom.item-text-wrap:after {
+    content: "Gambar Yang Anda Unggah akan dijadikan data pendukung untuk penguatan hasil survey. Harap upload gambar sebagaimana mestinya.";
+    display: block;
+    margin: 10px 0;
+    font-style: italic;
+    font-size: 12px;
+    font-weight: normal;	
+}
+
+/* Kolom Checkbox */
+ion-view[state="surveys-view"] div[ng-switch-when="checkbox"] .item.item-divider.item-divider-custom p{
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+ion-view[state="surveys-view"] div[ng-switch-when="checkbox"] .item.item-divider.item-divider-custom p:after{
+    content: "Silakan pilih hobi Anda. Bisa centang lebih dari satu pilihan.";
+    display: block;
+    margin: 10px 0;
+    font-style: italic;
+    font-size: 12px;
+    font-weight: normal;	
+}
+
+
+
+ion-view[state="surveys-view"] div[ng-switch-when="checkbox"] label.checkbox-custom {
+    background-color: transparent;
+    border: 0;
+    margin-left: 20px;
+}
+
+
+ion-view[state="surveys-view"] div[ng-switch-when="checkbox"] .item-checkbox .item-content span {
+    white-space: normal;
+    color: #0d8d0d;
+    font-size: 14px !important;
+}
+
+
+ion-view[state="surveys-view"] div[ng-switch-when="checkbox"] .checkbox-custom .checkbox input:checked + .checkbox-icon:before {
+    background: rgba(255, 255, 255, 1);
+    border-color: #3498db;
+    border-radius: 5px;
+}
+
+ion-view[state="surveys-view"] div[ng-switch-when="checkbox"] .checkbox-custom .checkbox .checkbox-icon:before {
+    border: 2px solid #0d8d0d;
+    border-radius: 5px;
+}
+
+
+/* dropdown */
+ion-view[state="surveys-view"] [ng-switch-when="select"].item.item-input.item-select.item-custom.item-text-wrap {
+    width: 96% !important;
+    margin: 10px 2%;
+    border-radius: 5px;
+    background-color: #008000;
+}
+
+ion-view[state="surveys-view"] [ng-switch-when="select"].item.item-input.item-select.item-custom.item-text-wrap .input-label.item-text-wrap.ng-binding {
+	color: #fff !important;
+}
+
+ion-view[state="surveys-view"] [ng-switch-when="select"].item.item-input.item-select.item-custom.item-text-wrap select {
+    color: #fff !important;
+    font-size: 16px !important;
+}
+
+ion-view[state="surveys-view"] [ng-switch-when="select"].item-select:after {
+    color: #fff;
+}
+
+
+/* Textarea */
+ion-view[state="surveys-view"] div[ng-switch-when="textarea"] textarea {
+    line-height: 1.8;
+    border-bottom: 2px solid #ecf0f6;
+    padding-bottom: 10px;
+    font-style: italic;
+    font-size: 13px;
+}
+
+
+/* radio button */
+ion-view[state="surveys-view"] [ng-switch-when="radio"] .item-radio.radio-custom {
+	color: #008000;
+    background-color: transparent;
+    border: 0 !important;
+}
+
+ion-view[state="surveys-view"] [ng-switch-when="radio"] .item-radio.radio-custom input {
+    background-color: transparent !important;
+    border: 0;
+}
+
+ion-view[state="surveys-view"] [ng-switch-when="radio"] .radio-content .item-content.disable-pointer-events {
+    background-color: transparent !important;
+    border: 0 !important;
+    margin-left: 20px;
+}
+
+ion-view[state="surveys-view"] [ng-switch-when="radio"] .item-radio input:checked+.radio-content .radio-icon {
+    visibility: visible;
+    margin-right: 20px;
+}
+
+
+
+ion-view[state="surveys-view"] [ng-bind-html="thank_you"] {
+    text-align: center;
+}
+
+ion-view[state="surveys-view"] [ng-bind-html="thank_you"]:before {
+    content: " ";
+    display: block;
+    background-image: url(https://www.flaticon.com/svg/vstatic/svg/1140/1140023.svg?token=exp=1619943277~hmac=efe781a…);
+    height: 150px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100px;
+}
+
+ion-view[state="surveys-view"] [ng-show="isCurrentPage('view_end')"] .button.button-custom {
+    border: 0;
+    background-color: #008000;
+    color: #fff;
+    width: 90%;
+    margin: 10px 5%;
+}
+
+
+.bar.bar-custom {
+    border: 0 !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    color: rgba(0, 0, 0, 1);
+}
+
+
+
+
+
+
+

@@ -1,0 +1,170 @@
+
+ion-view[state="home"] {
+    background-image: none !important;
+	background: rgb(237,237,237);
+	background: linear-gradient(180deg, rgba(237,237,237,1) 40%, rgba(255,255,255,1) 40%) !important;
+}
+
+ion-view[state="home"] .slider-slides div.new_slider {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    margin-top: 20px !important;
+    width: 96% !important;
+    margin-left: 2% !important;
+    height: 28% !important;
+    border-radius: 15px !important;
+    border: 3px solid #ecf0f6;
+    box-shadow: 0 1px 2px 0 #ecf0f6, 0 1px 3px 1px #ecf0f6;
+}
+
+ion-view[state="home"] .slider-pager.hide {
+    display: inline;
+    top: 25% !important;
+    text-align: left;
+    margin-left: 5%;
+}
+
+ion-view[state="home"] .slider-pager.hide span.slider-pager-page.active {
+    width: 30px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #ff0000;
+}
+
+ion-view[state="home"] .slider-pager.hide span.slider-pager-page {
+    width: 15px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #000;
+}
+
+ion-view[state="home"] .slider-pager.hide span i {
+	font-size: 0 !important;
+}
+
+.layout.layout_siberian_18 {
+    position: absolute;
+    top: 33% !important;
+    left: 5% !important;
+    right: 5% !important;
+    bottom: 0 !important;
+}
+
+.layout.layout_siberian_18 ion-scroll {
+    height: 80vh !important;
+    border-radius: 10px 10px 0 0;
+    background-color: #fff !important;
+}
+
+.layout.layout_siberian_18 .scroll>div:nth-child(1)>.item {
+    margin-top: 10px;
+}
+
+.layout.layout_siberian_18 .item {
+    margin: 0;
+    border-width: 0;
+    background-color: #f9a6d9;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.layout.layout_siberian_18 .scroll>div:nth-child(1)>.item h2.label-left.title-lowcase:after {
+    content: "Your Menu Deskription is goes here";
+    display: block;
+    font-size: 12px;
+    margin: 10px 0;
+  	color: #000 !important;
+  	font-weight: normal !important;
+}
+
+.layout.layout_siberian_18 .scroll>div:nth-child(1)>.item h2.label-left.title-lowcase:after {
+    content: "Your Menu Deskription is goes here";
+    display: block;
+    font-size: 12px;
+    margin: 10px 0;
+  	color: #000 !important;
+  	font-weight: normal !important;
+}
+
+.layout.layout_siberian_18 .scroll>div:nth-child(2)>.item h2.label-left.title-lowcase:after {
+    content: "Your Menu Deskription is goes here";
+    display: block;
+    font-size: 12px;
+    margin: 10px 0;
+  	color: #000 !important;
+  	font-weight: normal !important;
+}
+
+.layout.layout_siberian_18 .scroll>div:nth-child(3)>.item h2.label-left.title-lowcase:after {
+    content: "Your Menu Deskription is goes here";
+    display: block;
+    font-size: 12px;
+    margin: 10px 0;
+  	color: #000 !important;
+  	font-weight: normal !important;
+}
+
+.layout.layout_siberian_18 .scroll>div:nth-child(4)>.item h2.label-left.title-lowcase:after {
+    content: "Your Menu Deskription is goes here";
+    display: block;
+    font-size: 12px;
+    margin: 10px 0;
+  	color: #000 !important;
+  	font-weight: normal !important;
+}
+
+.layout.layout_siberian_18 .scroll>div:nth-child(5)>.item h2.label-left.title-lowcase:after {
+    content: "Your Menu Deskription is goes here";
+    display: block;
+    font-size: 12px;
+    margin: 10px 0;
+  	color: #000 !important;
+  	font-weight: normal !important;
+}
+
+.layout.layout_siberian_18 .scroll>div:nth-child(6)>.item h2.label-left.title-lowcase:after {
+    content: "Your Menu Deskription is goes here";
+    display: block;
+    font-size: 12px;
+    margin: 10px 0;
+  	color: #000 !important;
+  	font-weight: normal !important;
+}
+
+.layout.layout_siberian_18 .item.item-avatar img {
+    border-radius: 0;
+    margin-top: 10px;
+}
+
+.layout.layout_siberian_18 .item.item-avatar h2 {
+    margin-top: 10px;
+    color: #008000;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+
+
+ion-view[state="home"] .slider-slides div.new_slider {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    margin-top: 60px !important;
+    width: 96% !important;
+    margin-left: 2% !important;
+    height: 25% !important;
+    border-radius: 20px !important;
+    border: 3px solid #ecf0f6;
+    box-shadow: 0 1px 2px 0 #000, 0 1px 3px 1px #000;
+}
+
+.layout.l4 ion-content {
+    position: absolute;
+    width: 100vw;
+    height: 56vh;
+    padding-bottom: var(--safe-area-inset-bottom);
+    bottom: 0;
+    top: initial;
+}

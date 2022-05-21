@@ -1,0 +1,338 @@
+/* CSS FOR CALENDAR START HERE */
+
+$white-color: #fff;
+$yellow-color: #f5c634;
+$transparent-color: transparent;
+$grey-color: #ecf0f6;
+$blue-color: #387093;
+$black-color: #000;
+$gradient-color: linear-gradient(135deg, rgba(249, 191, 0, 1) 30%, rgba(37, 54, 130, 1) 30%, rgba(37, 54, 130, 1) 60%, rgba(249, 191, 0, 1) 60%);
+$calendar-header: url(https://i.imgur.com/5wKF15a.jpg);
+ion-view[state="event-list"] .list:nth-child(n+3)>div {
+    display: flex;
+    margin: 10px 3%;
+    overflow: visible;
+    width: 94% !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    white-space: nowrap !important;
+    -webkit-overflow-scrolling: touch !important;
+    padding: 10px;
+    background: $yellow-color;
+    background: $gradient-color;
+}
+
+ion-view[state="event-list"] ion-content .scroll {
+    background-color: $white-color;
+    padding-top: 10px;
+    border-top-left-radius: 100% 50px;
+    border-top-right-radius: 100% 50px;
+}
+
+ion-view[state="event-list"] ion-content:before {
+    content: " ";
+    display: block;
+    height: 150px;
+    background-image: $calendar-header;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+ion-view[state="event-list"] ion-content .scroll:before {
+    content: "Upcoming Virtual Event. Let's join to get more dorprize!.";
+    display: block;
+    padding: 0 20px 20px 20px;
+}
+
+ion-view[state="event-list"] .list>div div:nth-child(n+2) {
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    min-width: 75% !important;
+    border-radius: 0;
+    margin: 5px 10px 5px 0;
+    overflow: hidden;
+    padding: 0;
+    background: $blue-color;
+    border: 1px solid $yellow-color;
+}
+
+ion-view[state="event-list"] .list>div div:last-child {
+    margin: 5px 0 !important;
+}
+
+ion-view[state="event-list"] .item.item-custom.item-thumbnail-left img {
+    width: 100%;
+    min-width: 100%;
+    height: 100%;
+    min-height: 120px;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    object-position: center right;
+    border-radius: 0;
+    object-fit: cover;
+    display: block;
+    position: relative;
+}
+
+ion-view[state="event-list"] .item.item-custom.item-thumbnail-left h2.ng-binding {
+    font-size: 16px;
+    font-weight: bold;
+    white-space: normal;
+    color: $white-color;
+    line-height: 1.8;
+    padding-right: 35px
+}
+
+ion-view[state="event-list"] .item.item-custom.item-thumbnail-left h2.ng-binding,
+ion-view[state="event-list"] .item.item-custom.item-thumbnail-left p.ng-binding {
+    padding: 0 10px;
+}
+
+ion-view[state="event-list"] .item.item-custom.item-thumbnail-left p.ng-binding {
+    white-space: normal;
+    font-size: 14px;
+    font-style: italic;
+    margin-top: 10px;
+    color: $white-color;
+}
+
+ion-view[state="event-list"] .list:nth-child(3):before {
+    content: "Virtual Conference";
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 3%;
+    min-height: 30px;
+    background-color: transparent;
+    color: $black-color;
+    padding: 10px;
+    border-radius: 5px;
+    width: 94%;
+    display: flex;
+}
+
+ion-view[state="event-list"] .list:nth-child(4):before {
+    content: "Virtual Seminars";
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 3%;
+    min-height: 30px;
+    background-color: transparent;
+    color: $black-color;
+    padding: 10px;
+    border-radius: 5px;
+    width: 94%;
+    display: flex;
+}
+
+ion-view[state="event-list"] .list:nth-child(5):before {
+    content: "Virtual Workshops";
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 3%;
+    min-height: 30px;
+    background-color: transparent;
+    color: $black-color;
+    padding: 10px;
+    border-radius: 5px;
+    width: 94%;
+    display: flex;
+}
+
+ion-view[state="event-list"] .list:nth-child(6):before {
+    content: "Live Streaming";
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 3%;
+    min-height: 30px;
+    background-color: transparent;
+    color: $black-color;
+    padding: 10px;
+    border-radius: 5px;
+    width: 94%;
+    display: flex;
+}
+
+ion-view[state="event-list"] .list:nth-child(7):before {
+    content: "Video Broadcasting";
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 3%;
+    min-height: 30px;
+    background-color: transparent;
+    color: $black-color;
+    padding: 10px;
+    border-radius: 5px;
+    width: 94%;
+    display: flex;
+}
+
+ion-view[state="event-list"] .list:nth-child(8):before {
+    content: "Virtual Agenda";
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 3%;
+    min-height: 30px;
+    background-color: transparent;
+    color: $black-color;
+    padding: 10px;
+    border-radius: 5px;
+    width: 94%;
+    display: flex;
+}
+
+ion-view[state="event-list"] .list>div>.item.item-divider.item-divider-custom.ng-binding {
+    position: absolute;
+    top: 0;
+    right: 3%;
+    padding: 10px;
+    color: $blue-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+}
+
+ion-view[state="event-view"] .list {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+ion-view[state="event-view"] .list:after {
+    content: " ";
+    padding-bottom: 50px;
+    order: 100;
+}
+
+ion-view[state="event-view"] .list>div:nth-child(n+9) i {
+    color: $white-color;
+}
+
+ion-view[state="event-view"] .list>div:nth-child(n+9) {
+    order: 5;
+    background-color: $yellow-color;
+    width: 94%;
+    margin: 5px 3%;
+    border-radius: 5px;
+    color: $blue-color;
+}
+
+ion-view[state="event-view"] .list>div:nth-child(7),
+ion-view[state="event-view"] .list>div:nth-child(8) {
+    order: 4;
+}
+
+ion-view[state="event-view"] .list>div:nth-child(4),
+ion-view[state="event-view"] .list>div:nth-child(6) {
+    display: none;
+}
+
+ion-view[state="event-view"] .list>div:nth-child(2) {
+    order: 1;
+    border: 0 !important;
+    padding: 5px;
+    background-image: none !important;
+    background-color: $grey-color;
+    margin-top: 15px;
+}
+
+ion-view[state="event-view"] .list>div:nth-child(1) {
+    order: 2;
+}
+
+ion-view[state="event-view"] .list>div:nth-child(1) h2.ng-binding {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+ion-view[state="event-view"] .list>div:nth-child(1) p.ng-binding {
+    display: none;
+}
+
+ion-view[state="event-view"] .list>div:nth-child(5) {
+    position: fixed;
+    right: 0;
+    background-color: $white-color;
+}
+
+ion-view[state="event-view"] .list>div:nth-child(3),
+ion-view[state="event-view"] .list>div:nth-child(5) {
+    order: 3;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin: 0;
+}
+
+ion-view[state="event-view"] .list>div:nth-child(8) br {
+    display: none !important;
+}
+
+ion-view[state="event-view"] .list>div:nth-child(8) p {
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+ion-view[state="event-view"] .list>div:nth-child(7) h2 {
+    font-weight: bold !important;
+    width: 100%;
+    background-color: $grey-color;
+    padding: 10px;
+}
+
+ion-view[state="event-view"] .list>div:nth-child(3) {
+    position: fixed;
+    left: 0;
+    color: $white-color;
+    padding: 0;
+    width: 42px;
+    margin-left: 3px;
+    top: 20px;
+}
+
+ion-view[state="event-view"] .list>div:nth-child(5) {
+    right: 0;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    color: $white-color;
+    padding: 0;
+    width: 50px;
+    margin-right: 3px;
+    top: 20px;
+}
+
+ion-view[state="event-view"] .list>div:nth-child(3) h2,
+ion-view[state="event-view"] .list>div:nth-child(5) h2 {
+    background-color: $yellow-color;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1.3px;
+    clip-path: polygon(100% 0, 100% 50%, 100% 100%, 50% 98%, 0 100%, 0% 0%);
+    writing-mode: vertical-rl;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+ion-view[state="event-view"] .list>div:nth-child(5) h2 strong {
+    color: $blue-color;
+    font-size: 12px;
+    writing-mode: vertical-rl;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    letter-spacing: 1.3px;
+}
+
+
+/* CSS FOR CALENDAR END HERE */

@@ -1,0 +1,2356 @@
+/* Semua tentang warna ada di sini */
+$header-icon-color: #ecf0f6;
+$header-bg-color: #d5b11d;
+$bg-color: #fff;
+$sidebar-color: #d5b11d;
+$font-color: #000;
+$transparent-color: transparent;
+$link: #ffa500;
+$account-button: #4385f5;
+$button-font: #fff;
+$bg-image:  url(https://ensiklopediakesaguan.com/wp-content/uploads/2021/05/dealer_1.png);
+$login-img: url(https://ensiklopediakesaguan.com/wp-content/uploads/2021/05/log-out.png);
+
+ion-view.booking-view.booking-view-l1 div,
+ion-view.booking-view.booking-view-l1 label {
+    background-color: $bg-color !important;
+}
+
+
+/* Semua tentang header ada di sini */
+ion-header-bar.bar-custom.bar.bar-header {
+    height: 0 !important;
+    background-color: $transparent-color !important;
+}
+
+button.button.button-clear {
+    background-color: $transparent-color !important;
+    width: 40px !important;
+    height: 60px !important;
+    border-radius: 5px !important;
+}
+
+ion-header-bar.bar-custom.bar.bar-header i {
+    color: $link !important;
+}
+
+.ion-navicon-round:before {
+    font-size: 22px !important;
+}
+
+.bar.bar-custom .title {
+    display: none;
+}
+
+/* Semua tentang sidebar ada di sini */
+.layout.layout_taxi ion-content .scroll ul.items.homepage-custom li:nth-child(4) {
+    display: none;
+}
+
+.layout_taxi .line-title {
+    line-height: 6vw;
+    margin-left: 1em;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: $font-color !important;
+}
+
+.layout.layout_taxi ion-content {
+    background-color: $bg-color !important;
+    height: 96vh !important;
+    border-radius: 20px !important;
+    margin-left: 2vw !important;
+}
+
+ion-side-menu.menu.menu-left.menu-left-open,
+ion-side-menu.menu.menu-left {
+    height: 96vh !important;
+    background-color: $transparent-color !important;
+    margin: 2vh 2vw 2vh 0 !important;
+    border-radius: 20px !important;
+}
+
+.layout.layout_taxi ion-content .scroll {
+    display: flex;
+    flex-direction: column;
+}
+
+.layout.layout_taxi ion-content .scroll .taxi-header {
+    order: 2;
+    background-image: none !important;
+    background-color: $transparent-color !important;
+}
+
+.layout.layout_taxi ion-content .scroll ul.items.homepage-custom {
+    order: 1;
+    background-color: $transparent-color;
+}
+
+.layout.layout_taxi ion-content .scroll ul.items.homepage-custom:before {
+    width: 100%;
+    background: $bg-image;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: " ";
+    height: 20vh !important;
+    display: block;
+    margin-top: -3vh !important;
+    margin-bottom: 20px;
+}
+
+.layout.layout_taxi span.taxi-signup span.taxi-signup-text.ng-binding, 
+.layout.layout_taxi span.taxi-signup span.taxi-or-text.ng-binding {
+    display: none;
+}
+
+.layout.layout_taxi span.taxi-signup span.taxi-login-text.ng-binding {
+    background-color: $transparent-color;
+    width: 60%;
+    padding: 10px 35px;
+    border-radius: 10px;
+    background-image: $login-img;
+    background-position: center right 10px;
+    background-repeat: no-repeat;
+    background-size: 28px;
+    border: 3px solid $link !important;
+    display: block;
+    margin-left: 20%;
+    text-align: left;
+}
+
+.layout_taxi .customer-name {
+    width: 100%;
+    font-variant: normal !important;
+    font-size: 12px !important;
+    font-weight: bold;
+    text-transform: capitalize !important;
+    color: $font-color;
+    background-image: url(https://ensiklopediakesaguan.com/wp-content/uploads/2021/05/chevron-forward-outline.svg);
+    background-position: center right 30px;
+    background-repeat: no-repeat;
+    background-size: 20px;
+}
+
+.layout_taxi .taxi-header .taxi-avatar-wrapper {
+    height: 20vw;
+    width: 20vw;
+    border: 2px solid $header-icon-color;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.layout_taxi .taxi-header .taxi-avatar {
+    height: calc(20vw - 4px);
+    width: calc(20vw - 4px);
+}
+
+
+/* Semua tentang ion-content ada di sini */
+ion-content.scroll-content.ionic-scroll.overflow-scroll.has-header {
+    top: 0 !important;
+    bottom: 0 !important;
+    background-color: #fff !important;
+    padding-top: 70px;
+}
+
+/* Semua tentang my account ada di sini */
+ion-modal-view.customer-view.customer-layout1 ion-content {
+    background-color: $bg-color !important;
+    border-radius: 20px 20px 0 0 !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 {
+    height: 90vh !important;
+    margin-top: 10vh !important;
+    background-color: $bg-color !important;
+    background-image: none !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-header-bar.bar-custom.bar.bar-header {
+    background-color: $transparent-color !important;
+}
+
+/* login */
+ion-modal-view.customer-view.customer-layout1 div[ng-show="display_login_form"]:before {
+    content: " ";
+    display: block;
+    background: $bg-image;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 150px;
+    height: 120px;
+}
+
+ion-modal-view.customer-view.customer-layout1 div[ng-show="display_login_form"] .list .item.item-custom {
+    border: 0;
+    background-color: $header-icon-color;
+    color: $font-color !important;
+    border-radius: 5px;
+    margin: 15px 0;
+}
+
+ion-modal-view.customer-view.customer-layout1 div[ng-show="display_login_form"] .list:before {
+    content: "Silakan Login";
+    display: block;
+    padding: 20px 0;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+ion-modal-view.customer-view.customer-layout1 i.icon.ion-ios-person,
+ion-modal-view.customer-view.customer-layout1 i.ion-locked {
+    display: none;
+}
+
+ion-modal-view.customer-view.customer-layout1 div[ng-show="display_login_form"] .button.button-positive-custom {
+    border: 0;
+    border: 0;
+    background-color: $account-button;
+    color: $button-font;
+    border-radius: 5px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+ion-modal-view.customer-view.customer-layout1 div[ng-show="display_login_form"] .padding.text-right span.bold.positive.positive-custom.ng-binding {
+    font-size: 12px;
+    text-align: left;
+    display: block;
+    padding: 0 !important;
+    margin: 5px;
+    color: $link;
+    font-weight: normal;
+    margin: 0 !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 div[ng-show="display_login_form"],
+ion-modal-view.customer-view.customer-layout1 [ng-show="display_forgot_password_form"] {
+    background-color: $transparent-color !important;
+    padding-top: 35px;
+    padding: 30px;
+}
+
+ion-modal-view.customer-view.customer-layout1 div[ng-show="display_login_form"] div div.padding.text-center.ng-binding span {
+    font-size: 12px;
+    display: block;
+    padding: 0 !important;
+    color: $link;
+    font-weight: normal;
+    margin: 0 !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 div[ng-show="display_login_form"] div:first-child {
+    display: flex;
+    flex-direction: column;
+}
+
+ion-modal-view.customer-view.customer-layout1 div[ng-show="display_login_form"] div:first-child div:nth-child(1) {
+    order: 1;
+    display: none;
+}
+
+ion-modal-view.customer-view.customer-layout1 div[ng-show="display_login_form"] div:first-child div:nth-child(2) {
+    order: 2;
+    margin-top: 0 !important;
+    padding: 0 !important;
+    margin-bottom: 0;
+}
+
+ion-modal-view.customer-view.customer-layout1 div[ng-show="display_login_form"] div:first-child div:nth-child(3) {
+    order: 3;
+    padding: 0;
+    display: flex;
+    float: left;
+}
+
+ion-modal-view.customer-view.customer-layout1 div[ng-show="display_login_form"] div:first-child div:nth-child(4) {
+    order: 5;
+}
+
+ion-modal-view.customer-view.customer-layout1 div[ng-show="display_login_form"] div:first-child div:nth-child(5) {
+    order: 4;
+    font-size: 0;
+    padding: 0;
+    text-align: left;
+    color: $link;
+    font-weight: normal;
+    display: flex;
+    margin: 10px 0;
+}
+
+/* forgot password page */
+ion-modal-view.customer-view.customer-layout1 [ng-show="display_forgot_password_form"]:before {
+    content: " ";
+    display: block;
+    background: $bg-image;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 150px;
+    height: 120px;
+}
+
+ion-modal-view.customer-view.customer-layout1 [ng-show="display_forgot_password_form"] div:first-child {
+    display: flex;
+    flex-direction: column;
+}
+
+ion-modal-view.customer-view.customer-layout1 [ng-show="display_forgot_password_form"] div:first-child div:nth-child(1) {
+    order: 1;
+    padding: 0 0 20px 0;
+    margin: 0 !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 [ng-show="display_forgot_password_form"] div:first-child div:nth-child(2) {
+    order: 2;
+    margin-bottom: 10px !important;
+    padding: 0 !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 [ng-show="display_forgot_password_form"] div:first-child div:nth-child(3) {
+    order: 4;
+    padding: 0;
+    display: block;
+    margin-top: 40px;
+}
+
+ion-modal-view.customer-view.customer-layout1 [ng-show="display_forgot_password_form"] div:first-child div:nth-child(4) {
+    order: 3;
+}
+
+ion-modal-view.customer-view.customer-layout1 [ng-show="display_forgot_password_form"] .padding.text-left:before {
+    content: " Lupa Sandi";
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 19px !important;
+    display: block !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 [ng-show="display_forgot_password_form"] .padding.text-left {
+    margin-top: 50px;
+}
+
+ion-modal-view.customer-view.customer-layout1 [ng-show="display_forgot_password_form"] .list .item.item-custom {
+    border: 0;
+    background-color: $header-icon-color;
+    border-radius: 5px;
+}
+
+ion-modal-view.customer-view.customer-layout1 [ng-show="display_forgot_password_form"] .padding.text-center.ng-binding {
+    display: block;
+    text-align: left;
+    font-size: 11px;
+    padding: 0;
+}
+
+ion-modal-view.customer-view.customer-layout1 [ng-show="display_forgot_password_form"] .button.button-positive-custom {
+    border: 0;
+    background-color: $account-button;
+    color: $button-font;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+ion-modal-view.customer-view.customer-layout1 [ng-show="display_forgot_password_form"] .padding.text-center.ng-binding span {
+    color: $link;
+    font-weight: normal;
+    font-size: 11px;
+}
+
+ion-modal-view.customer-view.customer-layout1 [ng-show="display_forgot_password_form"] .padding.text-center.ng-binding {
+    display: block;
+    text-align: left;
+    font-size: 11px;
+    padding: 0;
+    color: $link;
+}
+
+
+/* regist */
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) {
+    padding: 30px;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .list .item.item-custom {
+    border: 0;
+    color: $font-color;
+    border-radius: 5px;
+    background-color: $header-icon-color;
+    margin: 10px 0;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .item.item-input.item-custom .input-label.ng-binding,
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) label.item.item-input.item-custom .input-label {
+    display: none;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .item.item-input.item-custom input {
+    max-width: 100%;
+    text-align: left;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) label.checkbox-custom h2 span,
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .checkbox-custom .item-content.disable-pointer-events span {
+    color: $link !important;
+    padding-left: 0;
+    font-size: 0;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3)  .checkbox-custom {
+    background-color: $transparent-color !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3) label.checkbox-custom h2>span:nth-child(1):after {
+    content: "Kebijakan Privasi";
+    font-size: 11px;
+    color: $link;
+    padding-left: 0 !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll > div:nth-child(3) label.checkbox-custom .item-content.disable-pointer-events>span.ng-binding:after {
+    content: "Pemberitahuan Terbaru";
+    font-size: 11px;
+    color: $link;
+    padding-left: 0 !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .button.button-positive-custom {
+    border: 0;
+    background-color: $account-button;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: $button-font;
+    font-weight: bold;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) div[ng-click="displayLoginForm()"] {
+    padding: 0;
+    text-align: left;
+    font-size: 11px;
+    color: $link;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) span.bold.positive.positive-custom.ng-binding {
+    color: $link;
+    font-weight: normal;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .checkbox-custom .checkbox input:before, 
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .checkbox-custom .checkbox .checkbox-icon:before {
+    border-color: $link;
+    height: 20px !important;
+    width: 20px !important;
+    border-radius: 5px !important;
+    background-color: $transparent-color;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .padding.text-right {
+    padding: 0;
+    display: block !important;
+    text-align: left;
+    font-size: 11px;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .padding.text-center.ng-binding {
+    text-align: left;
+    font-size: 11px;
+    padding: 0;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) [ng-click="logout()"] {
+    background-color: $transparent-color;
+    width: 60%;
+    padding: 10px 35px;
+    border-radius: 10px;
+    background-image: $login-img;
+    background-position: center right 10px;
+    background-repeat: no-repeat;
+    background-size: 28px;
+    border: 3px solid $header-icon-color !important;
+    display: block;
+    margin-left: 20%;
+    text-align: left;   
+    margin-top: 25px;
+}
+
+
+[ng-click="customer.change_password = !customer.change_password"] {
+    background-color: $transparent-color !important;
+    color: $link !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 ion-content div.scroll>div:nth-child(3) .checkbox-square .checkbox-icon:after {
+    border-width: 2px;
+    top: 20%;
+    left: 30%;
+    width: 11px;
+    height: 7px;
+}
+
+
+/* account setting */
+ion-modal-view.customer-view.customer-layout1 [ng-show="display_settings"] {
+    padding-top: 70px !important;
+}
+
+ion-modal-view.customer-view.customer-layout1 [ng-show="display_settings"] .list .item.item-custom {
+    border: 0;
+    background-color: $transparent-color;
+    border-radius: 5px;
+}
+
+
+ion-modal-view.customer-view.customer-layout1 [ng-show="display_settings"] .item-checkbox .checkbox {
+    left: 0 !important;
+    padding-left: 0 !important;
+}
+
+
+/* privacy policy */
+ion-modal-view.privacy-policy-view {
+    background-image: none !important;
+}
+
+ion-modal-view.privacy-policy-view ion-content {
+    background-color: $bg-color !important;
+    padding-top: 70px !important;
+}
+
+ion-modal-view.privacy-policy-view .item-text-custom {
+    border: 0;
+    background: $transparent-color;
+    padding-top: 75px;
+}
+
+
+
+
+
+
+
+
+
+
+/* FOlder v2 */
+ion-view.module-folder2.folder2-layout2 ion-content {
+    top: 0 !important;
+    bottom: 0 !important;
+}
+
+ion-view.module-folder2.folder2-layout2 {
+    background-color: #2a6aa2 !important;
+}
+ion-view.module-folder2.folder2-layout2 ion-content {
+    background-color: #2a6aa2 !important;
+    padding-top: 0 !important;
+}
+
+
+/* search */
+ion-view.module-folder2.folder2-layout2 div#search_section {
+    padding: 24px 20px 10px 45px;
+    background-color: #2a6aa2 !important;
+    margin-bottom: 0 !important;
+}
+
+ion-view.module-folder2.folder2-layout2 div#search_section label {
+    background-color: #2a6aa2 !important;
+}
+
+ion-view.module-folder2.folder2-layout2 div#search_section label {
+    background-color: #fff !important;
+    border-radius: 30px;
+    background-image: url(https://ensiklopediakesaguan.com/wp-content/uploads/2021/04/search-outline.svg);
+    background-position: center right 10px;
+    background-repeat: no-repeat;
+    background-size: 28px;
+}
+
+ion-view.module-folder2.folder2-layout2 div#search_section label i {
+    display: none;
+}
+
+
+ion-view.module-folder2.folder2-layout2 .folder-layout.folder-l6 .folder-l6-row:nth-child(1) {
+    padding: 0;
+    display: flex;
+    margin-bottom: 30px;
+    overflow: visible;
+    margin-top: -80px;
+    background-color: #ffffff !important;
+    position: relative;
+    z-index: 999;
+    width: 80%;
+    margin-left: 10%;
+    border-radius: 15px;
+    box-shadow: 0 1px 2px 0 #ecf0f6, 0 1px 3px 1px #adadad;
+}
+
+ion-view.module-folder2.folder2-layout2 .folder-layout.folder-l6 .folder-l6-row:nth-child(1) div.folder-l6-col {
+    margin: 0 auto;
+    padding: 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    overflow: visible;
+    background-color: transparent !important;
+    background-size: 30px;
+    height: 85px;
+}
+
+ion-view.module-folder2.folder2-layout2 .folder-layout.folder-l6 .folder-l6-row div.folder-l6-col p.folder-title.ng-binding {
+    padding: 0;
+    font-size: 11px;
+    bottom: 0;
+}
+
+ion-view.module-folder2.folder2-layout2 .list {
+    background-color: #fff !important;
+}
+
+ion-view.module-folder2.folder2-layout2 .list:first-child .item.item-custom {
+    background-color: #2a6aa2 !important;
+}
+
+
+ion-view.module-folder2.folder2-layout2 .list:first-child .item.item-custom:last-child {
+    border-radius: 0 0 30px 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 0 !important;
+}
+
+ion-view.module-folder2.folder2-layout2 .list:first-child .item.item-custom:last-child h2.ng-binding {
+    padding: 0;
+    font-size: 11px;
+    display: block;
+    bottom: 0 !important;
+}
+
+
+ion-view.module-folder2.folder2-layout2 .list:first-child .item.item-custom img {
+    width: 80% !important;
+    padding: 10px;
+}
+
+
+ion-view[state="folder2-category-list"] .list.folder2-search {
+    background-color: transparent !important;
+}
+
+ion-view[state="folder2-category-list"] .list.folder2-search img {
+    display: none;
+}
+
+
+ion-view[state="folder2-category-list"] .list.folder2-search .item.item-custom {
+    border: 0 !important;
+    background-color: transparent !important;
+    color: #000 !important;
+    padding-left: 20px !important;
+}
+
+ion-view[state="folder2-category-list"] .list.folder2-search a.item.item-custom.item-avatar-square.item-avatar.item-center h2 {
+    font-size: 12px !important;
+    color: #2a6aa2;
+    background-color: transparent;
+}
+
+
+
+/* menu folder - modul */
+
+ion-view.module-folder2.folder2-layout2 .list:last-child a {
+    background-color: #fff !important;
+    display: inline-block;
+}
+
+ion-view.module-folder2.folder2-layout2 .list:last-child {
+    background-color: #fff !important;
+}
+
+ion-view.module-folder2.folder2-layout2 .list:last-child a.item.item-custom.item-avatar-square.item-avatar.item-center img {
+    display: block !important;
+}
+
+
+ion-view.module-folder2.folder2-layout2 .list:last-child a:nth-child(-n+4) {
+    background-color: #fff !important;
+    display: inline-flex;
+    width: 20%;
+    margin: -70px 1% 0 2%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+
+/* 3 menu kedua */
+ion-view.module-folder2.folder2-layout2 .folder-layout.folder-l6 .folder-l6-row:nth-child(2) {
+    padding: 0;
+    display: flex;
+    margin-bottom: 20px;
+    overflow: visible;
+    white-space: nowrap !important;
+    width: 100% !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    white-space: nowrap !important;
+    -webkit-overflow-scrolling: touch !important;
+}
+
+ion-view.module-folder2.folder2-layout2 .folder-l6-row:nth-child(2) .folder-l6-col.item.item-custom:nth-child(1) {
+    width: 100% !important;
+    min-width: 80% !important;
+    display: inline-block !important;
+    height: 150px;
+    margin: 0 2%;
+    background-image: url(https://ensiklopediakesaguan.com/wp-content/uploads/2021/05/yamaha-aerox-155-connected-4-removebg-preview.png) !important;
+    background-repeat: no-repeat;
+    background-size: 50% !important;
+    background-position: bottom left;
+    background-color: #2a6aa2 !important;
+    border-radius: 10px;
+}
+
+ion-view.module-folder2.folder2-layout2 .folder-l6-row:nth-child(2) .folder-l6-col.item.item-custom:nth-child(2) {
+    width: 100% !important;
+    min-width: 80% !important;
+    display: inline-block !important;
+    height: 150px;
+    margin: 0 2%;
+    background-image: url(https://ensiklopediakesaguan.com/wp-content/uploads/2021/05/New-aerox-2-removebg-preview.png) !important;
+    background-repeat: no-repeat;
+    background-size: 50% !important;
+    background-position: bottom left;
+    background-color: #2a6aa2 !important;
+    border-radius: 10px;
+}
+
+ion-view.module-folder2.folder2-layout2 .folder-l6-row:nth-child(2) .folder-l6-col.item.item-custom:nth-child(3) {
+    width: 100% !important;
+    min-width: 80% !important;
+    display: inline-block !important;
+    height: 150px;
+    margin: 0 2%;
+    background-image: url(https://www.yamaha-motor.co.id/uploads/products/2020010716032844774W85632.png) !important;
+    background-repeat: no-repeat;
+    background-size: 50% !important;
+    background-position: bottom left;
+    background-color: #2a6aa2 !important;
+    border-radius: 10px;
+}
+
+ion-view.module-folder2.folder2-layout2 .folder-l6-row:nth-child(2) .folder-l6-col.item.item-custom {
+    width: 100% !important;
+    min-width: 80% !important;
+    display: inline-block !important;
+    height: 150px;
+    margin: 0 2%;
+}
+
+ion-view.module-folder2.folder2-layout2 .folder-l6-row:nth-child(2) .folder-l6-col.item.item-custom p.folder-title.ng-binding {
+    text-align: left;
+    font-size: 18px;
+    color: #fff;
+    top: 0;
+    padding-top: 10px;
+    padding-left: 50%;
+    line-height: 1.5;
+}
+
+ion-view.module-folder2.folder2-layout2 .folder-l6-row:nth-child(2) .folder-l6-col.item.item-custom:nth-child(1) p.folder-title.ng-binding:after {
+    content: "Rp. 32.000.000";
+    padding: 10px;
+    border-radius: 10px;
+    color: orange;
+    font-weight: bold;
+    margin-left: 0;
+    margin-top: 10px;
+    top: 0;
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    padding-left: 0;
+}
+
+ion-view.module-folder2.folder2-layout2 .folder-l6-row:nth-child(2) .folder-l6-col.item.item-custom:nth-child(2) p.folder-title.ng-binding:after {
+    content: "Rp. 26.000.000";
+    padding: 10px;
+    border-radius: 10px;
+    color: orange;
+    font-weight: bold;
+    margin-left: 0;
+    margin-top: 10px;
+    top: 0;
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    padding-left: 0;
+}
+
+ion-view.module-folder2.folder2-layout2 .folder-l6-row:nth-child(2) .folder-l6-col.item.item-custom:nth-child(3) p.folder-title.ng-binding:after {
+    content: "Rp. 50.000.000";
+    padding: 10px;
+    border-radius: 10px;
+    color: orange;
+    font-weight: bold;
+    margin-left: 0;
+    margin-top: 10px;
+    top: 0;
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    padding-left: 0;
+}
+
+
+ion-view.module-folder2.folder2-layout2 .folder-l6-row:nth-child(2) .folder-l6-col.item.item-custom p.folder-title.ng-binding:after {
+    content: "Motor Sport Heritage dari Yamaha yang mengusung konsep Born to be Free, Yamaha All New XSR 155";
+    display: block;
+    margin-top: 10px;
+    font-size: 12px;
+    text-align: left;
+    padding-left: 50%;
+    border-radius: 10px;
+    padding: 10px 10px 10px 47%;
+}
+
+
+
+
+/* Tiga menu ketiga */
+ion-view.module-folder2.folder2-layout2 .folder-l6-row:nth-child(3) {
+    width: 100% !important;
+    position: relative;
+    margin-bottom: 0 !important;
+    top: 0 !important;
+    padding-top: 0 !important;
+    overflow: visible;
+    white-space: nowrap !important;
+    width: 100% !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    white-space: nowrap !important;
+    -webkit-overflow-scrolling: touch !important;
+}
+
+ion-view.module-folder2.folder2-layout2 .folder-l6-row:nth-child(3) .folder-l6-col.item.item-custom {
+    background-color: #e4e4e4 !important;
+    min-width: 80% !important;
+    border-radius: 10px;
+    margin: 10px 2% !important;
+    height: 150px;
+    width: 100% !important;
+    min-width: 80% !important;
+    display: inline-block !important;
+    height: 150px;
+    margin: 0 2%;
+}
+
+ion-view.module-folder2.folder2-layout2 .folder-l6-row:nth-child(3) .folder-l6-col.item.item-custom p {
+    font-size: 18px !important;
+    color: #000;
+    font-weight: bold;
+    padding-left: 50% !important;
+    top: 0;
+    padding-top: 10px !important;
+    text-align: left;
+}
+
+ion-view.module-folder2.folder2-layout2 .folder-l6-row:nth-child(3) .folder-l6-col.item.item-custom:nth-child(1) p:after {
+    content: "Lorem adalah teks standar yang ditempatkan untuk mendemostrasikan elemen grafis";
+    display: block;
+    text-align: left;
+    font-size: 12px !important;
+    font-weight: normal;
+    margin-top: 10px;
+}
+
+ion-view.module-folder2.folder2-layout2 .folder-l6-row:nth-child(3) .folder-l6-col.item.item-custom:nth-child(2) p:after {
+    content: "Lorem adalah teks standar yang ditempatkan untuk mendemostrasikan elemen grafis";
+    display: block;
+    text-align: left;
+    font-size: 12px !important;
+    font-weight: normal;
+    margin-top: 10px;
+}
+ion-view.module-folder2.folder2-layout2 .folder-l6-row:nth-child(3) .folder-l6-col.item.item-custom:nth-child(3) p:after {
+    content: "Lorem adalah teks standar yang ditempatkan untuk mendemostrasikan elemen grafis";
+    display: block;
+    text-align: left;
+    font-size: 12px !important;
+    font-weight: normal;
+    margin-top: 10px;
+}
+
+
+
+ion-view.module-folder2.folder2-layout2 .folder-l6-row:nth-child(3) .folder-l6-col.item.item-custom:nth-child(1) {
+    background-color: #e4e4e4 !important;
+    min-width: 80% !important;
+    border-radius: 10px;
+    margin: 10px 2% !important;
+    height: 150px;
+    display: block;
+    background-image: url(https://ensiklopediakesaguan.com/wp-content/uploads/2021/05/yamahax-removebg-preview.png) !important;
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: 50% !important;
+}
+
+ion-view.module-folder2.folder2-layout2 .folder-l6-row:nth-child(3) .folder-l6-col.item.item-custom:nth-child(2) {
+    background-color: #e4e4e4 !important;
+    min-width: 80% !important;
+    border-radius: 10px;
+    margin: 10px 2% !important;
+    height: 150px;
+    display: block;
+    background-image: url(https://ensiklopediakesaguan.com/wp-content/uploads/2021/05/2019081517240110182C65324-removebg-preview.png) !important;
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: 50% !important;
+}
+
+
+ion-view.module-folder2.folder2-layout2 .folder-l6-row:nth-child(3) .folder-l6-col.item.item-custom:nth-child(3) {
+    background-color: #e4e4e4 !important;
+    min-width: 80% !important;
+    border-radius: 10px;
+    margin: 10px 2% !important;
+    height: 150px;
+    display: block;
+    background-image: url(https://ensiklopediakesaguan.com/wp-content/uploads/2021/05/2019081517240164316H51769-removebg-preview.png) !important;
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: 50% !important;
+}
+
+/* Tiga menu keempat */
+ion-view.module-folder2.folder2-layout2 .folder-l6-row:nth-child(4) {
+    width: 100% !important;
+    position: relative;
+    margin-bottom: 0 !important;
+    top: 0 !important;
+    padding-top: 0 !important;
+    overflow: visible;
+    white-space: nowrap !important;
+    width: 100% !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    white-space: nowrap !important;
+    -webkit-overflow-scrolling: touch !important;
+}
+
+ion-view.module-folder2.folder2-layout2 .folder-l6-row:nth-child(4) .folder-l6-col.item.item-custom {
+    background-color: #e4e4e4 !important;
+    min-width: 75% !important;
+    border-radius: 10px;
+    margin: 10px 2% !important;
+    height: 150px;
+    width: 100% !important;
+    min-width: 80% !important;
+    display: inline-block !important;
+    height: 150px;
+    margin: 0 2%;
+}
+
+ion-view.module-folder2.folder2-layout2 .folder-l6-row:nth-child(4) .folder-l6-col.item.item-custom p {
+    font-size: 18px !important;
+    color: #000;
+    font-weight: bold;
+    padding-left: 50% !important;
+    top: 0;
+    padding-top: 10px !important;
+    text-align: left;
+}
+
+ion-view.module-folder2.folder2-layout2 .folder-l6-row:nth-child(4) .folder-l6-col.item.item-custom:nth-child(1) p:after {
+    content: "Lorem adalah teks standar yang ditempatkan untuk mendemostrasikan elemen grafis";
+    display: block;
+    text-align: left;
+    font-size: 12px;
+    font-weight: normal;
+    margin-top: 10px;
+}
+
+ion-view.module-folder2.folder2-layout2 .folder-l6-row:nth-child(4) .folder-l6-col.item.item-custom:nth-child() p:after {
+    content: "Lorem adalah teks standar yang ditempatkan untuk mendemostrasikan elemen grafis";
+    display: block;
+    text-align: left;
+    font-size: 12px;
+    font-weight: normal;
+    margin-top: 10px;
+}
+ion-view.module-folder2.folder2-layout2 .folder-l6-row:nth-child(4) .folder-l6-col.item.item-custom:nth-child(3) p:after {
+    content: "Lorem adalah teks standar yang ditempatkan untuk mendemostrasikan elemen grafis";
+    display: block;
+    text-align: left;
+    font-size: 12px;
+    font-weight: normal;
+    margin-top: 10px;
+}
+
+ion-view.module-folder2.folder2-layout2 .folder-l6-row:nth-child(4) .folder-l6-col.item.item-custom:nth-child(1) {
+    background-color: #e4e4e4 !important;
+    min-width: 75% !important;
+    border-radius: 10px;
+    margin: 10px 2% !important;
+    height: 150px;
+    display: block;
+    background-image: url(https://ensiklopediakesaguan.com/wp-content/uploads/2021/05/yamahax-removebg-preview.png) !important;
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: 50% !important;
+}
+
+ion-view.module-folder2.folder2-layout2 .folder-l6-row:nth-child(4) .folder-l6-col.item.item-custom:nth-child(2) {
+    background-color: #e4e4e4 !important;
+    min-width: 75% !important;
+    border-radius: 10px;
+    margin: 10px 2% !important;
+    height: 150px;
+    display: block;
+    background-image: url(https://ensiklopediakesaguan.com/wp-content/uploads/2021/05/2019081517240110182C65324-removebg-preview.png) !important;
+    background-position: bottom left;
+    background-repeat: no-repeat;
+}
+
+
+ion-view.module-folder2.folder2-layout2 .folder-l6-row:nth-child(4) .folder-l6-col.item.item-custom:nth-child(3) {
+    background-color: #e4e4e4 !important;
+    min-width: 75% !important;
+    border-radius: 10px;
+    margin: 10px 2% !important;
+    height: 150px;
+    display: block;
+    background-image: url(https://ensiklopediakesaguan.com/wp-content/uploads/2021/05/2019081517240164316H51769-removebg-preview.png) !important;
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: 50% !important;
+}
+
+/* tiga menu kelima */
+ion-view.module-folder2.folder2-layout2 .folder-l6-row:nth-child(5) {
+    width: 100% !important;
+    position: relative;
+    margin-bottom: 0 !important;
+    top: 0 !important;
+    padding-top: 0 !important;
+    padding-top: 0 !important;
+    overflow: visible;
+    white-space: nowrap !important;
+    width: 100% !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    white-space: nowrap !important;
+    -webkit-overflow-scrolling: touch !important;
+}
+
+ion-view.module-folder2.folder2-layout2 .folder-l6-row:nth-child(5) .folder-l6-col.item.item-custom {
+    background-color: #e4e4e4 !important;
+    min-width: 90% !important;
+    border-radius: 10px;
+    margin: 10px 2% !important;
+    height: 150px;
+    width: 100% !important;
+    min-width: 80% !important;
+    display: inline-block !important;
+    height: 150px;
+    margin: 0 2%;
+}
+
+ion-view.module-folder2.folder2-layout2 .folder-l6-row:nth-child(5) .folder-l6-col.item.item-custom p {
+    font-size: 18px !important;
+    color: #000;
+    font-weight: bold;
+    padding-left: 50% !important;
+    top: 0;
+    padding-top: 10px !important;
+    text-align: left;
+}
+
+ion-view.module-folder2.folder2-layout2 .folder-l6-row:nth-child(5) .folder-l6-col.item.item-custom p:after {
+    content: "Lorem adalah teks standar yang ditempatkan untuk mendemostrasikan elemen grafis";
+    display: block;
+    text-align: left;
+    font-size: 12px;
+    font-weight: normal;
+    margin-top: 10px;
+}
+
+
+ion-view.module-folder2.folder2-layout2 .folder-l6-row:nth-child(5) .folder-l6-col.item.item-custom:nth-child(1) {
+    background-color: #e4e4e4 !important;
+    min-width: 90% !important;
+    border-radius: 10px;
+    margin: 10px 2% !important;
+    height: 150px;
+    display: block;
+    background-image: url(https://ensiklopediakesaguan.com/wp-content/uploads/2021/05/yamahax-removebg-preview.png) !important;
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: 50% !important;
+}
+
+ion-view.module-folder2.folder2-layout2 .folder-l6-row:nth-child(5) .folder-l6-col.item.item-custom:nth-child(2) {
+    background-color: #e4e4e4 !important;
+    min-width: 90% !important;
+    border-radius: 10px;
+    margin: 10px 2% !important;
+    height: 150px;
+    display: block;
+    background-image: url(https://ensiklopediakesaguan.com/wp-content/uploads/2021/05/2019081517240110182C65324-removebg-preview.png) !important;
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: 50% !important;
+}
+
+
+ion-view.module-folder2.folder2-layout2 .folder-l6-row:nth-child(5) .folder-l6-col.item.item-custom:nth-child(3) {
+    background-color: #e4e4e4 !important;
+    min-width: 90% !important;
+    border-radius: 10px;
+    margin: 10px 2% !important;
+    height: 150px;
+    display: block;
+    background-image: url(https://ensiklopediakesaguan.com/wp-content/uploads/2021/05/2019081517240164316H51769-removebg-preview.png) !important;
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: 50% !important;
+}
+
+/* CATALOG PRO */
+/* Category page */
+/*catalog pro */
+ion-view.catalogpro.catalogpro-home ion-content,
+ion-view.catalogpro.catalogpro-products ion-content#catalogpro-content,
+ion-modal-view.catalogpro.catalogpro-filter-orders ion-content,
+ion-modal-view.catalogpro.catalogpro-reating-review ion-content {
+    background-color: #fff !important;
+    top: 0 !important;
+    padding-top: 70px;
+}
+
+ion-view.catalogpro.catalogpro-home ion-content div,
+ion-view.catalogpro.catalogpro-products ion-content#catalogpro-content div,
+ion-modal-view.catalogpro.catalogpro-filter-orders ion-content div,
+ion-modal-view.catalogpro.catalogpro-reating-review ion-content .list {
+    background-color: #fff !important;
+    border: 0 !important;
+}
+
+ion-view.catalogpro.catalogpro-home .item.item-custom.catalogpro-category-item.category_grid.remove-border,
+ion-modal-view.catalogpro.catalogpro-reating-review .item.item-body.item-custom.text-center.ion-star-item.feedback-star-box.remove-border,
+ion-modal-view.catalogpro.catalogpro-reating-review label.item.item-input.item-custom.item-stacked-label.padding.message-input-box.remove-border,
+ion-modal-view.catalogpro.catalogpro-reating-review .item.item-body.item-custom.feedback-submit-button.remove-border {
+    background-color: transparent !important;
+    padding: 0;
+    border-radius: 0 !important;
+}
+
+
+/* mengatur judul */
+ion-view.catalogpro.catalogpro-home .item.item-divider {
+    background-color: transparent;
+    border: 0;
+}
+
+ion-view.catalogpro.catalogpro-home .item.item-divider h2 {
+    background-color: transparent !important;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+
+ion-view.catalogpro.catalogpro-home ion-content#catalogpro-content .list .row .col.col-50.product-border-bottom {
+    text-align: center;
+}
+
+ion-view.catalogpro.catalogpro-home ion-content#catalogpro-content .list .item.item-custom.catalogpro-product-item.product_grid.remove-border {
+    padding: 0;
+}
+
+ion-view.catalogpro.catalogpro-home ion-content#catalogpro-content .list p.product_short_description.ng-binding {
+    display: none;
+}
+
+ion-view.catalogpro.catalogpro-home ion-content#catalogpro-content .list h2.product_name.ng-binding {
+    font-weight: bold;
+    font-size: 16px;
+    display: block !important;
+    text-align: center !important;
+}
+
+ion-view.catalogpro.catalogpro-home ion-content#catalogpro-content .list p.product_price.ng-binding del {
+    font-size: 12px;
+    display: block;
+}
+
+
+ion-modal-view.catalogpro.catalogpro-filter-orders div#products_slider div {
+    background-color: transparent !important;
+}
+
+
+ion-modal-view.catalogpro.catalogpro-filter-orders div.scroll div.list div#products_slider,
+ion-modal-view.catalogpro.catalogpro-filter-orders div.scroll div.list div#products_slider ion-slide.slider-slide {
+    background-color: transparent !important;
+}
+
+/* 4 menu pertama */
+ion-view.catalogpro.catalogpro-home .item.item-custom.item-thumbnail-left.item-icon-right.categories-list{
+    width: 45% !important;
+    display: inline-block;
+    background-color: #fff;
+    margin: 5px 2%;
+    border-radius: 20px;
+    padding: 0;
+}
+
+ion-view.catalogpro.catalogpro-home .item.item-custom.item-thumbnail-left.item-icon-right.categories-list img {
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 5px auto;
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 50%;
+}
+
+ion-view.catalogpro.catalogpro-home .item.item-custom.item-thumbnail-left.item-icon-right.categories-list h2 {
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 18px;
+    margin-top: 110px;
+    font-weight: bold;
+}
+
+ion-view.catalogpro.catalogpro-home .item.item-custom.item-thumbnail-left.item-icon-right.categories-list p {
+    width: 100%;
+    text-align: center;
+    color: #000;
+    display: block;
+}
+ ion-view.catalogpro.catalogpro-home .item.item-custom.item-thumbnail-left.item-icon-right.categories-list p:nth-of-type(1) {
+   margin-top: 5px;
+}
+ ion-view.catalogpro.catalogpro-home .item.item-custom.item-thumbnail-left.item-icon-right.categories-list p:nth-of-type(2) {
+    color: green;
+   margin-top: 5px;
+    margin-bottom: 20px;
+}   
+
+ ion-view.catalogpro.catalogpro-home .item.item-custom.item-thumbnail-left.item-icon-right.categories-list p:nth-of-type(2):after {
+    content: "More Details";
+    display: block;
+    width: 80%;
+    margin-left: 10%;
+    background-color: green;
+    padding: 10px;
+    border-radius: 10px;
+   color: #fff;
+   margin-top: 10px;
+}   
+
+ion-view.catalogpro.catalogpro-home .item.item-custom.item-thumbnail-left.item-icon-right.categories-list i {
+    display: none;
+}
+
+/* Product page */
+ion-view.catalogpro.catalogpro-products .item.item-custom.catalogpro-product-item.product_grid.remove-border {
+    padding: 0 !important;
+}
+
+ion-view.catalogpro.catalogpro-products .item.item-custom.catalogpro-product-item.product_grid.remove-border .row {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+ion-view.catalogpro.catalogpro-products .col.col-50.product-border-bottom.product-border-right,
+ion-view.catalogpro.catalogpro-products  .col.col-50.product-border-bottom {
+    background-color: #fff;
+    border-radius: 20px;
+    margin: 100px 1% 10px 1%;
+    flex: 0 0 50%;
+    max-width: 48%;
+    padding: 5px 0 20px 0;
+}
+
+/* image */
+ion-view.catalogpro.catalogpro-products  .product_grid .catalogpro-product-grid-img {
+    min-height: 158px;
+    z-index: 2;
+    margin-top: -100px;
+}
+
+/* h2 */
+ion-view.catalogpro.catalogpro-products .col.col-50 h2.product_name.ng-binding {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #000 !important;
+}
+
+ion-view.catalogpro.catalogpro-products p.product_short_description.ng-binding {
+    color: #000 !important;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 10px;
+    display: none;
+}
+
+ion-view.catalogpro.catalogpro-products p.product_price.ng-binding {
+    color: green !important;
+    text-align: center;
+    font-size: 16px;
+    display: block;
+    margin-top: 10px;
+}
+
+ ion-view.catalogpro.catalogpro-products p.product_price.ng-binding:after {
+    content: "Details";
+    display: block;
+    width: 60%;
+    margin-left: 20%;
+    background-color: green;
+    padding: 10px 5px;
+    border-radius: 10px;
+   color: #fff;
+   margin-top: 10px;
+    font-size: 12px;
+    display: none;
+}   
+
+ion-view.catalogpro.catalogpro-home .button-floating-action {
+    position: fixed !important;
+    top: calc(90vh - 60px) !important;
+    right: 2vw !important;
+    border-width: 0 !important;
+    padding: 5px 12px 5px 12px !important;
+    z-index: 999 !important;
+    box-shadow: 5px 5px 5px #888 !important;
+    background-color: green;
+    min-width: 55px !important;
+    min-height: 45px !important;
+    border-radius: 10px !important;
+    color: #fff;
+    font-size: 20px;
+}
+
+ion-view.catalogpro.catalogpro-products del.icon-danger-custom.ng-binding {
+    color: #ad3830 !important;
+    text-align: center;
+    font-size: 13px;
+    display: block;
+    margin-top: 5px;
+}
+
+
+/* Detail Product Page */
+ion-modal-view.catalogpro.catalogpro-filter-orders ion-header-bar,
+ion-modal-view.catalogpro.catalogpro-reating-review ion-header-bar {
+    display: none;
+}
+
+ion-modal-view.catalogpro.catalogpro-filter-orders div.scroll div.list {
+    display: flex;
+    flex-direction: column;
+}
+
+/*
+ion-modal-view.catalogpro.catalogpro-filter-orders ion-content {
+    top: calc(var(--safe-area-inset-top) + 0px) !important; 
+} */
+
+ion-modal-view.catalogpro.catalogpro-filter-orders .list .item.item-custom.product-slider.remove-border {
+    border: 0;
+    background-color: #ecf0f6 !important;
+    border-radius: 30px;
+    margin: 10px 5%;
+    width: 90%;
+    padding: 15px 0 100px 0;
+    z-index: 999;
+}
+
+ion-modal-view.catalogpro.catalogpro-filter-orders i.icon.ion-record {
+    color: green;
+}
+
+ion-modal-view.catalogpro.catalogpro-filter-orders ion-slide.slider-slide img {
+    width: 60% !important;
+    margin-left: 20%;
+}
+
+ion-modal-view.catalogpro.catalogpro-filter-orders .list .icon-active-custom {
+    color: red !important;
+}
+
+ion-modal-view.catalogpro.catalogpro-filter-orders .list .item.item-custom:nth-child(2) h2,
+ion-modal-view.catalogpro.catalogpro-filter-orders .list .item.item-custom:nth-child(2) p {
+    color: #000 !important;
+}
+
+ion-modal-view.catalogpro.catalogpro-filter-orders .list .item.item-custom:nth-child(2) {
+    margin-top: -110px;
+    background-color: transparent !important;
+    z-index: 999;
+    color: #000 !important;
+    margin-bottom: 40px;
+    padding: 0 20px;
+    width: 90%;
+    margin-left: 5%;
+}
+
+ion-modal-view.catalogpro.catalogpro-filter-orders .list .item.item-custom.item-avatar.item-icon-right.categories-list {
+    margin-top: 0 !important;
+    background-color: white !important;
+    color: #000 !important;
+    width: 100%;
+    margin: 0;
+    padding-left: 65px;
+}
+
+ion-modal-view.catalogpro.catalogpro-filter-orders item.item-divider h2 {
+    color: #000;
+    font-weight: bold;
+    color: #fff;
+}
+
+ion-modal-view.catalogpro.catalogpro-filter-orders .item-divider {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    min-height: 30px;
+    background-color: transparent;
+    color: #222 !important;
+    font-weight: 500;
+    border: 0;
+}
+
+ion-modal-view.catalogpro.catalogpro-filter-orders .item.item-custom.item-body.remove-border {
+    padding: 0 10px;
+    margin-bottom: 0;
+}
+
+ion-modal-view.catalogpro.catalogpro-filter-orders .item.item-custom.remove-border h2 {
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+ion-modal-view.catalogpro.catalogpro-filter-orders .item.item-custom.remove-border h2 span {
+    display: block !important;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 5px;
+    color: green;
+    margin-bottom: 10px;
+}
+
+ion-modal-view.catalogpro.catalogpro-filter-orders p.short_description.ng-binding {
+    display: none;
+}
+
+
+ion-modal-view.catalogpro.catalogpro-filter-orders button.pull-right.button.button-small.button-positive-custom.ng-binding {
+    border: 0;
+    background-color: #ecf0f6;
+    color: #ff0000;
+    padding: 0px 10px;
+}
+
+
+ion-modal-view.catalogpro.catalogpro-reating-review .icon-active-custom {
+    color: #ff0000 !important;
+}
+
+ion-modal-view.catalogpro.catalogpro-reating-review label textarea {
+    border: 2px solid #fff;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+ion-modal-view.catalogpro.catalogpro-reating-review .item.item-body.item-custom.feedback-submit-button.remove-border button {
+    width: 50%;
+    margin-left: 25%;
+    border-radius: 10px !important;
+    border: 0;
+    background-color: #fff;
+}
+
+/* Deskripsi */
+ion-modal-view.catalogpro.catalogpro-filter-orders.modal.has-background-image.slide-in-up.ng-enter.active.ng-enter-active [ng-if="product_details.product.description!=''"] p {
+    padding-top: 10px;
+}
+
+ion-modal-view.catalogpro.catalogpro-filter-orders.modal.has-background-image.slide-in-up.ng-enter.active.ng-enter-active .item.item-divider[ng-if="product_details.product.description!=''"] h2 {
+    color: #000 !important;
+    padding-top: 210px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* judul deskripsi */
+ion-modal-view.catalogpro.catalogpro-filter-orders.modal.has-background-image.slide-in-up.ng-enter.active.ng-enter-active .item.item-divider[ng-if="product_details.product.description!=''"] {
+    background-color: #fff;
+    border-radius: 0% 90% 0 0 / 31% 20% 0 0;
+    margin-top: -200px;
+}
+
+ion-modal-view.catalogpro.catalogpro-filter-orders.modal.has-background-image.slide-in-up.ng-enter.active.ng-enter-active [ng-if="product_details.product.description!=''"] {
+    background-color: #fff !important;
+    color: #000 !important;
+}
+
+/* isi deskripsi */
+ion-modal-view.catalogpro.catalogpro-filter-orders.modal.has-background-image.slide-in-up.ng-enter.active.ng-enter-active .item.item-custom.item-body.remove-border[ng-if="product_details.product.description!=''"] p.ng-binding {
+    color: #000 !important;
+    padding: 0 5px 20px 5px;
+    margin-top: 0;  
+}
+
+ion-modal-view.catalogpro.catalogpro-filter-orders.modal.has-background-image.slide-in-up.ng-enter.active.ng-enter-active .item.item-custom.item-body.remove-border[ng-if="product_details.product.description!=''"] p>p {
+    color: #000 !important;
+    padding: 10px 0;
+    margin: 0;  
+}
+
+/* Peringkat dan ulasan */
+ion-modal-view.catalogpro.catalogpro-filter-orders.modal.has-background-image.slide-in-up.ng-enter.active.ng-enter-active .item.item-divider {
+    background-color: #fff;
+}
+
+ion-modal-view.catalogpro.catalogpro-filter-orders.modal.has-background-image.slide-in-up.ng-enter.active.ng-enter-active .item.item-divider h2 {
+    color: #000 !important;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+ion-modal-view.catalogpro.catalogpro-filter-orders.modal.has-background-image.slide-in-up.ng-enter.active.ng-enter-active .item.item-custom {
+    background-color: #fff;
+}
+
+ion-modal-view.catalogpro.catalogpro-filter-orders.modal.has-background-image.slide-in-up.ng-enter.active.ng-enter-active .item.item-custom p,
+ion-modal-view.catalogpro.catalogpro-filter-orders.modal.has-background-image.slide-in-up.ng-enter.active.ng-enter-active .item.item-custom h2 {
+    color: #000 !important;
+}
+
+/* favarite icon */
+span.icon.icon-active-custom.pull-right.product-favorite {
+    order: 2;
+    right: 25px;
+    color: #ffaa00 !important;
+}
+
+/* rate page */
+ion-modal-view.catalogpro.catalogpro-reating-review .scroll {
+    background-color: #fff !important;
+    padding: 20px 10px;
+    border-radius: 30px 30px 0 0;
+}
+
+.item.item-body.item-custom.text-center.ion-star-item.feedback-star-box.remove-border,
+.item.item-body.item-custom.text-center.ion-star-item.feedback-star-box.remove-border,
+.item.item-body.item-custom.feedback-submit-button.remove-border,
+label.item.item-input.item-custom.item-stacked-label.padding.message-input-box.remove-border {
+    background: transparent;
+}
+
+label.item.item-input.item-custom.item-stacked-label.padding.message-input-box.remove-border span.input-label.ng-binding {
+  color: #000 !important;
+}
+
+label.item.item-input.item-custom.item-stacked-label.padding.message-input-box.remove-border textarea {
+    color: #000;
+    border-bottom: 1px solid #008000;
+    border-radius: 0;
+    padding: 10px;
+}
+
+ion-modal-view.zoom-view.modal.slide-in-up.ng-enter.active.ng-enter-active button[ng-click="closeZoomView()"] {
+    background-image: url(https://ensiklopediakesaguan.com/wp-content/uploads/2021/05/close_btn.png) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: contain !important;
+    font-size: 0 !important;
+    margin-top: 40px !important;
+}
+
+ion-modal-view.catalogpro.catalogpro-reating-review .list:before {
+    content: "Your Feedback";
+    font-weight: bold;
+    font-size: 20px;
+    color: #000 !important;
+    margin-top: 20px !important;
+    display: block;
+}
+
+ion-modal-view.catalogpro.catalogpro-reating-review .item.item-body.item-custom.feedback-submit-button.remove-border button {
+    width: 50%;
+    margin-left: 25%;
+    border-radius: 10px !important;
+    border: 0;
+    background-color: green;
+    text-transform: uppercase;
+    color: #fff;
+    opacity: 1;
+}
+
+ion-modal-view.catalogpro.catalogpro-filter-orders button.pull-right.button.button-small.button-positive-custom.ng-binding {
+    border: 0;
+    background-color: green;
+    color: #ffffff;
+    padding: 0px 10px;
+}
+
+ion-modal-view.catalogpro.catalogpro-filter-orders.modal .item.item-divider.item-divider-custom.ng-binding {
+    font-size: 18px;
+    padding: 20px;
+}
+
+/* mengatur page filter */
+ion-modal-view.catalogpro.catalogpro-filter-orders .list .item.item-divider.item-divider-custom.ng-binding {
+    border-radius: 30px 30px 0 0;
+    padding: 40px;
+    display: block;
+}
+
+ion-modal-view.catalogpro.catalogpro-filter-orders .list .item.item-custom.item-avatar.item-icon-right.categories-list:last-child {
+    border-radius: 0 0 30px 30px;
+}
+
+/* mengatur icon filter */
+ion-view.catalogpro.catalogpro-products .button-floating-action {
+    position: fixed !important;
+    top: calc(90vh - 60px) !important;
+    right: 2vw !important;
+    border-width: 0 !important;
+    padding: 5px 12px 5px 12px !important;
+    z-index: 999 !important;
+    box-shadow: 5px 5px 5px #888 !important;
+    background-color: green;
+    min-width: 55px !important;
+    min-height: 45px !important;
+    border-radius: 10px !important;
+    color: #fff;
+    font-size: 20px;
+}
+
+/* NEws Wall */
+ion-view[state="newswall-list"] ion-content {
+    background-color: #fff !important;
+    top: 0 !important;
+}
+
+
+ion-view[state="newswall-list"] ion-content div[ng-click="showItem(item)"] {
+    background-color: transparent !important;
+    padding: 10px;
+}
+
+
+ion-view[state="newswall-list"] ion-content .list .item.item-custom {
+    border: 0 !important;
+    background-color: #ecf0f6;
+    color: #000 !important;
+}
+
+ion-view[state="newswall-list"] ion-content .list .item.item-custom h2 {
+    color: #000 !important;
+    white-space: normal;
+    text-transform: capitalize !important;
+    font-variant: normal;
+}
+
+ion-view[state="newswall-list"] ion-content p[ng-if="item.subtitle"] {
+    color: #2a6aa2 !important;
+    font-size: 11px;
+    font-style: italic;
+}
+
+ion-view[state="newswall-list"] ion-content .list .item.item-custom p {
+    color: #000;
+}
+
+ion-view[state="newswall-list"] ion-content .item.item-custom.item-avatar {
+    border-radius: 20px 20px 0 0;
+}
+
+ion-view[state="newswall-list"] ion-content .item.item-image.item-custom {
+    border-radius: 0 0 20px 20px;
+}
+
+ion-view[state="newswall-list"] ion-content .col-offset-25 {
+    margin-left: 0;
+    max-width: 100% !important;
+    object-fit: contain !important;
+}
+
+ion-view[state="newswall-list"] ion-content .col.col-75.col-offset-25 img {
+    border-radius: 20px;
+    background-color: #c2c2c2;
+}
+
+ion-view[state="newswall-view"] .list.card {
+    box-shadow: none !important;
+}
+
+ion-view[state="newswall-view"] .card .item.item-custom {
+    border: 0 !important;
+    background-color: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+}
+
+/* calendar */
+ion-view.event-view ion-content {
+    background-color: #fff !important;
+    top: 0 !important;
+}
+
+ion-view[state="event-list"] .list {
+    background-color: transparent !important;
+}
+
+ion-view[state="event-list"] .list .item-divider.item-divider-custom {
+    background-color: transparent;
+    color: #000 !important;
+    border: 0 !important;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+ion-view[state="event-list"] .list .item.item-custom {
+    border: 0 !important;
+    background-color: #ecf0f6 !important;
+    color: #000 !important;
+    margin: 10px !important;
+    border-radius: 10px;
+}
+
+ion-view[state="event-list"] .item.item-custom.item-thumbnail-left img {
+    max-width: 125px !important;
+    height: auto !important;
+    left: 0 !important;
+    margin-left: 0 !important;
+}
+
+
+ion-view[state="event-list"] .item.item-custom.item-thumbnail-left {
+    padding-left: 35%;
+}
+
+ion-view[state="event-list"]   h2.ng-binding {
+    margin-bottom: 15px;
+    font-weight: bold !important;
+    font-size: 18px !important;
+    color: #2a6aa2 !important;
+}
+
+ion-view[state="event-list"]  p[ng-if="item.start_time_at"]:after {
+    content: "Detail";
+    display: block;
+    background-color: #007aff !important;
+    color: #fff !important;
+    padding: 10px;
+    width: 40%;
+    text-align: center;
+    border-radius: 10px;
+    margin-left: 60%;
+}
+
+
+ion-view[state="event-view"] ion-content div {
+    background: transparent !important;
+    box-shadow: none !important;
+    border: 0 !important;
+    color: #000 !important;
+}
+
+ion-view[state="event-view"] ion-content div h2,
+ion-view[state="event-view"] ion-content div p {
+    color: #000 !important;
+}
+
+
+ion-view[state="event-view"] ion-content .item.item-icon-left.item-custom {
+    padding-left: 10px;
+}
+
+ion-view[state="event-view"] i.icon.ion-calendar,
+ion-view[state="event-view"] i.icon.ion-location,
+ion-view[state="event-view"] i.icon.ion-sb-turn-right,
+ion-view[state="event-view"] i.icon.ion-earth {
+    display: none !important;
+}
+
+
+ion-view[state="event-view"] .item.item-icon-left.item-custom.ng-binding {
+    background-color: #ecf0f6 !important;
+    margin: 10px !important;
+    border-radius: 10px;
+    text-align: center;
+    color: #007aff !important;
+}
+
+ion-view[state="event-view"] .list>div:nth-child(n+3) {
+    order: 3;
+}
+ion-view[state="event-view"] .list>div:nth-child(2) {
+    order: 1;
+}
+ion-view[state="event-view"] .list>div:nth-child(1) {
+    order: 2;
+}
+
+ion-view[state="event-view"] .list>div:nth-child(1) p {
+    color: #2a6aa2 !important;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+ion-view[state="event-view"] .list>div:nth-child(1) h2.ng-binding {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+ion-view[state="event-view"] .item.item-divider.item-divider-custom h2[ng-if="cover.title2"] {
+    font-size: 14px !important;
+    font-weight: bold;
+}
+
+ion-view[state="event-view"] .item.item-divider.item-divider-custom {
+    margin-top: 20px !important;
+}
+
+ion-view[state="event-view"] .item.item-divider.item-divider-custom h2 strong {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 20px !important;
+}
+
+ion-view[state="event-view"] p[ng-if="cover.subtitle2.location.label"] span {
+    padding: 10px;
+    color: #007aff;
+}
+
+
+/* CONTACT */
+ion-view.contact-view ion-content {
+    background-color: #cfe0ea !important;
+    top: 0 !important;
+    bottom: 0 !important;
+}
+
+ion-view.contact-view ion-content .list.card {
+    box-shadow: none;
+    display: flex;
+    flex-direction: column;
+    margin: -5px 0 0 0;
+    border: 0;
+}
+
+.item.item-icon-left.item-custom i {
+    display: none;
+}
+
+.item.item-icon-left.item-custom h2 {
+    text-align: center;
+    width: 100%;
+    color: #0e7bc4;
+    text-transform: capitalize !important;
+}
+
+ion-view.contact-view ion-content .list.card div[ng-show="contact.name"] {
+    order: 3;
+    padding: 10px 0;
+    margin-top: -120px;
+    background-color: transparent;
+    z-index: 999;
+}
+
+ion-view.contact-view ion-content .list.card div.item.item-custom.text-center.ng-hide {
+    order: 1
+}
+
+ion-view.contact-view ion-content .list.card .item.item-image.item-custom {
+    order: 2;
+    background-image: url(https://generatepress.com/wp-content/themes/generatepress_official/images/bg.png);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    height: 270px;
+    border: 0;
+    background-color: transparent !important;
+}
+
+ion-view.contact-view ion-content .list.card .item.item-image.item-custom img {
+    width: 100px;
+    margin: 40px auto 0 auto !important;
+    border-radius: 50%;
+    object-fit: cover;
+    height: 100px;
+    padding: 0;
+    left: 0;
+    right: 0;
+}
+
+ion-view.contact-view ion-content .list.card div[ng-show="contact.description"] {
+    order: 4 !important;
+    padding: 0 0 10px 0 !important;
+    background-color: transparent;
+}
+
+ion-view.contact-view ion-content .list.card div[ng-show="contact.description"] p {
+    text-align: center;
+    padding: 0 10px;
+    font-weight: normal;
+}
+
+ion-view.contact-view ion-content .list.card div[ng-show="contact.street"] {
+    order: 5 !important;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ecf0f6;
+    width: 90%;
+    margin-left: 5%;
+    padding-bottom: 10px;
+    background-color: transparent;
+}
+
+/* PADDING */
+ion-view.contact-view ion-content .padding {
+    padding: 0 0 50px 0;
+    color: #919191;
+}
+
+button.button.button-custom.item-icon-left.ng-binding.button-block.activated {
+    background: transparent;
+    color: #0e7bc4;
+}
+
+ion-view.contact-view ion-content .padding button.button.button-custom.item-icon-left.ng-binding.button-block i {
+    margin-left: -35px;
+    color: #0e7bc4;
+    margin-top: 16px;
+}
+
+ion-view.contact-view ion-content .padding button.button.button-custom.item-icon-left.ng-binding.button-block {
+    border: 0;
+    text-align: left;
+    margin-left: 40px;
+    background-color: transparent;
+    color: #3b5999;
+}
+
+/* tambah nomor HP */
+ion-view.contact-view ion-content i.icon.ion-ios-telephone-outline:after {
+    content: "0812458555";
+    margin-top: 15px;
+    display: block;
+    font-weight: bold;
+    font-size: 12px;
+    margin-left: 15px;
+}
+
+/* tambah lokasi */
+ion-view.contact-view ion-content i.icon.ion-ios-location-outline:after {
+    content: "Manokwari - Papua Barat";
+    margin-top: 15px;
+    display: block;
+    font-weight: bold;
+    font-size: 12px;
+    margin-left: 15px;
+}
+
+/* tambah email */
+ion-view.contact-view ion-content i.icon.ion-ios-email-outline:after {
+    content: "kuli@sublime.com";
+    margin-top: 15px;
+    display: block;
+    font-weight: bold;
+    font-size: 12px;
+    margin-left: 15px;
+}
+
+/* website */
+ion-view.contact-view ion-content i.icon.ion-ios-world-outline:after {
+    content: "ariesrutung.com";
+    margin-top: 15px;
+    display: block;
+    font-weight: bold;
+    font-size: 12px;
+    margin-left: 15px;
+}
+
+/* FACEBOOK */
+ion-view.contact-view ion-content .padding button:nth-child(5) {
+    background-color: #ecf0f6 !important;
+    margin: 25px 5% 0 5% !important;
+    width: 90%;
+    height: 150px;
+    color: #0e7bc4;
+    font-weight: bold;
+    font-size: 18px;
+    background-image: url(https://ensiklopediakesaguan.com/wp-content/uploads/2021/03/facebook.svg);
+    background-repeat: no-repeat;
+    background-size: 80px;
+    background-position: center right 20px;
+    margin-top: 40px !important;
+    border-radius: 10px;    
+}
+
+ion-view.contact-view ion-content .padding button:nth-child(6) {
+    background-color: #ecf0f6 !important;
+    margin: 25px 5% 0 5% !important;
+    width: 90%;
+    height: 150px;
+    color: #0e7bc4;
+    font-weight: bold;
+    font-size: 0;
+    background-image: url(https://ensiklopediakesaguan.com/wp-content/uploads/2021/03/whatsapp.svg);
+    background-repeat: no-repeat;
+    background-size: 80px;
+    background-position: center right 20px;
+    border-radius: 10px;    
+}
+
+ion-view.contact-view ion-content .padding button:nth-child(6):before {
+    padding: 0 !important;
+    margin: 0 !important;
+    content: "WhatsApp";
+    font-weight: bold;
+    font-size: 18px;
+    color: #4caf50;
+    visibility: visible !important;
+}
+
+ion-view.contact-view ion-content .padding button:nth-child(5) i,
+ion-view.contact-view ion-content .padding button:nth-child(6) i {
+    display: none;
+}
+
+
+
+/* email */
+ion-view[state="contact-form"] ion-content {
+    background: #fff !important;
+    top: 0 !important;
+}
+
+ion-view[state="contact-form"] div {
+    background: transparent !important;
+}
+
+ion-view[state="contact-form"] .list .item.item-custom {
+    border: 0 !important;
+    background-color: transparent !important;
+    color: #000 !important;
+    display: inline-block;
+    border-bottom: 2px solid #ecf0f6 !important;
+    width: 90% !important;
+    margin-left: 5% !important;
+    padding: 10px 0;
+}
+
+ion-view[state="contact-form"] .button.button-positive-custom {
+    border: 0 !important;
+    background-color: rgba(56, 126, 245, 1);
+    color: #fff;
+    width: 80%;
+    border-radius: 10px;
+    margin-left: 10%;
+}
+
+
+
+/* Push Notification */
+ion-view.module-push.push-list.push-list-l1 ion-content {
+    background: #fff !important;
+    top: 0 !important;
+}
+
+ion-view.module-push.push-list.push-list-l1 ion-content .list .item.item-custom {
+    border: 0;
+    background-color: #ecf0f6;
+    color: #000 !important;
+    margin: 10px !important;
+    border-radius: 10px;
+}
+
+
+/* Places */
+ion-view.module-places.places.places-list ion-content {
+    background-color: #fff !important;
+    top: 0 !important;
+    padding-top: 70px;
+}
+
+ion-view.module-places.places.places-list .place-50 .card {
+    height: 20vh;
+    margin: 2vw 2vw 0 0;
+    text-align: center;
+    background-color: #ecf0f6 !important;
+}
+
+ion-view.module-places.places.places-list .card .text {
+    color: #000;
+    background-color: #ecf0f6 !important;
+}
+
+
+ion-view.module-places.places.places-view .card .item.item-custom {
+    border: 0;
+    background-color: transparent;
+    color: #000;
+    padding: 10px;
+}
+
+
+ion-view.module-places.places.places-view .card {
+    box-shadow: none !important;
+    margin: 0;
+}
+
+
+ion-view.module-places.places.places-view .item.item-image.cover-place {
+    width: 96%;
+    margin-left: 2%;
+    border-radius: 10px;
+}
+
+
+ion-view.module-places.places.places-view .item.item-text-wrap.item-icon-left.item-custom.sb-cms-block-address-phone,
+ion-view.module-places.places.places-view .item.item-text-wrap.item-icon-left.item-custom.sb-cms-block-address-website {
+    text-align: center;
+    background-color: #ecf0f6;
+    width: 90%;
+    border-radius: 10px;
+    margin: 10px 5% !important;
+    color: #007aff !important;
+}
+
+ion-view.module-places.places.places-view .item.item-text-wrap.item-icon-left.item-custom.sb-cms-block-address-phone p,
+ion-view.module-places.places.places-view .item.item-text-wrap.item-icon-left.item-custom.sb-cms-block-address-website p {;
+    color: #007aff !important;
+}
+
+
+
+/* Filter Place */
+ion-modal-view.module-places.places.places-filter.l1.modal.slide-top.has-background-image.slide-in-up.ng-enter.active.ng-enter-active div {
+    background-color: transparent !important;
+}
+
+
+ion-view.module-places.places.places-list.l1 .card .distance-flex {
+    color: rgba(68, 68, 68, 1);
+    background-color: #ecf0f6 !important;
+}
+
+
+/* Discount */
+ion-view[state="discount-list"] ion-content {
+    background-color: #fff !important;
+    top: 0 !important;
+    padding-top: 70px !important;
+}
+
+ion-view[state="discount-list"] ion-content .col.col-50 {
+    background: transparent !important;
+    padding: 0 !important;
+}
+
+
+ion-view[state="discount-list"] ion-content .item.item-custom.item-body {
+    background-color: #ecf0f6;
+    margin: 0 2% 10px 2%;
+    border-radius: 10px;
+    padding: 0;
+}
+
+ion-view[state="discount-list"] ion-content .item.item-custom.item-body .item-content {
+    padding: 0 10px 10px 10px;
+    margin-bottom: 10px;
+    display: block;
+    position: absolute;
+    width: 100% !important;
+}
+
+ion-view[state="discount-list"] ion-content .item.item-custom.item-body .item-content h2 {
+    white-space: nowrap;
+}
+
+ion-view[state="discount-list"] ion-content .item.item-custom.item-body .item-content:after {
+    content: "Lihat Promo";
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+ion-view[state="discount-list"] ion-content .item.item-custom.item-body p.ng-binding {
+    display: none !important;
+}
+
+ion-view[state="discount-view"] .list .item-divider.item-divider-custom {
+    background-color: transparent;
+    color: #000 !important;
+    border: 0 !important;
+}
+
+ion-view[state="discount-view"] .list .item-divider.item-divider-custom h2 {
+    font-weight: bold;
+    font-size: 18px;
+    color: #000 !important;
+}
+
+ion-view[state="discount-view"] .list .item.item-custom.item-body .item-image {
+    height: 95px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+ion-view[state="discount-view"] .item.item-image.item-custom img {
+    width: 100% !important;
+    border-radius: 10px;
+    background-color: #fff !important;
+}
+
+ion-view[state="discount-view"] .list .item.item-custom {
+    border: 0 !important;
+    background-color: transparent !important;
+    color: #000 !important;
+    padding: 15px;
+}
+
+
+ion-view[state="discount-view"] .list>div:nth-child(2) {
+    order: 1;
+}
+
+ion-view[state="discount-view"] .list>div:nth-child(n+3) {
+    order: 3;
+}
+
+ion-view[state="discount-view"] .list>div:nth-child(1) {
+    order: 2;
+}
+
+ion-view[state="discount-view"] .list {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Custome Page */
+ion-view.module-cms.cms-l1 ion-content,
+ion-view.sourcecode-view ion-content {
+    padding-top: 0 !important;
+}
+
+ion-view.module-cms.cms-l1 ion-content {
+    background-color: #fff !important;
+    top: 0 !important;
+    padding-top: 70px !important;
+}
+
+ion-view.module-cms.cms-l1 ion-content .card {
+    margin: 0;
+    background-color: transparent !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+}
+
+ion-view.module-cms.cms-l1 ion-content .card .item.item-custom {
+    border: 0;
+    background-color: transparent;
+    color: #000;
+}
+
+ion-view.module-cms.cms-l1 ion-content .sb-cms-block-image {
+    display: flex;
+    flex-direction: column;
+}
+
+ion-view.module-cms.cms-l1 ion-content .sb-cms-block-image .item.item-custom.padding.description.ng-binding {
+    order: 1;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+ion-view.module-cms.cms-l1 ion-content .sb-cms-block-image .item.item-image-gallery.item-custom {
+    order: 2;
+}
+
+ion-view.module-cms.cms-l1 ion-content [ng-switch-when="slider"] [sb-cms-slider] {
+    display: flex;
+    flex-direction: column;
+}
+
+ion-view.module-cms.cms-l1 ion-content .item.item-image-gallery.item-custom.sb-cms-image {
+    order: 2;
+}
+
+ion-view.module-cms.cms-l1 ion-content .item.item-custom.padding.description.ng-binding {
+    order: 1;
+    font-weight: bold;
+    font-size: 18px;
+  margin-top: 20px;
+}
+
+ion-view.module-cms.cms-l1 ion-content .sb-cms-image ul[rn-carousel] li>div {
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 96%;
+    border-radius: 10px;
+    margin-left: 2%;
+    background-color: #202023;
+}
+
+ion-view.module-cms.cms-l1 ion-content .sb-cms-image div[rn-carousel-indicators] {
+    text-align: left;
+    background-color: transparent;
+    position: absolute;
+    left: 20px;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
+
+button[ng-click="closeModal()"] {
+    background-image: url(https://ensiklopediakesaguan.com/wp-content/uploads/2021/05/close_btn.png) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: contain !important;
+    font-size: 0 !important;
+    margin-top: 40px !important;
+}
+
+
+
+

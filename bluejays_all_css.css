@@ -1,0 +1,2264 @@
+.bar.bar-custom {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+
+.bar.bar-custom {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+
+
+/* Ini adalah warna parameter */
+
+
+/* Untuk mengubah semua warna dan gambar di dalam aplikasi, Anda cukup mengubah parameter di bawah ini */
+
+
+/* Semua tentang warna ada di sini */
+
+$header-icon-color: #ecf0f6;
+$header-bg-color: #d5b11d;
+$bg-color: #134a8e;
+$sidebar-color: #d5b11d;
+$font-color: #000;
+$transparent-color: transparent;
+$link: #fff;
+$account-button: #fff;
+$button-font: #fff;
+$bg-image: url(https://justapp.id/member/halaman/unggah/article/1915bcfa96d7adbfc3eaaad41c3fedaeshope_food.png);
+$close-modal: url(https://justapp.id/member/halaman/unggah/article/12ea8d8ba43ff33ce6841a04195b0f62foodshope_empty.png);
+$step-1: url(https://justapp.id/member/halaman/unggah/article/723b93f58a6192ada38c9e73e735cdcestep_1_foodshopee.png);
+$step-2: url(https://justapp.id/member/halaman/unggah/article/003674ad8d9cd5de3245ab1bb05e7df8step_2_foodshopee.png);
+$step-3: url(https://justapp.id/member/halaman/unggah/article/325ca354a8283758015e4f670570018astep_3_foodshopee.png);
+$step-4: url(https://justapp.id/member/halaman/unggah/article/cf1ba140a9be449bc70ea200fdacceabstep_4_foodshopee.png);
+$step-5: url(https://justapp.id/member/halaman/unggah/article/bbc197a6521d768d81eb5bab86778f21step_5_foodshopee.png);
+$step-6: url(https://justapp.id/member/halaman/unggah/article/d987db226ae1e69f537b97a161ee54d0step_6_foodshopee.png);
+$icon-bag: url(https://justapp.id/member/halaman/unggah/article/aa4c0a80d8d0cacd733c719d606758dcresapp_bag.png);
+$wa-icon: url(https://justapp.id/member/halaman/unggah/article/e60d81e9de01cfa2b055ce4a0b9dff72whatsapp.png);
+$fb-icon: url(https://justapp.id/member/halaman/unggah/article/a2470df23102e9dd1b8b2bfae8d79de1facebook.png);
+$burger: url(https://justapp.id/member/halaman/unggah/article/80a355f741d0f4cb3794e1e19928b15bburger_foodshopee.png);
+$search-icon: url(https://justapp.id/member/halaman/unggah/article/960ea86b20394b3d54be63f036b2802cresapp_find.png);
+$history-icon: url(https://justapp.id/member/halaman/unggah/article/ef011a7fc1165d3c41e65381f411d701resapp_history.png);
+$meat-icon: url(https://justapp.id/member/halaman/unggah/article/5d92374d419fabd543b6e4f2151e90c2ayam_foodshopee.png);
+$success-icon: url(https://justapp.id/member/halaman/unggah/article/67ec0fac7bc63f8ae3e38783ef77ee53resapp_check.png);
+$right-icon: url(https://justapp.id/member/halaman/unggah/article/967d42967afc2e985998faea0dbfcb4cright_foodshopee.png);
+.bar-custom .button.button-clear {
+    color: $sidebar-color !important;
+    font-size: 16px;
+}
+
+span.secondary-buttons>button>span.back-text>span.default-title.ng-binding {
+    animation: color-change 2s linear infinite alternate both;
+    font-weight: bold;
+}
+
+@keyframes color-change {
+    0% {
+        color: red;
+    }
+    50% {
+        color: blue;
+    }
+    100% {
+        color: black;
+    }
+}
+
+::-webkit-input-placeholder {
+    color: $transparent-color;
+}
+
+ :-moz-placeholder {
+    /* Firefox 18- */
+    color: $transparent-color;
+}
+
+ ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: $transparent-color;
+}
+
+ :-ms-input-placeholder {
+    color: $transparent-color;
+}
+
+ion-view.booking-view.booking-view-l1 ion-content .input-label {
+    text-align: center;
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+.picker.picker-fixed.picker-open.picker-opened .picker-title {
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+    margin: 0;
+    color: $bg-color;
+}
+
+input:focus::placeholder {
+    color: $transparent-color;
+}
+
+textarea:focus::placeholder {
+    color: $transparent-color;
+}
+
+.picker.picker-fixed.picker-open.picker-opened>.picker-dialog {
+    bottom: 30px;
+    width: 96%;
+    margin-left: 2%;
+    border-radius: 10px;
+}
+
+
+/* Produk option dan format */
+
+
+/* Commerce */
+
+ion-view[state="mcommerce-category-list"] ion-content {
+    top: 0 !important;
+    background-color: $bg-color !important;
+}
+
+
+/* List 2 */
+
+ion-view[state="mcommerce-category-list"] ion-content .scroll>div:nth-child(2) {
+    border-radius: 0;
+    background-color: $bg-color !important;
+}
+
+ion-view[state="mcommerce-category-list"] ion-content .scroll>div:nth-child(2) .item.item-custom:nth-child(1) {
+    width: 100%;
+    height: 250px;
+    border-bottom-left-radius: 100% 50px;
+    border-bottom-right-radius: 100% 50px;
+    margin: 0 !important;
+    background-image: $burger;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+ion-view[state="mcommerce-category-list"] ion-content .scroll>div:nth-child(2) .item.item-custom {
+    border: 0;
+    background-color: $transparent-color !important;
+    color: $font-color;
+}
+
+ion-view[state="mcommerce-category-list"] ion-content .scroll>div:nth-child(2) .item.item-custom:nth-child(2) h2 {
+    font-size: 0;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    margin-top: 70px;
+}
+
+ion-view[state="mcommerce-category-list"] ion-content .scroll>div:nth-child(2) .item.item-custom:nth-child(2) h2:after {
+    content: "Menu Foodshope";
+    font-size: 24px;
+    font-style: italic;
+    font-weight: bold;
+    margin-top: 0 !important;
+    text-align: center;
+    color: $account-button;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+}
+
+ion-view[state="mcommerce-category-list"] ion-content .scroll>div:nth-child(2) .item.item-custom:nth-child(2) p {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    color: $account-button;
+}
+
+ion-view[state="mcommerce-category-list"] ion-content .scroll>div:nth-child(2) .item.item-custom img {
+    padding: 15px 0;
+    border: 0;
+    width: 70%;
+    display: none;
+}
+
+ion-view[state="mcommerce-category-list"] ion-content .scroll>div:nth-child(2) .item.item-custom:nth-child(2) {
+    padding-bottom: 0;
+    margin-top: 0;
+}
+
+
+/* List 3 */
+
+ion-view[state="mcommerce-category-list"] ion-content .scroll>div:nth-child(3) {
+    margin-top: -170px;
+    padding: 24px 0px;
+}
+
+
+/* Icon atau logo aplikasi di bagian home */
+
+ion-view[state="mcommerce-category-list"] ion-content .scroll>div:nth-child(3):before {
+    content: "";
+    display: block;
+    background-image: $bg-image;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 150px;
+    height: 150px;
+    background-color: $button-font;
+    width: 150px;
+    border-radius: 50%;
+    margin: 10px auto;
+    padding: 6px !important;
+    margin-top: -75px;
+    position: relative;
+    z-index: 999;
+    margin-bottom: 80px;
+}
+
+ion-view[state="mcommerce-category-list"] ion-content .scroll>div:nth-child(3) label.item.item-input {
+    width: 96%;
+    border-radius: 30px;
+    border: 0;
+    margin-left: 2%;
+    background-color: $button-font;
+    background-image: $search-icon;
+    background-position: center right 10px;
+    background-repeat: no-repeat;
+    background-size: 32px;
+    margin-top: 15px;
+    display: none;
+}
+
+ion-view[state="mcommerce-category-list"] div[ng-show="show_search && collection.length > 0"] {
+    display: none !important;
+}
+
+ion-view[state="mcommerce-category-list"] div[ng-show="show_search && collection.length > 0"]:after {
+    content: " ";
+    padding-left: 10px;
+    font-weight: bold;
+    font-size: 24px;
+    margin-top: 20px !important;
+    display: block;
+    margin-bottom: 15px;
+    font-style: italic;
+    background-image: $bg-image;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    border-radius: 10px;
+    width: 96%;
+    margin: 10px 2%;
+    background-color: $bg-color;
+}
+
+ion-view[state="mcommerce-category-list"] ion-content .scroll>div:nth-child(3) .item.item-custom {
+    margin: 0 1.16%;
+    border: 0;
+    background-color: $transparent-color;
+    color: $font-color;
+    border-radius: 5px;
+    box-shadow: none;
+    width: 31%;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0;
+    height: auto !important;
+    min-height: 150px !important;
+}
+
+ion-view[state="mcommerce-category-list"] ion-content .scroll>div:nth-child(3) .item.item-custom img {
+    left: 0;
+    max-width: 120px;
+    max-height: 90px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 15px;
+    margin: 0 auto;
+    right: 0;
+    background-color: $header-icon-color;
+    padding: 0 !important;
+    border-radius: 10px;
+    border: 0 !important;
+    object-fit: contain;
+}
+
+ion-view[state="mcommerce-category-list"] ion-content .scroll>div:nth-child(3) .item.item-custom p.three-lines.ng-binding {
+    white-space: normal;
+    font-style: italic;
+    margin-top: 10px;
+    color: $button-font;
+    text-align: center;
+    display: none;
+}
+
+ion-view[state="mcommerce-category-list"] ion-content .scroll>div:nth-child(3) .item.item-custom h2.ng-binding {
+    font-size: 16px !important;
+    color: $account-button;
+    margin-top: 55px;
+    text-align: center;
+    bottom: 0 !important;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ion-view[state="mcommerce-category-list"] ion-content .scroll>div:nth-child(3) .button-bar {
+    display: flex !important;
+    position: relative;
+    z-index: 999;
+    width: 90%;
+    margin-left: 5%;
+    border: 0;
+    border-radius: 10px !important;
+    background-color: $button-font !important;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+ion-view[state="mcommerce-category-list"] ion-content .button-bar a:before {
+    display: none !important;
+}
+
+
+/*icon history order home*/
+
+ion-view[state="mcommerce-category-list"] ion-content .scroll>div:nth-child(3) .button-bar a.button.button-custom.icon-left.ion-clipboard.ng-binding {
+    background-color: $button-font;
+    border-radius: 10px;
+    margin: 0 5px;
+    border: 2px solid $account-button;
+    font-size: 0;
+    flex-direction: row;
+    width: 50% !important;
+    justify-content: space-between;
+    align-items: center;
+    background-image: $history-icon;
+    background-position: center left 10px;
+    background-repeat: no-repeat;
+    background-size: 30px;
+}
+
+ion-view[state="mcommerce-category-list"] ion-content .scroll>div:nth-child(3) .button-bar a.button.button-custom.icon-left.ion-clipboard.ng-binding:after {
+    content: "My Order";
+    font-size: 14px;
+    display: block;
+    top: 0;
+    color: #000;
+}
+
+
+/*icon cart home*/
+
+ion-view[state="mcommerce-category-list"] ion-content .scroll>div:nth-child(3) .button-bar a.button.button-custom.icon-left.ion-ios-cart {
+    background-color: $button-font;
+    border-radius: 10px;
+    margin: 0 5px;
+    border: 2px solid $account-button;
+    font-size: 0;
+    flex-direction: row;
+    width: 50% !important;
+    justify-content: space-between;
+    align-items: center;
+    background-image: $icon-bag;
+    background-position: center left 10px;
+    background-repeat: no-repeat;
+    background-size: 25px;
+}
+
+ion-view[state="mcommerce-category-list"] ion-content .scroll>div:nth-child(3) .button-bar a.button.button-custom.icon-left.ion-ios-cart span:nth-child(1):before {
+    content: "Cart";
+    font-size: 14px;
+    top: 0;
+    bottom: 0;
+    color: #000;
+}
+
+ion-view[state="mcommerce-category-list"] ion-content .scroll>div:nth-child(3) .button-bar a.button.button-custom.icon-left.ion-ios-cart span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0px 10px;
+}
+
+ion-view[state="mcommerce-category-list"] ion-content .scroll>div:nth-child(3) .button-bar a.button.button-custom.icon-left.ion-ios-cart .badge.badge-positive-custom {
+    background-color: rgba(56, 126, 245, 1);
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    padding: 5px 10px;
+}
+
+
+/* Subkategori */
+
+ion-view[state="mcommerce-subcategory-list"] ion-content {
+    top: 0 !important;
+    padding-top: 75px;
+    background-color: $bg-color !important;
+}
+
+ion-view[state="mcommerce-subcategory-list"] ion-content .list>div:nth-child(1):after {
+    content: " ";
+    padding-left: 10px;
+    font-weight: bold;
+    font-size: 24px;
+    display: block;
+    font-style: italic;
+    background-image: $burger;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 200px;
+    border-radius: 10px;
+    width: 96%;
+    margin: 20px 2% 10px 2% !important;
+    background-color: $bg-color;
+}
+
+
+/* menambahkan tulisan beli pada produk */
+
+[state="mcommerce-subcategory-list"] .item.item-custom.item-thumbnail-left p.three-lines.ng-binding:after {
+    content: "Details";
+    display: block;
+    width: 100%;
+    padding: 7px;
+    background-image: none;
+    color: $button-font;
+    font-weight: normal;
+    margin: 10px 0;
+    border-radius: 20px;
+    border: 0;
+    background-color: $bg-color;
+}
+
+ion-view[state="mcommerce-subcategory-list"] ion-content .item.item-custom.item-thumbnail-left:last-child(-n+2) {
+    margin-bottom: 60px;
+}
+
+ion-view[state="mcommerce-subcategory-list"] ion-content .scroll>div.list:nth-child(2) {
+    display: none;
+}
+
+
+/* cari subkategori */
+
+ion-view[state="mcommerce-subcategory-list"] ion-content .list>div>label {
+    background-color: $button-font;
+    background-image: $search-icon;
+    width: 60%;
+    margin: 9px 20%;
+    border-radius: 30px;
+    border: 0;
+    background-position: center right 10px;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    height: 35px;
+}
+
+ion-view[state="mcommerce-subcategory-list"] ion-content .item.item-custom.item-thumbnail-left {
+    border-radius: 10px;
+    margin: 10px 2%;
+    background-color: $account-button;
+    width: 46% !important;
+    display: inline-flex;
+    left: 0;
+    right: 0;
+    min-height: 180px;
+    padding: 0;
+    border: 0;
+    box-shadow: 0 2px 4px #dbdbdb;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10px;
+}
+
+ion-view[state="mcommerce-subcategory-list"] ion-content .item.item-custom.item-thumbnail-left h2 {
+    font-size: 16px !important;
+    font-weight: bold;
+    margin-left: 0 !important;
+    width: 100% !important;
+    display: block !important;
+    left: 0 !important;
+    right: 0 !important;
+    white-space: nowrap;
+    margin-top: 130px !important;
+    padding: 0 !important;
+    text-align: center;
+}
+
+ion-view[state="mcommerce-subcategory-list"] ion-content .item.item-custom.item-thumbnail-left p[ng-if="item.subtitle"] {
+    font-weight: normal;
+    color: $font-color;
+    font-size: 12px !important;
+    margin-left: 0 !important;
+    text-align: center;
+    white-space: nowrap;
+    font-style: italic;
+}
+
+[state="mcommerce-subcategory-list"] .item.item-custom.item-thumbnail-left img {
+    display: block;
+    right: 0;
+    margin: 0 !important;
+    border-radius: 10px;
+    max-width: 120%;
+    max-height: 120px;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+
+/* Commerce cart view */
+
+ion-header-bar.bar-custom.bar.bar-header {
+    height: 0 !important;
+    background-color: $transparent-color !important;
+    box-shadow: none !important;
+    background-image: none !important;
+    border: 0 !important;
+}
+
+ion-view[state="mcommerce-product-view"] ion-content {
+    background-color: $account-button !important;
+    top: 0 !important;
+    padding-top: 70px;
+}
+
+ion-view[state="mcommerce-product-view"] ion-content .card:nth-child(4) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ion-view[state="mcommerce-product-view"] ion-content .card {
+    box-shadow: none;
+    background-color: $bg-color !important;
+    margin: 0;
+    border-radius: 0;
+    padding: 0 0 20px 0;
+}
+
+
+/* gambar produk */
+
+ion-view[state="mcommerce-product-view"] ion-content .card:nth-child(1) {
+    background-color: $transparent-color !important;
+}
+
+ion-view[state="mcommerce-product-view"] ion-content .card:nth-child(1) [ng-if="product.picture.length"] {
+    background-color: $button-font !important;
+    width: 280px;
+    border-radius: 50%;
+    height: 280px;
+    margin: 0 auto;
+    border: 7px solid $button-font !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #e4eaf2 !important;
+}
+
+ion-view[state="mcommerce-product-view"] ion-content .card:nth-child(1) [ng-if="product.picture.length"] img {
+    object-fit: cover !important;
+}
+
+ion-view[state="mcommerce-product-view"] ion-content .card:nth-child(1) [ng-if="product.picture.length"] ion-slide.slider-slide {
+    width: 240px !important;
+}
+
+ion-view[state="mcommerce-product-view"] ion-content .card i {
+    color: $bg-color !important;
+    font-size: 16px;
+}
+
+ion-view[state="mcommerce-product-view"] ion-content .card span,
+ion-view[state="mcommerce-product-view"] ion-content .card label * {
+    color: $account-button !important;
+    font-size: 16px !important;
+}
+
+ion-view[state="mcommerce-product-view"] [ng-if="product.optionsGroups.length"].card h2 {
+    color: $account-button !important;
+}
+
+ion-view[state="mcommerce-product-view"] [ng-if="product.optionsGroups.length"] .list.list-inset {
+    margin-top: 5px;
+}
+
+ion-view[state="mcommerce-product-view"] [ng-if="product.optionsGroups.length"] [ng-model="optionsGroup.selectedOptionId"] {
+    padding-left: 0 !important;
+}
+
+ion-view[state="mcommerce-product-view"] [ng-repeat="optionsGroup in product.optionsGroups"] label {
+    padding: 0 2px;
+}
+
+div[ng-repeat="optionsGroup in product.optionsGroups"] .list.list-inset label:nth-child(2) {
+    display: none;
+}
+
+ion-view[state="mcommerce-product-view"] ion-content .card:nth-child(2) {
+    padding-top: 170px;
+    margin-top: -165px !important;
+    width: 100% !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    border-top-left-radius: 100% 20% !important;
+    background-color: $bg-color !important;
+    background: none;
+    margin-bottom: 0 !important;
+}
+
+ion-view[state="mcommerce-product-view"] ion-content .card:nth-last-child(1) {
+    content: " ";
+    display: block;
+    padding-bottom: 200px;
+    margin-bottom: 0;
+    bottom: 0 !important;
+}
+
+ion-view[state="mcommerce-product-view"] ion-content .card .item.item-text-wrap.text-center.item-custom,
+ion-view[state="mcommerce-product-view"] ion-content .card .item.item-divider.item-divider-custom,
+ion-view[state="mcommerce-product-view"] ion-content .card .item.item-custom,
+ion-view[state="mcommerce-product-view"] ion-content .card .list.list-inset {
+    background-color: $transparent-color;
+    border: 0;
+}
+
+ion-view[state="mcommerce-product-view"] ion-content .card .item.item-custom select {
+    text-align: right;
+}
+
+ion-view[state="mcommerce-product-view"] ion-content .card .item.item-custom .input-label.ng-binding {
+    text-align: left;
+}
+
+ion-view[state="mcommerce-product-view"] ion-content .card [ng-click="addProduct()"] i {
+    display: none !important;
+}
+
+ion-view[state="mcommerce-product-view"] ion-content .card [ng-click="addProduct()"] {
+    width: 45% !important;
+    padding: 15px 5px;
+    text-align: center;
+    display: flex;
+    border-radius: 30px;
+    margin: 0 10px;
+    font-weight: normal;
+    color: $button-font;
+    background-color: $account-button !important;
+    font-size: 0;
+    background-image: linear-gradient(-60deg, $account-button 0%, $bg-color 100%) !important;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+}
+
+ion-view[state="mcommerce-product-view"] ion-content .card [ng-click="addProduct()"]:after {
+    content: "Buy Now";
+    font-size: 14px;
+}
+
+ion-view.mcommerce-view.mcommerce-product div.card .item.item-input.item-custom.input-number-sb {
+    height: 80px;
+}
+
+ion-view.mcommerce-view.mcommerce-product div.card [ng-if="product"] .input-label {
+    display: none;
+}
+
+ion-view.mcommerce-view.mcommerce-product div.card [ng-if="product"] {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+}
+
+ion-view.mcommerce-view.mcommerce-product div.card [ng-if="product"] .input-container.text-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+}
+
+ion-view[state="mcommerce-product-view"] ion-content .card .item.item-input.item-custom.input-number-sb .input-container.text-right button {
+    border-radius: 10px;
+    width: 40px;
+    border: 0;
+    height: 40px;
+    background-color: $account-button;
+    background-image: linear-gradient(-60deg, $account-button 0%, $bg-color 100%) !important;
+}
+
+ion-view[state="mcommerce-product-view"] ion-content .card .item.item-input.item-custom.input-number-sb .input-container.text-right button i {
+    color: $button-font !important;
+}
+
+ion-view[state="mcommerce-product-view"] ion-content .card .item.item-input.item-custom.input-number-sb .item-input-wrapper input.text-center.input {
+    color: $account-button !important;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+ion-view[state="mcommerce-product-view"] ion-content .card .item.item-divider.item-divider-custom i,
+ion-view[state="mcommerce-product-view"] ion-content .card i.ion-pricetag {
+    display: none;
+}
+
+ion-view[state="mcommerce-product-view"] ion-content .card .item.item-divider.item-divider-custom h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+ion-view[state="mcommerce-product-view"] ion-content .card .item.item-body.item-custom.ng-binding p {
+    font-size: 14px;
+    font-style: italic;
+    color: $account-button;
+    line-height: 1.8;
+}
+
+ion-view[state="mcommerce-product-view"] ion-content .card .item.item-divider.item-divider-custom h2.ng-binding {
+    color: $account-button;
+}
+
+ion-view[state="mcommerce-product-view"] ion-content .card i.icon.ion-record {
+    color: $button-font;
+}
+
+
+/* DETAIL PRODUCT - CART VIEW */
+
+ion-view[state="commercepro-cart-view"] ion-content {
+    background-color: $button-font !important;
+    border-radius: 40px 40px 0 0 !important;
+    margin-top: 5px !important;
+}
+
+ion-view[state="commercepro-cart-view"] ion-content .card {
+    box-shadow: none;
+}
+
+ion-view.mcommerce-view.mcommerce-cart .item.item-input.item-custom.input-number-sb .input-label.ng-binding {
+    display: none;
+}
+
+ion-view.mcommerce-view.mcommerce-cart .input-number-sb .input-container {
+    position: absolute;
+    right: 0;
+    left: 0;
+    text-align: center;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20%;
+}
+
+ion-view.mcommerce-view.mcommerce-cart .item-input-wrapper input {
+    color: $bg-color;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+ion-view.mcommerce-view.mcommerce-cart .ion-minus:before,
+ion-view.mcommerce-view.mcommerce-cart .ion-plus:before {
+    color: $button-font;
+    font-size: 16px;
+}
+
+ion-view.mcommerce-view.mcommerce-cart .item.item-text-wrap.item-icon-left.item-custom.ng-binding {
+    width: 50% !important;
+    left: 0;
+    right: 0;
+    float: right;
+    height: 48px;
+    background-color: $bg-color;
+    color: $button-font;
+    border-radius: 30px;
+    text-transform: uppercase;
+}
+
+.mcommerce-view.mcommerce-cart .item.item-divider.item-divider-custom p {
+    font-weight: bold;
+    font-size: 16px;
+    font-family: 'Haas Grot Text R Web', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.mcommerce-view.mcommerce-cart .icon.ion-clipboard:before,
+.mcommerce-view.mcommerce-cart .icon.ion-calculator:before,
+.mcommerce-view.mcommerce-product .icon.ion-ios-upload-outline {
+    display: none;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-customer .list .item.item-custom .input-label {
+    text-align: left;
+}
+
+
+/* Continue Shopping */
+
+.mcommerce-view.mcommerce-cart div.card:nth-last-child(1) div.item.item-icon-left.item-custom.ng-binding:after {
+    content: "Lanjutkan Belanja";
+    font-size: 14px;
+    top: 0;
+    bottom: 0;
+}
+
+.mcommerce-view.mcommerce-cart div.card:nth-last-child(1) div.item.item-icon-left.item-custom.ng-binding {
+    width: 60%;
+    margin-left: 20%;
+    border-radius: 10px;
+    margin-bottom: 70px;
+    text-align: center;
+    padding: 10px 0;
+    background-color: $account-button;
+    color: $button-font;
+    text-transform: capitalize;
+    font-weight: normal;
+    font-size: 0;
+    background-image: linear-gradient(-60deg, $account-button 0%, $bg-color 100%) !important;
+    border: 0 !important;
+}
+
+ion-view.mcommerce-view.mcommerce-cart ion-content .scroll .card:nth-last-child(3):after {
+    border-bottom: 2px dashed $account-button;
+    content: " ";
+    display: block;
+    margin-top: 30px;
+}
+
+.mcommerce-view.mcommerce-cart div.card:nth-last-child(1) .ion-ios-arrow-back:before {
+    display: none;
+}
+
+ion-view.mcommerce-view.mcommerce-cart ion-content .scroll .card:nth-last-child(2) .item.item-custom {
+    font-size: 16px;
+    color: $font-color;
+    font-weight: normal !important;
+}
+
+ion-view.mcommerce-view.mcommerce-cart ion-content .scroll .card:nth-last-child(2) .item.item-custom span.item-note {
+    font-size: 16px !important;
+    color: $bg-color;
+    opacity: 1;
+}
+
+
+/* add gratuity (optional) */
+
+[state="mcommerce-cart-view"] div.item.item-custom.ng-binding:nth-child(6) {
+    display: none !important;
+}
+
+
+/* Commerce cart view */
+
+
+/* DETAIL PRODUCT - CART VIEW */
+
+ion-view.mcommerce-view.mcommerce-cart ion-content {
+    background-color: $bg-color !important;
+    top: 0 !important;
+    padding-top: 70px;
+}
+
+ion-view.mcommerce-view.mcommerce-cart ion-content .scroll:before {
+    display: block;
+    content: "Keranjang Saya";
+    width: 100%;
+    margin: 20px 5%;
+    font-weight: bold;
+    font-size: 20px;
+    color: $account-button;
+}
+
+
+/*Langkah pertama - bagian cart commerce*/
+
+ion-view.mcommerce-view.mcommerce-cart ion-content:before {
+    content: "";
+    position: relative;
+    display: block;
+    background-image: $step-1;
+    width: 100%;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+    margin-left: 0;
+}
+
+
+/*empty cart icon */
+
+ion-view.mcommerce-view.mcommerce-cart .card:nth-child(1)>.item.item-custom:nth-child(1) {
+    height: calc(60vw - 20px);
+    background-image: $close-modal;
+    background-position: center center;
+    background-size: 100px;
+    background-repeat: no-repeat;
+    color: $transparent-color !important;
+}
+
+
+/* Text sebelum gambar empty cart */
+
+ion-view.mcommerce-view.mcommerce-cart .card:nth-child(1)>.item.item-custom:nth-child(1):before {
+    content: "Maaf, Keranjang Anda kosong";
+    display: block;
+    color: #2a1007;
+    text-align: center;
+    font-size: 15px;
+}
+
+ion-view.mcommerce-view.mcommerce-cart .card:nth-child(1)>.item.item-custom:nth-child(1) p.ng-binding {
+    font-size: 0 !important;
+}
+
+ion-view.mcommerce-view.mcommerce-cart ion-content .scroll .card {
+    background-color: $account-button;
+    border-radius: 10px;
+    margin: 10px 2% !important;
+    width: 96%;
+    box-shadow: none !important;
+}
+
+ion-view.mcommerce-view.mcommerce-cart ion-content .scroll .card p.ng-binding {
+    text-align: left;
+    font-size: 13px !important;
+    white-space: normal;
+    font-style: italic;
+}
+
+ion-view.mcommerce-view.mcommerce-cart ion-content .scroll .card:nth-last-child(2):before {
+    content: " ";
+    display: block;
+    height: 11px;
+    background-color: $bg-color;
+    width: 50%;
+    margin-left: 25%;
+    border-radius: 0 0 10px 10px;
+    margin-bottom: 10px;
+}
+
+ion-view.mcommerce-view.mcommerce-cart ion-content .scroll .card:nth-last-child(2) {
+    border: 2px solid $bg-color;
+    background-color: $button-font;
+    padding-top: 0;
+}
+
+ion-view[state="commercepro-cart-view"] ion-content {
+    background-color: $button-font !important;
+    border-radius: 40px 40px 0 0 !important;
+    margin-top: 5px !important;
+}
+
+ion-view[state="commercepro-cart-view"] ion-content .card {
+    box-shadow: none;
+}
+
+ion-view.mcommerce-view.mcommerce-cart .item.item-input.item-custom.input-number-sb .input-label.ng-binding {
+    display: none;
+}
+
+ion-view.mcommerce-view.mcommerce-cart .button.button-small.button-custom.button-left,
+ion-view.mcommerce-view.mcommerce-cart .button.button-small.button-custom.button-right,
+ion-view.mcommerce-view.mcommerce-cart .button.button-small.button-custom.button-left.activated,
+ion-view.mcommerce-view.mcommerce-cart .button.button-small.button-custom.button-right.activated {
+    border: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    background-image: none;
+    background-color: $bg-color;
+    color: $font-color !important;
+    padding: 0;
+    left: 0;
+}
+
+ion-view.mcommerce-view.mcommerce-cart .ion-trash-a:before {
+    color: $account-button;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    right: 0;
+}
+
+ion-view.mcommerce-view.mcommerce-cart .item.item-text-wrap.item-icon-left.item-custom.ng-binding {
+    width: 50% !important;
+    left: 0;
+    right: 0;
+    float: right;
+    height: 48px;
+    background-color: $bg-color;
+    color: $button-font;
+    border-radius: 30px;
+    text-transform: uppercase;
+}
+
+.mcommerce-view.mcommerce-cart .item.item-divider.item-divider-custom p {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.mcommerce-view.mcommerce-cart .icon.ion-clipboard:before,
+.mcommerce-view.mcommerce-cart .icon.ion-calculator:before,
+.mcommerce-view.mcommerce-product .icon.ion-ios-upload-outline {
+    display: none;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-customer .list .item.item-custom .input-label {
+    text-align: left;
+}
+
+ion-view.mcommerce-view.mcommerce-cart ion-content .card .item-divider.item-divider-custom,
+ion-view.mcommerce-view.mcommerce-cart ion-content .card .item.item-custom {
+    border: 0;
+    background-color: $transparent-color;
+    color: $font-color;
+}
+
+ion-view.mcommerce-view.mcommerce-cart ion-content .card .item.item-custom img {
+    border-radius: 10px;
+}
+
+ion-view.mcommerce-view.mcommerce-cart ion-content div.scroll div.card div.item.item-input.item-custom.input-number-sb {
+    height: 50px;
+    width: 100%;
+    margin-left: 0;
+    background-color: $transparent-color;
+    padding-bottom: 10px;
+}
+
+ion-view.mcommerce-view.mcommerce-cart ion-content .card i.icon.ion-trash-a {
+    background-color: $bg-color;
+    border-radius: 10px 0 0 10px;
+    right: 0 !important;
+}
+
+ion-view.mcommerce-view.mcommerce-cart ion-content .scroll .card:last-child {
+    background-color: $transparent-color;
+    background-image: none;
+    margin-top: 20px !important;
+}
+
+
+/* Choose a Store - Pilih Toko*/
+
+ion-view.mcommerce-view.mcommerce-sales-store ion-content {
+    top: 0 !important;
+    padding-top: 70px;
+    background-color: $bg-color !important;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-store ion-content .scroll:before {
+    content: "Pilih Toko";
+    display: block;
+    width: 100%;
+    text-transform: capitalize;
+    color: $account-button;
+    padding-left: 12px;
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 24px !important;
+    margin-top: 20px;
+}
+
+
+/* gambar langka kedua - bagian pilih toko */
+
+ion-view.mcommerce-view.mcommerce-sales-store ion-content:before {
+    content: "";
+    position: relative;
+    display: block;
+    background-image: $step-2;
+    width: 100%;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-store .list:before {
+    content: "Kami memiliki beberapa cabang toko dengan standar minimum belanja. Silakan sesuaikan dengan lokasi kamu saat ini.";
+    display: block;
+    padding: 10px 3%;
+    line-height: 1.8;
+    font-style: italic;
+    color: $account-button;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-store ion-item.item-divider.item-divider-custom.item h2.ng-binding,
+ion-view.mcommerce-view.mcommerce-sales-store ion-item.item-divider.item-divider-custom.item {
+    font-size: 20px;
+    color: green;
+    text-transform: capitalize;
+    display: none !important;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-store .list .item-radio.radio-custom {
+    color: $font-color;
+    background-color: $account-button !important;
+    margin-bottom: 10px;
+    width: 94%;
+    margin-left: 3%;
+    height: 100px;
+    border-radius: 10px;
+    background-position: center;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-image: linear-gradient(-60deg, $account-button 0%, $bg-color 100%) !important;
+    border: 0 !important;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-store .item-content.disable-pointer-events span span[ng-if="store.min_amount && store.min_amount>0"] {
+    font-size: 0 !important;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-store .item-content.disable-pointer-events span span[ng-if="store.min_amount && store.min_amount>0"]:after {
+    content: "Minimum Orderan sebesar Rp. 10.000";
+    font-size: 14px !important;
+    padding-right: 50%;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-store i.radio-icon.disable-pointer-events.icon.ion-checkmark {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-store .radio-content {
+    width: 100%;
+    margin: 0;
+    border: 0;
+    background-color: $transparent-color;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-store .radio-content span>span {
+    font-size: 12px;
+    font-weight: normal !important;
+    font-style: italic;
+    margin: 6px 0;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-store .radio-content span {
+    white-space: normal;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+/* tanda centang pada halaman pilih toko */
+
+ion-view.mcommerce-view.mcommerce-sales-store .radio-content i.radio-icon.disable-pointer-events.icon.ion-checkmark {
+    color: $button-font;
+}
+
+
+/* warna latar item yang dipilih */
+
+ion-view.mcommerce-view.mcommerce-sales-store .item-radio input:checked+.radio-content .item-content {
+    background-color: $transparent-color !important;
+    color: $button-font;
+    border-radius: 5px;
+}
+
+
+/* ukuran tulisan pilih toko */
+
+ion-view.mcommerce-view.mcommerce-sales-customer ion-item.item-divider.item-divider-custom.item h2.ng-binding,
+ion-view.mcommerce-view.mcommerce-sales-store ion-item.item-divider.item-divider-custom.item h2.ng-binding {
+    font-size: 20px;
+    color: $account-button;
+    font-weight: bold;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-store .item-radio.radio-custom.item-radio .item-content {
+    background-color: $transparent-color;
+    padding: 10px !important;
+}
+
+
+/* Halaman Informasi Pembeli dan Alamat pengiriman */
+
+ion-view.mcommerce-view.mcommerce-sales-customer ion-content {
+    top: 0 !important;
+    padding-top: 70px !important;
+    background-color: $bg-color !important;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-customer ion-content .scroll:before {
+    content: "Informasi Pengiriman";
+    display: block;
+    width: 100%;
+    text-transform: capitalize;
+    color: $account-button;
+    padding-left: 12px;
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 24px !important;
+    margin-top: 20px;
+}
+
+
+/* Gambar langkah ketiga - bagian informasi pengiriman */
+
+ion-view.mcommerce-view.mcommerce-sales-customer ion-content:before {
+    content: "";
+    position: relative;
+    display: block;
+    background-image: $step-3;
+    width: 100%;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-customer ion-list.disable-user-behavior .list label {
+    border: 0;
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-customer ion-content ion-list.disable-user-behavior:nth-child(1):before {
+    content: "Semua data yang kamu masukkan di sini harus sesuai identitas terdaftar agar kami musah memproses pesanan.";
+    display: block;
+    font-size: 14px;
+    white-space: normal;
+    line-height: 1.8;
+    font-style: italic;
+    padding: 10px;
+    color: $account-button;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-customer label.item.item-input.item-custom {
+    background: $transparent-color !important;
+}
+
+
+/* mengatur judul form */
+
+ion-view.mcommerce-view.mcommerce-sales-customer ion-list.disable-user-behavior .list label .input-label.ng-binding {
+    width: 100% !important;
+    margin: 0 !important;
+    display: block !important;
+    max-width: 100% !important;
+    text-transform: capitalize;
+    color: $account-button;
+    font-size: 16px;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-customer .list .item-divider.item-divider-custom {
+    background-color: $transparent-color;
+    color: $account-button !important;
+    border: 0;
+    display: none;
+}
+
+
+/* untuk bagian input */
+
+ion-view.mcommerce-view.mcommerce-sales-customer input {
+    width: 96%;
+    text-align: left;
+    border-bottom: 2px solid $account-button;
+    padding: 10px;
+    height: 50px;
+    border-radius: 0;
+    color: $button-font !important;
+    font-size: 16px;
+}
+
+
+/* Pilih Metode Pengiriman */
+
+ion-view.mcommerce-view.mcommerce-sales-error ion-content {
+    top: 0 !important;
+    padding-top: 70px;
+    background-color: $bg-color !important;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-error ion-content .scroll:before {
+    content: "Metode Pengiriman";
+    display: block;
+    width: 100%;
+    text-transform: capitalize;
+    color: $account-button;
+    padding-left: 12px;
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 24px !important;
+    margin-top: 20px;
+}
+
+
+/* Langkah ke 4 - bagian metode pengiriman */
+
+ion-view.mcommerce-view.mcommerce-sales-error ion-content:before {
+    content: "";
+    position: relative;
+    display: block;
+    background-image: $step-4;
+    width: 100%;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-error .list:before {
+    content: "Kami memiliki beberapa metode pengiriman. Jika pesanannya diantar via kurir, kamu mungkin akan dikenakan ongkir.";
+    display: block;
+    padding: 10px 3%;
+    line-height: 1.8;
+    font-style: italic;
+    color: $account-button;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-error ion-item.item-divider.item-divider-custom.item h2.ng-binding {
+    font-size: 20px;
+    color: green;
+    text-transform: capitalize;
+    ;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-error .item-radio.radio-custom {
+    color: rgba(107, 170, 132, 1);
+    background-color: $transparent-color;
+    border: 0 !important;
+    margin-bottom: 10px;
+    width: 90%;
+    margin-left: 5%;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-error .radio-content {
+    width: 100%;
+    margin: 0;
+    border: 0;
+    border-radius: 5px 5px 0 0;
+    color: $button-font;
+    background-color: $transparent-color;
+}
+
+
+/* tanda centang pada halaman metode pengiriman */
+
+ion-view.mcommerce-view.mcommerce-sales-error .radio-content i.radio-icon.disable-pointer-events.icon.ion-checkmark {
+    color: $button-font;
+}
+
+
+/* warna latar item yang dipilih */
+
+ion-view.mcommerce-view.mcommerce-sales-error .item-radio input:checked+.radio-content .item-content {
+    background-color: $transparent-color;
+    color: $button-font;
+    text-align: left;
+    padding-left: 5px;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-error .item-radio.radio-custom.item-radio .item-content {
+    background-color: $transparent-color;
+    padding: 20px 0;
+    text-align: left;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-error .list .item-radio.radio-custom:nth-child(2) .item-content.disable-pointer-events span:first-child:after {
+    content: "Ambil Sendiri";
+    font-size: 18px;
+    font-weight: bold;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-error .list .item-radio.radio-custom:nth-child(2) .item-content.disable-pointer-events span:first-child {
+    font-size: 0;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-error .list .item-radio.radio-custom:nth-child(3) .item-content.disable-pointer-events p:first-child:after {
+    content: "Diantar Kurir";
+    font-size: 18px;
+    font-weight: bold;
+    opacity: 1;
+    color: $button-font;
+    letter-spacing: 2px;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-error .list .item-radio.radio-custom:nth-child(3) .item-content.disable-pointer-events p:first-child {
+    font-size: 0;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-error .list .item-radio.radio-custom:nth-child(3) .item-content.disable-pointer-events p.assertive.assertive-custom {
+    font-size: 0;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-error .list .item-radio.radio-custom:nth-child(3) .item-content.disable-pointer-events p.assertive.assertive-custom:after {
+    content: "Kamu tidak berada dalam radius pengiriman";
+    font-size: 14px;
+    white-space: normal;
+    font-style: italic;
+}
+
+
+/* Pilih Metode Pembayaran */
+
+ion-view.mcommerce-view.mcommerce-sales-payment ion-content {
+    top: 0 !important;
+    padding-top: 70px;
+    background-color: $bg-color !important;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-payment ion-content .scroll:before {
+    content: "Metode Pembayaran";
+    display: block;
+    width: 100%;
+    text-transform: capitalize;
+    color: $account-button;
+    padding-left: 12px;
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 24px !important;
+    margin-top: 20px;
+}
+
+
+/* Langkah kelima - Metode Pembayaran */
+
+ion-view.mcommerce-view.mcommerce-sales-payment ion-content:before {
+    content: "";
+    position: relative;
+    display: block;
+    background-image: $step-5;
+    width: 100%;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-payment label:nth-child(3) .item-content.disable-pointer-events span {
+    font-size: 0;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-payment label:nth-child(3) .item-content.disable-pointer-events span:before {
+    content: "Transfer Bank";
+    font-size: 18px;
+    color: $button-font;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-payment label:nth-child(2) .item-content.disable-pointer-events span {
+    font-size: 0;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-payment label:nth-child(2) .item-content.disable-pointer-events span:after {
+    content: "COD (Cash On Delivery)";
+    font-size: 18px;
+    color: $button-font;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-payment label.radio-custom.item.item-radio.ng-not-empty.ng-valid:nth-child(3) {
+    height: 100px;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-payment label.radio-custom.item.item-radio.ng-not-empty.ng-valid:nth-child(3) .item-content.disable-pointer-events:after {
+    content: "Jangan lupa konfirmasi di menu KONFIRMASI";
+    display: block;
+    padding: 0;
+    line-height: 1.8;
+    font-style: italic;
+    color: $account-button;
+    margin-bottom: 30px;
+    white-space: normal;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-payment .list:before {
+    content: "Jika memilih transfer, silakan tf ke nomor rekening BRI:19202222 a.n Foodshope.";
+    display: block;
+    padding: 10px 3%;
+    line-height: 1.8;
+    font-style: italic;
+    color: $account-button;
+    margin-bottom: 30px;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-payment ion-item.item-divider.item-divider-custom.item h2.ng-binding {
+    font-size: 20px;
+    color: green;
+    text-transform: capitalize;
+    ;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-payment .item-radio.radio-custom {
+    color: $font-color !important;
+    background-color: $account-button;
+    border: 0 !important;
+    margin-bottom: 10px;
+    width: 96%;
+    margin-left: 2%;
+    border-radius: 10px;
+    height: 70px;
+    background-image: linear-gradient(-60deg, $account-button 0%, $bg-color 100%);
+}
+
+
+/* tanda centang pada halaman metode pengiriman */
+
+ion-view.mcommerce-view.mcommerce-sales-payment .radio-content {
+    width: 100%;
+    margin: 0;
+    border: 0;
+    border-radius: 5px 5px 0 0;
+    background-color: $transparent-color;
+    color: $button-font;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-payment .radio-content i.radio-icon.disable-pointer-events.icon.ion-checkmark {
+    color: $button-font;
+}
+
+
+/* warna latar item yang dipilih */
+
+ion-view.mcommerce-view.mcommerce-sales-payment .item-radio input:checked+.radio-content .item-content {
+    background-color: $transparent-color;
+    color: $font-color;
+    font-size: 18px;
+    font-weight: bold;
+    white-space: normal;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-payment .item-radio.radio-custom.item-radio .item-content {
+    background-color: $transparent-color;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-error .list .item-radio.radio-custom {
+    color: $font-color !important;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    margin: 01% !important;
+    background-color: $account-button !important;
+    display: block;
+    width: 98%;
+    font-size: 18px;
+    text-align: left;
+    padding-left: 15px;
+    background-image: linear-gradient(-60deg, $account-button 0%, $bg-color 100%) !important;
+    border: 0 !important;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-error .scroll:before {
+    content: "Pilih Metode Pengiriman";
+    display: block;
+    width: 100%;
+    text-transform: capitalize;
+    font-size: 20px;
+    color: green;
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-error ion-item.item-divider.item-divider-custom.item h2.ng-binding,
+ion-view.mcommerce-view.mcommerce-sales-error ion-item.item-divider.item-divider-custom.item {
+    font-size: 20px;
+    color: green;
+    text-transform: capitalize;
+    display: none !important;
+}
+
+
+/* Metode Pembayaran */
+
+ion-view.mcommerce-view.mcommerce-sales-payment .scroll:before {
+    content: "Pilih Metode Pembayaran";
+    display: block;
+    width: 100%;
+    text-transform: capitalize;
+    font-size: 20px;
+    color: green;
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-payment ion-item.item-divider.item-divider-custom.item h2.ng-binding,
+ion-view.mcommerce-view.mcommerce-sales-payment ion-item.item-divider.item-divider-custom.item {
+    font-size: 20px;
+    color: green;
+    text-transform: capitalize;
+    display: none !important;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-payment .list .item-radio.radio-custom:nth-child {
+    color: $font-color;
+    background-color: $transparent-color;
+    margin-bottom: 10px;
+    height: 100px;
+    width: 96%;
+    border: 2px solid $account-button !important;
+    border-radius: 10px;
+    margin-left: 2%;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-store .list {
+    width: 100%;
+}
+
+
+/* customer memilih pengantaran */
+
+div[ng-if="clients_calculate_change_form_is_visible"]:before {
+    content: "Total Order";
+    display: block;
+    height: 32px;
+    background-color: $bg-color;
+    width: 80%;
+    margin-left: 10%;
+    border-radius: 0 0 20px 20px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+div[ng-if="clients_calculate_change_form_is_visible"] {
+    background-color: $account-button;
+    width: 96%;
+    border-radius: 10px;
+    margin-left: 2%;
+    margin-top: 30px;
+}
+
+div[ng-if="clients_calculate_change_form_is_visible"]:after {
+    content: "Biaya di atas sudah termasuk ongkir";
+    padding: 10px;
+    display: block;
+    text-align: center;
+    font-style: italic;
+    font-size: 16px !important;
+    color: $button-color;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-error div[ng-if="clients_calculate_change_form_is_visible"] div * {
+    text-align: left !important;
+    display: block;
+    background-color: $transparent-color !important;
+    font-size: 14px !important;
+    margin-bottom: 0 !important;
+    color: $bg-color;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-error div[ng-if="clients_calculate_change_form_is_visible"] ion-item.item-custom.item {
+    border: 0;
+    background-color: $transparent-color;
+    color: $account-button !important;
+    font-size: 18px !important;
+    text-align: left;
+    padding-bottom: 0;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-error div[ng-if="clients_calculate_change_form_is_visible"] ion-item.item-custom.item .row {
+    width: 100%;
+    display: inline-block;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-error div[ng-if="clients_calculate_change_form_is_visible"] ion-item.item-custom.item .row .col-65 {
+    max-width: 100% !important;
+    font-size: 16px;
+    width: 100% !important;
+    color: $button-font;
+    font-weight: normal !important;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-error div[ng-if="clients_calculate_change_form_is_visible"] ion-item.item-custom.item .row .col-35,
+ion-view.mcommerce-view.mcommerce-sales-error div[ng-if="clients_calculate_change_form_is_visible"] ion-item.item-custom.item .row .col-35 input {
+    font-size: 18px !important;
+    color: $bg-color;
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: left !important;
+    display: block !important;
+    width: 100% !important;
+}
+
+
+/* Sales Confirmation */
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation ion-content {
+    top: 0 !important;
+    padding-top: 70px;
+    background-color: $bg-color !important;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation ion-content .scroll:before {
+    content: "Silakan cek ulang pesanan kamu. Pastikan semuanya sudah sesuai sebelum menvalidasi pesanan.";
+    display: block;
+    padding: 10px 3%;
+    line-height: 1.8;
+    font-style: italic;
+    color: $account-button;
+}
+
+
+/* Langkah terakhir - vlidasi orderan */
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation ion-content:before {
+    content: "";
+    position: relative;
+    display: block;
+    background-image: $step-6;
+    width: 100%;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation .card {
+    width: 96%;
+    margin-left: 2%;
+    background-color: $account-button !important;
+    border-radius: 10px;
+    padding: 0;
+    top: 0;
+    bottom: 0;
+    box-shadow: none;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation .card .item-divider.item-divider-custom {
+    background-color: $account-button;
+    color: $font-color !important;
+    border: 0;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation .card .item-divider.item-divider-custom strong.ng-binding {
+    color: $button-font;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation .card .item-divider.item-divider-custom strong.ng-binding i {
+    display: none;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation .item.item-thumbnail-left.item-icon-right.item-custom p {
+    color: $font-color;
+    font-weight: normal;
+    font-size: 14px;
+    text-align: left;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation .item.item-thumbnail-left.item-icon-right.item-custom img {
+    border-radius: 5px;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation .card:nth-last-child(n+4) .item.item-custom.ng-binding {
+    width: 50% !important;
+    background-color: $bg-color !important;
+    padding: 10px 0 !important;
+    text-align: center;
+    margin-left: 25%;
+    border-radius: 20px 20px 0 0;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation .item.item-thumbnail-left.item-icon-right.item-custom p strong {
+    color: $font-color;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation .item.item-divider.item-divider-custom strong.ng-binding {
+    font-size: 18px !important;
+    color: $font-color !important;
+    background-color: $transparent-color;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation .item.item-divider.item-divider-custom p strong {
+    color: $font-color !important;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation .card:nth-last-child(n+4) .item.item-custom {
+    border: 0;
+    background-color: $account-button;
+    color: $button-font;
+    margin-bottom: -10px;
+    box-shadow: none !important;
+    padding-bottom: 20px;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation .card .item.item-custom strong.ng-binding {
+    width: 45%;
+    font-weight: normal;
+    font-size: 14px;
+    color: $button-font;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation .card .item.item-custom span,
+ion-view.mcommerce-view.mcommerce-sales-confirmation .card .item.item-custom span strong.ng-binding {
+    width: 45%;
+    margin-top: 5px;
+    color: white;
+    font-size: 14px;
+    text-align: right;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation .card .item.item-custom.ng-binding {
+    border: 0;
+    padding: 10px;
+    text-align: left;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation .card:nth-last-child(1)>.item {
+    border: 0;
+    border-top: 0;
+    border-radius: 0 0 10px 10px;
+    background-color: $transparent-color;
+    padding: 0 10px;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation .card:nth-last-child(1)>.item.item-divider.item-divider-custom {
+    border-radius: 10px 10px 0 0;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation .card:nth-last-child(1) {
+    border-radius: 0 0 20px 20px;
+    padding-bottom: 100px !important;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation .card:nth-last-child(1)>.item label textarea {
+    padding: 10px;
+    min-height: 120px;
+    border-radius: 10px;
+    margin: 10px 0;
+    line-height: 1.8;
+    background-color: $transparent-color;
+    border: 2px solid $account-button;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation .card:nth-last-child(1)>.item label {
+    border: 0;
+    background-color: $transparent-color;
+    padding: 0;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation .card:nth-last-child(3) .item.item-custom span.item-note strong {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: left;
+    font-style: italic;
+    color: $bg-color;
+    padding: 10px 0;
+    margin-top: 0;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation .card:nth-last-child(-n+2) .item.item-divider.item-divider-custom p strong {
+    text-align: left !important;
+    display: block;
+    font-size: 14px;
+    color: #fff !important;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation .card:nth-last-child(2) .item.item-custom.ng-binding {
+    color: #fff;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation .card:nth-last-child(-n+2) {
+    background-color: $transparent-color !important;
+    margin: 0;
+    border-radius: 0;
+    width: 100%;
+    border: 0 !important;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation .card:nth-last-child(-n+2) .item.item-custom,
+ion-view.mcommerce-view.mcommerce-sales-confirmation .card:nth-last-child(-n+2) .item.item-divider.item-divider-custom {
+    background-color: $transparent-color;
+    border: 0;
+    color: $button-font;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation .card:nth-last-child(-n+2) .item.item-custom p,
+ion-view.mcommerce-view.mcommerce-sales-confirmation .card:nth-last-child(-n+2) .item.item-divider.item-divider-custom p {
+    color: $button-font;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation .card:nth-last-child(3):before {
+    content: " ";
+    display: block;
+    height: 15px;
+    width: 48%;
+    margin-left: 26%;
+    background-color: $bg-color;
+    border-radius: 0 0 20px 20px;
+    margin-bottom: 10px;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation .card:nth-last-child(3) {
+    border-radius: 20px 20px 0 0;
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation .card:nth-last-child(3) *,
+ion-view.mcommerce-view.mcommerce-sales-confirmation .card:nth-last-child(3) strong {
+    color: $font-color !important;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation .card:nth-last-child(3) div:nth-child(1) {
+    display: none;
+}
+
+div[ng-if="!cart.hide_paid_amount && cart.formatted_paid_amount && cart.formatted_delivery_amount_due"] {
+    display: none;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation [ng-if="cart.textualDeliveryTime"].card ion-item.item-divider.item-divider-custom.item {
+    width: 45%;
+    display: inline-block;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation [ng-if="cart.textualDeliveryTime"].card ion-item.item-custom.text-right.item.ng-binding {
+    width: 50%;
+    display: inline-block;
+    text-align: right;
+    color: $button-font;
+}
+
+
+/* mengatur bagian review/ualasan - saya akan membayar*/
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation .card:nth-last-child(3) div:last-child ion-item.item-divider.item-divider-custom.item {
+    display: none;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation .card:nth-last-child(3) div:last-child ion-item.item-custom.item .row {
+    display: inline-block !important;
+    width: 100% !important;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation .card:nth-last-child(3) div:last-child .row .col-75 {
+    width: 100% !important;
+    display: block !important;
+    max-width: 100% !important;
+    font-size: 13px !important;
+    text-align: left !important;
+    text-transform: capitalize !important;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation .card:nth-last-child(3) div:last-child .row .col-25 {
+    width: 100% !important;
+    display: inline-block !important;
+    max-width: 100% !important;
+    font-size: 16px !important;
+    text-align: left;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation .card:nth-last-child(3) ion-item.item-custom.text-right.item.ng-binding {
+    text-align: left;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation .card:nth-last-child(2) div:last-child ion-item.item-divider.item-divider-custom.item {
+    display: none;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation .card:nth-last-child(2) div:last-child ion-item.item-custom.item .row {
+    display: inline-block !important;
+    width: 100% !important;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation .card:nth-last-child(2) div:last-child .row .col-75 {
+    width: 100% !important;
+    display: block !important;
+    max-width: 100% !important;
+    font-size: 13px !important;
+    text-align: left !important;
+    text-transform: capitalize !important;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-confirmation .card:nth-last-child(2) div:last-child .row .col-25 {
+    width: 100% !important;
+    display: inline-block !important;
+    max-width: 100% !important;
+    font-size: 16px !important;
+}
+
+
+/* Halaman Order Success Setelah validasi */
+
+ion-view.mcommerce-view.mcommerce-sales-success ion-content {
+    top: 0 !important;
+    padding-top: 70px;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-success ion-content .card {
+    background-image: $success-icon;
+    background-position: center top 60px;
+    background-repeat: no-repeat;
+    background-size: 80px;
+    background-color: $bg-color;
+    height: 250px;
+    box-shadow: none;
+    margin-top: 150px;
+    border-radius: 10px;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-success ion-content .card:before {
+    content: "Success";
+    display: block;
+    font-size: 28px;
+    text-align: center;
+    margin: 20px 0;
+    font-weight: bold;
+    color: $font-color;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-success ion-content .card .item.item-text-wrap.item-custom.ng-binding {
+    background-color: $transparent-color;
+    font-size: 0;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-success ion-content .card .item.item-text-wrap.item-custom.ng-binding:after {
+    content: "Terima kasih telah berbelanja, kami akan memproses pesanan Anda secepatnya.";
+    display: block;
+    font-size: 16px;
+    padding-top: 80px;
+    text-align: center;
+    color: $account-button;
+    line-height: 1.8;
+    font-style: italic;
+    background-color: $transparent-color;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-success ion-content .card i.icon.ion-checkmark-round {
+    display: none;
+}
+
+
+/* Halaman Riwayat Pesanan */
+
+ion-view.mcommerce-view.mcommerce-sales-history ion-content {
+    top: 0 !important;
+    padding-top: 0;
+    background: $bg-color !important;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-history ion-content .item.item-text-wrap.item-custom p.ng-binding:nth-child(3) {
+    margin-top: 10px !important;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-history ion-content .item.item-text-wrap.item-custom p.ng-binding:nth-child(2) {
+    display: none !important;
+}
+
+
+/* menambahkan gambar */
+
+ion-view.mcommerce-view.mcommerce-sales-history .scroll:before {
+    content: " ";
+    color: transparent;
+    display: block;
+    height: 150px;
+    background-image: $burger;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin-top: 50px !important;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-history .list [ng-click="showDetails(order.order_id)"] {
+    border: 0;
+    width: 96%;
+    margin: 10px 2%;
+    background-color: $transparent-color;
+    border-bottom: 1px dashed $link;
+    background-image: $right-icon;
+    background-position: right bottom 5px;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    color: $button-font;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-history ion-content .list:before {
+    content: "List Pesanan";
+    display: block;
+    font-size: 24px;
+    font-style: italic;
+    margin: 25px 2% 10px 2%;
+    color: $bg-color;
+    font-weight: bold;
+}
+
+
+/*text */
+
+ion-view.mcommerce-view.mcommerce-sales-history .list .item.item-text-wrap.item-custom h2,
+ion-view.mcommerce-view.mcommerce-sales-history .list .item.item-text-wrap.item-custom strong,
+ion-view.mcommerce-view.mcommerce-sales-history .list .item.item-text-wrap.item-custom span,
+ion-view.mcommerce-view.mcommerce-sales-history .list .item.item-text-wrap.item-custom p {
+    color: $button-font !important;
+    font-weight: normal;
+    margin-top: 5px;
+    text-transform: capitalize;
+    text-align: left;
+}
+
+
+/* icon */
+
+ion-view.mcommerce-view.mcommerce-sales-history .list .item.item-text-wrap.item-custom i {
+    display: none;
+}
+
+
+/* Halaman Detail dari Riwayat Pesanan */
+
+ion-view.mcommerce-view.mcommerce-sales-history-details ion-content {
+    top: 0 !important;
+    padding-top: 70px;
+    background-color: $bg-color !important;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-history-details ion-content>.scroll:before {
+    content: "Detail Pesanan";
+    display: block;
+    font-size: 24px;
+    font-style: italic;
+    margin: 25px 2% 20px 3%;
+    color: $bg-color;
+    font-weight: bold;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-history-details ion-content>.scroll:after {
+    content: " ";
+    display: block;
+    height: 50px;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-history-details .list {
+    background-color: $header-icon-color;
+    padding: 0 0 10px 5px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px dashed $bg-color;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-history-details .list .item.item-custom {
+    border: 0;
+    background-color: $transparent-color;
+    color: $bg-color;
+    text-align: left;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-history-details .list .item.item-divider.item-divider-custom.item-custom:nth-child(n+2) strong {
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 16px !important;
+    display: block;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-history-details .list .item.item-custom.item-icon-left h2.ng-binding {
+    margin-top: 15px;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-history-details .list .item.item-custom.item-icon-left p.text-right strong {
+    margin-bottom: 10px !important;
+    display: block;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-history-details .item.item-custom.ng-binding {
+    border: 0;
+    background-color: $transparent-color;
+    color: $bg-color;
+    white-space: normal;
+    text-align: left;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-history-details .list>div:nth-last-child(2) {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-history-details .list>div:nth-last-child(-n+3),
+ion-view.mcommerce-view.mcommerce-sales-history-details .list>div:nth-child(4) {
+    display: none;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-history-details .list>div:nth-child(1) {
+    background-color: $bg-color !important;
+    width: 70%;
+    text-align: center !important;
+    margin-left: 15%;
+    border-radius: 0 0 30px 30px;
+    padding: 10px 0;
+    margin-top: 0;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-history-details .list>div:nth-child(1) h2 strong {
+    color: $account-button;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-history-details .list>div:nth-child(1) h2 {
+    text-align: center;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-history-details p.text-right {
+    padding: 0 10px 0 0;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-history-details span.pull-right.ng-binding {
+    font-size: 18px;
+    font-weight: bold;
+    color: $font-color;
+    font-style: italic;
+}
+
+
+/* Kolom detail pesanan */
+
+ion-view.mcommerce-view.mcommerce-sales-history-details .item.item-custom.item-icon-left {
+    border-bottom: 1px dashed $bg-color;
+    width: 96%;
+    margin-left: 2%;
+    border-left: 0;
+    border-right: 0;
+    font-weight: normal;
+    background-color: $transparent-color;
+    font-style: italic;
+    padding: 0;
+    white-space: normal;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-history-details .item.item-custom.item-icon-left strong {
+    font-weight: normal;
+    font-size: 14px;
+}
+
+ion-view.mcommerce-view.mcommerce-sales-history-details .item.item-custom.item-icon-left i.icon.ion-pricetag {
+    display: none;
+}
+
+
+/* Ending CSS untuk module Commerce */

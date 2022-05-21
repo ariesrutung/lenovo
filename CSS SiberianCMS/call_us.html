@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+        p, h1, h2, h3, h4, h5, h6, span, div {
+            font-family: 'Poppins', sans-serif;
+        }
+        .menu-home {
+            padding: 0 !important;
+            margin: 10px 0 0 0 !important;
+            background-color: transparent;
+            z-index: 999;
+            position: relative;
+            border-radius: 10px;
+            width: 90% !important;
+            margin-left: 5% !important;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 10px !important;
+        }
+
+        .menu-home .gallery {
+            width: 30%;
+            margin: 5px auto;
+            display: inline-block;
+            padding: 0;
+            left: 0;
+            right: 0;
+        }
+
+        div.gallery a {
+            display: block;
+            
+        }
+
+        div.desc {
+            padding: 0px;
+            text-align: center;
+            padding-top: 0;
+            font-size: 12px;
+            letter-spacing: 0.3px;
+            color: #fff;
+        }
+
+        div.gallery img {
+            width: 35px;
+            height: 35px;
+            border-radius: 8px;
+            border: 0;
+            padding: 5px;
+            margin: 0 auto !important;
+            display: block;
+            background-color: #ecf0f6;
+}
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-home">
+          <div class="gallery">
+              <a href="whatsapp://send?text=Hello%2C%20JustApp!" target="_system"><img src="https://img.icons8.com/officel/80/000000/whatsapp.png" height="80px"></a>
+            <div class="desc">WA</div>
+          </div>
+      
+          <div class="gallery">
+              <a href="tel://+33012345678" target="_system"><img src="https://image.flaticon.com/icons/svg/273/273501.svg" height="80px"></a> 
+            <div class="desc">Call</div>
+          </div>
+      
+          <div class="gallery">
+              <a href="mailto://a.rutung@csscoder" target="_system"><img src="https://image.flaticon.com/icons/svg/204/204322.svg" height="80px"></a>
+            <div class="desc">Email</div>
+          </div>
+          <div class="gallery">
+            <a href="geo:-0.8642815,134.039079" target="_system"><img src="https://image.flaticon.com/icons/svg/382/382522.svg" height="80px"></a>
+            <div class="desc">Lokasi</div>
+          </div>
+      </div>
+</body>
+</html>
+
+

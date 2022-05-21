@@ -1,0 +1,9 @@
+1. Place the CSS script bellow to Color – Advanced … – of your editor
+
+2. On Color menu, set your color setting as the picture bellow. Font: rgba(89, 89, 89, 1) (up to you), General & header bg color: rgba(207, 224, 234, 1), card and list bg color is transparent, and border is transparent.
+3. Audio config:
+a. Create 8 playlists. The first four playlists will set to 4 smallest button, and the last 4 play list will transform to 4 biggest button.
+b. I use Custome option as a source of the audio file
+c. In Custome setting, i just field out Title and URL. Don't use picture, artist, and album in this setting.
+
+

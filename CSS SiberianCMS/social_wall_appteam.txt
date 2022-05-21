@@ -1,0 +1,410 @@
+/* SOCIAL WALL */
+/* MOVE MENU */
+ion-view[state="fanwall-home"] ion-content {
+    background-color: #5b37b7 !important;
+    top: calc(var(--safe-area-inset-top) + 30px) !important;
+    padding-top: 50px !important;
+}
+
+ion-view[state="fanwall-home"] ion-header-bar.bar-subheader.bar.bar-header {
+	top: calc(var(--safe-area-inset-top) + 85%) !important;
+    background-color: #1194aa !important;
+    height: 60px !important;
+    width: 96%;
+    margin-left: 2%;
+    border-radius: 15px !important;
+  	border: 0;
+	background-image: none;
+  	bottom: 0;
+}
+
+ion-view[state="fanwall-home"] ion-header-bar.bar-subheader.bar.bar-header .button-bar {
+    background-color: transparent !important;
+}
+
+
+ion-view[state="fanwall-home"] ion-header-bar button.button.button-custom.button-positive.button-positive-custom.ng-binding.fw-icon-selected.icon-active-custom {
+    background-color: #dfd7f3;
+    margin: 15px 10px;
+    border-radius: 10px;
+    padding: 0;
+    width: 60px;
+    height: 30px !important;
+    min-width: 60px;
+  	border: 0 !important;
+}
+
+ion-view[state="fanwall-home"] ion-header-bar button.button.button-custom.button-positive.button-positive-custom.ng-binding.icon-custom {
+	border-radius: 10px;
+    margin: 10px !important;
+    padding: 0 !important;
+    background-color: transparent;
+    border: 0 !important;
+}
+
+.module-fanwall.fanwall-list-l1 .bar-subheader .button-bar > .button i.icon:before {
+    font-size: 16px !important;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+}
+
+ion-view[state="fanwall-home"] ion-header-bar button.activated {
+    background-color: #fff !important;
+}
+
+/* post item */
+ion-view.module-fanwall.fanwall-list.fanwall-list-l1 ion-item.item-custom.item {
+    width: 96%;
+    border-radius: 30px;
+    margin-left: 2%;
+    background-color: #fff !important;
+    border: 0;
+}
+
+
+.module-fanwall.fanwall-list-l1 .item {
+    padding-bottom: 0;
+    margin-top: 12px;
+    margin-bottom: 0;
+    background-color: transparent;
+}
+
+.module-fanwall.fanwall-list-l1 .item .post-author.item-avatar {
+    padding-left: 50px;
+    min-height: 50px;
+    border-bottom: 2px solid #ecf0f6;
+}
+
+ion-view.module-fanwall.fanwall-list.fanwall-list-l1 ion-item.item-custom.item .item-avatar.post-author h2.ng-binding,
+ion-view.module-fanwall.fanwall-list.fanwall-list-l1 ion-item.item-custom.item .item-avatar.post-author p.post-date.ng-binding {
+    text-align: left;
+}
+
+
+ion-view.module-fanwall.fanwall-list.fanwall-list-l1 fanwall-post-item:nth-last-child(1) {
+	margin-bottom: 150px !important;
+}
+
+ion-view.module-fanwall.fanwall-list.fanwall-list-l1 ion-item.item-custom.item .post-body p,
+ion-view.module-fanwall.fanwall-list.fanwall-list-l1 ion-item.item-custom.item .post-body h2 {
+    text-align: left;
+}
+
+ion-view.module-fanwall.fanwall-list.fanwall-list-l1 ion-item.item-custom.item .thumbnail-mode .post-image {
+    margin: 0 -16px 0 -16px;
+    width: 96%;
+    margin-left: 2%;
+}
+
+
+/* my account page - post page */
+.module-fanwall ion-content.fanwall-profile .list {
+    background: #fff;
+    padding-top: 100px;
+    margin-top: -155px;
+    border-radius: 30px 30px 0 0;
+}
+
+.module-fanwall .fanwall-profile .customer-image img {
+    margin: 0 auto;
+    width: 10em;
+    border-radius: 5em;
+    border: 0.4em solid white;
+    display: block;
+    position: relative;
+    z-index: 999;
+    border: 7px solid #5b37b7 !important;
+}
+
+.module-fanwall .fanwall-profile .customer-fullname {
+    text-align: center;
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 999;
+    color: #000 !important;
+    font-weight: bold !important;
+    font-size: 20px !important;
+}
+
+.module-fanwall .fanwall-profile .customer-actions {
+    text-align: center;
+    position: relative;
+    z-index: 999;
+    margin-bottom: 35px !important;
+}
+
+.module-fanwall .fanwall-profile .section-title h2 {
+    font-size: 24px !important;
+    font-size: 17px !important;
+    -weight: bold !important;
+    padding-bottom: 7px;
+    margin-top: 20px;
+}
+
+.module-fanwall .fanwall-profile ion-item.item-custom.item {
+    background-color: #ecf0f6 !important;
+}
+
+.module-fanwall .fanwall-profile button.button.button-small.button-positive.button-positive-custom.ng-binding {
+    background-color: #5b37b7;
+  	border: 0 !important;
+  	color: #000;
+}
+
+.module-fanwall.fanwall-list-l1 .item .post-image a.fanwall-image-bg {
+	display: inline-block;
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    height: 30vh;
+    border-radius: 20px;
+}
+
+/* FANWAL CREATE POST */
+ion-modal-view.module-fanwall.fanwall-new.fanwall-new-l1 ion-content {
+    background-color: #5b37b7 !important;
+	bottom: calc(var(--safe-area-inset-bottom) + 0px) !important;
+  	margin-bottom: 0 !important;
+}
+
+ion-modal-view.module-fanwall.fanwall-new.fanwall-new-l1 ion-list.new-post-items.disable-user-behavior .list {
+	background-color: #fff;
+    padding: 10px;
+    border-radius: 30px 30px 0 0;
+    margin-top: 25px;
+    padding-bottom: 250px;
+}
+
+.module-fanwall.fanwall-new-l1 .new-post-items .item .new-post-author {
+    margin-top: 4px;
+    text-align: left;
+}
+
+
+.module-fanwall.fanwall-new-l1 .new-post-items .item.item-avatar {
+    padding-left: 72px;
+    min-height: 72px;
+    background: transparent !important;
+  	border: 0 !important;
+}
+
+.module-fanwall.fanwall-new-l1 .post-author .post-location {
+    font-size: 11px;
+    text-align: left;
+    color: #ef473a;
+    text-transform: capitalize;
+}
+
+
+.module-fanwall.fanwall-new-l1 ion-item.item-input.item-custom.item {
+    padding: 0 20px;
+    background: transparent !important;
+    border-radius: 10px;
+    border: 2px solid #ecf0f6;
+}
+
+.module-fanwall.fanwall-new-l1 ion-item.item-input.item-custom.item {
+    padding: 15px;
+    background: transparent !important;
+    border-radius: 10px;
+    border: 2px solid #ecf0f6;
+}
+
+.module-fanwall.fanwall-new-l1 ion-item.item-icon-left.item-custom.upload-action.item {
+    background-color: transparent !important;
+  	border: 0 !important;
+}
+
+.module-fanwall.fanwall-new-l1 ion-item.item-icon-left.item-custom.upload-action.item .ion-image:before,
+.module-fanwall.fanwall-new-l1 ion-item.item-icon-left.item-custom.upload-action.item .ion-plus:before {
+    font-size: 28px;
+    color: #ef473a;
+}
+
+
+.module-fanwall.fanwall-new-l1 img.fanwall-pictures {
+    width: 100%;
+    max-width: 100%;
+    margin: 6px auto;
+    border-radius: 10px;
+    max-height: 100%;
+}
+
+
+.module-fanwall.fanwall-new-l1 .remove-image-list.ng-binding.assertive.assertive-custom {
+    background: #ededed;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 30%);
+}
+
+
+.module-fanwall.fanwall-new-l1 .remove-image-list i.icon,
+.module-fanwall.fanwall-new-l1 .remove-image-card i.icon {
+    font-size: 26px;
+    color: red;
+}
+
+.module-fanwall.fanwall-new-l1 .post-button {
+    position: fixed;
+    z-index: 100;
+    margin: 0 !important;
+    bottom: 55px !important;
+    width: 80%;
+    border-radius: 50px;
+    left: 10% !important;
+  	border: 0 !important;
+	background-color: #2aa7e1 !important;
+}
+
+.module-fanwall.fanwall-new-l1 ion-item.item-image.item-custom.item {
+    background-color: transparent !important;
+    border: 0;
+}
+
+
+.module-fanwall.fanwall-new-l1 .new-post-items .item textarea {
+    resize: none;
+    line-height: 1.6;
+    }
+}
+
+/* COMMENTS PAGE */
+ion-modal-view.module-fanwall.fanwall-comment.fanwall-comment-l1 ion-content {
+	background-color: #5b37b7 !important;
+	bottom: calc(var(--safe-area-inset-bottom) + 0) !important;
+}
+
+ion-modal-view.module-fanwall.fanwall-comment.fanwall-comment-l1 .comment-list {
+    background-color: #fff !important;
+    padding-top: 33px !important;
+    border-radius: 30px 30px 0 0;
+    margin-top: 10px;
+}
+
+ion-modal-view.module-fanwall.fanwall-comment.fanwall-comment-l1 ion-item.item-custom.item-comment.item {
+    background-color: #ecf0f6;
+    width: 94%;
+    border-radius: 10px;
+    margin: 10px 3%;
+}
+
+ion-modal-view.module-fanwall.fanwall-comment.fanwall-comment-l1 ion-item h2,
+ion-modal-view.module-fanwall.fanwall-comment.fanwall-comment-l1 ion-item p {
+	text-align: left !important;
+}
+
+/* write comment
+ion-modal-view.module-fanwall.fanwall-comment.fanwall-comment-l1 ion-footer-bar.bar-custom.comment-footer.bar.bar-footer {
+    height: 150px !important;
+}
+
+ion-modal-view.module-fanwall.fanwall-comment.fanwall-comment-l1 ion-footer-bar .item-input-inset {
+	padding: 0 !important;
+  	display: inline-block !important;
+}
+
+ion-modal-view.module-fanwall.fanwall-comment.fanwall-comment-l1 ion-footer-bar .item-input-inset a {
+	padding: 0 !important;
+  	display: block !important;
+}
+
+*/
+
+
+
+
+/* POPUP */
+.popup-container.active .popup {
+	border-radius: 30px !important;
+    box-shadow: none !important;
+}
+
+.platform-browser .popup-buttons,
+.platform-overview .popup-buttons,
+.platform-ios .popup-buttons,
+.platform-android .popup-buttons {
+    text-align: center !important;
+    background-color: transparent !important;
+    margin-bottom: 10px;
+    border-radius: 50px;
+    width: 100% !important;
+    margin: 10px 0 !important;
+    display: inline-block !important;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 0;
+}
+
+.platform-browser .popup .popup-head,
+.platform-overview .popup .popup-head,
+.platform-ios .popup .popup-head,
+.platform-android .popup .popup-head {
+    padding: 20px 20px 0;
+    border-bottom: 0;
+    text-align: center !important;
+    font-size: 22px;
+    font-weight: bold !important;
+}
+
+h3.popup-title.ng-binding:before {
+    content: " ";
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    color: #fff;
+    background-image: url(https://ensiklopediakesaguan.com/wp-content/uploads/2021/04/checked.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.platform-browser .popup button.button:first-of-type,
+.platform-overview .popup button.button:first-of-type,
+.platform-ios .popup button.button:first-of-type,
+.platform-android .popup button.button:first-of-type {
+    width: 60% !important;
+    text-align: center !important;
+    border-radius: 30px !important;
+    background-color: #30b826 !important;
+    padding: 10px !important;
+    color: #fff !important;
+    font-size: 16px !important;
+    margin: 10px 0 !important;
+    display: block !important;
+    margin-left: 20% !important;
+}
+
+.platform-browser .popup button.button,
+.platform-overview .popup button.button,
+.platform-ios .popup button.button,
+.platform-android .popup button.button {
+    display: block !important;
+    background-color: #30b826 !important;
+    width: 60% !important;
+    text-align: center !important;
+    padding: 10px !important;
+    border-radius: 30px !important;
+    color: #fff !important;
+    font-size: 16px !important;
+    margin-left: 20% !important;
+}
+
+.platform-browser .popup .popup-body,
+.platform-overview .popup .popup-body,
+.platform-ios .popup .popup-body,
+.platform-android .popup .popup-body {
+    padding: 20px 20px;
+    border-bottom: 0;
+    text-align: center !important;
+}
