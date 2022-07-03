@@ -1,0 +1,501 @@
+ion-view.padlock-view {
+    background-image: url(https://cdn.britannica.com/30/123030-050-65C3E210/Pavilion-Xi-Lake-Hangzhou-Zhejiang-China-province.jpg) !important;
+    background-position: center left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 999 !important;
+}
+
+ion-view.padlock-view.pane.has-background-image ion-content.scroll-content.ionic-scroll.overflow-scroll.has-header {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    top: 0 !important;
+    bottom: 0 !important;
+}
+
+ion-view.padlock-view .card.padlock .item.item-custom {
+    border: 0;
+    background-color: transparent;
+    color: #000;
+}
+
+ion-view.padlock-view .card.padlock {
+    box-shadow: none;
+    margin-top: 40vh;
+}
+
+ion-view.padlock-view .card.padlock .item.item-custom.active,
+ion-view.padlock-view .card.padlock .item.item-custom:active {
+    border: 0;
+    background-color: transparent !important;
+}
+
+ion-view.padlock-view .card.padlock .item.item-custom h2.ng-binding:after {
+    content: "Let's explore the world together";
+    font-size: 33px;
+    text-align: center;
+    display: block;
+    font-weight: bold;
+    color: #fff;
+}
+
+ion-view.padlock-view .card.padlock .item.item-custom h2.ng-binding {
+    font-size: 0;
+}
+
+ion-view.padlock-view .card.padlock .item.item-body.item-custom.text-center {
+    display: none;
+}
+
+ion-view.padlock-view .card.padlock .item.item-icon-left.item-custom {
+    padding: 10px 10px 20px 10px !important;
+    text-align: center;
+    color: #fff;
+}
+
+ion-view.padlock-view .card.padlock .item.item-icon-left.item-custom i.icon.ion-ios-paper-outline,
+ion-view.padlock-view .item.item-icon-left.item-custom.ng-binding i.icon.ion-ios-person-outline {
+    display: none;
+}
+
+ion-view.padlock-view .card.padlock .item.item-icon-left.item-custom span.ng-binding {
+    font-size: 16px !important;
+}
+
+ion-view.padlock-view .card.padlock .item.item-icon-left.item-custom.ng-binding {
+    padding: 10px !important;
+    margin-top: 35px;
+    color: #fff;
+    font-size: 0;
+}
+
+ion-view.padlock-view .card.padlock .item.item-icon-left.item-custom.ng-binding:after {
+    content: "Get Started";
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px !important;
+    background-color: #f94560;
+    width: 60% !important;
+    margin-left: 20%;
+    border-radius: 10px;
+    color: #fff;
+}
+
+
+/* Custom Page */
+
+ion-view.module-cms.cms-l1 {
+    background-image: url(https://img.alinea.id/img/content/2019/05/08/35969/drama-putus-kontrak-bpjs-kesehatan-dan-nasib-pasien-rumah-sa-g6bPuUf2Fq.jpg) !important;
+    background-position: center top;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+/* Icon app and notif */
+
+ion-view.module-cms.cms-l1 ion-content {
+    padding: 0 20px;
+    background-color: rgba( 255, 255, 255, 0.88) !important;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(3) .card {
+    margin: 0 !important;
+    padding: 0 !important;
+    box-shadow: none;
+}
+
+ion-view.module-cms.cms-l1 ion-content div[ng-repeat="block in blocks"]:nth-child(3) .card .item.item-text-wrap.item-custom.sb-cms-text {
+    background-color: transparent !important;
+    border: 0;
+    color: #000;
+    padding: 0;
+}
+
+ion-view.module-cms.cms-l1 ion-content div[ng-repeat="block in blocks"]:nth-child(3) .card .item.item-text-wrap.item-custom.sb-cms-text p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ion-view.module-cms.cms-l1 ion-content div[ng-repeat="block in blocks"]:nth-child(3) .card .item.item-text-wrap.item-custom.sb-cms-text p a:nth-child(1) {
+    background-image: url(https://www.bpjsketenagakerjaan.go.id/images/logo-bpjamsostek-color.svg);
+    background-position: center left -5px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: transparent !important;
+    height: 50px;
+    width: 43%;
+}
+
+ion-view.module-cms.cms-l1 ion-content div[ng-repeat="block in blocks"]:nth-child(3) .card .item.item-text-wrap.item-custom.sb-cms-text p a:nth-child(2) {
+    background-image: url(https://unpkg.com/ionicons@5.5.2/dist/svg/notifications-outline.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    color: transparent !important;
+    height: 40px;
+    width: 40px;
+    background-color: #ecf0f6;
+    border-radius: 10px;
+}
+
+
+/* Program Layanan */
+
+ion-view.module-cms.cms-l1 ion-content div[ng-repeat="block in blocks"]:nth-child(4) .card[ng-switch-when="text"],
+ion-view.module-cms.cms-l1 ion-content div[ng-repeat="block in blocks"]:nth-child(8) .card[ng-switch-when="text"],
+ion-view.module-cms.cms-l1 ion-content div[ng-repeat="block in blocks"]:nth-child(11) .card[ng-switch-when="text"] {
+    box-shadow: none;
+    margin: 25px 0 10px 0;
+}
+
+ion-view.module-cms.cms-l1 ion-content div[ng-repeat="block in blocks"]:nth-child(4) .card[ng-switch-when="text"] .item.item-text-wrap.item-custom.sb-cms-text,
+ion-view.module-cms.cms-l1 ion-content div[ng-repeat="block in blocks"]:nth-child(8) .card[ng-switch-when="text"] .item.item-text-wrap.item-custom.sb-cms-text,
+ion-view.module-cms.cms-l1 ion-content div[ng-repeat="block in blocks"]:nth-child(11) .card[ng-switch-when="text"] .item.item-text-wrap.item-custom.sb-cms-text {
+    padding: 0;
+    background-color: transparent;
+}
+
+ion-view.module-cms.cms-l1 ion-content div[ng-repeat="block in blocks"]:nth-child(4) .card[ng-switch-when="text"] strong,
+ion-view.module-cms.cms-l1 ion-content div[ng-repeat="block in blocks"]:nth-child(8) .card[ng-switch-when="text"] strong,
+ion-view.module-cms.cms-l1 ion-content div[ng-repeat="block in blocks"]:nth-child(11) .card[ng-switch-when="text"] strong {
+    color: #000;
+    font-size: 16px;
+}
+
+
+/* Proram Lainnya */
+
+ion-view.module-cms.cms-l1 ion-content div[ng-repeat="block in blocks"]:nth-child(7) .card[ng-switch-when="text"] {
+    margin: 0;
+    box-shadow: none;
+}
+
+ion-view.module-cms.cms-l1 ion-content div[ng-repeat="block in blocks"]:nth-child(7) .card[ng-switch-when="text"] .item.item-text-wrap.item-custom.sb-cms-text {
+    padding: 10px 0;
+    background-color: #ebf7f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://unpkg.com/ionicons@5.5.2/dist/svg/arrow-forward-outline.svg);
+    background-position: center right 10px;
+    background-repeat: no-repeat;
+    background-size: 20px;
+}
+
+ion-view.module-cms.cms-l1 ion-content div[ng-repeat="block in blocks"]:nth-child(7) .card[ng-switch-when="text"] .item.item-text-wrap.item-custom.sb-cms-text a {
+    width: 100%;
+    height: 100%;
+    text-transform: uppercase;
+    color: #49ba6c !important;
+}
+
+
+/* Jaminan hari tua & jaminan kecelakaan kerja */
+
+ion-view.module-cms.cms-l1 ion-content div[ng-repeat="block in blocks"]:nth-child(5) .card[ng-switch-when="text"],
+ion-view.module-cms.cms-l1 ion-content div[ng-repeat="block in blocks"]:nth-child(6) .card[ng-switch-when="text"] {
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+ion-view.module-cms.cms-l1 ion-content div[ng-repeat="block in blocks"]:nth-child(5) .card[ng-switch-when="text"] .item.item-text-wrap.item-custom.sb-cms-text,
+ion-view.module-cms.cms-l1 ion-content div[ng-repeat="block in blocks"]:nth-child(6) .card[ng-switch-when="text"] .item.item-text-wrap.item-custom.sb-cms-text {
+    background-color: #ecf0f6;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+ion-view.module-cms.cms-l1 ion-content div[ng-repeat="block in blocks"]:nth-child(5) .card[ng-switch-when="text"] img.left,
+ion-view.module-cms.cms-l1 ion-content div[ng-repeat="block in blocks"]:nth-child(6) .card[ng-switch-when="text"] img.left {
+    width: 15%;
+}
+
+ion-view.module-cms.cms-l1 ion-content div[ng-repeat="block in blocks"]:nth-child(5) .card[ng-switch-when="text"] .content.ng-binding a,
+ion-view.module-cms.cms-l1 ion-content div[ng-repeat="block in blocks"]:nth-child(6) .card[ng-switch-when="text"] .content.ng-binding a {
+    font-size: 14px;
+}
+
+
+/* Layanan Lainnya - Menu Pertama dan kedua */
+
+ion-view.module-cms.cms-l1 ion-content div[ng-repeat="block in blocks"]:nth-child(9) .card[ng-switch-when="text"],
+ion-view.module-cms.cms-l1 ion-content div[ng-repeat="block in blocks"]:nth-child(10) .card[ng-switch-when="text"] {
+    box-shadow: none;
+    margin: 0 0 20px 0 !important;
+}
+
+ion-view.module-cms.cms-l1 ion-content div[ng-repeat="block in blocks"]:nth-child(9) .card[ng-switch-when="text"] .item.item-text-wrap.item-custom.sb-cms-text,
+ion-view.module-cms.cms-l1 ion-content div[ng-repeat="block in blocks"]:nth-child(10) .card[ng-switch-when="text"] .item.item-text-wrap.item-custom.sb-cms-text {
+    padding: 0;
+    background-color: transparent;
+}
+
+ion-view.module-cms.cms-l1 ion-content div[ng-repeat="block in blocks"]:nth-child(9) .card[ng-switch-when="text"] .content.ng-binding,
+ion-view.module-cms.cms-l1 ion-content div[ng-repeat="block in blocks"]:nth-child(10) .card[ng-switch-when="text"] .content.ng-binding {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ion-view.module-cms.cms-l1 ion-content div[ng-repeat="block in blocks"]:nth-child(9) .card[ng-switch-when="text"] p:nth-child(1) {
+    margin: 0;
+    padding: 0;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 10px;
+    background-image: url(https://www.bpjsketenagakerjaan.go.id/newweb/images/product-icon-8.svg);
+    background-position: center top 5px;
+    background-repeat: no-repeat;
+    background-size: 30px;
+}
+
+ion-view.module-cms.cms-l1 ion-content div[ng-repeat="block in blocks"]:nth-child(9) .card[ng-switch-when="text"] p:nth-child(2) {
+    margin: 0;
+    padding: 0;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 10px;
+    background-image: url(https://www.bpjsketenagakerjaan.go.id/newweb/images/product-icon-7.svg);
+    background-position: center top 5px;
+    background-repeat: no-repeat;
+    background-size: 30px;
+}
+
+ion-view.module-cms.cms-l1 ion-content div[ng-repeat="block in blocks"]:nth-child(9) .card[ng-switch-when="text"] p:nth-child(3) {
+    margin: 0;
+    padding: 0;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 10px;
+    background-image: url(https://www.bpjsketenagakerjaan.go.id/newweb/images/product-icon-6.svg);
+    background-position: center top 5px;
+    background-repeat: no-repeat;
+    background-size: 30px;
+}
+
+ion-view.module-cms.cms-l1 ion-content div[ng-repeat="block in blocks"]:nth-child(9) .card[ng-switch-when="text"] p:nth-child(4) {
+    margin: 0;
+    padding: 0;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 10px;
+    background-image: url(https://www.bpjsketenagakerjaan.go.id/newweb/images/product-icon-5.svg);
+    background-position: center top 5px;
+    background-repeat: no-repeat;
+    background-size: 30px;
+}
+
+ion-view.module-cms.cms-l1 ion-content div[ng-repeat="block in blocks"]:nth-child(10) .card[ng-switch-when="text"] p:nth-child(1) {
+    margin: 0;
+    padding: 0;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 10px;
+    background-image: url(https://www.bpjsketenagakerjaan.go.id/newweb/images/product-icon-4.svg);
+    background-position: center top 5px;
+    background-repeat: no-repeat;
+    background-size: 30px;
+}
+
+ion-view.module-cms.cms-l1 ion-content div[ng-repeat="block in blocks"]:nth-child(10) .card[ng-switch-when="text"] p:nth-child(2) {
+    margin: 0;
+    padding: 0;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 10px;
+    background-image: url(https://www.bpjsketenagakerjaan.go.id/newweb/images/product-icon-3.svg);
+    background-position: center top 5px;
+    background-repeat: no-repeat;
+    background-size: 30px;
+}
+
+ion-view.module-cms.cms-l1 ion-content div[ng-repeat="block in blocks"]:nth-child(10) .card[ng-switch-when="text"] p:nth-child(3) {
+    margin: 0;
+    padding: 0;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 10px;
+    background-image: url(https://www.bpjsketenagakerjaan.go.id/newweb/images/product-icon-2.svg);
+    background-position: center top 5px;
+    background-repeat: no-repeat;
+    background-size: 30px;
+}
+
+ion-view.module-cms.cms-l1 ion-content div[ng-repeat="block in blocks"]:nth-child(10) .card[ng-switch-when="text"] p:nth-child(4) {
+    margin: 0;
+    padding: 0;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 10px;
+    background-image: url(https://www.bpjsketenagakerjaan.go.id/newweb/images/product-icon-1.svg);
+    background-position: center top 5px;
+    background-repeat: no-repeat;
+    background-size: 30px;
+}
+
+ion-view.module-cms.cms-l1 ion-content div[ng-repeat="block in blocks"]:nth-child(9) .card[ng-switch-when="text"] a,
+ion-view.module-cms.cms-l1 ion-content div[ng-repeat="block in blocks"]:nth-child(10) .card[ng-switch-when="text"] a {
+    font-size: 12px;
+    color: #000 !important;
+}
+
+
+/* Promo */
+
+ion-view.module-cms.cms-l1 ion-content div[ng-repeat="block in blocks"]:nth-child(12) .card[ng-switch-when="text"] {
+    box-shadow: none;
+    margin: 0;
+}
+
+ion-view.module-cms.cms-l1 ion-content div[ng-repeat="block in blocks"]:nth-child(12) .card[ng-switch-when="text"] .item.item-text-wrap.item-custom.sb-cms-text {
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    border: 0;
+    color: #000;
+}
+
+ion-view.module-cms.cms-l1 ion-content div[ng-repeat="block in blocks"]:nth-child(12) .card[ng-switch-when="text"] .content.ng-binding {
+    width: 100% !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    white-space: nowrap !important;
+    -webkit-overflow-scrolling: touch !important;
+}
+
+ion-view.module-cms.cms-l1 ion-content div[ng-repeat="block in blocks"]:nth-child(12) .card[ng-switch-when="text"] .content.ng-binding p:nth-child(1) {
+    width: 90% !important;
+    min-width: 90% !important;
+    height: 150px;
+    background-color: #f1ddd4;
+    display: inline-flex !important;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    background-image: url(https://www.bpjsketenagakerjaan.go.id/assets/uploads/banner/banner_hd_Artboard_22-100.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px 47% 10px 10px;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+ion-view.module-cms.cms-l1 ion-content div[ng-repeat="block in blocks"]:nth-child(12) .card[ng-switch-when="text"] .content.ng-binding p:nth-child(2) {
+    width: 90% !important;
+    min-width: 90% !important;
+    height: 150px;
+    background-color: #f1ddd4;
+    display: inline-flex !important;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    background-image: url(https://www.bpjsketenagakerjaan.go.id/assets/uploads/banner/banner_hd_JKP_Banner_Besar.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px 47% 10px 10px;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+ion-view.module-cms.cms-l1 ion-content div[ng-repeat="block in blocks"]:nth-child(12) .card[ng-switch-when="text"] .content.ng-binding p:nth-child(3) {
+    width: 90% !important;
+    min-width: 90% !important;
+    height: 150px;
+    background-color: #f1ddd4;
+    display: inline-flex !important;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    background-image: url(https://www.bpjsketenagakerjaan.go.id/assets/uploads/banner/banner_hd_Artboard_77@2x-100.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px 47% 10px 10px;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+ion-view.module-cms.cms-l1 ion-content div[ng-repeat="block in blocks"]:nth-child(12) .card[ng-switch-when="text"] .content.ng-binding p:nth-child(4) {
+    width: 90% !important;
+    min-width: 90% !important;
+    height: 150px;
+    background-color: #ebf7f3;
+    display: inline-flex !important;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    background-image: url(https://www.bpjsketenagakerjaan.go.id/assets/uploads/banner/banner_hd_banner_hd_Artboard_25_3-100.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px 47% 10px 10px;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+ion-view.module-cms.cms-l1 ion-content div[ng-repeat="block in blocks"]:nth-child(12) .card[ng-switch-when="text"] .content.ng-binding p a {
+    display: flex;
+    flex-direction: column;
+}
+
+ion-view.module-cms.cms-l1 ion-content div[ng-repeat="block in blocks"]:nth-child(12) .card[ng-switch-when="text"] .content.ng-binding p a span {
+    font-size: 14px !important;
+    margin-top: 10px;
+    font-weight: normal !important;
+}
+
+
+/* Sementara */
+
+ion-view.module-cms.cms-l1 ion-content {
+    padding: 0 20px;
+    background-color: rgba(255, 255, 255, 0.88) !important;
+    padding-top: 30px;
+    top: 0 !important;
+    bottom: 0;
+}
+
+ion-header-bar.bar-custom.bar.bar-header {
+    height: 0 !important;
+    background-color: transparent;
+}
+
+.bar.bar-custom .title {
+    display: none;
+}

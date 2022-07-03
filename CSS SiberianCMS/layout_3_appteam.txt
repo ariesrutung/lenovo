@@ -1,12 +1,39 @@
+/*
+===================
+===================
+HOW TO USE THIS CSS
+===================
+===================
+
+1. Select Layout 3 in your editor. Don't forget to add some slider image to your homepage.
+2. The 8 firts menu will be displayed in the top like small menu
+3. The 4 fourth menu will be displayed in the second section like banner with menu name, description, and a button.
+4. The last section will be displayed in the third section like banner with menu name and a button.
+5. Copy the code below and paste it in your Colors tab of your editor. 
+6. If you need to change the background image that used in this CSS, just find the URl and replace it.
+*/
+
+
+/* Warna dan Gambar Parameter */
+
+$white-color: #fff;
+$yellow-color: #f5c634;
+$transparent-color: transparent;
+$grey-color: #ecf0f6;
+$blue-color: #387093;
+$black-color: #000;
+$icon-filter: url(https://justapp.id/member/halaman/unggah/article/552899bdce385b43cbd9a4945d3533b9filter.png);
+$clear-icon: url(https://justapp.id/member/halaman/unggah/article/875e18f369123ab4938e54ad15968fc9clearicon.png);
+$location-icon: url(https://justapp.id/member/halaman/unggah/article/1b085074c679766777acc53e171dddfclokasi_icon.png);
+$check-icon: url(https://image.flaticon.com/icons/png/512/845/845646.png);
 ion-view[state="home"] {
     background-image: none !important;
-    background-color: #f0ebe7 !important;
+    background-color: $grey-color !important;
 }
 
 ion-view[state="home"]>ion-content:before {
     content: " ";
     display: block;
-    color: #f8e71d;
     background-image: url(https://www.seimless.com/wp-content/uploads/2015/08/Header-Banner.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -14,7 +41,7 @@ ion-view[state="home"]>ion-content:before {
     height: 180px;
     top: 0vh !important;
     width: 100% !important;
-    background-color: #f8e71d;
+    background-color: $yellow-color;
     position: absolute;
     z-index: -999;
     border-bottom-left-radius: 100% 50px;
@@ -31,7 +58,7 @@ div.new_slider {
     height: 25vh;
     top: 11vh !important;
     opacity: 1;
-    box-shadow: 0 1px 2px 0 #d0d0d0, 0 1px 3px 1px #cbcbcb;
+    box-shadow: 0 1px 2px 0 $grey-color, 0 1px 3px 1px $grey-color;
     position: absolute;
     z-index: 999;
     margin-top: 0 !important;
@@ -43,7 +70,7 @@ div#homepage_slider .slider-pager.hide {
 }
 
 div#homepage_slider span.slider-pager-page.active {
-    background-color: #f5851b;
+    background-color: $yellow-color;
     width: 30px;
     font-size: 0;
     padding: 0;
@@ -54,14 +81,14 @@ div#homepage_slider span.slider-pager-page.active {
 }
 
 div#homepage_slider span.slider-pager-page {
-    background-color: #f8dfb4;
+    background-color: $blue-color;
     width: 15px;
     font-size: 0;
     padding: 0;
     height: 10px;
     max-height: 10px;
     border-radius: 10px;
-    opacity: 1;
+    opacity: .5;
 }
 
 .layout.l3 ion-content {
@@ -89,7 +116,7 @@ div#homepage_slider span.slider-pager-page {
     content: ".";
     padding-bottom: 100px;
     display: block;
-    color: #fff;
+    color: $white-color;
 }
 
 
@@ -97,9 +124,9 @@ div#homepage_slider span.slider-pager-page {
 
 .layout.l3 li:nth-child(-n+8) .item.homepage-custom.border-custom {
     border-radius: 10px !important;
-    background-color: #fff;
+    background-color: $white-color;
     border: 0;
-    box-shadow: 0 1px 2px 0 #ecf0f6, 0 1px 3px 1px #ecf0f6;
+    box-shadow: 0 1px 2px 0 $grey-color, 0 1px 3px 1px $grey-color;
     width: 9vh;
     height: 9vh;
 }
@@ -108,8 +135,8 @@ div#homepage_slider span.slider-pager-page {
     line-height: 20px;
     height: 20px;
     overflow: hidden;
-    font-size: 12px;
-    color: #000;
+    font-size: 11px;
+    color: $black-color;
     text-transform: capitalize;
     white-space: normal;
     margin-top: 5px;
@@ -121,14 +148,29 @@ div#homepage_slider span.slider-pager-page {
 
 .layout.l3 li:nth-child(n+9):nth-child(-n+12) {
     border-radius: 10px !important;
-    background-color: #345289;
+    background-color: $blue-color;
     border: 0;
-    box-shadow: 0 1px 2px 0 #d0d0d0, 0 1px 3px 1px #cbcbcb;
+    box-shadow: 0 1px 2px 0 $grey-color, 0 1px 3px 1px $grey-color;
     float: left;
     width: 100%;
     height: auto;
     margin: 10px 0;
     padding: 10px;
+}
+
+.layout.l3 li:nth-child(n+9):nth-child(-n+12):after {
+    content: "More";
+    background-color: $white-color;
+    padding: 5px 10px;
+    border-radius: 5px 0 0 5px;
+    display: flex;
+    border: 0;
+    margin: 10px 0;
+    width: 43%;
+    clip-path: polygon(0% 0%, 100% 0, 80% 100%, 0% 100%);
+    color: $blue-color;
+    text-align: center;
+    justify-content: center;
 }
 
 .layout.l3 li:nth-child(9) {
@@ -170,13 +212,13 @@ div#homepage_slider span.slider-pager-page {
     text-align: left;
     padding: 10px;
     height: 100%;
-    background-color: #fff;
+    background-color: $white-color;
     width: 60%;
     border-radius: 10px;
     top: 0 !important;
     margin: 0 !important;
-    color: #f14c3a !important;
-    border: 1px solid #ecf0f6;
+    color: $blue-color !important;
+    border: 1px solid $grey-color;
     clip-path: polygon(0% 0%, 100% 0, 100% 50%, 75% 100%, 0% 100%);
 }
 
@@ -189,7 +231,7 @@ div#homepage_slider span.slider-pager-page {
     width: 100%;
     font-size: 12px;
     font-weight: normal;
-    color: #345289;
+    color: $black-color;
     margin: 15px 0;
 }
 
@@ -199,7 +241,7 @@ div#homepage_slider span.slider-pager-page {
     width: 100%;
     font-size: 12px;
     font-weight: normal;
-    color: #345289;
+    color: $blue-color;
     margin: 15px 0;
 }
 
@@ -209,7 +251,7 @@ div#homepage_slider span.slider-pager-page {
     width: 100%;
     font-size: 12px;
     font-weight: normal;
-    color: #345289;
+    color: $blue-color;
     margin: 15px 0;
 }
 
@@ -219,7 +261,7 @@ div#homepage_slider span.slider-pager-page {
     width: 100%;
     font-size: 12px;
     font-weight: normal;
-    color: #345289;
+    color: $blue-color;
     margin: 15px 0;
 }
 
@@ -228,9 +270,9 @@ div#homepage_slider span.slider-pager-page {
 
 .layout.l3 li:nth-child(n+13) {
     border-radius: 10px !important;
-    background-color: #345289;
+    background-color: $blue-color;
     border: 0;
-    box-shadow: 0 1px 2px 0 #d0d0d0, 0 1px 3px 1px #cbcbcb;
+    box-shadow: 0 1px 2px 0 $grey-color, 0 1px 3px 1px $grey-color;
     float: left;
     width: 96% !important;
     height: 150px;
@@ -260,7 +302,7 @@ div#homepage_slider span.slider-pager-page {
     border-radius: 10px;
     top: 0 !important;
     margin: 0 !important;
-    color: #fff !important;
+    color: $white-color !important;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -273,12 +315,12 @@ div#homepage_slider span.slider-pager-page {
     content: "More";
     display: block;
     margin: 0;
-    background-color: #345289;
+    background-color: $blue-color;
     border-radius: 10px;
     width: 30%;
     text-align: center;
     padding: 5px;
-    color: #fff;
+    color: $white-color;
     font-weight: normal;
     font-size: 12px;
     clip-path: polygon(0% 0%, 90% 0, 100% 50%, 90% 100%, 0% 100%);

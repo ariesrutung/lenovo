@@ -1,0 +1,268 @@
+ion-view.image-gallery div#photos-grid_public,
+ion-view.image-gallery div#photos-grid_private {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+ion-view.image-gallery div#photos-grid_public .row {
+    width: 100% !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    white-space: nowrap !important;
+    -webkit-overflow-scrolling: touch !important;
+    margin: 0 !important;
+    background-color: #D9AFD9;
+    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+    padding: 15px;
+    background-image: url(https://themekita.com/demo-atlantis-lite-bootstrap/assets/images/bgheader.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 0 !important;
+    bottom: 0 !important;
+}
+
+ion-view.image-gallery div#photos-grid_private .row {
+    width: 100% !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    white-space: nowrap !important;
+    -webkit-overflow-scrolling: touch !important;
+    margin: 0 !important;
+    background-color: #D9AFD9;
+    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+    padding: 15px;
+    background-image: url(https://i.ytimg.com/vi/kXoVa7SaCaI/maxresdefault.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 0 !important;
+    bottom: 0 !important;
+}
+
+ion-view.image-gallery div#photos-grid_public .row .col.col-33,
+ion-view.image-gallery div#photos-grid_private .row .col.col-33 {
+    width: 85% !important;
+    min-width: 85% !important;
+    background-color: #ecf0f6;
+    display: inline-flex !important;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 0 !important;
+    flex-direction: column;
+    margin-right: 10px;
+    border-radius: 10px !important;
+}
+
+ion-view.image-gallery div#photos-grid_public .row .col.col-33 img.imagesallery-grid-img,
+ion-view.image-gallery div#photos-grid_private .row .col.col-33 img.imagesallery-grid-img {
+    border-radius: 10px 10px 0 0;
+}
+
+ion-view.image-gallery div#photos-grid_public .row .col.col-33 p.text-center.ng-binding,
+ion-view.image-gallery div#photos-grid_private .row .col.col-33 p.text-center.ng-binding {
+    white-space: normal;
+    text-align: left;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.8;
+    padding: 10px;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+
+/* Tab top */
+
+ion-view.image-gallery.pane .image-gallery-tabs {
+    display: flex;
+    background-color: transparent;
+    background-image: none !important;
+    padding-bottom: var(--safe-area-inset-bottom);
+    height: calc(var(--safe-area-inset-bottom) + 55px) !important;
+}
+
+ion-view.image-gallery .image-gallery-tabs a.tab-item.tab-item-custom.ng-binding.active {
+    background-color: #ecf0f6 !important;
+    border-radius: 30px;
+    border: 0 !important;
+    margin: 0 !important;
+    height: 32px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px !important;
+    color: #fe8f28;
+    font-style: italic;
+}
+
+ion-view.image-gallery a.tab-item.tab-item-custom.ng-binding {
+    background-color: transparent;
+    border-radius: 0;
+    border: 0 !important;
+    margin: 0 !important;
+    height: 32px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px !important;
+    color: #000;
+}
+
+
+/* Add New */
+
+ion-modal-view.imagegallery.imagegallery-add .list {
+    padding: 15px;
+}
+
+ion-modal-view.imagegallery.imagegallery-add .list .item.item-custom.item-body {
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+ion-modal-view.imagegallery.imagegallery-add .list .item.item-icon-left.item-custom.ng-binding {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 !important;
+    height: 100px !important;
+    padding: 10px !important;
+    background-color: #ecf0f6 !important;
+    border: 2px dashed #fe8f28 !important;
+    color: #fe8f28;
+}
+
+ion-modal-view.imagegallery.imagegallery-add .list .item.item-icon-left.item-custom.ng-binding i.icon.ion-camera {
+    position: relative;
+    margin: 0 !important;
+    left: 0;
+}
+
+ion-modal-view.imagegallery.imagegallery-add .list label.item.item-custom.item-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-top: 30px;
+}
+
+ion-modal-view.imagegallery.imagegallery-add .list label.item.item-custom.item-input textarea {
+    height: 150px !important;
+    padding: 10px !important;
+    background-color: #ecf0f6;
+    line-height: 1.8;
+    color: #000;
+}
+
+ion-modal-view.imagegallery.imagegallery-add .list .item.item-custom.item-toggle.ng-binding {
+    padding: 20px 0;
+    color: #000;
+}
+
+ion-modal-view.imagegallery.imagegallery-add .toggle .track {
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.3s;
+    transition-property: background-color, border;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 51px;
+    height: 31px;
+    border: 2px solid #ecf0f6 !important;
+    border-radius: 20px;
+    background-color: #ecf0f6 !important;
+    content: " ";
+    cursor: pointer;
+    pointer-events: none;
+}
+
+ion-modal-view.imagegallery.imagegallery-add .toggle.toggle-positive input:checked+.track {
+    border-color: #fe8f28 !important;
+    background-color: #fe8f28 !important;
+}
+
+ion-modal-view.imagegallery.imagegallery-add .button.button-positive-custom {
+    border: 0;
+    background-color: #fe8f28;
+    color: rgba(75, 139, 244, 1);
+    width: 90%;
+    border-radius: 30px;
+    margin: 20px 5%;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+
+/* Header */
+
+.bar.bar-custom .title {
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    font-size: 14px;
+}
+
+
+/* Detail Page */
+
+ion-modal-view.imagegallery.imagegallery-details .list {
+    margin: 0 !important;
+    padding: 15px;
+}
+
+ion-modal-view.imagegallery.imagegallery-details .list .item.item-custom {
+    border: 0;
+    background-color: transparent;
+    color: #000;
+    /* padding: 0; */
+    font-size: 14px;
+}
+
+ion-modal-view.imagegallery.imagegallery-details .list img.full-image {
+    border-radius: 10px !important;
+}
+
+ion-modal-view.imagegallery.imagegallery-details .list p.ng-binding {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #000;
+}
+
+ion-modal-view.imagegallery.imagegallery-details .list.imagegallery-basic-info .item.item-divider.ng-binding {
+    padding: 10px;
+    background-color: #fe8f28 !important;
+    color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 40px;
+    border: 0;
+}
+
+ion-modal-view.imagegallery.imagegallery-details .list.imagegallery-basic-info a.item.item-custom span.item-note {
+    font-size: 14px !important;
+    color: #fe8f28;
+}
+
+ion-modal-view.imagegallery.imagegallery-details .list.imagegallery-basic-info a.item.item-custom span.item-note .toggle .track {
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s;
+    -webkit-transition-property: background-color, border;
+    transition-property: background-color, border;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 51px;
+    height: 31px;
+    border: solid 2px #ecf0f6 !important;
+    border-radius: 20px;
+    background-color: #ecf0f6 !important;
+    content: ' ';
+    cursor: pointer;
+    pointer-events: none;
+}

@@ -1,0 +1,514 @@
+/* PROFILE CSS START HERE */
+
+
+/* colors parameters */
+
+$profile-white-color: #fff;
+$profile-black-color: #000;
+$profile-gray-color: #ecf0f6;
+$profile-yellow-color: #fe8f28;
+$profile-inputfield-color: #e9f7fe;
+$input-label-color: #878787;
+$profile-chevron-icon: url(https://unpkg.com/ionicons@5.5.2/dist/svg/chevron-down-outline.svg);
+$profile-header-image: url(https://streamerr.co/img/demo-content/backgrounds/stunning-header-bg3.png);
+ion-view.pane ion-content.has-footer.scroll-content.ionic-scroll.has-header {
+    background-color: $profile-white-color !important;
+}
+
+form.extended-profile:after {
+    content: " ";
+    display: block;
+    padding-bottom: 100px !important;
+}
+
+.profile-info:after {
+    display: none;
+}
+
+form.extended-profile .info-cards * {
+    font-size: 14px !important;
+    color: $profile-black-color !important;
+}
+
+form.extended-profile .button.button-custom {
+    border: 0;
+    background-color: $profile-yellow-color;
+    color: $profile-white-color;
+    box-shadow: none;
+    width: 90%;
+    margin: 10px 5% !important;
+    border-radius: 10px;
+}
+
+form.extended-profile.ng-pristine.ng-valid.ng-valid-email.ng-valid-max .col.col-20 {
+    background-color: $profile-white-color;
+    border-radius: 30px 0 0 0 !important;
+    margin-top: 120px;
+    padding-top: 10px;
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
+    order: 2;
+    position: absolute;
+    right: 0;
+}
+
+form.extended-profile .list .item.item-custom .col.col-20 img.profile-img.item.item-custom.p-0 {
+    border-radius: 50% !important;
+    border: 2px solid $profile-inputfield-color !important;
+}
+
+form.extended-profile .profile-info.list>.item.item-custom>.col-20 {
+    background-color: transparent;
+    border-radius: 50%;
+    margin-top: 0;
+    padding-top: 10px;
+    order: 1;
+    max-width: 25% !important;
+    flex: 0 0 100% !important;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    right: 0;
+}
+
+form.extended-profile .profile-info.list>.item.item-custom>.col-20 img.profile-img.item.item-custom.p-0 {
+    border-radius: 50px !important;
+}
+
+form.extended-profile .profile-info.list>.item.item-custom>.col-80 span.ng-binding {
+    font-size: 0;
+}
+
+form.extended-profile .profile-info.list>.item.item-custom>.col-80 span.ng-binding:before {
+    content: "Welcome";
+    font-size: 16px;
+    margin-right: 10px;
+    font-style: italic;
+    color: $profile-yellow-color;
+}
+
+form.extended-profile .profile-info.list>.item.item-custom>.col-80 p.ng-binding:after {
+    content: "How you feel today? We hope you are good.";
+    font-size: 14px;
+    color: $profile-white-color;
+    white-space: normal;
+}
+
+form.extended-profile .profile-info.list>.item.item-custom>.col-80 p.ng-binding {
+    color: $profile-white-color;
+    font-size: 0;
+    margin: 10px 0;
+    line-height: 1.8;
+}
+
+form.extended-profile .profile-info.list>.item.item-custom>.col-80 span.ng-binding strong.ng-binding {
+    text-transform: capitalize;
+    font-size: 18px !important;
+}
+
+form.extended-profile .row.item.item-custom.info-row {
+    height: 220px;
+}
+
+form.extended-profile .profile-info.list {
+    background-image: $profile-header-image;
+    background-position: center right !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 190px;
+    border-bottom-left-radius: 100% 50px !important;
+    border-bottom-right-radius: 100% 50px !important;
+    border: 0;
+}
+
+form.extended-profile .profile-info.list>.item.item-custom {
+    border-radius: 0 !important;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    color: $profile-white-color;
+    flex-direction: column;
+    display: flex;
+    padding-right: 75px;
+    border-bottom-left-radius: 100% 50px !important;
+    border-bottom-right-radius: 100% 50px !important;
+    border: 0 !important;
+    width: 100%;
+    margin: 0 !important;
+    height: 190px !important;
+}
+
+.extended-profile .info-cards:nth-child(2) {
+    margin-top: 0 !important;
+    padding: 0 15px;
+}
+
+.extended-profile .info-cards:nth-child(2) .list {
+    margin-top: -70px;
+    border-radius: 10px !important;
+    background-color: $profile-white-color;
+    padding: 15px !important;
+    box-shadow: 0px 1px 2px 0px rgba(186, 186, 186, 0.9), 0px 1px 1px 0px rgb(206, 206, 206, 0.7);
+}
+
+form.extended-profile .info-cards .section-fields {
+    width: 100%;
+    margin: auto;
+    border-radius: 10px;
+    background-color: transparent;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+form.extended-profile .info-cards {
+    width: 100% !important;
+    margin: 0 !important;
+    background-color: transparent;
+    margin-bottom: 20px;
+    border-radius: 7px;
+    box-shadow: none !important;
+}
+
+form.extended-profile .info-cards .item-input input {
+    color: $profile-black-color !important;
+    position: relative;
+    border: 0;
+    display: inline-block;
+    width: 100%;
+    background-color: $profile-inputfield-color;
+    height: 50px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+form.extended-profile .info-cards .item-input .for-label {
+    display: block;
+    position: relative;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    text-align: left;
+    border-radius: 20px;
+    padding: 10px 0;
+    width: 100%;
+    min-width: 100%;
+    color: $input-label-color;
+}
+
+form.extended-profile .info-cards .item-input {
+    padding: 0;
+    border: 0;
+    width: 100%;
+    display: block;
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+
+form.extended-profile .info-cards .item-input input::-webkit-outer-spin-button,
+form.extended-profile .info-cards .item-input input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+/* Firefox */
+
+form.extended-profile .info-cards .item-input input[type=number] {
+    -moz-appearance: textfield;
+}
+
+form.extended-profile .info-cards .item-input {
+    padding: 0;
+    border: 0;
+    width: 100%;
+}
+
+form.extended-profile .info-cards .item-input span.input-label.for-label.ng-binding {
+    text-align: left;
+    display: flex;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0 !important;
+    padding: 0 !important;
+    background-color: transparent;
+    color: $profile-black-color;
+    align-items: center;
+    height: 30px;
+    min-width: 100%;
+}
+
+form.extended-profile .info-cards textarea {
+    color: $profile-black-color !important;
+    position: relative;
+    border: 0;
+    display: inline-block;
+    width: 100%;
+    background-color: $profile-inputfield-color;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+form.extended-profile .checkbox-custom .checkbox input:before,
+form.extended-profile .checkbox-custom .checkbox .checkbox-icon:before {
+    border: 2px solid $profile-yellow-color !important;
+    border-radius: 5px !important;
+}
+
+form.extended-profile .checkbox-custom .checkbox input:checked:before,
+form.extended-profile .checkbox-custom .checkbox input:checked+.checkbox-icon:before {
+    background: $profile-yellow-color !important;
+    border-color: $profile-yellow-color;
+}
+
+
+/* Geolocation */
+
+form.extended-profile [ng-switch-when="geoloc"] label {
+    border: 0 !important;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 0;
+}
+
+form.extended-profile [ng-switch-when="geoloc"] label .checkbox {
+    position: relative;
+    top: 50%;
+    right: 0;
+    left: 0;
+    z-index: 3;
+    margin-top: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 10px 0 0;
+}
+
+
+/* Checkbox */
+
+form.extended-profile .list .item-divider.item-divider-custom {
+    background-color: $profile-white-color;
+    color: $profile-black-color !important;
+    border: 0 !important;
+    padding: 0;
+}
+
+form.extended-profile p.label.ng-binding {
+    color: $input-label-color !important;
+    font-size: 14px;
+}
+
+form.extended-profile .checkbox-custom {
+    background-color: $profile-white-color;
+    border: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px 5px 5px 0;
+}
+
+form.extended-profile .checkbox-custom .checkbox {
+    padding: 0 10px 0 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    left: 0;
+}
+
+
+/* Radio Input */
+
+form.extended-profile .radio-content {
+    border: 0 !important;
+}
+
+form.extended-profile .radio-content .item-content {
+    background-color: $profile-inputfield-color;
+    padding: 10px;
+    margin: 5px 0;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+form.extended-profile .item-radio {
+    padding: 0;
+    border: 0 !important;
+}
+
+form.extended-profile .ion-checkmark:before {
+    color: $profile-yellow-color !important;
+}
+
+form.extended-profile .item-radio input:checked+.radio-content .item-content {
+    background-color: $profile-gray-color;
+}
+
+
+/* Dropdown */
+
+form.extended-profile label[ng-switch-when="select"] {
+    display: inline-block !important;
+    padding: 0 !important;
+    width: 100%;
+}
+
+form.extended-profile label[ng-switch-when="select"] select {
+    min-width: 100% !important;
+    display: block !important;
+    position: relative !important;
+    background-color: $profile-inputfield-color !important;
+    height: 45px;
+    padding: 5px !important;
+    border-radius: 5px !important;
+    background-image: $profile-chevron-icon !important;
+    background-position: center right 5px !important;
+    background-repeat: no-repeat !important;
+    background-size: 10px !important;
+}
+
+form.extended-profile .item-select:after {
+    display: none !important;
+}
+
+form.extended-profile label[ng-switch-when="select"] .input-label.ng-binding {
+    display: block;
+    min-width: 100%;
+    color: $input-label-color;
+}
+
+
+/* date/time */
+
+form.extended-profile label[ng-switch-when="date"],
+form.extended-profile label[ng-switch-when="anniversary"],
+form.extended-profile label[ng-switch-when="birthday"] {
+    background-color: transparent !important;
+    border: 0 !important;
+    padding: 0 !important;
+    display: block;
+}
+
+form.extended-profile label[ng-switch-when="date"] input,
+form.extended-profile label[ng-switch-when="anniversary"] input,
+form.extended-profile label[ng-switch-when="birthday"] input {
+    color: $profile-black-color !important;
+    position: relative;
+    border: 0;
+    display: inline-block;
+    width: 100%;
+    background-color: $profile-inputfield-color;
+    height: 50px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+/* Geoloc */
+
+.checkbox-custom .checkbox input:checked:before,
+.checkbox-custom .checkbox input:checked+.checkbox-icon:before {
+    background: $profile-inputfield-color;
+    border-color: $profile-inputfield-color;
+}
+
+
+/* Range */
+
+form.extended-profile .item-range {
+    display: block !important;
+    background-color: transparent !important;
+    color: $profile-black-color !important;
+    border: 0 !important;
+    padding: 0 !important;
+}
+
+form.extended-profile .item-range .input-label {
+    display: table;
+    padding: 7px 10px 7px 0;
+    max-width: 200px;
+    width: 35%;
+    color: $profile-black-color;
+    font-size: 14px;
+    min-width: 100%;
+}
+
+form.extended-profile .item-range .range {
+    padding: 0;
+}
+
+form.extended-profile .item-range .range input {
+    padding: 0;
+    margin: 0;
+}
+
+form.extended-profile .info-cards .list .item.item-custom.section-name {
+    padding: 0 !important;
+    border-radius: 0 !important;
+    background-color: transparent !important;
+}
+
+form.extended-profile .info-cards .list .item.item-custom.section-name:after {
+    content: "Lengkapi data-data terkait profile Anda di bawah ini! You can replace this text with your own text if you want.";
+    display: block;
+    width: 100%;
+    white-space: normal;
+    line-height: 1.8;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+form.extended-profile .info-cards .list .item.item-custom.section-name h2.ng-binding {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/* Image upload */
+
+form.extended-profile div[ng-switch-when="image"] .item.item-icon-left.item-custom.ng-binding {
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form.extended-profile div[ng-switch-when="image"] .item.item-icon-left.item-custom.ng-binding i.icon.ion-image {
+    position: relative;
+    left: 0;
+    background-color: $profile-yellow-color;
+    color: $profile-white-color !important;
+    padding: 10px;
+    border-radius: 5px;
+    order: 2;
+    margin: 0;
+}
+
+
+/* Phone number */
+
+form.extended-profile .card-no[ng-switch-when="telephone"] .checkbox-custom.item.item-input.intlpn-container {
+    display: flex !important;
+}
+
+
+/* Second Section */
+
+.extended-profile .info-cards:nth-child(3) .list {
+    border-radius: 10px !important;
+    background-color: $profile-white-color;
+    padding: 15px !important;
+    box-shadow: 0px 1px 2px 0px rgba(186, 186, 186, 0.9), 0px 1px 1px 0px #cecece;
+}
+
+.extended-profile .info-cards:nth-child(3) {
+    padding: 20px 15px 0 15px;
+}

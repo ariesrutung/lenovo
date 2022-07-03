@@ -1,0 +1,204 @@
+/* Header */
+ion-header-bar.bar-custom.bar.bar-header {
+    background-color: #b3c4fc;
+    background-image: linear-gradient(62deg, #b3c4fc 0%, #e0c3fc 100%);
+}
+/* End Header */
+
+/* Booking CSS start here */
+ion-view.booking-view.booking-view-l1 ion-content {
+    background-color: #ecf0f6 !important;
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+}
+
+
+/* image at the top */
+ion-view.booking-view.booking-view-l1 ion-content:before {
+    content: " ";
+    display: block;
+    height: 250px;
+    background-image: url(https://i.imgur.com/R4hYypR.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+ion-view.booking-view.booking-view-l1 ion-content .scroll {
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    padding: 5px 20px;
+    border-radius: 30px 30px 0 0;
+    margin-top: -20px;
+}
+
+/* Replace the text with your own */
+ion-view.booking-view.booking-view-l1 ion-content .scroll:before {
+    content: "Booking Title";
+    display: block;
+    color: #fff !important;
+    font-size: 24px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Replace the text with your own */
+ion-view.booking-view.booking-view-l1 ion-content .scroll>form:before {
+    display: block;
+    color: #fff !important;
+    text-align: left;
+    padding: 15px 0;
+    content: "Your booking description or something like it goes here. You can custom this text by your own.";
+    line-height: 1.8;
+}
+
+ion-view.booking-view.booking-view-l1 .list img {
+    display: none !important;
+}
+
+ion-view.booking-view.booking-view-l1 .list .item-divider.item-divider-custom {
+    background-color: transparent;
+    color: #fff;
+    border: 0;
+    padding: 0;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+ion-view.booking-view.booking-view-l1 .list .item.item-custom {
+    color: #fff;
+    border-radius: 10px;
+    margin: 10px 0;
+    background: transparent !important;
+    border: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0;
+}
+
+ion-view.booking-view.booking-view-l1 .list .item.item-custom input {
+    max-height: 50px;
+    background: #ecf0f6;
+    border-radius: 10px;
+    padding: 0 10px;
+    text-align: left !important;
+}
+
+ion-view.booking-view.booking-view-l1 form .item i.icon {
+    text-align: left !important;
+    font-size: 24px;
+    color: #ecf0f6;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+/* Replace the text with your own */
+ion-view.booking-view.booking-view-l1 i.icon.ion-person:after {
+    content: "Your Full Name";
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+/* Replace the text with your own */
+ion-view.booking-view.booking-view-l1 i.icon.ion-ios-telephone:after {
+    content: "Your Phone Number";
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+/* Replace the text with your own */
+ion-view.booking-view.booking-view-l1 i.icon.ion-email:after {
+    content: "Your Email";
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+/* Replace the text with your own */
+ion-view.booking-view.booking-view-l1 i.icon.ion-ios-people:after {
+    content: "Your Number of People";
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+/* Replace the text with your own */
+ion-view.booking-view.booking-view-l1 [model="formData.checkIn"] i.icon.ion-ios-clock:after {
+    content: "Select Your Checkin Date";
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+/* Replace the text with your own */
+ion-view.booking-view.booking-view-l1 [model="formData.checkOut"] i.icon.ion-ios-clock:after {
+    content: "Select Your Checkout Date";
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+ion-view.booking-view.booking-view-l1 input::-webkit-outer-spin-button,
+ion-view.booking-view.booking-view-l1 input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+ion-view.booking-view.booking-view-l1 input[type=number] {
+    -moz-appearance: textfield;
+}
+
+ion-view.booking-view.booking-view-l1 .list .item.item-custom textarea {
+    background-color: #fff;
+    padding: 10px;
+}
+
+ion-view.booking-view.booking-view-l1 .button.button-positive-custom {
+    border: 0;
+    background-color: #387ef5;
+    color: #fff;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+ion-view.booking-view.booking-view-l1 .list .item.item-custom .input-label.ng-binding {
+    display: none;
+}
+
+/* modal date picker*/
+.picker-opened>.picker-dialog {
+    bottom: 30vh;
+    margin: 15px;
+    border-radius: 15px;
+}
+
+.picker-opened>.picker-dialog .picker-header {
+    background-color: #8ec5fc;
+    background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+    border-radius: 15px 15px 0 0;
+}
+
+.picker-opened>.picker-dialog .picker-header h4.picker-title {
+    color: #fff;
+}
+
+ion-view.booking-view.booking-view-l1 .list .item.item-custom input::-webkit-input-placeholder {
+    color: transparent !important;
+}
+
+ion-view.booking-view.booking-view-l1 .list .item.item-custom input:-moz-placeholder { /* Firefox 18- */
+    color: transparent !important;
+}
+
+ion-view.booking-view.booking-view-l1 .list .item.item-custom input::-moz-placeholder {  /* Firefox 19+ */
+    color: transparent !important;
+}
+
+ion-view.booking-view.booking-view-l1 .list .item.item-custom input:-ms-input-placeholder {  
+    color: transparent !important;
+}   
+
+/* Booking CSS End here */

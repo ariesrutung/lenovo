@@ -1,0 +1,208 @@
+/* layout */
+
+.always .layout.l1 .tabs {
+    background: #52195b;
+    width: 90%;
+    margin: 10px 5%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    box-shadow: none !important;
+    border: 0 !important;
+}
+
+.layout.l1 p {
+    line-height: 11px;
+    font-size: 11px;
+    height: auto !important;
+    overflow: hidden;
+    margin: 0 !important;
+}
+
+.layout.l1 .tab-item img {
+    width: 30px;
+    height: 30px;
+    max-height: 80%;
+    margin: 0 !important;
+}
+
+.layout .tab-item {
+    position: relative;
+    float: left;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    max-width: 30%;
+    flex: 0 0 30%;
+    padding: 0 !important;
+    background-color: #5e1c5f !important;
+    height: 45px;
+    border-radius: 10px 20px;
+    border: 1px solid #5f1c5f;
+}
+
+li.col.col-20.tab-item:nth-child(n+4) {
+    display: none;
+}
+
+.bar.bar-custom .title {
+    color: transparent;
+}
+
+ion-header-bar.bar-custom.bar.bar-header {
+    background-color: transparent !important;
+}
+
+ion-view.module-folder2.folder2-layout1,
+ion-view.module-cms.cms-l1,
+ion-view.module-push.push-list.push-list-l1,
+ion-modal-view.customer-view.customer-layout1 {
+    background-image: none !important;
+    background-color: #6bc0cf !important;
+    background: rgb(228, 57, 136);
+    background: linear-gradient(180deg, rgba(228, 57, 136, 1) 0%, rgba(23, 13, 74, 1) 100%) !important;
+}
+
+ion-view.module-folder2.folder2-layout1 ion-content,
+ion-view.module-cms.cms-l1 ion-content,
+ion-view.module-push.push-list.push-list-l1 ion-content,
+ion-modal-view.customer-view.customer-layout1 ion-content {
+    background-color: transparent !important;
+    bottom: 0 !important;
+}
+
+ion-view.module-folder2.folder2-layout1 .list .item.item-custom {
+    background-color: #fff !important;
+    border: 0;
+}
+
+ion-view.module-folder2.folder2-layout1 .list .item.item-custom h2.ng-binding {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+}
+
+ion-view.module-folder2.folder2-layout1 .list .item.item-custom p.ng-binding {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}
+
+ion-view.module-folder2.folder2-layout1 ion-content .list>.item.item-custom {
+    background-color: transparent !important;
+    padding: 0 !important;
+    border: 0 !important;
+    margin: 20px 0;
+}
+
+ion-view.module-folder2.folder2-layout1 ion-content .list a.item.item-custom.item-avatar-square.item-avatar.item-center {
+    width: 70%;
+    margin: 10px 15%;
+    padding: 0 !important;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #9d2972 !important;
+    border-radius: 10px;
+}
+
+ion-view.module-folder2.folder2-layout1 ion-content .list a.item.item-custom.item-avatar-square.item-avatar.item-center img {
+    display: none;
+}
+
+ion-view.module-folder2.folder2-layout1 ion-content .list>.item.item-custom>img {
+    width: 150px;
+    margin: 20px;
+    height: 150px;
+    object-fit: contain;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+ion-view.module-cms.cms-l1 .card[ng-switch-when="text"] .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding p {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+}
+
+ion-view.module-cms.cms-l1 .card[ng-switch-when="text"] .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding p:last-child {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    background-color: #fcd866;
+    padding: 10px;
+    color: #fff;
+}
+
+ion-view.module-cms.cms-l1 ion-content .scroll>div[ng-repeat="block in blocks"]:nth-child(3) {
+    background-color: #fff;
+    padding-top: 40px;
+    margin-top: 50px;
+    border-radius: 40px 40px 0 0;
+}
+
+ion-view.module-cms.cms-l1 ion-content .scroll>div[ng-repeat="block in blocks"]:last-child {
+    border-radius: 0 0 30px 30px;
+}
+
+ion-view.module-cms.cms-l1 ion-content .scroll>div[ng-repeat="block in blocks"]:nth-child(3) .card {
+    position: fixed;
+    top: -35px;
+    background-color: transparent !important;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ion-view.module-cms.cms-l1 ion-content .scroll>div[ng-repeat="block in blocks"]:nth-child(3) .card strong {
+    text-align: center;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    background-color: #fcd866;
+    font-size: 28px;
+    padding: 10px;
+    margin: 0 5%;
+    color: #fff;
+}
+
+ion-view.module-cms.cms-l1 ion-content .scroll>div[ng-repeat="block in blocks"]:nth-child(n+4) .item.item-text-wrap.item-custom.sb-cms-text {
+    border: 2px solid #fcd866;
+    margin: 10px;
+}
+
+ion-view.module-cms.cms-l1 ion-content .scroll>div[ng-repeat="block in blocks"] {
+    background-color: #fff;
+}
+
+ion-view.module-cms.cms-l1 ion-content .scroll .card[ng-switch-when="text"] .item.item-text-wrap.item-custom.sb-cms-text {
+    background-color: transparent;
+}
+
+ion-view.module-cms.cms-l1 ion-content .scroll .card[ng-switch-when="text"] {
+    background-color: #fff !important;
+    margin: 0;
+    padding: 0 20px;
+    box-shadow: none !important;
+}
+
+ion-view.module-cms.cms-l1 ion-content .scroll>div[ng-repeat="block in blocks"]:last-child:after {
+    content: " ";
+    height: 100px;
+    display: block;
+}
+
+ion-view.module-cms.cms-l1 .card[ng-switch-when="text"] .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding p span {
+    font-style: italic;
+    color: #6bc0cf;
+    font-size: 14px;
+}

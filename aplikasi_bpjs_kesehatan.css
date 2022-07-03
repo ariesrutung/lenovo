@@ -1,0 +1,47 @@
+ion-header-bar.bar-custom.bar.bar-header {
+    background-image: url(https://www.bpjs-kesehatan.go.id/bpjs//themes/webbpjs/img/logo/logo-bpjs.png);
+    background-position: center left 10px;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-color: #fff !important;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(3) .card[ng-switch-when="text"] {
+    box-shadow: none;
+    margin: 0;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(3) .card[ng-switch-when="text"] .item.item-text-wrap.item-custom.sb-cms-text {
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+    color: #000;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(3) .card[ng-switch-when="text"] .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding {
+    display: block;
+    width: 100%;
+    padding: 0 !important;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(3) .card[ng-switch-when="text"] .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding p {
+    display: inline-block;
+    width: 100px;
+    height: 108px;
+    text-align: center;
+    margin: 0 auto !important;
+    padding: 10px;
+    background-color: #fff;
+    vertical-align: text-top;
+}
+
+ion-view.module-cms.cms-l1 div[ng-repeat="block in blocks"]:nth-child(3) .card[ng-switch-when="text"] .item.item-text-wrap.item-custom.sb-cms-text .content.ng-binding p a {
+    height: 100%;
+    min-width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: center;
+    font-size: 11px;
+    line-height: 1.2;
+}
