@@ -211,3 +211,8 @@ ion-modal-view.sb-clickwrap.sb-clickwrap-modal .card .item.item-custom * {
 
 /* First Line of defense */
 /* Garda terdepan sebuah pertahanan */
+
+
+/* SANTARA */
+Email: ariesrutung@gmail.com
+Password: @c4AbxhrF2kiYLR
